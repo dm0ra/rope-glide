@@ -70,11 +70,11 @@
     <Compile Include="Assets\PickUpItem.cs" />
     <Compile Include="Assets\script.cs" />
     <Compile Include="Assets\scripts\Booster.cs" />
+    <Compile Include="Assets\scripts\buttonMethods.cs" />
     <Compile Include="Assets\scripts\CSVParsing.cs" />
     <Compile Include="Assets\scripts\DataSaver.cs" />
     <Compile Include="Assets\scripts\DB.cs" />
     <Compile Include="Assets\scripts\GameController.cs" />
-    <Compile Include="Assets\scripts\gameOverButton.cs" />
     <Compile Include="Assets\scripts\HingeManager.cs" />
     <Compile Include="Assets\scripts\Player.cs" />
     <Compile Include="Assets\scripts\PlayerMovement.cs" />
