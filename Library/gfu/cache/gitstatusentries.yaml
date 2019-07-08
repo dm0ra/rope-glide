@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-08T15:09:27.543-04:00
-  initializedAtString: 2019-07-08T14:55:46.683-04:00
+  lastUpdatedAtString: 2019-07-08T16:07:09.046-04:00
+  initializedAtString: 2019-07-08T15:46:14.938-04:00
   entries:
   - path: .collabignore
     fullPath: D:\UNITY\Rope-Glide\.collabignore
@@ -22,77 +22,23 @@ MonoBehaviour:
     originalPath: 
     status: 1
     staged: 0
-  - path: .vs\Rope-Glide\v15\Server\sqlite3\db.lock
-    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\db.lock
-    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\db.lock
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    originalPath: 
-    status: 1
-    staged: 0
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
     fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     originalPath: 
-    status: 1
-    staged: 0
-  - path: Assembly-CSharp.csproj
-    fullPath: D:\UNITY\Rope-Glide\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
     status: 3
-    staged: 0
-  - path: Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: D:\UNITY\Rope-Glide\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\Scenes\SampleScene.unity
-    fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\SampleScene.unity
-    projectPath: Assets\Scenes\SampleScene.unity
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: Assets\Scenes\SampleScene.unity.meta
-    fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\SampleScene.unity.meta
-    projectPath: Assets\Scenes\SampleScene.unity.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: Assets\Scenes\Swing Game.unity
-    fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\Swing Game.unity
-    projectPath: Assets\Scenes\Swing Game.unity
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scenes\Swing Game.unity.meta
-    fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\Swing Game.unity.meta
-    projectPath: Assets\Scenes\Swing Game.unity.meta
-    originalPath: 
-    status: 1
     staged: 0
   - path: Assets\Scenes\Upgrade Menu.unity
     fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\Upgrade Menu.unity
     projectPath: Assets\Scenes\Upgrade Menu.unity
     originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scenes\Upgrade Menu.unity.meta
-    fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\Upgrade Menu.unity.meta
-    projectPath: Assets\Scenes\Upgrade Menu.unity.meta
-    originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: Library\assetDatabase3
     fullPath: D:\UNITY\Rope-Glide\Library\assetDatabase3
@@ -116,7 +62,7 @@ MonoBehaviour:
     fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\gitfilelog.yaml
     projectPath: Library\gfu\cache\gitfilelog.yaml
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: Library\gfu\cache\gitlocks.yaml
     fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\gitlocks.yaml
@@ -134,35 +80,11 @@ MonoBehaviour:
     fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
-    status: 5
+    status: 3
     staged: 0
   - path: Library\gfu\cache\repoinfo.yaml
     fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\6a\6a9125eba68dd614c9237ade98e4ec0a
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\6a\6a9125eba68dd614c9237ade98e4ec0a
-    projectPath: Library\metadata\6a\6a9125eba68dd614c9237ade98e4ec0a
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\6a\6a9125eba68dd614c9237ade98e4ec0a.info
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\6a\6a9125eba68dd614c9237ade98e4ec0a.info
-    projectPath: Library\metadata\6a\6a9125eba68dd614c9237ade98e4ec0a.info
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\metadata\d2\d2074e66c2fd352458200df32a86f4d1
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\d2\d2074e66c2fd352458200df32a86f4d1
-    projectPath: Library\metadata\d2\d2074e66c2fd352458200df32a86f4d1
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\d2\d2074e66c2fd352458200df32a86f4d1.info
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\d2\d2074e66c2fd352458200df32a86f4d1.info
-    projectPath: Library\metadata\d2\d2074e66c2fd352458200df32a86f4d1.info
     originalPath: 
     status: 3
     staged: 0
@@ -172,21 +94,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
     originalPath: 
     status: 3
     staged: 0
@@ -196,33 +106,15 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
     fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
     projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
     fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
     projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
     originalPath: 
     status: 3
     staged: 0
@@ -238,15 +130,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+  - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: D:\UNITY\Rope-Glide\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
@@ -255,42 +141,6 @@ MonoBehaviour:
     projectPath: Library\StateCache\Hierarchy\4188d1-mainStage.json
     originalPath: 
     status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: D:\UNITY\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: D:\UNITY\Rope-Glide\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    fullPath: D:\UNITY\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: D:\UNITY\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: ProjectSettings\EditorBuildSettings.asset
-    fullPath: D:\UNITY\Rope-Glide\ProjectSettings\EditorBuildSettings.asset
-    projectPath: ProjectSettings\EditorBuildSettings.asset
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Rope-Glide.sln
-    fullPath: D:\UNITY\Rope-Glide\Rope-Glide.sln
-    projectPath: Rope-Glide.sln
-    originalPath: 
-    status: 1
     staged: 0
   - path: Temp\__Backupscenes\0.backup
     fullPath: D:\UNITY\Rope-Glide\Temp\__Backupscenes\0.backup
@@ -310,45 +160,45 @@ MonoBehaviour:
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-1536af869b20a6d4b970335a26c3d240
-    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-1536af869b20a6d4b970335a26c3d240
-    projectPath: Temp\UnityTempFile-1536af869b20a6d4b970335a26c3d240
+  - path: Temp\UnityTempFile-42302a052df07b849b4694b944258290
+    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-42302a052df07b849b4694b944258290
+    projectPath: Temp\UnityTempFile-42302a052df07b849b4694b944258290
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-b073bd4368596bb4985d5d1a0aa07d01
-    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-b073bd4368596bb4985d5d1a0aa07d01
-    projectPath: Temp\UnityTempFile-b073bd4368596bb4985d5d1a0aa07d01
+  - path: Temp\UnityTempFile-54512926223a787409bf0a6213e38e0d
+    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-54512926223a787409bf0a6213e38e0d
+    projectPath: Temp\UnityTempFile-54512926223a787409bf0a6213e38e0d
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-d50ccb2ecea425044bdfa3940cc1f259
-    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-d50ccb2ecea425044bdfa3940cc1f259
-    projectPath: Temp\UnityTempFile-d50ccb2ecea425044bdfa3940cc1f259
+  - path: Temp\UnityTempFile-7b85abcaf3a425740b2e79457a2802e4
+    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-7b85abcaf3a425740b2e79457a2802e4
+    projectPath: Temp\UnityTempFile-7b85abcaf3a425740b2e79457a2802e4
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-d632fee5ed7cc454a916d147b0fa5be8
-    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-d632fee5ed7cc454a916d147b0fa5be8
-    projectPath: Temp\UnityTempFile-d632fee5ed7cc454a916d147b0fa5be8
+  - path: Temp\UnityTempFile-c43ee71fd8cee2c418d1517b9486fa48
+    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-c43ee71fd8cee2c418d1517b9486fa48
+    projectPath: Temp\UnityTempFile-c43ee71fd8cee2c418d1517b9486fa48
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-e9e1aabb6730c004e99efa9d9914d279
-    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-e9e1aabb6730c004e99efa9d9914d279
-    projectPath: Temp\UnityTempFile-e9e1aabb6730c004e99efa9d9914d279
+  - path: Temp\UnityTempFile-e5a1b755e496c3142a3bedc743853fb2
+    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-e5a1b755e496c3142a3bedc743853fb2
+    projectPath: Temp\UnityTempFile-e5a1b755e496c3142a3bedc743853fb2
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-f1fe9eed7b6ebcb41b9317f5e731d337
-    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-f1fe9eed7b6ebcb41b9317f5e731d337
-    projectPath: Temp\UnityTempFile-f1fe9eed7b6ebcb41b9317f5e731d337
+  - path: Temp\UnityTempFile-f9bdd3b5dd58a804e879e14362753f3c
+    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-f9bdd3b5dd58a804e879e14362753f3c
+    projectPath: Temp\UnityTempFile-f9bdd3b5dd58a804e879e14362753f3c
     originalPath: 
     status: 1
     staged: 0
-  - path: Temp\UnityTempFile-f2ec4b3e2eea5f941ad1027fbb7280a9
-    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-f2ec4b3e2eea5f941ad1027fbb7280a9
-    projectPath: Temp\UnityTempFile-f2ec4b3e2eea5f941ad1027fbb7280a9
+  - path: Temp\UnityTempFile-ffff4512f770fe64189be8b50be1e878
+    fullPath: D:\UNITY\Rope-Glide\Temp\UnityTempFile-ffff4512f770fe64189be8b50be1e878
+    projectPath: Temp\UnityTempFile-ffff4512f770fe64189be8b50be1e878
     originalPath: 
     status: 1
     staged: 0

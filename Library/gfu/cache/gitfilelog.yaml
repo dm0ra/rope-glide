@@ -13,8 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 4
-  lastUpdatedAtString: 2019-07-08T15:09:26.902-04:00
-  initializedAtString: 2019-07-08T15:00:14.153-04:00
+  lastUpdatedAtString: 2019-07-08T15:46:36.902-04:00
+  initializedAtString: 2019-07-08T15:46:19.077-04:00
   fileLog:
-    path: 
-    logEntries: []
+    path: Assets/Scenes/Upgrade Menu.unity
+    logEntries:
+    - commitID: b9ffabf91fe21b976015a0f9ac20dcbb13f4bf4e
+      mergeA: 
+      mergeB: 
+      authorName: Andres Mora
+      authorEmail: andresdanielmora@gmail.com
+      commitEmail: andresdanielmora@gmail.com
+      commitName: Andres Mora
+      summary: Initial commit
+      description: 
+      timeString: 2019-07-08T15:28:10.000-04:00
+      commitTimeString: 2019-07-08T15:28:10.000-04:00
+      changes:
+      - path: Assets\Scenes\Upgrade Menu.unity
+        fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\Upgrade Menu.unity
+        projectPath: Assets\Scenes\Upgrade Menu.unity
+        originalPath: 
+        status: 4
+        staged: 0
