@@ -13,9 +13,215 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2019-07-09T16:55:49.650-04:00
-  initializedAtString: 2019-07-09T16:55:48.611-04:00
+  lastUpdatedAtString: 2019-07-09T18:25:33.987-04:00
+  initializedAtString: 2019-07-09T17:13:57.646-04:00
   log:
+  - commitID: da00887cf63e2bfb60656422c4765e0efe7c7f7c
+    mergeA: 
+    mergeB: 
+    authorName: Andres Mora
+    authorEmail: andresdanielmora@gmail.com
+    commitEmail: andresdanielmora@gmail.com
+    commitName: Andres Mora
+    summary: Fixed bugs for the new upgrade system regarding using the booster and
+      glider after purchasing. Changed the way the upgrades are stored from the upgrades
+      script to the DB script
+    description: 
+    timeString: 2019-07-09T17:11:31.000-04:00
+    commitTimeString: 2019-07-09T17:11:31.000-04:00
+    changes:
+    - path: .vs\Rope-Glide\v15\.suo
+      fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\.suo
+      projectPath: .vs\Rope-Glide\v15\.suo
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
+      fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
+      projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\PickUpItem.cs
+      fullPath: D:\UNITY\Rope-Glide\Assets\PickUpItem.cs
+      projectPath: Assets\PickUpItem.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\scripts\Booster.cs
+      fullPath: D:\UNITY\Rope-Glide\Assets\scripts\Booster.cs
+      projectPath: Assets\scripts\Booster.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\scripts\DB.cs
+      fullPath: D:\UNITY\Rope-Glide\Assets\scripts\DB.cs
+      projectPath: Assets\scripts\DB.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\scripts\GameController.cs
+      fullPath: D:\UNITY\Rope-Glide\Assets\scripts\GameController.cs
+      projectPath: Assets\scripts\GameController.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\scripts\Rope.cs
+      fullPath: D:\UNITY\Rope-Glide\Assets\scripts\Rope.cs
+      projectPath: Assets\scripts\Rope.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\scripts\buttonMethods.cs
+      fullPath: D:\UNITY\Rope-Glide\Assets\scripts\buttonMethods.cs
+      projectPath: Assets\scripts\buttonMethods.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
+      fullPath: D:\UNITY\Rope-Glide\Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
+      projectPath: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\CurrentLayout.dwlt
+      fullPath: D:\UNITY\Rope-Glide\Library\CurrentLayout.dwlt
+      projectPath: Library\CurrentLayout.dwlt
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+      fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+      projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+      fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\StateCache\Hierarchy\4188d1-mainStage.json
+      fullPath: D:\UNITY\Rope-Glide\Library\StateCache\Hierarchy\4188d1-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\4188d1-mainStage.json
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\assetDatabase3
+      fullPath: D:\UNITY\Rope-Glide\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\metadata\08\0815acb276965af48801d4db866252b5
+      fullPath: D:\UNITY\Rope-Glide\Library\metadata\08\0815acb276965af48801d4db866252b5
+      projectPath: Library\metadata\08\0815acb276965af48801d4db866252b5
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\metadata\13\135862d7de01e3840b56f01765d8af45
+      fullPath: D:\UNITY\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
+      projectPath: Library\metadata\13\135862d7de01e3840b56f01765d8af45
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
+      fullPath: D:\UNITY\Rope-Glide\Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
+      projectPath: Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+      fullPath: D:\UNITY\Rope-Glide\Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+      projectPath: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\metadata\c1\c1f9e92d20e554d40a89997b392cb697
+      fullPath: D:\UNITY\Rope-Glide\Library\metadata\c1\c1f9e92d20e554d40a89997b392cb697
+      projectPath: Library\metadata\c1\c1f9e92d20e554d40a89997b392cb697
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+      fullPath: D:\UNITY\Rope-Glide\Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+      projectPath: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+      originalPath: 
+      status: 3
+      staged: 0
   - commitID: 63544a473cf8933c499d4913f03b60b28cf98dc6
     mergeA: 
     mergeB: 

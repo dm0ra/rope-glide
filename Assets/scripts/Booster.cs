@@ -48,7 +48,7 @@ public class Booster : MonoBehaviour
         //Debug.Log("Yeett");
         //LastMousePosX = Input.mousePosition.x;
         refuel();//refuels if needed
-        if (gameInput.getInputFlag() == 2 && DB.Booster == 1)//if click and upgrade is selected
+        if (gameInput.getInputFlag() == 2 && DB.Booster == 1 && fuel > 0)//if click and upgrade is selected and there is fuel left
         {
             accelerateYVelocity();//accelerates player
         }
@@ -63,7 +63,7 @@ public class Booster : MonoBehaviour
             //Player.GetComponent<Rigidbody2D>().velocity.y += a;
             //Debug.Log(Player.GetComponent<Rigidbody2D>().velocity.y);
             Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, a));
-            fuel-= fuelUseRate;//reduces fuel
+            fuel -= fuelUseRate;//reduces fuel
         }
 
         return 1;
