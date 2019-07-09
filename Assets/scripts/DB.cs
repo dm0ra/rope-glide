@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class DB
 {
-    private static int lvlIndex;
+    private static int lvlIndex, pi, glider;
     private static float score, highScore;
 
 
@@ -41,6 +41,30 @@ public static class DB
         set
         {
             lvlIndex = value;
+        }
+    }
+
+    public static int PreviewIndex
+    {
+        get
+        {
+            return pi;
+        }
+        set
+        {
+            pi = value;
+        }
+    }
+
+    public static int Glider
+    {
+        get
+        {
+            return glider;
+        }
+        set
+        {
+            glider = value;
         }
     }
 }

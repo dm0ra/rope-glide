@@ -58,6 +58,7 @@ public class Rope : MonoBehaviour
     */
     void Update()
     {
+        Debug.Log("DB Glider: " + DB.Glider);
         /*Form the visable rope you see on screen if the mouse state is 1 (left click held down),
         * The index (the index of THIS connection point in the array of connection points)
         * of the cloud that is being swung from is the same as the one in the game controller
@@ -94,6 +95,7 @@ public class Rope : MonoBehaviour
         if (game.GetJumpClick() && Input.GetMouseButtonDown(0) && game.IsHingeClosest(index) && !game.GetConnectedFlag()  )
         {
             // If the glider is active connect only when the left half of the screen is pressed
+
             if (Upgrades.Glider == 1)
             {
                 Debug.Log(gameInput.getInputFlag());

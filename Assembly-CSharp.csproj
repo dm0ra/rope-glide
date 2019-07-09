@@ -68,7 +68,6 @@
     <Compile Include="Assets\InputClass.cs" />
     <Compile Include="Assets\LevelControl.cs" />
     <Compile Include="Assets\PickUpItem.cs" />
-    <Compile Include="Assets\script.cs" />
     <Compile Include="Assets\scripts\Booster.cs" />
     <Compile Include="Assets\scripts\buttonMethods.cs" />
     <Compile Include="Assets\scripts\CSVParsing.cs" />

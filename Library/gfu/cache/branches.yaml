@@ -13,29 +13,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-07-03T17:10:58.470-04:00
-  initializedAtString: 2019-07-03T15:53:27.699-04:00
+  lastUpdatedAtString: 2019-07-09T15:14:10.759-04:00
+  initializedAtString: 2019-07-08T16:25:22.188-04:00
   localBranches:
+  - name: dm0ra_branch
+    tracking: 
   - name: master
     tracking: origin/master
-  - name: testing
-    tracking: origin/testing
   remoteBranches:
-  - name: origin/HEAD
-    tracking: '[None]'
-  - name: origin/JakesBranch
-    tracking: '[None]'
-  - name: origin/JakesBranchOfAndres
-    tracking: '[None]'
-  - name: origin/JSchanges
-    tracking: '[None]'
   - name: origin/master
-    tracking: '[None]'
-  - name: origin/testing
     tracking: '[None]'
   remotes:
   - name: origin
-    url: https://github.com/Jakebluhm/Rope-Swing.git
+    url: https://github.com/dm0ra/Rope-Glide.git
     login: 
     user: 
     host: 
@@ -43,65 +33,35 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - dm0ra_branch
     - master
-    - testing
     values:
+    - name: dm0ra_branch
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
     - name: master
       remote:
         name: origin
-        url: https://github.com/Jakebluhm/Rope-Swing.git
+        url: https://github.com/dm0ra/Rope-Glide.git
       trackingBranch: master
-    - name: testing
-      remote:
-        name: origin
-        url: https://github.com/Jakebluhm/Rope-Swing.git
-      trackingBranch: testing
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
-      - HEAD
-      - JakesBranch
-      - JakesBranchOfAndres
-      - JSchanges
       - master
-      - testing
     subKeyValues:
     - Values:
-      - name: HEAD
-        remote:
-          name: origin
-          url: https://github.com/Jakebluhm/Rope-Swing.git
-        trackingBranch: 
-      - name: JakesBranch
-        remote:
-          name: origin
-          url: https://github.com/Jakebluhm/Rope-Swing.git
-        trackingBranch: 
-      - name: JakesBranchOfAndres
-        remote:
-          name: origin
-          url: https://github.com/Jakebluhm/Rope-Swing.git
-        trackingBranch: 
-      - name: JSchanges
-        remote:
-          name: origin
-          url: https://github.com/Jakebluhm/Rope-Swing.git
-        trackingBranch: 
       - name: master
         remote:
           name: origin
-          url: https://github.com/Jakebluhm/Rope-Swing.git
-        trackingBranch: 
-      - name: testing
-        remote:
-          name: origin
-          url: https://github.com/Jakebluhm/Rope-Swing.git
+          url: https://github.com/dm0ra/Rope-Glide.git
         trackingBranch: 
   configRemotes:
     keys:
     - origin
     values:
     - name: origin
-      url: https://github.com/Jakebluhm/Rope-Swing.git
+      url: https://github.com/dm0ra/Rope-Glide.git

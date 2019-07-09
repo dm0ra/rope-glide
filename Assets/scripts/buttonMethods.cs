@@ -9,6 +9,11 @@ public class buttonMethods : MonoBehaviour
     public GameController game;
     public Text score;
     public Text highScore;
+    public int previewIndex;//used to know which preview item was clicked
+    //1 = glider, 2 = booster
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -88,14 +93,66 @@ public class buttonMethods : MonoBehaviour
         Upgrades.Glider = 1;//sets flag for glider
         Upgrades.Booster = 1;//sets flag for booster
         SceneManager.LoadScene(0);
-
-
     }
+
+    //used to purchase a booster in the 
+    public void previewBooster()
+    {
+        //DB.LvlIndex = 0;
+        DB.PreviewIndex = 2;
+        previewIndex = 2;//sets preview index to booster
+        //Upgrades.Glider = 1;//sets flag for glider
+        //Upgrades.Booster = 1;//sets flag for booster
+        //SceneManager.LoadScene(0);//switches scene to main menu
+
+       
+    }
+
+    //used to buy a glider in the upgrade menu
+    public void previewGlider()
+    {
+        //DB.LvlIndex = 0;
+
+        //Upgrades.Glider = 1;//sets flag for glider
+        DB.PreviewIndex = 2;
+        previewIndex = 1;//sets preview index to glider
+        //Upgrades.Booster = 1;//sets flag for booster
+        //SceneManager.LoadScene(0);//switches scene to main menu
+    }
+
+    public void purchase()
+    {
+        Debug.Log(previewIndex);
+        if(DB.PreviewIndex == 1)
+        {
+            DB.Glider = 1;
+            Upgrades.Glider = 1;
+        }
+
+        if(DB.PreviewIndex == 2)
+        {
+            DB.Glider = 1;
+            Upgrades.Booster = 1;
+        }
+    }
+
+    public void gotoMainMenu()
+    {
+        //previewIndex = 0;
+        SceneManager.LoadScene(3);//switches scene to main menu
+    }
+
+    public void gotoUpgrades()  //main menu play button causes this method to run
+    {
+        SceneManager.LoadScene(4);
+    }
+
     //Load main menu button
-    public void mainMenuPlay()  //main menu play button causes this method to run
+    public void gotoPlay()  //main menu play button causes this method to run
     {
         SceneManager.LoadScene(0);
     }
+
     //Load Game over menu
     public void gameOverMainMenu()
     {
