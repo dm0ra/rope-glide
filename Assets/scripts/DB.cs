@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class DB
 {
-    private static int lvlIndex, pi, glider;
+    private static int lvlIndex, pi, glider, booster;
     private static float score, highScore;
 
 
@@ -65,6 +65,20 @@ public static class DB
         set
         {
             glider = value;
+        }
+    }
+
+    //setter and getter for booster value
+    //booster value represents if you have purchased the booster or not
+    public static int Booster
+    {
+        get
+        {
+            return booster;
+        }
+        set
+        {
+            booster = value;
         }
     }
 }

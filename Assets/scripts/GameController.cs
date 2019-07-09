@@ -378,12 +378,12 @@ public class GameController : MonoBehaviour
 
     public void upgradeMenuActions()
     {
-        if (Upgrades.Glider == 1)
+        if (DB.Glider == 1)
         {
             GameObject gldr = Instantiate(Resources.Load("Glider", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject; 
                 
         }
-        if(Upgrades.Booster == 1)
+        if(DB.Booster == 1)
         {
             GameObject Booster = Instantiate(Resources.Load("Booster", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
         }

@@ -47,7 +47,7 @@ public class PickUpItem : MonoBehaviour
                 Player.GetComponent<Rigidbody2D>().velocity = Player.GetComponent<Rigidbody2D>().velocity +
                                                              (70 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
 
-                if (Upgrades.Glider == 1)
+                if (DB.Glider == 1)
                 {
                     glider tempGlider = GameObject.FindGameObjectWithTag("Glider").GetComponent<glider>();
                     if (tempGlider.GliderActive())

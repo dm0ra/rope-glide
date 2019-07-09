@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-07-09T15:18:58.896-04:00
-  initializedAtString: 2019-07-09T15:18:58.896-04:00
+  lastUpdatedAtString: 2019-07-09T17:00:49.576-04:00
+  initializedAtString: 2019-07-09T17:00:49.576-04:00
   currentGitRemote:
     name: origin
     url: https://github.com/dm0ra/Rope-Glide.git
@@ -25,13 +25,13 @@ MonoBehaviour:
     token: 
   currentGitBranch:
     name: dm0ra_branch
-    tracking: 
+    tracking: origin/dm0ra_branch
   currentConfigBranch:
     name: dm0ra_branch
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/dm0ra/Rope-Glide.git
+    trackingBranch: dm0ra_branch
   currentConfigRemote:
     name: origin
     url: https://github.com/dm0ra/Rope-Glide.git

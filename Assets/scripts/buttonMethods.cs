@@ -90,8 +90,8 @@ public class buttonMethods : MonoBehaviour
     {
         DB.LvlIndex = 0;
 
-        Upgrades.Glider = 1;//sets flag for glider
-        Upgrades.Booster = 1;//sets flag for booster
+        DB.Glider = 1;//sets flag for glider
+        DB.Booster = 1;//sets flag for booster
         SceneManager.LoadScene(0);
     }
 
@@ -101,8 +101,8 @@ public class buttonMethods : MonoBehaviour
         //DB.LvlIndex = 0;
         DB.PreviewIndex = 2;
         previewIndex = 2;//sets preview index to booster
-        //Upgrades.Glider = 1;//sets flag for glider
-        //Upgrades.Booster = 1;//sets flag for booster
+        //DB.Glider = 1;//sets flag for glider
+        //DB.Booster = 1;//sets flag for booster
         //SceneManager.LoadScene(0);//switches scene to main menu
 
        
@@ -113,10 +113,10 @@ public class buttonMethods : MonoBehaviour
     {
         //DB.LvlIndex = 0;
 
-        //Upgrades.Glider = 1;//sets flag for glider
+        //DB.Glider = 1;//sets flag for glider
         DB.PreviewIndex = 2;
         previewIndex = 1;//sets preview index to glider
-        //Upgrades.Booster = 1;//sets flag for booster
+        //DB.Booster = 1;//sets flag for booster
         //SceneManager.LoadScene(0);//switches scene to main menu
     }
 
@@ -126,13 +126,13 @@ public class buttonMethods : MonoBehaviour
         if(DB.PreviewIndex == 1)
         {
             DB.Glider = 1;
-            Upgrades.Glider = 1;
+            DB.Glider = 1;
         }
 
         if(DB.PreviewIndex == 2)
         {
             DB.Glider = 1;
-            Upgrades.Booster = 1;
+            DB.Booster = 1;
         }
     }
 

@@ -13,18 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-09T15:19:10.233-04:00
-  initializedAtString: 2019-07-09T15:18:59.066-04:00
+  lastUpdatedAtString: 2019-07-09T17:03:52.779-04:00
+  initializedAtString: 2019-07-09T17:00:49.647-04:00
   entries:
   - path: .vs\Rope-Glide\v15\.suo
     fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\.suo
     projectPath: .vs\Rope-Glide\v15\.suo
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
     originalPath: 
     status: 3
     staged: 0
@@ -34,41 +28,17 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Assembly-CSharp.csproj
-    fullPath: D:\UNITY\Rope-Glide\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
+  - path: Assets\PickUpItem.cs
+    fullPath: D:\UNITY\Rope-Glide\Assets\PickUpItem.cs
+    projectPath: Assets\PickUpItem.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\Scenes\GameOver.unity
-    fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\GameOver.unity
-    projectPath: Assets\Scenes\GameOver.unity
+  - path: Assets\scripts\Booster.cs
+    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\Booster.cs
+    projectPath: Assets\scripts\Booster.cs
     originalPath: 
     status: 3
-    staged: 0
-  - path: Assets\Scenes\Main Menu.unity
-    fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\Main Menu.unity
-    projectPath: Assets\Scenes\Main Menu.unity
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\Scenes\Upgrade Menu.unity
-    fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\Upgrade Menu.unity
-    projectPath: Assets\Scenes\Upgrade Menu.unity
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\script.cs
-    fullPath: D:\UNITY\Rope-Glide\Assets\script.cs
-    projectPath: Assets\script.cs
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: Assets\script.cs.meta
-    fullPath: D:\UNITY\Rope-Glide\Assets\script.cs.meta
-    projectPath: Assets\script.cs.meta
-    originalPath: 
-    status: 5
     staged: 0
   - path: Assets\scripts\buttonMethods.cs
     fullPath: D:\UNITY\Rope-Glide\Assets\scripts\buttonMethods.cs
@@ -79,6 +49,12 @@ MonoBehaviour:
   - path: Assets\scripts\DB.cs
     fullPath: D:\UNITY\Rope-Glide\Assets\scripts\DB.cs
     projectPath: Assets\scripts\DB.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\GameController.cs
+    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\GameController.cs
+    projectPath: Assets\scripts\GameController.cs
     originalPath: 
     status: 3
     staged: 0
@@ -97,6 +73,12 @@ MonoBehaviour:
   - path: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     fullPath: D:\UNITY\Rope-Glide\Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     projectPath: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\CurrentLayout.dwlt
+    fullPath: D:\UNITY\Rope-Glide\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
     originalPath: 
     status: 3
     staged: 0
@@ -136,23 +118,23 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\InspectorExpandedItems.asset
-    fullPath: D:\UNITY\Rope-Glide\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
+  - path: Library\metadata\08\0815acb276965af48801d4db866252b5
+    fullPath: D:\UNITY\Rope-Glide\Library\metadata\08\0815acb276965af48801d4db866252b5
+    projectPath: Library\metadata\08\0815acb276965af48801d4db866252b5
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\metadata\28\28f5ad9546aef724cb0437d64ab1a067
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\28\28f5ad9546aef724cb0437d64ab1a067
-    projectPath: Library\metadata\28\28f5ad9546aef724cb0437d64ab1a067
+  - path: Library\metadata\13\135862d7de01e3840b56f01765d8af45
+    fullPath: D:\UNITY\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
+    projectPath: Library\metadata\13\135862d7de01e3840b56f01765d8af45
     originalPath: 
-    status: 5
+    status: 3
     staged: 0
-  - path: Library\metadata\28\28f5ad9546aef724cb0437d64ab1a067.info
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\28\28f5ad9546aef724cb0437d64ab1a067.info
-    projectPath: Library\metadata\28\28f5ad9546aef724cb0437d64ab1a067.info
+  - path: Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
+    fullPath: D:\UNITY\Rope-Glide\Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
+    projectPath: Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
     originalPath: 
-    status: 5
+    status: 3
     staged: 0
   - path: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
     fullPath: D:\UNITY\Rope-Glide\Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
@@ -220,33 +202,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: D:\UNITY\Rope-Glide\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\StateCache\Hierarchy\4188d1-mainStage.json
     fullPath: D:\UNITY\Rope-Glide\Library\StateCache\Hierarchy\4188d1-mainStage.json
     projectPath: Library\StateCache\Hierarchy\4188d1-mainStage.json
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\StateCache\SceneView\867b10-mainStage.json
-    fullPath: D:\UNITY\Rope-Glide\Library\StateCache\SceneView\867b10-mainStage.json
-    projectPath: Library\StateCache\SceneView\867b10-mainStage.json
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: D:\UNITY\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: ProjectSettings\EditorBuildSettings.asset
-    fullPath: D:\UNITY\Rope-Glide\ProjectSettings\EditorBuildSettings.asset
-    projectPath: ProjectSettings\EditorBuildSettings.asset
     originalPath: 
     status: 3
     staged: 0

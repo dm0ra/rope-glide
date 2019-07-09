@@ -96,7 +96,7 @@ public class Rope : MonoBehaviour
         {
             // If the glider is active connect only when the left half of the screen is pressed
 
-            if (Upgrades.Glider == 1)
+            if (DB.Glider == 1)
             {
                 Debug.Log(gameInput.getInputFlag());
                 if (gameInput.getInputFlag() == 0) // Only connect when left side of the screen is pressed
@@ -105,7 +105,7 @@ public class Rope : MonoBehaviour
                 }
             }
             // Connect on any input when no upgrades are active.
-            if (Upgrades.Glider == 0) 
+            if (DB.Glider == 0) 
             {
                     Connect();    
             }

@@ -36,7 +36,7 @@ public class Booster : MonoBehaviour
     {
         //maps booster to player
         //Debug.Log(Player.transform.position.x);
-        if(Upgrades.Booster == 1)
+        if(DB.Booster == 1)
         {
             playerDelta.z = Player.transform.position.z;
         }
@@ -48,7 +48,7 @@ public class Booster : MonoBehaviour
         //Debug.Log("Yeett");
         //LastMousePosX = Input.mousePosition.x;
         refuel();//refuels if needed
-        if (gameInput.getInputFlag() == 2 && Upgrades.Booster == 1)//if click and upgrade is selected
+        if (gameInput.getInputFlag() == 2 && DB.Booster == 1)//if click and upgrade is selected
         {
             accelerateYVelocity();//accelerates player
         }
