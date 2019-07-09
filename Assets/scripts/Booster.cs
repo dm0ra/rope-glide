@@ -14,7 +14,7 @@ public class Booster : MonoBehaviour
     private float a = 3000f;//acceleration constant
     private static int fuelMax = 100;//maximum fuel for booster
     private int fuel;//amount of fuel left
-    private static int fuelUseRate = 2;//usage rate of fuel
+    private static int fuelUseRate = 3;//usage rate of fuel
     private float playerXDelta;
     private float playerYDelta;
     private Vector3 playerDelta;
@@ -48,7 +48,7 @@ public class Booster : MonoBehaviour
         //Debug.Log("Yeett");
         //LastMousePosX = Input.mousePosition.x;
         refuel();//refuels if needed
-        if (gameInput.getInputFlag() == 2 && DB.Booster == 1 && fuel > 0)//if click and upgrade is selected and there is fuel left
+        if (gameInput.getInputFlag() == 2 && DB.Booster == 1)//if click and upgrade is selected and there is fuel left
         {
             accelerateYVelocity();//accelerates player
         }
