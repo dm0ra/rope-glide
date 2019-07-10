@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-07-09T18:30:29.273-04:00
+  lastUpdatedAtString: 2019-07-09T22:27:35.134-04:00
   initializedAtString: 2019-07-09T17:13:56.781-04:00
   localBranches:
   - name: dm0ra_branch
@@ -21,6 +21,8 @@ MonoBehaviour:
   - name: master
     tracking: origin/master
   remoteBranches:
+  - name: origin/Andrea
+    tracking: '[None]'
   - name: origin/dm0ra_branch
     tracking: '[None]'
   - name: origin/master
@@ -53,10 +55,16 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - Andrea
       - dm0ra_branch
       - master
     subKeyValues:
     - Values:
+      - name: Andrea
+        remote:
+          name: origin
+          url: https://github.com/dm0ra/Rope-Glide.git
+        trackingBranch: 
       - name: dm0ra_branch
         remote:
           name: origin

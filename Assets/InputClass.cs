@@ -48,8 +48,10 @@ public class InputClass : MonoBehaviour
              
            float touchPositionX = (Input.mousePosition.x) - touchOffest + transform.position.x;//x position for touch
            float touchPositiony = (Input.mousePosition.y) - touchOffest + transform.position.y;//y position for y
+
            float MiddleVerticalBoundry =  transform.position.x;//sets vertical boundary to divide touches
            float MiddleHorizontalBoundry = Camera.transform.position.y/2;//sets horizontal boundary to divide touches
+
            if (touchPositionX > MiddleVerticalBoundry)
             {
                 if(Input.mousePosition.y > Screen.height/2)
@@ -76,6 +78,7 @@ public class InputClass : MonoBehaviour
 
     public int getInputFlag()
     {
+        Debug.Log("Click Flag: " + ClickFlag);
         return ClickFlag;
     }
    

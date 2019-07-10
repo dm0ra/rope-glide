@@ -13,12 +13,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-09T18:40:21.280-04:00
-  initializedAtString: 2019-07-09T17:00:49.647-04:00
+  lastUpdatedAtString: 2019-07-10T14:56:26.646-04:00
+  initializedAtString: 2019-07-10T14:41:00.209-04:00
   entries:
+  - path: .vs\Rope-Glide\v15\.suo
+    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\.suo
+    projectPath: .vs\Rope-Glide\v15\.suo
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
+    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
+    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
+    originalPath: 
+    status: 3
+    staged: 0
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\InputClass.cs
+    fullPath: D:\UNITY\Rope-Glide\Assets\InputClass.cs
+    projectPath: Assets\InputClass.cs
     originalPath: 
     status: 3
     staged: 0
@@ -27,6 +45,48 @@ MonoBehaviour:
     projectPath: Assets\scripts\Booster.cs
     originalPath: 
     status: 3
+    staged: 0
+  - path: Assets\scripts\buttonMethods.cs
+    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\buttonMethods.cs
+    projectPath: Assets\scripts\buttonMethods.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\Rope.cs
+    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\Rope.cs
+    projectPath: Assets\scripts\Rope.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Tests.meta
+    fullPath: D:\UNITY\Rope-Glide\Assets\Tests.meta
+    projectPath: Assets\Tests.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets\Tests\test1.cs
+    fullPath: D:\UNITY\Rope-Glide\Assets\Tests\test1.cs
+    projectPath: Assets\Tests\test1.cs
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets\Tests\test1.cs.meta
+    fullPath: D:\UNITY\Rope-Glide\Assets\Tests\test1.cs.meta
+    projectPath: Assets\Tests\test1.cs.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets\Tests\Tests.asmdef
+    fullPath: D:\UNITY\Rope-Glide\Assets\Tests\Tests.asmdef
+    projectPath: Assets\Tests\Tests.asmdef
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Assets\Tests\Tests.asmdef.meta
+    fullPath: D:\UNITY\Rope-Glide\Assets\Tests\Tests.asmdef.meta
+    projectPath: Assets\Tests\Tests.asmdef.meta
+    originalPath: 
+    status: 5
     staged: 0
   - path: Library\assetDatabase3
     fullPath: D:\UNITY\Rope-Glide\Library\assetDatabase3
@@ -37,6 +97,12 @@ MonoBehaviour:
   - path: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     fullPath: D:\UNITY\Rope-Glide\Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     projectPath: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\CurrentLayout.dwlt
+    fullPath: D:\UNITY\Rope-Glide\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
     originalPath: 
     status: 3
     staged: 0
@@ -82,11 +148,71 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+  - path: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
+    fullPath: D:\UNITY\Rope-Glide\Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
+    projectPath: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
     originalPath: 
-    status: 5
+    status: 3
+    staged: 0
+  - path: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    fullPath: D:\UNITY\Rope-Glide\Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    projectPath: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+    fullPath: D:\UNITY\Rope-Glide\Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+    projectPath: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    status: 3
     staged: 0
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: D:\UNITY\Rope-Glide\Library\shadercompiler-UnityShaderCompiler.exe0.log
@@ -94,9 +220,21 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: Library\StateCache\Hierarchy\4188d1-mainStage.json
+    fullPath: D:\UNITY\Rope-Glide\Library\StateCache\Hierarchy\4188d1-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\4188d1-mainStage.json
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Library\StateCache\SceneView\867b10-mainStage.json
     fullPath: D:\UNITY\Rope-Glide\Library\StateCache\SceneView\867b10-mainStage.json
     projectPath: Library\StateCache\SceneView\867b10-mainStage.json
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Rope-Glide.sln
+    fullPath: D:\UNITY\Rope-Glide\Rope-Glide.sln
+    projectPath: Rope-Glide.sln
     originalPath: 
     status: 3
     staged: 0

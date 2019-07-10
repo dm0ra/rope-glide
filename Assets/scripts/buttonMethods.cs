@@ -98,41 +98,32 @@ public class buttonMethods : MonoBehaviour
     //used to purchase a booster in the 
     public void previewBooster()
     {
-        //DB.LvlIndex = 0;
         DB.PreviewIndex = 2;
         previewIndex = 2;//sets preview index to booster
-        //DB.Glider = 1;//sets flag for glider
-        //DB.Booster = 1;//sets flag for booster
-        //SceneManager.LoadScene(0);//switches scene to main menu
-
-       
     }
 
     //used to buy a glider in the upgrade menu
     public void previewGlider()
     {
-        //DB.LvlIndex = 0;
-
-        //DB.Glider = 1;//sets flag for glider
-        DB.PreviewIndex = 2;
+        DB.PreviewIndex = 1;
         previewIndex = 1;//sets preview index to glider
-        //DB.Booster = 1;//sets flag for booster
-        //SceneManager.LoadScene(0);//switches scene to main menu
     }
 
+    //called when a user clicks the buy button in the upgrades menu
+    //used to purchase upgrade items after previewing them.
     public void purchase()
     {
-        Debug.Log(previewIndex);
-        if(DB.PreviewIndex == 1)
+        //Debug.Log(previewIndex);
+        if(DB.PreviewIndex == 1)//checks which item is being previewed
         {
-            DB.Glider = 1;
-            DB.Glider = 1;
+            DB.Glider = 1;//sets glider purchased flag
+            Debug.Log("Glider Purchased");
         }
 
-        if(DB.PreviewIndex == 2)
+        if(DB.PreviewIndex == 2)//checks which item is being previewed
         {
-            DB.Glider = 1;
-            DB.Booster = 1;
+            DB.Booster = 1;//sets booster purchased flag
+            Debug.Log("Booster Purchased");
         }
     }
 

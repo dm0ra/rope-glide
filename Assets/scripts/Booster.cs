@@ -56,7 +56,7 @@ public class Booster : MonoBehaviour
 
     int accelerateYVelocity()//boosts player up
     {
-        Debug.Log("Fuel: " + fuel);
+        //Debug.Log("Fuel: " + fuel);
 
         if(fuel >= 0)//checks if there is fuel left
         {
