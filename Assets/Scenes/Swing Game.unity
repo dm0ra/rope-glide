@@ -157,10 +157,10 @@ MonoBehaviour:
   groundWidth: 294
   cameraWidth: 228
   cameraHelper: 0
-  boostSpawnChance: 3
+  boostSpawnChance: 4
   startup: 1
   game: {fileID: 0}
-  enemySpawnChance: 6
+  enemySpawnChance: 3
   blockSpawnDistance: 200
   blockVar: 15
   dampTime: 0.25
