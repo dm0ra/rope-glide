@@ -319,7 +319,7 @@ public class GameController : MonoBehaviour
 
         return ret;
     }
-
+    //Is the corrected position of hinges.
     Vector3 CorrectedHingePosition(int index)
     {
         return new Vector3(Hinges[index].Hinge.transform.position.x - xOffset, Hinges[index].Hinge.transform.position.y - yOffset,
@@ -328,7 +328,9 @@ public class GameController : MonoBehaviour
     }
 
     
-
+    /*
+     * Respawn player sets the highscore if needed.
+     */
     public void respawnPlayer()
     {
 
@@ -360,22 +362,12 @@ public class GameController : MonoBehaviour
         //SceneManager.LoadScene(2);
     }
 
-    private void garbageMan()
-    {
-        if (EnemyList.Count > 10)
-        {
-            for (var i = 0; i < EnemyList.Count - 10; i++)
-            {
-                Destroy(EnemyList[i]);
-            }
-        }
-
-    }
+    //Check for upgrades each time the game is started
     private void OnLevelWasLoaded(int level)
     {
         upgradeMenuActions();
     }
-
+    //See which upgrades have been puchesed and spawn them in
     public void upgradeMenuActions()
     {
         if (Upgrades.Glider == 1)
