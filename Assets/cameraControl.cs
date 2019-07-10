@@ -6,16 +6,7 @@ using UnityEngine;
 
 public class cameraControl : MonoBehaviour
 {
-
-    /*Todo: 
-    * 
-    */
-    
-
-
-
-
-
+     
 
     public Camera Cam;          //camera object
     public GameObject Player;   //player object
@@ -62,8 +53,7 @@ public class cameraControl : MonoBehaviour
         Count100s = 0;
         bottomCamPos = Cam.transform.position.y;
         delayTime = 0.000001f;
-        BackgroundStartPos = 277f;
-        
+        BackgroundStartPos = 277f; 
     }
 
     // Update is called once per frame

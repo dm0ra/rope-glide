@@ -11,7 +11,13 @@ public class glider : MonoBehaviour
     /*  Glider from unity editor */
     public GameObject Glider;    
     /* Input class used to see where the user is touching the screen  */
-    private InputClass gameInput;
+    private InputClass gameInput;   
+    /*  */
+    private bool TiltDownPressed;
+    /*  */
+    private bool TiltUpPressed;
+    /*  */
+    private bool GlidePressed;
     /* Used in tap and drag calculation */
     private float LastMousePosX;   
     /* A variable that decreases the effect of tap and drag to change
@@ -39,7 +45,10 @@ public class glider : MonoBehaviour
         LastMousePosX = 0f;
         gameInput = GameObject.FindWithTag("MainCamera").GetComponent<InputClass>(); 
     }
- 
+    public bool GliderActive()
+    {
+        return GlidePressed | TiltDownPressed | TiltUpPressed;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -123,13 +132,17 @@ public class glider : MonoBehaviour
                 setNewPlayerVelocity();
             }
             else
-            { 
+            {
+                GlidePressed = true;
                 setNewPlayerVelocity();
             }
         }
         else
         {
-            firstClick = true; 
+            firstClick = true;
+            GlidePressed = false;
+            TiltDownPressed = false;
+            TiltUpPressed = false;
             Glider.transform.position = Player.transform.position + new Vector3(0, 0, 100);
         }
         LastMousePosX = Input.mousePosition.x;
