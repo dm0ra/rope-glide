@@ -13,24 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-11T14:59:48.331-04:00
-  initializedAtString: 2019-07-11T14:11:15.515-04:00
+  lastUpdatedAtString: 2019-07-11T15:19:25.103-04:00
+  initializedAtString: 2019-07-11T15:05:51.451-04:00
   entries:
-  - path: .vs\Rope-Glide\v15\.suo
-    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\.suo
-    projectPath: .vs\Rope-Glide\v15\.suo
-    originalPath: 
-    status: 3
-    staged: 0
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
     fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
-    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
-    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
     originalPath: 
     status: 3
     staged: 0
@@ -40,39 +28,15 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\Resources\Booster Image.prefab
-    fullPath: D:\UNITY\Rope-Glide\Assets\Resources\Booster Image.prefab
-    projectPath: Assets\Resources\Booster Image.prefab
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Resources\Booster Image.prefab.meta
-    fullPath: D:\UNITY\Rope-Glide\Assets\Resources\Booster Image.prefab.meta
-    projectPath: Assets\Resources\Booster Image.prefab.meta
-    originalPath: 
-    status: 1
-    staged: 0
   - path: Assets\Scenes\Upgrade Menu.unity
     fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\Upgrade Menu.unity
     projectPath: Assets\Scenes\Upgrade Menu.unity
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\scripts\Booster.cs
-    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\Booster.cs
-    projectPath: Assets\scripts\Booster.cs
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Assets\scripts\buttonMethods.cs
     fullPath: D:\UNITY\Rope-Glide\Assets\scripts\buttonMethods.cs
     projectPath: Assets\scripts\buttonMethods.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\scripts\GameController.cs
-    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\GameController.cs
-    projectPath: Assets\scripts\GameController.cs
     originalPath: 
     status: 3
     staged: 0
@@ -124,21 +88,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\InspectorExpandedItems.asset
-    fullPath: D:\UNITY\Rope-Glide\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\metadata\08\0815acb276965af48801d4db866252b5
     fullPath: D:\UNITY\Rope-Glide\Library\metadata\08\0815acb276965af48801d4db866252b5
     projectPath: Library\metadata\08\0815acb276965af48801d4db866252b5
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    projectPath: Library\metadata\13\135862d7de01e3840b56f01765d8af45
     originalPath: 
     status: 3
     staged: 0
@@ -165,12 +117,6 @@ MonoBehaviour:
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
     status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    originalPath: 
-    status: 5
     staged: 0
   - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
     fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
