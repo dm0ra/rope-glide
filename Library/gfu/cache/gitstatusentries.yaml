@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-11T15:19:25.103-04:00
+  lastUpdatedAtString: 2019-07-11T15:52:18.671-04:00
   initializedAtString: 2019-07-11T15:05:51.451-04:00
   entries:
+  - path: .vs\Rope-Glide\v15\.suo
+    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\.suo
+    projectPath: .vs\Rope-Glide\v15\.suo
+    originalPath: 
+    status: 3
+    staged: 0
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
     fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
@@ -25,12 +31,6 @@ MonoBehaviour:
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\Scenes\Upgrade Menu.unity
-    fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\Upgrade Menu.unity
-    projectPath: Assets\Scenes\Upgrade Menu.unity
     originalPath: 
     status: 3
     staged: 0
@@ -82,18 +82,6 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\gfu\cache\repoinfo.yaml
-    fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\08\0815acb276965af48801d4db866252b5
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\08\0815acb276965af48801d4db866252b5
-    projectPath: Library\metadata\08\0815acb276965af48801d4db866252b5
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
     fullPath: D:\UNITY\Rope-Glide\Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
     projectPath: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
@@ -112,42 +100,6 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: D:\UNITY\Rope-Glide\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
@@ -163,12 +115,6 @@ MonoBehaviour:
   - path: Library\StateCache\SceneView\867b10-mainStage.json
     fullPath: D:\UNITY\Rope-Glide\Library\StateCache\SceneView\867b10-mainStage.json
     projectPath: Library\StateCache\SceneView\867b10-mainStage.json
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: ProjectSettings\TagManager.asset
-    fullPath: D:\UNITY\Rope-Glide\ProjectSettings\TagManager.asset
-    projectPath: ProjectSettings\TagManager.asset
     originalPath: 
     status: 3
     staged: 0

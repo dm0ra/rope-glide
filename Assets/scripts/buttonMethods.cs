@@ -14,12 +14,13 @@ public class buttonMethods : MonoBehaviour
     public int previewIndex;//used to know which preview item was clicked
     //1 = glider, 2 = booster
 
-    private GameObject purchaseButton, upgradeDescription, upgradePrice, boosterImage, gliderImage, upgradeMenuCanvas, gameController;//these are gameobjects of the text boxes in the upgrade menu screen as well as preview images
+    private GameObject purchaseButton, upgradeDescription, upgradePrice, boosterImage, gliderImage, upgradeMenuCanvas, gameController, userCash;//these are gameobjects of the text boxes in the upgrade menu screen as well as preview images
 
-    private string boosterPrice = "Price:   420 Gold";
-    private string gliderPrice = "Price:    1234 Gold";
+    private string boosterPrice = "Price:   420 Cash";
+    private string gliderPrice = "Price:    1234 Cash";
     private string unpurchasedText = "Buy";
     private string purchasedText = "Purchased";
+    private string cashString = "Cash: ";
     private string boosterDescriptionText = "Description:   This booster allows you to jetpack in the sky for a limited time, " +
         "fuel replenishes over time. Useful for dodging enemies or reaching the stars";
     private string gliderDescriptionText = "Description:    Glider allows you glide upwards and downwards to bring out your inner fortnite";
@@ -36,6 +37,8 @@ public class buttonMethods : MonoBehaviour
         //these two gameobjects are used to interact with the preview images in the upgrade menu
         gliderImage = GameObject.FindWithTag("GliderImage");
         boosterImage = GameObject.FindWithTag("BoosterImage");
+        userCash = GameObject.FindWithTag("UserCash");//text box to display a users cash
+        
         //gliderImage.SetActive(false);
         //game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
 
@@ -101,6 +104,7 @@ public class buttonMethods : MonoBehaviour
         //checkForEnter();
         if (SceneManager.GetActiveScene().buildIndex == 4 && firstRun)
         {
+            setComponentText(userCash, cashString + "user cash here");//updates the cash string
             gliderImage.SetActive(false);
             boosterImage.SetActive(false);
             firstRun = false;
@@ -202,6 +206,8 @@ public class buttonMethods : MonoBehaviour
             Debug.Log("Booster Purchased");
             setComponentText(purchaseButton, purchasedText);//sets the text of the button to a purchased message
         }
+
+        setComponentText(userCash, cashString + "Cash variable here");//updates new cash variable
     }
 
     public void gotoMainMenu()
