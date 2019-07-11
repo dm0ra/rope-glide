@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-07-11T16:47:59.472-04:00
+  lastUpdatedAtString: 2019-07-11T16:52:39.873-04:00
   initializedAtString: 2019-07-11T16:38:04.987-04:00
   localBranches:
+  - name: John
+    tracking: 
   - name: master
     tracking: origin/master
   remoteBranches:
@@ -35,8 +37,14 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - John
     - master
     values:
+    - name: John
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
     - name: master
       remote:
         name: origin
