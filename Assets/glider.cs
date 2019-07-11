@@ -97,7 +97,7 @@ public class glider : MonoBehaviour
                     }
 
                     newRot = (Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance)).z;
-                    Debug.Log("New Rotation: " + newRot);
+                   // Debug.Log("New Rotation: " + newRot);
                 } 
                 setNewPlayerVelocity();
             }
@@ -127,7 +127,7 @@ public class glider : MonoBehaviour
                     }
 
                     newRot = (Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance)).z;
-                    Debug.Log("New Rotation: " + newRot);
+                   // Debug.Log("New Rotation: " + newRot);
                 } 
                 setNewPlayerVelocity();
             }
@@ -211,7 +211,7 @@ public class glider : MonoBehaviour
  
     void setNewPlayerVelocity()
     {
-        float Area = 0.225f;//0.055
+        float Area = 0.5f;//0.055
         float airDensity = 1.225f;//1.225f; //kg/m^3
         float CurrVelo = Player.GetComponent<Rigidbody2D>().velocity.magnitude; 
         CurrVelo = CurrVelo / 2.5f; 
@@ -234,8 +234,7 @@ public class glider : MonoBehaviour
         else
             liftCoefficent = 2 * Mathf.PI * tiltInRads; //Decending glider Should get this*/
         liftCoefficent = getLiftCoefficent(tiltInAngles);//2 * Mathf.PI * tiltInRads;
-        float dragCoefficent = getDragCoefficent(tiltInAngles);//1.28f * Mathf.Sin(tiltInRads);//
-        Debug.Log(liftCoefficent + " <lc     dc> " + dragCoefficent);
+        float dragCoefficent = getDragCoefficent(tiltInAngles);//1.28f * Mathf.Sin(tiltInRads);// 
 
         float Lift = liftCoefficent * ((CurrVelo * CurrVelo * airDensity) / 2) * Area;
         float Drag = (dragCoefficent * ((CurrVelo * CurrVelo * airDensity) / 2) * Area);
@@ -243,26 +242,33 @@ public class glider : MonoBehaviour
         float stallSpeed = Mathf.Sqrt((2f * weight * 9.8f) / (airDensity * Area * (2 * Mathf.PI * 0.785398f)));
 
         float VeritcalLift = Lift * Mathf.Cos(tiltInRads);
-        if (VeritcalLift > Player.GetComponent<Rigidbody2D>().mass * 9.8f * Player.GetComponent<Rigidbody2D>().gravityScale + 20f)
-        {
-            //VeritcalLift = Player.GetComponent<Rigidbody2D>().mass * 9.8f * Player.GetComponent<Rigidbody2D>().gravityScale + 20f;
-        }
+
 
         float HorizontalLift = Lift * Mathf.Sin(tiltInRads);
         float VerticalDrag = Drag * Mathf.Sin(tiltInRads);
         float HorizontalDrag = Drag * Mathf.Cos(tiltInRads);
+        if (VeritcalLift > 3000f)
+        {
+            //VeritcalLift = 2000f;
+          //  Debug.Log("Current Velo: " + CurrVelo + "   Vertical Lift: " + VeritcalLift + "   Vertical Drag: " + VerticalDrag);
 
+        }
         float balenceVertical = VeritcalLift + VerticalDrag - weight;
         float balenceHorizontal = HorizontalLift - HorizontalDrag;
-        float stallspeed = 50f;
+        float stallspeed = 30f;
+        float maxspeed = 300f;
 
         /*if(VeritcalLift + VerticalDrag > weight)
         {
             VeritcalLift = (VeritcalLift + VerticalDrag) - weight;
         }*/
-
-        if (Player.GetComponent<Rigidbody2D>().velocity.x > stallspeed)
+        if(Player.GetComponent<Rigidbody2D>().velocity.x > maxspeed)
         {
+          //  Debug.Log("highspeeeeed");
+        }
+        if (Player.GetComponent<Rigidbody2D>().velocity.x > stallspeed && Player.GetComponent<Rigidbody2D>().velocity.magnitude < maxspeed)
+        {
+            Debug.Log("NORMALSPEED");
             if (tiltInAngles < 0)
             {
                 //layer.GetComponent<Rigidbody2D>().AddForce(new Vector2(HorizontalLift - HorizontalDrag
@@ -282,12 +288,13 @@ public class glider : MonoBehaviour
                 balenceHorizontal = -1f * HorizontalLift - HorizontalDrag;
             }
         }
-        else
+        else if(Player.GetComponent<Rigidbody2D>().velocity.x > 0f && Player.GetComponent<Rigidbody2D>().velocity.x < stallspeed &&
+            Player.GetComponent<Rigidbody2D>().velocity.magnitude < maxspeed)
         {
-
+            Debug.Log("LOW x SPEED");
             HorizontalLift = HorizontalLift * (Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
             VeritcalLift = VeritcalLift * (Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
-            HorizontalDrag = HorizontalDrag * (Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
+           HorizontalDrag = HorizontalDrag * (Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
             VerticalDrag = VerticalDrag * (Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
             if (tiltInAngles < 0)
             {
@@ -308,6 +315,45 @@ public class glider : MonoBehaviour
                 balenceVertical = VeritcalLift - VerticalDrag - weight;
                 balenceHorizontal = -1f * HorizontalLift - HorizontalDrag;
             }
+        }
+        else if(Player.GetComponent<Rigidbody2D>().velocity.magnitude > maxspeed && Player.GetComponent<Rigidbody2D>().velocity.x > 0f)
+        {
+            if (Player.GetComponent<Rigidbody2D>().velocity.y > 350)
+            {
+                Debug.Log("Vertical speed limit reached  STALL");
+            }
+            else
+            {
+                Debug.Log("HIGHSPEED" + "  vertical speed " + Player.GetComponent<Rigidbody2D>().velocity.y);
+
+                HorizontalLift = HorizontalLift * (maxspeed / Player.GetComponent<Rigidbody2D>().velocity.magnitude);
+                VeritcalLift = VeritcalLift * (maxspeed / Player.GetComponent<Rigidbody2D>().velocity.magnitude);
+                HorizontalDrag = HorizontalDrag; //* (maxspeed / Player.GetComponent<Rigidbody2D>().velocity.x);
+                VerticalDrag = VerticalDrag;//* (maxspeed / Player.GetComponent<Rigidbody2D>().velocity.x);
+                if (tiltInAngles < 0)
+                {
+                    //layer.GetComponent<Rigidbody2D>().AddForce(new Vector2(HorizontalLift - HorizontalDrag
+                    //, VeritcalLift + VerticalDrag));
+
+                    Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(HorizontalLift, VeritcalLift));
+                    Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f * HorizontalDrag, VerticalDrag));
+
+                    balenceVertical = VeritcalLift + VerticalDrag - weight;
+                    balenceHorizontal = HorizontalLift - HorizontalDrag;
+                }
+                else
+                {
+                    Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f * HorizontalLift - HorizontalDrag
+                    , VeritcalLift - VerticalDrag));
+
+                    balenceVertical = VeritcalLift - VerticalDrag - weight;
+                    balenceHorizontal = -1f * HorizontalLift - HorizontalDrag;
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("STALL" + "  vertical speed " + Player.GetComponent<Rigidbody2D>().velocity.y);
         }
     }
 }

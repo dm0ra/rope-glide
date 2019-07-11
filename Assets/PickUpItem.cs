@@ -45,7 +45,7 @@ public class PickUpItem : MonoBehaviour
             {
 
                 Player.GetComponent<Rigidbody2D>().velocity = Player.GetComponent<Rigidbody2D>().velocity +
-                                                             (70 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
+                                                             (100 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
 
                 if (Upgrades.Glider == 1)
                 {
@@ -68,18 +68,18 @@ public class PickUpItem : MonoBehaviour
                         Vector2 vec = new Vector2(cos, sin);
 
                         Player.GetComponent<Rigidbody2D>().velocity = Player.GetComponent<Rigidbody2D>().velocity +
-                                                                     (120 * vec);
+                                                                     (100 * vec);
                     }
                     else
                     {
                         Player.GetComponent<Rigidbody2D>().velocity = Player.GetComponent<Rigidbody2D>().velocity +
-                                                                 (120 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
+                                                                 (100 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
                     }
                 }
                 else
                 {
                     Player.GetComponent<Rigidbody2D>().velocity = Player.GetComponent<Rigidbody2D>().velocity +
-                                                                 (120 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
+                                                                 (100 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
                 }
                 
             }

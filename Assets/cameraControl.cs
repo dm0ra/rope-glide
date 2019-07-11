@@ -35,7 +35,7 @@ public class cameraControl : MonoBehaviour
     private float delayTime;
 
     //Cam Vars 
-    public float dampTime = 0.25f;
+    public float dampTime = 0.025f;
     private Vector3 velocity = Vector3.zero;
     public Transform target;
 
@@ -101,7 +101,7 @@ public class cameraControl : MonoBehaviour
 
             if(Random.Range(0,10) < enemySpawnChance)
             {
-                GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+                //GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
             }
 
 
@@ -145,7 +145,7 @@ public class cameraControl : MonoBehaviour
 
                 if (Random.Range(0,10) < enemySpawnChance)//generates mace with enemySpawnChance/10 chance
                 {
-                    GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+                   // GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
                 }
 
 
