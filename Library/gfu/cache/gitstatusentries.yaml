@@ -13,30 +13,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-11T15:52:18.671-04:00
+  lastUpdatedAtString: 2019-07-11T16:46:49.613-04:00
   initializedAtString: 2019-07-11T15:05:51.451-04:00
   entries:
-  - path: .vs\Rope-Glide\v15\.suo
-    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\.suo
-    projectPath: .vs\Rope-Glide\v15\.suo
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    originalPath: 
-    status: 3
-    staged: 0
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\scripts\buttonMethods.cs
-    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\buttonMethods.cs
-    projectPath: Assets\scripts\buttonMethods.cs
+  - path: Assets\glider.cs
+    fullPath: D:\UNITY\Rope-Glide\Assets\glider.cs
+    projectPath: Assets\glider.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\Booster.cs
+    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\Booster.cs
+    projectPath: Assets\scripts\Booster.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\GameController.cs
+    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\GameController.cs
+    projectPath: Assets\scripts\GameController.cs
     originalPath: 
     status: 3
     staged: 0
@@ -82,9 +82,27 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
-    projectPath: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+  - path: Library\gfu\cache\repoinfo.yaml
+    fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\08\0815acb276965af48801d4db866252b5
+    fullPath: D:\UNITY\Rope-Glide\Library\metadata\08\0815acb276965af48801d4db866252b5
+    projectPath: Library\metadata\08\0815acb276965af48801d4db866252b5
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\13\135862d7de01e3840b56f01765d8af45
+    fullPath: D:\UNITY\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
+    projectPath: Library\metadata\13\135862d7de01e3840b56f01765d8af45
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+    fullPath: D:\UNITY\Rope-Glide\Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+    projectPath: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
     originalPath: 
     status: 3
     staged: 0

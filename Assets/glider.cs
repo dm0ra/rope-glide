@@ -49,7 +49,7 @@ public class glider : MonoBehaviour
             float dragDistance;
                float newRot ;
             float tiltInAngles = Glider.transform.eulerAngles.z;
-            if (gameInput.getInputFlag() == 1)
+            if (gameInput.getInputFlag() == 1 || (gameInput.getInputFlag() == 2 && DB.Booster == 0))//checks if the glider portion of the screen is clicked
             {
 
                 if (firstClick)
