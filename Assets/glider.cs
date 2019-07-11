@@ -47,6 +47,7 @@ public class glider : MonoBehaviour
     }
     public bool GliderActive()
     {
+
         return GlidePressed | TiltDownPressed | TiltUpPressed;
     }
     // Update is called once per frame
