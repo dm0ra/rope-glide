@@ -4,8 +4,8 @@ using UnityEngine;
 
 public static class DB
 {
-    private static int lvlIndex, pi, glider, booster;
-    private static float score, highScore;
+    private static int lvlIndex, pi, glider, booster, runConNum, cash;
+    private static float score, highScore, maxSpeed, maxHeight, runDist;
 
 
     public static float HighScore
@@ -79,6 +79,61 @@ public static class DB
         set
         {
             booster = value;
+        }
+    }
+    public static float MaxSpeed
+    {
+        get
+        {
+            return maxSpeed;
+        }
+        set
+        {
+            maxSpeed = value;
+        }
+    }
+    public static float MaxHeight
+    {
+        get
+        {
+            return maxHeight;
+        }
+        set
+        {
+            maxHeight = value;
+        }
+    }
+    public static float RunDist
+    {
+        get
+        {
+            return runDist;
+        }
+        set
+        {
+            runDist = value;
+        }
+    }
+    public static int RunConNum
+    {
+        get
+        {
+            return runConNum;
+        }
+        set
+        {
+            runConNum = value;
+        }
+    }
+    public static int BankCash
+    {
+        get
+        {
+            return cash;
+        }
+        set
+        {
+            cash = value;
         }
     }
 }

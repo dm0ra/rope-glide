@@ -73,6 +73,7 @@
     <Compile Include="Assets\scripts\CSVParsing.cs" />
     <Compile Include="Assets\scripts\DataSaver.cs" />
     <Compile Include="Assets\scripts\DB.cs" />
+    <Compile Include="Assets\scripts\EndScreenText.cs" />
     <Compile Include="Assets\scripts\GameController.cs" />
     <Compile Include="Assets\scripts\HingeManager.cs" />
     <Compile Include="Assets\scripts\Player.cs" />

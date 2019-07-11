@@ -69,9 +69,10 @@ public class GameController : MonoBehaviour
         Debug.Log("Succsessfully read High score Data ");
 
         //Load the highscore and set highscore upon each life
-        string tempHiScore =  DataSaver.loadData<string>("HighScore");
-        DB.HighScore = float.Parse(tempHiScore);
-             
+        string fileData =  DataSaver.loadData<string>("HighScore");
+        string[] fileLines = fileData.Split('\n');
+        DB.HighScore = float.Parse(fileLines[0]);
+        DB.BankCash = int.Parse(fileLines[1]);
         //Initilize instance variables
 
         xOffset = 19.2f;
@@ -340,22 +341,39 @@ public class GameController : MonoBehaviour
      */
     public void respawnPlayer()
     {
-
         //Player.transform.position = new Vector3(-25, 127, -5);
         //Player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         DB.Score = calculateScore();
-        if(DB.Score > DB.HighScore)
+        DB.MaxSpeed = topSpeed;
+        DB.RunDist = distance;
+        DB.RunConNum = connectionCount;
+        DB.MaxHeight = highestHeight;
+        DB.BankCash = DB.BankCash+((int)DB.Score/10);
+        if (DB.Score > DB.HighScore)
         {
-            //saves highscore to csv file
+            //saves highscore and cash to csv file
             DB.HighScore = scoreCount;
             var csv = new System.Text.StringBuilder();
             var highScoreString = DB.HighScore.ToString();
             var newLine = string.Format(highScoreString);
+            var cashString = DB.BankCash.ToString();
              csv.AppendLine(newLine);
+            csv.AppendLine(cashString);
 
             DataSaver.saveData<string>(csv.ToString(), "HighScore");
              //File.WriteAllText("Data\\HighScore.csv", csv.ToString());
+        }
+        else
+        {
+            //saves highscore and cash to csv file
+            var csv = new System.Text.StringBuilder();
+            var highScoreString = DB.HighScore.ToString();
+            var newLine = string.Format(highScoreString);
+            var cashString = DB.BankCash.ToString();
+            csv.AppendLine(newLine);
+            csv.AppendLine(cashString);
 
+            DataSaver.saveData<string>(csv.ToString(), "HighScore");
         }
         scoreCount = 0;
         //Destroy(Player);
