@@ -311,8 +311,10 @@ public class GameController : MonoBehaviour
                 NextVector = new Vector2(Hinges[x].transform.position.x, Hinges[x].transform.position.y);
                 currDistance = Vector2.Distance(PlayerVector, NextVector);
 
-                if (distanceInQuestion < currDistance)
+                //&& (Player.transform.position.x < Hinges[index].transform.position.x)
+                if (distanceInQuestion < currDistance )
                 {
+                    Debug.Log("player x: " + Player.transform.position.x + "hinge x: " + Hinges[index].transform.position.x);
                     continue;
                 }
                 else

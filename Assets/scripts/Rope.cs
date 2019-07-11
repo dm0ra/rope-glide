@@ -64,7 +64,7 @@ public class Rope : MonoBehaviour
         * of the cloud that is being swung from is the same as the one in the game controller
         * (game.getConnected()), and the game controller has a flag set with (game.GetConnectedFlag()).
         */
-        if (mouseState == 1 &&  index == game.getConnected() && game.GetConnectedFlag())
+        if (mouseState == 1 && index == game.getConnected() && game.GetConnectedFlag())
         {
             //transform.position gives the transform of the gameobject this script 
             // is connected to in the unity editor.
