@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-07-09T16:55:46.666-04:00
-  initializedAtString: 2019-07-09T15:28:09.237-04:00
+  lastUpdatedAtString: 2019-07-11T16:47:59.472-04:00
+  initializedAtString: 2019-07-11T16:38:04.987-04:00
   localBranches:
-  - name: dm0ra_branch
-    tracking: origin/dm0ra_branch
   - name: master
     tracking: origin/master
   remoteBranches:
+  - name: origin/Andrea
+    tracking: '[None]'
   - name: origin/dm0ra_branch
     tracking: '[None]'
-  - name: origin/master
+  - name: origin/HEAD
     tracking: '[None]'
   remotes:
   - name: origin
-    url: https://github.com/dm0ra/Rope-Glide.git
+    url: https://github.com/dm0ra/Rope-Glide
     login: 
     user: 
     host: 
@@ -35,41 +35,41 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
-    - dm0ra_branch
     - master
     values:
-    - name: dm0ra_branch
-      remote:
-        name: origin
-        url: https://github.com/dm0ra/Rope-Glide.git
-      trackingBranch: dm0ra_branch
     - name: master
       remote:
         name: origin
-        url: https://github.com/dm0ra/Rope-Glide.git
+        url: https://github.com/dm0ra/Rope-Glide
       trackingBranch: master
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
+      - Andrea
       - dm0ra_branch
-      - master
+      - HEAD
     subKeyValues:
     - Values:
+      - name: Andrea
+        remote:
+          name: origin
+          url: https://github.com/dm0ra/Rope-Glide
+        trackingBranch: 
       - name: dm0ra_branch
         remote:
           name: origin
-          url: https://github.com/dm0ra/Rope-Glide.git
+          url: https://github.com/dm0ra/Rope-Glide
         trackingBranch: 
-      - name: master
+      - name: HEAD
         remote:
           name: origin
-          url: https://github.com/dm0ra/Rope-Glide.git
+          url: https://github.com/dm0ra/Rope-Glide
         trackingBranch: 
   configRemotes:
     keys:
     - origin
     values:
     - name: origin
-      url: https://github.com/dm0ra/Rope-Glide.git
+      url: https://github.com/dm0ra/Rope-Glide

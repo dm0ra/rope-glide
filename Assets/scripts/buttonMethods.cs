@@ -39,34 +39,36 @@ public class buttonMethods : MonoBehaviour
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
 
             // Create the Text GameObject.
-            GameObject textGO = new GameObject();
-            textGO.transform.parent = canvasGO.transform;
-            textGO.AddComponent<Text>();
+            //GameObject textGO = new GameObject();
+            //textGO.transform.parent = canvasGO.transform;
+            //textGO.AddComponent<Text>();
 
-            GameObject textGO1 = new GameObject();
-            textGO1.transform.parent = canvasGO.transform;
-            textGO1.AddComponent<Text>();
+            //GameObject textGO1 = new GameObject();
+            //textGO1.transform.parent = canvasGO.transform;
+            //textGO1.AddComponent<Text>();
 
             // Set Text component properties.
-            score = textGO.GetComponent<Text>();
-            score.font = arial;
-            score.fontSize = 24;
-            score.alignment = TextAnchor.MiddleCenter;
-            score.color = Color.black;
+            //score = textGO.GetComponent<Text>();
+            //score.font = arial;
+            //score.fontSize = 24;
+            //score.alignment = TextAnchor.MiddleCenter;
+            //score.color = Color.black;
 
             // Provide Text position and size using RectTransform.
-            score.transform.position = new Vector3(460, 410, -5);
-            score.text = "Score: " + DB.Score;
+            //score.transform.position = new Vector3(460, 410, -5);
+            //score.text = "Score: " + DB.Score;
             
-            highScore = textGO1.GetComponent<Text>();
-            highScore.font = arial;
-            highScore.fontSize = 24;
-            highScore.alignment = TextAnchor.MiddleCenter;
-            highScore.color = Color.black;
+            //highScore = textGO1.GetComponent<Text>();
+            //highScore.font = arial;
+            //highScore.fontSize = 24;
+            //highScore.alignment = TextAnchor.MiddleCenter;
+            //highScore.color = Color.black;
 
             // Provide Text position and size using RectTransform.
-            highScore.transform.position = new Vector3(460, 315, -5);
-            highScore.text = "High Score: " + DB.HighScore;
+            //highScore.transform.position = new Vector3(460, 315, -5);
+            //highScore.text = "High Score: " + DB.HighScore;
+
+            
             
 
         }
