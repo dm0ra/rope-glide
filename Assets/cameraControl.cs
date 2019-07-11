@@ -101,7 +101,7 @@ public class cameraControl : MonoBehaviour
 
             if(Random.Range(0,10) < enemySpawnChance)
             {
-                //GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+                GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
             }
 
 
@@ -145,7 +145,7 @@ public class cameraControl : MonoBehaviour
 
                 if (Random.Range(0,10) < enemySpawnChance)//generates mace with enemySpawnChance/10 chance
                 {
-                   // GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+                    GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
                 }
 
 

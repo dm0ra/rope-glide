@@ -311,7 +311,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 127603982}
-        m_MethodName: mainMenuPlay
+        m_MethodName: gotoPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -375,6 +375,7 @@ MonoBehaviour:
   game: {fileID: 0}
   score: {fileID: 0}
   highScore: {fileID: 0}
+  previewIndex: 0
 --- !u!1 &129375013
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,7 +768,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ligma
+  m_Text: Upgrades
 --- !u!222 &204482730
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1015,6 +1016,7 @@ GameObject:
   - component: {fileID: 649355046}
   - component: {fileID: 649355045}
   - component: {fileID: 649355044}
+  - component: {fileID: 649355047}
   m_Layer: 0
   m_Name: Settings
   m_TagString: Untagged
@@ -1081,7 +1083,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 649355045}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 649355047}
+        m_MethodName: gotoUpgrades
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &649355045
@@ -1121,6 +1134,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649355042}
   m_CullTransparentMesh: 0
+--- !u!114 &649355047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649355042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fab313a20f661b245bad8b8d998b093c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game: {fileID: 0}
+  score: {fileID: 0}
+  highScore: {fileID: 0}
+  previewIndex: 0
 --- !u!1 &884283422
 GameObject:
   m_ObjectHideFlags: 0

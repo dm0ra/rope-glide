@@ -21,7 +21,11 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 398}
+=======
+  m_MinSize: {x: 950, y: 300}
+>>>>>>> origin/dm0ra_branch
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -109,12 +113,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1504
     height: 879
+=======
+    width: 1920
+    height: 947
+>>>>>>> origin/dm0ra_branch
   m_MinSize: {x: 681, y: 348}
   m_MaxSize: {x: 12006, y: 8048}
   vertical: 0
-  controlID: 27
+  controlID: 10
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,12 +143,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1065
     height: 879
   m_MinSize: {x: 404, y: 348}
   m_MaxSize: {x: 8004, y: 8048}
+=======
+    width: 1360
+    height: 947
+  m_MinSize: {x: 406, y: 348}
+  m_MaxSize: {x: 8006, y: 8048}
+>>>>>>> origin/dm0ra_branch
   vertical: 1
-  controlID: 28
+  controlID: 11
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,12 +175,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1065
     height: 533
   m_MinSize: {x: 404, y: 224}
   m_MaxSize: {x: 8004, y: 4024}
+=======
+    width: 1360
+    height: 575
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
+>>>>>>> origin/dm0ra_branch
   vertical: 0
-  controlID: 29
+  controlID: 12
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -182,8 +205,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 319
     height: 533
+=======
+    width: 408
+    height: 575
+>>>>>>> origin/dm0ra_branch
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
@@ -208,17 +236,25 @@ MonoBehaviour:
     serializedVersion: 2
     x: 319
     y: 0
+<<<<<<< HEAD
     width: 746
     height: 533
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 13}
+=======
+    width: 952
+    height: 575
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+>>>>>>> origin/dm0ra_branch
   m_Panes:
   - {fileID: 13}
   - {fileID: 15}
   - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -235,11 +271,19 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 533
     width: 1065
     height: 346
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    y: 575
+    width: 1360
+    height: 372
+  m_MinSize: {x: 102, y: 124}
+  m_MaxSize: {x: 4002, y: 4024}
+>>>>>>> origin/dm0ra_branch
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
@@ -263,10 +307,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1065
     y: 0
+<<<<<<< HEAD
     width: 439
     height: 879
   m_MinSize: {x: 277, y: 74}
   m_MaxSize: {x: 4002, y: 4024}
+=======
+    width: 560
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> origin/dm0ra_branch
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -325,10 +376,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 319.33334
     y: 72.66667
     width: 742
     height: 513
+=======
+    x: 408
+    y: 73
+    width: 948
+    height: 555
+>>>>>>> origin/dm0ra_branch
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 867b10cde57532445941c9442d5f5e1d
   m_SceneLighting: 1
@@ -336,9 +394,15 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 313.34482, y: 615.9847, z: -11.843261}
     speed: 2
     m_Value: {x: 313.34482, y: 615.9847, z: -11.843261}
+=======
+    m_Target: {x: 19.633047, y: 25.612438, z: -1.1018089}
+    speed: 2
+    m_Value: {x: 19.633047, y: 25.612438, z: -1.1018089}
+>>>>>>> origin/dm0ra_branch
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -368,11 +432,17 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: -1}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: -1}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 1253.1411
     speed: 2
     m_Value: 1253.1411
+=======
+    m_Target: 155.99017
+    speed: 2
+    m_Value: 155.99017
+>>>>>>> origin/dm0ra_branch
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -406,16 +476,26 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 72.66667
     width: 317
     height: 513
+=======
+    y: 73
+    width: 406
+    height: 555
+>>>>>>> origin/dm0ra_branch
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 74fbffffc0fbffff
+=======
+      m_ExpandedIDs: b0fbffff
+>>>>>>> origin/dm0ra_branch
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -460,10 +540,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 319.33334
     y: 72.66667
     width: 742
     height: 513
+=======
+    x: 408
+    y: 73
+    width: 948
+    height: 555
+>>>>>>> origin/dm0ra_branch
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -475,10 +562,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -371
     m_HBaseRangeMax: 371
     m_VBaseRangeMin: -248
     m_VBaseRangeMax: 248
+=======
+    m_HBaseRangeMin: -474
+    m_HBaseRangeMax: 474
+    m_VBaseRangeMin: -269
+    m_VBaseRangeMax: 269
+>>>>>>> origin/dm0ra_branch
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -496,25 +590,43 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
       width: 742
       height: 496
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 371, y: 248}
+=======
+      width: 948
+      height: 538
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 474, y: 269}
+>>>>>>> origin/dm0ra_branch
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -371
       y: -248
       width: 742
       height: 496
+=======
+      x: -474
+      y: -269
+      width: 948
+      height: 538
+>>>>>>> origin/dm0ra_branch
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1113, y: 769.5}
+=======
+  m_LastWindowPixelSize: {x: 948, y: 555}
+>>>>>>> origin/dm0ra_branch
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -540,9 +652,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 379
+    x: 408
     y: 73
-    width: 1148
+    width: 948
     height: 553
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &17
@@ -566,10 +678,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 6
     y: 582.6667
     width: 1052
     height: 316
+=======
+    x: 0
+    y: 648
+    width: 1358
+    height: 352
+>>>>>>> origin/dm0ra_branch
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -583,20 +702,35 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Resources
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
   - Assets/Resources
+=======
+    - Assets/Free 2D Adventure Beach Pack/night-backgrounds
+  m_ViewMode: 1
+  m_StartGridSize: 57
+  m_LastFolders:
+  - Assets/Free 2D Adventure Beach Pack/night-backgrounds
+>>>>>>> origin/dm0ra_branch
   m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\bluhm\Documents\Rope-Glide
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 1243}
     m_SelectedIDs: 942e0000
     m_LastClickedID: 11924
     m_ExpandedIDs: 00000000ec260000ee2700001a290000ae290000b0290000fe290000f82a0000d02b0000422f0000ce2f0000843300009233000098330000b4330000fc3300006e3700009c370000f8370000083800003e380000603900004e3a0000aa3a000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 1153}
+    m_SelectedIDs: c4370000
+    m_LastClickedID: 14276
+    m_ExpandedIDs: 00000000a4280000a8290000d42a0000682b00006a2b0000b82b0000b22c00008a2d0000fe3000008a310000403500004e3500005435000070350000b83500002a39000058390000b4390000c4390000fa3900001c3b00000a3c0000663c000000ca9a3b
+>>>>>>> origin/dm0ra_branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -624,7 +758,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ec260000ee2700001a290000ae290000b0290000fe290000f82a0000d02b0000422f0000ce2f0000843300009233000098330000b4330000fc3300006e3700009c370000f8370000083800003e380000603900004e3a0000aa3a0000
+=======
+    m_ExpandedIDs: 00000000a4280000a8290000d42a0000682b00006a2b0000b82b0000b22c00008a2d0000fe3000008a310000403500004e3500005435000070350000b83500002a39000058390000b4390000c4390000fa3900001c3b00000a3c0000663c0000
+>>>>>>> origin/dm0ra_branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -649,10 +787,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: d43b0000
     m_LastClickedInstanceID: 15316
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000c222000012370000
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c623000000000000c22200001237000096370000
+>>>>>>> origin/dm0ra_branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -701,9 +846,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 606
     width: 1063
     height: 326
+=======
+    y: 648
+    width: 1358
+    height: 352
+>>>>>>> origin/dm0ra_branch
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &19
 MonoBehaviour:

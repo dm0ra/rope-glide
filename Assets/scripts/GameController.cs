@@ -32,6 +32,8 @@ public class GameController : MonoBehaviour
     public GameObject Player;
     /* Object to hold a booster when upgraded */
     public GameObject Booster;
+    /*Object to hold preview images in upgrade menu */
+    //public GameObject boosterImage, gliderImage;
     /* Flag that is set when the player is connected to a cloud */
     public bool Connected;
     /* SceneSwitch controlls the switching of menus */
@@ -93,6 +95,12 @@ public class GameController : MonoBehaviour
         //Freeze the player upon each life. Taping or clicking makes the player start moving
         Player.GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
         Player.GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionY;
+
+        //links preview images for booster and glider then deactivates them
+        //gliderImage = GameObject.FindWithTag("GliderImage");
+        //boosterImage = GameObject.FindWithTag("BoosterImage");
+        //gliderImage.SetActive(false);
+        //boosterImage.SetActive(false);
     }
 
     //Runs once a frame
@@ -370,12 +378,12 @@ public class GameController : MonoBehaviour
     //See which upgrades have been puchesed and spawn them in
     public void upgradeMenuActions()
     {
-        if (Upgrades.Glider == 1)
+        if (DB.Glider == 1)
         {
             GameObject gldr = Instantiate(Resources.Load("Glider", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject; 
                 
         }
-        if(Upgrades.Booster == 1)
+        if(DB.Booster == 1)
         {
             GameObject Booster = Instantiate(Resources.Load("Booster", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
         }

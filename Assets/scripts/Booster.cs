@@ -14,7 +14,7 @@ public class Booster : MonoBehaviour
     private float a = 3000f;//acceleration constant
     private static int fuelMax = 100;//maximum fuel for booster
     private int fuel;//amount of fuel left
-    private static int fuelUseRate = 2;//usage rate of fuel
+    private static int fuelUseRate = 3;//usage rate of fuel
     private float playerXDelta;
     private float playerYDelta;
     private Vector3 playerDelta;
@@ -36,7 +36,7 @@ public class Booster : MonoBehaviour
     {
         //maps booster to player
         //Debug.Log(Player.transform.position.x);
-        if(Upgrades.Booster == 1)
+        if(DB.Booster == 1)
         {
             playerDelta.z = Player.transform.position.z;
         }
@@ -48,7 +48,7 @@ public class Booster : MonoBehaviour
         //Debug.Log("Yeett");
         //LastMousePosX = Input.mousePosition.x;
         refuel();//refuels if needed
-        if (gameInput.getInputFlag() == 2 && Upgrades.Booster == 1)//if click and upgrade is selected
+        if (gameInput.getInputFlag() == 2 && DB.Booster == 1)//if click and upgrade is selected and there is fuel left
         {
             accelerateYVelocity();//accelerates player
         }
@@ -56,14 +56,14 @@ public class Booster : MonoBehaviour
 
     int accelerateYVelocity()//boosts player up
     {
-        Debug.Log("Fuel: " + fuel);
+        Debug.Log("lift off");
 
         if(fuel >= 0)//checks if there is fuel left
         {
             //Player.GetComponent<Rigidbody2D>().velocity.y += a;
             //Debug.Log(Player.GetComponent<Rigidbody2D>().velocity.y);
             Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, a));
-            fuel-= fuelUseRate;//reduces fuel
+            fuel -= fuelUseRate;//reduces fuel
         }
 
         return 1;
