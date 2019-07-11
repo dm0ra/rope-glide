@@ -52,6 +52,7 @@ public class glider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+ 
         float tilt = 1f;
         float drag = 0.1f;
         float dragDistance;
@@ -59,13 +60,17 @@ public class glider : MonoBehaviour
         float tiltInAngles = Glider.transform.eulerAngles.z;
 
         //If the right side of the screen is being touched
-        if (gameInput.getInputFlag() == 1)
+        if (gameInput.getInputFlag() == 1 || (gameInput.getInputFlag() == 2 && DB.Booster == 0))
         {
             // Save the position of the first click
             if (firstClick)
             {
                 LastMousePosX = Input.mousePosition.x;
             }
+
+         
+      
+        
 
             firstClick = false;
             //Every frame update the glider position to the player position plus <2,5,0>

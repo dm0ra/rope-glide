@@ -296,20 +296,19 @@ public class GameController : MonoBehaviour
     public bool IsHingeClosest(int index)
     {
         bool ret = true;
-        float currDistance;
-        float distanceInQuestion;
-        Vector2 NextVector;
-        Vector2 PlayerVector = new Vector2(Player.transform.position.x, Player.transform.position.y);
-        Vector2 HingeVector = new Vector2(Hinges[index].transform.position.x, Hinges[index].transform.position.y);
+        float currDistance;//current distance
+        float distanceInQuestion;//distance of hinge in question
+        Vector2 NextVector;//next hinge to look at
+        Vector2 PlayerVector = new Vector2(Player.transform.position.x, Player.transform.position.y);//gets player 2d vector
+        Vector2 HingeVector = new Vector2(Hinges[index].transform.position.x, Hinges[index].transform.position.y);//gets the current hinge 2d vector
 
-        distanceInQuestion = Vector2.Distance(PlayerVector, HingeVector);
+        distanceInQuestion = Vector2.Distance(PlayerVector, HingeVector);//finds the distance between the current hinge and the play
 
-        for (int x = 0; x < Hinges.Count; x++)
+        for (int x = 0; x < Hinges.Count; x++)//loops through all the hinges
         {
-            if (x != index)
+            if (x != index)//makes sure not to check the current hinge in question
             {
                 NextVector = new Vector2(Hinges[x].transform.position.x, Hinges[x].transform.position.y);
-
                 currDistance = Vector2.Distance(PlayerVector, NextVector);
 
                 if (distanceInQuestion < currDistance)
