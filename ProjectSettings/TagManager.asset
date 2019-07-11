@@ -8,6 +8,12 @@ TagManager:
   - Glider
   - cloud
   - Booster
+  - UpgradeMenuCanvas
+  - upgradePriceText
+  - upgradeDescriptionText
+  - upgradePurchaseButtonText
+  - BoosterImage
+  - GliderImage
   layers:
   - Default
   - TransparentFX

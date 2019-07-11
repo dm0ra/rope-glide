@@ -13,12 +13,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-10T14:56:26.646-04:00
-  initializedAtString: 2019-07-10T14:41:00.209-04:00
+  lastUpdatedAtString: 2019-07-11T14:59:48.331-04:00
+  initializedAtString: 2019-07-11T14:11:15.515-04:00
   entries:
   - path: .vs\Rope-Glide\v15\.suo
     fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\.suo
     projectPath: .vs\Rope-Glide\v15\.suo
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
+    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide
+    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
     originalPath: 
     status: 3
     staged: 0
@@ -34,9 +40,21 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\InputClass.cs
-    fullPath: D:\UNITY\Rope-Glide\Assets\InputClass.cs
-    projectPath: Assets\InputClass.cs
+  - path: Assets\Resources\Booster Image.prefab
+    fullPath: D:\UNITY\Rope-Glide\Assets\Resources\Booster Image.prefab
+    projectPath: Assets\Resources\Booster Image.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\Booster Image.prefab.meta
+    fullPath: D:\UNITY\Rope-Glide\Assets\Resources\Booster Image.prefab.meta
+    projectPath: Assets\Resources\Booster Image.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\Upgrade Menu.unity
+    fullPath: D:\UNITY\Rope-Glide\Assets\Scenes\Upgrade Menu.unity
+    projectPath: Assets\Scenes\Upgrade Menu.unity
     originalPath: 
     status: 3
     staged: 0
@@ -52,41 +70,11 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\scripts\Rope.cs
-    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\Rope.cs
-    projectPath: Assets\scripts\Rope.cs
+  - path: Assets\scripts\GameController.cs
+    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\GameController.cs
+    projectPath: Assets\scripts\GameController.cs
     originalPath: 
     status: 3
-    staged: 0
-  - path: Assets\Tests.meta
-    fullPath: D:\UNITY\Rope-Glide\Assets\Tests.meta
-    projectPath: Assets\Tests.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: Assets\Tests\test1.cs
-    fullPath: D:\UNITY\Rope-Glide\Assets\Tests\test1.cs
-    projectPath: Assets\Tests\test1.cs
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: Assets\Tests\test1.cs.meta
-    fullPath: D:\UNITY\Rope-Glide\Assets\Tests\test1.cs.meta
-    projectPath: Assets\Tests\test1.cs.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: Assets\Tests\Tests.asmdef
-    fullPath: D:\UNITY\Rope-Glide\Assets\Tests\Tests.asmdef
-    projectPath: Assets\Tests\Tests.asmdef
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: Assets\Tests\Tests.asmdef.meta
-    fullPath: D:\UNITY\Rope-Glide\Assets\Tests\Tests.asmdef.meta
-    projectPath: Assets\Tests\Tests.asmdef.meta
-    originalPath: 
-    status: 5
     staged: 0
   - path: Library\assetDatabase3
     fullPath: D:\UNITY\Rope-Glide\Library\assetDatabase3
@@ -97,12 +85,6 @@ MonoBehaviour:
   - path: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     fullPath: D:\UNITY\Rope-Glide\Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     projectPath: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\CurrentLayout.dwlt
-    fullPath: D:\UNITY\Rope-Glide\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
     originalPath: 
     status: 3
     staged: 0
@@ -142,21 +124,21 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: Library\InspectorExpandedItems.asset
+    fullPath: D:\UNITY\Rope-Glide\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\08\0815acb276965af48801d4db866252b5
+    fullPath: D:\UNITY\Rope-Glide\Library\metadata\08\0815acb276965af48801d4db866252b5
+    projectPath: Library\metadata\08\0815acb276965af48801d4db866252b5
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Library\metadata\13\135862d7de01e3840b56f01765d8af45
     fullPath: D:\UNITY\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
     projectPath: Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
-    projectPath: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
-    projectPath: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
     originalPath: 
     status: 3
     staged: 0
@@ -183,6 +165,12 @@ MonoBehaviour:
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
     status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+    originalPath: 
+    status: 5
     staged: 0
   - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
     fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
@@ -232,9 +220,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Rope-Glide.sln
-    fullPath: D:\UNITY\Rope-Glide\Rope-Glide.sln
-    projectPath: Rope-Glide.sln
+  - path: ProjectSettings\TagManager.asset
+    fullPath: D:\UNITY\Rope-Glide\ProjectSettings\TagManager.asset
+    projectPath: ProjectSettings\TagManager.asset
     originalPath: 
     status: 3
     staged: 0
