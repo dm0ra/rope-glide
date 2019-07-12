@@ -13,9 +13,177 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2019-07-11T18:57:02.090-04:00
-  initializedAtString: 2019-07-11T18:02:12.183-04:00
+  lastUpdatedAtString: 2019-07-11T19:59:36.970-04:00
+  initializedAtString: 2019-07-11T19:59:36.970-04:00
   log:
+  - commitID: 9f6c72ba63424881e39bc84a0fea050d2fc67d4c
+    mergeA: 
+    mergeB: 
+    authorName: Jacob Bluhm
+    authorEmail: bluhmj96@gmail.com
+    commitEmail: bluhmj96@gmail.com
+    commitName: Jacob Bluhm
+    summary: Fixed issue where booster was active before being purchased.
+    description: 
+    timeString: 2019-07-11T19:48:13.000-04:00
+    commitTimeString: 2019-07-11T19:48:13.000-04:00
+    changes:
+    - path: .vs\Rope-Glide\v15\.suo
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\.suo
+      projectPath: .vs\Rope-Glide\v15\.suo
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
+      projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
+      projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\glider.cs
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\glider.cs
+      projectPath: Assets\glider.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Assets\scripts\Booster.cs
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Booster.cs
+      projectPath: Assets\scripts\Booster.cs
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
+      projectPath: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\CurrentLayout.dwlt
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\CurrentLayout.dwlt
+      projectPath: Library\CurrentLayout.dwlt
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\LastSceneManagerSetup.txt
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\LastSceneManagerSetup.txt
+      projectPath: Library\LastSceneManagerSetup.txt
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\assetDatabase3
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\metadata\13\135862d7de01e3840b56f01765d8af45
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
+      projectPath: Library\metadata\13\135862d7de01e3840b56f01765d8af45
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+      projectPath: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+      projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+      projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: obj\Debug\Assembly-CSharp.dll
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.dll
+      projectPath: obj\Debug\Assembly-CSharp.dll
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: obj\Debug\Assembly-CSharp.pdb
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.pdb
+      projectPath: obj\Debug\Assembly-CSharp.pdb
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+      fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+      projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+      originalPath: 
+      status: 3
+      staged: 0
   - commitID: 1a3aaaf9eccdf4a0159de4b282b6c2338f5680d7
     mergeA: a434e22c79cc3ab72e4aa8834450abb11c8a02b8
     mergeB: 9f906f5c1eef1b8aca7a270be873d2a9537b5b33

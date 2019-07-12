@@ -13,15 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-11T19:44:52.346-04:00
+  lastUpdatedAtString: 2019-07-11T20:18:25.808-04:00
   initializedAtString: 2019-07-11T19:44:51.693-04:00
   entries:
-  - path: .vs\Rope-Glide\v15\.suo
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\.suo
-    projectPath: .vs\Rope-Glide\v15\.suo
-    originalPath: 
-    status: 3
-    staged: 0
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
@@ -34,15 +28,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\glider.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\glider.cs
-    projectPath: Assets\glider.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\scripts\Booster.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Booster.cs
-    projectPath: Assets\scripts\Booster.cs
+  - path: Assets\cameraControl.cs
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\cameraControl.cs
+    projectPath: Assets\cameraControl.cs
     originalPath: 
     status: 3
     staged: 0
@@ -55,12 +43,6 @@ MonoBehaviour:
   - path: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     projectPath: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\CurrentLayout.dwlt
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
     originalPath: 
     status: 3
     staged: 0
@@ -100,21 +82,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\LastSceneManagerSetup.txt
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    projectPath: Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
-    projectPath: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+  - path: Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
+    projectPath: Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
     originalPath: 
     status: 3
     staged: 0
@@ -133,42 +103,6 @@ MonoBehaviour:
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.dll
-    projectPath: obj\Debug\Assembly-CSharp.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp.pdb
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.pdb
-    projectPath: obj\Debug\Assembly-CSharp.pdb
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
     originalPath: 
     status: 3
     staged: 0

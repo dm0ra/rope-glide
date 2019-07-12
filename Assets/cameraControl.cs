@@ -130,12 +130,12 @@ public class cameraControl : MonoBehaviour
             if ((Count100s % 3) == 0)
             {
                 GameObject block2 = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-                block2.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(450 - 60, 292 + 10), -5);
+                block2.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(450 - 50, 450 + 50), -5);
             }
             if ((Count100s % 4) == 0)
             {
                 GameObject block3 = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-                block3.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(680 - 80, 292 + 15), -5);
+                block3.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(680 - 50, 680 + 50), -5);
 
             }//Count100s = 0;
                 //Object prefab1 = AssetDatabase.LoadAssetAtPath("Assets/prefab/Sky_.prefab", typeof(GameObject));
@@ -149,14 +149,7 @@ public class cameraControl : MonoBehaviour
                 }
 
 
-             //   GameObject skyred = Instantiate(Resources.Load("Sky_Red", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-             //   skyred.transform.position = new Vector3(startPos + 290, 258.4f, 0);
-                // GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-
-                //Count100s = 0;
-                //Object prefab2 = AssetDatabase.LoadAssetAtPath("Assets/prefab/Ground.prefab", typeof(GameObject));
-            //    GameObject ground = Instantiate(Resources.Load("Ground", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-            //    ground.transform.position = new Vector3(startPos + 295, 55.0f, 0);
+ 
 
                 if(Random.Range(0,10) > boostSpawnChance)
                 {
