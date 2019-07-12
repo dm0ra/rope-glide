@@ -18,6 +18,7 @@ public class Booster : MonoBehaviour
     private float playerXDelta;
     private float playerYDelta;
     private Vector3 playerDelta;
+    public int boosterPrice;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,7 @@ public class Booster : MonoBehaviour
         //booster.transform.position = Player.transform.position + new Vector3(0, 10, 0);
         playerDelta = Player.transform.position - this.transform.position;//sets delta of player and booster
         playerDelta.z = Player.transform.position.z - 100;//sets z position
+        boosterPrice = 100;
     }
 
     // Update is called once per frame

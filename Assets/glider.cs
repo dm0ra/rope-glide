@@ -28,6 +28,8 @@ public class glider : MonoBehaviour
     /* Csv file for drag and lift coefficents given an angle */
     CSVParsing CoefData;
 
+    public int gliderPrice;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +45,8 @@ public class glider : MonoBehaviour
         Player.transform.eulerAngles = new Vector3(0, 0, startAngle);
         Glider.transform.eulerAngles = new Vector3(65, 0, 80 + startAngle);
         LastMousePosX = 0f;
-        gameInput = GameObject.FindWithTag("MainCamera").GetComponent<InputClass>(); 
+        gameInput = GameObject.FindWithTag("MainCamera").GetComponent<InputClass>();
+        gliderPrice = 100;
     }
     public bool GliderActive()
     {
