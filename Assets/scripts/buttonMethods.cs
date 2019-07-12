@@ -15,9 +15,10 @@ public class buttonMethods : MonoBehaviour
     //1 = glider, 2 = booster
 
     private GameObject purchaseButton, upgradeDescription, upgradePrice, boosterImage, gliderImage, upgradeMenuCanvas, gameController, userCash;//these are gameobjects of the text boxes in the upgrade menu screen as well as preview images
-
-    private string boosterPrice = "Price:   420 Cash";
-    private string gliderPrice = "Price:    1234 Cash";
+    private int bPrice = 100;//sets price for booster
+    private int gPrice = 100;//sets price for glider
+    private string boosterPrice;
+    private string gliderPrice;
     private string unpurchasedText = "Buy";
     private string purchasedText = "Purchased";
     private string cashString = "Cash: ";
@@ -38,9 +39,11 @@ public class buttonMethods : MonoBehaviour
         gliderImage = GameObject.FindWithTag("GliderImage");
         boosterImage = GameObject.FindWithTag("BoosterImage");
         userCash = GameObject.FindWithTag("UserCash");//text box to display a users cash
+        boosterPrice = "Price:   " + bPrice + " Cash";
+        gliderPrice = "Price:    " + gPrice + " Cash";
         
         //gliderImage.SetActive(false);
-        //game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+
 
         //boosterImage = game.boosterImage;
         //gliderImage = game.gliderImage;
@@ -106,10 +109,11 @@ public class buttonMethods : MonoBehaviour
         //checkForEnter();
         if (SceneManager.GetActiveScene().buildIndex == 4 && firstRun)
         {
-            setComponentText(userCash, cashString + "user cash here");//updates the cash string
+            setComponentText(userCash, cashString + DB.BankCash);//updates the cash string
             gliderImage.SetActive(false);
             boosterImage.SetActive(false);
             firstRun = false;
+
         }
     }
 
@@ -195,21 +199,48 @@ public class buttonMethods : MonoBehaviour
     public void purchase()
     {
         //Debug.Log(previewIndex);
-        if(DB.PreviewIndex == 1)//checks which item is being previewed
+        if(DB.PreviewIndex == 1 && DB.BankCash > gPrice && DB.Glider != 1)//checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased
         {
             DB.Glider = 1;//sets glider purchased flag
+            DB.BankCash -= gPrice;//decreases cash
             Debug.Log("Glider Purchased");
             setComponentText(purchaseButton, purchasedText);//sets the text of the button to a purchased message
+
+            //saves highscore and cash to csv file
+            var csv = new System.Text.StringBuilder();
+            var highScoreString = DB.HighScore.ToString();
+            var newLine = string.Format(highScoreString);
+            var cashString = DB.BankCash.ToString();
+            var glideString = DB.Glider.ToString();
+            var boostString = DB.Booster.ToString();
+            csv.AppendLine(newLine);
+            csv.AppendLine(cashString);
+            csv.AppendLine(glideString);
+            csv.AppendLine(boostString);
+            DataSaver.saveData<string>(csv.ToString(), "HighScore");
         }
 
-        if(DB.PreviewIndex == 2)//checks which item is being previewed
+        if(DB.PreviewIndex == 2 && DB.BankCash > bPrice && DB.Booster != 1)//checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased
         {
             DB.Booster = 1;//sets booster purchased flag
+            DB.BankCash -= bPrice;//decreases cash 
             Debug.Log("Booster Purchased");
             setComponentText(purchaseButton, purchasedText);//sets the text of the button to a purchased message
+            //saves highscore and cash to csv file
+            var csv = new System.Text.StringBuilder();
+            var highScoreString = DB.HighScore.ToString();
+            var newLine = string.Format(highScoreString);
+            var cashString = DB.BankCash.ToString();
+            var glideString = DB.Glider.ToString();
+            var boostString = DB.Booster.ToString();
+            csv.AppendLine(newLine);
+            csv.AppendLine(cashString);
+            csv.AppendLine(glideString);
+            csv.AppendLine(boostString);
+            DataSaver.saveData<string>(csv.ToString(), "HighScore");
         }
 
-        setComponentText(userCash, cashString + "Cash variable here");//updates new cash variable
+        setComponentText(userCash, cashString + DB.BankCash);//updates new cash variable
     }
 
     public void gotoMainMenu()

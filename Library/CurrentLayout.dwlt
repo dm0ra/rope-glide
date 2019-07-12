@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 224}
   m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
-  controlID: 97
+  controlID: 12
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,13 +265,13 @@ MonoBehaviour:
     height: 541
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,19 +336,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/scripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/scripts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\bluhm\Documents\Rope-Glide
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1283}
-    m_SelectedIDs: 7e3b0000
-    m_LastClickedID: 15230
+    scrollPos: {x: 0, y: 143}
+    m_SelectedIDs: ec260000
+    m_LastClickedID: 9964
     m_ExpandedIDs: 00000000ec260000f02700001c290000b0290000b2290000002a0000fa2a0000d22b0000442f0000d02f000086330000943300009a330000b6330000fe330000703700009e370000fa3700000a3800004038000062390000503a0000ac3a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -554,9 +554,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -12.860001, y: 203.63, z: -3.408578}
+    m_Target: {x: 213.95447, y: 456.90704, z: -17.5}
     speed: 2
-    m_Value: {x: -12.860001, y: 203.63, z: -3.408578}
+    m_Value: {x: 213.95447, y: 456.90704, z: -17.5}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -586,11 +586,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: -1}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: -1}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 19.453661
+    m_Target: 1430.8501
     speed: 2
-    m_Value: 19.453661
+    m_Value: 1430.8501
   m_Ortho:
     m_Target: 1
     speed: 2

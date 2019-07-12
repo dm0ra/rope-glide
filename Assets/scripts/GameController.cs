@@ -66,13 +66,15 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        Debug.Log("Succsessfully read High score Data ");
+        //Debug.Log("Succsessfully read High score Data ");
 
         //Load the highscore and set highscore upon each life
         string fileData =  DataSaver.loadData<string>("HighScore");
         string[] fileLines = fileData.Split('\n');
         DB.HighScore = float.Parse(fileLines[0]);
         DB.BankCash = int.Parse(fileLines[1]);
+        DB.Glider = int.Parse(fileLines[2]);
+        DB.Booster = int.Parse(fileLines[3]);
         //Initilize instance variables
 
         xOffset = 19.2f;
@@ -332,7 +334,6 @@ public class GameController : MonoBehaviour
     {
         return new Vector3(Hinges[index].Hinge.transform.position.x - xOffset, Hinges[index].Hinge.transform.position.y - yOffset,
             Hinges[index].Hinge.transform.position.z);
-
     }
 
     
@@ -353,27 +354,16 @@ public class GameController : MonoBehaviour
         {
             //saves highscore and cash to csv file
             DB.HighScore = scoreCount;
-            var csv = new System.Text.StringBuilder();
-            var highScoreString = DB.HighScore.ToString();
-            var newLine = string.Format(highScoreString);
-            var cashString = DB.BankCash.ToString();
-             csv.AppendLine(newLine);
-            csv.AppendLine(cashString);
+            writeData();
 
-            DataSaver.saveData<string>(csv.ToString(), "HighScore");
+            
              //File.WriteAllText("Data\\HighScore.csv", csv.ToString());
         }
         else
         {
-            //saves highscore and cash to csv file
-            var csv = new System.Text.StringBuilder();
-            var highScoreString = DB.HighScore.ToString();
-            var newLine = string.Format(highScoreString);
-            var cashString = DB.BankCash.ToString();
-            csv.AppendLine(newLine);
-            csv.AppendLine(cashString);
+            writeData();
 
-            DataSaver.saveData<string>(csv.ToString(), "HighScore");
+            //DataSaver.saveData<string>(csv.ToString(), "HighScore");
         }
         scoreCount = 0;
         //Destroy(Player);
@@ -385,6 +375,22 @@ public class GameController : MonoBehaviour
         DB.LvlIndex = 2;
         sceneSwitcher.switchScenes(2);
         //SceneManager.LoadScene(2);
+    }
+
+    public void writeData()
+    {
+        //saves highscore and cash to csv file
+        var csv = new System.Text.StringBuilder();
+        var highScoreString = DB.HighScore.ToString();
+        var newLine = string.Format(highScoreString);
+        var cashString = DB.BankCash.ToString();
+        var glideString = DB.Glider.ToString();
+        var boostString = DB.Booster.ToString();
+        csv.AppendLine(newLine);
+        csv.AppendLine(cashString);
+        csv.AppendLine(glideString);
+        csv.AppendLine(boostString);
+        DataSaver.saveData<string>(csv.ToString(), "HighScore");
     }
 
     //Check for upgrades each time the game is started
