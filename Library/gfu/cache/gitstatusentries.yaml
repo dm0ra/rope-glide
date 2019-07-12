@@ -13,90 +13,810 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-09T18:40:21.280-04:00
-  initializedAtString: 2019-07-09T17:00:49.647-04:00
+  lastUpdatedAtString: 2019-07-11T20:21:05.932-04:00
+  initializedAtString: 2019-07-11T18:28:03.605-04:00
   entries:
-  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
-    fullPath: D:\UNITY\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
-    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
+  - path: Assembly-CSharp.csproj
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assembly-CSharp-Editor-firstpass.csproj
+    projectPath: Assembly-CSharp-Editor-firstpass.csproj
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\button.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\button.cs
+    projectPath: Assets\button.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\cameraControl.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\cameraControl.cs
+    projectPath: Assets\cameraControl.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\CloudMovement.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\CloudMovement.cs
+    projectPath: Assets\CloudMovement.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Enemies.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Enemies.cs
+    projectPath: Assets\Enemies.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\glider.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\glider.cs
+    projectPath: Assets\glider.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\images.meta
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\images.meta
+    projectPath: Assets\images.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\images\starss.png
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\images\starss.png
+    projectPath: Assets\images\starss.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\images\starss.png.meta
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\images\starss.png.meta
+    projectPath: Assets\images\starss.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\InputClass.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\InputClass.cs
+    projectPath: Assets\InputClass.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\LevelControl.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\LevelControl.cs
+    projectPath: Assets\LevelControl.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\PickUpItem.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\PickUpItem.cs
+    projectPath: Assets\PickUpItem.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+    projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+    projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Resources\Background.prefab
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\Background.prefab
+    projectPath: Assets\Resources\Background.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\Background.prefab.meta
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\Background.prefab.meta
+    projectPath: Assets\Resources\Background.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\DayBackground.prefab
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\DayBackground.prefab
+    projectPath: Assets\Resources\DayBackground.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Resources\moon.png
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\moon.png
+    projectPath: Assets\Resources\moon.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\moon.png.meta
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\moon.png.meta
+    projectPath: Assets\Resources\moon.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\new_sky.png
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\new_sky.png
+    projectPath: Assets\Resources\new_sky.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\new_sky.png.meta
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\new_sky.png.meta
+    projectPath: Assets\Resources\new_sky.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\Sky.prefab
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\Sky.prefab
+    projectPath: Assets\Resources\Sky.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\Sky.prefab.meta
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\Sky.prefab.meta
+    projectPath: Assets\Resources\Sky.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\star_background.prefab
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\star_background.prefab
+    projectPath: Assets\Resources\star_background.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\star_background.prefab.meta
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\star_background.prefab.meta
+    projectPath: Assets\Resources\star_background.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\stars.png
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\stars.png
+    projectPath: Assets\Resources\stars.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\stars.png.meta
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\stars.png.meta
+    projectPath: Assets\Resources\stars.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\stars1.png
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\stars1.png
+    projectPath: Assets\Resources\stars1.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\stars1.png.meta
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\stars1.png.meta
+    projectPath: Assets\Resources\stars1.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\stars2.png
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\stars2.png
+    projectPath: Assets\Resources\stars2.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Resources\stars2.png.meta
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Resources\stars2.png.meta
+    projectPath: Assets\Resources\stars2.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\Swing Game.unity
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Scenes\Swing Game.unity
+    projectPath: Assets\Scenes\Swing Game.unity
     originalPath: 
     status: 3
     staged: 0
   - path: Assets\scripts\Booster.cs
-    fullPath: D:\UNITY\Rope-Glide\Assets\scripts\Booster.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\scripts\Booster.cs
     projectPath: Assets\scripts\Booster.cs
     originalPath: 
     status: 3
     staged: 0
+  - path: Assets\scripts\buttonMethods.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\scripts\buttonMethods.cs
+    projectPath: Assets\scripts\buttonMethods.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\CSVParsing.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\scripts\CSVParsing.cs
+    projectPath: Assets\scripts\CSVParsing.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\DB.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\scripts\DB.cs
+    projectPath: Assets\scripts\DB.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\GameController.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\scripts\GameController.cs
+    projectPath: Assets\scripts\GameController.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\HingeManager.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\scripts\HingeManager.cs
+    projectPath: Assets\scripts\HingeManager.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\Player.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\scripts\Player.cs
+    projectPath: Assets\scripts\Player.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\PlayerMovement.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\scripts\PlayerMovement.cs
+    projectPath: Assets\scripts\PlayerMovement.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\Rope.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\scripts\Rope.cs
+    projectPath: Assets\scripts\Rope.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\SceneSwitch.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\scripts\SceneSwitch.cs
+    projectPath: Assets\scripts\SceneSwitch.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\Upgrades.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\scripts\Upgrades.cs
+    projectPath: Assets\scripts\Upgrades.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Tests\test1.cs
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Assets\Tests\test1.cs
+    projectPath: Assets\Tests\test1.cs
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Library\assetDatabase3
-    fullPath: D:\UNITY\Rope-Glide\Library\assetDatabase3
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
-    fullPath: D:\UNITY\Rope-Glide\Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
-    projectPath: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
+  - path: Library\CurrentLayout.dwlt
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\expandedItems
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\expandedItems
+    projectPath: Library\expandedItems
     originalPath: 
     status: 3
     staged: 0
   - path: Library\gfu\cache\branches.yaml
-    fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: Library\gfu\cache\gitlocks.yaml
-    fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\gfu\cache\gitlog.yaml
-    fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\gfu\cache\gitstatusentries.yaml
-    fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: Library\gfu\cache\repoinfo.yaml
-    fullPath: D:\UNITY\Rope-Glide\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     status: 3
     staged: 0
+  - path: Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\08\0815acb276965af48801d4db866252b5
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\08\0815acb276965af48801d4db866252b5
+    projectPath: Library\metadata\08\0815acb276965af48801d4db866252b5
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    fullPath: D:\UNITY\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
     projectPath: Library\metadata\13\135862d7de01e3840b56f01765d8af45
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    fullPath: D:\UNITY\Rope-Glide\Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+  - path: Library\metadata\15\15e327f750b786c46a9ec3995f60c81f
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\15\15e327f750b786c46a9ec3995f60c81f
+    projectPath: Library\metadata\15\15e327f750b786c46a9ec3995f60c81f
     originalPath: 
     status: 5
     staged: 0
+  - path: Library\metadata\15\15e327f750b786c46a9ec3995f60c81f.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\15\15e327f750b786c46a9ec3995f60c81f.info
+    projectPath: Library\metadata\15\15e327f750b786c46a9ec3995f60c81f.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\16\16a98b9f7322ad643931d2ce6734a152
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\16\16a98b9f7322ad643931d2ce6734a152
+    projectPath: Library\metadata\16\16a98b9f7322ad643931d2ce6734a152
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\19\19e5a138c07e971438b2b18c8e716479
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\19\19e5a138c07e971438b2b18c8e716479
+    projectPath: Library\metadata\19\19e5a138c07e971438b2b18c8e716479
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\19\19e5a138c07e971438b2b18c8e716479.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\19\19e5a138c07e971438b2b18c8e716479.info
+    projectPath: Library\metadata\19\19e5a138c07e971438b2b18c8e716479.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\1e\1e108ae5f2133934f948edded555f03e
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\1e\1e108ae5f2133934f948edded555f03e
+    projectPath: Library\metadata\1e\1e108ae5f2133934f948edded555f03e
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\1e\1e108ae5f2133934f948edded555f03e.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\1e\1e108ae5f2133934f948edded555f03e.info
+    projectPath: Library\metadata\1e\1e108ae5f2133934f948edded555f03e.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\21\219d7cef1f345b94182d03784823332a
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\21\219d7cef1f345b94182d03784823332a
+    projectPath: Library\metadata\21\219d7cef1f345b94182d03784823332a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f
+    projectPath: Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f.info
+    projectPath: Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\3b\3b5d84cf239eca94c92b4f5f9e88ac1c
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\3b\3b5d84cf239eca94c92b4f5f9e88ac1c
+    projectPath: Library\metadata\3b\3b5d84cf239eca94c92b4f5f9e88ac1c
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d
+    projectPath: Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d.info
+    projectPath: Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\52\52a206b72a8f4f749c28d8b18b42dd19
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\52\52a206b72a8f4f749c28d8b18b42dd19
+    projectPath: Library\metadata\52\52a206b72a8f4f749c28d8b18b42dd19
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\52\52a206b72a8f4f749c28d8b18b42dd19.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\52\52a206b72a8f4f749c28d8b18b42dd19.info
+    projectPath: Library\metadata\52\52a206b72a8f4f749c28d8b18b42dd19.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\53\53b28e480f84452449972da4c75d4ce7
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\53\53b28e480f84452449972da4c75d4ce7
+    projectPath: Library\metadata\53\53b28e480f84452449972da4c75d4ce7
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
+    projectPath: Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\5a\5a4b354a3393911459ca2025410b0c02
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\5a\5a4b354a3393911459ca2025410b0c02
+    projectPath: Library\metadata\5a\5a4b354a3393911459ca2025410b0c02
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\5a\5a4b354a3393911459ca2025410b0c02.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\5a\5a4b354a3393911459ca2025410b0c02.info
+    projectPath: Library\metadata\5a\5a4b354a3393911459ca2025410b0c02.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524
+    projectPath: Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524.info
+    projectPath: Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
+    projectPath: Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\6c\6c5436528af1cef4880e80f9b3830715
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\6c\6c5436528af1cef4880e80f9b3830715
+    projectPath: Library\metadata\6c\6c5436528af1cef4880e80f9b3830715
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd
+    projectPath: Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd.info
+    projectPath: Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\71\710f298e6b03b4675b7af26a1765cc88
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\71\710f298e6b03b4675b7af26a1765cc88
+    projectPath: Library\metadata\71\710f298e6b03b4675b7af26a1765cc88
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\71\710f298e6b03b4675b7af26a1765cc88.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\71\710f298e6b03b4675b7af26a1765cc88.info
+    projectPath: Library\metadata\71\710f298e6b03b4675b7af26a1765cc88.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47
+    projectPath: Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47.info
+    projectPath: Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\8a\8a9a760f95896c34689febc965510927
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\8a\8a9a760f95896c34689febc965510927
+    projectPath: Library\metadata\8a\8a9a760f95896c34689febc965510927
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\8a\8a9a760f95896c34689febc965510927.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\8a\8a9a760f95896c34689febc965510927.info
+    projectPath: Library\metadata\8a\8a9a760f95896c34689febc965510927.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374
+    projectPath: Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374.info
+    projectPath: Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
+    projectPath: Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
+    projectPath: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1
+    projectPath: Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1.info
+    projectPath: Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\a8\a8bd0474d95cf1347bc27c53db4ef7c6
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\a8\a8bd0474d95cf1347bc27c53db4ef7c6
+    projectPath: Library\metadata\a8\a8bd0474d95cf1347bc27c53db4ef7c6
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+    projectPath: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
+    projectPath: Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    projectPath: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126
+    projectPath: Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126.info
+    projectPath: Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e
+    projectPath: Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e.info
+    projectPath: Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\c1\c1f9e92d20e554d40a89997b392cb697
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\c1\c1f9e92d20e554d40a89997b392cb697
+    projectPath: Library\metadata\c1\c1f9e92d20e554d40a89997b392cb697
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
+    projectPath: Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc
+    projectPath: Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc.info
+    projectPath: Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
+    projectPath: Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\db\db0d445c8cb76064f8d4ab16f3eb1fd5
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\db\db0d445c8cb76064f8d4ab16f3eb1fd5
+    projectPath: Library\metadata\db\db0d445c8cb76064f8d4ab16f3eb1fd5
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e
+    projectPath: Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e.info
+    projectPath: Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a
+    projectPath: Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a.info
+    projectPath: Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a.info
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: Library\metadata\f8\f8609495a16a0344cb31151b7542d161
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\f8\f8609495a16a0344cb31151b7542d161
+    projectPath: Library\metadata\f8\f8609495a16a0344cb31151b7542d161
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\f8\f8609495a16a0344cb31151b7542d161.info
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\f8\f8609495a16a0344cb31151b7542d161.info
+    projectPath: Library\metadata\f8\f8609495a16a0344cb31151b7542d161.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+    projectPath: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\fc\fcf3b8f752571df4282ade1e2b997856
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\metadata\fc\fcf3b8f752571df4282ade1e2b997856
+    projectPath: Library\metadata\fc\fcf3b8f752571df4282ade1e2b997856
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: D:\UNITY\Rope-Glide\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
+  - path: Library\StateCache\Hierarchy\4188d1-mainStage.json
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\StateCache\Hierarchy\4188d1-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\4188d1-mainStage.json
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Library\StateCache\SceneView\867b10-mainStage.json
-    fullPath: D:\UNITY\Rope-Glide\Library\StateCache\SceneView\867b10-mainStage.json
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Library\StateCache\SceneView\867b10-mainStage.json
     projectPath: Library\StateCache\SceneView\867b10-mainStage.json
     originalPath: 
     status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: ProjectSettings\QualitySettings.asset
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: ProjectSettings\UnityConnectSettings.asset
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\ProjectSettings\UnityConnectSettings.asset
+    projectPath: ProjectSettings\UnityConnectSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Rope-Glide.sln
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\Rope-Glide.sln
+    projectPath: Rope-Glide.sln
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UIElementsSchema\UIElements.xsd
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\UIElementsSchema\UIElements.xsd
+    projectPath: UIElementsSchema\UIElements.xsd
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UIElementsSchema\UnityEditor.Experimental.UIElements.xsd
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\UIElementsSchema\UnityEditor.Experimental.UIElements.xsd
+    projectPath: UIElementsSchema\UnityEditor.Experimental.UIElements.xsd
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UIElementsSchema\UnityEditor.PackageManager.UI.xsd
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\UIElementsSchema\UnityEditor.PackageManager.UI.xsd
+    projectPath: UIElementsSchema\UnityEditor.PackageManager.UI.xsd
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UIElementsSchema\UnityEngine.Experimental.UIElements.xsd
+    fullPath: C:\Users\andre\OneDrive\Documents\Rope-Glide\UIElementsSchema\UnityEngine.Experimental.UIElements.xsd
+    projectPath: UIElementsSchema\UnityEngine.Experimental.UIElements.xsd
+    originalPath: 
+    status: 1
     staged: 0

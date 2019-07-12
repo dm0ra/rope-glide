@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class PickUpItem : MonoBehaviour
 {
@@ -34,14 +31,14 @@ public class PickUpItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            if(true) // Add else if's for different items
+            if (true) // Add else if's for different items
             {
 
                 Player.GetComponent<Rigidbody2D>().velocity = Player.GetComponent<Rigidbody2D>().velocity +
@@ -81,7 +78,7 @@ public class PickUpItem : MonoBehaviour
                     Player.GetComponent<Rigidbody2D>().velocity = Player.GetComponent<Rigidbody2D>().velocity +
                                                                  (120 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
                 }
-                
+
             }
             //else if()
             thisItem.SetActive(false);

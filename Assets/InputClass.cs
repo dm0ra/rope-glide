@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class InputClass : MonoBehaviour
 {
@@ -23,7 +21,7 @@ public class InputClass : MonoBehaviour
         cameraStartPos = transform.position.x;
         cameraWidth = 1000;
         ClickFlag = -1;
-        if (  (Application.platform == RuntimePlatform.IPhonePlayer) || SystemInfo.operatingSystem.Contains("Mac"))
+        if ((Application.platform == RuntimePlatform.IPhonePlayer) || SystemInfo.operatingSystem.Contains("Mac"))
         {
             touchOffest = 710f;
             Debug.Log("Running on iphone or mac");
@@ -45,14 +43,14 @@ public class InputClass : MonoBehaviour
             //Debug.Log("Screen Input y pos: " + Input.mousePosition.y);
 
             currCameraPos = transform.position.x;
-             
-           float touchPositionX = (Input.mousePosition.x) - touchOffest + transform.position.x;//x position for touch
-           float touchPositiony = (Input.mousePosition.y) - touchOffest + transform.position.y;//y position for y
-           float MiddleVerticalBoundry =  transform.position.x;//sets vertical boundary to divide touches
-           float MiddleHorizontalBoundry = Camera.transform.position.y/2;//sets horizontal boundary to divide touches
-           if (touchPositionX > MiddleVerticalBoundry)
+
+            float touchPositionX = (Input.mousePosition.x) - touchOffest + transform.position.x;//x position for touch
+            float touchPositiony = (Input.mousePosition.y) - touchOffest + transform.position.y;//y position for y
+            float MiddleVerticalBoundry = transform.position.x;//sets vertical boundary to divide touches
+            float MiddleHorizontalBoundry = Camera.transform.position.y / 2;//sets horizontal boundary to divide touches
+            if (touchPositionX > MiddleVerticalBoundry)
             {
-                if(Input.mousePosition.y > Screen.height/2)
+                if (Input.mousePosition.y > Screen.height / 2)
                 {
                     ClickFlag = 2; // Top Right
                     //Debug.Log("Woah");
@@ -66,17 +64,17 @@ public class InputClass : MonoBehaviour
             else
             {
                 ClickFlag = 0; // Left
-             }
+            }
         }
         else if (Input.GetMouseButtonUp(0))
         {
             ClickFlag = -1; // No Click
-        } 
+        }
     }
 
     public int getInputFlag()
     {
         return ClickFlag;
     }
-   
+
 }

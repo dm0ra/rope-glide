@@ -1,8 +1,4 @@
-﻿
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEditor;
+﻿using UnityEngine;
 //HOW TO debug Click Debug -> Attach Unity Debugger. Go to unity and press play.
 
 
@@ -30,14 +26,14 @@ public class Rope : MonoBehaviour
     public GameController game;
     /* Index of the current hinge in the GameController class */
     private int index;
-    /* The visual to the rope connection */ 
+    /* The visual to the rope connection */
     private GameObject VisualRope;
     /* Used to correct the coordinates of the cloud (hinge) */
     private float xOffset;
     /* Used to correct the coordinates of the cloud (hinge) */
     private float yOffset;
     /* Flag to ignore first click, because the first click tells the player to jump. */
-    private bool firstConnection; 
+    private bool firstConnection;
 
     // Start is called before the first frame update
     void Start()
@@ -46,13 +42,13 @@ public class Rope : MonoBehaviour
         yOffset = 67.9f;
         mouseState = -1;
         Player = GameObject.FindWithTag("Player");
-        game = GameObject.FindWithTag("GameController").GetComponent<GameController>(); 
+        game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
         index = game.AddHinge(this);
-        firstConnection = true; 
-        bool a = currRope.isActiveAndEnabled ;
+        firstConnection = true;
+        bool a = currRope.isActiveAndEnabled;
         gameInput = GameObject.FindWithTag("MainCamera").GetComponent<InputClass>();
     }
-    
+
     /* Update is called once per frame
     *
     */
@@ -64,7 +60,7 @@ public class Rope : MonoBehaviour
         * of the cloud that is being swung from is the same as the one in the game controller
         * (game.getConnected()), and the game controller has a flag set with (game.GetConnectedFlag()).
         */
-        if (mouseState == 1 &&  index == game.getConnected() && game.GetConnectedFlag())
+        if (mouseState == 1 && index == game.getConnected() && game.GetConnectedFlag())
         {
             //transform.position gives the transform of the gameobject this script 
             // is connected to in the unity editor.
@@ -75,13 +71,13 @@ public class Rope : MonoBehaviour
             // connection and the player, using the midpoint formula
             temp = temp * 0.5f;
 
-        
+
             float angle = Mathf.Atan2(tempAng.y, tempAng.x) * Mathf.Rad2Deg;
 
             //Create/Update the ropes scale, posiition and angle.
             VisualRope.transform.position = new Vector3(temp.x, temp.y, -5);
-            VisualRope.transform.localScale = new Vector3(.25f, tempAng.magnitude/ 10f, .25f);
-            VisualRope.transform.eulerAngles = new Vector3(0,0, angle+ 90);
+            VisualRope.transform.localScale = new Vector3(.25f, tempAng.magnitude / 10f, .25f);
+            VisualRope.transform.eulerAngles = new Vector3(0, 0, angle + 90);
         }
 
         /*
@@ -92,7 +88,7 @@ public class Rope : MonoBehaviour
          * game.IsHingeClosest(index)  - Looks through an array of all possible connection points
          * !game.GetConnectedFlag()
          */
-        if (game.GetJumpClick() && Input.GetMouseButtonDown(0) && game.IsHingeClosest(index) && !game.GetConnectedFlag()  )
+        if (game.GetJumpClick() && Input.GetMouseButtonDown(0) && game.IsHingeClosest(index) && !game.GetConnectedFlag())
         {
             // If the glider is active connect only when the left half of the screen is pressed
 
@@ -105,12 +101,12 @@ public class Rope : MonoBehaviour
                 }
             }
             // Connect on any input when no upgrades are active.
-            if (DB.Glider == 0) 
+            if (DB.Glider == 0)
             {
-                    Connect();    
+                Connect();
             }
         }
-        if (Input.GetMouseButtonUp(0) )
+        if (Input.GetMouseButtonUp(0))
         {
             game.SetConnectedFlag(false);
             currRope.connectedBody = null;
@@ -127,7 +123,8 @@ public class Rope : MonoBehaviour
 
     }
 
- void DrawLine(Vector3 start, Vector3 end, Color color, bool destroy) {
+    void DrawLine(Vector3 start, Vector3 end, Color color, bool destroy)
+    {
         GameObject myLine = new GameObject();
         myLine.transform.position = start;
         myLine.AddComponent<LineRenderer>();
@@ -146,7 +143,8 @@ public class Rope : MonoBehaviour
     {
         this.firstConnection = b;
     }
-    private void Connect() {
+    private void Connect()
+    {
         if (mouseState != 1)
         {
             if (firstConnection)

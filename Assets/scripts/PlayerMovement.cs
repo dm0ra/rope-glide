@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -11,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-      //  rb.
+        //  rb.
     }
 
 

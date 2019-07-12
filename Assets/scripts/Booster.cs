@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Booster : MonoBehaviour
 {
@@ -36,7 +34,7 @@ public class Booster : MonoBehaviour
     {
         //maps booster to player
         //Debug.Log(Player.transform.position.x);
-        if(DB.Booster == 1)
+        if (DB.Booster == 1)
         {
             playerDelta.z = Player.transform.position.z;
         }
@@ -58,7 +56,7 @@ public class Booster : MonoBehaviour
     {
         Debug.Log("Fuel: " + fuel);
 
-        if(fuel >= 0)//checks if there is fuel left
+        if (fuel >= 0)//checks if there is fuel left
         {
             //Player.GetComponent<Rigidbody2D>().velocity.y += a;
             //Debug.Log(Player.GetComponent<Rigidbody2D>().velocity.y);

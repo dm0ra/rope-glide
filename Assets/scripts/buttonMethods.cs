@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -20,7 +18,7 @@ public class buttonMethods : MonoBehaviour
 
 
         if (SceneManager.GetActiveScene().buildIndex == 2)  //checks that the scene index is the game over screen
-        { 
+        {
 
             //creates highscore text on screen
             Font arial;
@@ -57,7 +55,7 @@ public class buttonMethods : MonoBehaviour
             // Provide Text position and size using RectTransform.
             score.transform.position = new Vector3(460, 410, -5);
             score.text = "Score: " + DB.Score;
-            
+
             highScore = textGO1.GetComponent<Text>();
             highScore.font = arial;
             highScore.fontSize = 24;
@@ -67,7 +65,7 @@ public class buttonMethods : MonoBehaviour
             // Provide Text position and size using RectTransform.
             highScore.transform.position = new Vector3(460, 315, -5);
             highScore.text = "High Score: " + DB.HighScore;
-            
+
 
         }
 
@@ -101,11 +99,11 @@ public class buttonMethods : MonoBehaviour
         //DB.LvlIndex = 0;
         DB.PreviewIndex = 2;
         previewIndex = 2;//sets preview index to booster
-        //DB.Glider = 1;//sets flag for glider
-        //DB.Booster = 1;//sets flag for booster
-        //SceneManager.LoadScene(0);//switches scene to main menu
+                         //DB.Glider = 1;//sets flag for glider
+                         //DB.Booster = 1;//sets flag for booster
+                         //SceneManager.LoadScene(0);//switches scene to main menu
 
-       
+
     }
 
     //used to buy a glider in the upgrade menu
@@ -123,13 +121,13 @@ public class buttonMethods : MonoBehaviour
     public void purchase()
     {
         Debug.Log(previewIndex);
-        if(DB.PreviewIndex == 1)
+        if (DB.PreviewIndex == 1)
         {
             DB.Glider = 1;
             DB.Glider = 1;
         }
 
-        if(DB.PreviewIndex == 2)
+        if (DB.PreviewIndex == 2)
         {
             DB.Glider = 1;
             DB.Booster = 1;

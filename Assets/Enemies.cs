@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
@@ -29,7 +26,7 @@ public class Enemies : MonoBehaviour
         enemyIndex = game.AddEnemy(this);
         //enemyIndex = game.AddItem(this);
         //Rect view = cam.rect;       //creates a rect object to use for the randomization of the x and y coordinates of the enemy
-        
+
         enemyX = (int)Player.transform.position.x + 200;  //creates a random x value for the spawn of the enemy
         enemyY = Random.Range(centerScreenY - 30, centerScreenY + 20);  //creates a random y value for the spawn of the enemy
         //Debug.Log(cam.transform.position.y);
@@ -45,21 +42,21 @@ public class Enemies : MonoBehaviour
 
         Vector3 enemyPosition = new Vector3(enemyX, enemyY, enemyZ);
         thisEnemy.transform.position = enemyPosition;
-}
+    }
 
-// Update is called once per frame
-void Update()
-{
-   //Debug.Log("x: " + enemyX + " y: " + enemyY + " updateCount: " + updateCount + " moveTime: " + moveTime);
-        
+    // Update is called once per frame
+    void Update()
+    {
+        //Debug.Log("x: " + enemyX + " y: " + enemyY + " updateCount: " + updateCount + " moveTime: " + moveTime);
+
         updateCount++;
-        if(updateCount < moveTime && (updateCount % 3 == 0)) //move time seconds of left movement
+        if (updateCount < moveTime && (updateCount % 3 == 0)) //move time seconds of left movement
         {
             //enemyX = enemyX - enemySpeed;   //decreases the enemy x and y position by the enemy speed once per frame for moveTime seconds
             enemyY = enemyY - enemySpeed;
         }
 
-        else if ((updateCount < moveTime*2) && (updateCount % 3 == 0)) //move time seconds of left movement
+        else if ((updateCount < moveTime * 2) && (updateCount % 3 == 0)) //move time seconds of left movement
         {
             //enemyX = enemyX + enemySpeed;   //increases the enemy x and y position by the enemy speed once per frame for moveTime seconds
             enemyY = enemyY + enemySpeed;
@@ -76,15 +73,15 @@ void Update()
             //enemyX = enemyX - enemySpeed;   //increases the enemy x and y position by the enemy speed once per frame for moveTime seconds
             enemyY = enemyY + enemySpeed;
         }
-        if (updateCount >= moveTime*4)
+        if (updateCount >= moveTime * 4)
         {
             updateCount = 0;
         }
 
 
-       
 
-         // multiply all this with some speed variable (* speed);
+
+        // multiply all this with some speed variable (* speed);
         Vector3 enemyPosition = new Vector3(enemyX, enemyY, enemyZ);
         thisEnemy.transform.position = enemyPosition;
     }
@@ -109,12 +106,12 @@ void Update()
         }
     }
 
-   /* public int garbageMan(bool destroy)
-    {
-        if (destroy)
-        {
+    /* public int garbageMan(bool destroy)
+     {
+         if (destroy)
+         {
 
-        }
-    }
-    */
+         }
+     }
+     */
 }

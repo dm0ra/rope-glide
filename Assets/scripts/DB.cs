@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public static class DB
+﻿public static class DB
 {
     private static int lvlIndex, pi, glider, booster;
     private static float score, highScore;

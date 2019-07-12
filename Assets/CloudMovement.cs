@@ -1,24 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CloudMovement : MonoBehaviour
 {
     // Start is called before the first frame update
-    GameObject[] cloudArray; 
+    GameObject[] cloudArray;
     void Start()
 
 
     {
-        cloudArray = GameObject.FindGameObjectsWithTag("cloud"); 
+        cloudArray = GameObject.FindGameObjectsWithTag("cloud");
     }
 
     // Update is called once per frame
     void Update()
     {
 
-         
-    int x = 0;
+
+        int x = 0;
         for (x = 0; x < cloudArray.Length; x++)
         {
 
