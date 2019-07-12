@@ -117,9 +117,9 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            if (sceneSwitcher.getSceneIndex() == 2)
+            if (sceneSwitcher.GetSceneIndex() == 2)
             {
-                sceneSwitcher.switchScenes(0);
+                sceneSwitcher.SwitchScenes(0);
             }
         }
         StartingCameraPos = Camera.transform.position;
@@ -344,7 +344,7 @@ public class GameController : MonoBehaviour
             Hinges[i].setFirstConnection(true);
         }
         DB.LvlIndex = 2;
-        sceneSwitcher.switchScenes(2);
+        sceneSwitcher.SwitchScenes(2);
         //SceneManager.LoadScene(2);
     }
 

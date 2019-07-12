@@ -2,12 +2,11 @@
 //HOW TO debug Click Debug -> Attach Unity Debugger. Go to unity and press play.
 
 
-
 /*
- * Rope class decieds what cloud is the closest and connects to it on click
- * It holds
+ * Rope class decides what cloud is the closest and connects to it on click
+ * It holds the player who uses the rope to progress through the game.
  * 
-*/
+ */
 
 
 public class Rope : MonoBehaviour
@@ -49,9 +48,9 @@ public class Rope : MonoBehaviour
         gameInput = GameObject.FindWithTag("MainCamera").GetComponent<InputClass>();
     }
 
-    /* Update is called once per frame
-    *
-    */
+    /* 
+     *  Update is called once per frame
+     */
     void Update()
     {
         Debug.Log("DB Glider: " + DB.Glider);
@@ -81,8 +80,8 @@ public class Rope : MonoBehaviour
         }
 
         /*
-         * This if stantment is run on first press and connects the player to the nearest connection point.
-         * it relies on the following to be true.
+         * This if statement is run on first press and connects the player to the nearest connection point.
+         * It relies on the following to be true:
          * game.GetJumpClick()  -  
          * Input.GetMouseButtonDown(0) - Left mouse click down (also works for touch)
          * game.IsHingeClosest(index)  - Looks through an array of all possible connection points
@@ -90,7 +89,7 @@ public class Rope : MonoBehaviour
          */
         if (game.GetJumpClick() && Input.GetMouseButtonDown(0) && game.IsHingeClosest(index) && !game.GetConnectedFlag())
         {
-            // If the glider is active connect only when the left half of the screen is pressed
+            // If the glider is active, connect only when the left half of the screen is pressed
 
             if (DB.Glider == 1)
             {

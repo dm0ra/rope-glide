@@ -1,36 +1,34 @@
-﻿using System.Collections;
-//using System.Collections.Generic;
+﻿//using System.Collections.Generic;
 //using UnityEditor;
 using UnityEngine;
 
-public class cameraControl : MonoBehaviour
+public class CameraControl : MonoBehaviour
 {
     public Camera Cam;          //camera object
     public GameObject Player;   //player object
-    //public GameObject Moon;     //moon to follow camera
-    //public GameObject Sun;      //sun to follow camera
-    static  float startPos;     //position where player starts
+    //public GameObject Moon;   //moon to follow camera
+    //public GameObject Sun;    //sun to follow camera
+    static float startPos;     //position where player starts
     private int Count100s;      //helper variable to determine distance
 
     private int Count50s;              //second helper variable to determine distancec traveled
     public int groundWidth = 294;      //width of background
     public int cameraWidth = 228;      //width of camera view
     public int cameraHelper = 0;       //helper variable
-    public int boostSpawnChance = 4;   // boostSpawnChance / 10 to spawn a boost every x distance
+    public int boostSpawnChance = 4;   //boostSpawnChance / 10 to spawn a boost every x distance
     public int startup = 1;            //helper variable
 
-    public GameController game; //game object
+    public GameController game;        //game object
 
     // public int blockSpawnDistance = 150;
-    public int enemySpawnChance = 3; // enemySpawnChance / 10 to spawn an enemy every x distance
-
+    public int enemySpawnChance = 3;   //enemySpawnChance / 10 to spawn an enemy every x distance
 
     public int blockSpawnDistance = 200;  //distance between blocks
     public int blockVar = 15;
 
-    private int camheight;      //height of camera
+    private int camheight;                //height of camera
     private bool IsCoRoutineRunning;
-    private float bottomCamPos;//bottom of the campera position
+    private float bottomCamPos;           //bottom of the campera position
     private float delayTime;
 
     //Cam Vars 
@@ -68,7 +66,7 @@ public class cameraControl : MonoBehaviour
         //Rect view = Cam.pixelRect;
 
 
-        float temp = 0f;
+        //float temp = 0f;
         target = Player.transform;
         Vector3 point = Cam.WorldToViewportPoint(target.position);
         Vector3 delta = target.position - Cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
@@ -91,13 +89,13 @@ public class cameraControl : MonoBehaviour
         if (startup == 1)
         {
             startup = 0;
-            //  Object prefab = AssetDatabase.LoadAssetAtPath("Assets/prefab/Block.prefab", typeof(GameObject));
-            // GameObject block = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-            // Modify the clone to your heart's content
-            // block.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(187 - 5, 187 + 5), -5);
+            //Object prefab = AssetDatabase.LoadAssetAtPath("Assets/prefab/Block.prefab", typeof(GameObject));
+            //GameObject block = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+            //Modify the clone to your heart's content
+            //block.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(187 - 5, 187 + 5), -5);
 
             //GameObject sky = Instantiate(Resources.Load("Sky_", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-            // Modify the clone to your heart's content
+            //Modify the clone to your heart's content
             //sky.transform.position = new Vector3(startPos + 290, 108.9f, 0);
 
 
@@ -123,7 +121,7 @@ public class cameraControl : MonoBehaviour
         {
             cameraHelper = (int)Player.transform.position.x;
             startPos = Player.transform.position.x;
-            Count100s = Count100s + 1;
+            Count100s += 1;
 
             if ((Count100s % 2) == 0)
             {
