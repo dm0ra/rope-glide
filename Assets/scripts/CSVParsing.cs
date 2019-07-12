@@ -1,11 +1,7 @@
-﻿using UnityEngine;
-using UnityEditor;
-
-using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 
 public class CSVParsing : MonoBehaviour
@@ -38,13 +34,13 @@ public class CSVParsing : MonoBehaviour
     private void readData()
     {
         string[] records = csvFile.text.Split(lineSeperater);
-        
+
         foreach (string record in records)
         {
-            
+
             List<float> temp = new List<float>();
             string[] fields = record.Split(fieldSeperator);
-            if(fields[0].Equals("229"))
+            if (fields[0].Equals("229"))
             {
                 return;
             }
@@ -58,7 +54,7 @@ public class CSVParsing : MonoBehaviour
     }
     public float[] getLiftCoef(int index)
     {
-        return new float[] { results[index][0], results[index][1]};
+        return new float[] { results[index][0], results[index][1] };
     }
     public float[] getDragCoef(int index)
     {

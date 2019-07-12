@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":313.3448181152344,"y":615.9846801757813,"z":-11.843260765075684},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":1253.14111328125,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":445.78582763671877,"y":276.3883972167969,"z":-6.180459976196289},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":688.70263671875,"orthographic":true}
 >>>>>>> origin/John
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":415.70233154296877,"y":498.9964294433594,"z":-14.300000190734864},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":-1.0},"size":1183.93408203125,"orthographic":true}
+>>>>>>> origin/andreabranch

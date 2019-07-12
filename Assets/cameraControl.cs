@@ -1,36 +1,36 @@
 ﻿using System.Collections;
-using System.Threading.Tasks;
 //using System.Collections.Generic;
 //using UnityEditor;
 using UnityEngine;
 
 public class cameraControl : MonoBehaviour
 {
-     
-
+ 
     public Camera Cam;          //camera object
     public GameObject Player;   //player object
-    static float startPos;      //position where player starts
+    //public GameObject Moon;     //moon to follow camera
+    //public GameObject Sun;      //sun to follow camera
+    static  float startPos;     //position where player starts
     private int Count100s;      //helper variable to determine distance
 
-    private int Count50s;       //second helper variable to determine distancec traveled
-    public int groundWidth = 294;   //width of background
-    public int cameraWidth = 228;   //width of camera view
-    public int cameraHelper = 0;    //helper variable
-    public int boostSpawnChance = 4;    // boostSpawnChance / 10 to spawn a boost every x distance
-    public int startup = 1;     //helper variable
-        
+    private int Count50s;              //second helper variable to determine distancec traveled
+    public int groundWidth = 294;      //width of background
+    public int cameraWidth = 228;      //width of camera view
+    public int cameraHelper = 0;       //helper variable
+    public int boostSpawnChance = 4;   // boostSpawnChance / 10 to spawn a boost every x distance
+    public int startup = 1;            //helper variable
+
     public GameController game; //game object
 
     // public int blockSpawnDistance = 150;
-    public int enemySpawnChance = 3;// enemySpawnChance / 10 to spawn an enemy every x distance
+    public int enemySpawnChance = 3; // enemySpawnChance / 10 to spawn an enemy every x distance
 
 
-    public int blockSpawnDistance = 200;    //distance between blocks
-    public int blockVar = 15;           
+    public int blockSpawnDistance = 200;  //distance between blocks
+    public int blockVar = 15;
 
     private int camheight;      //height of camera
-    private bool IsCoRutineRunning;
+    private bool IsCoRoutineRunning;
     private float bottomCamPos;//bottom of the campera position
     private float delayTime;
 
@@ -48,12 +48,14 @@ public class cameraControl : MonoBehaviour
     {
         game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
         camheight = 133;
-        IsCoRutineRunning = false;
+        IsCoRoutineRunning = false;
         startPos = Player.transform.position.x;
         Count100s = 0;
         bottomCamPos = Cam.transform.position.y;
         delayTime = 0.000001f;
-        BackgroundStartPos = 277f; 
+  
+        BackgroundStartPos = 277f;
+         
     }
 
     // Update is called once per frame
@@ -69,7 +71,7 @@ public class cameraControl : MonoBehaviour
 
 
         float temp = 0f;
-        target = Player.transform ;
+        target = Player.transform;
         Vector3 point = Cam.WorldToViewportPoint(target.position);
         Vector3 delta = target.position - Cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
         Vector3 destination = transform.position + delta;
@@ -83,23 +85,26 @@ public class cameraControl : MonoBehaviour
         }
         transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 
-        
+
+        // Make sun and moon follow the camera
+        //Moon.transform.position = new Vector3(Cam.transform.position.x, 400, -3);
+        //Sun.transform.position = new Vector3(Cam.transform.position.x, 600, -3);
 
         if (startup == 1)
         {
             startup = 0;
             //  Object prefab = AssetDatabase.LoadAssetAtPath("Assets/prefab/Block.prefab", typeof(GameObject));
-           // GameObject block = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+            // GameObject block = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
             // Modify the clone to your heart's content
-           // block.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(187 - 5, 187 + 5), -5);
+            // block.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(187 - 5, 187 + 5), -5);
 
-           //GameObject sky = Instantiate(Resources.Load("Sky_", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+            //GameObject sky = Instantiate(Resources.Load("Sky_", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
             // Modify the clone to your heart's content
             //sky.transform.position = new Vector3(startPos + 290, 108.9f, 0);
 
 
 
-            if(Random.Range(0,10) < enemySpawnChance)
+            if (Random.Range(0, 10) < enemySpawnChance)
             {
                 GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
             }
@@ -110,8 +115,8 @@ public class cameraControl : MonoBehaviour
 
             //Count100s = 0;
             //Object prefab2 = AssetDatabase.LoadAssetAtPath("Assets/prefab/Ground.prefab", typeof(GameObject));
-           // GameObject ground = Instantiate(Resources.Load("Ground", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-           // ground.transform.position = new Vector3(startPos + 295, 55.0f, 0);
+            // GameObject ground = Instantiate(Resources.Load("Ground", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+            // ground.transform.position = new Vector3(startPos + 295, 55.0f, 0);
         }
 
 
@@ -127,6 +132,7 @@ public class cameraControl : MonoBehaviour
                 GameObject block = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
                 block.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(192 - 5, 192 + 5), -5);
 
+ 
             if ((Count100s % 3) == 0)
             {
                 GameObject block2 = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
@@ -136,27 +142,29 @@ public class cameraControl : MonoBehaviour
             {
                 GameObject block3 = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
                 block3.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(680 - 50, 680 + 50), -5);
-
-            }//Count100s = 0;
+            }
+ 
+ 
                 //Object prefab1 = AssetDatabase.LoadAssetAtPath("Assets/prefab/Sky_.prefab", typeof(GameObject));
-                GameObject background = Instantiate(Resources.Load("DayBackground", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-               background.transform.position = new Vector3(BackgroundStartPos + 809.95f, 133f, 50);
-                BackgroundStartPos = BackgroundStartPos + 809.95f;
+                GameObject background = Instantiate(Resources.Load("Background", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+                background.transform.position = new Vector3(BackgroundStartPos + 808f, 133f, 0);
+                BackgroundStartPos = BackgroundStartPos + 808f;
 
-                if (Random.Range(0,10) < enemySpawnChance)//generates mace with enemySpawnChance/10 chance
+                if (Random.Range(0, 10) < enemySpawnChance)//generates mace with enemySpawnChance/10 chance
                 {
                     GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
                 }
 
 
  
+ 
 
-                if(Random.Range(0,10) > boostSpawnChance)
+                if (Random.Range(0, 10) > boostSpawnChance)
                 {
-                    GameObject PickUpItem = Instantiate(Resources.Load("Boost", typeof(GameObject))   ) as GameObject;
+                    GameObject PickUpItem = Instantiate(Resources.Load("Boost", typeof(GameObject))) as GameObject;
                     PickUpItem.transform.position = PickUpItem.transform.position + new Vector3(0, 0, -25);
                 }
-               
+
 
             }
             if (Count100s == 500)
@@ -167,40 +175,7 @@ public class cameraControl : MonoBehaviour
 
             }
         }
-        
     }
-    IEnumerator WaitAndMove(float delayTime, Vector3 from, Vector3 to)
-    {
-        IsCoRutineRunning = true;
-
-
-        yield return new WaitForSeconds(delayTime); // start at time X
-
-        float startTime = Time.time; // Time.time contains current frame time, so remember starting point
-        while (Time.time - startTime <= .5)
-        { // until one second passed
-
-
-            Cam.transform.position = cameraControl.Lerp(from, to, Time.time - startTime, Player.transform.position.x); // lerp from A to B in one second
-            yield return 1; // wait for next frame
-        }
-        IsCoRutineRunning = false;
-    }
-
-    public static Vector3 Lerp(Vector3 a, Vector3 b, float t, float x) 
-    {
-
-        t = Mathf.Clamp01(t);
-
-        return new Vector3(
-
-            x, 
-            a.y + (b.y - a.y) * t,
-
-            a.z + (b.z - a.z) * t
-
-        ); 
-    } 
 }
 
 
@@ -211,4 +186,4 @@ public class cameraControl : MonoBehaviour
 
 
 
-   
+

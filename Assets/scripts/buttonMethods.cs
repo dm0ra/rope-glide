@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class buttonMethods : MonoBehaviour
 //public class buttonMethods
 {
-   
+
     public GameController game;
     public Text score;
     public Text highScore;
@@ -41,7 +41,7 @@ public class buttonMethods : MonoBehaviour
         userCash = GameObject.FindWithTag("UserCash");//text box to display a users cash
         boosterPrice = "Price:   " + bPrice + " Cash";
         gliderPrice = "Price:    " + gPrice + " Cash";
-        
+
         //gliderImage.SetActive(false);
 
 
@@ -49,7 +49,7 @@ public class buttonMethods : MonoBehaviour
         //gliderImage = game.gliderImage;
 
         if (SceneManager.GetActiveScene().buildIndex == 2)  //checks that the scene index is the game over screen
-        { 
+        {
             //creates highscore text on screen
             Font arial;
             arial = (Font)Resources.GetBuiltinResource(typeof(Font), "Arial.ttf");
@@ -85,7 +85,7 @@ public class buttonMethods : MonoBehaviour
             // Provide Text position and size using RectTransform.
             //score.transform.position = new Vector3(460, 410, -5);
             //score.text = "Score: " + DB.Score;
-            
+
             //highScore = textGO1.GetComponent<Text>();
             //highScore.font = arial;
             //highScore.fontSize = 24;
@@ -96,8 +96,8 @@ public class buttonMethods : MonoBehaviour
             //highScore.transform.position = new Vector3(460, 315, -5);
             //highScore.text = "High Score: " + DB.HighScore;
 
-            
-            
+
+
 
         }
 
@@ -176,7 +176,7 @@ public class buttonMethods : MonoBehaviour
         DB.PreviewIndex = 1;
 
         //setting purchase button text
-        if(DB.Glider == 1)//checks if glider is purchased
+        if (DB.Glider == 1)//checks if glider is purchased
         {
             setComponentText(purchaseButton, purchasedText); //sets button to display "purchased"
         }
@@ -199,7 +199,7 @@ public class buttonMethods : MonoBehaviour
     public void purchase()
     {
         //Debug.Log(previewIndex);
-        if(DB.PreviewIndex == 1 && DB.BankCash > gPrice && DB.Glider != 1)//checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased
+        if (DB.PreviewIndex == 1 && DB.BankCash > gPrice && DB.Glider != 1)//checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased
         {
             DB.Glider = 1;//sets glider purchased flag
             DB.BankCash -= gPrice;//decreases cash
@@ -220,7 +220,7 @@ public class buttonMethods : MonoBehaviour
             DataSaver.saveData<string>(csv.ToString(), "HighScore");
         }
 
-        if(DB.PreviewIndex == 2 && DB.BankCash > bPrice && DB.Booster != 1)//checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased
+        if (DB.PreviewIndex == 2 && DB.BankCash > bPrice && DB.Booster != 1)//checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased
         {
             DB.Booster = 1;//sets booster purchased flag
             DB.BankCash -= bPrice;//decreases cash 

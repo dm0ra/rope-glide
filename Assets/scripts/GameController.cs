@@ -55,12 +55,12 @@ public class GameController : MonoBehaviour
     /*  Holds the greatest distance recorded by player */
     public float distance;
     /* Flag that is set when the player falls off */
-    private bool fellOffFlag; 
+    private bool fellOffFlag;
 
     string highScoreFilePath = " Data\\HighScore.csv";
-       
+
     Vector3 StartingCameraPos;
-     
+
     public bool JumpClick;
 
     // Start is called before the first frame update
@@ -69,12 +69,12 @@ public class GameController : MonoBehaviour
         //Debug.Log("Succsessfully read High score Data ");
 
         //Load the highscore and set highscore upon each life
-     /*   string fileData =  DataSaver.loadData<string>("HighScore");
+        string fileData = DataSaver.loadData<string>("HighScore");
         string[] fileLines = fileData.Split('\n');
         DB.HighScore = float.Parse(fileLines[0]);
         DB.BankCash = int.Parse(fileLines[1]);
         DB.Glider = int.Parse(fileLines[2]);
-        DB.Booster = int.Parse(fileLines[3]);*/
+        DB.Booster = int.Parse(fileLines[3]);
         //Initilize instance variables
 
         xOffset = 19.2f;
@@ -91,7 +91,7 @@ public class GameController : MonoBehaviour
         connectionCount = 0;
         distance = 0;
         highestHeight = 0;
-        topSpeed = 0; 
+        topSpeed = 0;
         fellOffFlag = false;
         initScore();
 
@@ -113,18 +113,18 @@ public class GameController : MonoBehaviour
         checkForEnter();
         //
         updateScore();
-    
+
         scoreCount = calculateScore();
 
         //If the player falls off the map respawn player
         if (StartingCameraPos.y - 92 > Player.transform.position.y)
-        { 
-            respawnPlayer(); 
+        {
+            respawnPlayer();
         }
-        
-         
+
+
         //Wait for first click to move the player
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             if (!JumpClick)
             {
@@ -132,7 +132,7 @@ public class GameController : MonoBehaviour
                 Player.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionX;
                 Player.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionY;
             }
-        }   
+        }
     }
 
 
@@ -140,12 +140,12 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            if(sceneSwitcher.getSceneIndex() == 2)
+            if (sceneSwitcher.getSceneIndex() == 2)
             {
                 sceneSwitcher.switchScenes(0);
-            } 
-        } 
-        StartingCameraPos = Camera.transform.position; 
+            }
+        }
+        StartingCameraPos = Camera.transform.position;
     }
 
     //Has the player clicked/tapped the screen for the first time
@@ -178,16 +178,16 @@ public class GameController : MonoBehaviour
 
     public void setTopSpeed(Vector2 ts)   //used to calculate score
     {
-        if(ts.magnitude > topSpeed)
+        if (ts.magnitude > topSpeed)
         {
             topSpeed = ts.magnitude;
         }
-        
+
     }
 
     public void setHighestHeight(float h)   //used to calculate score
     {
-        if(h > highestHeight)
+        if (h > highestHeight)
         {
             highestHeight = h;
         }
@@ -196,7 +196,7 @@ public class GameController : MonoBehaviour
     //Set new distance highscore
     public void setDistance(float d)
     {
-        if(d > distance)
+        if (d > distance)
         {
             distance = d;
         }
@@ -204,10 +204,10 @@ public class GameController : MonoBehaviour
     //calculate overall score
     public float calculateScore()
     {
-        return (float)connectionCount + topSpeed/10 + highestHeight + distance/100;
+        return (float)connectionCount + topSpeed / 10 + highestHeight + distance / 100;
     }
     //Has the person fallen off
-    public bool getfellOffFlag()   
+    public bool getfellOffFlag()
     {
         return fellOffFlag;
     }
@@ -336,7 +336,7 @@ public class GameController : MonoBehaviour
             Hinges[index].Hinge.transform.position.z);
     }
 
-    
+
     /*
      * Respawn player sets the highscore if needed.
      */
@@ -349,15 +349,15 @@ public class GameController : MonoBehaviour
         DB.RunDist = distance;
         DB.RunConNum = connectionCount;
         DB.MaxHeight = highestHeight;
-        DB.BankCash = DB.BankCash+((int)DB.Score/10);
+        DB.BankCash = DB.BankCash + ((int)DB.Score / 10);
         if (DB.Score > DB.HighScore)
         {
             //saves highscore and cash to csv file
             DB.HighScore = scoreCount;
             writeData();
 
-            
-             //File.WriteAllText("Data\\HighScore.csv", csv.ToString());
+
+            //File.WriteAllText("Data\\HighScore.csv", csv.ToString());
         }
         else
         {
@@ -368,7 +368,7 @@ public class GameController : MonoBehaviour
         scoreCount = 0;
         //Destroy(Player);
         fellOffFlag = true;
-        for(int i = 0; i < Hinges.Count; i++)
+        for (int i = 0; i < Hinges.Count; i++)
         {
             Hinges[i].setFirstConnection(true);
         }
@@ -403,13 +403,12 @@ public class GameController : MonoBehaviour
     {
         if (DB.Glider == 1)
         {
-            GameObject gldr = Instantiate(Resources.Load("Glider", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject; 
-                
+            GameObject gldr = Instantiate(Resources.Load("Glider", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+
         }
-        if(DB.Booster == 1)
+        if (DB.Booster == 1)
         {
             GameObject Booster = Instantiate(Resources.Load("Booster", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
         }
     }
 }
-

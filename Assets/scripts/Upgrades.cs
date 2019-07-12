@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using UnityEditor;
-
-/*
+﻿/*
  * A class that holds information on upgrdes
  */
 public static class Upgrades
