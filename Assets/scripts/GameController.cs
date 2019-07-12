@@ -69,12 +69,12 @@ public class GameController : MonoBehaviour
         //Debug.Log("Succsessfully read High score Data ");
 
         //Load the highscore and set highscore upon each life
-        string fileData =  DataSaver.loadData<string>("HighScore");
+     /*   string fileData =  DataSaver.loadData<string>("HighScore");
         string[] fileLines = fileData.Split('\n');
         DB.HighScore = float.Parse(fileLines[0]);
         DB.BankCash = int.Parse(fileLines[1]);
         DB.Glider = int.Parse(fileLines[2]);
-        DB.Booster = int.Parse(fileLines[3]);
+        DB.Booster = int.Parse(fileLines[3]);*/
         //Initilize instance variables
 
         xOffset = 19.2f;
