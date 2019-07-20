@@ -217,7 +217,7 @@ public class buttonMethods : MonoBehaviour
             csv.AppendLine(cashString);
             csv.AppendLine(glideString);
             csv.AppendLine(boostString);
-            DataSaver.saveData<string>(csv.ToString(), "HighScore");
+            DataSaver.SaveData<string>(csv.ToString(), "HighScore");
         }
 
         if (DB.PreviewIndex == 2 && DB.BankCash > bPrice && DB.Booster != 1)//checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased
@@ -237,7 +237,7 @@ public class buttonMethods : MonoBehaviour
             csv.AppendLine(cashString);
             csv.AppendLine(glideString);
             csv.AppendLine(boostString);
-            DataSaver.saveData<string>(csv.ToString(), "HighScore");
+            DataSaver.SaveData<string>(csv.ToString(), "HighScore");
         }
 
         setComponentText(userCash, cashString + DB.BankCash);//updates new cash variable

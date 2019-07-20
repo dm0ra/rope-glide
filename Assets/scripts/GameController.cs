@@ -69,7 +69,7 @@ public class GameController : MonoBehaviour
         //Debug.Log("Succsessfully read High score Data ");
 
         //Load the highscore and set highscore upon each life
-        string fileData = DataSaver.loadData<string>("HighScore");
+        string fileData = DataSaver.LoadData<string>("HighScore");
         string[] fileLines = fileData.Split('\n');
         DB.HighScore = float.Parse(fileLines[0]);
         DB.BankCash = int.Parse(fileLines[1]);
@@ -390,7 +390,7 @@ public class GameController : MonoBehaviour
         csv.AppendLine(cashString);
         csv.AppendLine(glideString);
         csv.AppendLine(boostString);
-        DataSaver.saveData<string>(csv.ToString(), "HighScore");
+        DataSaver.SaveData<string>(csv.ToString(), "HighScore");
     }
 
     //Check for upgrades each time the game is started

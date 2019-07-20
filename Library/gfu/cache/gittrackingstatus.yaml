@@ -13,14 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-<<<<<<< HEAD
-  lastUpdatedAtString: 2019-07-11T20:30:19.222-04:00
-  initializedAtString: 2019-07-11T20:30:19.222-04:00
-  ahead: 1
-  behind: 2
-=======
-  lastUpdatedAtString: 2019-07-11T20:21:06.132-04:00
-  initializedAtString: 2019-07-11T18:28:03.694-04:00
+  lastUpdatedAtString: 2019-07-18T19:18:14.992-04:00
+  initializedAtString: 2019-07-18T19:18:14.992-04:00
   ahead: 0
   behind: 0
->>>>>>> origin/andreabranch
