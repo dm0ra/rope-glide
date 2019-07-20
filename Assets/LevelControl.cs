@@ -4,6 +4,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// This class controls the loaded level.
+/// </summary>
 public class LevelControl : MonoBehaviour
 {
     /// <summary>
@@ -42,6 +45,4 @@ public class LevelControl : MonoBehaviour
             SceneManager.LoadScene(this.LvlIndex);
         }
     }
-
-
 }
