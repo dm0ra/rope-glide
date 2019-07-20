@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    public Camera Cam;          //camera object
-    public GameObject Player;   //player object
-    //public GameObject Moon;   //moon to follow camera
-    //public GameObject Sun;    //sun to follow camera
-    static float startPos;     //position where player starts
-    private int Count100s;      //helper variable to determine distance
+    public Camera Cam;          // camera object
+    public GameObject Player;   // player object
+    // public GameObject Moon;  // moon to follow camera
+    // public GameObject Sun;   // sun to follow camera
+    static float startPos;      // position where player starts
+    private int Count100s;      // helper variable to determine distance
 
-    private int Count50s;              //second helper variable to determine distancec traveled
-    public int groundWidth = 294;      //width of background
-    public int cameraWidth = 228;      //width of camera view
-    public int cameraHelper = 0;       //helper variable
-    public int boostSpawnChance = 4;   //boostSpawnChance / 10 to spawn a boost every x distance
-    public int startup = 1;            //helper variable
+    private int Count50s;              // second helper variable to determine distancec traveled
+    public int groundWidth = 294;      // width of background
+    public int cameraWidth = 228;      // width of camera view
+    public int cameraHelper = 0;       // helper variable
+    public int boostSpawnChance = 4;   // boostSpawnChance / 10 to spawn a boost every x distance
+    public int startup = 1;            // helper variable
 
     public GameController game;        //game object
 
@@ -38,8 +38,6 @@ public class CameraControl : MonoBehaviour
 
     private float BackgroundStartPos;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -51,20 +49,17 @@ public class CameraControl : MonoBehaviour
         bottomCamPos = Cam.transform.position.y;
         delayTime = 0.000001f;
         BackgroundStartPos = 277f;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
         float xpos = Player.transform.position.x;
         game.setDistance(xpos);
         game.setHighestHeight(Player.transform.position.y);
         game.setTopSpeed(Player.GetComponent<Rigidbody2D>().velocity);
 
         //Rect view = Cam.pixelRect;
-
 
         //float temp = 0f;
         target = Player.transform;
@@ -81,10 +76,9 @@ public class CameraControl : MonoBehaviour
         }
         transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 
-
         // Make sun and moon follow the camera
-        //Moon.transform.position = new Vector3(Cam.transform.position.x, 400, -3);
-        //Sun.transform.position = new Vector3(Cam.transform.position.x, 600, -3);
+        // Moon.transform.position = new Vector3(Cam.transform.position.x, 400, -3);
+        // Sun.transform.position = new Vector3(Cam.transform.position.x, 600, -3);
 
         if (startup == 1)
         {

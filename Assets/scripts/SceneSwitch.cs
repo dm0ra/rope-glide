@@ -1,7 +1,12 @@
-﻿using UnityEngine.SceneManagement;
-/*
- *  A class that controls scene switching 
- */
+﻿// <copyright file="SceneSwitch.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+using UnityEngine.SceneManagement;
+
+/// <summary>
+/// A class that controls scene switching.
+/// </summary>
 public class SceneSwitch
 {
     public int sceneIndex;

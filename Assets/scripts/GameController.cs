@@ -341,7 +341,7 @@ public class GameController : MonoBehaviour
         fellOffFlag = true;
         for (int i = 0; i < Hinges.Count; i++)
         {
-            Hinges[i].setFirstConnection(true);
+            Hinges[i].SetFirstConnection(true);
         }
         DB.LvlIndex = 2;
         sceneSwitcher.SwitchScenes(2);

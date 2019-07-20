@@ -75,8 +75,6 @@
     <Compile Include="Assets\scripts\DB.cs" />
     <Compile Include="Assets\scripts\GameController.cs" />
     <Compile Include="Assets\scripts\HingeManager.cs" />
-    <Compile Include="Assets\scripts\Player.cs" />
-    <Compile Include="Assets\scripts\PlayerMovement.cs" />
     <Compile Include="Assets\scripts\Rope.cs" />
     <Compile Include="Assets\scripts\SceneSwitch.cs" />
     <Compile Include="Assets\scripts\Upgrades.cs" />
