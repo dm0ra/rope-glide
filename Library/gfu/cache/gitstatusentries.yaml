@@ -13,57 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-18T19:20:05.419-04:00
-  initializedAtString: 2019-07-18T19:18:14.811-04:00
+  lastUpdatedAtString: 2019-07-20T19:24:37.012-04:00
+  initializedAtString: 2019-07-20T19:24:36.009-04:00
   entries:
-  - path: .vs\Rope-Glide\v15\.suo
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\.vs\Rope-Glide\v15\.suo
-    projectPath: .vs\Rope-Glide\v15\.suo
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
-    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
-    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: .vs\Source_tree_rope_swing\v15\.suo
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\.vs\Source_tree_rope_swing\v15\.suo
-    projectPath: .vs\Source_tree_rope_swing\v15\.suo
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: .vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\.vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide
-    projectPath: .vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: .vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide-shm
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\.vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide-shm
-    projectPath: .vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide-shm
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: .vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide-wal
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\.vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide-wal
-    projectPath: .vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide-wal
-    originalPath: 
-    status: 5
-    staged: 0
   - path: Assembly-CSharp.csproj
     fullPath: C:\Users\Islur\Documents\Rope-Glide\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
@@ -76,9 +28,21 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\Scenes\GameOver.unity
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Assets\Scenes\GameOver.unity
-    projectPath: Assets\Scenes\GameOver.unity
+  - path: Assets\InputClass.cs
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Assets\InputClass.cs
+    projectPath: Assets\InputClass.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\LevelControl.cs
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Assets\LevelControl.cs
+    projectPath: Assets\LevelControl.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\scripts\DataSaver.cs
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Assets\scripts\DataSaver.cs
+    projectPath: Assets\scripts\DataSaver.cs
     originalPath: 
     status: 3
     staged: 0
@@ -94,27 +58,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\CurrentLayout.dwlt
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     status: 3
     staged: 0
@@ -136,15 +82,63 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
+  - path: Library\metadata\08\0815acb276965af48801d4db866252b5
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\metadata\08\0815acb276965af48801d4db866252b5
+    projectPath: Library\metadata\08\0815acb276965af48801d4db866252b5
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\LastSceneManagerSetup.txt
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
+  - path: Library\metadata\13\135862d7de01e3840b56f01765d8af45
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
+    projectPath: Library\metadata\13\135862d7de01e3840b56f01765d8af45
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
+    projectPath: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+    projectPath: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
+    projectPath: Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    projectPath: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
+    projectPath: Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\d6\d6ad9db72dc6c4949ad256018baf170e
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\metadata\d6\d6ad9db72dc6c4949ad256018baf170e
+    projectPath: Library\metadata\d6\d6ad9db72dc6c4949ad256018baf170e
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\db\db0d445c8cb76064f8d4ab16f3eb1fd5
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\metadata\db\db0d445c8cb76064f8d4ab16f3eb1fd5
+    projectPath: Library\metadata\db\db0d445c8cb76064f8d4ab16f3eb1fd5
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+    projectPath: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
     originalPath: 
     status: 3
     staged: 0
@@ -160,99 +154,15 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\Islur\Documents\Rope-Glide\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
-  - path: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
   - path: obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
     fullPath: C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
     projectPath: obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     status: 3
     staged: 0
@@ -267,160 +177,4 @@ MonoBehaviour:
     projectPath: obj\Debug\Assembly-CSharp.pdb
     originalPath: 
     status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.FileListAbsolute.txt
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.FileListAbsolute.txt
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.FileListAbsolute.txt
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: packages.config
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\packages.config
-    projectPath: packages.config
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\.signature.p7s
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\.signature.p7s
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\.signature.p7s
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\de-DE\StyleCop.Analyzers.resources.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\de-DE\StyleCop.Analyzers.resources.dll
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\de-DE\StyleCop.Analyzers.resources.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\en-GB\StyleCop.Analyzers.resources.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\en-GB\StyleCop.Analyzers.resources.dll
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\en-GB\StyleCop.Analyzers.resources.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\es-MX\StyleCop.Analyzers.resources.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\es-MX\StyleCop.Analyzers.resources.dll
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\es-MX\StyleCop.Analyzers.resources.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\fr-FR\StyleCop.Analyzers.resources.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\fr-FR\StyleCop.Analyzers.resources.dll
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\fr-FR\StyleCop.Analyzers.resources.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\pl-PL\StyleCop.Analyzers.resources.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\pl-PL\StyleCop.Analyzers.resources.dll
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\pl-PL\StyleCop.Analyzers.resources.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\pt-BR\StyleCop.Analyzers.resources.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\pt-BR\StyleCop.Analyzers.resources.dll
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\pt-BR\StyleCop.Analyzers.resources.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\ru-RU\StyleCop.Analyzers.resources.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\ru-RU\StyleCop.Analyzers.resources.dll
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\ru-RU\StyleCop.Analyzers.resources.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.dll
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.dll
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\LICENSE
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\LICENSE
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\LICENSE
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\StyleCop.Analyzers.1.1.118.nupkg
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\StyleCop.Analyzers.1.1.118.nupkg
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\StyleCop.Analyzers.1.1.118.nupkg
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\THIRD-PARTY-NOTICES.txt
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\THIRD-PARTY-NOTICES.txt
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\THIRD-PARTY-NOTICES.txt
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\tools\install.ps1
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\tools\install.ps1
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\tools\install.ps1
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\StyleCop.Analyzers.1.1.118\tools\uninstall.ps1
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Packages\StyleCop.Analyzers.1.1.118\tools\uninstall.ps1
-    projectPath: Packages\StyleCop.Analyzers.1.1.118\tools\uninstall.ps1
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: ProjectSettings\QualitySettings.asset
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\ProjectSettings\QualitySettings.asset
-    projectPath: ProjectSettings\QualitySettings.asset
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: ProjectSettings\UnityConnectSettings.asset
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\ProjectSettings\UnityConnectSettings.asset
-    projectPath: ProjectSettings\UnityConnectSettings.asset
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Source_tree_rope_swing.sln
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\Source_tree_rope_swing.sln
-    projectPath: Source_tree_rope_swing.sln
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: StyleCop.Cache
-    fullPath: C:\Users\Islur\Documents\Rope-Glide\StyleCop.Cache
-    projectPath: StyleCop.Cache
-    originalPath: 
-    status: 1
     staged: 0

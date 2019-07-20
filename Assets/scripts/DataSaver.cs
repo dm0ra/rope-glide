@@ -40,7 +40,6 @@ public class DataSaver
         }
 
         // Debug.Log(path);
-
         try
         {
             File.WriteAllBytes(tempPath, bytes);

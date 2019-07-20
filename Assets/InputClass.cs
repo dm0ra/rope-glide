@@ -32,7 +32,6 @@ public class InputClass : MonoBehaviour
             // Debug.Log("Screen Height: " + Screen.height);
 
             // Debug.Log("Screen Input y pos: " + Input.mousePosition.y);
-
             this.currCameraPos = this.transform.position.x;
 
             float touchPositionX = Input.mousePosition.x - this.touchOffest + this.transform.position.x; // x position for touch

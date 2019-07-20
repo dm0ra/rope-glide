@@ -12,11 +12,30 @@ using UnityEngine.UI;
 /// </summary>
 public class EndScreenText : MonoBehaviour
 {
-    public Text Score; // variable for run score text box
-    public Text HighScore; // variable for high score text box
-    public Text Cash; // variable for available cash text box
-    public Text Height; // variable for run maximum height text box
-    public Text Dist; // variable for run maximum distance text box
+    /// <summary>
+    /// Score text box.
+    /// </summary>
+    public Text Score;
+
+    /// <summary>
+    /// High score text box.
+    /// </summary>
+    public Text HighScore;
+
+    /// <summary>
+    /// Cash text box.
+    /// </summary>
+    public Text Cash;
+
+    /// <summary>
+    /// Run maximum height text box.
+    /// </summary>
+    public Text Height;
+
+    /// <summary>
+    /// Run distance text box.
+    /// </summary>
+    public Text Dist;
 
     // Start is called before the first frame update
     private void Start()

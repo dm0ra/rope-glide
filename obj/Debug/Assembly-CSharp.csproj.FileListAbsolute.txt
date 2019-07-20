@@ -284,3 +284,4 @@ C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.CoreCompile
 C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.dll
 C:\Users\Islur\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Islur\Documents\Rope-Glide\Temp\bin\Debug\Assembly-CSharp.dll.CodeAnalysisLog.xml
