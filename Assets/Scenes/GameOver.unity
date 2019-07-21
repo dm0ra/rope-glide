@@ -1313,10 +1313,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ca0f97268fcc2499366b1b2df6a7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 82214829}
+  Score: {fileID: 82214829}
   HighScore: {fileID: 1973401683}
   Cash: {fileID: 709078773}
-  Height: {fileID: 647641649}
+  Height: {fileID: 1973401683}
   Dist: {fileID: 1393573737}
 --- !u!1 &1804593670
 GameObject:

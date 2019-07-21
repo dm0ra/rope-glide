@@ -107,8 +107,13 @@ public class glider : MonoBehaviour
         float newRot;
         float tiltInAngles = this.Glider.transform.eulerAngles.z;
 
+<<<<<<< HEAD
         // If the right side of the screen is being touched
         if (this.gameInput.getInputFlag() == 1 || (this.gameInput.getInputFlag() == 2 && DB.Booster == 0))
+=======
+        //If the right side of the screen is being touched
+        if (gameInput.GetInputFlag() == 1 || (gameInput.GetInputFlag() == 2 && DB.Booster == 0))
+>>>>>>> 462934076c6b8cf14fa5b52fa612a0c55e31a6a1
         {
             // Save the position of the first click
             if (this.firstClick)

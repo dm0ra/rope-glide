@@ -85,6 +85,7 @@ public class GameController : MonoBehaviour
     // Holds the greatest distance recorded by player
     private float distance;
 
+<<<<<<< HEAD
     // Flag that is set when the player falls off
     private bool fellOffFlag;
 
@@ -106,6 +107,10 @@ public class GameController : MonoBehaviour
     {
         // Load the highscore and set highscore upon each life
         string fileData = DataSaver.loadData<string>("HighScore");
+=======
+        //Load the highscore and set highscore upon each life
+        string fileData = DataSaver.LoadData<string>("HighScore");
+>>>>>>> 462934076c6b8cf14fa5b52fa612a0c55e31a6a1
         string[] fileLines = fileData.Split('\n');
         DB.HighScore = float.Parse(fileLines[0]);
         DB.BankCash = int.Parse(fileLines[1]);
@@ -513,7 +518,7 @@ public class GameController : MonoBehaviour
         csv.AppendLine(cashString);
         csv.AppendLine(glideString);
         csv.AppendLine(boostString);
-        DataSaver.saveData<string>(csv.ToString(), "HighScore");
+        DataSaver.SaveData<string>(csv.ToString(), "HighScore");
     }
 
     /// <summary>

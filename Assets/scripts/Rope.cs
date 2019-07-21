@@ -94,8 +94,8 @@ public class Rope : MonoBehaviour
 
             if (DB.Glider == 1 || DB.Booster == 1)
             {
-                Debug.Log(gameInput.getInputFlag());
-                if (gameInput.getInputFlag() == 0) // Only connect when left side of the screen is pressed
+                Debug.Log(gameInput.GetInputFlag());
+                if (gameInput.GetInputFlag() == 0) // Only connect when left side of the screen is pressed
                 {
                     Connect();
                 }
