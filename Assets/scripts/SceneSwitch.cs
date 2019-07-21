@@ -1,24 +1,29 @@
-﻿using UnityEngine.SceneManagement;
-/*
- *  A class that controls scene switching 
- */
+﻿// <copyright file="SceneSwitch.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+using UnityEngine.SceneManagement;
+
+/// <summary>
+/// A class that controls scene switching.
+/// </summary>
 public class SceneSwitch
 {
     public int sceneIndex;
 
     /*
-     * switch scene to index. The index for scences are set in build settings
+     * switch scene to index. The index for scenes are set in build settings
      */
-    public void switchScenes(int index)
+    public void SwitchScenes(int index)
     {
         sceneIndex = index;
         SceneManager.LoadScene(index);
     }
 
     /*
-     * Get Current scene index.
+     * Get current scene index.
      */
-    public int getSceneIndex()
+    public int GetSceneIndex()
     {
         return sceneIndex;
     }

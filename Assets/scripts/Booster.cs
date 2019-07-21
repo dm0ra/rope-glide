@@ -1,79 +1,88 @@
-﻿using UnityEngine;
+﻿// <copyright file="Booster.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
+using UnityEngine;
+
+/// <summary>
+/// This class is used for booster logic when the upgrade is purchased.
+/// </summary>
 public class Booster : MonoBehaviour
 {
-    public GameController game;
-    public GameObject Player;
-    public GameObject booster;
-    private InputClass gameInput;
-    private float LastMousePosX;
-    private bool TiltDownPressed;
-    private bool TiltUpPressed;
-    private float a = 3000f;//acceleration constant
-    private static int fuelMax = 100;//maximum fuel for booster
-    private int fuel;//amount of fuel left
-    private static int fuelUseRate = 3;//usage rate of fuel
-    private float playerXDelta;
-    private float playerYDelta;
-    private Vector3 playerDelta;
-    public int boosterPrice;
-    // Start is called before the first frame update
+    public GameController Game; // gamecontroller object
+    public GameObject Player; // player game object
+    public GameObject booster; // booster game object
+    public int BoosterPrice; // booster price integer
+    private static int fuelMax = 100; // maximum fuel for booster
+    private static int fuelUseRate = 3; // usage rate of fuel
+    private InputClass gameInput; // gameInput to read what buttons were pressed
+    private float a = 3000f; // acceleration constant
+
+    private int fuel; // amount of fuel left
+    private Vector3 playerDelta; // this variable represents the distance between the player and the booster images
+
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
     void Start()
     {
-
-        fuel = fuelMax; //fuel starts at max
-        game = GameObject.FindWithTag("GameController").GetComponent<GameController>();//links game object
-        Player = GameObject.FindWithTag("Player");//links player object
-        gameInput = GameObject.FindWithTag("MainCamera").GetComponent<InputClass>();//link inputs
-        //booster.transform.position = Player.transform.position + new Vector3(0, 10, 0);
-        playerDelta = Player.transform.position - this.transform.position;//sets delta of player and booster
-        playerDelta.z = Player.transform.position.z - 100;//sets z position
-        boosterPrice = 100;
+        this.booster = GameObject.FindGameObjectWithTag("Booster");
+        this.fuel = fuelMax; // fuel starts at max
+        this.Game = GameObject.FindWithTag("GameController").GetComponent<GameController>(); // links game object
+        this.Player = GameObject.FindWithTag("Player"); // links player object
+        this.gameInput = GameObject.FindWithTag("MainCamera").GetComponent<InputClass>(); // link inputs
+        this.playerDelta = this.Player.transform.position - this.transform.position; // sets delta of player and booster
+        this.playerDelta.z = this.Player.transform.position.z - 100; // sets z position
+        this.BoosterPrice = 100;
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Update is called once per frame.
+    /// </summary>
     void Update()
     {
-        //maps booster to player
-        //Debug.Log(Player.transform.position.x);
+        // maps booster to player
         if (DB.Booster == 1)
         {
-            playerDelta.z = Player.transform.position.z;
+            this.playerDelta.z = this.Player.transform.position.z;
         }
         else
         {
-            playerDelta.z = Player.transform.position.z - 100;
+            this.playerDelta.z = this.Player.transform.position.z - 100;
         }
-        this.transform.position = (Player.transform.position - playerDelta);
-        //Debug.Log("Yeett");
-        //LastMousePosX = Input.mousePosition.x;
-        refuel();//refuels if needed
-        if ((gameInput.GetInputFlag() == 2 && DB.Booster == 1 && DB.Glider == 1) || (gameInput.GetInputFlag() == 1 && DB.Glider == 0 && DB.Booster == 1))//if click and upgrade is selected
+        this.transform.position = (Player.transform.position - playerDelta); // sets the booster position close to the player position
+        this.Refuel(); // refuels if needed
+
+        // if click on the proper side of the screen and upgrade is selected
+        if ((this.gameInput.GetInputFlag() == 2 && DB.Booster == 1 && DB.Glider == 1) || (this.gameInput.GetInputFlag() == 1 && DB.Glider == 0 && DB.Booster == 1))
         {
-            accelerateYVelocity();//accelerates player
+            this.AccelerateYVelocity(); // accelerates player
         }
     }
 
-    int accelerateYVelocity()//boosts player up
+    /// <summary>
+    /// This method is used to accelerate velocity in the y direction, aka boosting.
+    /// </summary>
+    private void AccelerateYVelocity()
     {
         Debug.Log("lift off");
 
-        if (fuel >= 0)//checks if there is fuel left
+        // checks if there is fuel left
+        if (this.fuel >= 0)
         {
-            //Player.GetComponent<Rigidbody2D>().velocity.y += a;
-            //Debug.Log(Player.GetComponent<Rigidbody2D>().velocity.y);
-            Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, a));
-            fuel -= fuelUseRate;//reduces fuel
+            this.Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, this.a)); // adds force to the player in the y direction only
+            this.fuel -= fuelUseRate; // reduces fuel
         }
-
-        return 1;
     }
 
-    void refuel()//refuels booster
+    /// <summary>
+    /// This method refuels the booster.
+    /// </summary>
+    private void Refuel()
     {
-        if (fuel < fuelMax)
+        if (this.fuel < fuelMax)
         {
-            fuel++;
+            this.fuel++;
         }
     }
 }

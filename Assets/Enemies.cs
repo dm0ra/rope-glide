@@ -1,117 +1,97 @@
-﻿using UnityEngine;
+﻿// <copyright file="Enemies.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
+using UnityEngine;
+
+/// <summary>
+/// This clas is used to control the enemies behavior in the game, when to create, and how to move.
+/// </summary>
 public class Enemies : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject thisEnemy;
-    public GameController game;
-    public GameObject Player;
-    public Camera cam;
+    public GameObject thisEnemy; // references the current enemy
+    public GameController Game; // game controller object
+    public GameObject Player; // player object
+    private static int enemyZ;
     private int enemyIndex;
     private int enemySpeed;
     private int enemyX;
     private int enemyY;
-    private static int enemyZ;
     private int updateCount;
     private int moveTime;
-    float timeCounter;
+    private float timeCounter;
     private int centerScreenY = 65;
-
 
     void Start()
     {
-        Player = GameObject.FindWithTag("Player");
-        game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
-        cam = Camera.current;
-        enemyIndex = game.AddEnemy(this);
-        //enemyIndex = game.AddItem(this);
-        //Rect view = cam.rect;       //creates a rect object to use for the randomization of the x and y coordinates of the enemy
+        this.Player = GameObject.FindWithTag("Player");
+        this.Game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+        this.enemyIndex = this.Game.AddEnemy(this);
 
-        enemyX = (int)Player.transform.position.x + 200;  //creates a random x value for the spawn of the enemy
-        enemyY = Random.Range(centerScreenY - 30, centerScreenY + 20);  //creates a random y value for the spawn of the enemy
-        //Debug.Log(cam.transform.position.y);
+        this.enemyX = (int)this.Player.transform.position.x + 200; // creates a random x value for the spawn of the enemy
+        this.enemyY = Random.Range(this.centerScreenY - 30, this.centerScreenY + 20); // creates a random y value for the spawn of the enemy
 
-        //enemyX = 26;
-        //enemyY = 75;
-
-        enemySpeed = 1;
+        this.enemySpeed = 1;
         enemyZ = -5;
-        updateCount = 0;   //this variable is used to see how many times the update function has been called
-        moveTime = 80;
-        timeCounter = 0;
+        this.updateCount = 0; // this variable is used to see how many times the update function has been called
+        this.moveTime = 80;
+        this.timeCounter = 0;
 
-        Vector3 enemyPosition = new Vector3(enemyX, enemyY, enemyZ);
-        thisEnemy.transform.position = enemyPosition;
+        Vector3 enemyPosition = new Vector3(this.enemyX, this.enemyY, enemyZ);
+        this.thisEnemy.transform.position = enemyPosition;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("x: " + enemyX + " y: " + enemyY + " updateCount: " + updateCount + " moveTime: " + moveTime);
+        this.updateCount++;
 
-        updateCount++;
-        if (updateCount < moveTime && (updateCount % 3 == 0)) //move time seconds of left movement
+        // move time seconds of left movement
+        if (this.updateCount < this.moveTime && (this.updateCount % 3 == 0))
         {
-            //enemyX = enemyX - enemySpeed;   //decreases the enemy x and y position by the enemy speed once per frame for moveTime seconds
-            enemyY = enemyY - enemySpeed;
+            this.enemyY = this.enemyY - this.enemySpeed;
         }
 
-        else if ((updateCount < moveTime * 2) && (updateCount % 3 == 0)) //move time seconds of left movement
+        // move time seconds of left movement
+        else if ((this.updateCount < this.moveTime * 2) && (this.updateCount % 3 == 0))
         {
-            //enemyX = enemyX + enemySpeed;   //increases the enemy x and y position by the enemy speed once per frame for moveTime seconds
-            enemyY = enemyY + enemySpeed;
+            this.enemyY = this.enemyY + this.enemySpeed;
         }
 
-        else if ((updateCount < moveTime * 3) && (updateCount % 3 == 0)) //move time seconds of left movement
+        // move time seconds of left movement
+        else if ((this.updateCount < this.moveTime * 3) && (this.updateCount % 3 == 0))
         {
-            //enemyX = enemyX + enemySpeed;   //increases the enemy x and y position by the enemy speed once per frame for moveTime seconds
-            enemyY = enemyY - enemySpeed;
+            this.enemyY = this.enemyY - this.enemySpeed;
         }
 
-        else if ((updateCount < moveTime * 4) && (updateCount % 3 == 0)) //move time seconds of left movement
+        // move time seconds of left movement
+        else if ((this.updateCount < this.moveTime * 4) && (this.updateCount % 3 == 0))
         {
-            //enemyX = enemyX - enemySpeed;   //increases the enemy x and y position by the enemy speed once per frame for moveTime seconds
-            enemyY = enemyY + enemySpeed;
-        }
-        if (updateCount >= moveTime * 4)
-        {
-            updateCount = 0;
+            this.enemyY = this.enemyY + this.enemySpeed;
         }
 
-
-
+        if (this.updateCount >= this.moveTime * 4)
+        {
+            this.updateCount = 0;
+        }
 
         // multiply all this with some speed variable (* speed);
-        Vector3 enemyPosition = new Vector3(enemyX, enemyY, enemyZ);
-        thisEnemy.transform.position = enemyPosition;
+        Vector3 enemyPosition = new Vector3(this.enemyX, this.enemyY, enemyZ);
+        this.thisEnemy.transform.position = enemyPosition;
     }
 
-
-
-    //called during collision with enemies
+    // called during collision with enemies
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            if (true) // Add else if's for different items
+            if (true)
             {
-                Player.GetComponent<Rigidbody2D>().velocity = Player.GetComponent<Rigidbody2D>().velocity +
-                                                             (80 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
-                game.RespawnPlayer();
-
+                this.Player.GetComponent<Rigidbody2D>().velocity = this.Player.GetComponent<Rigidbody2D>().velocity +
+                                                             (80 * this.Player.GetComponent<Rigidbody2D>().velocity.normalized);
+                this.Game.RespawnPlayer();
             }
-            //else if()
-            //thisItem.SetActive(false);
-            //Destroy(thisItem);
         }
     }
-
-    /* public int garbageMan(bool destroy)
-     {
-         if (destroy)
-         {
-
-         }
-     }
-     */
 }
