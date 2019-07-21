@@ -60,7 +60,7 @@ public class Rope : MonoBehaviour
         * of the cloud that is being swung from is the same as the one in the game controller
         * (game.getConnected()), and the game controller has a flag set with (game.GetConnectedFlag()).
         */
-        if (mouseState == 1 && index == game.getConnected() && game.GetConnectedFlag())
+        if (mouseState == 1 && index == game.GetConnected() && game.GetConnectedFlag())
         {
             //transform.position gives the transform of the gameobject this script 
             // is connected to in the unity editor.
@@ -157,7 +157,7 @@ public class Rope : MonoBehaviour
             Vector3 temp = (Player.transform.position + CorrectedHingePosition()) * 0.5f;
             VisualRope.transform.position = new Vector3(temp.x, temp.y, -5);
 
-            game.setIsConnected(this);
+            game.SetIsConnected(this);
             Vector2 vel = Player.GetComponent<Rigidbody2D>().velocity + (12 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
             currRope.connectedBody = Player.GetComponent<Rigidbody2D>();
         }

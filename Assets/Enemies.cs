@@ -97,7 +97,7 @@ public class Enemies : MonoBehaviour
             {
                 Player.GetComponent<Rigidbody2D>().velocity = Player.GetComponent<Rigidbody2D>().velocity +
                                                              (80 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
-                game.respawnPlayer();
+                game.RespawnPlayer();
 
             }
             //else if()

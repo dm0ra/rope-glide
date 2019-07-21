@@ -1,189 +1,198 @@
 ﻿using System.Collections;
-//using System.Collections.Generic;
-//using UnityEditor;
 using UnityEngine;
 
+#pragma warning disable IDE1006 // Naming Styles
+#pragma warning disable SA1300 // Element should begin with upper-case letter
+/// <summary>
+/// cameraControl Handles the spawning in of gameobjects
+/// based on how far the player has traveled.
+/// It also handles the camera following the player.
+/// </summary>
 public class cameraControl : MonoBehaviour
+#pragma warning restore SA1300 // Element should begin with upper-case letter
+#pragma warning restore IDE1006 // Naming Styles
 {
- 
-    public Camera Cam;          //camera object
-    public GameObject Player;   //player object
-    //public GameObject Moon;     //moon to follow camera
-    //public GameObject Sun;      //sun to follow camera
-    static  float startPos;     //position where player starts
-    private int Count100s;      //helper variable to determine distance
+#pragma warning disable SA1306 // Field names should begin with lower-case letter
+#pragma warning disable SA1202 // Elements should be ordered by access
+#pragma warning disable SA1401 // Fields should be private
+    /// <summary>
+    /// The main camera in the unity editor.
+    /// </summary>
+    public Camera Cam;
 
-    private int Count50s;              //second helper variable to determine distancec traveled
-    public int groundWidth = 294;      //width of background
-    public int cameraWidth = 228;      //width of camera view
-    public int cameraHelper = 0;       //helper variable
-    public int boostSpawnChance = 4;   // boostSpawnChance / 10 to spawn a boost every x distance
-    public int startup = 1;            //helper variable
+    /// <summary>
+    /// Player gameobject from the unity editor.
+    /// </summary>
+    public GameObject Player;
 
-    public GameController game; //game object
+    // position where player starts
+    private static float startPos;
 
-    // public int blockSpawnDistance = 150;
-    public int enemySpawnChance = 3; // enemySpawnChance / 10 to spawn an enemy every x distance
+    // helper variable to determine distance
+    private int Count100s;
 
+    // second helper variable to determine distancec traveled
+    private int Count50s;
 
-    public int blockSpawnDistance = 200;  //distance between blocks
-    public int blockVar = 15;
+    // width of background
+    private int groundWidth = 294;
 
-    private int camheight;      //height of camera
-    private bool IsCoRoutineRunning;
-    private float bottomCamPos;//bottom of the campera position
-    private float delayTime;
+    // width of camera view
+    private int cameraWidth = 228;
 
-    //Cam Vars 
-    public float dampTime = 0.025f;
+    // helper variable
+    private int cameraHelper = 0;
+
+    // boostSpawnChance / 10 to spawn a boost every x distance
+    private int boostSpawnChance = 4;
+
+    // helper variable
+    private int startup = 1;
+
+    // Current instance of GameController object
+    private GameController game;
+
+    // enemySpawnChance / 10 to spawn an enemy every x distance
+    private int enemySpawnChance = 3;
+
+    // distance between clouds
+    private int blockSpawnDistance = 200;
+
+    // varience in where the block spawns
+    private int blockVar = 15;
+
+    // height of camera
+    private int camheight;
+
+    // bottom of the campera position
+    private float bottomCamPos;
+
+    // Cam Vars
+
+    // Delay variable for the camera following the player.
+    private float dampTime ;
+
+    // Velocity for the camera following the the player
     private Vector3 velocity = Vector3.zero;
-    public Transform target;
 
+    // The destination of the camera next position
+    private Transform target;
+
+    // Starting position of the backgroud
     private float BackgroundStartPos;
 
-
-
-    // Start is called before the first frame update
-    void Start()
+#pragma warning restore SA1306 // Field names should begin with lower-case letter
+#pragma warning restore SA1202 // Elements should be ordered by access
+#pragma warning restore SA1401 // Fields should be private
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
+    private void Start()
     {
-        game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
-        camheight = 133;
-        IsCoRoutineRunning = false;
-        startPos = Player.transform.position.x;
-        Count100s = 0;
-        bottomCamPos = Cam.transform.position.y;
-        delayTime = 0.000001f;
-  
-        BackgroundStartPos = 277f;
-         
+        this.game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+        this.camheight = 133;
+        startPos = this.Player.transform.position.x;
+        this.Count100s = 0;
+        this.bottomCamPos = this.Cam.transform.position.y;
+        this.dampTime = 0.025f;
+        this.BackgroundStartPos = 277f;
     }
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// Update is called once per frame.
+    /// </summary>
+    private void Update()
     {
+        float xpos = this.Player.transform.position.x;
+        this.game.setDistance(xpos);
+        this.game.setHighestHeight(this.Player.transform.position.y);
+        this.game.setTopSpeed(this.Player.GetComponent<Rigidbody2D>().velocity);
+        this.target = this.Player.transform;
+        Vector3 point = this.Cam.WorldToViewportPoint(this.target.position);
+        Vector3 delta = this.target.position - this.Cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); // (new Vector3(0.5, 0.5, point.z));
+        Vector3 destination = this.transform.position + delta;
 
-        float xpos = Player.transform.position.x;
-        game.setDistance(xpos);
-        game.setHighestHeight(Player.transform.position.y);
-        game.setTopSpeed(Player.GetComponent<Rigidbody2D>().velocity);
-
-        //Rect view = Cam.pixelRect;
-
-
-        float temp = 0f;
-        target = Player.transform;
-        Vector3 point = Cam.WorldToViewportPoint(target.position);
-        Vector3 delta = target.position - Cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
-        Vector3 destination = transform.position + delta;
+        // Set the vertical limit the player can go.
         if (destination.y < 105f)
         {
             destination = new Vector3(destination.x, 105f, destination.z);
         }
+
+        // Set the horizontal limit the player can go.
         if (destination.x < 107f)
         {
             destination = new Vector3(107f, destination.y, destination.z);
         }
-        transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 
+        // Smoothly have the camera follow the player.
+        this.transform.position = Vector3.SmoothDamp(this.transform.position, destination, ref this.velocity, this.dampTime);
 
-        // Make sun and moon follow the camera
-        //Moon.transform.position = new Vector3(Cam.transform.position.x, 400, -3);
-        //Sun.transform.position = new Vector3(Cam.transform.position.x, 600, -3);
-
-        if (startup == 1)
+        // Flag for first time update is called
+        if (this.startup == 1)
         {
-            startup = 0;
-            //  Object prefab = AssetDatabase.LoadAssetAtPath("Assets/prefab/Block.prefab", typeof(GameObject));
-            // GameObject block = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-            // Modify the clone to your heart's content
-            // block.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(187 - 5, 187 + 5), -5);
-
-            //GameObject sky = Instantiate(Resources.Load("Sky_", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-            // Modify the clone to your heart's content
-            //sky.transform.position = new Vector3(startPos + 290, 108.9f, 0);
-
-
-
-            if (Random.Range(0, 10) < enemySpawnChance)
+            this.startup = 0;
+            if (Random.Range(0, 10) < this.enemySpawnChance)
             {
                 GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
             }
-
-
-            //GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-
-
-            //Count100s = 0;
-            //Object prefab2 = AssetDatabase.LoadAssetAtPath("Assets/prefab/Ground.prefab", typeof(GameObject));
-            // GameObject ground = Instantiate(Resources.Load("Ground", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-            // ground.transform.position = new Vector3(startPos + 295, 55.0f, 0);
         }
 
-
-        if (startPos + 100 < Player.transform.position.x)
-        //if(cameraHelper + cameraWidth < Player.transform.position.x)
+        // Every 100 position units the player travels
+        if (startPos + 100 < this.Player.transform.position.x)
         {
-            cameraHelper = (int)Player.transform.position.x;
-            startPos = Player.transform.position.x;
-            Count100s = Count100s + 1;
+            this.cameraHelper = (int)this.Player.transform.position.x;
+            startPos = this.Player.transform.position.x;
+            this.Count100s = this.Count100s + 1;
 
-            if ((Count100s % 2) == 0)
+            // Every 200 position units the player travels
+            if ((this.Count100s % 2) == 0)
             {
+                // Spawn in cloud
                 GameObject block = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-                block.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(192 - 5, 192 + 5), -5);
+                block.transform.position = new Vector3(this.Player.transform.position.x + Random.Range(this.blockSpawnDistance - this.blockVar, this.blockSpawnDistance + this.blockVar), Random.Range(192 - 5, 192 + 5), -5);
+            }
 
- 
-            if ((Count100s % 3) == 0)
+            // Every 300 position units the player travels
+            if ((this.Count100s % 3) == 0)
             {
+                // Spawn in cloud
                 GameObject block2 = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-                block2.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(450 - 50, 450 + 50), -5);
+                block2.transform.position = new Vector3(this.Player.transform.position.x + Random.Range(this.blockSpawnDistance - this.blockVar, this.blockSpawnDistance + this.blockVar), Random.Range(450 - 50, 450 + 50), -5);
             }
-            if ((Count100s % 4) == 0)
-            {
-                GameObject block3 = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-                block3.transform.position = new Vector3(Player.transform.position.x + Random.Range(blockSpawnDistance - blockVar, blockSpawnDistance + blockVar), Random.Range(680 - 50, 680 + 50), -5);
-            }
- 
- 
-                //Object prefab1 = AssetDatabase.LoadAssetAtPath("Assets/prefab/Sky_.prefab", typeof(GameObject));
-                GameObject background = Instantiate(Resources.Load("Background", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-                background.transform.position = new Vector3(BackgroundStartPos + 808f, 133f, 0);
-                BackgroundStartPos = BackgroundStartPos + 808f;
 
-                if (Random.Range(0, 10) < enemySpawnChance)//generates mace with enemySpawnChance/10 chance
+            // Every 400 position units the player travels
+            if ((this.Count100s % 4) == 0)
+            {
+                // Spawn in cloud
+                GameObject block3 = Instantiate(Resources.Load("Block1", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+                block3.transform.position = new Vector3(this.Player.transform.position.x + Random.Range(this.blockSpawnDistance - this.blockVar, this.blockSpawnDistance + this.blockVar), Random.Range(680 - 50, 680 + 50), -5);
+            }
+
+            // Object prefab1 = AssetDatabase.LoadAssetAtPath("Assets/prefab/Sky_.prefab", typeof(GameObject));
+            GameObject background = Instantiate(Resources.Load("Background", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+            background.transform.position = new Vector3(this.BackgroundStartPos + 808f, 133f, 0);
+            this.BackgroundStartPos = this.BackgroundStartPos + 808f;
+
+            // generates mace with enemySpawnChance/10 chance
+            if (Random.Range(0, 10) < this.enemySpawnChance)
                 {
                     GameObject mace = Instantiate(Resources.Load("Mace", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
                 }
 
-
- 
- 
-
-                if (Random.Range(0, 10) > boostSpawnChance)
+            // generates boost with enemySpawnChance/10 chance
+            if (Random.Range(0, 10) > this.boostSpawnChance)
                 {
-                    GameObject PickUpItem = Instantiate(Resources.Load("Boost", typeof(GameObject))) as GameObject;
-                    PickUpItem.transform.position = PickUpItem.transform.position + new Vector3(0, 0, -25);
+                    GameObject pickUpItem = Instantiate(Resources.Load("Boost", typeof(GameObject))) as GameObject;
+                    pickUpItem.transform.position = pickUpItem.transform.position + new Vector3(0, 0, -25);
                 }
-
-
             }
-            if (Count100s == 500)
-            {
-                // Object prefab3 = AssetDatabase.LoadAssetAtPath("Assets/prefab/Finish.prefab", typeof(GameObject));
-                GameObject finishLine = Instantiate(Resources.Load("Finish", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
-                finishLine.transform.position = new Vector3(startPos + 300, 82.1f, 0);
 
-            }
+        // End game
+        if (this.Count100s == 500)
+        {
+            // Object prefab3 = AssetDatabase.LoadAssetAtPath("Assets/prefab/Finish.prefab", typeof(GameObject));
+            GameObject finishLine = Instantiate(Resources.Load("Finish", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+            finishLine.transform.position = new Vector3(startPos + 300, 82.1f, 0);
         }
     }
 }
-
-
-
-
-
-
-
-
-
-

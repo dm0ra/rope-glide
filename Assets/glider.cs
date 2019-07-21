@@ -2,161 +2,219 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+#pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
+#pragma warning disable SA1300 // Element should begin with upper-case letter
+/// <summary>
+/// glider takes user input and changes the tilt of the glider
+/// that changes the players motion.
+/// </summary>
 public class glider : MonoBehaviour
+#pragma warning restore SA1300 // Element should begin with upper-case letter
 {
-    /* The game controller class */
+
+#pragma warning disable SA1306 // Field names should begin with lower-case letter
+#pragma warning disable SA1202 // Elements should be ordered by access
+#pragma warning disable SA1401 // Fields should be private
+
+    // The game controller class
+#pragma warning disable SA1600 // Elements should be documented
     public GameController game;
-    /* Player from unity editor */
+#pragma warning restore SA1600 // Elements should be documented
+
+    // Player from unity editor
+#pragma warning disable SA1600 // Elements should be documented
     public GameObject Player;
-    /*  Glider from unity editor */
+#pragma warning restore SA1600 // Elements should be documented
+
+    // Glider from unity editor
+#pragma warning disable SA1600 // Elements should be documented
     public GameObject Glider;
-    /* Input class used to see where the user is touching the screen  */
+#pragma warning restore SA1600 // Elements should be documented
+
+    // Input class used to see where the user is touching the screen.
     private InputClass gameInput;
-    /*  */
+
+    // Player is tilting down
     private bool TiltDownPressed;
-    /*  */
+
+    // Player is tilting up
     private bool TiltUpPressed;
-    /*  */
+
+    // Player is gliding
     private bool GlidePressed;
-    /* Used in tap and drag calculation */
+
+    // Used in tap and drag calculation
     private float LastMousePosX;
-    /* A variable that decreases the effect of tap and drag to change
-       the inclanation of the glider */
+
+    // A variable that decreases the effect of tap and drag to change
+    // the inclanation of the glider.
     private float dragWeight;
-    /* Set the intitalposition of the tap */
+
+    // Set the intitalposition of the tap */
     private bool firstClick;
-    /* Csv file for drag and lift coefficents given an angle */
-    CSVParsing CoefData;
 
+    // Csv file for drag and lift coefficents given an angle.
+    private CSVParsing CoefData;
+
+    // The prive of the glider in the upgrades menu.
+#pragma warning disable SA1600 // Elements should be documented
     public int gliderPrice;
+#pragma warning restore SA1600 // Elements should be documented
+#pragma warning restore SA1202 // Elements should be ordered by access
+#pragma warning restore SA1401 // Fields should be private
+#pragma warning restore SA1306 // Field names should begin with lower-case letter
+#pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
 
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
+    private void Start()
     {
-        //Initilize varibales
-        dragWeight = 0.3f;
-        firstClick = true;
-        CoefData = GameObject.FindWithTag("Glider").GetComponent<CSVParsing>();
-        game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+        // Initilize varibales
+        this.dragWeight = 0.3f;
+        this.firstClick = true;
+        this.CoefData = GameObject.FindWithTag("Glider").GetComponent<CSVParsing>();
+        this.game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
         float startAngle = -90f;
-        Player = GameObject.FindWithTag("Player");
-        //Player.transform.rotation = new Quaternion(0, 0, -90, 0);
-        Glider.transform.position = Player.transform.position + new Vector3(0, 10, 0);
-        Player.transform.eulerAngles = new Vector3(0, 0, startAngle);
-        Glider.transform.eulerAngles = new Vector3(65, 0, 80 + startAngle);
-        LastMousePosX = 0f;
-        gameInput = GameObject.FindWithTag("MainCamera").GetComponent<InputClass>();
-        gliderPrice = 100;
+        this.Player = GameObject.FindWithTag("Player");
+        this.Glider.transform.position = this.Player.transform.position + new Vector3(0, 10, 0);
+        this.Player.transform.eulerAngles = new Vector3(0, 0, startAngle);
+        this.Glider.transform.eulerAngles = new Vector3(65, 0, 80 + startAngle);
+        this.LastMousePosX = 0f;
+        this.gameInput = GameObject.FindWithTag("MainCamera").GetComponent<InputClass>();
+        this.gliderPrice = 100;
     }
+
+#pragma warning disable SA1202 // Elements should be ordered by access
+                              /// <summary>
+                              /// Tells if the glider is currently being activated.
+                              /// </summary>
+                              /// <returns>Boolean if the glider is being used</returns>
     public bool GliderActive()
+#pragma warning restore SA1202 // Elements should be ordered by access
     {
 
-        return GlidePressed | TiltDownPressed | TiltUpPressed;
+        return this.GlidePressed | this.TiltDownPressed | this.TiltUpPressed;
     }
-    // Update is called once per frame
-    void Update()
-    {
 
-        float tilt = 1f;
-        float drag = 0.1f;
+    /// <summary>
+    /// Runs once a frame. Handles glider input
+    /// and changes the players speed and direction.
+    /// </summary>
+    private void Update()
+    {
         float dragDistance;
         float newRot;
-        float tiltInAngles = Glider.transform.eulerAngles.z;
+        float tiltInAngles = this.Glider.transform.eulerAngles.z;
 
-        //If the right side of the screen is being touched
-        if (gameInput.getInputFlag() == 1 || (gameInput.getInputFlag() == 2 && DB.Booster == 0))
+        // If the right side of the screen is being touched
+        if (this.gameInput.getInputFlag() == 1 || (this.gameInput.getInputFlag() == 2 && DB.Booster == 0))
         {
             // Save the position of the first click
-            if (firstClick)
+            if (this.firstClick)
             {
-                LastMousePosX = Input.mousePosition.x;
+                this.LastMousePosX = Input.mousePosition.x;
             }
 
+            this.firstClick = false;
 
+            // Every frame update the glider position to the player position plus <2,5,0>
+            this.Glider.transform.position = this.Player.transform.position + new Vector3(2, 5, 0);
 
-
-
-            firstClick = false;
-            //Every frame update the glider position to the player position plus <2,5,0>
-            Glider.transform.position = Player.transform.position + new Vector3(2, 5, 0);
-
-            //Drag left
-            if (LastMousePosX > Input.mousePosition.x)
+            // Drag left
+            if (this.LastMousePosX > Input.mousePosition.x)
             {
-                //This is to limit roatation, allow rotation between 60 to -45 degrees
-                if (tiltInAngles >= 319 && tiltInAngles <= 360 || tiltInAngles <= 60 && tiltInAngles >= 0 || tiltInAngles < 0 && tiltInAngles > -0.1f)
+                // This is to limit roatation, allow rotation between 60 to -45 degrees
+                if ((tiltInAngles >= 319 && tiltInAngles <= 360) || (tiltInAngles <= 60 && tiltInAngles >= 0) || (tiltInAngles < 0 && tiltInAngles > -0.1f))
                 {
-                    //Get raw drag distance in click position
-                    dragDistance = LastMousePosX - Input.mousePosition.x;
-                    //Put a weight on drag distnace so roation is slower
-                    dragDistance *= dragWeight;
-                    //Create the new rotation
-                    newRot = (Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance)).z;
-                    //This is to limit roatation, allow rotation between 60 to -45 degrees 
-                    if (newRot >= 319 && newRot <= 365 || newRot <= 60 && newRot >= -5 || newRot < 0 && newRot > -0.5f)
+                    // Get raw drag distance in click position
+                    dragDistance = this.LastMousePosX - Input.mousePosition.x;
+
+                    // Put a weight on drag distnace so roation is slower
+                    dragDistance *= this.dragWeight;
+
+                    // Create the new rotation
+                    newRot = (this.Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance)).z;
+
+                    // This is to limit roatation, allow rotation between 60 to -45 degrees
+                    if ((newRot >= 319 && newRot <= 365) || (newRot <= 60 && newRot >= -5) || (newRot < 0 && newRot > -0.5f))
                     {
-                        //Set the new rotation of the glider and the player
-                        Player.transform.eulerAngles = Player.transform.eulerAngles + new Vector3(0, 0, dragDistance);
-                        Glider.transform.eulerAngles = Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance);
+                        // Set the new rotation of the glider and the player
+                        this.Player.transform.eulerAngles = this.Player.transform.eulerAngles + new Vector3(0, 0, dragDistance);
+                        this.Glider.transform.eulerAngles = this.Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance);
                     }
                     else
                     {
-                        //Set the glider to the maximum rotation allowed
-                        Glider.transform.eulerAngles = new Vector3(Glider.transform.eulerAngles.x, Glider.transform.eulerAngles.y, 60);
+                        // Set the glider to the maximum rotation allowed
+                        this.Glider.transform.eulerAngles = new Vector3(this.Glider.transform.eulerAngles.x, this.Glider.transform.eulerAngles.y, 60);
                     }
 
-                    newRot = (Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance)).z;
-                    // Debug.Log("New Rotation: " + newRot);
+                    newRot = (this.Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance)).z;
                 }
-                setNewPlayerVelocity();
+
+                // Changes the players movement based on glider
+                this.SetNewPlayerVelocity();
             }
-            //Drag right
-            else if (LastMousePosX < Input.mousePosition.x)
+
+            // Drag right
+            else if (this.LastMousePosX < Input.mousePosition.x)
             {
-                //This is to limit roatation, allow rotation between 60 to -45 degrees
-                if (tiltInAngles >= 320 && tiltInAngles <= 360 || tiltInAngles <= 61 && tiltInAngles >= 0 || tiltInAngles < 0 && tiltInAngles > -0.1f)
+                // This is to limit roatation, allow rotation between 60 to -45 degrees
+                if ((tiltInAngles >= 320 && tiltInAngles <= 360) || (tiltInAngles <= 61 && tiltInAngles >= 0) || (tiltInAngles < 0 && tiltInAngles > -0.1f))
                 {
-                    //Get raw drag distance in click position
-                    dragDistance = LastMousePosX - Input.mousePosition.x;
-                    //Put a weight on drag distnace so roation is slower
-                    dragDistance *= dragWeight;
-                    //Create the new rotation
-                    newRot = (Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance)).z;
-                    //This is to limit roatation, allow rotation between 60 to -45 degrees
-                    if (newRot >= 320 && newRot <= 365 || newRot <= 61 && newRot >= -5 || newRot < 0 && newRot > -0.5f)
+                    // Get raw drag distance in click position
+                    dragDistance = this.LastMousePosX - Input.mousePosition.x;
+
+                    // Put a weight on drag distnace so roation is slower
+                    dragDistance *= this.dragWeight;
+
+                    // Create the new rotation
+                    newRot = (this.Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance)).z;
+
+                    // This is to limit roatation, allow rotation between 60 to -45 degrees
+                    if ((newRot >= 320 && newRot <= 365) || (newRot <= 61 && newRot >= -5) || (newRot < 0 && newRot > -0.5f))
                     {
-                        //Set the new rotation of the glider and the player
-                        Player.transform.eulerAngles = Player.transform.eulerAngles + new Vector3(0, 0, dragDistance);
-                        Glider.transform.eulerAngles = Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance);
+                        // Set the new rotation of the glider and the player
+                        this.Player.transform.eulerAngles = this.Player.transform.eulerAngles + new Vector3(0, 0, dragDistance);
+                        this.Glider.transform.eulerAngles = this.Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance);
                     }
                     else
                     {
-                        //Set the glider to the maximum rotation allowed
-                        Glider.transform.eulerAngles = new Vector3(Glider.transform.eulerAngles.x, Glider.transform.eulerAngles.y, 320);
+                        // Set the glider to the maximum rotation allowed
+                        this.Glider.transform.eulerAngles = new Vector3(this.Glider.transform.eulerAngles.x, this.Glider.transform.eulerAngles.y, 320);
                     }
 
-                    newRot = (Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance)).z;
-                    // Debug.Log("New Rotation: " + newRot);
+                    newRot = (this.Glider.transform.eulerAngles + new Vector3(0, 0, dragDistance)).z;
                 }
-                setNewPlayerVelocity();
+
+                // Changes the players movement based on glider
+                this.SetNewPlayerVelocity();
             }
             else
             {
-                GlidePressed = true;
-                setNewPlayerVelocity();
+                this.GlidePressed = true;
+                this.SetNewPlayerVelocity();
             }
         }
         else
         {
-            firstClick = true;
-            GlidePressed = false;
-            TiltDownPressed = false;
-            TiltUpPressed = false;
-            Glider.transform.position = Player.transform.position + new Vector3(0, 0, 100);
+            this.firstClick = true;
+            this.GlidePressed = false;
+            this.TiltDownPressed = false;
+            this.TiltUpPressed = false;
+            this.Glider.transform.position = this.Player.transform.position + new Vector3(0, 0, 100);
         }
-        LastMousePosX = Input.mousePosition.x;
+
+        // Save the last touch position to see touch and drag distance.
+        this.LastMousePosX = Input.mousePosition.x;
     }
-    private float getLiftCoefficent(float tilt)
+
+    /// <summary>
+    /// Gets the lift coefficent for the glider.
+    /// </summary>
+    /// <param name="tilt"> The angle of the glider </param>
+    /// <returns>Lift coefficent</returns>
+    private float GetLiftCoefficent(float tilt)
     {
         try
         {
@@ -164,29 +222,39 @@ public class glider : MonoBehaviour
             int x;
             for (x = 0; x < 176; x++)
             {
-                float[] Angle_Coef = new float[2];
-                Angle_Coef = CoefData.getLiftCoef(x);
+                float[] angle_Coef = new float[2];
+                angle_Coef = this.CoefData.getLiftCoef(x);
 
-                if (tilt < Angle_Coef[0])
+                if (tilt < angle_Coef[0])
                 {
                     if (x == 0)
                     {
-                        coef = Angle_Coef[1];
+                        coef = angle_Coef[1];
                     }
-                    coef = (Angle_Coef[1] + CoefData.getLiftCoef(x - 1)[1]) / 2;
+
+                    coef = (angle_Coef[1] + this.CoefData.getLiftCoef(x - 1)[1]) / 2;
                     break;
                 }
 
             }
+
             return coef;
         }
+#pragma warning disable CS0168 // Variable is declared but never used
         catch (System.Exception x)
+#pragma warning restore CS0168 // Variable is declared but never used
         {
             Debug.Log("Lift Coefficent Error");
         }
-        return -99;
+
+        return -1;
     }
-    private float getDragCoefficent(float tilt)
+    /// <summary>
+    /// Gets the drag coefficent for the glider.
+    /// </summary>
+    /// <param name="tilt"> The angle of the glider. </param>
+    /// <returns>Lift coefficent.</returns>
+    private float GetDragCoefficent(float tilt)
     {
         try
         {
@@ -194,175 +262,195 @@ public class glider : MonoBehaviour
             int x;
             for (x = 0; x < 229; x++)
             {
-                float[] Angle_Coef = new float[2];
-                Angle_Coef = CoefData.getDragCoef(x);
+                float[] angle_Coef = new float[2];
+                angle_Coef = this.CoefData.getDragCoef(x);
 
-                if (tilt < Angle_Coef[0])
+                if (tilt < angle_Coef[0])
                 {
                     if (x == 0)
                     {
-                        coef = Angle_Coef[1];
+                        coef = angle_Coef[1];
                     }
-                    coef = (Angle_Coef[1] + CoefData.getDragCoef(x - 1)[1]) / 2;
+
+                    coef = (angle_Coef[1] + this.CoefData.getDragCoef(x - 1)[1]) / 2;
                     break;
                 }
-
             }
 
             return coef;
         }
+        #pragma warning disable CS0168 // Variable is declared but never used
         catch (System.Exception x)
+        #pragma warning restore CS0168 // Variable is declared but never used
         {
             Debug.Log("drag Coefficent Error");
         }
-        return -99;
+
+        return -1;
     }
 
-    void setNewPlayerVelocity()
+    /// <summary>
+    /// Sets the players new movment, is called once a frame when screen 
+    /// is being touched.
+    /// </summary>
+    private void SetNewPlayerVelocity()
     {
-        float Area = 0.5f;//0.055
-        float airDensity = 1.225f;//1.225f; //kg/m^3
-        float CurrVelo = Player.GetComponent<Rigidbody2D>().velocity.magnitude;
-        CurrVelo = CurrVelo / 2.5f;
+        // Area of wing
+        float area = 0.5f;
+        float airDensity = 1.225f;
+
+        // Current velocity is weighted down to help glider function
+        float currVelo = this.Player.GetComponent<Rigidbody2D>().velocity.magnitude;
+        currVelo = currVelo / 2.5f;
+
+        // Angle of the glider
         float tiltInAngles;
-        if (Glider.transform.eulerAngles.z > 0 && Glider.transform.eulerAngles.z <= 61 || Glider.transform.eulerAngles.z == 0)
+        if ((this.Glider.transform.eulerAngles.z > 0 && this.Glider.transform.eulerAngles.z <= 61) || this.Glider.transform.eulerAngles.z == 0)
         {
 
-            tiltInAngles = Glider.transform.eulerAngles.z;
+            tiltInAngles = this.Glider.transform.eulerAngles.z;
         }
         else
         {
-            tiltInAngles = Glider.transform.eulerAngles.z - 360;
+            tiltInAngles = this.Glider.transform.eulerAngles.z - 360;
         }
-        //tiltInAngles = tiltInAngles - 90f;
+
         float tiltInRads = 0.0174533f * tiltInAngles;
+
+        // Get Coefficents
         float liftCoefficent;
+        liftCoefficent = this.GetLiftCoefficent(tiltInAngles);// 2 * Mathf.PI * tiltInRads;
+        float dragCoefficent = this.GetDragCoefficent(tiltInAngles);// 1.28f * Mathf.Sin(tiltInRads);//
 
-        /*if(tiltInAngles < 0)
-            liftCoefficent = 2 * Mathf.PI * (-1f*tiltInRads);
-        else
-            liftCoefficent = 2 * Mathf.PI * tiltInRads; //Decending glider Should get this*/
-        liftCoefficent = getLiftCoefficent(tiltInAngles);//2 * Mathf.PI * tiltInRads;
-        float dragCoefficent = getDragCoefficent(tiltInAngles);//1.28f * Mathf.Sin(tiltInRads);// 
+        // Calculate lift and drag forces
+        float lift = liftCoefficent * ((currVelo * currVelo * airDensity) / 2) * area;
+        float drag = dragCoefficent * (currVelo * currVelo * airDensity / 2) * area;
+        float weight = 9.8f * this.Player.GetComponent<Rigidbody2D>().mass;
+        float stallSpeed = Mathf.Sqrt((2f * weight * 9.8f) / (airDensity * area * (2 * Mathf.PI * 0.785398f)));
 
-        float Lift = liftCoefficent * ((CurrVelo * CurrVelo * airDensity) / 2) * Area;
-        float Drag = (dragCoefficent * ((CurrVelo * CurrVelo * airDensity) / 2) * Area);
-        float weight = 9.8f * Player.GetComponent<Rigidbody2D>().mass;
-        float stallSpeed = Mathf.Sqrt((2f * weight * 9.8f) / (airDensity * Area * (2 * Mathf.PI * 0.785398f)));
+        // Calculate component forces of lift and drag.
+        float veritcalLift = lift * Mathf.Cos(tiltInRads); 
+        float horizontalLift = lift * Mathf.Sin(tiltInRads);
+        float verticalDrag = drag * Mathf.Sin(tiltInRads);
+        float horizontalDrag = drag * Mathf.Cos(tiltInRads);
 
-        float VeritcalLift = Lift * Mathf.Cos(tiltInRads);
+        float balenceVertical = veritcalLift + verticalDrag - weight;
+        float balenceHorizontal = horizontalLift - horizontalDrag;
 
-
-        float HorizontalLift = Lift * Mathf.Sin(tiltInRads);
-        float VerticalDrag = Drag * Mathf.Sin(tiltInRads);
-        float HorizontalDrag = Drag * Mathf.Cos(tiltInRads);
-        if (VeritcalLift > 3000f)
-        {
-            //VeritcalLift = 2000f;
-            //  Debug.Log("Current Velo: " + CurrVelo + "   Vertical Lift: " + VeritcalLift + "   Vertical Drag: " + VerticalDrag);
-
-        }
-        float balenceVertical = VeritcalLift + VerticalDrag - weight;
-        float balenceHorizontal = HorizontalLift - HorizontalDrag;
         float stallspeed = 30f;
         float maxspeed = 300f;
 
-        /*if(VeritcalLift + VerticalDrag > weight)
-        {
-            VeritcalLift = (VeritcalLift + VerticalDrag) - weight;
-        }*/
-        if (Player.GetComponent<Rigidbody2D>().velocity.x > maxspeed)
-        {
-            //  Debug.Log("highspeeeeed");
-        }
-        if (Player.GetComponent<Rigidbody2D>().velocity.x > stallspeed && Player.GetComponent<Rigidbody2D>().velocity.magnitude < maxspeed)
+        // Normal glider function less than max speend and greater than stall speed
+        if (this.Player.GetComponent<Rigidbody2D>().velocity.x > stallspeed && this.Player.GetComponent<Rigidbody2D>().velocity.magnitude < maxspeed)
         {
             Debug.Log("NORMALSPEED");
+
+            // Tilted Down
             if (tiltInAngles < 0)
             {
-                //layer.GetComponent<Rigidbody2D>().AddForce(new Vector2(HorizontalLift - HorizontalDrag
-                //, VeritcalLift + VerticalDrag));
-                Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(HorizontalLift, VeritcalLift));
-                Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f * HorizontalDrag, VerticalDrag));
+                // Add the drag and lift forces to the player
+                this.Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(horizontalLift, veritcalLift));
+                this.Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f * horizontalDrag, verticalDrag));
 
-                balenceVertical = VeritcalLift + VerticalDrag - weight;
-                balenceHorizontal = HorizontalLift - HorizontalDrag;
+                balenceVertical = veritcalLift + verticalDrag - weight;
+                balenceHorizontal = horizontalLift - horizontalDrag;
             }
+
+            // Tilted up
             else
             {
-                Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f * HorizontalLift - HorizontalDrag
-                , VeritcalLift - VerticalDrag));
+                // Add the drag and lift forces to the player
+                this.Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(
+                    (-1f * horizontalLift) - horizontalDrag,
+                    veritcalLift - verticalDrag));
 
-                balenceVertical = VeritcalLift - VerticalDrag - weight;
-                balenceHorizontal = -1f * HorizontalLift - HorizontalDrag;
+                balenceVertical = veritcalLift - verticalDrag - weight;
+                balenceHorizontal = (-1f * horizontalLift) - horizontalDrag;
             }
         }
-        else if (Player.GetComponent<Rigidbody2D>().velocity.x > 0f && Player.GetComponent<Rigidbody2D>().velocity.x < stallspeed &&
-            Player.GetComponent<Rigidbody2D>().velocity.magnitude < maxspeed)
+
+        // Low speed reduce the effectiveness of the glider
+        else if (this.Player.GetComponent<Rigidbody2D>().velocity.x > 0f && this.Player.GetComponent<Rigidbody2D>().velocity.x < stallspeed &&
+            this.Player.GetComponent<Rigidbody2D>().velocity.magnitude < maxspeed)
         {
             Debug.Log("LOW x SPEED");
-            HorizontalLift = HorizontalLift * (Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
-            VeritcalLift = VeritcalLift * (Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
-            HorizontalDrag = HorizontalDrag * (Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
-            VerticalDrag = VerticalDrag * (Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
+
+            // Damp the lift and drag forces by (Player.Velo.X/30) Player.Velo.X will be less than 30
+            horizontalLift = horizontalLift * (this.Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
+            veritcalLift = veritcalLift * (this.Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
+            horizontalDrag = horizontalDrag * (this.Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
+            verticalDrag = verticalDrag * (this.Player.GetComponent<Rigidbody2D>().velocity.x / stallspeed);
+
+            // Tilted Down
             if (tiltInAngles < 0)
             {
-                //layer.GetComponent<Rigidbody2D>().AddForce(new Vector2(HorizontalLift - HorizontalDrag
-                //, VeritcalLift + VerticalDrag));
+                // Add the drag and lift forces to the player
+                this.Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(horizontalLift, veritcalLift));
+                this.Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f * horizontalDrag, verticalDrag));
 
-                Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(HorizontalLift, VeritcalLift));
-                Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f * HorizontalDrag, VerticalDrag));
-
-                balenceVertical = VeritcalLift + VerticalDrag - weight;
-                balenceHorizontal = HorizontalLift - HorizontalDrag;
+                balenceVertical = veritcalLift + verticalDrag - weight;
+                balenceHorizontal = horizontalLift - horizontalDrag;
             }
+
+            // Tilted up
             else
             {
-                Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f * HorizontalLift - HorizontalDrag
-                , VeritcalLift - VerticalDrag));
+                // Add the drag and lift forces to the player
+                this.Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(
+                    (-1f * horizontalLift) - horizontalDrag,
+                    veritcalLift - verticalDrag));
 
-                balenceVertical = VeritcalLift - VerticalDrag - weight;
-                balenceHorizontal = -1f * HorizontalLift - HorizontalDrag;
+                balenceVertical = veritcalLift - verticalDrag - weight;
+                balenceHorizontal = (-1f * horizontalLift) - horizontalDrag;
             }
         }
-        else if (Player.GetComponent<Rigidbody2D>().velocity.magnitude > maxspeed && Player.GetComponent<Rigidbody2D>().velocity.x > 0f)
+
+        // Highspeed reduce the gliders effectiveness to prevent from runaway glider
+        else if (this.Player.GetComponent<Rigidbody2D>().velocity.magnitude > maxspeed && this.Player.GetComponent<Rigidbody2D>().velocity.x > 0f)
         {
-            if (Player.GetComponent<Rigidbody2D>().velocity.y > 350)
+            // Top speed disable all glider function
+            if (this.Player.GetComponent<Rigidbody2D>().velocity.y > 350)
             {
                 Debug.Log("Vertical speed limit reached  STALL");
             }
             else
             {
-                Debug.Log("HIGHSPEED" + "  vertical speed " + Player.GetComponent<Rigidbody2D>().velocity.y);
+                Debug.Log("HIGHSPEED" + "  vertical speed " + this.Player.GetComponent<Rigidbody2D>().velocity.y);
 
-                HorizontalLift = HorizontalLift * (maxspeed / Player.GetComponent<Rigidbody2D>().velocity.magnitude);
-                VeritcalLift = VeritcalLift * (maxspeed / Player.GetComponent<Rigidbody2D>().velocity.magnitude);
-                HorizontalDrag = HorizontalDrag; //* (maxspeed / Player.GetComponent<Rigidbody2D>().velocity.x);
-                VerticalDrag = VerticalDrag;//* (maxspeed / Player.GetComponent<Rigidbody2D>().velocity.x);
+                horizontalLift = horizontalLift * (maxspeed / this.Player.GetComponent<Rigidbody2D>().velocity.magnitude);
+                veritcalLift = veritcalLift * (maxspeed / this.Player.GetComponent<Rigidbody2D>().velocity.magnitude);
+                horizontalDrag = horizontalDrag * 1;
+                verticalDrag = verticalDrag * 1;
+
+                // Tilted Down
                 if (tiltInAngles < 0)
                 {
-                    //layer.GetComponent<Rigidbody2D>().AddForce(new Vector2(HorizontalLift - HorizontalDrag
-                    //, VeritcalLift + VerticalDrag));
+                    // Add the drag and lift forces to the player
+                    this.Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(horizontalLift, veritcalLift));
+                    this.Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f * horizontalDrag, verticalDrag));
 
-                    Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(HorizontalLift, VeritcalLift));
-                    Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f * HorizontalDrag, VerticalDrag));
-
-                    balenceVertical = VeritcalLift + VerticalDrag - weight;
-                    balenceHorizontal = HorizontalLift - HorizontalDrag;
+                    balenceVertical = veritcalLift + verticalDrag - weight;
+                    balenceHorizontal = horizontalLift - horizontalDrag;
                 }
+
+                // Tilted up
                 else
                 {
-                    Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1f * HorizontalLift - HorizontalDrag
-                    , VeritcalLift - VerticalDrag));
+                    // Add the drag and lift forces to the player
+                    this.Player.GetComponent<Rigidbody2D>().AddForce(new Vector2(
+                        (-1f * horizontalLift) - horizontalDrag,
+                        veritcalLift - verticalDrag));
 
-                    balenceVertical = VeritcalLift - VerticalDrag - weight;
-                    balenceHorizontal = -1f * HorizontalLift - HorizontalDrag;
+                    balenceVertical = veritcalLift - verticalDrag - weight;
+                    balenceHorizontal = (-1f * horizontalLift) - horizontalDrag;
                 }
             }
         }
+
+        // Vertical speed to high stall glider
         else
         {
-            Debug.Log("STALL" + "  vertical speed " + Player.GetComponent<Rigidbody2D>().velocity.y);
+            Debug.Log("STALL" + "  vertical speed " + this.Player.GetComponent<Rigidbody2D>().velocity.y);
         }
     }
 }
