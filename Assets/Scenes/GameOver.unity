@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -243,10 +243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab313a20f661b245bad8b8d998b093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
-  score: {fileID: 0}
-  highScore: {fileID: 0}
-  previewIndex: 0
 --- !u!114 &383409472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,7 +284,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 383409471}
-        m_MethodName: gotoPlay
+        m_MethodName: GotoPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -389,10 +385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab313a20f661b245bad8b8d998b093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
-  score: {fileID: 0}
-  highScore: {fileID: 0}
-  previewIndex: 0
 --- !u!114 &387526902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,7 +426,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 387526901}
-        m_MethodName: gotoUpgrades
+        m_MethodName: GotoUpgrades
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -691,10 +683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab313a20f661b245bad8b8d998b093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
-  score: {fileID: 0}
-  highScore: {fileID: 0}
-  previewIndex: 0
 --- !u!114 &1114760027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,10 +844,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab313a20f661b245bad8b8d998b093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
-  score: {fileID: 0}
-  highScore: {fileID: 0}
-  previewIndex: 0
 --- !u!114 &1141133129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,10 +1083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab313a20f661b245bad8b8d998b093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
-  score: {fileID: 0}
-  highScore: {fileID: 0}
-  previewIndex: 0
 --- !u!114 &1501997612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,7 +1124,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1501997611}
-        m_MethodName: gotoMainMenu
+        m_MethodName: GotoMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1313,7 +1293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ca0f97268fcc2499366b1b2df6a7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 82214829}
+  Score: {fileID: 82214829}
   HighScore: {fileID: 1973401683}
   Cash: {fileID: 709078773}
   Height: {fileID: 647641649}
@@ -1450,10 +1430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab313a20f661b245bad8b8d998b093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
-  score: {fileID: 0}
-  highScore: {fileID: 0}
-  previewIndex: 0
 --- !u!114 &1905629875
 MonoBehaviour:
   m_ObjectHideFlags: 0

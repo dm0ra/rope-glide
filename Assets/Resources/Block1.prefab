@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7e75620aeb23a34cae7b6a9c186f874, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currRope: {fileID: 7434283812824172811}
+  CurrRope: {fileID: 7434283812824172811}
   Player: {fileID: 0}
   Hinge: {fileID: 2092936575020753148}
   game: {fileID: 0}

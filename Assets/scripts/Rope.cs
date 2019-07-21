@@ -89,7 +89,6 @@ public class Rope : MonoBehaviour
     /// </summary>
     private void Update()
     {
-        Debug.Log("DB Glider: " + DB.Glider);
 
         // Form the visable rope you see on screen if the mouse state is 1 (left click held down),
         // The index (the index of THIS connection point in the array of connection points)
@@ -121,16 +120,15 @@ public class Rope : MonoBehaviour
         if (game.GetJumpClick() && Input.GetMouseButtonDown(0) && game.IsHingeClosest(index) && !game.GetConnectedFlag())
         {
             // If the glider is active, connect only when the left half of the screen is pressed
-            if (DB.Glider == 1 && DB.Booster == 1)
+            if (DB.Glider == 1 || DB.Booster == 1)
             {
-                Debug.Log(gameInput.GetInputFlag());
                 if (gameInput.GetInputFlag() == 0) // Only connect when left side of the screen is pressed
                 {
                     Connect();
                 }
             }
             // Connect on any input when no upgrades are active.
-            if (DB.Glider == 0)
+            if (DB.Glider == 0 && DB.Booster == 0)
             {
                 Connect();
             }
@@ -159,10 +157,8 @@ public class Rope : MonoBehaviour
         myLine.GetComponent<LineRenderer>().sortingOrder = 1;
         LineRenderer lr = myLine.GetComponent<LineRenderer>();
         lr.material = new Material(Shader.Find("Specular"));
-        lr.startColor = color;
-        lr.endColor = color;
-        lr.startWidth = 0.5f;
-        lr.endWidth = 0.5f;
+        lr.SetColors(color, color);
+        lr.SetWidth(0.5f, 0.5f);
         lr.SetPosition(0, start);
         lr.SetPosition(1, end);
         GameObject.Destroy(myLine, .01f);
@@ -188,7 +184,7 @@ public class Rope : MonoBehaviour
             Vector3 temp = (Player.transform.position + CorrectedHingePosition()) * 0.5f;
             VisualRope.transform.position = new Vector3(temp.x, temp.y, -5);
             game.SetIsConnected(this);
-            //Vector2 vel = Player.GetComponent<Rigidbody2D>().velocity + (12 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
+            Vector2 vel = Player.GetComponent<Rigidbody2D>().velocity + (12 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
             CurrRope.connectedBody = Player.GetComponent<Rigidbody2D>();
         }
         mouseState = 1;

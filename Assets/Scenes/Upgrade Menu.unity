@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -478,10 +478,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab313a20f661b245bad8b8d998b093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
-  score: {fileID: 0}
-  highScore: {fileID: 0}
-  previewIndex: 0
 --- !u!114 &425879587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,7 +519,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 425879586}
-        m_MethodName: gotoMainMenu
+        m_MethodName: GotoMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -624,10 +620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab313a20f661b245bad8b8d998b093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
-  score: {fileID: 0}
-  highScore: {fileID: 0}
-  previewIndex: 0
 --- !u!114 &452049735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,7 +661,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 452049734}
-        m_MethodName: purchase
+        m_MethodName: Purchase
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -918,10 +910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab313a20f661b245bad8b8d998b093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
-  score: {fileID: 0}
-  highScore: {fileID: 0}
-  previewIndex: 0
 --- !u!114 &751679559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,7 +951,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 751679558}
-        m_MethodName: previewGlider
+        m_MethodName: PreviewGlider
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1251,7 +1239,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 966187645}
-        m_MethodName: previewBooster
+        m_MethodName: PreviewBooster
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1312,10 +1300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab313a20f661b245bad8b8d998b093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
-  score: {fileID: 0}
-  highScore: {fileID: 0}
-  previewIndex: 0
 --- !u!1 &1157296183
 GameObject:
   m_ObjectHideFlags: 0

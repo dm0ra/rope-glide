@@ -13,180 +13,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-21T17:33:15.596-04:00
-  initializedAtString: 2019-07-21T17:02:30.945-04:00
+  lastUpdatedAtString: 2019-07-21T19:54:00.646-04:00
+  initializedAtString: 2019-07-21T19:36:17.050-04:00
   entries:
+  - path: .vs\Rope-Glide\v15\.suo
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\.suo
+    projectPath: .vs\Rope-Glide\v15\.suo
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
+    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
+    originalPath: 
+    status: 3
+    staged: 0
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     originalPath: 
     status: 3
     staged: 0
-  - path: .vs\Source_tree_rope_swing\v15\.suo
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Source_tree_rope_swing\v15\.suo
-    projectPath: .vs\Source_tree_rope_swing\v15\.suo
+  - path: Assets\Resources\Block1.prefab
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Resources\Block1.prefab
+    projectPath: Assets\Resources\Block1.prefab
     originalPath: 
     status: 3
     staged: 0
-  - path: .vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide
-    projectPath: .vs\Source_tree_rope_swing\v15\Server\sqlite3\storage.ide
+  - path: Assets\Resources\Boost.prefab
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Resources\Boost.prefab
+    projectPath: Assets\Resources\Boost.prefab
     originalPath: 
     status: 3
-    staged: 0
-  - path: Assembly-CSharp.csproj
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    status: 3
-    staged: 1
-  - path: Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\cameraControl.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\cameraControl.cs
-    projectPath: Assets\cameraControl.cs
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: Assets\CloudMovement.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\CloudMovement.cs
-    projectPath: Assets\CloudMovement.cs
-    originalPath: 
-    status: 3
-    staged: 1
-  - path: Assets\glider.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\glider.cs
-    projectPath: Assets\glider.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\InputClass.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\InputClass.cs
-    projectPath: Assets\InputClass.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\LevelControl.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\LevelControl.cs
-    projectPath: Assets\LevelControl.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\PickUpItem.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PickUpItem.cs
-    projectPath: Assets\PickUpItem.cs
-    originalPath: 
-    status: 9
     staged: 0
   - path: Assets\Scenes\GameOver.unity
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Scenes\GameOver.unity
     projectPath: Assets\Scenes\GameOver.unity
     originalPath: 
-    status: 9
+    status: 3
     staged: 0
-  - path: Assets\scripts\Booster.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Booster.cs
-    projectPath: Assets\scripts\Booster.cs
+  - path: Assets\Scenes\Main Menu.unity
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Scenes\Main Menu.unity
+    projectPath: Assets\Scenes\Main Menu.unity
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\scripts\buttonMethods.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\buttonMethods.cs
-    projectPath: Assets\scripts\buttonMethods.cs
+  - path: Assets\Scenes\Upgrade Menu.unity
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Scenes\Upgrade Menu.unity
+    projectPath: Assets\Scenes\Upgrade Menu.unity
     originalPath: 
     status: 3
-    staged: 0
-  - path: Assets\scripts\DataSaver.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\DataSaver.cs
-    projectPath: Assets\scripts\DataSaver.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\scripts\EndScreenText.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\EndScreenText.cs
-    projectPath: Assets\scripts\EndScreenText.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\scripts\GameController.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\GameController.cs
-    projectPath: Assets\scripts\GameController.cs
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: Assets\scripts\HingeManager.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\HingeManager.cs
-    projectPath: Assets\scripts\HingeManager.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\scripts\Player.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Player.cs
-    projectPath: Assets\scripts\Player.cs
-    originalPath: 
-    status: 5
-    staged: 1
-  - path: Assets\scripts\Player.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Player.cs
-    projectPath: Assets\scripts\Player.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\scripts\Player.cs.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Player.cs.meta
-    projectPath: Assets\scripts\Player.cs.meta
-    originalPath: 
-    status: 5
-    staged: 1
-  - path: Assets\scripts\Player.cs.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Player.cs.meta
-    projectPath: Assets\scripts\Player.cs.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\scripts\PlayerMovement.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\PlayerMovement.cs
-    projectPath: Assets\scripts\PlayerMovement.cs
-    originalPath: 
-    status: 5
-    staged: 1
-  - path: Assets\scripts\PlayerMovement.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\PlayerMovement.cs
-    projectPath: Assets\scripts\PlayerMovement.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\scripts\PlayerMovement.cs.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\PlayerMovement.cs.meta
-    projectPath: Assets\scripts\PlayerMovement.cs.meta
-    originalPath: 
-    status: 5
-    staged: 1
-  - path: Assets\scripts\PlayerMovement.cs.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\PlayerMovement.cs.meta
-    projectPath: Assets\scripts\PlayerMovement.cs.meta
-    originalPath: 
-    status: 1
     staged: 0
   - path: Assets\scripts\Rope.cs
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Rope.cs
     projectPath: Assets\scripts\Rope.cs
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: Assets\scripts\SceneSwitch.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\SceneSwitch.cs
-    projectPath: Assets\scripts\SceneSwitch.cs
-    originalPath: 
-    status: 3
-    staged: 1
-  - path: Assets\scripts\Upgrades.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Upgrades.cs
-    projectPath: Assets\scripts\Upgrades.cs
     originalPath: 
     status: 3
     staged: 0
@@ -194,7 +74,7 @@ MonoBehaviour:
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
-    status: 9
+    status: 3
     staged: 0
   - path: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
@@ -206,53 +86,41 @@ MonoBehaviour:
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\CurrentLayout.dwlt
     projectPath: Library\CurrentLayout.dwlt
     originalPath: 
-    status: 9
-    staged: 0
-  - path: Library\expandedItems
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\expandedItems
-    projectPath: Library\expandedItems
-    originalPath: 
     status: 3
-    staged: 1
+    staged: 0
   - path: Library\gfu\cache\branches.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
-    status: 9
+    status: 3
     staged: 0
   - path: Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
-    status: 9
+    status: 3
     staged: 0
   - path: Library\gfu\cache\gitlog.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
-    status: 9
+    status: 3
     staged: 0
   - path: Library\gfu\cache\gitstatusentries.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
-    status: 9
+    status: 3
     staged: 0
   - path: Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
-    status: 9
+    status: 3
     staged: 0
   - path: Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     status: 3
     staged: 0
@@ -260,71 +128,17 @@ MonoBehaviour:
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\LastSceneManagerSetup.txt
     projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
-    status: 9
+    status: 3
     staged: 0
-  - path: Library\metadata\08\0815acb276965af48801d4db866252b5
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\08\0815acb276965af48801d4db866252b5
-    projectPath: Library\metadata\08\0815acb276965af48801d4db866252b5
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    projectPath: Library\metadata\13\135862d7de01e3840b56f01765d8af45
+  - path: Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90
+    projectPath: Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\metadata\16\16a98b9f7322ad643931d2ce6734a152
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\16\16a98b9f7322ad643931d2ce6734a152
-    projectPath: Library\metadata\16\16a98b9f7322ad643931d2ce6734a152
-    originalPath: 
-    status: 5
-    staged: 1
-  - path: Library\metadata\16\16a98b9f7322ad643931d2ce6734a152.info
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\16\16a98b9f7322ad643931d2ce6734a152.info
-    projectPath: Library\metadata\16\16a98b9f7322ad643931d2ce6734a152.info
-    originalPath: 
-    status: 5
-    staged: 1
-  - path: Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
-    projectPath: Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: Library\metadata\6c\6c5436528af1cef4880e80f9b3830715
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\6c\6c5436528af1cef4880e80f9b3830715
-    projectPath: Library\metadata\6c\6c5436528af1cef4880e80f9b3830715
-    originalPath: 
-    status: 3
-    staged: 1
-  - path: Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
-    projectPath: Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
-    projectPath: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\a8\a8bd0474d95cf1347bc27c53db4ef7c6
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\a8\a8bd0474d95cf1347bc27c53db4ef7c6
-    projectPath: Library\metadata\a8\a8bd0474d95cf1347bc27c53db4ef7c6
-    originalPath: 
-    status: 5
-    staged: 1
-  - path: Library\metadata\a8\a8bd0474d95cf1347bc27c53db4ef7c6.info
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\a8\a8bd0474d95cf1347bc27c53db4ef7c6.info
-    projectPath: Library\metadata\a8\a8bd0474d95cf1347bc27c53db4ef7c6.info
-    originalPath: 
-    status: 5
-    staged: 1
-  - path: Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
-    projectPath: Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
+  - path: Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90.info
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90.info
+    projectPath: Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90.info
     originalPath: 
     status: 3
     staged: 0
@@ -332,89 +146,35 @@ MonoBehaviour:
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
     projectPath: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
     originalPath: 
-    status: 9
+    status: 3
     staged: 0
-  - path: Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
-    projectPath: Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
+  - path: Library\metadata\f7\f7551022d25321741ac25c4df9a2a364
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\f7\f7551022d25321741ac25c4df9a2a364
+    projectPath: Library\metadata\f7\f7551022d25321741ac25c4df9a2a364
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\metadata\d6\d6ad9db72dc6c4949ad256018baf170e
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\d6\d6ad9db72dc6c4949ad256018baf170e
-    projectPath: Library\metadata\d6\d6ad9db72dc6c4949ad256018baf170e
+  - path: Library\metadata\f7\f7551022d25321741ac25c4df9a2a364.info
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\f7\f7551022d25321741ac25c4df9a2a364.info
+    projectPath: Library\metadata\f7\f7551022d25321741ac25c4df9a2a364.info
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\metadata\db\db0d445c8cb76064f8d4ab16f3eb1fd5
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\db\db0d445c8cb76064f8d4ab16f3eb1fd5
-    projectPath: Library\metadata\db\db0d445c8cb76064f8d4ab16f3eb1fd5
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
-    projectPath: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\fc\fcf3b8f752571df4282ade1e2b997856
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\fc\fcf3b8f752571df4282ade1e2b997856
-    projectPath: Library\metadata\fc\fcf3b8f752571df4282ade1e2b997856
-    originalPath: 
-    status: 3
-    staged: 1
   - path: Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
-    status: 9
+    status: 3
     staged: 0
   - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
-    status: 9
-    staged: 0
-  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    originalPath: 
     status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    originalPath: 
-    status: 5
     staged: 0
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: Library\StateCache\Hierarchy\4188d1-mainStage.json
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\StateCache\Hierarchy\4188d1-mainStage.json
-    projectPath: Library\StateCache\Hierarchy\4188d1-mainStage.json
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: Library\StateCache\SceneView\867b10-mainStage.json
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\StateCache\SceneView\867b10-mainStage.json
-    projectPath: Library\StateCache\SceneView\867b10-mainStage.json
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
-    projectPath: obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
     originalPath: 
     status: 3
     staged: 0
@@ -422,59 +182,17 @@ MonoBehaviour:
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
-    status: 9
+    status: 3
     staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+  - path: obj\Debug\Assembly-CSharp.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.dll
+    projectPath: obj\Debug\Assembly-CSharp.dll
     originalPath: 
     status: 3
     staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.FileListAbsolute.txt
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.FileListAbsolute.txt
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.FileListAbsolute.txt
+  - path: obj\Debug\Assembly-CSharp.pdb
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.pdb
+    projectPath: obj\Debug\Assembly-CSharp.pdb
     originalPath: 
     status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    originalPath: 
-    status: 9
-    staged: 0
-  - path: Source_tree_rope_swing.sln
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Source_tree_rope_swing.sln
-    projectPath: Source_tree_rope_swing.sln
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: StyleCop.Cache
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\StyleCop.Cache
-    projectPath: StyleCop.Cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: stylecop.json
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\stylecop.json
-    projectPath: stylecop.json
-    originalPath: 
-    status: 9
     staged: 0
