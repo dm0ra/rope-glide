@@ -24,42 +24,56 @@ public class GameController : MonoBehaviour
 #pragma warning disable SA1202 // Elements should be ordered by access
 #pragma warning disable SA1401 // Fields should be private
 
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// A list of all the clouds (hinges) that the player can connect to.
     /// </summary>
     public List<Rope> Hinges;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// List of pick of items (Boost,...).
     /// </summary>
     public List<PickUpItem> Items;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// List of Enemies.
     /// </summary>
     public List<Enemies> EnemyList;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 
 #pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// Holds the index of the connected hinge.
     /// </summary>
     public int isConnected;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
 
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// The games camera (See in unity editor).
     /// </summary>
     public GameObject Camera;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// The games player (See in unity editor).
     /// </summary>
     public GameObject Player;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// Object to hold a booster when upgraded.
     /// </summary>
     public GameObject Booster;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 
     // Flag that is set when the player is connected to a cloud
     private bool Connected;
@@ -99,10 +113,12 @@ public class GameController : MonoBehaviour
     // Starting position of main camera in unity editor
     private Vector3 StartingCameraPos;
 
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// Tells whether the initial click occurred.
     /// </summary>
     public bool JumpClick;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 
     /// <summary>
     /// Debug method for scene swithching.
@@ -262,8 +278,10 @@ public class GameController : MonoBehaviour
         arial = (Font)Resources.GetBuiltinResource(typeof(Font), "Arial.ttf");
 
         // Create Canvas GameObject.
-        GameObject canvasGO = new GameObject();
-        canvasGO.name = "Canvas";
+        GameObject canvasGO = new GameObject
+        {
+            name = "Canvas"
+        };
         canvasGO.AddComponent<Canvas>();
         canvasGO.AddComponent<CanvasScaler>();
         canvasGO.AddComponent<GraphicRaycaster>();
@@ -448,10 +466,18 @@ public class GameController : MonoBehaviour
         // Load the highscore and set highscore upon each life
         string fileData = DataSaver.LoadData<string>("HighScore");
         string[] fileLines = fileData.Split('\n');
+#pragma warning disable CA1305 // Specify IFormatProvider
         DB.HighScore = float.Parse(fileLines[0]);
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
         DB.BankCash = int.Parse(fileLines[1]);
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
         DB.Glider = int.Parse(fileLines[2]);
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
         DB.Booster = int.Parse(fileLines[3]);
+#pragma warning restore CA1305 // Specify IFormatProvider
 
         // Initilize instance variables
         this.xOffset = 19.2f;
@@ -520,18 +546,30 @@ public class GameController : MonoBehaviour
         return new Vector3(this.Hinges[index].Hinge.transform.position.x - this.xOffset, this.Hinges[index].Hinge.transform.position.y - this.yOffset, this.Hinges[index].Hinge.transform.position.z);
     }
 
+#pragma warning disable CA1822 // Mark members as static
     /// <summary>
     /// writes to file game information.
     /// </summary>
     private void WriteData()
+#pragma warning restore CA1822 // Mark members as static
     {
         // saves highscore and cash to csv file
         var csv = new System.Text.StringBuilder();
+#pragma warning disable CA1305 // Specify IFormatProvider
         var highScoreString = DB.HighScore.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
         var newLine = string.Format(highScoreString);
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
         var cashString = DB.BankCash.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
         var glideString = DB.Glider.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
         var boostString = DB.Booster.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
         csv.AppendLine(newLine);
         csv.AppendLine(cashString);
         csv.AppendLine(glideString);
@@ -548,10 +586,12 @@ public class GameController : MonoBehaviour
         this.UpgradeMenuActions();
     }
 
+#pragma warning disable CA1822 // Mark members as static
     /// <summary>
     /// See which upgrades have been puchesed and spawn them in.
     /// </summary>
     private void UpgradeMenuActions()
+#pragma warning restore CA1822 // Mark members as static
     {
         if (DB.Glider == 1)
         {

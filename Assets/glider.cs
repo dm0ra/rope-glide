@@ -23,17 +23,23 @@ public class glider : MonoBehaviour
 
     // The game controller class
 #pragma warning disable SA1600 // Elements should be documented
+#pragma warning disable CA1051 // Do not declare visible instance fields
     public GameController game;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1600 // Elements should be documented
 
     // Player from unity editor
 #pragma warning disable SA1600 // Elements should be documented
+#pragma warning disable CA1051 // Do not declare visible instance fields
     public GameObject Player;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1600 // Elements should be documented
 
     // Glider from unity editor
 #pragma warning disable SA1600 // Elements should be documented
+#pragma warning disable CA1051 // Do not declare visible instance fields
     public GameObject Glider;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1600 // Elements should be documented
 
     // Input class used to see where the user is touching the screen.
@@ -63,7 +69,9 @@ public class glider : MonoBehaviour
 
     // The prive of the glider in the upgrades menu.
 #pragma warning disable SA1600 // Elements should be documented
+#pragma warning disable CA1051 // Do not declare visible instance fields
     public int gliderPrice;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1600 // Elements should be documented
 #pragma warning restore SA1202 // Elements should be ordered by access
 #pragma warning restore SA1401 // Fields should be private
@@ -244,7 +252,9 @@ public class glider : MonoBehaviour
             return coef;
         }
 #pragma warning disable CS0168 // Variable is declared but never used
+#pragma warning disable CA1031 // Do not catch general exception types
         catch (System.Exception x)
+#pragma warning restore CA1031 // Do not catch general exception types
 #pragma warning restore CS0168 // Variable is declared but never used
         {
             Debug.Log("Lift Coefficent Error");
@@ -284,7 +294,9 @@ public class glider : MonoBehaviour
             return coef;
         }
         #pragma warning disable CS0168 // Variable is declared but never used
+#pragma warning disable CA1031 // Do not catch general exception types
         catch (System.Exception x)
+#pragma warning restore CA1031 // Do not catch general exception types
         #pragma warning restore CS0168 // Variable is declared but never used
         {
             Debug.Log("drag Coefficent Error");

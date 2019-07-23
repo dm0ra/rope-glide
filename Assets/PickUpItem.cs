@@ -11,47 +11,58 @@ using UnityEngine;
 public class PickUpItem : MonoBehaviour
 {
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// ThisItem is a coin for now; may add more items later.
     /// </summary>
     public GameObject ThisItem;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// See GameController class.
     /// </summary>
     public GameController Game;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// The player in the Unity editor.
     /// </summary>
     public GameObject Player;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// The glider in the Unity editor.
     /// </summary>
     public GameObject Glider;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// The camera in the Unity editor.
     /// </summary>
     public Camera Cam;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
     private int itemIndex;  // will use for later items
     private int itemX;
     private int itemY;
     private int itemZ;
-    private int centerScreenY = 65;
+    private int centerScreenY;
 
     private void Start()
     {
+        centerScreenY = 65;
         this.Glider = GameObject.FindWithTag("Glider");
         this.Player = GameObject.FindWithTag("Player");
         this.Game = GameObject.FindWithTag("GameController").GetComponent<GameController>();

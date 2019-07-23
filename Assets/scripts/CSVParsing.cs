@@ -15,10 +15,12 @@ public class CSVParsing : MonoBehaviour
 #pragma warning disable SA1401 // Fields should be private
 #pragma warning disable SA1600 // Elements should be documented
 #pragma warning disable SA1606 // Element documentation should have summary text
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// Holds the glider drag and lift coefficients.
     /// </summary>
     public TextAsset csvFile; // Reference of CSV file
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1606 // Element documentation should have summary text
 #pragma warning restore SA1600 // Elements should be documented
 #pragma warning restore SA1401 // Fields should be private
@@ -26,40 +28,46 @@ public class CSVParsing : MonoBehaviour
 
 #pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// Reference of roll no input field.
     /// </summary>
     public InputField rollNoInputField;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 #pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
 
 #pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// Reference of name input filed.
     /// </summary>
     public InputField nameInputField;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 #pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
 
 #pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// Reference of contentArea where records are displayed.
     /// </summary>
     public Text contentArea;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 #pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
 
     /// <summary>
     /// It defines line separate character.
     /// </summary>
-    private char lineSeperater = '\n';
+    private char lineSeperater;
 
     /// <summary>
     /// It defines field separate chracter.
     /// </summary>
-    private char fieldSeperator = ',';
+    private char fieldSeperator;
 
     private List<List<float>> results;
 
@@ -101,13 +109,17 @@ public class CSVParsing : MonoBehaviour
 
     private void Start()
     {
+        lineSeperater = '\n';
+        fieldSeperator = ',';
         this.results = new List<List<float>>();
         try
         {
             this.readData();
             Debug.Log("Succsessfully read Coefficent Data ");
         }
+#pragma warning disable CA1031 // Do not catch general exception types
         catch (System.Exception e)
+#pragma warning restore CA1031 // Do not catch general exception types
         {
             // Something unexpected went wrong.
             Debug.Log("Unable to read Coefficent Data " + e);
@@ -131,15 +143,25 @@ public class CSVParsing : MonoBehaviour
         {
             List<float> temp = new List<float>();
             string[] fields = record.Split(this.fieldSeperator);
+#pragma warning disable CA1307 // Specify StringComparison
             if (fields[0].Equals("229"))
+#pragma warning restore CA1307 // Specify StringComparison
             {
                 return;
             }
 
+#pragma warning disable CA1305 // Specify IFormatProvider
             temp.Add(float.Parse(fields[1]));
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
             temp.Add(float.Parse(fields[2]));
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
             temp.Add(float.Parse(fields[3]));
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
             temp.Add(float.Parse(fields[4]));
+#pragma warning restore CA1305 // Specify IFormatProvider
 
             this.results.Add(temp);
         }

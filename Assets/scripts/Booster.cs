@@ -10,38 +10,46 @@ using UnityEngine;
 public class Booster : MonoBehaviour
 {
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// gamecontroller object.
     /// </summary>
     public GameController Game;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// player game object.
     /// </summary>
     public GameObject Player;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 
 #pragma warning disable SA1401 // Fields should be private
 #pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
+#pragma warning disable CA1051 // Do not declare visible instance fields
                               /// <summary>
                               /// booster game object.
                               /// </summary>
     public GameObject booster;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
 #pragma warning restore SA1401 // Fields should be private
 
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// booster price integer.
     /// </summary>
     public int BoosterPrice;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
-    private static int fuelMax = 100; // maximum fuel for booster
-    private static int fuelUseRate = 3; // usage rate of fuel
+    private static int fuelMax; // maximum fuel for booster
+    private static int fuelUseRate; // usage rate of fuel
     private InputClass gameInput; // gameInput to read what buttons were pressed
-    private float a = 3000f; // acceleration constant
+    private float a; // acceleration constant
 
     private int fuel; // amount of fuel left
     private Vector3 playerDelta; // this variable represents the distance between the player and the booster images
@@ -51,6 +59,9 @@ public class Booster : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        fuelMax = 100;
+        fuelUseRate = 3;
+        a = 3000f;
         this.booster = GameObject.FindGameObjectWithTag("Booster");
         this.fuel = fuelMax; // fuel starts at max
         this.Game = GameObject.FindWithTag("GameController").GetComponent<GameController>(); // links game object

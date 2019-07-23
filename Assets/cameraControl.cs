@@ -18,15 +18,19 @@ public class cameraControl : MonoBehaviour
 #pragma warning disable SA1306 // Field names should begin with lower-case letter
 #pragma warning disable SA1202 // Elements should be ordered by access
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// The main camera in the unity editor.
     /// </summary>
     public Camera Cam;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// Player gameobject from the unity editor.
     /// </summary>
     public GameObject Player;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 
     // position where player starts
     private static float startPos;
@@ -34,20 +38,17 @@ public class cameraControl : MonoBehaviour
     // helper variable to determine distance
     private int Count100s;
 
-    // second helper variable to determine distancec traveled
-    private int Count50s;
-
     // width of background
-    private int groundWidth = 294;
+    private int groundWidth;
 
     // width of camera view
-    private int cameraWidth = 228;
+    private int cameraWidth;
 
     // helper variable
     private int cameraHelper = 0;
 
     // boostSpawnChance / 10 to spawn a boost every x distance
-    private int boostSpawnChance = 4;
+    private int boostSpawnChance;
 
     // helper variable
     private int startup = 1;
@@ -56,13 +57,13 @@ public class cameraControl : MonoBehaviour
     private GameController game;
 
     // enemySpawnChance / 10 to spawn an enemy every x distance
-    private int enemySpawnChance = 3;
+    private int enemySpawnChance;
 
     // distance between clouds
-    private int blockSpawnDistance = 200;
+    private int blockSpawnDistance;
 
     // varience in where the block spawns
-    private int blockVar = 15;
+    private int blockVar;
 
     // height of camera
     private int camheight;
@@ -92,6 +93,12 @@ public class cameraControl : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        groundWidth = 294;
+        cameraWidth = 228;
+        boostSpawnChance = 4;
+        enemySpawnChance = 3;
+        blockSpawnDistance = 200;
+        blockVar = 15;
         this.game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
         this.camheight = 133;
         startPos = this.Player.transform.position.x;

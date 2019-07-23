@@ -11,25 +11,31 @@ public class Enemies : MonoBehaviour
 {
 #pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// references the current enemy.
     /// </summary>
     public GameObject thisEnemy;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 #pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
 
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// game controller object.
     /// </summary>
     public GameController Game;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// The character in the game.
     /// </summary>
     public GameObject Player;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 
     private static int enemyZ;
@@ -40,10 +46,11 @@ public class Enemies : MonoBehaviour
     private int updateCount;
     private int moveTime;
     private float timeCounter;
-    private int centerScreenY = 65;
+    private int centerScreenY;
 
     private void Start()
     {
+        centerScreenY = 65;
         this.Player = GameObject.FindWithTag("Player");
         this.Game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
         this.enemyIndex = this.Game.AddEnemy(this);

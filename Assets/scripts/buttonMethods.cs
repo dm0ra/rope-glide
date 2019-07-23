@@ -13,9 +13,9 @@ using UnityEngine.UI;
 /// </summary>
 public class ButtonMethods : MonoBehaviour
 {
-    private Text score; // text object for score
-    private Text highScore; // text object for highschore
-    private int previewIndex; // used to know which preview item was clicked. 1 = glider, 2 = booster
+    //private Text score; // text object for score
+    //private Text highScore; // text object for highschore
+    //private int previewIndex; // used to know which preview item was clicked. 1 = glider, 2 = booster
 
     // these are gameobjects of the GUI, mostly in the upgrade menu. Such as button text, descriptions, price, cash, preview images
     private GameObject purchaseButton;
@@ -23,21 +23,20 @@ public class ButtonMethods : MonoBehaviour
     private GameObject upgradePrice;
     private GameObject boosterImage;
     private GameObject gliderImage;
-    private GameObject upgradeMenuCanvas;
-    private GameObject gameController;
+    //private GameObject upgradeMenuCanvas;
+    //private GameObject gameController;
     private GameObject userCash;
 
-    private int bPrice = 100; // sets price for booster
-    private int gPrice = 100; // sets price for glider
+    private int bPrice; // sets price for booster
+    private int gPrice; // sets price for glider
     private string boosterPrice; // string representing booster price in gui
     private string gliderPrice; // string representing glider price in gui
-    private string unpurchasedText = "Buy"; // gui text
-    private string purchasedText = "Purchased"; // gui text
-    private string cashString = "Cash: "; // gui text
-    private string boosterDescriptionText = "Description:   This booster allows you to jetpack in the sky for a limited time, " +
-        "fuel replenishes over time. Useful for dodging enemies or reaching the stars"; // gui text
+    private string unpurchasedText; // gui text
+    private string purchasedText; // gui text
+    private string cashString; // gui text
+    private string boosterDescriptionText; // gui text
 
-    private string gliderDescriptionText = "Description:    Glider allows you glide upwards and downwards to bring out your inner fortnite"; // gui text
+    private string gliderDescriptionText; // gui text
 
     private bool firstRun = true; // helper flag to run some code only on the first run
 
@@ -109,11 +108,21 @@ public class ButtonMethods : MonoBehaviour
 
             // saves highscore and cash to csv file
             var csv = new System.Text.StringBuilder();
+#pragma warning disable CA1305 // Specify IFormatProvider
             var highScoreString = DB.HighScore.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
             var newLine = string.Format(highScoreString);
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
             var cashString = DB.BankCash.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
             var glideString = DB.Glider.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
             var boostString = DB.Booster.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
             csv.AppendLine(newLine);
             csv.AppendLine(cashString);
             csv.AppendLine(glideString);
@@ -131,11 +140,21 @@ public class ButtonMethods : MonoBehaviour
 
             // saves highscore and cash to csv file
             var csv = new System.Text.StringBuilder();
+#pragma warning disable CA1305 // Specify IFormatProvider
             var highScoreString = DB.HighScore.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
             var newLine = string.Format(highScoreString);
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
             var cashString = DB.BankCash.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
             var glideString = DB.Glider.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
+#pragma warning disable CA1305 // Specify IFormatProvider
             var boostString = DB.Booster.ToString();
+#pragma warning restore CA1305 // Specify IFormatProvider
             csv.AppendLine(newLine);
             csv.AppendLine(cashString);
             csv.AppendLine(glideString);
@@ -146,35 +165,43 @@ public class ButtonMethods : MonoBehaviour
         this.SetComponentText(this.userCash, this.cashString + DB.BankCash); // updates new cash variable
     }
 
+#pragma warning disable CA1822 // Mark members as static
     /// <summary>
     /// This method is used to go to the main menu.
     /// Called when main menu buttons are pressed.
     /// </summary>
     public void GotoMainMenu()
+#pragma warning restore CA1822 // Mark members as static
     {
         SceneManager.LoadScene(3); // switches scene to main menu
     }
 
+#pragma warning disable CA1822 // Mark members as static
     /// <summary>
     /// This method is used to go to the upgrades screen.
     /// </summary>
     public void GotoUpgrades() // main menu play button causes this method to run
+#pragma warning restore CA1822 // Mark members as static
     {
         SceneManager.LoadScene(4);
     }
 
+#pragma warning disable CA1822 // Mark members as static
     /// <summary>
     /// Load swing game with main menu button.
     /// </summary>
     public void GotoPlay() // main menu play button causes this method to run
+#pragma warning restore CA1822 // Mark members as static
     {
         SceneManager.LoadScene(0);
     }
 
+#pragma warning disable CA1822 // Mark members as static
     /// <summary>
     /// changes scene to the game over menu using main menu button.
     /// </summary>
     public void GameOverMainMenu()
+#pragma warning restore CA1822 // Mark members as static
     {
         SceneManager.LoadScene(3);
     }
@@ -182,6 +209,14 @@ public class ButtonMethods : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        bPrice = 100;
+        gPrice = 100;
+        unpurchasedText = "Buy";
+        purchasedText = "Purchased";
+        cashString = "Cash: ";
+        boosterDescriptionText = "Description:   This booster allows you to jetpack in the sky for a limited time, " +
+        "fuel replenishes over time. Useful for dodging enemies or reaching the stars";
+        gliderDescriptionText = "Description:    Glider allows you glide upwards and downwards to bring out your inner fortnite";
         // these three lines of code link game objects to tagged objects in the scene manager
         this.purchaseButton = GameObject.FindWithTag("upgradePurchaseButtonText");
         this.upgradeDescription = GameObject.FindWithTag("upgradeDescriptionText");
@@ -202,8 +237,10 @@ public class ButtonMethods : MonoBehaviour
             arial = (Font)Resources.GetBuiltinResource(typeof(Font), "Arial.ttf");
 
             // Create Canvas GameObject.
-            GameObject canvasGO = new GameObject();
-            canvasGO.name = "Canvas";
+            GameObject canvasGO = new GameObject
+            {
+                name = "Canvas"
+            };
             canvasGO.AddComponent<Canvas>();
             canvasGO.AddComponent<CanvasScaler>();
             canvasGO.AddComponent<GraphicRaycaster>();
@@ -235,7 +272,9 @@ public class ButtonMethods : MonoBehaviour
 
     // function used to change the text of a text component in a scene
     // requirements to use this function is that the game object has a component of text
+#pragma warning disable CA1822 // Mark members as static
     private void SetComponentText(GameObject go, string text)
+#pragma warning restore CA1822 // Mark members as static
     {
         go.GetComponent<Text>().text = text; // changes button text
     }

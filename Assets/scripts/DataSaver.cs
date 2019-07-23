@@ -6,10 +6,12 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 
+#pragma warning disable CA1052 // Static holder types should be Static or NotInheritable
 /// <summary>
 /// This class determines how to read from and write to a file.
 /// </summary>
 public class DataSaver
+#pragma warning restore CA1052 // Static holder types should be Static or NotInheritable
 {
     /// <summary>
     /// Save data to file.
@@ -45,7 +47,7 @@ public class DataSaver
             File.WriteAllBytes(tempPath, bytes);
             Debug.Log("Saved Data to: " + tempPath.Replace("/", "\\"));
         }
-        catch (Exception e)
+        catch (DirectoryNotFoundException e)
         {
             Debug.LogWarning("Failed To PlayerInfo Data to: " + tempPath.Replace("/", "\\"));
             Debug.LogWarning("Error: " + e.Message);
@@ -92,7 +94,7 @@ public class DataSaver
             bytes = File.ReadAllBytes(tempPath);
             Debug.Log("Loaded Data from: " + tempPath.Replace("/", "\\"));
         }
-        catch (Exception e)
+        catch (DirectoryNotFoundException e)
         {
             Debug.LogWarning("Failed To Load Data from: " + tempPath.Replace("/", "\\"));
             Debug.LogWarning("Error: " + e.Message);
@@ -103,7 +105,9 @@ public class DataSaver
         object ret1 = ret;
 
         // Convert to Object.
+#pragma warning disable CA1305 // Specify IFormatProvider
         return (T)Convert.ChangeType(ret1, typeof(T));
+#pragma warning restore CA1305 // Specify IFormatProvider
     }
 
     /// <summary>
@@ -142,7 +146,7 @@ public class DataSaver
             Debug.Log("Data deleted from: " + tempPath.Replace("/", "\\"));
             success = true;
         }
-        catch (Exception e)
+        catch (DirectoryNotFoundException e)
         {
             Debug.LogWarning("Failed To Delete Data: " + e.Message);
         }

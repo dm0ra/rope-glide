@@ -9,18 +9,19 @@ using UnityEngine;
 public class InputClass : MonoBehaviour
 {
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// Camera object.
     /// </summary>
     public GameObject Camera;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
     private float cameraStartPos; // starting position of camera
     private float currCameraPos; // current camera position
     private float cameraWidth; // width of camera
     private int clickFlag; // represents what side of the screen is clicked
-    private float lastMousePosX;
-    private float waitTime = 0.05f;
-    private float timer = 0.0f;
+    private float waitTime;
+    private float timer;
     private float touchOffest;
 
     /// <summary>
@@ -81,6 +82,8 @@ public class InputClass : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        waitTime = 0.05f;
+        timer = 0.0f;
         this.Camera = GameObject.FindWithTag("MainCamera"); // links camera object
         this.cameraStartPos = this.transform.position.x;
         this.cameraWidth = 1000;

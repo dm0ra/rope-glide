@@ -10,10 +10,12 @@ using UnityEngine;
 public class HingeManager : MonoBehaviour
 {
 #pragma warning disable SA1401 // Fields should be private
+#pragma warning disable CA1051 // Do not declare visible instance fields
     /// <summary>
     /// List of hinge objects.
     /// </summary>
     public ArrayList Hinges;
+#pragma warning restore CA1051 // Do not declare visible instance fields
 #pragma warning restore SA1401 // Fields should be private
 
     /// <summary>
