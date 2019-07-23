@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['lateupdate',['LateUpdate',['../classTMPro_1_1TMP__InputField.html#a4b7cccc36ecd8672c02a29ef7ebc2dd3',1,'TMPro::TMP_InputField']]],
+  ['layoutelement',['layoutElement',['../classTMPro_1_1TMP__Text.html#a61b28f09fc8b65fa0dd44be148751f6e',1,'TMPro::TMP_Text']]],
+  ['layoutpriority',['layoutPriority',['../classTMPro_1_1TMP__Text.html#a5d348749c0944d708b27bbf46581f460',1,'TMPro::TMP_Text']]],
+  ['leadingcharacters',['leadingCharacters',['../classTMPro_1_1TMP__Settings.html#a7f094fc99cec843b82d393fd3f3b2d25',1,'TMPro::TMP_Settings']]],
+  ['levelcontrol',['LevelControl',['../classLevelControl.html',1,'']]],
+  ['linebreakingrules',['linebreakingRules',['../classTMPro_1_1TMP__Settings.html#a5db629ee06cfa2c662645f18325b7db5',1,'TMPro::TMP_Settings']]],
+  ['linebreakingtable',['LineBreakingTable',['../classTMPro_1_1TMP__Settings_1_1LineBreakingTable.html',1,'TMPro::TMP_Settings']]],
+  ['linespacing',['lineSpacing',['../classTMPro_1_1TMP__Text.html#a2b02e5ecbb2af2f3a2d3d76f5a23c13f',1,'TMPro::TMP_Text']]],
+  ['linespacingadjustment',['lineSpacingAdjustment',['../classTMPro_1_1TMP__Text.html#a966cc43dea3bed456624f8d85c29e70b',1,'TMPro::TMP_Text']]],
+  ['linkedtextcomponent',['linkedTextComponent',['../classTMPro_1_1TMP__Text.html#acc715707a9f18f41f87ef2944b9ea6fa',1,'TMPro::TMP_Text']]],
+  ['loaddata_3c_20t_20_3e',['LoadData&lt; T &gt;',['../classDataSaver.html#a622691c316e8bba3cdd4f9db5a30a5ca',1,'DataSaver']]],
+  ['loaddefaultsettings',['LoadDefaultSettings',['../classTMPro_1_1TMP__Settings.html#a586aa8771d85a11d12f209991844571e',1,'TMPro.TMP_Settings.LoadDefaultSettings()'],['../classTMPro_1_1TMP__Text.html#a4828101c6dd0459b8879cc13d9405e35',1,'TMPro.TMP_Text.LoadDefaultSettings()']]],
+  ['loaddefaultstylesheet',['LoadDefaultStyleSheet',['../classTMPro_1_1TMP__StyleSheet.html#a653c12d4d1759a054f7f37a2d0b33924',1,'TMPro::TMP_StyleSheet']]],
+  ['loadfontasset',['LoadFontAsset',['../classTMPro_1_1TMP__Text.html#a02b60cb23d3eceb1ea52a61f194d8bec',1,'TMPro.TMP_Text.LoadFontAsset()'],['../classTMPro_1_1TextMeshPro.html#a5bb3ac2d25483c61b10064917225ca59',1,'TMPro.TextMeshPro.LoadFontAsset()'],['../classTMPro_1_1TextMeshProUGUI.html#aedbf6c9aaf6c104ac7c81e85d99498b4',1,'TMPro.TextMeshProUGUI.LoadFontAsset()']]],
+  ['loadtextmeshproresources',['LoadTextMeshProResources',['../classTMPro_1_1EditorUtilities_1_1TMP__ResourcesLoader.html#aa785f8f9599a9dbab4789c9024763f59',1,'TMPro::EditorUtilities::TMP_ResourcesLoader']]],
+  ['lvlindex',['LvlIndex',['../classLevelControl.html#acb53a575ee4ca5f33438216789569fbb',1,'LevelControl']]],
+  ['license',['LICENSE',['../md_Library_PackageCache_com_8unity_8ads_0d2_83_81_LICENSE.html',1,'']]],
+  ['license',['License',['../md_Library_PackageCache_com_8unity_8analytics_0d3_82_82_License.html',1,'']]],
+  ['license',['LICENSE',['../md_Library_PackageCache_com_8unity_8collab-proxy_0d1_82_815_LICENSE.html',1,'']]],
+  ['license',['LICENSE',['../md_Library_PackageCache_com_8unity_8package-manager-ui_0d2_80_83_LICENSE.html',1,'']]],
+  ['license',['License',['../md_Library_PackageCache_com_8unity_8purchasing_0d2_80_83_License.html',1,'']]],
+  ['license',['LICENSE',['../md_Library_PackageCache_com_8unity_8textmeshpro_0d1_83_80_LICENSE.html',1,'']]]
+];
