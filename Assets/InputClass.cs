@@ -8,10 +8,12 @@ using UnityEngine;
 /// </summary>
 public class InputClass : MonoBehaviour
 {
+#pragma warning disable SA1401 // Fields should be private
     /// <summary>
     /// Camera object.
     /// </summary>
     public GameObject Camera;
+#pragma warning restore SA1401 // Fields should be private
     private float cameraStartPos; // starting position of camera
     private float currCameraPos; // current camera position
     private float cameraWidth; // width of camera

@@ -9,10 +9,35 @@ using UnityEngine;
 /// </summary>
 public class Booster : MonoBehaviour
 {
-    public GameController Game; // gamecontroller object
-    public GameObject Player; // player game object
-    public GameObject booster; // booster game object
-    public int BoosterPrice; // booster price integer
+#pragma warning disable SA1401 // Fields should be private
+    /// <summary>
+    /// gamecontroller object.
+    /// </summary>
+    public GameController Game;
+#pragma warning restore SA1401 // Fields should be private
+
+#pragma warning disable SA1401 // Fields should be private
+    /// <summary>
+    /// player game object.
+    /// </summary>
+    public GameObject Player;
+#pragma warning restore SA1401 // Fields should be private
+
+#pragma warning disable SA1401 // Fields should be private
+#pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
+                              /// <summary>
+                              /// booster game object.
+                              /// </summary>
+    public GameObject booster;
+#pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
+#pragma warning restore SA1401 // Fields should be private
+
+#pragma warning disable SA1401 // Fields should be private
+    /// <summary>
+    /// booster price integer.
+    /// </summary>
+    public int BoosterPrice;
+#pragma warning restore SA1401 // Fields should be private
     private static int fuelMax = 100; // maximum fuel for booster
     private static int fuelUseRate = 3; // usage rate of fuel
     private InputClass gameInput; // gameInput to read what buttons were pressed
@@ -24,7 +49,7 @@ public class Booster : MonoBehaviour
     /// <summary>
     /// Start is called before the first frame update.
     /// </summary>
-    void Start()
+    private void Start()
     {
         this.booster = GameObject.FindGameObjectWithTag("Booster");
         this.fuel = fuelMax; // fuel starts at max
@@ -39,7 +64,7 @@ public class Booster : MonoBehaviour
     /// <summary>
     /// Update is called once per frame.
     /// </summary>
-    void Update()
+    private void Update()
     {
         // maps booster to player
         if (DB.Booster == 1)
@@ -50,7 +75,8 @@ public class Booster : MonoBehaviour
         {
             this.playerDelta.z = this.Player.transform.position.z - 100;
         }
-        this.transform.position = (Player.transform.position - playerDelta); // sets the booster position close to the player position
+
+        this.transform.position = this.Player.transform.position - this.playerDelta; // sets the booster position close to the player position
         this.Refuel(); // refuels if needed
 
         // if click on the proper side of the screen and upgrade is selected

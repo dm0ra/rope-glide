@@ -73,13 +73,17 @@ public class DataSaver
         if (!Directory.Exists(Path.GetDirectoryName(tempPath)))
         {
             Debug.LogWarning("Directory does not exist");
+#pragma warning disable IDE0034 // Simplify 'default' expression
             return default(T);
+#pragma warning restore IDE0034 // Simplify 'default' expression
         }
 
         if (!File.Exists(tempPath))
         {
             Debug.Log("File does not exist");
+#pragma warning disable IDE0034 // Simplify 'default' expression
             return default(T);
+#pragma warning restore IDE0034 // Simplify 'default' expression
         }
 
         byte[] bytes = null;

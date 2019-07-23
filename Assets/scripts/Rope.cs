@@ -13,23 +13,38 @@ using UnityEngine;
 /// </summary>
 public class Rope : MonoBehaviour
 {
+#pragma warning disable SA1401 // Fields should be private
     /// <summary>
     /// The joint that holds the player and the cloud at a constant distance.
     /// </summary>
     public HingeJoint2D CurrRope;
+#pragma warning restore SA1401 // Fields should be private
 
+#pragma warning disable SA1401 // Fields should be private
     /// <summary>
     /// The games player.
     /// </summary>
     public GameObject Player;
+#pragma warning restore SA1401 // Fields should be private
 
+#pragma warning disable SA1401 // Fields should be private
     /// <summary>
     /// Each instance of Rope belongs to a cloud (hinge).
     /// </summary>
     public GameObject Hinge;
+#pragma warning restore SA1401 // Fields should be private
+
+#pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
+#pragma warning disable SA1401 // Fields should be private
+    /// <summary>
+    /// Game controller instance. See GameController class.
+    /// </summary>
+    public GameController game;
+#pragma warning restore SA1401 // Fields should be private
+#pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
 
     /// <summary>
-    /// Mouse state 1 = clicked    0 = not clicke
+    /// Mouse state 1 = clicked    0 = not clicke.
     /// </summary>
     private static int mouseState;
 
@@ -39,27 +54,22 @@ public class Rope : MonoBehaviour
     private InputClass gameInput;
 
     /// <summary>
-    /// Game controller instance. See GameController class.
-    /// </summary>
-    public GameController game;
-
-    /// <summary>
     /// Index of the current hinge in the GameController class.
     /// </summary>
     private int index;
 
     /// <summary>
-    /// The visual to the rope connection
+    /// The visual to the rope connection.
     /// </summary>
-    private GameObject VisualRope;
+    private GameObject visualRope;
 
     /// <summary>
-    /// Used to correct the coordinates of the cloud (hinge)
+    /// Used to correct the coordinates of the cloud (hinge).
     /// </summary>
     private float xOffset;
 
     /// <summary>
-    /// Used to correct the coordinates of the cloud (hinge)
+    /// Used to correct the coordinates of the cloud (hinge).
     /// </summary>
     private float yOffset;
 
@@ -69,19 +79,29 @@ public class Rope : MonoBehaviour
     private bool firstConnection;
 
     /// <summary>
+    /// This method signals whether the first connection has occurred.
+    /// </summary>
+    /// <param name="b">bool b.</param>
+    public void SetFirstConnection(bool b)
+    {
+        this.firstConnection = b;
+    }
+
+    /// <summary>
     /// Start is called before the first frame update.
     /// </summary>
     private void Start()
     {
-        xOffset = 19.2f;
-        yOffset = 67.9f;
+        this.xOffset = 19.2f;
+        this.yOffset = 67.9f;
         mouseState = -1;
-        Player = GameObject.FindWithTag("Player");
-        game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
-        index = game.AddHinge(this);
-        firstConnection = true;
-        //bool a = CurrRope.isActiveAndEnabled;
-        gameInput = GameObject.FindWithTag("MainCamera").GetComponent<InputClass>();
+        this.Player = GameObject.FindWithTag("Player");
+        this.game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
+        this.index = this.game.AddHinge(this);
+        this.firstConnection = true;
+
+        // bool a = CurrRope.isActiveAndEnabled;
+        this.gameInput = GameObject.FindWithTag("MainCamera").GetComponent<InputClass>();
     }
 
     /// <summary>
@@ -89,66 +109,69 @@ public class Rope : MonoBehaviour
     /// </summary>
     private void Update()
     {
-
         // Form the visable rope you see on screen if the mouse state is 1 (left click held down),
         // The index (the index of THIS connection point in the array of connection points)
         // of the cloud that is being swung from is the same as the one in the game controller
         // (game.getConnected()), and the game controller has a flag set with (game.GetConnectedFlag()).
-        if (mouseState == 1 && index == game.GetConnected() && game.GetConnectedFlag())
+        if (mouseState == 1 && this.index == this.game.GetConnected() && this.game.GetConnectedFlag())
         {
             // Transform.position gives the transform of the gameobject
             // This script is connected to in the unity editor.
-            Vector3 temp = (Player.transform.position + transform.position);
-            Vector3 tempAng = (Player.transform.position - transform.position);
+            Vector3 temp = this.Player.transform.position + this.transform.position;
+            Vector3 tempAng = this.Player.transform.position - this.transform.position;
+
             // temp now holds the coordinates at the half way point between the point of
             // connection and the player, using the midpoint formula
             temp *= 0.5f;
             float angle = Mathf.Atan2(tempAng.y, tempAng.x) * Mathf.Rad2Deg;
-            //Create/Update the ropes scale, posiition and angle.
-            VisualRope.transform.position = new Vector3(temp.x, temp.y, -5);
-            VisualRope.transform.localScale = new Vector3(.25f, tempAng.magnitude / 10f, .25f);
-            VisualRope.transform.eulerAngles = new Vector3(0, 0, angle + 90);
+
+            // Create/Update the ropes scale, posiition and angle.
+            this.visualRope.transform.position = new Vector3(temp.x, temp.y, -5);
+            this.visualRope.transform.localScale = new Vector3(.25f, tempAng.magnitude / 10f, .25f);
+            this.visualRope.transform.eulerAngles = new Vector3(0, 0, angle + 90);
         }
 
          // This if statement is run on first press and connects the player to the nearest connection point.
          // It relies on the following to be true:
-         // game.GetJumpClick()  -  
+         // game.GetJumpClick()  -
          // Input.GetMouseButtonDown(0) - Left mouse click down (also works for touch)
          // game.IsHingeClosest(index)  - Looks through an array of all possible connection points
          // !game.GetConnectedFlag()
-         
-        if (game.GetJumpClick() && Input.GetMouseButtonDown(0) && game.IsHingeClosest(index) && !game.GetConnectedFlag())
+        if (this.game.GetJumpClick() && Input.GetMouseButtonDown(0) && this.game.IsHingeClosest(this.index) && !this.game.GetConnectedFlag())
         {
             // If the glider is active, connect only when the left half of the screen is pressed
             if (DB.Glider == 1 || DB.Booster == 1)
             {
-                if (gameInput.GetInputFlag() == 0) // Only connect when left side of the screen is pressed
+#pragma warning disable SA1108 // Block statements should not contain embedded comments
+                if (this.gameInput.GetInputFlag() == 0) // Only connect when left side of the screen is pressed
+#pragma warning restore SA1108 // Block statements should not contain embedded comments
                 {
-                    Connect();
+                    this.Connect();
                 }
             }
+
             // Connect on any input when no upgrades are active.
             if (DB.Glider == 0 && DB.Booster == 0)
             {
-                Connect();
+                this.Connect();
             }
         }
+
         if (Input.GetMouseButtonUp(0))
         {
-            game.SetConnectedFlag(false);
-            CurrRope.connectedBody = null;
+            this.game.SetConnectedFlag(false);
+            this.CurrRope.connectedBody = null;
             mouseState = 0;
-            Destroy(VisualRope);
+            Destroy(this.visualRope);
         }
     }
 
-    Vector3 CorrectedHingePosition()
+    private Vector3 CorrectedHingePosition()
     {
-        return new Vector3(Hinge.transform.position.x - xOffset, Hinge.transform.position.y - yOffset,
-            Hinge.transform.position.z);
+        return new Vector3(this.Hinge.transform.position.x - this.xOffset, this.Hinge.transform.position.y - this.yOffset, this.Hinge.transform.position.z);
     }
 
-    void DrawLine(Vector3 start, Vector3 end, Color color)
+    private void DrawLine(Vector3 start, Vector3 end, Color color)
     {
         GameObject myLine = new GameObject();
         myLine.transform.position = start;
@@ -157,36 +180,37 @@ public class Rope : MonoBehaviour
         myLine.GetComponent<LineRenderer>().sortingOrder = 1;
         LineRenderer lr = myLine.GetComponent<LineRenderer>();
         lr.material = new Material(Shader.Find("Specular"));
+#pragma warning disable CS0618 // Type or member is obsolete
         lr.SetColors(color, color);
+#pragma warning restore CS0618 // Type or member is obsolete
+#pragma warning disable CS0618 // Type or member is obsolete
         lr.SetWidth(0.5f, 0.5f);
+#pragma warning restore CS0618 // Type or member is obsolete
         lr.SetPosition(0, start);
         lr.SetPosition(1, end);
         GameObject.Destroy(myLine, .01f);
-    }
-
-    public void SetFirstConnection(bool b)
-    {
-        firstConnection = b;
     }
 
     private void Connect()
     {
         if (mouseState != 1)
         {
-            if (firstConnection)
+            if (this.firstConnection)
             {
-                //
-                firstConnection = false;
-                game.incrementConnections();
+                this.firstConnection = false;
+                this.game.incrementConnections();
             }
-            VisualRope = Instantiate(Resources.Load("VisualRope", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+
+            this.visualRope = Instantiate(Resources.Load("VisualRope", typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;
+
             // Modify the clone to your heart's content
-            Vector3 temp = (Player.transform.position + CorrectedHingePosition()) * 0.5f;
-            VisualRope.transform.position = new Vector3(temp.x, temp.y, -5);
-            game.SetIsConnected(this);
-            Vector2 vel = Player.GetComponent<Rigidbody2D>().velocity + (12 * Player.GetComponent<Rigidbody2D>().velocity.normalized);
-            CurrRope.connectedBody = Player.GetComponent<Rigidbody2D>();
+            Vector3 temp = (this.Player.transform.position + this.CorrectedHingePosition()) * 0.5f;
+            this.visualRope.transform.position = new Vector3(temp.x, temp.y, -5);
+            this.game.SetIsConnected(this);
+            Vector2 vel = this.Player.GetComponent<Rigidbody2D>().velocity + (12 * this.Player.GetComponent<Rigidbody2D>().velocity.normalized);
+            this.CurrRope.connectedBody = this.Player.GetComponent<Rigidbody2D>();
         }
+
         mouseState = 1;
     }
 }

@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// <copyright file="cameraControl.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>using System.Collections;
+
 using UnityEngine;
 
 #pragma warning disable IDE1006 // Naming Styles
@@ -70,7 +73,7 @@ public class cameraControl : MonoBehaviour
     // Cam Vars
 
     // Delay variable for the camera following the player.
-    private float dampTime ;
+    private float dampTime;
 
     // Velocity for the camera following the the player
     private Vector3 velocity = Vector3.zero;

@@ -1,17 +1,22 @@
-﻿using System.Collections;
+﻿// <copyright file="glider.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 #pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
 #pragma warning disable SA1300 // Element should begin with upper-case letter
+#pragma warning disable IDE1006 // Naming Styles
 /// <summary>
 /// glider takes user input and changes the tilt of the glider
 /// that changes the players motion.
 /// </summary>
 public class glider : MonoBehaviour
+#pragma warning restore IDE1006 // Naming Styles
 #pragma warning restore SA1300 // Element should begin with upper-case letter
 {
-
 #pragma warning disable SA1306 // Field names should begin with lower-case letter
 #pragma warning disable SA1202 // Elements should be ordered by access
 #pragma warning disable SA1401 // Fields should be private
@@ -89,11 +94,10 @@ public class glider : MonoBehaviour
                               /// <summary>
                               /// Tells if the glider is currently being activated.
                               /// </summary>
-                              /// <returns>Boolean if the glider is being used</returns>
+                              /// <returns>Boolean if the glider is being used.</returns>
     public bool GliderActive()
 #pragma warning restore SA1202 // Elements should be ordered by access
     {
-
         return this.GlidePressed | this.TiltDownPressed | this.TiltUpPressed;
     }
 
@@ -212,8 +216,8 @@ public class glider : MonoBehaviour
     /// <summary>
     /// Gets the lift coefficent for the glider.
     /// </summary>
-    /// <param name="tilt"> The angle of the glider </param>
-    /// <returns>Lift coefficent</returns>
+    /// <param name="tilt"> The angle of the glider. </param>
+    /// <returns>Lift coefficent.</returns>
     private float GetLiftCoefficent(float tilt)
     {
         try
@@ -223,7 +227,7 @@ public class glider : MonoBehaviour
             for (x = 0; x < 176; x++)
             {
                 float[] angle_Coef = new float[2];
-                angle_Coef = this.CoefData.getLiftCoef(x);
+                angle_Coef = this.CoefData.GetLiftCoef(x);
 
                 if (tilt < angle_Coef[0])
                 {
@@ -232,10 +236,9 @@ public class glider : MonoBehaviour
                         coef = angle_Coef[1];
                     }
 
-                    coef = (angle_Coef[1] + this.CoefData.getLiftCoef(x - 1)[1]) / 2;
+                    coef = (angle_Coef[1] + this.CoefData.GetLiftCoef(x - 1)[1]) / 2;
                     break;
                 }
-
             }
 
             return coef;
@@ -249,6 +252,7 @@ public class glider : MonoBehaviour
 
         return -1;
     }
+
     /// <summary>
     /// Gets the drag coefficent for the glider.
     /// </summary>
@@ -263,7 +267,7 @@ public class glider : MonoBehaviour
             for (x = 0; x < 229; x++)
             {
                 float[] angle_Coef = new float[2];
-                angle_Coef = this.CoefData.getDragCoef(x);
+                angle_Coef = this.CoefData.GetDragCoef(x);
 
                 if (tilt < angle_Coef[0])
                 {
@@ -272,7 +276,7 @@ public class glider : MonoBehaviour
                         coef = angle_Coef[1];
                     }
 
-                    coef = (angle_Coef[1] + this.CoefData.getDragCoef(x - 1)[1]) / 2;
+                    coef = (angle_Coef[1] + this.CoefData.GetDragCoef(x - 1)[1]) / 2;
                     break;
                 }
             }
@@ -290,7 +294,7 @@ public class glider : MonoBehaviour
     }
 
     /// <summary>
-    /// Sets the players new movment, is called once a frame when screen 
+    /// Sets the players new movment, is called once a frame when screen
     /// is being touched.
     /// </summary>
     private void SetNewPlayerVelocity()
@@ -307,7 +311,6 @@ public class glider : MonoBehaviour
         float tiltInAngles;
         if ((this.Glider.transform.eulerAngles.z > 0 && this.Glider.transform.eulerAngles.z <= 61) || this.Glider.transform.eulerAngles.z == 0)
         {
-
             tiltInAngles = this.Glider.transform.eulerAngles.z;
         }
         else
@@ -319,17 +322,17 @@ public class glider : MonoBehaviour
 
         // Get Coefficents
         float liftCoefficent;
-        liftCoefficent = this.GetLiftCoefficent(tiltInAngles);// 2 * Mathf.PI * tiltInRads;
-        float dragCoefficent = this.GetDragCoefficent(tiltInAngles);// 1.28f * Mathf.Sin(tiltInRads);//
+        liftCoefficent = this.GetLiftCoefficent(tiltInAngles); // 2 * Mathf.PI * tiltInRads;
+        float dragCoefficent = this.GetDragCoefficent(tiltInAngles); // 1.28f * Mathf.Sin(tiltInRads);//
 
         // Calculate lift and drag forces
-        float lift = liftCoefficent * ((currVelo * currVelo * airDensity) / 2) * area;
+        float lift = liftCoefficent * (currVelo * currVelo * airDensity / 2) * area;
         float drag = dragCoefficent * (currVelo * currVelo * airDensity / 2) * area;
         float weight = 9.8f * this.Player.GetComponent<Rigidbody2D>().mass;
-        float stallSpeed = Mathf.Sqrt((2f * weight * 9.8f) / (airDensity * area * (2 * Mathf.PI * 0.785398f)));
+        float stallSpeed = Mathf.Sqrt(2f * weight * 9.8f / (airDensity * area * (2 * Mathf.PI * 0.785398f)));
 
         // Calculate component forces of lift and drag.
-        float veritcalLift = lift * Mathf.Cos(tiltInRads); 
+        float veritcalLift = lift * Mathf.Cos(tiltInRads);
         float horizontalLift = lift * Mathf.Sin(tiltInRads);
         float verticalDrag = drag * Mathf.Sin(tiltInRads);
         float horizontalDrag = drag * Mathf.Cos(tiltInRads);

@@ -9,22 +9,31 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class SceneSwitch
 {
+#pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
+#pragma warning disable SA1401 // Fields should be private
+    /// <summary>
+    /// This holds the index for the next scene.
+    /// </summary>
     public int sceneIndex;
+#pragma warning restore SA1401 // Fields should be private
+#pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
 
-    /*
-     * switch scene to index. The index for scenes are set in build settings
-     */
+    /// <summary>
+    /// switch scene to index. The index for scenes are set in build settings.
+    /// </summary>
+    /// <param name="index">int index.</param>
     public void SwitchScenes(int index)
     {
-        sceneIndex = index;
+        this.sceneIndex = index;
         SceneManager.LoadScene(index);
     }
 
-    /*
-     * Get current scene index.
-     */
+    /// <summary>
+    /// Get current scene index.
+    /// </summary>
+    /// <returns>int sceneIndex.</returns>
     public int GetSceneIndex()
     {
-        return sceneIndex;
+        return this.sceneIndex;
     }
 }

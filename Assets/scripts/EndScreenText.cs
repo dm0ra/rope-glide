@@ -12,30 +12,40 @@ using UnityEngine.UI;
 /// </summary>
 public class EndScreenText : MonoBehaviour
 {
+#pragma warning disable SA1401 // Fields should be private
     /// <summary>
     /// Score text box.
     /// </summary>
     public Text Score;
+#pragma warning restore SA1401 // Fields should be private
 
+#pragma warning disable SA1401 // Fields should be private
     /// <summary>
     /// High score text box.
     /// </summary>
     public Text HighScore;
+#pragma warning restore SA1401 // Fields should be private
 
+#pragma warning disable SA1401 // Fields should be private
     /// <summary>
     /// Cash text box.
     /// </summary>
     public Text Cash;
+#pragma warning restore SA1401 // Fields should be private
 
+#pragma warning disable SA1401 // Fields should be private
     /// <summary>
     /// Run maximum height text box.
     /// </summary>
     public Text Height;
+#pragma warning restore SA1401 // Fields should be private
 
+#pragma warning disable SA1401 // Fields should be private
     /// <summary>
     /// Run distance text box.
     /// </summary>
     public Text Dist;
+#pragma warning restore SA1401 // Fields should be private
 
     // Start is called before the first frame update
     private void Start()

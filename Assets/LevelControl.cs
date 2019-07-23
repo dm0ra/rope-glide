@@ -9,15 +9,19 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class LevelControl : MonoBehaviour
 {
+#pragma warning disable SA1401 // Fields should be private
     /// <summary>
     /// The currently loaded level.
     /// </summary>
     public int LvlIndex;
+#pragma warning restore SA1401 // Fields should be private
 
+#pragma warning disable SA1401 // Fields should be private
     /// <summary>
     /// Request for level to be changed.
     /// </summary>
     public int RequestLvlChange;
+#pragma warning restore SA1401 // Fields should be private
 
     // private void Update()
     // {

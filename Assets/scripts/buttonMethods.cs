@@ -1,4 +1,4 @@
-﻿// <copyright file="ButtonMethods.cs" company="PlaceholderCompany">
+﻿// <copyright file="buttonMethods.cs" company="PlaceholderCompany">
 // Copyright (c) PlaceholderCompany. All rights reserved.
 // </copyright>
 

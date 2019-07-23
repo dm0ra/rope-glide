@@ -9,10 +9,29 @@ using UnityEngine;
 /// </summary>
 public class Enemies : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public GameObject thisEnemy; // references the current enemy
-    public GameController Game; // game controller object
-    public GameObject Player; // player object
+#pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
+#pragma warning disable SA1401 // Fields should be private
+    /// <summary>
+    /// references the current enemy.
+    /// </summary>
+    public GameObject thisEnemy;
+#pragma warning restore SA1401 // Fields should be private
+#pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
+
+#pragma warning disable SA1401 // Fields should be private
+    /// <summary>
+    /// game controller object.
+    /// </summary>
+    public GameController Game;
+#pragma warning restore SA1401 // Fields should be private
+
+#pragma warning disable SA1401 // Fields should be private
+    /// <summary>
+    /// The character in the game.
+    /// </summary>
+    public GameObject Player;
+#pragma warning restore SA1401 // Fields should be private
+
     private static int enemyZ;
     private int enemyIndex;
     private int enemySpeed;
@@ -23,7 +42,7 @@ public class Enemies : MonoBehaviour
     private float timeCounter;
     private int centerScreenY = 65;
 
-    void Start()
+    private void Start()
     {
         this.Player = GameObject.FindWithTag("Player");
         this.Game = GameObject.FindWithTag("GameController").GetComponent<GameController>();
@@ -43,7 +62,7 @@ public class Enemies : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         this.updateCount++;
 

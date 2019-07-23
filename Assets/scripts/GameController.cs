@@ -1,18 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
+﻿// <copyright file="GameController.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 using System;
-using UnityEngine.UI;
-
-using UnityEngine.Experimental.UIElements;
-
-using UnityEngine.SceneManagement;
-using System.IO;
-
-using Microsoft.VisualBasic;
+using System.Collections;
+using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
+using Microsoft.VisualBasic;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.Experimental.UIElements;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /// <summary>
 /// GameController is being updated when the game is being played
@@ -23,35 +23,43 @@ public class GameController : MonoBehaviour
 #pragma warning disable SA1306 // Field names should begin with lower-case letter
 #pragma warning disable SA1202 // Elements should be ordered by access
 #pragma warning disable SA1401 // Fields should be private
-    // A list of all the clouds (hinges) that the player can connect to
-#pragma warning disable SA1600 // Elements should be documented
-    public List<Rope> Hinges;
-#pragma warning restore SA1600 // Elements should be documented
 
-    /* List of pick of items (Boost,...) */
-#pragma warning disable SA1600 // Elements should be documented
+    /// <summary>
+    /// A list of all the clouds (hinges) that the player can connect to.
+    /// </summary>
+    public List<Rope> Hinges;
+
+    /// <summary>
+    /// List of pick of items (Boost,...).
+    /// </summary>
     public List<PickUpItem> Items;
-#pragma warning restore SA1600 // Elements should be documented
-    /* List of Enemies */
-#pragma warning disable SA1600 // Elements should be documented
+
+    /// <summary>
+    /// List of Enemies.
+    /// </summary>
     public List<Enemies> EnemyList;
-#pragma warning restore SA1600 // Elements should be documented
-    /* Holds the index of the connected hinge */
-#pragma warning disable SA1600 // Elements should be documented
+
+#pragma warning disable SA1307 // Accessible fields should begin with upper-case letter
+    /// <summary>
+    /// Holds the index of the connected hinge.
+    /// </summary>
     public int isConnected;
-#pragma warning restore SA1600 // Elements should be documented
-    /* The games camera (See in unity editor) */
-#pragma warning disable SA1600 // Elements should be documented
+#pragma warning restore SA1307 // Accessible fields should begin with upper-case letter
+
+    /// <summary>
+    /// The games camera (See in unity editor).
+    /// </summary>
     public GameObject Camera;
-#pragma warning restore SA1600 // Elements should be documented
-    /* The games player (See in unity editor) */
-#pragma warning disable SA1600 // Elements should be documented
+
+    /// <summary>
+    /// The games player (See in unity editor).
+    /// </summary>
     public GameObject Player;
-#pragma warning restore SA1600 // Elements should be documented
-    /* Object to hold a booster when upgraded */
-#pragma warning disable SA1600 // Elements should be documented
+
+    /// <summary>
+    /// Object to hold a booster when upgraded.
+    /// </summary>
     public GameObject Booster;
-#pragma warning restore SA1600 // Elements should be documented
 
     // Flag that is set when the player is connected to a cloud
     private bool Connected;
@@ -65,10 +73,10 @@ public class GameController : MonoBehaviour
     // Used to correct the coordinates of the cloud (hinge)
     private float yOffset;
 
-    // On screen score
-#pragma warning disable SA1600 // Elements should be documented
+    /// <summary>
+    /// On screen score.
+    /// </summary>
     private Text score;
-#pragma warning restore SA1600 // Elements should be documented
 
     // Holds the current score
     private float scoreCount;
@@ -91,84 +99,10 @@ public class GameController : MonoBehaviour
     // Starting position of main camera in unity editor
     private Vector3 StartingCameraPos;
 
-    // Has the initial click occured
-#pragma warning disable SA1600 // Elements should be documented
-    public bool JumpClick;
-#pragma warning restore SA1600 // Elements should be documented
-
-#pragma warning restore SA1306 // Field names should begin with lower-case letter
-#pragma warning restore SA1202 // Elements should be ordered by access
-#pragma warning restore SA1401 // Fields should be private
     /// <summary>
-    /// Start is called before the first frame update.
+    /// Tells whether the initial click occurred.
     /// </summary>
-    private void Awake()
-    {
-        // Load the highscore and set highscore upon each life
-        string fileData = DataSaver.LoadData<string>("HighScore");
-        string[] fileLines = fileData.Split('\n');
-        DB.HighScore = float.Parse(fileLines[0]);
-        DB.BankCash = int.Parse(fileLines[1]);
-        DB.Glider = int.Parse(fileLines[2]);
-        DB.Booster = int.Parse(fileLines[3]);
-        // Initilize instance variables
-
-        this.xOffset = 19.2f;
-        this.yOffset = 67.9f;
-        this.sceneSwitcher = new SceneSwitch();
-        this.Hinges = new List<Rope>();
-        this.Items = new List<PickUpItem>();
-        this.EnemyList = new List<Enemies>();
-        this.Player = GameObject.FindWithTag("Player");
-        this.Camera = GameObject.FindWithTag("MainCamera");
-        this.Connected = false;
-        this.JumpClick = false;
-        this.scoreCount = 0;
-        this.connectionCount = 0;
-        this.distance = 0;
-        this.highestHeight = 0;
-        this.topSpeed = 0;
-        this.fellOffFlag = false;
-        this.InitScore();
-
-        // Freeze the player upon each life. Taping or clicking makes the player start moving
-        this.Player.GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
-        this.Player.GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionY;
-
-        // links preview images for booster and glider then deactivates them
-        // gliderImage = GameObject.FindWithTag("GliderImage");
-        // boosterImage = GameObject.FindWithTag("BoosterImage");
-        // gliderImage.SetActive(false);
-        // boosterImage.SetActive(false);
-    }
-
-    // Runs once a frame
-    private void Update()
-    {
-        //
-        this.CheckForEnter();
-        //
-        this.UpdateScore();
-
-        this.scoreCount = this.calculateScore();
-
-        // If the player falls off the map respawn player
-        if (this.StartingCameraPos.y - 92 > this.Player.transform.position.y)
-        {
-            this.RespawnPlayer();
-        }
-
-        // Wait for first click to move the player
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (!this.JumpClick)
-            {
-                this.JumpClick = true;
-                this.Player.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionX;
-                this.Player.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionY;
-            }
-        }
-    }
+    public bool JumpClick;
 
     /// <summary>
     /// Debug method for scene swithching.
@@ -203,67 +137,84 @@ public class GameController : MonoBehaviour
     public void SetJumpClick(bool b)
     {
         this.JumpClick = b;
-
     }
 
     /// <summary>
     ///  Add rope to the list of hinges.
     /// </summary>
-    /// <param name="H">The rope to add to the list of hinges.</param>
+    /// <param name="h">The rope to add to the list of hinges.</param>
     /// <returns>the index of the. </returns>
-    public int AddHinge(Rope H)
+    public int AddHinge(Rope h)
     {
-        this.Hinges.Add(H);
+        this.Hinges.Add(h);
         return this.Hinges.Count - 1;
     }
 
+#pragma warning disable IDE1006 // Naming Styles
+#pragma warning disable SA1300 // Element should begin with upper-case letter
     /// <summary>
     ///  used to calculate score.
     /// </summary>
     public void incrementScore()
+#pragma warning restore SA1300 // Element should begin with upper-case letter
+#pragma warning restore IDE1006 // Naming Styles
     {
         this.scoreCount++;
     }
 
+#pragma warning disable IDE1006 // Naming Styles
+#pragma warning disable SA1300 // Element should begin with upper-case letter
     /// <summary>
     /// used to calculate score.
     /// </summary>
     public void incrementConnections()
+#pragma warning restore SA1300 // Element should begin with upper-case letter
+#pragma warning restore IDE1006 // Naming Styles
     {
         this.connectionCount++;
     }
 
+#pragma warning disable IDE1006 // Naming Styles
+#pragma warning disable SA1300 // Element should begin with upper-case letter
     /// <summary>
     /// used to calculate score.
     /// </summary>
     /// <param name="ts">Current vector for speed.</param>
     public void setTopSpeed(Vector2 ts)
+#pragma warning restore SA1300 // Element should begin with upper-case letter
+#pragma warning restore IDE1006 // Naming Styles
     {
         if (ts.magnitude > this.topSpeed)
         {
             this.topSpeed = ts.magnitude;
         }
-
     }
 
+#pragma warning disable IDE1006 // Naming Styles
+#pragma warning disable SA1300 // Element should begin with upper-case letter
     /// <summary>
-    /// Set the players highest height..
+    /// Set the players highest height.
     /// </summary>
     /// <param name="h">height h.</param>
-    public void setHighestHeight(float h)   // used to calculate score
+    public void setHighestHeight(float h) // used to calculate score
+#pragma warning restore SA1300 // Element should begin with upper-case letter
+#pragma warning restore IDE1006 // Naming Styles
     {
         if (h > this.highestHeight)
         {
             this.highestHeight = h;
         }
-
     }
 
+#pragma warning disable IDE1006 // Naming Styles
+#pragma warning disable SA1300 // Element should begin with upper-case letter
     /// <summary>
     /// Set new distance highscore.
     /// </summary>
     /// <param name="d">distance d.</param>
     public void setDistance(float d)
+#pragma warning restore SA1300 // Element should begin with upper-case letter
+#pragma warning restore IDE1006 // Naming Styles
     {
         if (d > this.distance)
         {
@@ -271,33 +222,33 @@ public class GameController : MonoBehaviour
         }
     }
 
-    //
-
     /// <summary>
     ///  calculate overall score.
     /// </summary>
     /// <returns>The current score of the player.</returns>
-    public float calculateScore()
+    public float CalculateScore()
     {
         return (float)this.connectionCount + (this.topSpeed / 10) + this.highestHeight + (this.distance / 100);
     }
-
-    //
 
     /// <summary>
     ///  Has the person fallen off.
     /// </summary>
     /// <returns>has the player fallen off.</returns>
-    public bool getfellOffFlag()
+    public bool GetfellOffFlag()
     {
         return this.fellOffFlag;
     }
 
+#pragma warning disable IDE1006 // Naming Styles
+#pragma warning disable SA1300 // Element should begin with upper-case letter
     /// <summary>
     /// set if the person has fell off.
     /// </summary>
     /// <param name="flag">flag for fallen off.</param>
     public void setfellOffFlag(bool flag)
+#pragma warning restore SA1300 // Element should begin with upper-case letter
+#pragma warning restore IDE1006 // Naming Styles
     {
         this.fellOffFlag = flag;
     }
@@ -335,7 +286,6 @@ public class GameController : MonoBehaviour
         this.score.color = Color.black;
 
         // Provide Text position and size using RectTransform.
-
         this.score.transform.position = new Vector3(850, 520, -5);
 
         // On Screen score for iphone
@@ -348,17 +298,18 @@ public class GameController : MonoBehaviour
     public void UpdateScore()
     {
         this.score.text = "score: " + (int)this.scoreCount;
+
         // Debug.Log(score.text + scoreCount)
     }
 
     /// <summary>
     /// adds pickup item to list and returns index.
     /// </summary>
-    /// <param name="I">The item to be added.</param>
+    /// <param name="i">The item to be added.</param>
     /// <returns>The index of the item.</returns>
-    public int AddItem(PickUpItem I)
+    public int AddItem(PickUpItem i)
     {
-        this.Items.Add(I);
+        this.Items.Add(i);
 
         return this.Hinges.Count - 1;
     }
@@ -366,11 +317,11 @@ public class GameController : MonoBehaviour
     /// <summary>
     /// adds enemy item to list and returns index.
     /// </summary>
-    /// <param name="E">enemy to be added.</param>
+    /// <param name="e">enemy to be added.</param>
     /// <returns>the indexof the item added.</returns>
-    public int AddEnemy(Enemies E)
+    public int AddEnemy(Enemies e)
     {
-        this.EnemyList.Add(E);
+        this.EnemyList.Add(e);
         return this.Hinges.Count - 1;
     }
 
@@ -419,13 +370,13 @@ public class GameController : MonoBehaviour
     public bool IsHingeClosest(int index)
     {
         bool ret = true;
-        float currDistance;// current distance
-        float distanceInQuestion;// distance of hinge in question
-        Vector2 nextVector;// next hinge to look at
-        Vector2 playerVector = new Vector2(this.Player.transform.position.x, this.Player.transform.position.y);// gets player 2d vector
-        Vector2 hingeVector = new Vector2(this.Hinges[index].transform.position.x, this.Hinges[index].transform.position.y);// gets the current hinge 2d vector
+        float currDistance; // current distance
+        float distanceInQuestion; // distance of hinge in question
+        Vector2 nextVector; // next hinge to look at
+        Vector2 playerVector = new Vector2(this.Player.transform.position.x, this.Player.transform.position.y); // gets player 2d vector
+        Vector2 hingeVector = new Vector2(this.Hinges[index].transform.position.x, this.Hinges[index].transform.position.y); // gets the current hinge 2d vector
 
-        distanceInQuestion = Vector2.Distance(playerVector, hingeVector);// finds the distance between the current hinge and the play
+        distanceInQuestion = Vector2.Distance(playerVector, hingeVector); // finds the distance between the current hinge and the play
 
         // loops through all the hinges
         for (int x = 0; x < this.Hinges.Count; x++)
@@ -452,24 +403,13 @@ public class GameController : MonoBehaviour
     }
 
     /// <summary>
-    /// Is the corrected position of hinges.
-    /// </summary>
-    /// <param name="index">index to cloud to be corrected.</param>
-    /// <returns>The corrected position of the cloud.</returns>
-    private Vector3 CorrectedHingePosition(int index)
-    {
-        return new Vector3(this.Hinges[index].Hinge.transform.position.x - this.xOffset, this.Hinges[index].Hinge.transform.position.y - this.yOffset,
-            this.Hinges[index].Hinge.transform.position.z);
-    }
-
-    /// <summary>
     /// Respawn player sets the highscore if needed.
     /// </summary>
     public void RespawnPlayer()
     {
         // Player.transform.position = new Vector3(-25, 127, -5);
         // Player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-        DB.Score = this.calculateScore();
+        DB.Score = this.CalculateScore();
         DB.MaxSpeed = this.topSpeed;
         DB.RunDist = this.distance;
         DB.RunConNum = this.connectionCount;
@@ -495,6 +435,89 @@ public class GameController : MonoBehaviour
 
         DB.LvlIndex = 2;
         this.sceneSwitcher.SwitchScenes(2);
+    }
+
+#pragma warning restore SA1306 // Field names should begin with lower-case letter
+#pragma warning restore SA1202 // Elements should be ordered by access
+#pragma warning restore SA1401 // Fields should be private
+    /// <summary>
+    /// Start is called before the first frame update.
+    /// </summary>
+    private void Awake()
+    {
+        // Load the highscore and set highscore upon each life
+        string fileData = DataSaver.LoadData<string>("HighScore");
+        string[] fileLines = fileData.Split('\n');
+        DB.HighScore = float.Parse(fileLines[0]);
+        DB.BankCash = int.Parse(fileLines[1]);
+        DB.Glider = int.Parse(fileLines[2]);
+        DB.Booster = int.Parse(fileLines[3]);
+
+        // Initilize instance variables
+        this.xOffset = 19.2f;
+        this.yOffset = 67.9f;
+        this.sceneSwitcher = new SceneSwitch();
+        this.Hinges = new List<Rope>();
+        this.Items = new List<PickUpItem>();
+        this.EnemyList = new List<Enemies>();
+        this.Player = GameObject.FindWithTag("Player");
+        this.Camera = GameObject.FindWithTag("MainCamera");
+        this.Connected = false;
+        this.JumpClick = false;
+        this.scoreCount = 0;
+        this.connectionCount = 0;
+        this.distance = 0;
+        this.highestHeight = 0;
+        this.topSpeed = 0;
+        this.fellOffFlag = false;
+        this.InitScore();
+
+        // Freeze the player upon each life. Taping or clicking makes the player start moving
+        this.Player.GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
+        this.Player.GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionY;
+
+        // links preview images for booster and glider then deactivates them
+        // gliderImage = GameObject.FindWithTag("GliderImage");
+        // boosterImage = GameObject.FindWithTag("BoosterImage");
+        // gliderImage.SetActive(false);
+        // boosterImage.SetActive(false);
+    }
+
+    // Runs once a frame
+    private void Update()
+    {
+        this.CheckForEnter();
+
+        this.UpdateScore();
+
+        this.scoreCount = this.CalculateScore();
+
+        // If the player falls off the map respawn player
+        if (this.StartingCameraPos.y - 92 > this.Player.transform.position.y)
+        {
+            this.RespawnPlayer();
+        }
+
+        // Wait for first click to move the player
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (!this.JumpClick)
+            {
+                this.JumpClick = true;
+                this.Player.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionX;
+                this.Player.GetComponent<Rigidbody2D>().constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Is the corrected position of hinges.
+    /// </summary>
+    /// <param name="index">index to cloud to be corrected.</param>
+    /// <returns>The corrected position of the cloud.</returns>
+    private Vector3 CorrectedHingePosition(int index)
+    {
+        return new Vector3(this.Hinges[index].Hinge.transform.position.x - this.xOffset, this.Hinges[index].Hinge.transform.position.y - this.yOffset, this.Hinges[index].Hinge.transform.position.z);
     }
 
     /// <summary>
