@@ -30,6 +30,7 @@ var searchData=
   ['restoreoriginaltextonescape',['restoreOriginalTextOnEscape',['../classTMPro_1_1TMP__InputField.html#a9a402064db2a20ffce7abb59d2619688',1,'TMPro::TMP_InputField']]],
   ['restorewordwrappingstate',['RestoreWordWrappingState',['../classTMPro_1_1TMP__Text.html#a0555e7043aed6e3db5ef6113eac2fa77',1,'TMPro::TMP_Text']]],
   ['richtext',['richText',['../classTMPro_1_1TMP__Text.html#a3d9afda5078a7e48a52206736facf972',1,'TMPro::TMP_Text']]],
+  ['rollnoinputfield',['rollNoInputField',['../classCSVParsing.html#a9e55b4f20f6d18274cc964a816043103',1,'CSVParsing']]],
   ['rope',['Rope',['../classRope.html',1,'']]],
   ['run',['Run',['../classDoxyRunner.html#a7458975df0c43d397051f225d6def184',1,'DoxyRunner']]]
 ];

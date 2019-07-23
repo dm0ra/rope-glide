@@ -127,11 +127,11 @@ Public Attributes</h2></td></tr>
 <p>Get the flag indicating input status. </p>
 <dl class="section return"><dt>Returns</dt><dd>Return the flag indicating input status. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="InputClass_8cs_source.html#l00073">73</a> of file <a class="el" href="InputClass_8cs_source.html">InputClass.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        Debug.Log(<span class="stringliteral">&quot;Click Flag: &quot;</span> + this.clickFlag);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> this.clickFlag;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="InputClass_8cs_source.html#l00076">76</a> of file <a class="el" href="InputClass_8cs_source.html">InputClass.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        Debug.Log(<span class="stringliteral">&quot;Click Flag: &quot;</span> + this.clickFlag);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> this.clickFlag;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -160,45 +160,45 @@ Public Attributes</h2></td></tr>
 
 <p>Update is called once per frame. </p>
 
-<p class="definition">Definition at line <a class="el" href="InputClass_8cs_source.html#l00027">27</a> of file <a class="el" href="InputClass_8cs_source.html">InputClass.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// Debug.Log(&quot;Working&quot;);</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span> (Input.GetMouseButtonDown(0))</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="comment">// Debug.Log(&quot;Screen Height: &quot; + Screen.height);</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="comment">// Debug.Log(&quot;Screen Input y pos: &quot; + Input.mousePosition.y);</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            this.currCameraPos = this.transform.position.x;</div>
+<p class="definition">Definition at line <a class="el" href="InputClass_8cs_source.html#l00030">30</a> of file <a class="el" href="InputClass_8cs_source.html">InputClass.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// Debug.Log(&quot;Working&quot;);</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (Input.GetMouseButtonDown(0))</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="comment">// Debug.Log(&quot;Screen Height: &quot; + Screen.height);</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordtype">float</span> touchPositionX = Input.mousePosition.x - this.touchOffest + this.transform.position.x; <span class="comment">// x position for touch</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordtype">float</span> touchPositiony = Input.mousePosition.y - this.touchOffest + this.transform.position.y; <span class="comment">// y position for y</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="comment">// Debug.Log(&quot;Screen Input y pos: &quot; + Input.mousePosition.y);</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            this.currCameraPos = this.transform.position.x;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">float</span> middleVerticalBoundry = this.transform.position.x; <span class="comment">// sets vertical boundary to divide touches</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordtype">float</span> middleHorizontalBoundry = this.<a class="code" href="classInputClass.html#ad4ae3592a14702b2443f2c3601f78278">Camera</a>.transform.position.y / 2; <span class="comment">// sets horizontal boundary to divide touches</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">float</span> touchPositionX = Input.mousePosition.x - this.touchOffest + this.transform.position.x; <span class="comment">// x position for touch</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordtype">float</span> touchPositiony = Input.mousePosition.y - this.touchOffest + this.transform.position.y; <span class="comment">// y position for y</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span> (touchPositionX &gt; middleVerticalBoundry)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">if</span> (Input.mousePosition.y &gt; Screen.height / 2)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    this.clickFlag = 2; <span class="comment">// Top Right</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    <span class="comment">// Debug.Log(&quot;Woah&quot;);</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    this.clickFlag = 1; <span class="comment">// Bottom Right</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                this.clickFlag = 0; <span class="comment">// Left</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Input.GetMouseButtonUp(0))</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            this.clickFlag = -1; <span class="comment">// No Click</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordtype">float</span> middleVerticalBoundry = this.transform.position.x; <span class="comment">// sets vertical boundary to divide touches</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordtype">float</span> middleHorizontalBoundry = this.<a class="code" href="classInputClass.html#ad4ae3592a14702b2443f2c3601f78278">Camera</a>.transform.position.y / 2; <span class="comment">// sets horizontal boundary to divide touches</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">if</span> (touchPositionX &gt; middleVerticalBoundry)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">if</span> (Input.mousePosition.y &gt; Screen.height / 2)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    this.clickFlag = 2; <span class="comment">// Top Right</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    <span class="comment">// Debug.Log(&quot;Woah&quot;);</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    this.clickFlag = 1; <span class="comment">// Bottom Right</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                this.clickFlag = 0; <span class="comment">// Left</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Input.GetMouseButtonUp(0))</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            this.clickFlag = -1; <span class="comment">// No Click</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -217,7 +217,7 @@ Public Attributes</h2></td></tr>
 
 <p>Camera object. </p>
 
-<p class="definition">Definition at line <a class="el" href="InputClass_8cs_source.html#l00014">14</a> of file <a class="el" href="InputClass_8cs_source.html">InputClass.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="InputClass_8cs_source.html#l00016">16</a> of file <a class="el" href="InputClass_8cs_source.html">InputClass.cs</a>.</p>
 
 </div>
 </div>
@@ -225,7 +225,7 @@ Public Attributes</h2></td></tr>
 <li>Assets/<a class="el" href="InputClass_8cs_source.html">InputClass.cs</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassInputClass_html_ad4ae3592a14702b2443f2c3601f78278"><div class="ttname"><a href="classInputClass.html#ad4ae3592a14702b2443f2c3601f78278">InputClass.Camera</a></div><div class="ttdeci">GameObject Camera</div><div class="ttdoc">Camera object.</div><div class="ttdef"><b>Definition:</b> <a href="InputClass_8cs_source.html#l00014">InputClass.cs:14</a></div></div>
+<div class="ttc" id="aclassInputClass_html_ad4ae3592a14702b2443f2c3601f78278"><div class="ttname"><a href="classInputClass.html#ad4ae3592a14702b2443f2c3601f78278">InputClass.Camera</a></div><div class="ttdeci">GameObject Camera</div><div class="ttdoc">Camera object.</div><div class="ttdef"><b>Definition:</b> <a href="InputClass_8cs_source.html#l00016">InputClass.cs:16</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

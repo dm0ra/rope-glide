@@ -18,6 +18,7 @@ var searchData=
   ['internalcrossfadealpha',['InternalCrossFadeAlpha',['../classTMPro_1_1TextMeshProUGUI.html#a198b9bf0fea8a41b2c76259db7f5baff',1,'TMPro.TextMeshProUGUI.InternalCrossFadeAlpha()'],['../classTMPro_1_1TMP__Text.html#af04bfde9fe669030330b18e59d3743cd',1,'TMPro.TMP_Text.InternalCrossFadeAlpha()']]],
   ['internalcrossfadecolor',['InternalCrossFadeColor',['../classTMPro_1_1TextMeshProUGUI.html#aaab93e2d40e730d419c60310f0b55605',1,'TMPro.TextMeshProUGUI.InternalCrossFadeColor()'],['../classTMPro_1_1TMP__Text.html#a22998506360d8760ae4e7df770e0f3fb',1,'TMPro.TMP_Text.InternalCrossFadeColor()']]],
   ['ipackagemanagerextension',['IPackageManagerExtension',['../interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension.html',1,'UnityEditor::PackageManager::UI']]],
+  ['isconnected',['isConnected',['../classGameController.html#a46bcb3489e885afdfb22056aa8cd0c5c',1,'GameController']]],
   ['isdefaultmaterial',['isDefaultMaterial',['../classTMPro_1_1TMP__SubMesh.html#a5eaf8dd69cecbc5c96bcc5ea3b8489ef',1,'TMPro.TMP_SubMesh.isDefaultMaterial()'],['../classTMPro_1_1TMP__SubMeshUI.html#afeb2c2de9cff26385cf00802a8d356da',1,'TMPro.TMP_SubMeshUI.isDefaultMaterial()']]],
   ['ishingeclosest',['IsHingeClosest',['../classGameController.html#a21e44c9808d0d0e34e9ddce7f9172ad4',1,'GameController']]],
   ['isinitialized',['isInitialized',['../interfaceUnityAds.html#a8698d281f4758d79a70bd20f6db4a622',1,'UnityAds']]],
@@ -34,5 +35,6 @@ var searchData=
   ['isusingbold',['isUsingBold',['../classTMPro_1_1TMP__Text.html#a2ad3845a02f7fd35f5b9bd7a34f5bd52',1,'TMPro::TMP_Text']]],
   ['isusinglegacyanimationcomponent',['isUsingLegacyAnimationComponent',['../classTMPro_1_1TMP__Text.html#a58d10df90c9f5cca965aeb431ad599c4',1,'TMPro::TMP_Text']]],
   ['isvolumetrictext',['isVolumetricText',['../classTMPro_1_1TMP__Text.html#ad36339b6ac85f11142cab2bd8f336abd',1,'TMPro::TMP_Text']]],
+  ['items',['Items',['../classGameController.html#aa4deaac7567634f120f5b0b8e9af4a05',1,'GameController']]],
   ['itextelement',['ITextElement',['../interfaceTMPro_1_1ITextElement.html',1,'TMPro']]]
 ];

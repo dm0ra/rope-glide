@@ -1,7 +1,6 @@
 var searchData=
 [
   ['datasaver',['DataSaver',['../classDataSaver.html',1,'']]],
-  ['dbunittest',['DBUnitTest',['../classDBUnitTest.html',1,'']]],
   ['defaultcolorgradientpresetspath',['defaultColorGradientPresetsPath',['../classTMPro_1_1TMP__Settings.html#a3a6d7260b925a52e2c0e10ef9b91aed6',1,'TMPro::TMP_Settings']]],
   ['defaultfontasset',['defaultFontAsset',['../classTMPro_1_1TMP__FontAsset.html#abeca04093d0ee5e19bd3a1f2527b54fd',1,'TMPro.TMP_FontAsset.defaultFontAsset()'],['../classTMPro_1_1TMP__Settings.html#a662e85495fdb4320e6d01287cc673220',1,'TMPro.TMP_Settings.defaultFontAsset()']]],
   ['defaultfontassetpath',['defaultFontAssetPath',['../classTMPro_1_1TMP__Settings.html#a92cb63534942cf953106de2c72f8358f',1,'TMPro::TMP_Settings']]],

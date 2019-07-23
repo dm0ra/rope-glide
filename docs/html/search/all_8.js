@@ -10,6 +10,6 @@ var searchData=
   ['highscore',['HighScore',['../classEndScreenText.html#ab2e02e88857fb793ae7c75ba9c72c528',1,'EndScreenText']]],
   ['hinge',['Hinge',['../classRope.html#ad4ed92a663bd20d9631d1a1433d37066',1,'Rope']]],
   ['hingemanager',['HingeManager',['../classHingeManager.html',1,'']]],
-  ['hinges',['Hinges',['../classHingeManager.html#aea60643017d2aba031320d2566926371',1,'HingeManager']]],
+  ['hinges',['Hinges',['../classGameController.html#ad48dbd8525f74fd48f9c5d5b85e272db',1,'GameController.Hinges()'],['../classHingeManager.html#aea60643017d2aba031320d2566926371',1,'HingeManager.Hinges()']]],
   ['horizontalmapping',['horizontalMapping',['../classTMPro_1_1TMP__Text.html#ae63cc778cd7e6deeee029bcec94fd674',1,'TMPro::TMP_Text']]]
 ];

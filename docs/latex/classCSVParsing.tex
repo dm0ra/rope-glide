@@ -1,5 +1,10 @@
 \hypertarget{classCSVParsing}{}\doxysection{C\+S\+V\+Parsing Class Reference}
 \label{classCSVParsing}\index{CSVParsing@{CSVParsing}}
+
+
+This method gets lift and drag coefficients for the glider.  
+
+
 Inheritance diagram for C\+S\+V\+Parsing\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,36 +14,155 @@ Inheritance diagram for C\+S\+V\+Parsing\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classCSVParsing_aae74fdb869becd84a02f30fafdf27b77}\label{classCSVParsing_aae74fdb869becd84a02f30fafdf27b77}} 
-float\mbox{[}$\,$\mbox{]} {\bfseries get\+Lift\+Coef} (int index)
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classCSVParsing_a9ab6d0eb68600cb3a5cf849edda46747}{Get\+Lift\+Coef}} (int index)
+\begin{DoxyCompactList}\small\item\em This method gets lift coefficient based on the angle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCSVParsing_ad5a3836e41deba432dbc979d5e91d377}\label{classCSVParsing_ad5a3836e41deba432dbc979d5e91d377}} 
+float\mbox{[}$\,$\mbox{]} {\bfseries Get\+Drag\+Coef} (int index)
 \item 
-\mbox{\Hypertarget{classCSVParsing_a51d1ffcc999bceee6a3163cd5d50c52d}\label{classCSVParsing_a51d1ffcc999bceee6a3163cd5d50c52d}} 
-float\mbox{[}$\,$\mbox{]} {\bfseries get\+Drag\+Coef} (int index)
-\item 
-\mbox{\Hypertarget{classCSVParsing_aeeb0f8117b2cf3020a05ee7ba51fdd76}\label{classCSVParsing_aeeb0f8117b2cf3020a05ee7ba51fdd76}} 
-void {\bfseries add\+Data} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classCSVParsing_a2f52d8e43646af2edde2b53067c88bc3}{Add\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Add data to C\+SV file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classCSVParsing_ace55b7810926350ebd575b608b50319f}\label{classCSVParsing_ace55b7810926350ebd575b608b50319f}} 
-Text\+Asset {\bfseries csv\+File}
-\item 
-\mbox{\Hypertarget{classCSVParsing_a9e55b4f20f6d18274cc964a816043103}\label{classCSVParsing_a9e55b4f20f6d18274cc964a816043103}} 
-Input\+Field {\bfseries roll\+No\+Input\+Field}
-\item 
-\mbox{\Hypertarget{classCSVParsing_ae675bc797e214490a77decbb78e33852}\label{classCSVParsing_ae675bc797e214490a77decbb78e33852}} 
-Input\+Field {\bfseries name\+Input\+Field}
-\item 
-\mbox{\Hypertarget{classCSVParsing_a4345a10c6a9bfad5faa051146ea4b73a}\label{classCSVParsing_a4345a10c6a9bfad5faa051146ea4b73a}} 
-Text {\bfseries content\+Area}
-\end{DoxyCompactItemize}
+Text\+Asset \mbox{\hyperlink{classCSVParsing_ace55b7810926350ebd575b608b50319f}{csv\+File}}
+\begin{DoxyCompactList}\small\item\em Holds the glider drag and lift coefficients. \end{DoxyCompactList}\item 
+Input\+Field \mbox{\hyperlink{classCSVParsing_a9e55b4f20f6d18274cc964a816043103}{roll\+No\+Input\+Field}}
+\begin{DoxyCompactList}\small\item\em Reference of roll no input field. \end{DoxyCompactList}\item 
+Input\+Field \mbox{\hyperlink{classCSVParsing_ae675bc797e214490a77decbb78e33852}{name\+Input\+Field}}
+\begin{DoxyCompactList}\small\item\em Reference of name input filed. \end{DoxyCompactList}\item 
+Text \mbox{\hyperlink{classCSVParsing_a4345a10c6a9bfad5faa051146ea4b73a}{content\+Area}}
+\begin{DoxyCompactList}\small\item\em Reference of content\+Area where records are displayed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+This method gets lift and drag coefficients for the glider. 
 
 
-Definition at line 7 of file C\+S\+V\+Parsing.\+cs.
+
+Definition at line 12 of file C\+S\+V\+Parsing.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCSVParsing_a2f52d8e43646af2edde2b53067c88bc3}\label{classCSVParsing_a2f52d8e43646af2edde2b53067c88bc3}} 
+\index{CSVParsing@{CSVParsing}!AddData@{AddData}}
+\index{AddData@{AddData}!CSVParsing@{CSVParsing}}
+\doxysubsubsection{\texorpdfstring{AddData()}{AddData()}}
+{\footnotesize\ttfamily void C\+S\+V\+Parsing.\+Add\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add data to C\+SV file. 
+
+
+
+Definition at line 94 of file C\+S\+V\+Parsing.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95     \{}
+\DoxyCodeLine{96         \textcolor{comment}{// Following line adds data to CSV file}}
+\DoxyCodeLine{97         Debug.Log(Application.dataPath);}
+\DoxyCodeLine{98         File.AppendAllText(getPath() + \textcolor{stringliteral}{"/Assets/CoefData.csv"}, this.lineSeperater + this.\mbox{\hyperlink{classCSVParsing_a9e55b4f20f6d18274cc964a816043103}{rollNoInputField}}.text + \textcolor{keyword}{this}.fieldSeperator + \textcolor{keyword}{this}.nameInputField.text);}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100         \textcolor{comment}{// Following lines refresh the edotor and print data}}
+\DoxyCodeLine{101         this.\mbox{\hyperlink{classCSVParsing_a9e55b4f20f6d18274cc964a816043103}{rollNoInputField}}.text = \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{102         this.\mbox{\hyperlink{classCSVParsing_ae675bc797e214490a77decbb78e33852}{nameInputField}}.text = \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{103         this.\mbox{\hyperlink{classCSVParsing_a4345a10c6a9bfad5faa051146ea4b73a}{contentArea}}.text = \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{104 \textcolor{preprocessor}{\#if UNITY\_EDITOR}}
+\DoxyCodeLine{105         \mbox{\hyperlink{namespaceUnityEditor}{UnityEditor}}.AssetDatabase.Refresh();}
+\DoxyCodeLine{106 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{107         this.readData();}
+\DoxyCodeLine{108     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCSVParsing_a9ab6d0eb68600cb3a5cf849edda46747}\label{classCSVParsing_a9ab6d0eb68600cb3a5cf849edda46747}} 
+\index{CSVParsing@{CSVParsing}!GetLiftCoef@{GetLiftCoef}}
+\index{GetLiftCoef@{GetLiftCoef}!CSVParsing@{CSVParsing}}
+\doxysubsubsection{\texorpdfstring{GetLiftCoef()}{GetLiftCoef()}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} C\+S\+V\+Parsing.\+Get\+Lift\+Coef (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method gets lift coefficient based on the angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & int index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float\mbox{[}\mbox{]}.
+\end{DoxyReturn}
+
+
+Definition at line 79 of file C\+S\+V\+Parsing.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80     \{}
+\DoxyCodeLine{81         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \textcolor{keywordtype}{float}[] \{ this.results[index][0], this.results[index][1] \};}
+\DoxyCodeLine{82     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCSVParsing_a4345a10c6a9bfad5faa051146ea4b73a}\label{classCSVParsing_a4345a10c6a9bfad5faa051146ea4b73a}} 
+\index{CSVParsing@{CSVParsing}!contentArea@{contentArea}}
+\index{contentArea@{contentArea}!CSVParsing@{CSVParsing}}
+\doxysubsubsection{\texorpdfstring{contentArea}{contentArea}}
+{\footnotesize\ttfamily Text C\+S\+V\+Parsing.\+content\+Area}
+
+
+
+Reference of content\+Area where records are displayed. 
+
+
+
+Definition at line 57 of file C\+S\+V\+Parsing.\+cs.
+
+\mbox{\Hypertarget{classCSVParsing_ace55b7810926350ebd575b608b50319f}\label{classCSVParsing_ace55b7810926350ebd575b608b50319f}} 
+\index{CSVParsing@{CSVParsing}!csvFile@{csvFile}}
+\index{csvFile@{csvFile}!CSVParsing@{CSVParsing}}
+\doxysubsubsection{\texorpdfstring{csvFile}{csvFile}}
+{\footnotesize\ttfamily Text\+Asset C\+S\+V\+Parsing.\+csv\+File}
+
+
+
+Holds the glider drag and lift coefficients. 
+
+
+
+Definition at line 22 of file C\+S\+V\+Parsing.\+cs.
+
+\mbox{\Hypertarget{classCSVParsing_ae675bc797e214490a77decbb78e33852}\label{classCSVParsing_ae675bc797e214490a77decbb78e33852}} 
+\index{CSVParsing@{CSVParsing}!nameInputField@{nameInputField}}
+\index{nameInputField@{nameInputField}!CSVParsing@{CSVParsing}}
+\doxysubsubsection{\texorpdfstring{nameInputField}{nameInputField}}
+{\footnotesize\ttfamily Input\+Field C\+S\+V\+Parsing.\+name\+Input\+Field}
+
+
+
+Reference of name input filed. 
+
+
+
+Definition at line 46 of file C\+S\+V\+Parsing.\+cs.
+
+\mbox{\Hypertarget{classCSVParsing_a9e55b4f20f6d18274cc964a816043103}\label{classCSVParsing_a9e55b4f20f6d18274cc964a816043103}} 
+\index{CSVParsing@{CSVParsing}!rollNoInputField@{rollNoInputField}}
+\index{rollNoInputField@{rollNoInputField}!CSVParsing@{CSVParsing}}
+\doxysubsubsection{\texorpdfstring{rollNoInputField}{rollNoInputField}}
+{\footnotesize\ttfamily Input\+Field C\+S\+V\+Parsing.\+roll\+No\+Input\+Field}
+
+
+
+Reference of roll no input field. 
+
+
+
+Definition at line 35 of file C\+S\+V\+Parsing.\+cs.
 
 
 

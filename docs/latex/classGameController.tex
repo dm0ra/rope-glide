@@ -20,7 +20,7 @@ bool \mbox{\hyperlink{classGameController_ad33c2d3a594f5d2604aa8ca043aa425a}{Get
 \begin{DoxyCompactList}\small\item\em Has the player clicked/tapped the screen for the first time. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGameController_a7a9683705ac3666410676fc8f6816855}{Set\+Jump\+Click}} (bool b)
 \begin{DoxyCompactList}\small\item\em Set the initial jump click flag. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classGameController_aaac106e34b0da0857d95e6f11537163a}{Add\+Hinge}} (\mbox{\hyperlink{classRope}{Rope}} H)
+int \mbox{\hyperlink{classGameController_a82c2b54ad70417ce06e41646366990eb}{Add\+Hinge}} (\mbox{\hyperlink{classRope}{Rope}} h)
 \begin{DoxyCompactList}\small\item\em Add rope to the list of hinges. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGameController_aaf7f5a7f347672f172a3638ed4e20dd0}{increment\+Score}} ()
 \begin{DoxyCompactList}\small\item\em used to calculate score. \end{DoxyCompactList}\item 
@@ -29,12 +29,12 @@ void \mbox{\hyperlink{classGameController_a98608dea84b1d7450164fd533df1d196}{inc
 void \mbox{\hyperlink{classGameController_ae88e8080d54735ea1d0d564cae2db65a}{set\+Top\+Speed}} (Vector2 ts)
 \begin{DoxyCompactList}\small\item\em used to calculate score. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGameController_a4263f56404b28bc9f27776a9e77cef4d}{set\+Highest\+Height}} (float h)
-\begin{DoxyCompactList}\small\item\em Set the players highest height.. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Set the players highest height. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGameController_ab14383e79213496a247e46d8a00e2e96}{set\+Distance}} (float d)
 \begin{DoxyCompactList}\small\item\em Set new distance highscore. \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{classGameController_a161fd6d6216d1075d915c17f66d76cc4}{calculate\+Score}} ()
+float \mbox{\hyperlink{classGameController_ab7499dacfe76c9d59489705485b6fa1b}{Calculate\+Score}} ()
 \begin{DoxyCompactList}\small\item\em calculate overall score. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classGameController_a5433aeba97511d50e8d729ee054cfc70}{getfell\+Off\+Flag}} ()
+bool \mbox{\hyperlink{classGameController_a1a2172269baff39205fbda643dd77897}{Getfell\+Off\+Flag}} ()
 \begin{DoxyCompactList}\small\item\em Has the person fallen off. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGameController_ad359e1bc65f09039e902cce24dcf954f}{setfell\+Off\+Flag}} (bool flag)
 \begin{DoxyCompactList}\small\item\em set if the person has fell off. \end{DoxyCompactList}\item 
@@ -42,9 +42,9 @@ void \mbox{\hyperlink{classGameController_ae61182e61b92e37dfc579511b43a23e6}{Ini
 \begin{DoxyCompactList}\small\item\em Init\+Score sets up the on screen score. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGameController_a46eceb5ab3f1167f11ebc202ce6d98db}{Update\+Score}} ()
 \begin{DoxyCompactList}\small\item\em Constantly updates the score on screen. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classGameController_a34e19d78f837bcea4d02f9afaddadf6b}{Add\+Item}} (\mbox{\hyperlink{classPickUpItem}{Pick\+Up\+Item}} I)
+int \mbox{\hyperlink{classGameController_a392ab59574eca5fafdd29027c77e9aa2}{Add\+Item}} (\mbox{\hyperlink{classPickUpItem}{Pick\+Up\+Item}} i)
 \begin{DoxyCompactList}\small\item\em adds pickup item to list and returns index. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classGameController_a79cfb9db5c723c65095e68316b86b5da}{Add\+Enemy}} (\mbox{\hyperlink{classEnemies}{Enemies}} E)
+int \mbox{\hyperlink{classGameController_a155255913c963f4c423c645db01590a9}{Add\+Enemy}} (\mbox{\hyperlink{classEnemies}{Enemies}} e)
 \begin{DoxyCompactList}\small\item\em adds enemy item to list and returns index. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGameController_ab40624d6f9b2963664ea1cf3663d6ff6}{Set\+Is\+Connected}} (\mbox{\hyperlink{classRope}{Rope}} rope)
 \begin{DoxyCompactList}\small\item\em Sets connected flag and sets the index of the cloud that is connected. \end{DoxyCompactList}\item 
@@ -61,30 +61,22 @@ void \mbox{\hyperlink{classGameController_a80332433aaca975b68c13dcca6086d37}{Res
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}\label{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}} 
-List$<$ \mbox{\hyperlink{classRope}{Rope}} $>$ {\bfseries Hinges}
-\item 
-\mbox{\Hypertarget{classGameController_aa4deaac7567634f120f5b0b8e9af4a05}\label{classGameController_aa4deaac7567634f120f5b0b8e9af4a05}} 
-List$<$ \mbox{\hyperlink{classPickUpItem}{Pick\+Up\+Item}} $>$ {\bfseries Items}
-\item 
-\mbox{\Hypertarget{classGameController_a0008d1b1bd0118ffc61b9f3ae6afa7db}\label{classGameController_a0008d1b1bd0118ffc61b9f3ae6afa7db}} 
-List$<$ \mbox{\hyperlink{classEnemies}{Enemies}} $>$ {\bfseries Enemy\+List}
-\item 
-\mbox{\Hypertarget{classGameController_a46bcb3489e885afdfb22056aa8cd0c5c}\label{classGameController_a46bcb3489e885afdfb22056aa8cd0c5c}} 
-int {\bfseries is\+Connected}
-\item 
-\mbox{\Hypertarget{classGameController_aa3ad3337adae35899dc245692c5bf6e9}\label{classGameController_aa3ad3337adae35899dc245692c5bf6e9}} 
-Game\+Object {\bfseries Camera}
-\item 
-\mbox{\Hypertarget{classGameController_a8c47ae56b0130afa87b3a939e364e041}\label{classGameController_a8c47ae56b0130afa87b3a939e364e041}} 
-Game\+Object {\bfseries Player}
-\item 
-\mbox{\Hypertarget{classGameController_ac1937833bb188e878d7ecfc867b341fc}\label{classGameController_ac1937833bb188e878d7ecfc867b341fc}} 
-Game\+Object {\bfseries Booster}
-\item 
-\mbox{\Hypertarget{classGameController_a2f3cf968a694b829cb57252f607000e1}\label{classGameController_a2f3cf968a694b829cb57252f607000e1}} 
-bool {\bfseries Jump\+Click}
-\end{DoxyCompactItemize}
+List$<$ \mbox{\hyperlink{classRope}{Rope}} $>$ \mbox{\hyperlink{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}{Hinges}}
+\begin{DoxyCompactList}\small\item\em A list of all the clouds (hinges) that the player can connect to. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classPickUpItem}{Pick\+Up\+Item}} $>$ \mbox{\hyperlink{classGameController_aa4deaac7567634f120f5b0b8e9af4a05}{Items}}
+\begin{DoxyCompactList}\small\item\em List of pick of items (Boost,...). \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{classEnemies}{Enemies}} $>$ \mbox{\hyperlink{classGameController_a0008d1b1bd0118ffc61b9f3ae6afa7db}{Enemy\+List}}
+\begin{DoxyCompactList}\small\item\em List of \mbox{\hyperlink{classEnemies}{Enemies}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGameController_a46bcb3489e885afdfb22056aa8cd0c5c}{is\+Connected}}
+\begin{DoxyCompactList}\small\item\em Holds the index of the connected hinge. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{classGameController_aa3ad3337adae35899dc245692c5bf6e9}{Camera}}
+\begin{DoxyCompactList}\small\item\em The games camera (See in unity editor). \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{classGameController_a8c47ae56b0130afa87b3a939e364e041}{Player}}
+\begin{DoxyCompactList}\small\item\em The games player (See in unity editor). \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{classGameController_ac1937833bb188e878d7ecfc867b341fc}{Booster}}
+\begin{DoxyCompactList}\small\item\em Object to hold a booster when upgraded. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGameController_a2f3cf968a694b829cb57252f607000e1}{Jump\+Click}}
+\begin{DoxyCompactList}\small\item\em Tells whether the initial click occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -97,11 +89,11 @@ Definition at line 21 of file Game\+Controller.\+cs.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classGameController_a79cfb9db5c723c65095e68316b86b5da}\label{classGameController_a79cfb9db5c723c65095e68316b86b5da}} 
+\mbox{\Hypertarget{classGameController_a155255913c963f4c423c645db01590a9}\label{classGameController_a155255913c963f4c423c645db01590a9}} 
 \index{GameController@{GameController}!AddEnemy@{AddEnemy}}
 \index{AddEnemy@{AddEnemy}!GameController@{GameController}}
 \doxysubsubsection{\texorpdfstring{AddEnemy()}{AddEnemy()}}
-{\footnotesize\ttfamily int Game\+Controller.\+Add\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEnemies}{Enemies}}}]{E }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Game\+Controller.\+Add\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEnemies}{Enemies}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -109,7 +101,7 @@ adds enemy item to list and returns index.
 
 
 \begin{DoxyParams}{Parameters}
-{\em E} & enemy to be added.\\
+{\em e} & enemy to be added.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -117,21 +109,21 @@ the indexof the item added.
 \end{DoxyReturn}
 
 
-Definition at line 371 of file Game\+Controller.\+cs.
+Definition at line 340 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{372     \{}
-\DoxyCodeLine{373         this.EnemyList.Add(E);}
-\DoxyCodeLine{374         \textcolor{keywordflow}{return} this.Hinges.Count -\/ 1;}
-\DoxyCodeLine{375     \}}
+\DoxyCodeLine{341     \{}
+\DoxyCodeLine{342         this.\mbox{\hyperlink{classGameController_a0008d1b1bd0118ffc61b9f3ae6afa7db}{EnemyList}}.Add(e);}
+\DoxyCodeLine{343         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}{Hinges}}.Count -\/ 1;}
+\DoxyCodeLine{344     \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classGameController_aaac106e34b0da0857d95e6f11537163a}\label{classGameController_aaac106e34b0da0857d95e6f11537163a}} 
+\mbox{\Hypertarget{classGameController_a82c2b54ad70417ce06e41646366990eb}\label{classGameController_a82c2b54ad70417ce06e41646366990eb}} 
 \index{GameController@{GameController}!AddHinge@{AddHinge}}
 \index{AddHinge@{AddHinge}!GameController@{GameController}}
 \doxysubsubsection{\texorpdfstring{AddHinge()}{AddHinge()}}
-{\footnotesize\ttfamily int Game\+Controller.\+Add\+Hinge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRope}{Rope}}}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Game\+Controller.\+Add\+Hinge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRope}{Rope}}}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -139,7 +131,7 @@ Add rope to the list of hinges.
 
 
 \begin{DoxyParams}{Parameters}
-{\em H} & The rope to add to the list of hinges.\\
+{\em h} & The rope to add to the list of hinges.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -147,21 +139,21 @@ the index of the.
 \end{DoxyReturn}
 
 
-Definition at line 214 of file Game\+Controller.\+cs.
+Definition at line 163 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{215     \{}
-\DoxyCodeLine{216         this.Hinges.Add(H);}
-\DoxyCodeLine{217         \textcolor{keywordflow}{return} this.Hinges.Count -\/ 1;}
-\DoxyCodeLine{218     \}}
+\DoxyCodeLine{164     \{}
+\DoxyCodeLine{165         this.\mbox{\hyperlink{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}{Hinges}}.Add(h);}
+\DoxyCodeLine{166         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}{Hinges}}.Count -\/ 1;}
+\DoxyCodeLine{167     \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classGameController_a34e19d78f837bcea4d02f9afaddadf6b}\label{classGameController_a34e19d78f837bcea4d02f9afaddadf6b}} 
+\mbox{\Hypertarget{classGameController_a392ab59574eca5fafdd29027c77e9aa2}\label{classGameController_a392ab59574eca5fafdd29027c77e9aa2}} 
 \index{GameController@{GameController}!AddItem@{AddItem}}
 \index{AddItem@{AddItem}!GameController@{GameController}}
 \doxysubsubsection{\texorpdfstring{AddItem()}{AddItem()}}
-{\footnotesize\ttfamily int Game\+Controller.\+Add\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPickUpItem}{Pick\+Up\+Item}}}]{I }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily int Game\+Controller.\+Add\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPickUpItem}{Pick\+Up\+Item}}}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -169,7 +161,7 @@ adds pickup item to list and returns index.
 
 
 \begin{DoxyParams}{Parameters}
-{\em I} & The item to be added.\\
+{\em i} & The item to be added.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -177,22 +169,22 @@ The index of the item.
 \end{DoxyReturn}
 
 
-Definition at line 359 of file Game\+Controller.\+cs.
+Definition at line 328 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{360     \{}
-\DoxyCodeLine{361         this.Items.Add(I);}
-\DoxyCodeLine{362 }
-\DoxyCodeLine{363         \textcolor{keywordflow}{return} this.Hinges.Count -\/ 1;}
-\DoxyCodeLine{364     \}}
+\DoxyCodeLine{329     \{}
+\DoxyCodeLine{330         this.\mbox{\hyperlink{classGameController_aa4deaac7567634f120f5b0b8e9af4a05}{Items}}.Add(i);}
+\DoxyCodeLine{331 }
+\DoxyCodeLine{332         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}{Hinges}}.Count -\/ 1;}
+\DoxyCodeLine{333     \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classGameController_a161fd6d6216d1075d915c17f66d76cc4}\label{classGameController_a161fd6d6216d1075d915c17f66d76cc4}} 
-\index{GameController@{GameController}!calculateScore@{calculateScore}}
-\index{calculateScore@{calculateScore}!GameController@{GameController}}
-\doxysubsubsection{\texorpdfstring{calculateScore()}{calculateScore()}}
-{\footnotesize\ttfamily float Game\+Controller.\+calculate\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{classGameController_ab7499dacfe76c9d59489705485b6fa1b}\label{classGameController_ab7499dacfe76c9d59489705485b6fa1b}} 
+\index{GameController@{GameController}!CalculateScore@{CalculateScore}}
+\index{CalculateScore@{CalculateScore}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{CalculateScore()}{CalculateScore()}}
+{\footnotesize\ttfamily float Game\+Controller.\+Calculate\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -203,13 +195,13 @@ The current score of the player.
 \end{DoxyReturn}
 
 
-Definition at line 280 of file Game\+Controller.\+cs.
+Definition at line 245 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{281     \{}
-\DoxyCodeLine{282         \textcolor{keywordflow}{return} (\textcolor{keywordtype}{float})this.connectionCount + (this.topSpeed / 10) + this.highestHeight + (this.distance / 100);}
-\DoxyCodeLine{283     \}}
+\DoxyCodeLine{246     \{}
+\DoxyCodeLine{247         \textcolor{keywordflow}{return} (\textcolor{keywordtype}{float})this.connectionCount + (this.topSpeed / 10) + this.highestHeight + (this.distance / 100);}
+\DoxyCodeLine{248     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_a3eec1c81281d3e959d88f8dbc8edc9b4}\label{classGameController_a3eec1c81281d3e959d88f8dbc8edc9b4}} 
@@ -224,21 +216,21 @@ Debug method for scene swithching.
 
 
 
-Definition at line 176 of file Game\+Controller.\+cs.
+Definition at line 126 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{177     \{}
-\DoxyCodeLine{178         \textcolor{keywordflow}{if} (Input.GetKeyDown(\textcolor{stringliteral}{"space"}))}
-\DoxyCodeLine{179         \{}
-\DoxyCodeLine{180             \textcolor{keywordflow}{if} (this.sceneSwitcher.GetSceneIndex() == 2)}
-\DoxyCodeLine{181             \{}
-\DoxyCodeLine{182                 this.sceneSwitcher.SwitchScenes(0);}
-\DoxyCodeLine{183             \}}
-\DoxyCodeLine{184         \}}
-\DoxyCodeLine{185 }
-\DoxyCodeLine{186         this.StartingCameraPos = this.Camera.transform.position;}
-\DoxyCodeLine{187     \}}
+\DoxyCodeLine{127     \{}
+\DoxyCodeLine{128         \textcolor{keywordflow}{if} (Input.GetKeyDown(\textcolor{stringliteral}{"space"}))}
+\DoxyCodeLine{129         \{}
+\DoxyCodeLine{130             \textcolor{keywordflow}{if} (this.sceneSwitcher.\mbox{\hyperlink{classSceneSwitch_aa8290565e53427b958749c56f1ae2117}{GetSceneIndex}}() == 2)}
+\DoxyCodeLine{131             \{}
+\DoxyCodeLine{132                 this.sceneSwitcher.\mbox{\hyperlink{classSceneSwitch_a0decd304c94b42f22eba2ef70b3b00e2}{SwitchScenes}}(0);}
+\DoxyCodeLine{133             \}}
+\DoxyCodeLine{134         \}}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136         this.StartingCameraPos = this.\mbox{\hyperlink{classGameController_aa3ad3337adae35899dc245692c5bf6e9}{Camera}}.transform.position;}
+\DoxyCodeLine{137     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_a14cbdcafec96c0ffb5062d1977bea724}\label{classGameController_a14cbdcafec96c0ffb5062d1977bea724}} 
@@ -256,13 +248,13 @@ Gets the connected flag.
 \end{DoxyReturn}
 
 
-Definition at line 409 of file Game\+Controller.\+cs.
+Definition at line 378 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{410     \{}
-\DoxyCodeLine{411         \textcolor{keywordflow}{return} this.isConnected;}
-\DoxyCodeLine{412     \}}
+\DoxyCodeLine{379     \{}
+\DoxyCodeLine{380         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classGameController_a46bcb3489e885afdfb22056aa8cd0c5c}{isConnected}};}
+\DoxyCodeLine{381     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_a73b56f012aae8c9d3ff2a6ba44a29b39}\label{classGameController_a73b56f012aae8c9d3ff2a6ba44a29b39}} 
@@ -280,20 +272,20 @@ true if the player is connected.
 \end{DoxyReturn}
 
 
-Definition at line 400 of file Game\+Controller.\+cs.
+Definition at line 369 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{401     \{}
-\DoxyCodeLine{402         \textcolor{keywordflow}{return} this.Connected;}
-\DoxyCodeLine{403     \}}
+\DoxyCodeLine{370     \{}
+\DoxyCodeLine{371         \textcolor{keywordflow}{return} this.Connected;}
+\DoxyCodeLine{372     \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classGameController_a5433aeba97511d50e8d729ee054cfc70}\label{classGameController_a5433aeba97511d50e8d729ee054cfc70}} 
-\index{GameController@{GameController}!getfellOffFlag@{getfellOffFlag}}
-\index{getfellOffFlag@{getfellOffFlag}!GameController@{GameController}}
-\doxysubsubsection{\texorpdfstring{getfellOffFlag()}{getfellOffFlag()}}
-{\footnotesize\ttfamily bool Game\+Controller.\+getfell\+Off\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{classGameController_a1a2172269baff39205fbda643dd77897}\label{classGameController_a1a2172269baff39205fbda643dd77897}} 
+\index{GameController@{GameController}!GetfellOffFlag@{GetfellOffFlag}}
+\index{GetfellOffFlag@{GetfellOffFlag}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{GetfellOffFlag()}{GetfellOffFlag()}}
+{\footnotesize\ttfamily bool Game\+Controller.\+Getfell\+Off\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -304,13 +296,13 @@ has the player fallen off.
 \end{DoxyReturn}
 
 
-Definition at line 291 of file Game\+Controller.\+cs.
+Definition at line 254 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{292     \{}
-\DoxyCodeLine{293         \textcolor{keywordflow}{return} this.fellOffFlag;}
-\DoxyCodeLine{294     \}}
+\DoxyCodeLine{255     \{}
+\DoxyCodeLine{256         \textcolor{keywordflow}{return} this.fellOffFlag;}
+\DoxyCodeLine{257     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_ad33c2d3a594f5d2604aa8ca043aa425a}\label{classGameController_ad33c2d3a594f5d2604aa8ca043aa425a}} 
@@ -328,13 +320,13 @@ Jump click flag.
 \end{DoxyReturn}
 
 
-Definition at line 193 of file Game\+Controller.\+cs.
+Definition at line 143 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{194     \{}
-\DoxyCodeLine{195         \textcolor{keywordflow}{return} this.JumpClick;}
-\DoxyCodeLine{196     \}}
+\DoxyCodeLine{144     \{}
+\DoxyCodeLine{145         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classGameController_a2f3cf968a694b829cb57252f607000e1}{JumpClick}};}
+\DoxyCodeLine{146     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_a98608dea84b1d7450164fd533df1d196}\label{classGameController_a98608dea84b1d7450164fd533df1d196}} 
@@ -349,13 +341,13 @@ used to calculate score.
 
 
 
-Definition at line 231 of file Game\+Controller.\+cs.
+Definition at line 186 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{232     \{}
-\DoxyCodeLine{233         this.connectionCount++;}
-\DoxyCodeLine{234     \}}
+\DoxyCodeLine{189     \{}
+\DoxyCodeLine{190         this.connectionCount++;}
+\DoxyCodeLine{191     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_aaf7f5a7f347672f172a3638ed4e20dd0}\label{classGameController_aaf7f5a7f347672f172a3638ed4e20dd0}} 
@@ -370,13 +362,13 @@ used to calculate score.
 
 
 
-Definition at line 223 of file Game\+Controller.\+cs.
+Definition at line 174 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{224     \{}
-\DoxyCodeLine{225         this.scoreCount++;}
-\DoxyCodeLine{226     \}}
+\DoxyCodeLine{177     \{}
+\DoxyCodeLine{178         this.scoreCount++;}
+\DoxyCodeLine{179     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_ae61182e61b92e37dfc579511b43a23e6}\label{classGameController_ae61182e61b92e37dfc579511b43a23e6}} 
@@ -391,45 +383,46 @@ Init\+Score sets up the on screen score.
 
 
 
-Definition at line 308 of file Game\+Controller.\+cs.
+Definition at line 275 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{309     \{}
-\DoxyCodeLine{310         Font arial;}
-\DoxyCodeLine{311         arial = (Font)Resources.GetBuiltinResource(typeof(Font), \textcolor{stringliteral}{"Arial.ttf"});}
-\DoxyCodeLine{312 }
-\DoxyCodeLine{313         \textcolor{comment}{// Create Canvas GameObject.}}
-\DoxyCodeLine{314         GameObject canvasGO = \textcolor{keyword}{new} GameObject();}
-\DoxyCodeLine{315         canvasGO.name = \textcolor{stringliteral}{"Canvas"};}
-\DoxyCodeLine{316         canvasGO.AddComponent<Canvas>();}
-\DoxyCodeLine{317         canvasGO.AddComponent<CanvasScaler>();}
-\DoxyCodeLine{318         canvasGO.AddComponent<GraphicRaycaster>();}
-\DoxyCodeLine{319 }
-\DoxyCodeLine{320         \textcolor{comment}{// Get canvas from the GameObject.}}
-\DoxyCodeLine{321         Canvas canvas;}
-\DoxyCodeLine{322         canvas = canvasGO.GetComponent<Canvas>();}
-\DoxyCodeLine{323         canvas.renderMode = RenderMode.ScreenSpaceOverlay;}
-\DoxyCodeLine{324 }
-\DoxyCodeLine{325         \textcolor{comment}{// Create the Text GameObject.}}
-\DoxyCodeLine{326         GameObject textGO = \textcolor{keyword}{new} GameObject();}
-\DoxyCodeLine{327         textGO.transform.parent = canvasGO.transform;}
-\DoxyCodeLine{328         textGO.AddComponent<Text>();}
-\DoxyCodeLine{329 }
-\DoxyCodeLine{330         \textcolor{comment}{// Set Text component properties.}}
-\DoxyCodeLine{331         this.score = textGO.GetComponent<Text>();}
-\DoxyCodeLine{332         this.score.font = arial;}
-\DoxyCodeLine{333         this.score.fontSize = 24;}
-\DoxyCodeLine{334         this.score.alignment = TextAnchor.MiddleCenter;}
-\DoxyCodeLine{335         this.score.color = Color.black;}
-\DoxyCodeLine{336 }
-\DoxyCodeLine{337         \textcolor{comment}{// Provide Text position and size using RectTransform.}}
-\DoxyCodeLine{338 }
-\DoxyCodeLine{339         this.score.transform.position = \textcolor{keyword}{new} Vector3(850, 520, -\/5);}
-\DoxyCodeLine{340 }
-\DoxyCodeLine{341         \textcolor{comment}{// On Screen score for iphone}}
-\DoxyCodeLine{342         \textcolor{comment}{// score.transform.position = new Vector3(1350, 820, -\/5);}}
-\DoxyCodeLine{343     \}}
+\DoxyCodeLine{276     \{}
+\DoxyCodeLine{277         Font arial;}
+\DoxyCodeLine{278         arial = (Font)Resources.GetBuiltinResource(typeof(Font), \textcolor{stringliteral}{"Arial.ttf"});}
+\DoxyCodeLine{279 }
+\DoxyCodeLine{280         \textcolor{comment}{// Create Canvas GameObject.}}
+\DoxyCodeLine{281         GameObject canvasGO = \textcolor{keyword}{new} GameObject}
+\DoxyCodeLine{282         \{}
+\DoxyCodeLine{283             name = \textcolor{stringliteral}{"Canvas"}}
+\DoxyCodeLine{284         \};}
+\DoxyCodeLine{285         canvasGO.AddComponent<Canvas>();}
+\DoxyCodeLine{286         canvasGO.AddComponent<CanvasScaler>();}
+\DoxyCodeLine{287         canvasGO.AddComponent<GraphicRaycaster>();}
+\DoxyCodeLine{288 }
+\DoxyCodeLine{289         \textcolor{comment}{// Get canvas from the GameObject.}}
+\DoxyCodeLine{290         Canvas canvas;}
+\DoxyCodeLine{291         canvas = canvasGO.GetComponent<Canvas>();}
+\DoxyCodeLine{292         canvas.renderMode = RenderMode.ScreenSpaceOverlay;}
+\DoxyCodeLine{293 }
+\DoxyCodeLine{294         \textcolor{comment}{// Create the Text GameObject.}}
+\DoxyCodeLine{295         GameObject textGO = \textcolor{keyword}{new} GameObject();}
+\DoxyCodeLine{296         textGO.transform.parent = canvasGO.transform;}
+\DoxyCodeLine{297         textGO.AddComponent<Text>();}
+\DoxyCodeLine{298 }
+\DoxyCodeLine{299         \textcolor{comment}{// Set Text component properties.}}
+\DoxyCodeLine{300         this.score = textGO.GetComponent<Text>();}
+\DoxyCodeLine{301         this.score.font = arial;}
+\DoxyCodeLine{302         this.score.fontSize = 24;}
+\DoxyCodeLine{303         this.score.alignment = TextAnchor.MiddleCenter;}
+\DoxyCodeLine{304         this.score.color = Color.black;}
+\DoxyCodeLine{305 }
+\DoxyCodeLine{306         \textcolor{comment}{// Provide Text position and size using RectTransform.}}
+\DoxyCodeLine{307         this.score.transform.position = \textcolor{keyword}{new} Vector3(850, 520, -\/5);}
+\DoxyCodeLine{308 }
+\DoxyCodeLine{309         \textcolor{comment}{// On Screen score for iphone}}
+\DoxyCodeLine{310         \textcolor{comment}{// score.transform.position = new Vector3(1350, 820, -\/5);}}
+\DoxyCodeLine{311     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_a21e44c9808d0d0e34e9ddce7f9172ad4}\label{classGameController_a21e44c9808d0d0e34e9ddce7f9172ad4}} 
@@ -452,43 +445,43 @@ If this index is the closest.
 \end{DoxyReturn}
 
 
-Definition at line 419 of file Game\+Controller.\+cs.
+Definition at line 388 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{420     \{}
-\DoxyCodeLine{421         \textcolor{keywordtype}{bool} ret = \textcolor{keyword}{true};}
-\DoxyCodeLine{422         \textcolor{keywordtype}{float} currDistance;\textcolor{comment}{// current distance}}
-\DoxyCodeLine{423         \textcolor{keywordtype}{float} distanceInQuestion;\textcolor{comment}{// distance of hinge in question}}
-\DoxyCodeLine{424         Vector2 nextVector;\textcolor{comment}{// next hinge to look at}}
-\DoxyCodeLine{425         Vector2 playerVector = \textcolor{keyword}{new} Vector2(this.Player.transform.position.x, \textcolor{keyword}{this}.Player.transform.position.y);\textcolor{comment}{// gets player 2d vector}}
-\DoxyCodeLine{426         Vector2 hingeVector = \textcolor{keyword}{new} Vector2(this.Hinges[index].transform.position.x, \textcolor{keyword}{this}.Hinges[index].transform.position.y);\textcolor{comment}{// gets the current hinge 2d vector}}
-\DoxyCodeLine{427 }
-\DoxyCodeLine{428         distanceInQuestion = Vector2.Distance(playerVector, hingeVector);\textcolor{comment}{// finds the distance between the current hinge and the play}}
-\DoxyCodeLine{429 }
-\DoxyCodeLine{430         \textcolor{comment}{// loops through all the hinges}}
-\DoxyCodeLine{431         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x < this.Hinges.Count; x++)}
-\DoxyCodeLine{432         \{}
-\DoxyCodeLine{433             \textcolor{comment}{// makes sure not to check the current hinge in question}}
-\DoxyCodeLine{434             \textcolor{keywordflow}{if} (x != index)}
-\DoxyCodeLine{435             \{}
-\DoxyCodeLine{436                 nextVector = \textcolor{keyword}{new} Vector2(this.Hinges[x].transform.position.x, \textcolor{keyword}{this}.Hinges[x].transform.position.y);}
-\DoxyCodeLine{437                 currDistance = Vector2.Distance(playerVector, nextVector);}
-\DoxyCodeLine{438 }
-\DoxyCodeLine{439                 \textcolor{keywordflow}{if} (distanceInQuestion < currDistance)}
-\DoxyCodeLine{440                 \{}
-\DoxyCodeLine{441                     \textcolor{keywordflow}{continue};}
-\DoxyCodeLine{442                 \}}
-\DoxyCodeLine{443                 \textcolor{keywordflow}{else}}
-\DoxyCodeLine{444                 \{}
-\DoxyCodeLine{445                     ret = \textcolor{keyword}{false};}
-\DoxyCodeLine{446                     \textcolor{keywordflow}{break};}
-\DoxyCodeLine{447                 \}}
-\DoxyCodeLine{448             \}}
-\DoxyCodeLine{449         \}}
-\DoxyCodeLine{450 }
-\DoxyCodeLine{451         \textcolor{keywordflow}{return} ret;}
-\DoxyCodeLine{452     \}}
+\DoxyCodeLine{389     \{}
+\DoxyCodeLine{390         \textcolor{keywordtype}{bool} ret = \textcolor{keyword}{true};}
+\DoxyCodeLine{391         \textcolor{keywordtype}{float} currDistance; \textcolor{comment}{// current distance}}
+\DoxyCodeLine{392         \textcolor{keywordtype}{float} distanceInQuestion; \textcolor{comment}{// distance of hinge in question}}
+\DoxyCodeLine{393         Vector2 nextVector; \textcolor{comment}{// next hinge to look at}}
+\DoxyCodeLine{394         Vector2 playerVector = \textcolor{keyword}{new} Vector2(this.\mbox{\hyperlink{classGameController_a8c47ae56b0130afa87b3a939e364e041}{Player}}.transform.position.x, \textcolor{keyword}{this}.Player.transform.position.y); \textcolor{comment}{// gets player 2d vector}}
+\DoxyCodeLine{395         Vector2 hingeVector = \textcolor{keyword}{new} Vector2(this.\mbox{\hyperlink{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}{Hinges}}[index].transform.position.x, \textcolor{keyword}{this}.Hinges[index].transform.position.y); \textcolor{comment}{// gets the current hinge 2d vector}}
+\DoxyCodeLine{396 }
+\DoxyCodeLine{397         distanceInQuestion = Vector2.Distance(playerVector, hingeVector); \textcolor{comment}{// finds the distance between the current hinge and the play}}
+\DoxyCodeLine{398 }
+\DoxyCodeLine{399         \textcolor{comment}{// loops through all the hinges}}
+\DoxyCodeLine{400         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x < this.\mbox{\hyperlink{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}{Hinges}}.Count; x++)}
+\DoxyCodeLine{401         \{}
+\DoxyCodeLine{402             \textcolor{comment}{// makes sure not to check the current hinge in question}}
+\DoxyCodeLine{403             \textcolor{keywordflow}{if} (x != index)}
+\DoxyCodeLine{404             \{}
+\DoxyCodeLine{405                 nextVector = \textcolor{keyword}{new} Vector2(this.\mbox{\hyperlink{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}{Hinges}}[x].transform.position.x, \textcolor{keyword}{this}.Hinges[x].transform.position.y);}
+\DoxyCodeLine{406                 currDistance = Vector2.Distance(playerVector, nextVector);}
+\DoxyCodeLine{407 }
+\DoxyCodeLine{408                 \textcolor{keywordflow}{if} (distanceInQuestion < currDistance)}
+\DoxyCodeLine{409                 \{}
+\DoxyCodeLine{410                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{411                 \}}
+\DoxyCodeLine{412                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{413                 \{}
+\DoxyCodeLine{414                     ret = \textcolor{keyword}{false};}
+\DoxyCodeLine{415                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{416                 \}}
+\DoxyCodeLine{417             \}}
+\DoxyCodeLine{418         \}}
+\DoxyCodeLine{419 }
+\DoxyCodeLine{420         \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{421     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_a80332433aaca975b68c13dcca6086d37}\label{classGameController_a80332433aaca975b68c13dcca6086d37}} 
@@ -503,40 +496,40 @@ Respawn player sets the highscore if needed.
 
 
 
-Definition at line 468 of file Game\+Controller.\+cs.
+Definition at line 426 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{469     \{}
-\DoxyCodeLine{470         \textcolor{comment}{// Player.transform.position = new Vector3(-\/25, 127, -\/5);}}
-\DoxyCodeLine{471         \textcolor{comment}{// Player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);}}
-\DoxyCodeLine{472         DB.Score = this.\mbox{\hyperlink{classGameController_a161fd6d6216d1075d915c17f66d76cc4}{calculateScore}}();}
-\DoxyCodeLine{473         DB.MaxSpeed = this.topSpeed;}
-\DoxyCodeLine{474         DB.RunDist = this.distance;}
-\DoxyCodeLine{475         DB.RunConNum = this.connectionCount;}
-\DoxyCodeLine{476         DB.MaxHeight = this.highestHeight;}
-\DoxyCodeLine{477         DB.BankCash = DB.BankCash + ((int)DB.Score / 10);}
-\DoxyCodeLine{478         \textcolor{keywordflow}{if} (DB.Score > DB.HighScore)}
-\DoxyCodeLine{479         \{}
-\DoxyCodeLine{480             \textcolor{comment}{// saves highscore and cash to csv file}}
-\DoxyCodeLine{481             DB.HighScore = this.scoreCount;}
-\DoxyCodeLine{482             this.WriteData();}
-\DoxyCodeLine{483         \}}
-\DoxyCodeLine{484         \textcolor{keywordflow}{else}}
-\DoxyCodeLine{485         \{}
-\DoxyCodeLine{486             this.WriteData();}
-\DoxyCodeLine{487         \}}
-\DoxyCodeLine{488 }
-\DoxyCodeLine{489         this.scoreCount = 0;}
-\DoxyCodeLine{490         this.fellOffFlag = \textcolor{keyword}{true};}
-\DoxyCodeLine{491         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this.Hinges.Count; i++)}
-\DoxyCodeLine{492         \{}
-\DoxyCodeLine{493             this.Hinges[i].SetFirstConnection(\textcolor{keyword}{true});}
-\DoxyCodeLine{494         \}}
-\DoxyCodeLine{495 }
-\DoxyCodeLine{496         DB.LvlIndex = 2;}
-\DoxyCodeLine{497         this.sceneSwitcher.SwitchScenes(2);}
-\DoxyCodeLine{498     \}}
+\DoxyCodeLine{427     \{}
+\DoxyCodeLine{428         \textcolor{comment}{// Player.transform.position = new Vector3(-\/25, 127, -\/5);}}
+\DoxyCodeLine{429         \textcolor{comment}{// Player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);}}
+\DoxyCodeLine{430         DB.Score = this.\mbox{\hyperlink{classGameController_ab7499dacfe76c9d59489705485b6fa1b}{CalculateScore}}();}
+\DoxyCodeLine{431         DB.MaxSpeed = this.topSpeed;}
+\DoxyCodeLine{432         DB.RunDist = this.distance;}
+\DoxyCodeLine{433         DB.RunConNum = this.connectionCount;}
+\DoxyCodeLine{434         DB.MaxHeight = this.highestHeight;}
+\DoxyCodeLine{435         DB.BankCash = DB.BankCash + ((int)DB.Score / 10);}
+\DoxyCodeLine{436         \textcolor{keywordflow}{if} (DB.Score > DB.HighScore)}
+\DoxyCodeLine{437         \{}
+\DoxyCodeLine{438             \textcolor{comment}{// saves highscore and cash to csv file}}
+\DoxyCodeLine{439             DB.HighScore = this.scoreCount;}
+\DoxyCodeLine{440             this.WriteData();}
+\DoxyCodeLine{441         \}}
+\DoxyCodeLine{442         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{443         \{}
+\DoxyCodeLine{444             this.WriteData();}
+\DoxyCodeLine{445         \}}
+\DoxyCodeLine{446 }
+\DoxyCodeLine{447         this.scoreCount = 0;}
+\DoxyCodeLine{448         this.fellOffFlag = \textcolor{keyword}{true};}
+\DoxyCodeLine{449         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this.\mbox{\hyperlink{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}{Hinges}}.Count; i++)}
+\DoxyCodeLine{450         \{}
+\DoxyCodeLine{451             this.\mbox{\hyperlink{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}{Hinges}}[i].SetFirstConnection(\textcolor{keyword}{true});}
+\DoxyCodeLine{452         \}}
+\DoxyCodeLine{453 }
+\DoxyCodeLine{454         DB.LvlIndex = 2;}
+\DoxyCodeLine{455         this.sceneSwitcher.\mbox{\hyperlink{classSceneSwitch_a0decd304c94b42f22eba2ef70b3b00e2}{SwitchScenes}}(2);}
+\DoxyCodeLine{456     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_ac5ec56cc4e7170de7e6971ec93fe1a49}\label{classGameController_ac5ec56cc4e7170de7e6971ec93fe1a49}} 
@@ -556,13 +549,13 @@ Sets connected flag.
 \end{DoxyParams}
 
 
-Definition at line 391 of file Game\+Controller.\+cs.
+Definition at line 360 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{392     \{}
-\DoxyCodeLine{393         this.Connected = s;}
-\DoxyCodeLine{394     \}}
+\DoxyCodeLine{361     \{}
+\DoxyCodeLine{362         this.Connected = s;}
+\DoxyCodeLine{363     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_ab14383e79213496a247e46d8a00e2e96}\label{classGameController_ab14383e79213496a247e46d8a00e2e96}} 
@@ -582,16 +575,16 @@ Set new distance highscore.
 \end{DoxyParams}
 
 
-Definition at line 266 of file Game\+Controller.\+cs.
+Definition at line 231 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{267     \{}
-\DoxyCodeLine{268         \textcolor{keywordflow}{if} (d > this.distance)}
-\DoxyCodeLine{269         \{}
-\DoxyCodeLine{270             this.distance = d;}
-\DoxyCodeLine{271         \}}
-\DoxyCodeLine{272     \}}
+\DoxyCodeLine{234     \{}
+\DoxyCodeLine{235         \textcolor{keywordflow}{if} (d > this.distance)}
+\DoxyCodeLine{236         \{}
+\DoxyCodeLine{237             this.distance = d;}
+\DoxyCodeLine{238         \}}
+\DoxyCodeLine{239     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_ad359e1bc65f09039e902cce24dcf954f}\label{classGameController_ad359e1bc65f09039e902cce24dcf954f}} 
@@ -611,13 +604,13 @@ set if the person has fell off.
 \end{DoxyParams}
 
 
-Definition at line 300 of file Game\+Controller.\+cs.
+Definition at line 265 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{301     \{}
-\DoxyCodeLine{302         this.fellOffFlag = flag;}
-\DoxyCodeLine{303     \}}
+\DoxyCodeLine{268     \{}
+\DoxyCodeLine{269         this.fellOffFlag = flag;}
+\DoxyCodeLine{270     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_a4263f56404b28bc9f27776a9e77cef4d}\label{classGameController_a4263f56404b28bc9f27776a9e77cef4d}} 
@@ -628,7 +621,7 @@ Definition at line 300 of file Game\+Controller.\+cs.
 
 
 
-Set the players highest height.. 
+Set the players highest height. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -637,17 +630,16 @@ Set the players highest height..
 \end{DoxyParams}
 
 
-Definition at line 253 of file Game\+Controller.\+cs.
+Definition at line 215 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{254     \{}
-\DoxyCodeLine{255         \textcolor{keywordflow}{if} (h > this.highestHeight)}
-\DoxyCodeLine{256         \{}
-\DoxyCodeLine{257             this.highestHeight = h;}
-\DoxyCodeLine{258         \}}
-\DoxyCodeLine{259 }
-\DoxyCodeLine{260     \}}
+\DoxyCodeLine{218     \{}
+\DoxyCodeLine{219         \textcolor{keywordflow}{if} (h > this.highestHeight)}
+\DoxyCodeLine{220         \{}
+\DoxyCodeLine{221             this.highestHeight = h;}
+\DoxyCodeLine{222         \}}
+\DoxyCodeLine{223     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_ab40624d6f9b2963664ea1cf3663d6ff6}\label{classGameController_ab40624d6f9b2963664ea1cf3663d6ff6}} 
@@ -667,14 +659,14 @@ Sets connected flag and sets the index of the cloud that is connected.
 \end{DoxyParams}
 
 
-Definition at line 381 of file Game\+Controller.\+cs.
+Definition at line 350 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{382     \{}
-\DoxyCodeLine{383         this.Connected = \textcolor{keyword}{true};}
-\DoxyCodeLine{384         this.isConnected = this.Hinges.IndexOf(rope);}
-\DoxyCodeLine{385     \}}
+\DoxyCodeLine{351     \{}
+\DoxyCodeLine{352         this.Connected = \textcolor{keyword}{true};}
+\DoxyCodeLine{353         this.\mbox{\hyperlink{classGameController_a46bcb3489e885afdfb22056aa8cd0c5c}{isConnected}} = this.\mbox{\hyperlink{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}{Hinges}}.IndexOf(rope);}
+\DoxyCodeLine{354     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_a7a9683705ac3666410676fc8f6816855}\label{classGameController_a7a9683705ac3666410676fc8f6816855}} 
@@ -694,14 +686,13 @@ Set the initial jump click flag.
 \end{DoxyParams}
 
 
-Definition at line 203 of file Game\+Controller.\+cs.
+Definition at line 153 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{204     \{}
-\DoxyCodeLine{205         this.JumpClick = b;}
-\DoxyCodeLine{206 }
-\DoxyCodeLine{207     \}}
+\DoxyCodeLine{154     \{}
+\DoxyCodeLine{155         this.\mbox{\hyperlink{classGameController_a2f3cf968a694b829cb57252f607000e1}{JumpClick}} = b;}
+\DoxyCodeLine{156     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_ae88e8080d54735ea1d0d564cae2db65a}\label{classGameController_ae88e8080d54735ea1d0d564cae2db65a}} 
@@ -721,17 +712,16 @@ used to calculate score.
 \end{DoxyParams}
 
 
-Definition at line 240 of file Game\+Controller.\+cs.
+Definition at line 199 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{241     \{}
-\DoxyCodeLine{242         \textcolor{keywordflow}{if} (ts.magnitude > \textcolor{keyword}{this}.topSpeed)}
-\DoxyCodeLine{243         \{}
-\DoxyCodeLine{244             this.topSpeed = ts.magnitude;}
-\DoxyCodeLine{245         \}}
-\DoxyCodeLine{246 }
-\DoxyCodeLine{247     \}}
+\DoxyCodeLine{202     \{}
+\DoxyCodeLine{203         \textcolor{keywordflow}{if} (ts.magnitude > \textcolor{keyword}{this}.topSpeed)}
+\DoxyCodeLine{204         \{}
+\DoxyCodeLine{205             this.topSpeed = ts.magnitude;}
+\DoxyCodeLine{206         \}}
+\DoxyCodeLine{207     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classGameController_a46eceb5ab3f1167f11ebc202ce6d98db}\label{classGameController_a46eceb5ab3f1167f11ebc202ce6d98db}} 
@@ -746,16 +736,132 @@ Constantly updates the score on screen.
 
 
 
-Definition at line 348 of file Game\+Controller.\+cs.
+Definition at line 316 of file Game\+Controller.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{349     \{}
-\DoxyCodeLine{350         this.score.text = \textcolor{stringliteral}{"score: "} + (int)this.scoreCount;}
-\DoxyCodeLine{351         \textcolor{comment}{// Debug.Log(score.text + scoreCount)}}
-\DoxyCodeLine{352     \}}
+\DoxyCodeLine{317     \{}
+\DoxyCodeLine{318         this.score.text = \textcolor{stringliteral}{"score: "} + (int)this.scoreCount;}
+\DoxyCodeLine{319 }
+\DoxyCodeLine{320         \textcolor{comment}{// Debug.Log(score.text + scoreCount)}}
+\DoxyCodeLine{321     \}}
 
 \end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGameController_ac1937833bb188e878d7ecfc867b341fc}\label{classGameController_ac1937833bb188e878d7ecfc867b341fc}} 
+\index{GameController@{GameController}!Booster@{Booster}}
+\index{Booster@{Booster}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{Booster}{Booster}}
+{\footnotesize\ttfamily Game\+Object Game\+Controller.\+Booster}
+
+
+
+Object to hold a booster when upgraded. 
+
+
+
+Definition at line 75 of file Game\+Controller.\+cs.
+
+\mbox{\Hypertarget{classGameController_aa3ad3337adae35899dc245692c5bf6e9}\label{classGameController_aa3ad3337adae35899dc245692c5bf6e9}} 
+\index{GameController@{GameController}!Camera@{Camera}}
+\index{Camera@{Camera}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{Camera}{Camera}}
+{\footnotesize\ttfamily Game\+Object Game\+Controller.\+Camera}
+
+
+
+The games camera (See in unity editor). 
+
+
+
+Definition at line 61 of file Game\+Controller.\+cs.
+
+\mbox{\Hypertarget{classGameController_a0008d1b1bd0118ffc61b9f3ae6afa7db}\label{classGameController_a0008d1b1bd0118ffc61b9f3ae6afa7db}} 
+\index{GameController@{GameController}!EnemyList@{EnemyList}}
+\index{EnemyList@{EnemyList}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{EnemyList}{EnemyList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classEnemies}{Enemies}}$>$ Game\+Controller.\+Enemy\+List}
+
+
+
+List of \mbox{\hyperlink{classEnemies}{Enemies}}. 
+
+
+
+Definition at line 45 of file Game\+Controller.\+cs.
+
+\mbox{\Hypertarget{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}\label{classGameController_ad48dbd8525f74fd48f9c5d5b85e272db}} 
+\index{GameController@{GameController}!Hinges@{Hinges}}
+\index{Hinges@{Hinges}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{Hinges}{Hinges}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classRope}{Rope}}$>$ Game\+Controller.\+Hinges}
+
+
+
+A list of all the clouds (hinges) that the player can connect to. 
+
+
+
+Definition at line 31 of file Game\+Controller.\+cs.
+
+\mbox{\Hypertarget{classGameController_a46bcb3489e885afdfb22056aa8cd0c5c}\label{classGameController_a46bcb3489e885afdfb22056aa8cd0c5c}} 
+\index{GameController@{GameController}!isConnected@{isConnected}}
+\index{isConnected@{isConnected}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{isConnected}{isConnected}}
+{\footnotesize\ttfamily int Game\+Controller.\+is\+Connected}
+
+
+
+Holds the index of the connected hinge. 
+
+
+
+Definition at line 53 of file Game\+Controller.\+cs.
+
+\mbox{\Hypertarget{classGameController_aa4deaac7567634f120f5b0b8e9af4a05}\label{classGameController_aa4deaac7567634f120f5b0b8e9af4a05}} 
+\index{GameController@{GameController}!Items@{Items}}
+\index{Items@{Items}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{Items}{Items}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classPickUpItem}{Pick\+Up\+Item}}$>$ Game\+Controller.\+Items}
+
+
+
+List of pick of items (Boost,...). 
+
+
+
+Definition at line 38 of file Game\+Controller.\+cs.
+
+\mbox{\Hypertarget{classGameController_a2f3cf968a694b829cb57252f607000e1}\label{classGameController_a2f3cf968a694b829cb57252f607000e1}} 
+\index{GameController@{GameController}!JumpClick@{JumpClick}}
+\index{JumpClick@{JumpClick}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{JumpClick}{JumpClick}}
+{\footnotesize\ttfamily bool Game\+Controller.\+Jump\+Click}
+
+
+
+Tells whether the initial click occurred. 
+
+
+
+Definition at line 120 of file Game\+Controller.\+cs.
+
+\mbox{\Hypertarget{classGameController_a8c47ae56b0130afa87b3a939e364e041}\label{classGameController_a8c47ae56b0130afa87b3a939e364e041}} 
+\index{GameController@{GameController}!Player@{Player}}
+\index{Player@{Player}!GameController@{GameController}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily Game\+Object Game\+Controller.\+Player}
+
+
+
+The games player (See in unity editor). 
+
+
+
+Definition at line 68 of file Game\+Controller.\+cs.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

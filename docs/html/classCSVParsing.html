@@ -71,6 +71,9 @@ $(function() {
 <div class="title">CSVParsing Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This method gets lift and drag coefficients for the glider.  
+ <a href="classCSVParsing.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CSVParsing:</div>
 <div class="dyncontent">
@@ -80,38 +83,200 @@ Inheritance diagram for CSVParsing:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aae74fdb869becd84a02f30fafdf27b77"><td class="memItemLeft" align="right" valign="top"><a id="aae74fdb869becd84a02f30fafdf27b77"></a>
-float[]&#160;</td><td class="memItemRight" valign="bottom"><b>getLiftCoef</b> (int index)</td></tr>
-<tr class="separator:aae74fdb869becd84a02f30fafdf27b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d1ffcc999bceee6a3163cd5d50c52d"><td class="memItemLeft" align="right" valign="top"><a id="a51d1ffcc999bceee6a3163cd5d50c52d"></a>
-float[]&#160;</td><td class="memItemRight" valign="bottom"><b>getDragCoef</b> (int index)</td></tr>
-<tr class="separator:a51d1ffcc999bceee6a3163cd5d50c52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeb0f8117b2cf3020a05ee7ba51fdd76"><td class="memItemLeft" align="right" valign="top"><a id="aeeb0f8117b2cf3020a05ee7ba51fdd76"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addData</b> ()</td></tr>
-<tr class="separator:aeeb0f8117b2cf3020a05ee7ba51fdd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ab6d0eb68600cb3a5cf849edda46747"><td class="memItemLeft" align="right" valign="top">float[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSVParsing.html#a9ab6d0eb68600cb3a5cf849edda46747">GetLiftCoef</a> (int index)</td></tr>
+<tr class="memdesc:a9ab6d0eb68600cb3a5cf849edda46747"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method gets lift coefficient based on the angle.  <a href="classCSVParsing.html#a9ab6d0eb68600cb3a5cf849edda46747">More...</a><br /></td></tr>
+<tr class="separator:a9ab6d0eb68600cb3a5cf849edda46747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a3836e41deba432dbc979d5e91d377"><td class="memItemLeft" align="right" valign="top"><a id="ad5a3836e41deba432dbc979d5e91d377"></a>
+float[]&#160;</td><td class="memItemRight" valign="bottom"><b>GetDragCoef</b> (int index)</td></tr>
+<tr class="separator:ad5a3836e41deba432dbc979d5e91d377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f52d8e43646af2edde2b53067c88bc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSVParsing.html#a2f52d8e43646af2edde2b53067c88bc3">AddData</a> ()</td></tr>
+<tr class="memdesc:a2f52d8e43646af2edde2b53067c88bc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add data to CSV file.  <a href="classCSVParsing.html#a2f52d8e43646af2edde2b53067c88bc3">More...</a><br /></td></tr>
+<tr class="separator:a2f52d8e43646af2edde2b53067c88bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ace55b7810926350ebd575b608b50319f"><td class="memItemLeft" align="right" valign="top"><a id="ace55b7810926350ebd575b608b50319f"></a>
-TextAsset&#160;</td><td class="memItemRight" valign="bottom"><b>csvFile</b></td></tr>
+<tr class="memitem:ace55b7810926350ebd575b608b50319f"><td class="memItemLeft" align="right" valign="top">TextAsset&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSVParsing.html#ace55b7810926350ebd575b608b50319f">csvFile</a></td></tr>
+<tr class="memdesc:ace55b7810926350ebd575b608b50319f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the glider drag and lift coefficients.  <a href="classCSVParsing.html#ace55b7810926350ebd575b608b50319f">More...</a><br /></td></tr>
 <tr class="separator:ace55b7810926350ebd575b608b50319f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e55b4f20f6d18274cc964a816043103"><td class="memItemLeft" align="right" valign="top"><a id="a9e55b4f20f6d18274cc964a816043103"></a>
-InputField&#160;</td><td class="memItemRight" valign="bottom"><b>rollNoInputField</b></td></tr>
+<tr class="memitem:a9e55b4f20f6d18274cc964a816043103"><td class="memItemLeft" align="right" valign="top">InputField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSVParsing.html#a9e55b4f20f6d18274cc964a816043103">rollNoInputField</a></td></tr>
+<tr class="memdesc:a9e55b4f20f6d18274cc964a816043103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference of roll no input field.  <a href="classCSVParsing.html#a9e55b4f20f6d18274cc964a816043103">More...</a><br /></td></tr>
 <tr class="separator:a9e55b4f20f6d18274cc964a816043103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae675bc797e214490a77decbb78e33852"><td class="memItemLeft" align="right" valign="top"><a id="ae675bc797e214490a77decbb78e33852"></a>
-InputField&#160;</td><td class="memItemRight" valign="bottom"><b>nameInputField</b></td></tr>
+<tr class="memitem:ae675bc797e214490a77decbb78e33852"><td class="memItemLeft" align="right" valign="top">InputField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSVParsing.html#ae675bc797e214490a77decbb78e33852">nameInputField</a></td></tr>
+<tr class="memdesc:ae675bc797e214490a77decbb78e33852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference of name input filed.  <a href="classCSVParsing.html#ae675bc797e214490a77decbb78e33852">More...</a><br /></td></tr>
 <tr class="separator:ae675bc797e214490a77decbb78e33852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4345a10c6a9bfad5faa051146ea4b73a"><td class="memItemLeft" align="right" valign="top"><a id="a4345a10c6a9bfad5faa051146ea4b73a"></a>
-Text&#160;</td><td class="memItemRight" valign="bottom"><b>contentArea</b></td></tr>
+<tr class="memitem:a4345a10c6a9bfad5faa051146ea4b73a"><td class="memItemLeft" align="right" valign="top">Text&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCSVParsing.html#a4345a10c6a9bfad5faa051146ea4b73a">contentArea</a></td></tr>
+<tr class="memdesc:a4345a10c6a9bfad5faa051146ea4b73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference of contentArea where records are displayed.  <a href="classCSVParsing.html#a4345a10c6a9bfad5faa051146ea4b73a">More...</a><br /></td></tr>
 <tr class="separator:a4345a10c6a9bfad5faa051146ea4b73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="CSVParsing_8cs_source.html#l00007">7</a> of file <a class="el" href="CSVParsing_8cs_source.html">CSVParsing.cs</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>This method gets lift and drag coefficients for the glider. </p>
+
+<p class="definition">Definition at line <a class="el" href="CSVParsing_8cs_source.html#l00012">12</a> of file <a class="el" href="CSVParsing_8cs_source.html">CSVParsing.cs</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2f52d8e43646af2edde2b53067c88bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f52d8e43646af2edde2b53067c88bc3">&#9670;&nbsp;</a></span>AddData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSVParsing.AddData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add data to CSV file. </p>
+
+<p class="definition">Definition at line <a class="el" href="CSVParsing_8cs_source.html#l00094">94</a> of file <a class="el" href="CSVParsing_8cs_source.html">CSVParsing.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// Following line adds data to CSV file</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        Debug.Log(Application.dataPath);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        File.AppendAllText(getPath() + <span class="stringliteral">&quot;/Assets/CoefData.csv&quot;</span>, this.lineSeperater + this.<a class="code" href="classCSVParsing.html#a9e55b4f20f6d18274cc964a816043103">rollNoInputField</a>.text + <span class="keyword">this</span>.fieldSeperator + <span class="keyword">this</span>.nameInputField.text);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">// Following lines refresh the edotor and print data</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        this.<a class="code" href="classCSVParsing.html#a9e55b4f20f6d18274cc964a816043103">rollNoInputField</a>.text = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        this.<a class="code" href="classCSVParsing.html#ae675bc797e214490a77decbb78e33852">nameInputField</a>.text = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        this.<a class="code" href="classCSVParsing.html#a4345a10c6a9bfad5faa051146ea4b73a">contentArea</a>.text = <span class="keywordtype">string</span>.Empty;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#if UNITY_EDITOR</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="namespaceUnityEditor.html">UnityEditor</a>.AssetDatabase.Refresh();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        this.readData();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9ab6d0eb68600cb3a5cf849edda46747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ab6d0eb68600cb3a5cf849edda46747">&#9670;&nbsp;</a></span>GetLiftCoef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [] CSVParsing.GetLiftCoef </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method gets lift coefficient based on the angle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>int index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>float[].</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="CSVParsing_8cs_source.html#l00079">79</a> of file <a class="el" href="CSVParsing_8cs_source.html">CSVParsing.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <span class="keywordtype">float</span>[] { this.results[index][0], this.results[index][1] };</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4345a10c6a9bfad5faa051146ea4b73a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4345a10c6a9bfad5faa051146ea4b73a">&#9670;&nbsp;</a></span>contentArea</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Text CSVParsing.contentArea</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reference of contentArea where records are displayed. </p>
+
+<p class="definition">Definition at line <a class="el" href="CSVParsing_8cs_source.html#l00057">57</a> of file <a class="el" href="CSVParsing_8cs_source.html">CSVParsing.cs</a>.</p>
+
+</div>
+</div>
+<a id="ace55b7810926350ebd575b608b50319f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace55b7810926350ebd575b608b50319f">&#9670;&nbsp;</a></span>csvFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextAsset CSVParsing.csvFile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Holds the glider drag and lift coefficients. </p>
+
+<p class="definition">Definition at line <a class="el" href="CSVParsing_8cs_source.html#l00022">22</a> of file <a class="el" href="CSVParsing_8cs_source.html">CSVParsing.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae675bc797e214490a77decbb78e33852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae675bc797e214490a77decbb78e33852">&#9670;&nbsp;</a></span>nameInputField</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">InputField CSVParsing.nameInputField</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reference of name input filed. </p>
+
+<p class="definition">Definition at line <a class="el" href="CSVParsing_8cs_source.html#l00046">46</a> of file <a class="el" href="CSVParsing_8cs_source.html">CSVParsing.cs</a>.</p>
+
+</div>
+</div>
+<a id="a9e55b4f20f6d18274cc964a816043103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e55b4f20f6d18274cc964a816043103">&#9670;&nbsp;</a></span>rollNoInputField</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">InputField CSVParsing.rollNoInputField</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reference of roll no input field. </p>
+
+<p class="definition">Definition at line <a class="el" href="CSVParsing_8cs_source.html#l00035">35</a> of file <a class="el" href="CSVParsing_8cs_source.html">CSVParsing.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Assets/scripts/<a class="el" href="CSVParsing_8cs_source.html">CSVParsing.cs</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassCSVParsing_html_a4345a10c6a9bfad5faa051146ea4b73a"><div class="ttname"><a href="classCSVParsing.html#a4345a10c6a9bfad5faa051146ea4b73a">CSVParsing.contentArea</a></div><div class="ttdeci">Text contentArea</div><div class="ttdoc">Reference of contentArea where records are displayed.</div><div class="ttdef"><b>Definition:</b> <a href="CSVParsing_8cs_source.html#l00057">CSVParsing.cs:57</a></div></div>
+<div class="ttc" id="aclassCSVParsing_html_ae675bc797e214490a77decbb78e33852"><div class="ttname"><a href="classCSVParsing.html#ae675bc797e214490a77decbb78e33852">CSVParsing.nameInputField</a></div><div class="ttdeci">InputField nameInputField</div><div class="ttdoc">Reference of name input filed.</div><div class="ttdef"><b>Definition:</b> <a href="CSVParsing_8cs_source.html#l00046">CSVParsing.cs:46</a></div></div>
+<div class="ttc" id="aclassCSVParsing_html_a9e55b4f20f6d18274cc964a816043103"><div class="ttname"><a href="classCSVParsing.html#a9e55b4f20f6d18274cc964a816043103">CSVParsing.rollNoInputField</a></div><div class="ttdeci">InputField rollNoInputField</div><div class="ttdoc">Reference of roll no input field.</div><div class="ttdef"><b>Definition:</b> <a href="CSVParsing_8cs_source.html#l00035">CSVParsing.cs:35</a></div></div>
+<div class="ttc" id="anamespaceUnityEditor_html"><div class="ttname"><a href="namespaceUnityEditor.html">UnityEditor</a></div><div class="ttdef"><b>Definition:</b> <a href="CollabAnalytics_8cs_source.html#l00003">CollabAnalytics.cs:3</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

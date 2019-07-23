@@ -50,14 +50,14 @@ Return the flag indicating input status.
 \end{DoxyReturn}
 
 
-Definition at line 73 of file Input\+Class.\+cs.
+Definition at line 76 of file Input\+Class.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{74     \{}
-\DoxyCodeLine{75         Debug.Log(\textcolor{stringliteral}{"Click Flag: "} + this.clickFlag);}
-\DoxyCodeLine{76         \textcolor{keywordflow}{return} this.clickFlag;}
-\DoxyCodeLine{77     \}}
+\DoxyCodeLine{77     \{}
+\DoxyCodeLine{78         Debug.Log(\textcolor{stringliteral}{"Click Flag: "} + this.clickFlag);}
+\DoxyCodeLine{79         \textcolor{keywordflow}{return} this.clickFlag;}
+\DoxyCodeLine{80     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classInputClass_a6ebd3edc5075426ef4e09043103581f4}\label{classInputClass_a6ebd3edc5075426ef4e09043103581f4}} 
@@ -72,48 +72,48 @@ Update is called once per frame.
 
 
 
-Definition at line 27 of file Input\+Class.\+cs.
+Definition at line 30 of file Input\+Class.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{28     \{}
-\DoxyCodeLine{29         \textcolor{comment}{// Debug.Log("Working");}}
-\DoxyCodeLine{30         \textcolor{keywordflow}{if} (Input.GetMouseButtonDown(0))}
-\DoxyCodeLine{31         \{}
-\DoxyCodeLine{32             \textcolor{comment}{// Debug.Log("Screen Height: " + Screen.height);}}
-\DoxyCodeLine{33 }
-\DoxyCodeLine{34             \textcolor{comment}{// Debug.Log("Screen Input y pos: " + Input.mousePosition.y);}}
-\DoxyCodeLine{35             this.currCameraPos = this.transform.position.x;}
+\DoxyCodeLine{31     \{}
+\DoxyCodeLine{32         \textcolor{comment}{// Debug.Log("Working");}}
+\DoxyCodeLine{33         \textcolor{keywordflow}{if} (Input.GetMouseButtonDown(0))}
+\DoxyCodeLine{34         \{}
+\DoxyCodeLine{35             \textcolor{comment}{// Debug.Log("Screen Height: " + Screen.height);}}
 \DoxyCodeLine{36 }
-\DoxyCodeLine{37             \textcolor{keywordtype}{float} touchPositionX = Input.mousePosition.x -\/ this.touchOffest + this.transform.position.x; \textcolor{comment}{// x position for touch}}
-\DoxyCodeLine{38             \textcolor{keywordtype}{float} touchPositiony = Input.mousePosition.y -\/ this.touchOffest + this.transform.position.y; \textcolor{comment}{// y position for y}}
+\DoxyCodeLine{37             \textcolor{comment}{// Debug.Log("Screen Input y pos: " + Input.mousePosition.y);}}
+\DoxyCodeLine{38             this.currCameraPos = this.transform.position.x;}
 \DoxyCodeLine{39 }
-\DoxyCodeLine{40             \textcolor{keywordtype}{float} middleVerticalBoundry = this.transform.position.x; \textcolor{comment}{// sets vertical boundary to divide touches}}
-\DoxyCodeLine{41             \textcolor{keywordtype}{float} middleHorizontalBoundry = this.\mbox{\hyperlink{classInputClass_ad4ae3592a14702b2443f2c3601f78278}{Camera}}.transform.position.y / 2; \textcolor{comment}{// sets horizontal boundary to divide touches}}
+\DoxyCodeLine{40             \textcolor{keywordtype}{float} touchPositionX = Input.mousePosition.x -\/ this.touchOffest + this.transform.position.x; \textcolor{comment}{// x position for touch}}
+\DoxyCodeLine{41             \textcolor{keywordtype}{float} touchPositiony = Input.mousePosition.y -\/ this.touchOffest + this.transform.position.y; \textcolor{comment}{// y position for y}}
 \DoxyCodeLine{42 }
-\DoxyCodeLine{43             \textcolor{keywordflow}{if} (touchPositionX > middleVerticalBoundry)}
-\DoxyCodeLine{44             \{}
-\DoxyCodeLine{45                 \textcolor{keywordflow}{if} (Input.mousePosition.y > Screen.height / 2)}
-\DoxyCodeLine{46                 \{}
-\DoxyCodeLine{47                     this.clickFlag = 2; \textcolor{comment}{// Top Right}}
-\DoxyCodeLine{48 }
-\DoxyCodeLine{49                     \textcolor{comment}{// Debug.Log("Woah");}}
-\DoxyCodeLine{50                 \}}
-\DoxyCodeLine{51                 \textcolor{keywordflow}{else}}
-\DoxyCodeLine{52                 \{}
-\DoxyCodeLine{53                     this.clickFlag = 1; \textcolor{comment}{// Bottom Right}}
-\DoxyCodeLine{54                 \}}
-\DoxyCodeLine{55             \}}
-\DoxyCodeLine{56             \textcolor{keywordflow}{else}}
-\DoxyCodeLine{57             \{}
-\DoxyCodeLine{58                 this.clickFlag = 0; \textcolor{comment}{// Left}}
-\DoxyCodeLine{59             \}}
-\DoxyCodeLine{60         \}}
-\DoxyCodeLine{61         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (Input.GetMouseButtonUp(0))}
-\DoxyCodeLine{62         \{}
-\DoxyCodeLine{63             this.clickFlag = -\/1; \textcolor{comment}{// No Click}}
-\DoxyCodeLine{64         \}}
-\DoxyCodeLine{65     \}}
+\DoxyCodeLine{43             \textcolor{keywordtype}{float} middleVerticalBoundry = this.transform.position.x; \textcolor{comment}{// sets vertical boundary to divide touches}}
+\DoxyCodeLine{44             \textcolor{keywordtype}{float} middleHorizontalBoundry = this.\mbox{\hyperlink{classInputClass_ad4ae3592a14702b2443f2c3601f78278}{Camera}}.transform.position.y / 2; \textcolor{comment}{// sets horizontal boundary to divide touches}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46             \textcolor{keywordflow}{if} (touchPositionX > middleVerticalBoundry)}
+\DoxyCodeLine{47             \{}
+\DoxyCodeLine{48                 \textcolor{keywordflow}{if} (Input.mousePosition.y > Screen.height / 2)}
+\DoxyCodeLine{49                 \{}
+\DoxyCodeLine{50                     this.clickFlag = 2; \textcolor{comment}{// Top Right}}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52                     \textcolor{comment}{// Debug.Log("Woah");}}
+\DoxyCodeLine{53                 \}}
+\DoxyCodeLine{54                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{55                 \{}
+\DoxyCodeLine{56                     this.clickFlag = 1; \textcolor{comment}{// Bottom Right}}
+\DoxyCodeLine{57                 \}}
+\DoxyCodeLine{58             \}}
+\DoxyCodeLine{59             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{60             \{}
+\DoxyCodeLine{61                 this.clickFlag = 0; \textcolor{comment}{// Left}}
+\DoxyCodeLine{62             \}}
+\DoxyCodeLine{63         \}}
+\DoxyCodeLine{64         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (Input.GetMouseButtonUp(0))}
+\DoxyCodeLine{65         \{}
+\DoxyCodeLine{66             this.clickFlag = -\/1; \textcolor{comment}{// No Click}}
+\DoxyCodeLine{67         \}}
+\DoxyCodeLine{68     \}}
 
 \end{DoxyCode}
 
@@ -131,7 +131,7 @@ Camera object.
 
 
 
-Definition at line 14 of file Input\+Class.\+cs.
+Definition at line 16 of file Input\+Class.\+cs.
 
 
 

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['datasaver',['DataSaver',['../classDataSaver.html',1,'']]],
-  ['dbunittest',['DBUnitTest',['../classDBUnitTest.html',1,'']]],
   ['doxygenconfig',['DoxygenConfig',['../classDoxygenConfig.html',1,'']]],
   ['doxygenwindow',['DoxygenWindow',['../classDoxygenWindow.html',1,'']]],
   ['doxyrunner',['DoxyRunner',['../classDoxyRunner.html',1,'']]],

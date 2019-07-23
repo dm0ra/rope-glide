@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['game',['game',['../classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb',1,'Rope']]]
+  ['enemylist',['EnemyList',['../classGameController.html#a0008d1b1bd0118ffc61b9f3ae6afa7db',1,'GameController']]]
 ];

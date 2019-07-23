@@ -19,6 +19,7 @@ var searchData=
   ['setdistance',['setDistance',['../classGameController.html#ab14383e79213496a247e46d8a00e2e96',1,'GameController']]],
   ['setfacecolor',['SetFaceColor',['../classTMPro_1_1TMP__Text.html#a7737931333692ee9f01dd1e94cf68a45',1,'TMPro.TMP_Text.SetFaceColor()'],['../classTMPro_1_1TextMeshPro.html#a6819493b73133ce05a35daa481101d8e',1,'TMPro.TextMeshPro.SetFaceColor()'],['../classTMPro_1_1TextMeshProUGUI.html#ab485c4e2bf309a9485360a19de950fa2',1,'TMPro.TextMeshProUGUI.SetFaceColor()']]],
   ['setfelloffflag',['setfellOffFlag',['../classGameController.html#ad359e1bc65f09039e902cce24dcf954f',1,'GameController']]],
+  ['setfirstconnection',['SetFirstConnection',['../classRope.html#a5f8aea6cf0812bfbf1c20ab1158b7d5a',1,'Rope']]],
   ['setfontbasematerial',['SetFontBaseMaterial',['../classTMPro_1_1TMP__Text.html#a7ce68525afb782cd0d6b3f1a13633c0c',1,'TMPro::TMP_Text']]],
   ['setglobalfontasset',['SetGlobalFontAsset',['../classTMPro_1_1TMP__InputField.html#a2ed20e5b12507b1ff2e108dd99d4091f',1,'TMPro::TMP_InputField']]],
   ['setglobalpointsize',['SetGlobalPointSize',['../classTMPro_1_1TMP__InputField.html#aba2ab9700cbd18d64736530a34d91068',1,'TMPro::TMP_InputField']]],
@@ -48,5 +49,6 @@ var searchData=
   ['stop',['Stop',['../classTMPro_1_1EditorUtilities_1_1EditorCoroutine.html#ae67a02fa202696210a86e3172a423e7a',1,'TMPro::EditorUtilities::EditorCoroutine']]],
   ['stringbuildertointarray',['StringBuilderToIntArray',['../classTMPro_1_1TMP__Text.html#a8924da6e6d1cecb3b8c542d3ad9d92cd',1,'TMPro::TMP_Text']]],
   ['stringtochararray',['StringToCharArray',['../classTMPro_1_1TMP__Text.html#added9ace8138f71b06a8a4df70ac8c6a',1,'TMPro::TMP_Text']]],
-  ['swapvertexdata',['SwapVertexData',['../structTMPro_1_1TMP__MeshInfo.html#aea0d76fdcacdb531d31b168575444c2a',1,'TMPro::TMP_MeshInfo']]]
+  ['swapvertexdata',['SwapVertexData',['../structTMPro_1_1TMP__MeshInfo.html#aea0d76fdcacdb531d31b168575444c2a',1,'TMPro::TMP_MeshInfo']]],
+  ['switchscenes',['SwitchScenes',['../classSceneSwitch.html#a0decd304c94b42f22eba2ef70b3b00e2',1,'SceneSwitch']]]
 ];

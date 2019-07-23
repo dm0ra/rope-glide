@@ -8,18 +8,15 @@ A class that controls scene switching.
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSceneSwitch_a0decd304c94b42f22eba2ef70b3b00e2}\label{classSceneSwitch_a0decd304c94b42f22eba2ef70b3b00e2}} 
-void {\bfseries Switch\+Scenes} (int index)
-\item 
-\mbox{\Hypertarget{classSceneSwitch_aa8290565e53427b958749c56f1ae2117}\label{classSceneSwitch_aa8290565e53427b958749c56f1ae2117}} 
-int {\bfseries Get\+Scene\+Index} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classSceneSwitch_a0decd304c94b42f22eba2ef70b3b00e2}{Switch\+Scenes}} (int index)
+\begin{DoxyCompactList}\small\item\em switch scene to index. The index for scenes are set in build settings. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSceneSwitch_aa8290565e53427b958749c56f1ae2117}{Get\+Scene\+Index}} ()
+\begin{DoxyCompactList}\small\item\em Get current scene index. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSceneSwitch_ab04d05531671ff922a2f59179c011f87}\label{classSceneSwitch_ab04d05531671ff922a2f59179c011f87}} 
-int {\bfseries scene\+Index}
-\end{DoxyCompactItemize}
+int \mbox{\hyperlink{classSceneSwitch_ab04d05531671ff922a2f59179c011f87}{scene\+Index}}
+\begin{DoxyCompactList}\small\item\em This holds the index for the next scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -28,6 +25,77 @@ A class that controls scene switching.
 
 
 Definition at line 10 of file Scene\+Switch.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSceneSwitch_aa8290565e53427b958749c56f1ae2117}\label{classSceneSwitch_aa8290565e53427b958749c56f1ae2117}} 
+\index{SceneSwitch@{SceneSwitch}!GetSceneIndex@{GetSceneIndex}}
+\index{GetSceneIndex@{GetSceneIndex}!SceneSwitch@{SceneSwitch}}
+\doxysubsubsection{\texorpdfstring{GetSceneIndex()}{GetSceneIndex()}}
+{\footnotesize\ttfamily int Scene\+Switch.\+Get\+Scene\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get current scene index. 
+
+\begin{DoxyReturn}{Returns}
+int scene\+Index.
+\end{DoxyReturn}
+
+
+Definition at line 35 of file Scene\+Switch.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36     \{}
+\DoxyCodeLine{37         \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classSceneSwitch_ab04d05531671ff922a2f59179c011f87}{sceneIndex}};}
+\DoxyCodeLine{38     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSceneSwitch_a0decd304c94b42f22eba2ef70b3b00e2}\label{classSceneSwitch_a0decd304c94b42f22eba2ef70b3b00e2}} 
+\index{SceneSwitch@{SceneSwitch}!SwitchScenes@{SwitchScenes}}
+\index{SwitchScenes@{SwitchScenes}!SceneSwitch@{SceneSwitch}}
+\doxysubsubsection{\texorpdfstring{SwitchScenes()}{SwitchScenes()}}
+{\footnotesize\ttfamily void Scene\+Switch.\+Switch\+Scenes (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+switch scene to index. The index for scenes are set in build settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & int index.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file Scene\+Switch.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26     \{}
+\DoxyCodeLine{27         this.\mbox{\hyperlink{classSceneSwitch_ab04d05531671ff922a2f59179c011f87}{sceneIndex}} = index;}
+\DoxyCodeLine{28         SceneManager.LoadScene(index);}
+\DoxyCodeLine{29     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSceneSwitch_ab04d05531671ff922a2f59179c011f87}\label{classSceneSwitch_ab04d05531671ff922a2f59179c011f87}} 
+\index{SceneSwitch@{SceneSwitch}!sceneIndex@{sceneIndex}}
+\index{sceneIndex@{sceneIndex}!SceneSwitch@{SceneSwitch}}
+\doxysubsubsection{\texorpdfstring{sceneIndex}{sceneIndex}}
+{\footnotesize\ttfamily int Scene\+Switch.\+scene\+Index}
+
+
+
+This holds the index for the next scene. 
+
+
+
+Definition at line 17 of file Scene\+Switch.\+cs.
 
 
 

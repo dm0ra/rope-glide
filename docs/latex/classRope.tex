@@ -14,9 +14,8 @@ Inheritance diagram for Rope\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classRope_a5f8aea6cf0812bfbf1c20ab1158b7d5a}\label{classRope_a5f8aea6cf0812bfbf1c20ab1158b7d5a}} 
-void {\bfseries Set\+First\+Connection} (bool b)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classRope_a5f8aea6cf0812bfbf1c20ab1158b7d5a}{Set\+First\+Connection}} (bool b)
+\begin{DoxyCompactList}\small\item\em This method signals whether the first connection has occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,6 +38,35 @@ Definition at line 14 of file Rope.\+cs.
 
 
 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRope_a5f8aea6cf0812bfbf1c20ab1158b7d5a}\label{classRope_a5f8aea6cf0812bfbf1c20ab1158b7d5a}} 
+\index{Rope@{Rope}!SetFirstConnection@{SetFirstConnection}}
+\index{SetFirstConnection@{SetFirstConnection}!Rope@{Rope}}
+\doxysubsubsection{\texorpdfstring{SetFirstConnection()}{SetFirstConnection()}}
+{\footnotesize\ttfamily void Rope.\+Set\+First\+Connection (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method signals whether the first connection has occurred. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & bool b.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 93 of file Rope.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94     \{}
+\DoxyCodeLine{95         this.firstConnection = b;}
+\DoxyCodeLine{96     \}}
+
+\end{DoxyCode}
+
+
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classRope_af1c503e4892e6498fe6f59dd3b72c327}\label{classRope_af1c503e4892e6498fe6f59dd3b72c327}} 
 \index{Rope@{Rope}!CurrRope@{CurrRope}}
@@ -52,7 +80,7 @@ The joint that holds the player and the cloud at a constant distance.
 
 
 
-Definition at line 19 of file Rope.\+cs.
+Definition at line 21 of file Rope.\+cs.
 
 \mbox{\Hypertarget{classRope_a0521f97a6f8776c7e4a181eed7b5aacb}\label{classRope_a0521f97a6f8776c7e4a181eed7b5aacb}} 
 \index{Rope@{Rope}!game@{game}}
@@ -66,7 +94,7 @@ Game controller instance. See \mbox{\hyperlink{classGameController}{Game\+Contro
 
 
 
-Definition at line 44 of file Rope.\+cs.
+Definition at line 49 of file Rope.\+cs.
 
 \mbox{\Hypertarget{classRope_ad4ed92a663bd20d9631d1a1433d37066}\label{classRope_ad4ed92a663bd20d9631d1a1433d37066}} 
 \index{Rope@{Rope}!Hinge@{Hinge}}
@@ -80,7 +108,7 @@ Each instance of \mbox{\hyperlink{classRope}{Rope}} belongs to a cloud (hinge).
 
 
 
-Definition at line 29 of file Rope.\+cs.
+Definition at line 39 of file Rope.\+cs.
 
 \mbox{\Hypertarget{classRope_a17bb204dc3ffa0bc5195e5ac86273df6}\label{classRope_a17bb204dc3ffa0bc5195e5ac86273df6}} 
 \index{Rope@{Rope}!Player@{Player}}
@@ -94,7 +122,7 @@ The games player.
 
 
 
-Definition at line 24 of file Rope.\+cs.
+Definition at line 30 of file Rope.\+cs.
 
 
 

@@ -14,6 +14,7 @@ var searchData=
   ['textrenderflags',['TextRenderFlags',['../namespaceTMPro.html#ac5a571bdd8e4873a73f2c05b62feff0e',1,'TMPro']]],
   ['textselectionevent',['TextSelectionEvent',['../classTMPro_1_1TMP__InputField_1_1TextSelectionEvent.html',1,'TMPro::TMP_InputField']]],
   ['texturepacker',['TexturePacker',['../classTMPro_1_1SpriteAssetUtilities_1_1TexturePacker.html',1,'TMPro::SpriteAssetUtilities']]],
+  ['thisenemy',['thisEnemy',['../classEnemies.html#a7e90e2c6171f9d105d668465ef9ffe4a',1,'Enemies']]],
   ['thisitem',['ThisItem',['../classPickUpItem.html#a5bc3ae301e9e82bdca2e9c14c8abf37e',1,'PickUpItem']]],
   ['tintallsprites',['tintAllSprites',['../classTMPro_1_1TMP__Text.html#a3af8d969cc20cf4fac2b48fc057737a1',1,'TMPro::TMP_Text']]],
   ['tmp_5fasset',['TMP_Asset',['../classTMPro_1_1TMP__Asset.html',1,'TMPro']]],
