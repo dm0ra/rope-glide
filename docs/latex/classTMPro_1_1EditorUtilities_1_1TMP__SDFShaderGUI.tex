@@ -1,0 +1,173 @@
+\hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__SDFShaderGUI}{}\doxysection{T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+S\+D\+F\+Shader\+G\+UI Class Reference}
+\label{classTMPro_1_1EditorUtilities_1_1TMP__SDFShaderGUI}\index{TMPro.EditorUtilities.TMP\_SDFShaderGUI@{TMPro.EditorUtilities.TMP\_SDFShaderGUI}}
+Inheritance diagram for T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+S\+D\+F\+Shader\+G\+UI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classTMPro_1_1EditorUtilities_1_1TMP__SDFShaderGUI}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1TMP__SDFShaderGUI_ad54675b667fc314961cedb1beeacd6b4}{Do\+G\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Override this method to create the specific shader G\+UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 6 of file T\+M\+P\+\_\+\+S\+D\+F\+Shader\+G\+U\+I.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__SDFShaderGUI_ad54675b667fc314961cedb1beeacd6b4}\label{classTMPro_1_1EditorUtilities_1_1TMP__SDFShaderGUI_ad54675b667fc314961cedb1beeacd6b4}} 
+\index{TMPro.EditorUtilities.TMP\_SDFShaderGUI@{TMPro.EditorUtilities.TMP\_SDFShaderGUI}!DoGUI@{DoGUI}}
+\index{DoGUI@{DoGUI}!TMPro.EditorUtilities.TMP\_SDFShaderGUI@{TMPro.EditorUtilities.TMP\_SDFShaderGUI}}
+\doxysubsubsection{\texorpdfstring{DoGUI()}{DoGUI()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+S\+D\+F\+Shader\+G\+U\+I.\+Do\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Override this method to create the specific shader G\+UI. 
+
+
+
+Implements \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a04c57cff2c8f6cf93b5bf50209ef9f5f}{T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+Base\+Shader\+G\+UI}}.
+
+
+
+Definition at line 59 of file T\+M\+P\+\_\+\+S\+D\+F\+Shader\+G\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             s\_Face = BeginPanel(\textcolor{stringliteral}{"Face"}, s\_Face);}
+\DoxyCodeLine{62             \textcolor{keywordflow}{if} (s\_Face)}
+\DoxyCodeLine{63             \{}
+\DoxyCodeLine{64                 DoFacePanel();}
+\DoxyCodeLine{65             \}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67             EndPanel();}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69             s\_Outline = m\_Material.HasProperty(ShaderUtilities.ID\_OutlineTex) ? BeginPanel(\textcolor{stringliteral}{"Outline"}, s\_Outline) : BeginPanel(\textcolor{stringliteral}{"Outline"}, s\_OutlineFeature, s\_Outline);}
+\DoxyCodeLine{70             \textcolor{keywordflow}{if} (s\_Outline)}
+\DoxyCodeLine{71             \{}
+\DoxyCodeLine{72                 DoOutlinePanel();}
+\DoxyCodeLine{73             \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75             EndPanel();}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77             \textcolor{keywordflow}{if} (m\_Material.HasProperty(ShaderUtilities.ID\_UnderlayColor))}
+\DoxyCodeLine{78             \{}
+\DoxyCodeLine{79                 s\_Underlay = BeginPanel(\textcolor{stringliteral}{"Underlay"}, s\_UnderlayFeature, s\_Underlay);}
+\DoxyCodeLine{80                 \textcolor{keywordflow}{if} (s\_Underlay)}
+\DoxyCodeLine{81                 \{}
+\DoxyCodeLine{82                     DoUnderlayPanel();}
+\DoxyCodeLine{83                 \}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85                 EndPanel();}
+\DoxyCodeLine{86             \}}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88             \textcolor{keywordflow}{if} (m\_Material.HasProperty(\textcolor{stringliteral}{"\_SpecularColor"}))}
+\DoxyCodeLine{89             \{}
+\DoxyCodeLine{90                 s\_Lighting = BeginPanel(\textcolor{stringliteral}{"Lighting"}, s\_BevelFeature, s\_Lighting);}
+\DoxyCodeLine{91                 \textcolor{keywordflow}{if} (s\_Lighting)}
+\DoxyCodeLine{92                 \{}
+\DoxyCodeLine{93                     s\_Bevel = BeginPanel(\textcolor{stringliteral}{"Bevel"}, s\_Bevel);}
+\DoxyCodeLine{94                     \textcolor{keywordflow}{if} (s\_Bevel)}
+\DoxyCodeLine{95                     \{}
+\DoxyCodeLine{96                         DoBevelPanel();}
+\DoxyCodeLine{97                     \}}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99                     EndPanel();}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101                     s\_Light = BeginPanel(\textcolor{stringliteral}{"Local Lighting"}, s\_Light);}
+\DoxyCodeLine{102                     \textcolor{keywordflow}{if} (s\_Light)}
+\DoxyCodeLine{103                     \{}
+\DoxyCodeLine{104                         DoLocalLightingPanel();}
+\DoxyCodeLine{105                     \}}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107                     EndPanel();}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109                     s\_Bump = BeginPanel(\textcolor{stringliteral}{"Bump Map"}, s\_Bump);}
+\DoxyCodeLine{110                     \textcolor{keywordflow}{if} (s\_Bump)}
+\DoxyCodeLine{111                     \{}
+\DoxyCodeLine{112                         DoBumpMapPanel();}
+\DoxyCodeLine{113                     \}}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115                     EndPanel();}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117                     s\_Env = BeginPanel(\textcolor{stringliteral}{"Environment Map"}, s\_Env);}
+\DoxyCodeLine{118                     \textcolor{keywordflow}{if} (s\_Env)}
+\DoxyCodeLine{119                     \{}
+\DoxyCodeLine{120                         DoEnvMapPanel();}
+\DoxyCodeLine{121                     \}}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123                     EndPanel();}
+\DoxyCodeLine{124                 \}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126                 EndPanel();}
+\DoxyCodeLine{127             \}}
+\DoxyCodeLine{128             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (m\_Material.HasProperty(\textcolor{stringliteral}{"\_SpecColor"}))}
+\DoxyCodeLine{129             \{}
+\DoxyCodeLine{130                 s\_Bevel = BeginPanel(\textcolor{stringliteral}{"Bevel"}, s\_Bevel);}
+\DoxyCodeLine{131                 \textcolor{keywordflow}{if} (s\_Bevel)}
+\DoxyCodeLine{132                 \{}
+\DoxyCodeLine{133                     DoBevelPanel();}
+\DoxyCodeLine{134                 \}}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136                 EndPanel();}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138                 s\_Light = BeginPanel(\textcolor{stringliteral}{"Surface Lighting"}, s\_Light);}
+\DoxyCodeLine{139                 \textcolor{keywordflow}{if} (s\_Light)}
+\DoxyCodeLine{140                 \{}
+\DoxyCodeLine{141                     DoSurfaceLightingPanel();}
+\DoxyCodeLine{142                 \}}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144                 EndPanel();}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146                 s\_Bump = BeginPanel(\textcolor{stringliteral}{"Bump Map"}, s\_Bump);}
+\DoxyCodeLine{147                 \textcolor{keywordflow}{if} (s\_Bump)}
+\DoxyCodeLine{148                 \{}
+\DoxyCodeLine{149                     DoBumpMapPanel();}
+\DoxyCodeLine{150                 \}}
+\DoxyCodeLine{151 }
+\DoxyCodeLine{152                 EndPanel();}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154                 s\_Env = BeginPanel(\textcolor{stringliteral}{"Environment Map"}, s\_Env);}
+\DoxyCodeLine{155                 \textcolor{keywordflow}{if} (s\_Env)}
+\DoxyCodeLine{156                 \{}
+\DoxyCodeLine{157                     DoEnvMapPanel();}
+\DoxyCodeLine{158                 \}}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160                 EndPanel();}
+\DoxyCodeLine{161             \}}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163             \textcolor{keywordflow}{if} (m\_Material.HasProperty(ShaderUtilities.ID\_GlowColor))}
+\DoxyCodeLine{164             \{}
+\DoxyCodeLine{165                 s\_Glow = BeginPanel(\textcolor{stringliteral}{"Glow"}, s\_GlowFeature, s\_Glow);}
+\DoxyCodeLine{166                 \textcolor{keywordflow}{if} (s\_Glow)}
+\DoxyCodeLine{167                 \{}
+\DoxyCodeLine{168                     DoGlowPanel();}
+\DoxyCodeLine{169                 \}}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171                 EndPanel();}
+\DoxyCodeLine{172             \}}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174             s\_DebugExtended = BeginPanel(\textcolor{stringliteral}{"Debug Settings"}, s\_DebugExtended);}
+\DoxyCodeLine{175             \textcolor{keywordflow}{if} (s\_DebugExtended)}
+\DoxyCodeLine{176             \{}
+\DoxyCodeLine{177                 DoDebugPanel();}
+\DoxyCodeLine{178             \}}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180             EndPanel();}
+\DoxyCodeLine{181         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Editor/T\+M\+P\+\_\+\+S\+D\+F\+Shader\+G\+U\+I.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\hypertarget{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension}{}\doxysection{Unity\+Editor.\+Package\+Manager.\+U\+I.\+I\+Package\+Manager\+Extension Interface Reference}
+\label{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension}\index{UnityEditor.PackageManager.UI.IPackageManagerExtension@{UnityEditor.PackageManager.UI.IPackageManagerExtension}}
+
+
+Interface for Package Manager \mbox{\hyperlink{namespaceUnityEditor_1_1PackageManager_1_1UI}{UI}} Extension  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Visual\+Element \mbox{\hyperlink{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_a32866f98b536a8863de4cfc598d8ea7d}{Create\+Extension\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Creates the extension \mbox{\hyperlink{namespaceUnityEditor_1_1PackageManager_1_1UI}{UI}} visual element. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_acc9b57b0146dac8d56f457c3a35d64a5}{On\+Package\+Selection\+Change}} (Package\+Manager.\+Package\+Info package\+Info)
+\begin{DoxyCompactList}\small\item\em Called by the Package Manager \mbox{\hyperlink{namespaceUnityEditor_1_1PackageManager_1_1UI}{UI}} when the package selection changed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_a89228b54f05cae1c6b04f323c13f3563}{On\+Package\+Added\+Or\+Updated}} (Package\+Manager.\+Package\+Info package\+Info)
+\begin{DoxyCompactList}\small\item\em Called by the Package Manager \mbox{\hyperlink{namespaceUnityEditor_1_1PackageManager_1_1UI}{UI}} when a package is added or updated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_a9f2d1be5e21ec127b32e8138f25b38a1}{On\+Package\+Removed}} (Package\+Manager.\+Package\+Info package\+Info)
+\begin{DoxyCompactList}\small\item\em Called by the Package Manager \mbox{\hyperlink{namespaceUnityEditor_1_1PackageManager_1_1UI}{UI}} when a package is removed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for Package Manager \mbox{\hyperlink{namespaceUnityEditor_1_1PackageManager_1_1UI}{UI}} Extension 
+
+
+
+Definition at line 8 of file I\+Package\+Manager\+Extension.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_a32866f98b536a8863de4cfc598d8ea7d}\label{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_a32866f98b536a8863de4cfc598d8ea7d}} 
+\index{UnityEditor.PackageManager.UI.IPackageManagerExtension@{UnityEditor.PackageManager.UI.IPackageManagerExtension}!CreateExtensionUI@{CreateExtensionUI}}
+\index{CreateExtensionUI@{CreateExtensionUI}!UnityEditor.PackageManager.UI.IPackageManagerExtension@{UnityEditor.PackageManager.UI.IPackageManagerExtension}}
+\doxysubsubsection{\texorpdfstring{CreateExtensionUI()}{CreateExtensionUI()}}
+{\footnotesize\ttfamily Visual\+Element Unity\+Editor.\+Package\+Manager.\+U\+I.\+I\+Package\+Manager\+Extension.\+Create\+Extension\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the extension \mbox{\hyperlink{namespaceUnityEditor_1_1PackageManager_1_1UI}{UI}} visual element. 
+
+\begin{DoxyReturn}{Returns}
+A visual element that represents the \mbox{\hyperlink{namespaceUnityEditor_1_1PackageManager_1_1UI}{UI}} or null if none
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_a89228b54f05cae1c6b04f323c13f3563}\label{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_a89228b54f05cae1c6b04f323c13f3563}} 
+\index{UnityEditor.PackageManager.UI.IPackageManagerExtension@{UnityEditor.PackageManager.UI.IPackageManagerExtension}!OnPackageAddedOrUpdated@{OnPackageAddedOrUpdated}}
+\index{OnPackageAddedOrUpdated@{OnPackageAddedOrUpdated}!UnityEditor.PackageManager.UI.IPackageManagerExtension@{UnityEditor.PackageManager.UI.IPackageManagerExtension}}
+\doxysubsubsection{\texorpdfstring{OnPackageAddedOrUpdated()}{OnPackageAddedOrUpdated()}}
+{\footnotesize\ttfamily void Unity\+Editor.\+Package\+Manager.\+U\+I.\+I\+Package\+Manager\+Extension.\+On\+Package\+Added\+Or\+Updated (\begin{DoxyParamCaption}\item[{Package\+Manager.\+Package\+Info}]{package\+Info }\end{DoxyParamCaption})}
+
+
+
+Called by the Package Manager \mbox{\hyperlink{namespaceUnityEditor_1_1PackageManager_1_1UI}{UI}} when a package is added or updated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em package\+Info} & The package information\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_a9f2d1be5e21ec127b32e8138f25b38a1}\label{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_a9f2d1be5e21ec127b32e8138f25b38a1}} 
+\index{UnityEditor.PackageManager.UI.IPackageManagerExtension@{UnityEditor.PackageManager.UI.IPackageManagerExtension}!OnPackageRemoved@{OnPackageRemoved}}
+\index{OnPackageRemoved@{OnPackageRemoved}!UnityEditor.PackageManager.UI.IPackageManagerExtension@{UnityEditor.PackageManager.UI.IPackageManagerExtension}}
+\doxysubsubsection{\texorpdfstring{OnPackageRemoved()}{OnPackageRemoved()}}
+{\footnotesize\ttfamily void Unity\+Editor.\+Package\+Manager.\+U\+I.\+I\+Package\+Manager\+Extension.\+On\+Package\+Removed (\begin{DoxyParamCaption}\item[{Package\+Manager.\+Package\+Info}]{package\+Info }\end{DoxyParamCaption})}
+
+
+
+Called by the Package Manager \mbox{\hyperlink{namespaceUnityEditor_1_1PackageManager_1_1UI}{UI}} when a package is removed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em package\+Info} & The package information\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_acc9b57b0146dac8d56f457c3a35d64a5}\label{interfaceUnityEditor_1_1PackageManager_1_1UI_1_1IPackageManagerExtension_acc9b57b0146dac8d56f457c3a35d64a5}} 
+\index{UnityEditor.PackageManager.UI.IPackageManagerExtension@{UnityEditor.PackageManager.UI.IPackageManagerExtension}!OnPackageSelectionChange@{OnPackageSelectionChange}}
+\index{OnPackageSelectionChange@{OnPackageSelectionChange}!UnityEditor.PackageManager.UI.IPackageManagerExtension@{UnityEditor.PackageManager.UI.IPackageManagerExtension}}
+\doxysubsubsection{\texorpdfstring{OnPackageSelectionChange()}{OnPackageSelectionChange()}}
+{\footnotesize\ttfamily void Unity\+Editor.\+Package\+Manager.\+U\+I.\+I\+Package\+Manager\+Extension.\+On\+Package\+Selection\+Change (\begin{DoxyParamCaption}\item[{Package\+Manager.\+Package\+Info}]{package\+Info }\end{DoxyParamCaption})}
+
+
+
+Called by the Package Manager \mbox{\hyperlink{namespaceUnityEditor_1_1PackageManager_1_1UI}{UI}} when the package selection changed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em package\+Info} & The newly selected package information (can be null)\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+package-\/manager-\/ui@2.\+0.\+3/\+Editor/\+Sources/\+U\+I/\+Interfaces/I\+Package\+Manager\+Extension.\+cs\end{DoxyCompactItemize}

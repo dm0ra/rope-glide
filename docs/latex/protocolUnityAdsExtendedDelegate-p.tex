@@ -1,0 +1,60 @@
+\hypertarget{protocolUnityAdsExtendedDelegate-p}{}\doxysection{$<$Unity\+Ads\+Extended\+Delegate$>$ Protocol Reference}
+\label{protocolUnityAdsExtendedDelegate-p}\index{$<$UnityAdsExtendedDelegate$>$@{$<$UnityAdsExtendedDelegate$>$}}
+Inheritance diagram for $<$Unity\+Ads\+Extended\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocolUnityAdsExtendedDelegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocolUnityAdsExtendedDelegate-p_a8087585e0bb3fca5127c2c625b44f58a}{unity\+Ads\+Did\+Click\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocolUnityAdsExtendedDelegate-p_af116be6d71e035aa6446efb05938ec0f}{unity\+Ads\+Placement\+State\+Changed\+:old\+State\+:new\+State\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 4 of file Unity\+Ads\+Extended.\+h.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocolUnityAdsExtendedDelegate-p_a8087585e0bb3fca5127c2c625b44f58a}\label{protocolUnityAdsExtendedDelegate-p_a8087585e0bb3fca5127c2c625b44f58a}} 
+\index{$<$UnityAdsExtendedDelegate$>$@{$<$UnityAdsExtendedDelegate$>$}!unityAdsDidClick:@{unityAdsDidClick:}}
+\index{unityAdsDidClick:@{unityAdsDidClick:}!$<$UnityAdsExtendedDelegate$>$@{$<$UnityAdsExtendedDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unityAdsDidClick:()}{unityAdsDidClick:()}}
+{\footnotesize\ttfamily -\/ (void) unity\+Ads\+Did\+Click\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{placement\+Id }\end{DoxyParamCaption}}
+
+Called when a click event happens.
+
+
+\begin{DoxyParams}{Parameters}
+{\em placement\+Id} & The ID of the placement that was clicked. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocolUnityAdsExtendedDelegate-p_af116be6d71e035aa6446efb05938ec0f}\label{protocolUnityAdsExtendedDelegate-p_af116be6d71e035aa6446efb05938ec0f}} 
+\index{$<$UnityAdsExtendedDelegate$>$@{$<$UnityAdsExtendedDelegate$>$}!unityAdsPlacementStateChanged:oldState:newState:@{unityAdsPlacementStateChanged:oldState:newState:}}
+\index{unityAdsPlacementStateChanged:oldState:newState:@{unityAdsPlacementStateChanged:oldState:newState:}!$<$UnityAdsExtendedDelegate$>$@{$<$UnityAdsExtendedDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unityAdsPlacementStateChanged:oldState:newState:()}{unityAdsPlacementStateChanged:oldState:newState:()}}
+{\footnotesize\ttfamily -\/ (void) unity\+Ads\+Placement\+State\+Changed\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{placement\+Id }\item[{old\+State\+:(Unity\+Ads\+Placement\+State)}]{old\+State }\item[{new\+State\+:(Unity\+Ads\+Placement\+State)}]{new\+State }\end{DoxyParamCaption}}
+
+Called when a placement changes state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em placement\+Id} & The ID of the placement that changed state. \\
+\hline
+{\em old\+State} & The state before the change. \\
+\hline
+{\em new\+State} & The state after the change. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+ads@2.\+3.\+1/\+Runtime/\+Plugins/i\+O\+S/\+Unity\+Ads.\+framework/\+Headers/Unity\+Ads\+Extended.\+h\end{DoxyCompactItemize}

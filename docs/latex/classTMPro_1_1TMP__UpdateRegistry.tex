@@ -1,0 +1,176 @@
+\hypertarget{classTMPro_1_1TMP__UpdateRegistry}{}\doxysection{T\+M\+Pro.\+T\+M\+P\+\_\+\+Update\+Registry Class Reference}
+\label{classTMPro_1_1TMP__UpdateRegistry}\index{TMPro.TMP\_UpdateRegistry@{TMPro.TMP\_UpdateRegistry}}
+
+
+Class for handling and scheduling text object updates.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_af6cca1c5d46be0cb39cf1fc822a7ef1b}{Register\+Canvas\+Element\+For\+Layout\+Rebuild}} (I\+Canvas\+Element element)
+\begin{DoxyCompactList}\small\item\em Function to register elements which require a layout rebuild. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_ac449cc7e45976566e6420c763ab8c5af}{Register\+Canvas\+Element\+For\+Graphic\+Rebuild}} (I\+Canvas\+Element element)
+\begin{DoxyCompactList}\small\item\em Function to register elements which require a graphic rebuild. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_abdd464c5a6919c3383c4d8fa19fe60df}{Un\+Register\+Canvas\+Element\+For\+Rebuild}} (I\+Canvas\+Element element)
+\begin{DoxyCompactList}\small\item\em Function to unregister elements which no longer require a rebuild. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_ace9d173b85d91abac839f7fb70b73b9f}{T\+M\+P\+\_\+\+Update\+Registry}} ()
+\begin{DoxyCompactList}\small\item\em Register to receive callback from the Canvas System. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry}{T\+M\+P\+\_\+\+Update\+Registry}} \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_a4b7cc4e0c23baf71b6925bad7d8aca97}{instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get a singleton instance of the registry \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for handling and scheduling text object updates. 
+
+
+
+Definition at line 13 of file T\+M\+P\+\_\+\+Update\+Registery.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__UpdateRegistry_ace9d173b85d91abac839f7fb70b73b9f}\label{classTMPro_1_1TMP__UpdateRegistry_ace9d173b85d91abac839f7fb70b73b9f}} 
+\index{TMPro.TMP\_UpdateRegistry@{TMPro.TMP\_UpdateRegistry}!TMP\_UpdateRegistry@{TMP\_UpdateRegistry}}
+\index{TMP\_UpdateRegistry@{TMP\_UpdateRegistry}!TMPro.TMP\_UpdateRegistry@{TMPro.TMP\_UpdateRegistry}}
+\doxysubsubsection{\texorpdfstring{TMP\_UpdateRegistry()}{TMP\_UpdateRegistry()}}
+{\footnotesize\ttfamily T\+M\+Pro.\+T\+M\+P\+\_\+\+Update\+Registry.\+T\+M\+P\+\_\+\+Update\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Register to receive callback from the Canvas System. 
+
+
+
+Definition at line 43 of file T\+M\+P\+\_\+\+Update\+Registery.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44         \{}
+\DoxyCodeLine{45             \textcolor{comment}{//Debug.Log("Adding WillRenderCanvases");}}
+\DoxyCodeLine{46             Canvas.willRenderCanvases += PerformUpdateForCanvasRendererObjects;}
+\DoxyCodeLine{47         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__UpdateRegistry_ac449cc7e45976566e6420c763ab8c5af}\label{classTMPro_1_1TMP__UpdateRegistry_ac449cc7e45976566e6420c763ab8c5af}} 
+\index{TMPro.TMP\_UpdateRegistry@{TMPro.TMP\_UpdateRegistry}!RegisterCanvasElementForGraphicRebuild@{RegisterCanvasElementForGraphicRebuild}}
+\index{RegisterCanvasElementForGraphicRebuild@{RegisterCanvasElementForGraphicRebuild}!TMPro.TMP\_UpdateRegistry@{TMPro.TMP\_UpdateRegistry}}
+\doxysubsubsection{\texorpdfstring{RegisterCanvasElementForGraphicRebuild()}{RegisterCanvasElementForGraphicRebuild()}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+T\+M\+P\+\_\+\+Update\+Registry.\+Register\+Canvas\+Element\+For\+Graphic\+Rebuild (\begin{DoxyParamCaption}\item[{I\+Canvas\+Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function to register elements which require a graphic rebuild. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file T\+M\+P\+\_\+\+Update\+Registery.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78         \{}
+\DoxyCodeLine{79             \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_ace9d173b85d91abac839f7fb70b73b9f}{TMP\_UpdateRegistry}}.instance.InternalRegisterCanvasElementForGraphicRebuild(element);}
+\DoxyCodeLine{80         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__UpdateRegistry_af6cca1c5d46be0cb39cf1fc822a7ef1b}\label{classTMPro_1_1TMP__UpdateRegistry_af6cca1c5d46be0cb39cf1fc822a7ef1b}} 
+\index{TMPro.TMP\_UpdateRegistry@{TMPro.TMP\_UpdateRegistry}!RegisterCanvasElementForLayoutRebuild@{RegisterCanvasElementForLayoutRebuild}}
+\index{RegisterCanvasElementForLayoutRebuild@{RegisterCanvasElementForLayoutRebuild}!TMPro.TMP\_UpdateRegistry@{TMPro.TMP\_UpdateRegistry}}
+\doxysubsubsection{\texorpdfstring{RegisterCanvasElementForLayoutRebuild()}{RegisterCanvasElementForLayoutRebuild()}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+T\+M\+P\+\_\+\+Update\+Registry.\+Register\+Canvas\+Element\+For\+Layout\+Rebuild (\begin{DoxyParamCaption}\item[{I\+Canvas\+Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function to register elements which require a layout rebuild. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file T\+M\+P\+\_\+\+Update\+Registery.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55         \{}
+\DoxyCodeLine{56             \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_ace9d173b85d91abac839f7fb70b73b9f}{TMP\_UpdateRegistry}}.instance.InternalRegisterCanvasElementForLayoutRebuild(element);}
+\DoxyCodeLine{57         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__UpdateRegistry_abdd464c5a6919c3383c4d8fa19fe60df}\label{classTMPro_1_1TMP__UpdateRegistry_abdd464c5a6919c3383c4d8fa19fe60df}} 
+\index{TMPro.TMP\_UpdateRegistry@{TMPro.TMP\_UpdateRegistry}!UnRegisterCanvasElementForRebuild@{UnRegisterCanvasElementForRebuild}}
+\index{UnRegisterCanvasElementForRebuild@{UnRegisterCanvasElementForRebuild}!TMPro.TMP\_UpdateRegistry@{TMPro.TMP\_UpdateRegistry}}
+\doxysubsubsection{\texorpdfstring{UnRegisterCanvasElementForRebuild()}{UnRegisterCanvasElementForRebuild()}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+T\+M\+P\+\_\+\+Update\+Registry.\+Un\+Register\+Canvas\+Element\+For\+Rebuild (\begin{DoxyParamCaption}\item[{I\+Canvas\+Element}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function to unregister elements which no longer require a rebuild. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 152 of file T\+M\+P\+\_\+\+Update\+Registery.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{153         \{}
+\DoxyCodeLine{154             \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_ace9d173b85d91abac839f7fb70b73b9f}{TMP\_UpdateRegistry}}.instance.InternalUnRegisterCanvasElementForLayoutRebuild(element);}
+\DoxyCodeLine{155             \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_ace9d173b85d91abac839f7fb70b73b9f}{TMP\_UpdateRegistry}}.instance.InternalUnRegisterCanvasElementForGraphicRebuild(element);}
+\DoxyCodeLine{156         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__UpdateRegistry_a4b7cc4e0c23baf71b6925bad7d8aca97}\label{classTMPro_1_1TMP__UpdateRegistry_a4b7cc4e0c23baf71b6925bad7d8aca97}} 
+\index{TMPro.TMP\_UpdateRegistry@{TMPro.TMP\_UpdateRegistry}!instance@{instance}}
+\index{instance@{instance}!TMPro.TMP\_UpdateRegistry@{TMPro.TMP\_UpdateRegistry}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry}{T\+M\+P\+\_\+\+Update\+Registry}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Update\+Registry.\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Get a singleton instance of the registry 
+
+
+
+Definition at line 30 of file T\+M\+P\+\_\+\+Update\+Registery.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30         \{}
+\DoxyCodeLine{31             \textcolor{keyword}{get}}
+\DoxyCodeLine{32             \{}
+\DoxyCodeLine{33                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_ace9d173b85d91abac839f7fb70b73b9f}{TMP\_UpdateRegistry}}.s\_Instance == \textcolor{keyword}{null})}
+\DoxyCodeLine{34                     \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_ace9d173b85d91abac839f7fb70b73b9f}{TMP\_UpdateRegistry}}.s\_Instance = \textcolor{keyword}{new} \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_ace9d173b85d91abac839f7fb70b73b9f}{TMP\_UpdateRegistry}}();}
+\DoxyCodeLine{35                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__UpdateRegistry_ace9d173b85d91abac839f7fb70b73b9f}{TMP\_UpdateRegistry}}.s\_Instance;}
+\DoxyCodeLine{36             \}}
+\DoxyCodeLine{37         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Runtime/T\+M\+P\+\_\+\+Update\+Registery.\+cs\end{DoxyCompactItemize}

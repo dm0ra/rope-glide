@@ -1,0 +1,982 @@
+\hypertarget{classTMPro_1_1TMP__SubMeshUI}{}\doxysection{T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+UI Class Reference}
+\label{classTMPro_1_1TMP__SubMeshUI}\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+Inheritance diagram for T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+UI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.761006cm]{classTMPro_1_1TMP__SubMeshUI}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override Material \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a687aa0d711bf32e50c11a403493c2667}{Get\+Modified\+Material}} (Material base\+Material)
+\begin{DoxyCompactList}\small\item\em Function returning the modified material for masking if necessary. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a7d5c58041ab5f14071b3a39108bd3408}{Get\+Padding\+For\+Material}} ()
+\begin{DoxyCompactList}\small\item\em Function called when the padding value for the material needs to be re-\/calculated. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a0039a3effee201741725425d2376c801}{Get\+Padding\+For\+Material}} (Material mat)
+\begin{DoxyCompactList}\small\item\em Function called when the padding value for the material needs to be re-\/calculated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a0f39c16f271cb73553d4b1917a9fe4ba}{Update\+Mesh\+Padding}} (bool is\+Extra\+Padding, bool is\+Using\+Bold)
+\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_abb694c1dd941ef112c04d913fb460044}{Set\+All\+Dirty}} ()
+\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a2597031429dd905eb468c86df32850a8}{Set\+Vertices\+Dirty}} ()
+\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_af0fb2011a25e14eab43fe51adbc62cbb}{Set\+Layout\+Dirty}} ()
+\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a5aae214407f49b19377ba6b3c99bd3e9}{Set\+Material\+Dirty}} ()
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a9db1f46942567925b79b2290171bd24a}{Set\+Pivot\+Dirty}} ()
+\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_ab4b2cf894e690a63576d8713a5729099}{Cull}} (Rect clip\+Rect, bool valid\+Rect)
+\begin{DoxyCompactList}\small\item\em Override to Cull function of Maskable\+Graphic to prevent Culling. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_aa1918700dd7e78768075a88b31db98a2}{Rebuild}} (Canvas\+Update update)
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_ac6bb1546f8b9fe175ba68e2d253935b5}{Refresh\+Material}} ()
+\begin{DoxyCompactList}\small\item\em Function to update the material from the parent text object. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a6505e4b6f7c11eeb4ea155d7d6ef4248}{Recalculate\+Clipping}} ()
+\begin{DoxyCompactList}\small\item\em Method called when the state of a parent changes. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a6f662a8acac8a908a79012344a8e2330}{Recalculate\+Masking}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI}{T\+M\+P\+\_\+\+Sub\+Mesh\+UI}} \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a72235ccd83b46453ebb152ff645602be}{Add\+Sub\+Text\+Object}} (\mbox{\hyperlink{classTMPro_1_1TextMeshProUGUI}{Text\+Mesh\+Pro\+U\+G\+UI}} text\+Component, \mbox{\hyperlink{structTMPro_1_1MaterialReference}{Material\+Reference}} material\+Reference)
+\begin{DoxyCompactList}\small\item\em Function to add a new sub text object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a685c041796705a824e2432c1cf075db6}{On\+Enable}} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a06ee252d51e45e951fdef895135559b4}\label{classTMPro_1_1TMP__SubMeshUI_a06ee252d51e45e951fdef895135559b4}} 
+override void {\bfseries On\+Disable} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_aebef8466a825a92f2d403efd056f20a6}\label{classTMPro_1_1TMP__SubMeshUI_aebef8466a825a92f2d403efd056f20a6}} 
+override void {\bfseries On\+Destroy} ()
+\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a37e6c09ce69b4b53a9245571c981f41c}{On\+Transform\+Parent\+Changed}} ()
+\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a6b99dad67454e0b386bc261e9d11aceb}{Update\+Geometry}} ()
+\item 
+override void \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_af58b19bacdca0f7738002d4f2601cacc}{Update\+Material}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_ac26089f074be39cd7f88b0b2b36c9e6b}{font\+Asset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The T\+MP Font Asset assigned to this sub text object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a4d6484238e6c880ce9c7065cf9172db2}{sprite\+Asset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The T\+MP Sprite Asset assigned to this sub text object. \end{DoxyCompactList}\item 
+override Texture \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a455c7c479e81a37c0de77570b4bf3578}{main\+Texture}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override Material \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a6bd5b75c3ee5ddfdda01f26c7052bb97}{material}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The material to be assigned to this object. Returns an instance of the material. \end{DoxyCompactList}\item 
+Material \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a05ed962e084767f371f3971078a84ec7}{shared\+Material}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The material to be assigned to this text object. \end{DoxyCompactList}\item 
+Material \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a752da89e0deb52b9e005365ebc315fa1}{fallback\+Material}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Material \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a9b771a5f56a567373c07d24fae47011c}{fallback\+Source\+Material}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The source material used by the fallback font \end{DoxyCompactList}\item 
+override Material \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_acf8eb0b73fe8fe9f4b12d71550739bb1}{material\+For\+Rendering}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get the material that will be used for rendering. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_afeb2c2de9cff26385cf00802a8d356da}{is\+Default\+Material}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is the text object using the default font asset material. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a739f793cbda2c66b096ddf5ce3b1658f}{padding}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Padding value resulting for the property settings on the material. \end{DoxyCompactList}\item 
+new Canvas\+Renderer \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a4888f8c9e99911b05312c1ed5a578a33}{canvas\+Renderer}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Mesh Renderer of this text sub object. \end{DoxyCompactList}\item 
+Mesh \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a90820457f70262482c28723f1265876a}{mesh}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The Mesh of this text sub object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 12 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a72235ccd83b46453ebb152ff645602be}\label{classTMPro_1_1TMP__SubMeshUI_a72235ccd83b46453ebb152ff645602be}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!AddSubTextObject@{AddSubTextObject}}
+\index{AddSubTextObject@{AddSubTextObject}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{AddSubTextObject()}{AddSubTextObject()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI}{T\+M\+P\+\_\+\+Sub\+Mesh\+UI}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Add\+Sub\+Text\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1TextMeshProUGUI}{Text\+Mesh\+Pro\+U\+G\+UI}}}]{text\+Component,  }\item[{\mbox{\hyperlink{structTMPro_1_1MaterialReference}{Material\+Reference}}}]{material\+Reference }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function to add a new sub text object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Component} & \\
+\hline
+{\em material\+Reference} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 213 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{214         \{}
+\DoxyCodeLine{215             GameObject go = \textcolor{keyword}{new} GameObject(\textcolor{stringliteral}{"TMP UI SubObject ["} + materialReference.material.name + \textcolor{stringliteral}{"]"}, typeof(RectTransform));}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217             go.transform.SetParent(textComponent.transform, \textcolor{keyword}{false});}
+\DoxyCodeLine{218             go.layer = textComponent.gameObject.layer;}
+\DoxyCodeLine{219 }
+\DoxyCodeLine{220             RectTransform rectTransform = go.GetComponent<RectTransform>();}
+\DoxyCodeLine{221             rectTransform.anchorMin = Vector2.zero;}
+\DoxyCodeLine{222             rectTransform.anchorMax = Vector2.one;}
+\DoxyCodeLine{223             rectTransform.sizeDelta = Vector2.zero;}
+\DoxyCodeLine{224             rectTransform.pivot = textComponent.rectTransform.pivot;}
+\DoxyCodeLine{225 }
+\DoxyCodeLine{226             TMP\_SubMeshUI subMesh = go.AddComponent<TMP\_SubMeshUI>();}
+\DoxyCodeLine{227 }
+\DoxyCodeLine{228             subMesh.m\_canvasRenderer = subMesh.canvasRenderer;}
+\DoxyCodeLine{229             subMesh.m\_TextComponent = textComponent;}
+\DoxyCodeLine{230 }
+\DoxyCodeLine{231             subMesh.m\_materialReferenceIndex = materialReference.index;}
+\DoxyCodeLine{232             subMesh.m\_fontAsset = materialReference.fontAsset;}
+\DoxyCodeLine{233             subMesh.m\_spriteAsset = materialReference.spriteAsset;}
+\DoxyCodeLine{234             subMesh.m\_isDefaultMaterial = materialReference.isDefaultMaterial;}
+\DoxyCodeLine{235             subMesh.SetSharedMaterial(materialReference.material);}
+\DoxyCodeLine{236 }
+\DoxyCodeLine{237             \textcolor{keywordflow}{return} subMesh;}
+\DoxyCodeLine{238         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_ab4b2cf894e690a63576d8713a5729099}\label{classTMPro_1_1TMP__SubMeshUI_ab4b2cf894e690a63576d8713a5729099}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!Cull@{Cull}}
+\index{Cull@{Cull}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{Cull()}{Cull()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Cull (\begin{DoxyParamCaption}\item[{Rect}]{clip\+Rect,  }\item[{bool}]{valid\+Rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Override to Cull function of Maskable\+Graphic to prevent Culling. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clip\+Rect} & \\
+\hline
+{\em valid\+Rect} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 616 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{617         \{}
+\DoxyCodeLine{618             \textcolor{keywordflow}{if} (m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_ae26a7d66454f3871e5668b0585c0735a}{ignoreRectMaskCulling}}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{619 }
+\DoxyCodeLine{620             base.Cull(clipRect, validRect);}
+\DoxyCodeLine{621         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a687aa0d711bf32e50c11a403493c2667}\label{classTMPro_1_1TMP__SubMeshUI_a687aa0d711bf32e50c11a403493c2667}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!GetModifiedMaterial@{GetModifiedMaterial}}
+\index{GetModifiedMaterial@{GetModifiedMaterial}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{GetModifiedMaterial()}{GetModifiedMaterial()}}
+{\footnotesize\ttfamily override Material T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Get\+Modified\+Material (\begin{DoxyParamCaption}\item[{Material}]{base\+Material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function returning the modified material for masking if necessary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Material} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 480 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{481         \{}
+\DoxyCodeLine{482             Material mat = baseMaterial;}
+\DoxyCodeLine{483 }
+\DoxyCodeLine{484             \textcolor{keywordflow}{if} (m\_ShouldRecalculateStencil)}
+\DoxyCodeLine{485             \{}
+\DoxyCodeLine{486                 m\_StencilValue = TMP\_MaterialManager.GetStencilID(gameObject);}
+\DoxyCodeLine{487                 m\_ShouldRecalculateStencil = \textcolor{keyword}{false};}
+\DoxyCodeLine{488             \}}
+\DoxyCodeLine{489 }
+\DoxyCodeLine{490             \textcolor{keywordflow}{if} (m\_StencilValue > 0)}
+\DoxyCodeLine{491             \{}
+\DoxyCodeLine{492                 mat = TMP\_MaterialManager.GetStencilMaterial(baseMaterial, m\_StencilValue);}
+\DoxyCodeLine{493                 \textcolor{keywordflow}{if} (m\_MaskMaterial != \textcolor{keyword}{null})}
+\DoxyCodeLine{494                     TMP\_MaterialManager.ReleaseStencilMaterial(m\_MaskMaterial);}
+\DoxyCodeLine{495 }
+\DoxyCodeLine{496                 m\_MaskMaterial = mat;}
+\DoxyCodeLine{497             \}}
+\DoxyCodeLine{498 }
+\DoxyCodeLine{499             \textcolor{keywordflow}{return} mat;}
+\DoxyCodeLine{500         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a7d5c58041ab5f14071b3a39108bd3408}\label{classTMPro_1_1TMP__SubMeshUI_a7d5c58041ab5f14071b3a39108bd3408}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!GetPaddingForMaterial@{GetPaddingForMaterial}}
+\index{GetPaddingForMaterial@{GetPaddingForMaterial}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{GetPaddingForMaterial()}{GetPaddingForMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Get\+Padding\+For\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function called when the padding value for the material needs to be re-\/calculated. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 507 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{508         \{}
+\DoxyCodeLine{509             \textcolor{keywordtype}{float} \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a739f793cbda2c66b096ddf5ce3b1658f}{padding}} = ShaderUtilities.GetPadding(m\_sharedMaterial, m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_aa06b7d7a7054e899c0be4fa8ed9943b5}{extraPadding}}, m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a2ad3845a02f7fd35f5b9bd7a34f5bd52}{isUsingBold}});}
+\DoxyCodeLine{510 }
+\DoxyCodeLine{511             \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a739f793cbda2c66b096ddf5ce3b1658f}{padding}};}
+\DoxyCodeLine{512         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a0039a3effee201741725425d2376c801}\label{classTMPro_1_1TMP__SubMeshUI_a0039a3effee201741725425d2376c801}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!GetPaddingForMaterial@{GetPaddingForMaterial}}
+\index{GetPaddingForMaterial@{GetPaddingForMaterial}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{GetPaddingForMaterial()}{GetPaddingForMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Get\+Padding\+For\+Material (\begin{DoxyParamCaption}\item[{Material}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function called when the padding value for the material needs to be re-\/calculated. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 519 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{520         \{}
+\DoxyCodeLine{521             \textcolor{keywordtype}{float} \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a739f793cbda2c66b096ddf5ce3b1658f}{padding}} = ShaderUtilities.GetPadding(mat, m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_aa06b7d7a7054e899c0be4fa8ed9943b5}{extraPadding}}, m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a2ad3845a02f7fd35f5b9bd7a34f5bd52}{isUsingBold}});}
+\DoxyCodeLine{522 }
+\DoxyCodeLine{523             \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a739f793cbda2c66b096ddf5ce3b1658f}{padding}};}
+\DoxyCodeLine{524         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a685c041796705a824e2432c1cf075db6}\label{classTMPro_1_1TMP__SubMeshUI_a685c041796705a824e2432c1cf075db6}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+
+
+
+
+Definition at line 245 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{246         \{}
+\DoxyCodeLine{247             \textcolor{comment}{//Debug.Log("*** SubObject OnEnable() ***");}}
+\DoxyCodeLine{248 }
+\DoxyCodeLine{249             \textcolor{comment}{// Register Callbacks for various events.}}
+\DoxyCodeLine{250             \textcolor{keywordflow}{if} (!m\_isRegisteredForEvents)}
+\DoxyCodeLine{251             \{}
+\DoxyCodeLine{252 }
+\DoxyCodeLine{253 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{254                 TMPro\_EventManager.MATERIAL\_PROPERTY\_EVENT.Add(ON\_MATERIAL\_PROPERTY\_CHANGED);}
+\DoxyCodeLine{255                 TMPro\_EventManager.FONT\_PROPERTY\_EVENT.Add(ON\_FONT\_PROPERTY\_CHANGED);}
+\DoxyCodeLine{256                 \textcolor{comment}{//TMPro\_EventManager.TEXTMESHPRO\_PROPERTY\_EVENT.Add(ON\_TEXTMESHPRO\_PROPERTY\_CHANGED);}}
+\DoxyCodeLine{257                 TMPro\_EventManager.DRAG\_AND\_DROP\_MATERIAL\_EVENT.Add(ON\_DRAG\_AND\_DROP\_MATERIAL);}
+\DoxyCodeLine{258                 \textcolor{comment}{//TMPro\_EventManager.TEXT\_STYLE\_PROPERTY\_EVENT.Add(ON\_TEXT\_STYLE\_CHANGED);}}
+\DoxyCodeLine{259                 TMPro\_EventManager.SPRITE\_ASSET\_PROPERTY\_EVENT.Add(ON\_SPRITE\_ASSET\_PROPERTY\_CHANGED);}
+\DoxyCodeLine{260                 \textcolor{comment}{//TMPro\_EventManager.TMP\_SETTINGS\_PROPERTY\_EVENT.Add(ON\_TMP\_SETTINGS\_CHANGED);}}
+\DoxyCodeLine{261 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{263                 m\_isRegisteredForEvents = \textcolor{keyword}{true};}
+\DoxyCodeLine{264             \}}
+\DoxyCodeLine{265 }
+\DoxyCodeLine{266             m\_ShouldRecalculateStencil = \textcolor{keyword}{true};}
+\DoxyCodeLine{267             \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a6505e4b6f7c11eeb4ea155d7d6ef4248}{RecalculateClipping}}();}
+\DoxyCodeLine{268             \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a6f662a8acac8a908a79012344a8e2330}{RecalculateMasking}}();}
+\DoxyCodeLine{269 }
+\DoxyCodeLine{270             \textcolor{comment}{//SetAllDirty();}}
+\DoxyCodeLine{271         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a37e6c09ce69b4b53a9245571c981f41c}\label{classTMPro_1_1TMP__SubMeshUI_a37e6c09ce69b4b53a9245571c981f41c}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!OnTransformParentChanged@{OnTransformParentChanged}}
+\index{OnTransformParentChanged@{OnTransformParentChanged}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{OnTransformParentChanged()}{OnTransformParentChanged()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+On\+Transform\+Parent\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+
+
+
+
+Definition at line 464 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{465         \{}
+\DoxyCodeLine{466             \textcolor{keywordflow}{if} (!this.IsActive())}
+\DoxyCodeLine{467                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{468 }
+\DoxyCodeLine{469             m\_ShouldRecalculateStencil = \textcolor{keyword}{true};}
+\DoxyCodeLine{470             \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a6505e4b6f7c11eeb4ea155d7d6ef4248}{RecalculateClipping}}();}
+\DoxyCodeLine{471             \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a6f662a8acac8a908a79012344a8e2330}{RecalculateMasking}}();}
+\DoxyCodeLine{472         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_aa1918700dd7e78768075a88b31db98a2}\label{classTMPro_1_1TMP__SubMeshUI_aa1918700dd7e78768075a88b31db98a2}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!Rebuild@{Rebuild}}
+\index{Rebuild@{Rebuild}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{Rebuild()}{Rebuild()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Rebuild (\begin{DoxyParamCaption}\item[{Canvas\+Update}]{update }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em update} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 638 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{639         \{}
+\DoxyCodeLine{640             \textcolor{keywordflow}{if} (update == CanvasUpdate.PreRender)}
+\DoxyCodeLine{641             \{}
+\DoxyCodeLine{642                 \textcolor{keywordflow}{if} (!m\_materialDirty) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{643 }
+\DoxyCodeLine{644                 \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_af58b19bacdca0f7738002d4f2601cacc}{UpdateMaterial}}();}
+\DoxyCodeLine{645                 m\_materialDirty = \textcolor{keyword}{false};}
+\DoxyCodeLine{646             \}}
+\DoxyCodeLine{647         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a6505e4b6f7c11eeb4ea155d7d6ef4248}\label{classTMPro_1_1TMP__SubMeshUI_a6505e4b6f7c11eeb4ea155d7d6ef4248}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!RecalculateClipping@{RecalculateClipping}}
+\index{RecalculateClipping@{RecalculateClipping}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{RecalculateClipping()}{RecalculateClipping()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Recalculate\+Clipping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Method called when the state of a parent changes. 
+
+
+
+Definition at line 686 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{687         \{}
+\DoxyCodeLine{688             \textcolor{comment}{//Debug.Log("*** RecalculateClipping() ***");}}
+\DoxyCodeLine{689             base.RecalculateClipping();}
+\DoxyCodeLine{690         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a6f662a8acac8a908a79012344a8e2330}\label{classTMPro_1_1TMP__SubMeshUI_a6f662a8acac8a908a79012344a8e2330}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!RecalculateMasking@{RecalculateMasking}}
+\index{RecalculateMasking@{RecalculateMasking}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{RecalculateMasking()}{RecalculateMasking()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Recalculate\+Masking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+
+Definition at line 696 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{697         \{}
+\DoxyCodeLine{698             \textcolor{comment}{//Debug.Log("RecalculateMasking()");}}
+\DoxyCodeLine{699 }
+\DoxyCodeLine{700             this.m\_ShouldRecalculateStencil = \textcolor{keyword}{true};}
+\DoxyCodeLine{701             \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a5aae214407f49b19377ba6b3c99bd3e9}{SetMaterialDirty}}();}
+\DoxyCodeLine{702         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_ac6bb1546f8b9fe175ba68e2d253935b5}\label{classTMPro_1_1TMP__SubMeshUI_ac6bb1546f8b9fe175ba68e2d253935b5}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!RefreshMaterial@{RefreshMaterial}}
+\index{RefreshMaterial@{RefreshMaterial}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{RefreshMaterial()}{RefreshMaterial()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Refresh\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to update the material from the parent text object. 
+
+
+
+Definition at line 653 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{654         \{}
+\DoxyCodeLine{655             \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_af58b19bacdca0f7738002d4f2601cacc}{UpdateMaterial}}();}
+\DoxyCodeLine{656         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_abb694c1dd941ef112c04d913fb460044}\label{classTMPro_1_1TMP__SubMeshUI_abb694c1dd941ef112c04d913fb460044}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!SetAllDirty@{SetAllDirty}}
+\index{SetAllDirty@{SetAllDirty}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{SetAllDirty()}{SetAllDirty()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Set\+All\+Dirty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+
+Definition at line 541 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{542         \{}
+\DoxyCodeLine{543             \textcolor{comment}{//SetLayoutDirty();}}
+\DoxyCodeLine{544             \textcolor{comment}{//SetVerticesDirty();}}
+\DoxyCodeLine{545             \textcolor{comment}{//SetMaterialDirty();}}
+\DoxyCodeLine{546         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_af0fb2011a25e14eab43fe51adbc62cbb}\label{classTMPro_1_1TMP__SubMeshUI_af0fb2011a25e14eab43fe51adbc62cbb}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!SetLayoutDirty@{SetLayoutDirty}}
+\index{SetLayoutDirty@{SetLayoutDirty}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{SetLayoutDirty()}{SetLayoutDirty()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Set\+Layout\+Dirty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+
+Definition at line 569 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{570         \{}
+\DoxyCodeLine{571 }
+\DoxyCodeLine{572         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a5aae214407f49b19377ba6b3c99bd3e9}\label{classTMPro_1_1TMP__SubMeshUI_a5aae214407f49b19377ba6b3c99bd3e9}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!SetMaterialDirty@{SetMaterialDirty}}
+\index{SetMaterialDirty@{SetMaterialDirty}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{SetMaterialDirty()}{SetMaterialDirty()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Set\+Material\+Dirty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+
+Definition at line 578 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{579         \{}
+\DoxyCodeLine{580             \textcolor{comment}{//Debug.Log("*** STO-\/UI -\/ SetMaterialDirty() *** FRAME (" + Time.frameCount + ")");}}
+\DoxyCodeLine{581 }
+\DoxyCodeLine{582             \textcolor{comment}{//if (!this.IsActive())}}
+\DoxyCodeLine{583             \textcolor{comment}{//    return;}}
+\DoxyCodeLine{584 }
+\DoxyCodeLine{585             m\_materialDirty = \textcolor{keyword}{true};}
+\DoxyCodeLine{586 }
+\DoxyCodeLine{587             \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_af58b19bacdca0f7738002d4f2601cacc}{UpdateMaterial}}();}
+\DoxyCodeLine{588 }
+\DoxyCodeLine{589             \textcolor{keywordflow}{if} (m\_OnDirtyMaterialCallback != \textcolor{keyword}{null})}
+\DoxyCodeLine{590                 m\_OnDirtyMaterialCallback();}
+\DoxyCodeLine{591 }
+\DoxyCodeLine{592             \textcolor{comment}{//TMP\_ITextElementUpdateManager.RegisterTextElementForGraphicRebuild(this);}}
+\DoxyCodeLine{593 }
+\DoxyCodeLine{594             \textcolor{comment}{//TMP\_UpdateRegistry.RegisterCanvasElementForGraphicRebuild((ICanvasElement)this);}}
+\DoxyCodeLine{595             \textcolor{comment}{//m\_TextComponent.SetMaterialDirty();}}
+\DoxyCodeLine{596         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a9db1f46942567925b79b2290171bd24a}\label{classTMPro_1_1TMP__SubMeshUI_a9db1f46942567925b79b2290171bd24a}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!SetPivotDirty@{SetPivotDirty}}
+\index{SetPivotDirty@{SetPivotDirty}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{SetPivotDirty()}{SetPivotDirty()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Set\+Pivot\+Dirty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+
+Definition at line 602 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{603         \{}
+\DoxyCodeLine{604             \textcolor{keywordflow}{if} (!this.IsActive())}
+\DoxyCodeLine{605                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{606 }
+\DoxyCodeLine{607             this.rectTransform.pivot = m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_adf46752eab5ab6c5c0d0d7b58e3bf847}{rectTransform}}.pivot;}
+\DoxyCodeLine{608         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a2597031429dd905eb468c86df32850a8}\label{classTMPro_1_1TMP__SubMeshUI_a2597031429dd905eb468c86df32850a8}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!SetVerticesDirty@{SetVerticesDirty}}
+\index{SetVerticesDirty@{SetVerticesDirty}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{SetVerticesDirty()}{SetVerticesDirty()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Set\+Vertices\+Dirty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+
+Definition at line 552 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{553         \{}
+\DoxyCodeLine{554             \textcolor{keywordflow}{if} (!this.IsActive())}
+\DoxyCodeLine{555                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{556 }
+\DoxyCodeLine{557             \textcolor{comment}{// This is called on the parent TextMeshPro component.}}
+\DoxyCodeLine{558             \textcolor{keywordflow}{if} (m\_TextComponent != \textcolor{keyword}{null})}
+\DoxyCodeLine{559             \{}
+\DoxyCodeLine{560                 m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a7e0fb1ed735ea717f9b98373b9de6e73}{havePropertiesChanged}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{561                 m\_TextComponent.SetVerticesDirty();}
+\DoxyCodeLine{562             \}}
+\DoxyCodeLine{563         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a6b99dad67454e0b386bc261e9d11aceb}\label{classTMPro_1_1TMP__SubMeshUI_a6b99dad67454e0b386bc261e9d11aceb}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!UpdateGeometry@{UpdateGeometry}}
+\index{UpdateGeometry@{UpdateGeometry}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{UpdateGeometry()}{UpdateGeometry()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Update\+Geometry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+
+
+
+
+Definition at line 627 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{628         \{}
+\DoxyCodeLine{629             \textcolor{comment}{// Need to override to prevent Unity from changing the geometry of the object.}}
+\DoxyCodeLine{630             Debug.Log(\textcolor{stringliteral}{"UpdateGeometry()"});}
+\DoxyCodeLine{631         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_af58b19bacdca0f7738002d4f2601cacc}\label{classTMPro_1_1TMP__SubMeshUI_af58b19bacdca0f7738002d4f2601cacc}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!UpdateMaterial@{UpdateMaterial}}
+\index{UpdateMaterial@{UpdateMaterial}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{UpdateMaterial()}{UpdateMaterial()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Update\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+
+
+
+
+Definition at line 662 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{663         \{}
+\DoxyCodeLine{664             \textcolor{comment}{//Debug.Log("*** STO-\/UI -\/ UpdateMaterial() *** FRAME (" + Time.frameCount + ")");}}
+\DoxyCodeLine{665 }
+\DoxyCodeLine{666             \textcolor{comment}{//if (!this.IsActive())}}
+\DoxyCodeLine{667             \textcolor{comment}{//    return;}}
+\DoxyCodeLine{668 }
+\DoxyCodeLine{669             \textcolor{keywordflow}{if} (m\_canvasRenderer == \textcolor{keyword}{null}) m\_canvasRenderer = this.\mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a4888f8c9e99911b05312c1ed5a578a33}{canvasRenderer}};}
+\DoxyCodeLine{670 }
+\DoxyCodeLine{671             m\_canvasRenderer.materialCount = 1;}
+\DoxyCodeLine{672             m\_canvasRenderer.SetMaterial(\mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_acf8eb0b73fe8fe9f4b12d71550739bb1}{materialForRendering}}, 0);}
+\DoxyCodeLine{673             m\_canvasRenderer.SetTexture(\mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a455c7c479e81a37c0de77570b4bf3578}{mainTexture}});}
+\DoxyCodeLine{674 }
+\DoxyCodeLine{675 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{676             \textcolor{keywordflow}{if} (m\_sharedMaterial != \textcolor{keyword}{null} \&\& gameObject.name != \textcolor{stringliteral}{"TMP SubMeshUI ["} + m\_sharedMaterial.name + \textcolor{stringliteral}{"]"})}
+\DoxyCodeLine{677                 gameObject.name = \textcolor{stringliteral}{"TMP SubMeshUI ["} + m\_sharedMaterial.name + \textcolor{stringliteral}{"]"};}
+\DoxyCodeLine{678 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{679         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a0f39c16f271cb73553d4b1917a9fe4ba}\label{classTMPro_1_1TMP__SubMeshUI_a0f39c16f271cb73553d4b1917a9fe4ba}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!UpdateMeshPadding@{UpdateMeshPadding}}
+\index{UpdateMeshPadding@{UpdateMeshPadding}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{UpdateMeshPadding()}{UpdateMeshPadding()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+Update\+Mesh\+Padding (\begin{DoxyParamCaption}\item[{bool}]{is\+Extra\+Padding,  }\item[{bool}]{is\+Using\+Bold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Extra\+Padding} & \\
+\hline
+{\em is\+Bold} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 532 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{533         \{}
+\DoxyCodeLine{534             m\_padding = ShaderUtilities.GetPadding(m\_sharedMaterial, isExtraPadding, isUsingBold);}
+\DoxyCodeLine{535         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a4888f8c9e99911b05312c1ed5a578a33}\label{classTMPro_1_1TMP__SubMeshUI_a4888f8c9e99911b05312c1ed5a578a33}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!canvasRenderer@{canvasRenderer}}
+\index{canvasRenderer@{canvasRenderer}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{canvasRenderer}{canvasRenderer}}
+{\footnotesize\ttfamily new Canvas\+Renderer T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+canvas\+Renderer\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The Mesh Renderer of this text sub object. 
+
+
+
+Definition at line 165 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{165         \{}
+\DoxyCodeLine{166             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{if} (m\_canvasRenderer == \textcolor{keyword}{null}) m\_canvasRenderer = GetComponent<CanvasRenderer>();}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168                 \textcolor{keywordflow}{return} m\_canvasRenderer;}
+\DoxyCodeLine{169             \}}
+\DoxyCodeLine{170         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a752da89e0deb52b9e005365ebc315fa1}\label{classTMPro_1_1TMP__SubMeshUI_a752da89e0deb52b9e005365ebc315fa1}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!fallbackMaterial@{fallbackMaterial}}
+\index{fallbackMaterial@{fallbackMaterial}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{fallbackMaterial}{fallbackMaterial}}
+{\footnotesize\ttfamily Material T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+fallback\+Material\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+
+
+Definition at line 96 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{96         \{}
+\DoxyCodeLine{97             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_fallbackMaterial; \}}
+\DoxyCodeLine{98             \textcolor{keyword}{set}}
+\DoxyCodeLine{99             \{}
+\DoxyCodeLine{100                 \textcolor{keywordflow}{if} (m\_fallbackMaterial == value) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102                 \textcolor{keywordflow}{if} (m\_fallbackMaterial != \textcolor{keyword}{null} \&\& m\_fallbackMaterial != value)}
+\DoxyCodeLine{103                     TMP\_MaterialManager.ReleaseFallbackMaterial(m\_fallbackMaterial);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105                 m\_fallbackMaterial = value;}
+\DoxyCodeLine{106                 TMP\_MaterialManager.AddFallbackMaterialReference(m\_fallbackMaterial);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108                 SetSharedMaterial(m\_fallbackMaterial);}
+\DoxyCodeLine{109             \}}
+\DoxyCodeLine{110         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a9b771a5f56a567373c07d24fae47011c}\label{classTMPro_1_1TMP__SubMeshUI_a9b771a5f56a567373c07d24fae47011c}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!fallbackSourceMaterial@{fallbackSourceMaterial}}
+\index{fallbackSourceMaterial@{fallbackSourceMaterial}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{fallbackSourceMaterial}{fallbackSourceMaterial}}
+{\footnotesize\ttfamily Material T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+fallback\+Source\+Material\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The source material used by the fallback font 
+
+
+
+Definition at line 118 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118         \{}
+\DoxyCodeLine{119             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_fallbackSourceMaterial; \}}
+\DoxyCodeLine{120             \textcolor{keyword}{set} \{ m\_fallbackSourceMaterial = value; \}}
+\DoxyCodeLine{121         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_ac26089f074be39cd7f88b0b2b36c9e6b}\label{classTMPro_1_1TMP__SubMeshUI_ac26089f074be39cd7f88b0b2b36c9e6b}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!fontAsset@{fontAsset}}
+\index{fontAsset@{fontAsset}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{fontAsset}{fontAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+font\+Asset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The T\+MP Font Asset assigned to this sub text object. 
+
+
+
+Definition at line 18 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18         \{}
+\DoxyCodeLine{19             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_fontAsset; \}}
+\DoxyCodeLine{20             \textcolor{keyword}{set} \{ m\_fontAsset = value; \}}
+\DoxyCodeLine{21         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_afeb2c2de9cff26385cf00802a8d356da}\label{classTMPro_1_1TMP__SubMeshUI_afeb2c2de9cff26385cf00802a8d356da}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!isDefaultMaterial@{isDefaultMaterial}}
+\index{isDefaultMaterial@{isDefaultMaterial}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{isDefaultMaterial}{isDefaultMaterial}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+is\+Default\+Material\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is the text object using the default font asset material. 
+
+
+
+Definition at line 141 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141         \{}
+\DoxyCodeLine{142             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_isDefaultMaterial; \}}
+\DoxyCodeLine{143             \textcolor{keyword}{set} \{ m\_isDefaultMaterial = value; \}}
+\DoxyCodeLine{144         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a455c7c479e81a37c0de77570b4bf3578}\label{classTMPro_1_1TMP__SubMeshUI_a455c7c479e81a37c0de77570b4bf3578}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!mainTexture@{mainTexture}}
+\index{mainTexture@{mainTexture}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{mainTexture}{mainTexture}}
+{\footnotesize\ttfamily override Texture T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+main\+Texture\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+
+
+
+
+Definition at line 42 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42         \{}
+\DoxyCodeLine{43             \textcolor{keyword}{get}}
+\DoxyCodeLine{44             \{}
+\DoxyCodeLine{45                 \textcolor{keywordflow}{if} (this.\mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a05ed962e084767f371f3971078a84ec7}{sharedMaterial}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{46                     \textcolor{keywordflow}{return} this.\mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a05ed962e084767f371f3971078a84ec7}{sharedMaterial}}.GetTexture(ShaderUtilities.ID\_MainTex);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{50             \}}
+\DoxyCodeLine{51         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a6bd5b75c3ee5ddfdda01f26c7052bb97}\label{classTMPro_1_1TMP__SubMeshUI_a6bd5b75c3ee5ddfdda01f26c7052bb97}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!material@{material}}
+\index{material@{material}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{material}{material}}
+{\footnotesize\ttfamily override Material T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+material\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The material to be assigned to this object. Returns an instance of the material. 
+
+
+
+Definition at line 58 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58         \{}
+\DoxyCodeLine{59             \textcolor{comment}{// Return a new Instance of the Material if none exists. Otherwise return the current Material Instance.}}
+\DoxyCodeLine{60             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} GetMaterial(m\_sharedMaterial); \}}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62             \textcolor{comment}{// Assign new font material}}
+\DoxyCodeLine{63             \textcolor{keyword}{set}}
+\DoxyCodeLine{64             \{}
+\DoxyCodeLine{65                 \textcolor{keywordflow}{if} (m\_sharedMaterial != \textcolor{keyword}{null} \&\& m\_sharedMaterial.GetInstanceID() == value.GetInstanceID())}
+\DoxyCodeLine{66                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68                 m\_sharedMaterial = m\_material = value;}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70                 m\_padding = \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a7d5c58041ab5f14071b3a39108bd3408}{GetPaddingForMaterial}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72                 \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a2597031429dd905eb468c86df32850a8}{SetVerticesDirty}}();}
+\DoxyCodeLine{73                 \mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a5aae214407f49b19377ba6b3c99bd3e9}{SetMaterialDirty}}();}
+\DoxyCodeLine{74             \}}
+\DoxyCodeLine{75         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_acf8eb0b73fe8fe9f4b12d71550739bb1}\label{classTMPro_1_1TMP__SubMeshUI_acf8eb0b73fe8fe9f4b12d71550739bb1}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!materialForRendering@{materialForRendering}}
+\index{materialForRendering@{materialForRendering}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{materialForRendering}{materialForRendering}}
+{\footnotesize\ttfamily override Material T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+material\+For\+Rendering\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Get the material that will be used for rendering. 
+
+
+
+Definition at line 129 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{129         \{}
+\DoxyCodeLine{130             \textcolor{keyword}{get}}
+\DoxyCodeLine{131             \{}
+\DoxyCodeLine{132                 \textcolor{keywordflow}{return} TMP\_MaterialManager.GetMaterialForRendering(\textcolor{keyword}{this}, m\_sharedMaterial);}
+\DoxyCodeLine{133             \}}
+\DoxyCodeLine{134         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a90820457f70262482c28723f1265876a}\label{classTMPro_1_1TMP__SubMeshUI_a90820457f70262482c28723f1265876a}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!mesh@{mesh}}
+\index{mesh@{mesh}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{mesh}{mesh}}
+{\footnotesize\ttfamily Mesh T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+mesh\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The Mesh of this text sub object. 
+
+
+
+Definition at line 179 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{179         \{}
+\DoxyCodeLine{180             \textcolor{keyword}{get}}
+\DoxyCodeLine{181             \{}
+\DoxyCodeLine{182                 \textcolor{keywordflow}{if} (m\_mesh == \textcolor{keyword}{null})}
+\DoxyCodeLine{183                 \{}
+\DoxyCodeLine{184                     m\_mesh = \textcolor{keyword}{new} Mesh();}
+\DoxyCodeLine{185                     m\_mesh.hideFlags = HideFlags.HideAndDontSave;}
+\DoxyCodeLine{186                 \}}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{188                 \textcolor{keywordflow}{return} m\_mesh;}
+\DoxyCodeLine{189             \}}
+\DoxyCodeLine{190             \textcolor{keyword}{set} \{ m\_mesh = value; \}}
+\DoxyCodeLine{191         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a739f793cbda2c66b096ddf5ce3b1658f}\label{classTMPro_1_1TMP__SubMeshUI_a739f793cbda2c66b096ddf5ce3b1658f}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!padding@{padding}}
+\index{padding@{padding}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{padding}{padding}}
+{\footnotesize\ttfamily float T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+padding\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Padding value resulting for the property settings on the material. 
+
+
+
+Definition at line 153 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{153         \{}
+\DoxyCodeLine{154             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_padding; \}}
+\DoxyCodeLine{155             \textcolor{keyword}{set} \{ m\_padding = value; \}}
+\DoxyCodeLine{156         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a05ed962e084767f371f3971078a84ec7}\label{classTMPro_1_1TMP__SubMeshUI_a05ed962e084767f371f3971078a84ec7}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!sharedMaterial@{sharedMaterial}}
+\index{sharedMaterial@{sharedMaterial}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{sharedMaterial}{sharedMaterial}}
+{\footnotesize\ttfamily Material T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+shared\+Material\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The material to be assigned to this text object. 
+
+
+
+Definition at line 84 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84         \{}
+\DoxyCodeLine{85             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_sharedMaterial; \}}
+\DoxyCodeLine{86             \textcolor{keyword}{set} \{ SetSharedMaterial(value); \}}
+\DoxyCodeLine{87         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SubMeshUI_a4d6484238e6c880ce9c7065cf9172db2}\label{classTMPro_1_1TMP__SubMeshUI_a4d6484238e6c880ce9c7065cf9172db2}} 
+\index{TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}!spriteAsset@{spriteAsset}}
+\index{spriteAsset@{spriteAsset}!TMPro.TMP\_SubMeshUI@{TMPro.TMP\_SubMeshUI}}
+\doxysubsubsection{\texorpdfstring{spriteAsset}{spriteAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+sprite\+Asset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The T\+MP Sprite Asset assigned to this sub text object. 
+
+
+
+Definition at line 30 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30         \{}
+\DoxyCodeLine{31             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_spriteAsset; \}}
+\DoxyCodeLine{32             \textcolor{keyword}{set} \{ m\_spriteAsset = value; \}}
+\DoxyCodeLine{33         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Runtime/T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,832 @@
+\hypertarget{structTMPro_1_1TMP__MeshInfo}{}\doxysection{T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info Struct Reference}
+\label{structTMPro_1_1TMP__MeshInfo}\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+
+
+Structure which contains the vertex attributes (geometry) of the text object.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_a457cf31e803ba04bcbc37a88fe70ab12}{T\+M\+P\+\_\+\+Mesh\+Info}} (Mesh mesh, int size)
+\begin{DoxyCompactList}\small\item\em Function to pre-\/allocate vertex attributes for a mesh of size X. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_a34bbcd82d7626fdc9d7598eac632f2b9}{T\+M\+P\+\_\+\+Mesh\+Info}} (Mesh mesh, int size, bool is\+Volumetric)
+\begin{DoxyCompactList}\small\item\em Function to pre-\/allocate vertex attributes for a mesh of size X. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_ac2631e006b2107ce543716541a48e5d1}{Resize\+Mesh\+Info}} (int size)
+\begin{DoxyCompactList}\small\item\em Function to resized the content of Mesh\+Data and re-\/assign normals, tangents and triangles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_a4948f8abff302bcc8b6ea6cfc2f0af3d}{Resize\+Mesh\+Info}} (int size, bool is\+Volumetric)
+\begin{DoxyCompactList}\small\item\em Function to resized the content of Mesh\+Data and re-\/assign normals, tangents and triangles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_add2e199157007db54ca91226a7d8a3dc}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Function to clear the vertices while preserving the Triangles, Normals and Tangents. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_ad1fe51b4a54d9707e40400ebcfae7dea}{Clear}} (bool upload\+Changes)
+\begin{DoxyCompactList}\small\item\em Function to clear the vertices while preserving the Triangles, Normals and Tangents. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_a7abd732cdaf4d54113166700701defd4}{Clear\+Unused\+Vertices}} ()
+\begin{DoxyCompactList}\small\item\em Function to clear the vertices while preserving the Triangles, Normals and Tangents. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_ad2667025b52d22291cc6c57fd5a95126}{Clear\+Unused\+Vertices}} (int start\+Index)
+\begin{DoxyCompactList}\small\item\em Function used to mark unused vertices as degenerate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_aba0fe3e04e63be7438407d54d7e1c1e8}{Clear\+Unused\+Vertices}} (int start\+Index, bool update\+Mesh)
+\begin{DoxyCompactList}\small\item\em Function used to mark unused vertices as degenerate an upload resulting data to the mesh. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_a2514314a12727c88ad96da1fc2dcbfab}\label{structTMPro_1_1TMP__MeshInfo_a2514314a12727c88ad96da1fc2dcbfab}} 
+void {\bfseries Sort\+Geometry} (Vertex\+Sorting\+Order order)
+\item 
+void \mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_af12a00628b4e8a24470a6f4656fee685}{Sort\+Geometry}} (I\+List$<$ int $>$ sorting\+Order)
+\begin{DoxyCompactList}\small\item\em Function to rearrange the quads of the text object to change their rendering order. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_aea0d76fdcacdb531d31b168575444c2a}{Swap\+Vertex\+Data}} (int src, int dst)
+\begin{DoxyCompactList}\small\item\em Method to swap the vertex attributes between src and dst quads. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_a2b53d43187ab86ccefe3f5dd6babcfef}\label{structTMPro_1_1TMP__MeshInfo_a2b53d43187ab86ccefe3f5dd6babcfef}} 
+Mesh {\bfseries mesh}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_a6546f16eff9f1de656a8f75415934aea}\label{structTMPro_1_1TMP__MeshInfo_a6546f16eff9f1de656a8f75415934aea}} 
+int {\bfseries vertex\+Count}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_a7f31f8c5b18a9d84129a7f2cb5981728}\label{structTMPro_1_1TMP__MeshInfo_a7f31f8c5b18a9d84129a7f2cb5981728}} 
+Vector3\mbox{[}$\,$\mbox{]} {\bfseries vertices}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_aefcdce93dcac35b872ddfff6200fa856}\label{structTMPro_1_1TMP__MeshInfo_aefcdce93dcac35b872ddfff6200fa856}} 
+Vector3\mbox{[}$\,$\mbox{]} {\bfseries normals}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_a15f45cfb1e38b9576d92f6025a767c40}\label{structTMPro_1_1TMP__MeshInfo_a15f45cfb1e38b9576d92f6025a767c40}} 
+Vector4\mbox{[}$\,$\mbox{]} {\bfseries tangents}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_aa6816d4ade18d6066c2c0b17d1fe5987}\label{structTMPro_1_1TMP__MeshInfo_aa6816d4ade18d6066c2c0b17d1fe5987}} 
+Vector2\mbox{[}$\,$\mbox{]} {\bfseries uvs0}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_a2ea56e0aace99edfe971760bd76a890d}\label{structTMPro_1_1TMP__MeshInfo_a2ea56e0aace99edfe971760bd76a890d}} 
+Vector2\mbox{[}$\,$\mbox{]} {\bfseries uvs2}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_afcf1ebf60c4633e1b14cb1855347d836}\label{structTMPro_1_1TMP__MeshInfo_afcf1ebf60c4633e1b14cb1855347d836}} 
+Color32\mbox{[}$\,$\mbox{]} {\bfseries colors32}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_a377745ba8f3d9d45b012198fad04ae3b}\label{structTMPro_1_1TMP__MeshInfo_a377745ba8f3d9d45b012198fad04ae3b}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries triangles}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure which contains the vertex attributes (geometry) of the text object. 
+
+
+
+Definition at line 15 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_a457cf31e803ba04bcbc37a88fe70ab12}\label{structTMPro_1_1TMP__MeshInfo_a457cf31e803ba04bcbc37a88fe70ab12}} 
+\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}!TMP\_MeshInfo@{TMP\_MeshInfo}}
+\index{TMP\_MeshInfo@{TMP\_MeshInfo}!TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+\doxysubsubsection{\texorpdfstring{TMP\_MeshInfo()}{TMP\_MeshInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info.\+T\+M\+P\+\_\+\+Mesh\+Info (\begin{DoxyParamCaption}\item[{Mesh}]{mesh,  }\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to pre-\/allocate vertex attributes for a mesh of size X. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41         \{}
+\DoxyCodeLine{42             \textcolor{comment}{// Reference to the TMP Text Component.}}
+\DoxyCodeLine{43             \textcolor{comment}{//this.textComponent = null;}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45             \textcolor{comment}{// Clear existing mesh data}}
+\DoxyCodeLine{46             \textcolor{keywordflow}{if} (mesh == \textcolor{keyword}{null})}
+\DoxyCodeLine{47                 mesh = \textcolor{keyword}{new} Mesh();}
+\DoxyCodeLine{48             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{49                 mesh.Clear();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51             this.mesh = mesh;}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53             \textcolor{comment}{// Limit the mesh to less than 65535 vertices which is the limit for Unity's Mesh.}}
+\DoxyCodeLine{54             size = Mathf.Min(size, 16383);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56             \textcolor{keywordtype}{int} sizeX4 = size * 4;}
+\DoxyCodeLine{57             \textcolor{keywordtype}{int} sizeX6 = size * 6;}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59             this.vertexCount = 0;}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61             this.vertices = \textcolor{keyword}{new} Vector3[sizeX4];}
+\DoxyCodeLine{62             this.uvs0 = \textcolor{keyword}{new} Vector2[sizeX4];}
+\DoxyCodeLine{63             this.uvs2 = \textcolor{keyword}{new} Vector2[sizeX4];}
+\DoxyCodeLine{64             \textcolor{comment}{//this.uvs4 = new Vector2[sizeX4]; // SDF scale data}}
+\DoxyCodeLine{65             this.colors32 = \textcolor{keyword}{new} Color32[sizeX4];}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67             this.normals = \textcolor{keyword}{new} Vector3[sizeX4];}
+\DoxyCodeLine{68             this.tangents = \textcolor{keyword}{new} Vector4[sizeX4];}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70             this.triangles = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[sizeX6];}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72             \textcolor{keywordtype}{int} index\_X6 = 0;}
+\DoxyCodeLine{73             \textcolor{keywordtype}{int} index\_X4 = 0;}
+\DoxyCodeLine{74             \textcolor{keywordflow}{while} (index\_X4 / 4 < size)}
+\DoxyCodeLine{75             \{}
+\DoxyCodeLine{76                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 4; i++)}
+\DoxyCodeLine{77                 \{}
+\DoxyCodeLine{78                     this.vertices[index\_X4 + i] = Vector3.zero;}
+\DoxyCodeLine{79                     this.uvs0[index\_X4 + i] = Vector2.zero;}
+\DoxyCodeLine{80                     this.uvs2[index\_X4 + i] = Vector2.zero;}
+\DoxyCodeLine{81                     \textcolor{comment}{//this.uvs4[index\_X4 + i] = Vector2.zero;}}
+\DoxyCodeLine{82                     this.colors32[index\_X4 + i] = s\_DefaultColor;}
+\DoxyCodeLine{83                     this.normals[index\_X4 + i] = s\_DefaultNormal;}
+\DoxyCodeLine{84                     this.tangents[index\_X4 + i] = s\_DefaultTangent;}
+\DoxyCodeLine{85                 \}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87                 this.triangles[index\_X6 + 0] = index\_X4 + 0;}
+\DoxyCodeLine{88                 this.triangles[index\_X6 + 1] = index\_X4 + 1;}
+\DoxyCodeLine{89                 this.triangles[index\_X6 + 2] = index\_X4 + 2;}
+\DoxyCodeLine{90                 this.triangles[index\_X6 + 3] = index\_X4 + 2;}
+\DoxyCodeLine{91                 this.triangles[index\_X6 + 4] = index\_X4 + 3;}
+\DoxyCodeLine{92                 this.triangles[index\_X6 + 5] = index\_X4 + 0;}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94                 index\_X4 += 4;}
+\DoxyCodeLine{95                 index\_X6 += 6;}
+\DoxyCodeLine{96             \}}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98             \textcolor{comment}{// Pre-\/assign base vertex attributes.}}
+\DoxyCodeLine{99             this.mesh.vertices = this.vertices;}
+\DoxyCodeLine{100             this.mesh.normals = this.normals;}
+\DoxyCodeLine{101             this.mesh.tangents = this.tangents;}
+\DoxyCodeLine{102             this.mesh.triangles = this.triangles;}
+\DoxyCodeLine{103             this.mesh.bounds = \textcolor{keyword}{new} Bounds(Vector3.zero, \textcolor{keyword}{new} Vector3(3840, 2160, 0));}
+\DoxyCodeLine{104         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_a34bbcd82d7626fdc9d7598eac632f2b9}\label{structTMPro_1_1TMP__MeshInfo_a34bbcd82d7626fdc9d7598eac632f2b9}} 
+\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}!TMP\_MeshInfo@{TMP\_MeshInfo}}
+\index{TMP\_MeshInfo@{TMP\_MeshInfo}!TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+\doxysubsubsection{\texorpdfstring{TMP\_MeshInfo()}{TMP\_MeshInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info.\+T\+M\+P\+\_\+\+Mesh\+Info (\begin{DoxyParamCaption}\item[{Mesh}]{mesh,  }\item[{int}]{size,  }\item[{bool}]{is\+Volumetric }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to pre-\/allocate vertex attributes for a mesh of size X. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh} & \\
+\hline
+{\em size} & \\
+\hline
+{\em is\+Volumetric} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 113 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{114         \{}
+\DoxyCodeLine{115             \textcolor{comment}{// Reference to the TMP Text Component.}}
+\DoxyCodeLine{116             \textcolor{comment}{//this.textComponent = null;}}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118             \textcolor{comment}{// Clear existing mesh data}}
+\DoxyCodeLine{119             \textcolor{keywordflow}{if} (mesh == \textcolor{keyword}{null})}
+\DoxyCodeLine{120                 mesh = \textcolor{keyword}{new} Mesh();}
+\DoxyCodeLine{121             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{122                 mesh.Clear();}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124             this.mesh = mesh;}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126             \textcolor{keywordtype}{int} s0 = !isVolumetric ? 4 : 8;}
+\DoxyCodeLine{127             \textcolor{keywordtype}{int} s1 = !isVolumetric ? 6 : 36;}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129             \textcolor{comment}{// Limit the mesh to less than 65535 vertices which is the limit for Unity's Mesh.}}
+\DoxyCodeLine{130             size = Mathf.Min(size, 65532 / s0);}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132             \textcolor{keywordtype}{int} size\_x\_s0 = size * s0;}
+\DoxyCodeLine{133             \textcolor{keywordtype}{int} size\_x\_s1 = size * s1;}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135             this.vertexCount = 0;}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137             this.vertices = \textcolor{keyword}{new} Vector3[size\_x\_s0];}
+\DoxyCodeLine{138             this.uvs0 = \textcolor{keyword}{new} Vector2[size\_x\_s0];}
+\DoxyCodeLine{139             this.uvs2 = \textcolor{keyword}{new} Vector2[size\_x\_s0];}
+\DoxyCodeLine{140             \textcolor{comment}{//this.uvs4 = new Vector2[sizeX8]; // SDF scale data}}
+\DoxyCodeLine{141             this.colors32 = \textcolor{keyword}{new} Color32[size\_x\_s0];}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143             this.normals = \textcolor{keyword}{new} Vector3[size\_x\_s0];}
+\DoxyCodeLine{144             this.tangents = \textcolor{keyword}{new} Vector4[size\_x\_s0];}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146             this.triangles = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[size\_x\_s1];}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148             \textcolor{keywordtype}{int} index\_x\_s0 = 0;}
+\DoxyCodeLine{149             \textcolor{keywordtype}{int} index\_x\_s1 = 0;}
+\DoxyCodeLine{150             \textcolor{keywordflow}{while} (index\_x\_s0 / s0 < size)}
+\DoxyCodeLine{151             \{}
+\DoxyCodeLine{152                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < s0; i++)}
+\DoxyCodeLine{153                 \{}
+\DoxyCodeLine{154                     this.vertices[index\_x\_s0 + i] = Vector3.zero;}
+\DoxyCodeLine{155                     this.uvs0[index\_x\_s0 + i] = Vector2.zero;}
+\DoxyCodeLine{156                     this.uvs2[index\_x\_s0 + i] = Vector2.zero;}
+\DoxyCodeLine{157                     \textcolor{comment}{//this.uvs4[index\_X4 + i] = Vector2.zero;}}
+\DoxyCodeLine{158                     this.colors32[index\_x\_s0 + i] = s\_DefaultColor;}
+\DoxyCodeLine{159                     this.normals[index\_x\_s0 + i] = s\_DefaultNormal;}
+\DoxyCodeLine{160                     this.tangents[index\_x\_s0 + i] = s\_DefaultTangent;}
+\DoxyCodeLine{161                 \}}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163                 \textcolor{comment}{// Front Face}}
+\DoxyCodeLine{164                 this.triangles[index\_x\_s1 + 0] = index\_x\_s0 + 0;}
+\DoxyCodeLine{165                 this.triangles[index\_x\_s1 + 1] = index\_x\_s0 + 1;}
+\DoxyCodeLine{166                 this.triangles[index\_x\_s1 + 2] = index\_x\_s0 + 2;}
+\DoxyCodeLine{167                 this.triangles[index\_x\_s1 + 3] = index\_x\_s0 + 2;}
+\DoxyCodeLine{168                 this.triangles[index\_x\_s1 + 4] = index\_x\_s0 + 3;}
+\DoxyCodeLine{169                 this.triangles[index\_x\_s1 + 5] = index\_x\_s0 + 0;}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171                 \textcolor{keywordflow}{if} (isVolumetric)}
+\DoxyCodeLine{172                 \{}
+\DoxyCodeLine{173                     \textcolor{comment}{// Left Face}}
+\DoxyCodeLine{174                     this.triangles[index\_x\_s1 + 6] = index\_x\_s0 + 4;}
+\DoxyCodeLine{175                     this.triangles[index\_x\_s1 + 7] = index\_x\_s0 + 5;}
+\DoxyCodeLine{176                     this.triangles[index\_x\_s1 + 8] = index\_x\_s0 + 1;}
+\DoxyCodeLine{177                     this.triangles[index\_x\_s1 + 9] = index\_x\_s0 + 1;}
+\DoxyCodeLine{178                     this.triangles[index\_x\_s1 + 10] = index\_x\_s0 + 0;}
+\DoxyCodeLine{179                     this.triangles[index\_x\_s1 + 11] = index\_x\_s0 + 4;}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181                     \textcolor{comment}{// Right Face}}
+\DoxyCodeLine{182                     this.triangles[index\_x\_s1 + 12] = index\_x\_s0 + 3;}
+\DoxyCodeLine{183                     this.triangles[index\_x\_s1 + 13] = index\_x\_s0 + 2;}
+\DoxyCodeLine{184                     this.triangles[index\_x\_s1 + 14] = index\_x\_s0 + 6;}
+\DoxyCodeLine{185                     this.triangles[index\_x\_s1 + 15] = index\_x\_s0 + 6;}
+\DoxyCodeLine{186                     this.triangles[index\_x\_s1 + 16] = index\_x\_s0 + 7;}
+\DoxyCodeLine{187                     this.triangles[index\_x\_s1 + 17] = index\_x\_s0 + 3;}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189                     \textcolor{comment}{// Top Face}}
+\DoxyCodeLine{190                     this.triangles[index\_x\_s1 + 18] = index\_x\_s0 + 1;}
+\DoxyCodeLine{191                     this.triangles[index\_x\_s1 + 19] = index\_x\_s0 + 5;}
+\DoxyCodeLine{192                     this.triangles[index\_x\_s1 + 20] = index\_x\_s0 + 6;}
+\DoxyCodeLine{193                     this.triangles[index\_x\_s1 + 21] = index\_x\_s0 + 6;}
+\DoxyCodeLine{194                     this.triangles[index\_x\_s1 + 22] = index\_x\_s0 + 2;}
+\DoxyCodeLine{195                     this.triangles[index\_x\_s1 + 23] = index\_x\_s0 + 1;}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197                     \textcolor{comment}{// Bottom Face}}
+\DoxyCodeLine{198                     this.triangles[index\_x\_s1 + 24] = index\_x\_s0 + 4;}
+\DoxyCodeLine{199                     this.triangles[index\_x\_s1 + 25] = index\_x\_s0 + 0;}
+\DoxyCodeLine{200                     this.triangles[index\_x\_s1 + 26] = index\_x\_s0 + 3;}
+\DoxyCodeLine{201                     this.triangles[index\_x\_s1 + 27] = index\_x\_s0 + 3;}
+\DoxyCodeLine{202                     this.triangles[index\_x\_s1 + 28] = index\_x\_s0 + 7;}
+\DoxyCodeLine{203                     this.triangles[index\_x\_s1 + 29] = index\_x\_s0 + 4;}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205                     \textcolor{comment}{// Back Face}}
+\DoxyCodeLine{206                     this.triangles[index\_x\_s1 + 30] = index\_x\_s0 + 7;}
+\DoxyCodeLine{207                     this.triangles[index\_x\_s1 + 31] = index\_x\_s0 + 6;}
+\DoxyCodeLine{208                     this.triangles[index\_x\_s1 + 32] = index\_x\_s0 + 5;}
+\DoxyCodeLine{209                     this.triangles[index\_x\_s1 + 33] = index\_x\_s0 + 5;}
+\DoxyCodeLine{210                     this.triangles[index\_x\_s1 + 34] = index\_x\_s0 + 4;}
+\DoxyCodeLine{211                     this.triangles[index\_x\_s1 + 35] = index\_x\_s0 + 7;}
+\DoxyCodeLine{212                 \}}
+\DoxyCodeLine{213 }
+\DoxyCodeLine{214                 index\_x\_s0 += s0;}
+\DoxyCodeLine{215                 index\_x\_s1 += s1;}
+\DoxyCodeLine{216             \}}
+\DoxyCodeLine{217 }
+\DoxyCodeLine{218             \textcolor{comment}{// Pre-\/assign base vertex attributes.}}
+\DoxyCodeLine{219             this.mesh.vertices = this.vertices;}
+\DoxyCodeLine{220             this.mesh.normals = this.normals;}
+\DoxyCodeLine{221             this.mesh.tangents = this.tangents;}
+\DoxyCodeLine{222             this.mesh.triangles = this.triangles;}
+\DoxyCodeLine{223             this.mesh.bounds = \textcolor{keyword}{new} Bounds(Vector3.zero, \textcolor{keyword}{new} Vector3(3840, 2160, 64));}
+\DoxyCodeLine{224         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_add2e199157007db54ca91226a7d8a3dc}\label{structTMPro_1_1TMP__MeshInfo_add2e199157007db54ca91226a7d8a3dc}} 
+\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}!Clear@{Clear}}
+\index{Clear@{Clear}!TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to clear the vertices while preserving the Triangles, Normals and Tangents. 
+
+
+
+Definition at line 429 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{430         \{}
+\DoxyCodeLine{431             \textcolor{keywordflow}{if} (this.vertices == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{432 }
+\DoxyCodeLine{433             Array.Clear(this.vertices, 0, this.vertices.Length);}
+\DoxyCodeLine{434             this.vertexCount = 0;}
+\DoxyCodeLine{435 }
+\DoxyCodeLine{436             \textcolor{keywordflow}{if} (this.mesh != \textcolor{keyword}{null})}
+\DoxyCodeLine{437                 this.mesh.vertices = this.vertices;}
+\DoxyCodeLine{438         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_ad1fe51b4a54d9707e40400ebcfae7dea}\label{structTMPro_1_1TMP__MeshInfo_ad1fe51b4a54d9707e40400ebcfae7dea}} 
+\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}!Clear@{Clear}}
+\index{Clear@{Clear}!TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info.\+Clear (\begin{DoxyParamCaption}\item[{bool}]{upload\+Changes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to clear the vertices while preserving the Triangles, Normals and Tangents. 
+
+
+
+Definition at line 444 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{445         \{}
+\DoxyCodeLine{446             \textcolor{keywordflow}{if} (this.vertices == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{447 }
+\DoxyCodeLine{448             Array.Clear(this.vertices, 0, this.vertices.Length);}
+\DoxyCodeLine{449             this.vertexCount = 0;}
+\DoxyCodeLine{450 }
+\DoxyCodeLine{451             \textcolor{keywordflow}{if} (uploadChanges \&\& this.mesh != \textcolor{keyword}{null})}
+\DoxyCodeLine{452                 this.mesh.vertices = this.vertices;}
+\DoxyCodeLine{453         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_a7abd732cdaf4d54113166700701defd4}\label{structTMPro_1_1TMP__MeshInfo_a7abd732cdaf4d54113166700701defd4}} 
+\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}!ClearUnusedVertices@{ClearUnusedVertices}}
+\index{ClearUnusedVertices@{ClearUnusedVertices}!TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+\doxysubsubsection{\texorpdfstring{ClearUnusedVertices()}{ClearUnusedVertices()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info.\+Clear\+Unused\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to clear the vertices while preserving the Triangles, Normals and Tangents. 
+
+
+
+Definition at line 459 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{460         \{}
+\DoxyCodeLine{461             \textcolor{keywordtype}{int} length = vertices.Length -\/ vertexCount;}
+\DoxyCodeLine{462 }
+\DoxyCodeLine{463             \textcolor{keywordflow}{if} (length > 0)}
+\DoxyCodeLine{464                 Array.Clear(vertices, vertexCount, length);}
+\DoxyCodeLine{465         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_ad2667025b52d22291cc6c57fd5a95126}\label{structTMPro_1_1TMP__MeshInfo_ad2667025b52d22291cc6c57fd5a95126}} 
+\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}!ClearUnusedVertices@{ClearUnusedVertices}}
+\index{ClearUnusedVertices@{ClearUnusedVertices}!TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+\doxysubsubsection{\texorpdfstring{ClearUnusedVertices()}{ClearUnusedVertices()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info.\+Clear\+Unused\+Vertices (\begin{DoxyParamCaption}\item[{int}]{start\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function used to mark unused vertices as degenerate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Index} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 472 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{473         \{}
+\DoxyCodeLine{474             \textcolor{keywordtype}{int} length = this.vertices.Length -\/ startIndex;}
+\DoxyCodeLine{475 }
+\DoxyCodeLine{476             \textcolor{keywordflow}{if} (length > 0)}
+\DoxyCodeLine{477                 Array.Clear(this.vertices, startIndex, length);}
+\DoxyCodeLine{478         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_aba0fe3e04e63be7438407d54d7e1c1e8}\label{structTMPro_1_1TMP__MeshInfo_aba0fe3e04e63be7438407d54d7e1c1e8}} 
+\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}!ClearUnusedVertices@{ClearUnusedVertices}}
+\index{ClearUnusedVertices@{ClearUnusedVertices}!TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+\doxysubsubsection{\texorpdfstring{ClearUnusedVertices()}{ClearUnusedVertices()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info.\+Clear\+Unused\+Vertices (\begin{DoxyParamCaption}\item[{int}]{start\+Index,  }\item[{bool}]{update\+Mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function used to mark unused vertices as degenerate an upload resulting data to the mesh. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Index} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 485 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{486         \{}
+\DoxyCodeLine{487             \textcolor{keywordtype}{int} length = this.vertices.Length -\/ startIndex;}
+\DoxyCodeLine{488 }
+\DoxyCodeLine{489             \textcolor{keywordflow}{if} (length > 0)}
+\DoxyCodeLine{490                 Array.Clear(this.vertices, startIndex, length);}
+\DoxyCodeLine{491 }
+\DoxyCodeLine{492             \textcolor{keywordflow}{if} (updateMesh \&\& mesh != \textcolor{keyword}{null})}
+\DoxyCodeLine{493                 this.mesh.vertices = this.vertices;}
+\DoxyCodeLine{494         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_ac2631e006b2107ce543716541a48e5d1}\label{structTMPro_1_1TMP__MeshInfo_ac2631e006b2107ce543716541a48e5d1}} 
+\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}!ResizeMeshInfo@{ResizeMeshInfo}}
+\index{ResizeMeshInfo@{ResizeMeshInfo}!TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+\doxysubsubsection{\texorpdfstring{ResizeMeshInfo()}{ResizeMeshInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info.\+Resize\+Mesh\+Info (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to resized the content of Mesh\+Data and re-\/assign normals, tangents and triangles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Data} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 232 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{233         \{}
+\DoxyCodeLine{234             \textcolor{comment}{// Limit the mesh to less than 65535 vertices which is the limit for Unity's Mesh.}}
+\DoxyCodeLine{235             size = Mathf.Min(size, 16383);}
+\DoxyCodeLine{236 }
+\DoxyCodeLine{237             \textcolor{keywordtype}{int} size\_X4 = size * 4;}
+\DoxyCodeLine{238             \textcolor{keywordtype}{int} size\_X6 = size * 6;}
+\DoxyCodeLine{239 }
+\DoxyCodeLine{240             \textcolor{keywordtype}{int} previousSize = this.vertices.Length / 4;}
+\DoxyCodeLine{241 }
+\DoxyCodeLine{242             Array.Resize(ref this.vertices, size\_X4);}
+\DoxyCodeLine{243             Array.Resize(ref this.normals, size\_X4);}
+\DoxyCodeLine{244             Array.Resize(ref this.tangents, size\_X4);}
+\DoxyCodeLine{245 }
+\DoxyCodeLine{246             Array.Resize(ref this.uvs0, size\_X4);}
+\DoxyCodeLine{247             Array.Resize(ref this.uvs2, size\_X4);}
+\DoxyCodeLine{248             \textcolor{comment}{//Array.Resize(ref this.uvs4, size\_X4);}}
+\DoxyCodeLine{249 }
+\DoxyCodeLine{250             Array.Resize(ref this.colors32, size\_X4);}
+\DoxyCodeLine{251 }
+\DoxyCodeLine{252             Array.Resize(ref this.triangles, size\_X6);}
+\DoxyCodeLine{253 }
+\DoxyCodeLine{254 }
+\DoxyCodeLine{255             \textcolor{comment}{// Re-\/assign Normals, Tangents and Triangles}}
+\DoxyCodeLine{256             \textcolor{keywordflow}{if} (size <= previousSize)}
+\DoxyCodeLine{257             \{}
+\DoxyCodeLine{258                 this.mesh.triangles = this.triangles;}
+\DoxyCodeLine{259                 this.mesh.vertices = this.vertices;}
+\DoxyCodeLine{260                 this.mesh.normals = this.normals;}
+\DoxyCodeLine{261                 this.mesh.tangents = this.tangents;}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{263                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{264             \}}
+\DoxyCodeLine{265 }
+\DoxyCodeLine{266             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = previousSize; i < size; i++)}
+\DoxyCodeLine{267             \{}
+\DoxyCodeLine{268                 \textcolor{keywordtype}{int} index\_X4 = i * 4;}
+\DoxyCodeLine{269                 \textcolor{keywordtype}{int} index\_X6 = i * 6;}
+\DoxyCodeLine{270 }
+\DoxyCodeLine{271                 this.normals[0 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{272                 this.normals[1 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{273                 this.normals[2 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{274                 this.normals[3 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{275 }
+\DoxyCodeLine{276                 this.tangents[0 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{277                 this.tangents[1 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{278                 this.tangents[2 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{279                 this.tangents[3 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{280 }
+\DoxyCodeLine{281                 \textcolor{comment}{// Setup Triangles}}
+\DoxyCodeLine{282                 this.triangles[0 + index\_X6] = 0 + index\_X4;}
+\DoxyCodeLine{283                 this.triangles[1 + index\_X6] = 1 + index\_X4;}
+\DoxyCodeLine{284                 this.triangles[2 + index\_X6] = 2 + index\_X4;}
+\DoxyCodeLine{285                 this.triangles[3 + index\_X6] = 2 + index\_X4;}
+\DoxyCodeLine{286                 this.triangles[4 + index\_X6] = 3 + index\_X4;}
+\DoxyCodeLine{287                 this.triangles[5 + index\_X6] = 0 + index\_X4;}
+\DoxyCodeLine{288             \}}
+\DoxyCodeLine{289 }
+\DoxyCodeLine{290             this.mesh.vertices = this.vertices;}
+\DoxyCodeLine{291             this.mesh.normals = this.normals;}
+\DoxyCodeLine{292             this.mesh.tangents = this.tangents;}
+\DoxyCodeLine{293             this.mesh.triangles = this.triangles;}
+\DoxyCodeLine{294         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_a4948f8abff302bcc8b6ea6cfc2f0af3d}\label{structTMPro_1_1TMP__MeshInfo_a4948f8abff302bcc8b6ea6cfc2f0af3d}} 
+\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}!ResizeMeshInfo@{ResizeMeshInfo}}
+\index{ResizeMeshInfo@{ResizeMeshInfo}!TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+\doxysubsubsection{\texorpdfstring{ResizeMeshInfo()}{ResizeMeshInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info.\+Resize\+Mesh\+Info (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{bool}]{is\+Volumetric }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to resized the content of Mesh\+Data and re-\/assign normals, tangents and triangles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & \\
+\hline
+{\em is\+Volumetric} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 302 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{303         \{}
+\DoxyCodeLine{304             \textcolor{keywordtype}{int} s0 = !isVolumetric ? 4 : 8;}
+\DoxyCodeLine{305             \textcolor{keywordtype}{int} s1 = !isVolumetric ? 6 : 36;}
+\DoxyCodeLine{306 }
+\DoxyCodeLine{307             \textcolor{comment}{// Limit the mesh to less than 65535 vertices which is the limit for Unity's Mesh.}}
+\DoxyCodeLine{308             size = Mathf.Min(size, 65532 / s0);}
+\DoxyCodeLine{309 }
+\DoxyCodeLine{310             \textcolor{keywordtype}{int} size\_X4 = size * s0;}
+\DoxyCodeLine{311             \textcolor{keywordtype}{int} size\_X6 = size * s1;}
+\DoxyCodeLine{312 }
+\DoxyCodeLine{313             \textcolor{keywordtype}{int} previousSize = this.vertices.Length / s0;}
+\DoxyCodeLine{314 }
+\DoxyCodeLine{315             Array.Resize(ref this.vertices, size\_X4);}
+\DoxyCodeLine{316             Array.Resize(ref this.normals, size\_X4);}
+\DoxyCodeLine{317             Array.Resize(ref this.tangents, size\_X4);}
+\DoxyCodeLine{318 }
+\DoxyCodeLine{319             Array.Resize(ref this.uvs0, size\_X4);}
+\DoxyCodeLine{320             Array.Resize(ref this.uvs2, size\_X4);}
+\DoxyCodeLine{321             \textcolor{comment}{//Array.Resize(ref this.uvs4, size\_X4);}}
+\DoxyCodeLine{322 }
+\DoxyCodeLine{323             Array.Resize(ref this.colors32, size\_X4);}
+\DoxyCodeLine{324 }
+\DoxyCodeLine{325             Array.Resize(ref this.triangles, size\_X6);}
+\DoxyCodeLine{326 }
+\DoxyCodeLine{327 }
+\DoxyCodeLine{328             \textcolor{comment}{// Re-\/assign Normals, Tangents and Triangles}}
+\DoxyCodeLine{329             \textcolor{keywordflow}{if} (size <= previousSize)}
+\DoxyCodeLine{330             \{}
+\DoxyCodeLine{331                 this.mesh.triangles = this.triangles;}
+\DoxyCodeLine{332                 this.mesh.vertices = this.vertices;}
+\DoxyCodeLine{333                 this.mesh.normals = this.normals;}
+\DoxyCodeLine{334                 this.mesh.tangents = this.tangents;}
+\DoxyCodeLine{335 }
+\DoxyCodeLine{336                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{337             \}}
+\DoxyCodeLine{338 }
+\DoxyCodeLine{339             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = previousSize; i < size; i++)}
+\DoxyCodeLine{340             \{}
+\DoxyCodeLine{341                 \textcolor{keywordtype}{int} index\_X4 = i * s0;}
+\DoxyCodeLine{342                 \textcolor{keywordtype}{int} index\_X6 = i * s1;}
+\DoxyCodeLine{343 }
+\DoxyCodeLine{344                 this.normals[0 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{345                 this.normals[1 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{346                 this.normals[2 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{347                 this.normals[3 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{348 }
+\DoxyCodeLine{349                 this.tangents[0 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{350                 this.tangents[1 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{351                 this.tangents[2 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{352                 this.tangents[3 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{353 }
+\DoxyCodeLine{354                 \textcolor{keywordflow}{if} (isVolumetric)}
+\DoxyCodeLine{355                 \{}
+\DoxyCodeLine{356                     this.normals[4 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{357                     this.normals[5 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{358                     this.normals[6 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{359                     this.normals[7 + index\_X4] = s\_DefaultNormal;}
+\DoxyCodeLine{360 }
+\DoxyCodeLine{361                     this.tangents[4 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{362                     this.tangents[5 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{363                     this.tangents[6 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{364                     this.tangents[7 + index\_X4] = s\_DefaultTangent;}
+\DoxyCodeLine{365                 \}}
+\DoxyCodeLine{366 }
+\DoxyCodeLine{367                 \textcolor{comment}{// Setup Triangles}}
+\DoxyCodeLine{368                 this.triangles[0 + index\_X6] = 0 + index\_X4;}
+\DoxyCodeLine{369                 this.triangles[1 + index\_X6] = 1 + index\_X4;}
+\DoxyCodeLine{370                 this.triangles[2 + index\_X6] = 2 + index\_X4;}
+\DoxyCodeLine{371                 this.triangles[3 + index\_X6] = 2 + index\_X4;}
+\DoxyCodeLine{372                 this.triangles[4 + index\_X6] = 3 + index\_X4;}
+\DoxyCodeLine{373                 this.triangles[5 + index\_X6] = 0 + index\_X4;}
+\DoxyCodeLine{374 }
+\DoxyCodeLine{375                 \textcolor{keywordflow}{if} (isVolumetric)}
+\DoxyCodeLine{376                 \{}
+\DoxyCodeLine{377                     \textcolor{comment}{// Left Face}}
+\DoxyCodeLine{378                     this.triangles[index\_X6 + 6] = index\_X4 + 4;}
+\DoxyCodeLine{379                     this.triangles[index\_X6 + 7] = index\_X4 + 5;}
+\DoxyCodeLine{380                     this.triangles[index\_X6 + 8] = index\_X4 + 1;}
+\DoxyCodeLine{381                     this.triangles[index\_X6 + 9] = index\_X4 + 1;}
+\DoxyCodeLine{382                     this.triangles[index\_X6 + 10] = index\_X4 + 0;}
+\DoxyCodeLine{383                     this.triangles[index\_X6 + 11] = index\_X4 + 4;}
+\DoxyCodeLine{384 }
+\DoxyCodeLine{385                     \textcolor{comment}{// Right Face}}
+\DoxyCodeLine{386                     this.triangles[index\_X6 + 12] = index\_X4 + 3;}
+\DoxyCodeLine{387                     this.triangles[index\_X6 + 13] = index\_X4 + 2;}
+\DoxyCodeLine{388                     this.triangles[index\_X6 + 14] = index\_X4 + 6;}
+\DoxyCodeLine{389                     this.triangles[index\_X6 + 15] = index\_X4 + 6;}
+\DoxyCodeLine{390                     this.triangles[index\_X6 + 16] = index\_X4 + 7;}
+\DoxyCodeLine{391                     this.triangles[index\_X6 + 17] = index\_X4 + 3;}
+\DoxyCodeLine{392 }
+\DoxyCodeLine{393                     \textcolor{comment}{// Top Face}}
+\DoxyCodeLine{394                     this.triangles[index\_X6 + 18] = index\_X4 + 1;}
+\DoxyCodeLine{395                     this.triangles[index\_X6 + 19] = index\_X4 + 5;}
+\DoxyCodeLine{396                     this.triangles[index\_X6 + 20] = index\_X4 + 6;}
+\DoxyCodeLine{397                     this.triangles[index\_X6 + 21] = index\_X4 + 6;}
+\DoxyCodeLine{398                     this.triangles[index\_X6 + 22] = index\_X4 + 2;}
+\DoxyCodeLine{399                     this.triangles[index\_X6 + 23] = index\_X4 + 1;}
+\DoxyCodeLine{400 }
+\DoxyCodeLine{401                     \textcolor{comment}{// Bottom Face}}
+\DoxyCodeLine{402                     this.triangles[index\_X6 + 24] = index\_X4 + 4;}
+\DoxyCodeLine{403                     this.triangles[index\_X6 + 25] = index\_X4 + 0;}
+\DoxyCodeLine{404                     this.triangles[index\_X6 + 26] = index\_X4 + 3;}
+\DoxyCodeLine{405                     this.triangles[index\_X6 + 27] = index\_X4 + 3;}
+\DoxyCodeLine{406                     this.triangles[index\_X6 + 28] = index\_X4 + 7;}
+\DoxyCodeLine{407                     this.triangles[index\_X6 + 29] = index\_X4 + 4;}
+\DoxyCodeLine{408 }
+\DoxyCodeLine{409                     \textcolor{comment}{// Back Face}}
+\DoxyCodeLine{410                     this.triangles[index\_X6 + 30] = index\_X4 + 7;}
+\DoxyCodeLine{411                     this.triangles[index\_X6 + 31] = index\_X4 + 6;}
+\DoxyCodeLine{412                     this.triangles[index\_X6 + 32] = index\_X4 + 5;}
+\DoxyCodeLine{413                     this.triangles[index\_X6 + 33] = index\_X4 + 5;}
+\DoxyCodeLine{414                     this.triangles[index\_X6 + 34] = index\_X4 + 4;}
+\DoxyCodeLine{415                     this.triangles[index\_X6 + 35] = index\_X4 + 7;}
+\DoxyCodeLine{416                 \}}
+\DoxyCodeLine{417             \}}
+\DoxyCodeLine{418 }
+\DoxyCodeLine{419             this.mesh.vertices = this.vertices;}
+\DoxyCodeLine{420             this.mesh.normals = this.normals;}
+\DoxyCodeLine{421             this.mesh.tangents = this.tangents;}
+\DoxyCodeLine{422             this.mesh.triangles = this.triangles;}
+\DoxyCodeLine{423         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_af12a00628b4e8a24470a6f4656fee685}\label{structTMPro_1_1TMP__MeshInfo_af12a00628b4e8a24470a6f4656fee685}} 
+\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}!SortGeometry@{SortGeometry}}
+\index{SortGeometry@{SortGeometry}!TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+\doxysubsubsection{\texorpdfstring{SortGeometry()}{SortGeometry()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info.\+Sort\+Geometry (\begin{DoxyParamCaption}\item[{I\+List$<$ int $>$}]{sorting\+Order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to rearrange the quads of the text object to change their rendering order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sorting\+Order} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 527 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{528         \{}
+\DoxyCodeLine{529             \textcolor{comment}{// Make sure the sorting order array is not larger than the vertices array.}}
+\DoxyCodeLine{530             \textcolor{keywordtype}{int} indexCount = sortingOrder.Count;}
+\DoxyCodeLine{531 }
+\DoxyCodeLine{532             \textcolor{keywordflow}{if} (indexCount * 4 > vertices.Length) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{533 }
+\DoxyCodeLine{534             \textcolor{keywordtype}{int} src\_index;}
+\DoxyCodeLine{535 }
+\DoxyCodeLine{536             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} dst\_index = 0; dst\_index < indexCount; dst\_index++)}
+\DoxyCodeLine{537             \{}
+\DoxyCodeLine{538                 src\_index = sortingOrder[dst\_index];}
+\DoxyCodeLine{539 }
+\DoxyCodeLine{540                 \textcolor{keywordflow}{while} (src\_index < dst\_index)}
+\DoxyCodeLine{541                 \{}
+\DoxyCodeLine{542                     src\_index = sortingOrder[src\_index];}
+\DoxyCodeLine{543                 \}}
+\DoxyCodeLine{544 }
+\DoxyCodeLine{545                 \textcolor{comment}{// Swap items}}
+\DoxyCodeLine{546                 \textcolor{keywordflow}{if} (src\_index != dst\_index)}
+\DoxyCodeLine{547                     \mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_aea0d76fdcacdb531d31b168575444c2a}{SwapVertexData}}(src\_index * 4, dst\_index * 4);}
+\DoxyCodeLine{548 }
+\DoxyCodeLine{549                 \textcolor{comment}{//Debug.Log("Swap element [" + dst\_index + "] with [" + src\_index + "]. Vertex[" + dst\_index + "] is " + vertices[dst\_index * 4].z);}}
+\DoxyCodeLine{550             \}}
+\DoxyCodeLine{551         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{structTMPro_1_1TMP__MeshInfo_aea0d76fdcacdb531d31b168575444c2a}\label{structTMPro_1_1TMP__MeshInfo_aea0d76fdcacdb531d31b168575444c2a}} 
+\index{TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}!SwapVertexData@{SwapVertexData}}
+\index{SwapVertexData@{SwapVertexData}!TMPro.TMP\_MeshInfo@{TMPro.TMP\_MeshInfo}}
+\doxysubsubsection{\texorpdfstring{SwapVertexData()}{SwapVertexData()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Mesh\+Info.\+Swap\+Vertex\+Data (\begin{DoxyParamCaption}\item[{int}]{src,  }\item[{int}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Method to swap the vertex attributes between src and dst quads. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & Index of the first vertex attribute of the source character / quad.\\
+\hline
+{\em dst} & Index of the first vertex attribute of the destination character / quad.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 559 of file T\+M\+P\+\_\+\+Mesh\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{560         \{}
+\DoxyCodeLine{561             \textcolor{keywordtype}{int} src\_Index = src; \textcolor{comment}{//  * 4;}}
+\DoxyCodeLine{562             \textcolor{keywordtype}{int} dst\_Index = dst; \textcolor{comment}{// * 4;}}
+\DoxyCodeLine{563 }
+\DoxyCodeLine{564             \textcolor{comment}{// Swap vertices}}
+\DoxyCodeLine{565             Vector3 vertex;}
+\DoxyCodeLine{566             vertex = vertices[dst\_Index + 0];}
+\DoxyCodeLine{567             vertices[dst\_Index + 0] = vertices[src\_Index + 0];}
+\DoxyCodeLine{568             vertices[src\_Index + 0] = vertex;}
+\DoxyCodeLine{569 }
+\DoxyCodeLine{570             vertex = vertices[dst\_Index + 1];}
+\DoxyCodeLine{571             vertices[dst\_Index + 1] = vertices[src\_Index + 1];}
+\DoxyCodeLine{572             vertices[src\_Index + 1] = vertex;}
+\DoxyCodeLine{573 }
+\DoxyCodeLine{574             vertex = vertices[dst\_Index + 2];}
+\DoxyCodeLine{575             vertices[dst\_Index + 2] = vertices[src\_Index + 2];}
+\DoxyCodeLine{576             vertices[src\_Index + 2] = vertex;}
+\DoxyCodeLine{577 }
+\DoxyCodeLine{578             vertex = vertices[dst\_Index + 3];}
+\DoxyCodeLine{579             vertices[dst\_Index + 3] = vertices[src\_Index + 3];}
+\DoxyCodeLine{580             vertices[src\_Index + 3] = vertex;}
+\DoxyCodeLine{581 }
+\DoxyCodeLine{582 }
+\DoxyCodeLine{583             \textcolor{comment}{//Swap UVs0}}
+\DoxyCodeLine{584             Vector2 uvs;}
+\DoxyCodeLine{585             uvs = uvs0[dst\_Index + 0];}
+\DoxyCodeLine{586             uvs0[dst\_Index + 0] = uvs0[src\_Index + 0];}
+\DoxyCodeLine{587             uvs0[src\_Index + 0] = uvs;}
+\DoxyCodeLine{588 }
+\DoxyCodeLine{589             uvs = uvs0[dst\_Index + 1];}
+\DoxyCodeLine{590             uvs0[dst\_Index + 1] = uvs0[src\_Index + 1];}
+\DoxyCodeLine{591             uvs0[src\_Index + 1] = uvs;}
+\DoxyCodeLine{592 }
+\DoxyCodeLine{593             uvs = uvs0[dst\_Index + 2];}
+\DoxyCodeLine{594             uvs0[dst\_Index + 2] = uvs0[src\_Index + 2];}
+\DoxyCodeLine{595             uvs0[src\_Index + 2] = uvs;}
+\DoxyCodeLine{596 }
+\DoxyCodeLine{597             uvs = uvs0[dst\_Index + 3];}
+\DoxyCodeLine{598             uvs0[dst\_Index + 3] = uvs0[src\_Index + 3];}
+\DoxyCodeLine{599             uvs0[src\_Index + 3] = uvs;}
+\DoxyCodeLine{600 }
+\DoxyCodeLine{601             \textcolor{comment}{// Swap UVs2}}
+\DoxyCodeLine{602             uvs = uvs2[dst\_Index + 0];}
+\DoxyCodeLine{603             uvs2[dst\_Index + 0] = uvs2[src\_Index + 0];}
+\DoxyCodeLine{604             uvs2[src\_Index + 0] = uvs;}
+\DoxyCodeLine{605 }
+\DoxyCodeLine{606             uvs = uvs2[dst\_Index + 1];}
+\DoxyCodeLine{607             uvs2[dst\_Index + 1] = uvs2[src\_Index + 1];}
+\DoxyCodeLine{608             uvs2[src\_Index + 1] = uvs;}
+\DoxyCodeLine{609 }
+\DoxyCodeLine{610             uvs = uvs2[dst\_Index + 2];}
+\DoxyCodeLine{611             uvs2[dst\_Index + 2] = uvs2[src\_Index + 2];}
+\DoxyCodeLine{612             uvs2[src\_Index + 2] = uvs;}
+\DoxyCodeLine{613 }
+\DoxyCodeLine{614             uvs = uvs2[dst\_Index + 3];}
+\DoxyCodeLine{615             uvs2[dst\_Index + 3] = uvs2[src\_Index + 3];}
+\DoxyCodeLine{616             uvs2[src\_Index + 3] = uvs;}
+\DoxyCodeLine{617 }
+\DoxyCodeLine{618             \textcolor{comment}{// Vertex Colors}}
+\DoxyCodeLine{619             Color32 color;}
+\DoxyCodeLine{620             color = colors32[dst\_Index + 0];}
+\DoxyCodeLine{621             colors32[dst\_Index + 0] = colors32[src\_Index + 0];}
+\DoxyCodeLine{622             colors32[src\_Index + 0] = color;}
+\DoxyCodeLine{623 }
+\DoxyCodeLine{624             color = colors32[dst\_Index + 1];}
+\DoxyCodeLine{625             colors32[dst\_Index + 1] = colors32[src\_Index + 1];}
+\DoxyCodeLine{626             colors32[src\_Index + 1] = color;}
+\DoxyCodeLine{627 }
+\DoxyCodeLine{628             color = colors32[dst\_Index + 2];}
+\DoxyCodeLine{629             colors32[dst\_Index + 2] = colors32[src\_Index + 2];}
+\DoxyCodeLine{630             colors32[src\_Index + 2] = color;}
+\DoxyCodeLine{631 }
+\DoxyCodeLine{632             color = colors32[dst\_Index + 3];}
+\DoxyCodeLine{633             colors32[dst\_Index + 3] = colors32[src\_Index + 3];}
+\DoxyCodeLine{634             colors32[src\_Index + 3] = color;}
+\DoxyCodeLine{635         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Runtime/T\+M\+P\+\_\+\+Mesh\+Info.\+cs\end{DoxyCompactItemize}

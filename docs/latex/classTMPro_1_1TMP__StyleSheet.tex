@@ -1,0 +1,183 @@
+\hypertarget{classTMPro_1_1TMP__StyleSheet}{}\doxysection{T\+M\+Pro.\+T\+M\+P\+\_\+\+Style\+Sheet Class Reference}
+\label{classTMPro_1_1TMP__StyleSheet}\index{TMPro.TMP\_StyleSheet@{TMPro.TMP\_StyleSheet}}
+Inheritance diagram for T\+M\+Pro.\+T\+M\+P\+\_\+\+Style\+Sheet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTMPro_1_1TMP__StyleSheet}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__StyleSheet_af80d7de5e502d36e00ccfe5f281ed3cb}\label{classTMPro_1_1TMP__StyleSheet_af80d7de5e502d36e00ccfe5f281ed3cb}} 
+void {\bfseries Update\+Style\+Dictionary\+Key} (int old\+\_\+key, int new\+\_\+key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet}{T\+M\+P\+\_\+\+Style\+Sheet}} \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet_a653c12d4d1759a054f7f37a2d0b33924}{Load\+Default\+Style\+Sheet}} ()
+\begin{DoxyCompactList}\small\item\em Static Function to load the Default Style Sheet. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classTMPro_1_1TMP__Style}{T\+M\+P\+\_\+\+Style}} \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet_a238d4f39d98e02352e4a9633ba08d126}{Get\+Style}} (int hash\+Code)
+\begin{DoxyCompactList}\small\item\em Function to retrieve the Style matching the Hash\+Code. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet_a4bab3ca47934d537b41ae066eabac404}{Update\+Style\+Sheet}} ()
+\begin{DoxyCompactList}\small\item\em Function to update the internal reference to a newly assigned style sheet in the T\+MP Settings. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet_aa7ee1ff983631f35b479fbda8df90829}{Refresh\+Styles}} ()
+\begin{DoxyCompactList}\small\item\em Function to refresh the Style Dictionary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet}{T\+M\+P\+\_\+\+Style\+Sheet}} \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet_aa857b610ca839ac49f96ac6bc66ac201}{instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get a singleton instance of the \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet}{T\+M\+P\+\_\+\+Style\+Sheet}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file T\+M\+P\+\_\+\+Style\+Sheet.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__StyleSheet_a238d4f39d98e02352e4a9633ba08d126}\label{classTMPro_1_1TMP__StyleSheet_a238d4f39d98e02352e4a9633ba08d126}} 
+\index{TMPro.TMP\_StyleSheet@{TMPro.TMP\_StyleSheet}!GetStyle@{GetStyle}}
+\index{GetStyle@{GetStyle}!TMPro.TMP\_StyleSheet@{TMPro.TMP\_StyleSheet}}
+\doxysubsubsection{\texorpdfstring{GetStyle()}{GetStyle()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classTMPro_1_1TMP__Style}{T\+M\+P\+\_\+\+Style}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Style\+Sheet.\+Get\+Style (\begin{DoxyParamCaption}\item[{int}]{hash\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function to retrieve the Style matching the Hash\+Code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 59 of file T\+M\+P\+\_\+\+Style\+Sheet.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet_aa857b610ca839ac49f96ac6bc66ac201}{instance}}.GetStyleInternal(hashCode);}
+\DoxyCodeLine{62         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__StyleSheet_a653c12d4d1759a054f7f37a2d0b33924}\label{classTMPro_1_1TMP__StyleSheet_a653c12d4d1759a054f7f37a2d0b33924}} 
+\index{TMPro.TMP\_StyleSheet@{TMPro.TMP\_StyleSheet}!LoadDefaultStyleSheet@{LoadDefaultStyleSheet}}
+\index{LoadDefaultStyleSheet@{LoadDefaultStyleSheet}!TMPro.TMP\_StyleSheet@{TMPro.TMP\_StyleSheet}}
+\doxysubsubsection{\texorpdfstring{LoadDefaultStyleSheet()}{LoadDefaultStyleSheet()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet}{T\+M\+P\+\_\+\+Style\+Sheet}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Style\+Sheet.\+Load\+Default\+Style\+Sheet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Static Function to load the Default Style Sheet. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 48 of file T\+M\+P\+\_\+\+Style\+Sheet.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49         \{}
+\DoxyCodeLine{50             \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet_aa857b610ca839ac49f96ac6bc66ac201}{instance}};}
+\DoxyCodeLine{51         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__StyleSheet_aa7ee1ff983631f35b479fbda8df90829}\label{classTMPro_1_1TMP__StyleSheet_aa7ee1ff983631f35b479fbda8df90829}} 
+\index{TMPro.TMP\_StyleSheet@{TMPro.TMP\_StyleSheet}!RefreshStyles@{RefreshStyles}}
+\index{RefreshStyles@{RefreshStyles}!TMPro.TMP\_StyleSheet@{TMPro.TMP\_StyleSheet}}
+\doxysubsubsection{\texorpdfstring{RefreshStyles()}{RefreshStyles()}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+T\+M\+P\+\_\+\+Style\+Sheet.\+Refresh\+Styles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function to refresh the Style Dictionary. 
+
+
+
+Definition at line 108 of file T\+M\+P\+\_\+\+Style\+Sheet.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{109         \{}
+\DoxyCodeLine{110             \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet_aa857b610ca839ac49f96ac6bc66ac201}{instance}}.LoadStyleDictionaryInternal();}
+\DoxyCodeLine{111         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__StyleSheet_a4bab3ca47934d537b41ae066eabac404}\label{classTMPro_1_1TMP__StyleSheet_a4bab3ca47934d537b41ae066eabac404}} 
+\index{TMPro.TMP\_StyleSheet@{TMPro.TMP\_StyleSheet}!UpdateStyleSheet@{UpdateStyleSheet}}
+\index{UpdateStyleSheet@{UpdateStyleSheet}!TMPro.TMP\_StyleSheet@{TMPro.TMP\_StyleSheet}}
+\doxysubsubsection{\texorpdfstring{UpdateStyleSheet()}{UpdateStyleSheet()}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+T\+M\+P\+\_\+\+Style\+Sheet.\+Update\+Style\+Sheet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function to update the internal reference to a newly assigned style sheet in the T\+MP Settings. 
+
+
+
+Definition at line 96 of file T\+M\+P\+\_\+\+Style\+Sheet.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97         \{}
+\DoxyCodeLine{98             \textcolor{comment}{// Reset instance}}
+\DoxyCodeLine{99             s\_Instance = \textcolor{keyword}{null};}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101             \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet_aa7ee1ff983631f35b479fbda8df90829}{RefreshStyles}}();}
+\DoxyCodeLine{102         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__StyleSheet_aa857b610ca839ac49f96ac6bc66ac201}\label{classTMPro_1_1TMP__StyleSheet_aa857b610ca839ac49f96ac6bc66ac201}} 
+\index{TMPro.TMP\_StyleSheet@{TMPro.TMP\_StyleSheet}!instance@{instance}}
+\index{instance@{instance}!TMPro.TMP\_StyleSheet@{TMPro.TMP\_StyleSheet}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet}{T\+M\+P\+\_\+\+Style\+Sheet}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Style\+Sheet.\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Get a singleton instance of the \mbox{\hyperlink{classTMPro_1_1TMP__StyleSheet}{T\+M\+P\+\_\+\+Style\+Sheet}} 
+
+
+
+Definition at line 23 of file T\+M\+P\+\_\+\+Style\+Sheet.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23         \{}
+\DoxyCodeLine{24             \textcolor{keyword}{get}}
+\DoxyCodeLine{25             \{}
+\DoxyCodeLine{26                 \textcolor{keywordflow}{if} (s\_Instance == \textcolor{keyword}{null})}
+\DoxyCodeLine{27                 \{}
+\DoxyCodeLine{28                     s\_Instance = TMP\_Settings.defaultStyleSheet;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30                     \textcolor{keywordflow}{if} (s\_Instance == \textcolor{keyword}{null})}
+\DoxyCodeLine{31                         s\_Instance = Resources.Load<TMP\_StyleSheet>(\textcolor{stringliteral}{"Style Sheets/TMP Default Style Sheet"});}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33                     \textcolor{keywordflow}{if} (s\_Instance == \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35                     \textcolor{comment}{// Load the style dictionary.}}
+\DoxyCodeLine{36                     s\_Instance.LoadStyleDictionaryInternal();}
+\DoxyCodeLine{37                 \}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39                 \textcolor{keywordflow}{return} s\_Instance;}
+\DoxyCodeLine{40             \}}
+\DoxyCodeLine{41         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Runtime/T\+M\+P\+\_\+\+Style\+Sheet.\+cs\end{DoxyCompactItemize}

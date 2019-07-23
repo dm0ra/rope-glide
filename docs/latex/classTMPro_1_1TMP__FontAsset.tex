@@ -1,0 +1,881 @@
+\hypertarget{classTMPro_1_1TMP__FontAsset}{}\doxysection{T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset Class Reference}
+\label{classTMPro_1_1TMP__FontAsset}\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+Inheritance diagram for T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classTMPro_1_1TMP__FontAsset}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a91155d493809b47bc2a9d38ffe43fca3}\label{classTMPro_1_1TMP__FontAsset_a91155d493809b47bc2a9d38ffe43fca3}} 
+enum {\bfseries Font\+Asset\+Types} \{ {\bfseries None} = 0, 
+{\bfseries S\+DF} = 1, 
+{\bfseries Bitmap} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a8189329802859389f3dd6152b4f9917f}{Add\+Face\+Info}} (\mbox{\hyperlink{classTMPro_1_1FaceInfo}{Face\+Info}} face\+Info)
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a6002e55fa6fdd78bbc65dac68e9f9192}{Add\+Glyph\+Info}} (\mbox{\hyperlink{classTMPro_1_1TMP__Glyph}{T\+M\+P\+\_\+\+Glyph}}\mbox{[}$\,$\mbox{]} glyph\+Info)
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a45942ff82434c0e1e07f830b1d0c2af0}{Add\+Kerning\+Info}} (\mbox{\hyperlink{classTMPro_1_1KerningTable}{Kerning\+Table}} kerning\+Table)
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_aecaed95f724698d0c77f8d38eab90640}{Read\+Font\+Definition}} ()
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a65d62154e56cd5bde1da7a8f9a183f5d}{Sort\+Glyphs}} ()
+\begin{DoxyCompactList}\small\item\em Function to sort the list of glyphs. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a10751e4fd6f455aa72ae50f688d0698a}{Has\+Character}} (int character)
+\begin{DoxyCompactList}\small\item\em Function to check if a certain character exists in the font asset. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a2666ef452a0079b5595353c91b94bf3e}{Has\+Character}} (char character)
+\begin{DoxyCompactList}\small\item\em Function to check if a certain character exists in the font asset. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_ab31b4d104cf7a6e0776a98d4d9c7ffee}{Has\+Character}} (char character, bool search\+Fallbacks)
+\begin{DoxyCompactList}\small\item\em Function to check if a character is contained in the font asset with the option to also check through fallback font assets. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a8db6e186c97502bee308dfc32f82aa92}{Has\+Characters}} (string text, out List$<$ char $>$ missing\+Characters)
+\begin{DoxyCompactList}\small\item\em Function to check if certain characters exists in the font asset. Function returns a list of missing characters. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a6432ab839d799b8e91d1c279946c03cf}{Has\+Characters}} (string text)
+\begin{DoxyCompactList}\small\item\em Function to check if certain characters exists in the font asset. Function returns false if any characters are missing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a41da35d4c071829fecb1c8af92076969}{Get\+Characters}} (\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} font\+Asset)
+\begin{DoxyCompactList}\small\item\em Function to extract all the characters from a font asset. \end{DoxyCompactList}\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a04f042c328bf55d9d675184132319112}{Get\+Characters\+Array}} (\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} font\+Asset)
+\begin{DoxyCompactList}\small\item\em Function which returns an array that contains all the characters from a font asset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a288bea1979080ff0e8e1e2a6e47545dd}\label{classTMPro_1_1TMP__FontAsset_a288bea1979080ff0e8e1e2a6e47545dd}} 
+Font\+Asset\+Types {\bfseries font\+Asset\+Type}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a498534bae36d4dd9080e7ac93af657e0}\label{classTMPro_1_1TMP__FontAsset_a498534bae36d4dd9080e7ac93af657e0}} 
+Texture2D {\bfseries atlas}
+\item 
+List$<$ \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} $>$ \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_acb4defd1335d404d2e984bd130c59fe1}{fallback\+Font\+Assets}}
+\begin{DoxyCompactList}\small\item\em List containing the Fallback font assets for this font. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_ad72d9e519e1952c8b9353ab1f951407a}\label{classTMPro_1_1TMP__FontAsset_ad72d9e519e1952c8b9353ab1f951407a}} 
+\mbox{\hyperlink{structTMPro_1_1FontAssetCreationSettings}{Font\+Asset\+Creation\+Settings}} {\bfseries m\+\_\+\+Creation\+Settings}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a9cd99822d0d3553f7e21dfa6a4cba2b0}\label{classTMPro_1_1TMP__FontAsset_a9cd99822d0d3553f7e21dfa6a4cba2b0}} 
+\mbox{\hyperlink{structTMPro_1_1TMP__FontWeights}{T\+M\+P\+\_\+\+Font\+Weights}}\mbox{[}$\,$\mbox{]} {\bfseries font\+Weights} = new \mbox{\hyperlink{structTMPro_1_1TMP__FontWeights}{T\+M\+P\+\_\+\+Font\+Weights}}\mbox{[}10\mbox{]}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a5e537de3b95199926e373e61b27fc197}\label{classTMPro_1_1TMP__FontAsset_a5e537de3b95199926e373e61b27fc197}} 
+float {\bfseries normal\+Style} = 0
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_ae58293c90d5a5e0de8545dd9da02e369}\label{classTMPro_1_1TMP__FontAsset_ae58293c90d5a5e0de8545dd9da02e369}} 
+float {\bfseries normal\+Spacing\+Offset} = 0
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a16dbe5f4d6f79766b9cd9745c94bbc9c}\label{classTMPro_1_1TMP__FontAsset_a16dbe5f4d6f79766b9cd9745c94bbc9c}} 
+float {\bfseries bold\+Style} = 0.\+75f
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a0a4fbd91f8b10c17a222c4b56a586c50}\label{classTMPro_1_1TMP__FontAsset_a0a4fbd91f8b10c17a222c4b56a586c50}} 
+float {\bfseries bold\+Spacing} = 7f
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_aa444303f26f16cd2435a4dee25b9f9d5}\label{classTMPro_1_1TMP__FontAsset_aa444303f26f16cd2435a4dee25b9f9d5}} 
+byte {\bfseries italic\+Style} = 35
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_ac1e563b82e8b03679c9c1c21f2eaf579}\label{classTMPro_1_1TMP__FontAsset_ac1e563b82e8b03679c9c1c21f2eaf579}} 
+byte {\bfseries tab\+Size} = 10
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_abeca04093d0ee5e19bd3a1f2527b54fd}{default\+Font\+Asset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Default Font Asset used as last resort when glyphs are missing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTMPro_1_1FaceInfo}{Face\+Info}} \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a6afd05863cb5c5f39221cc63904b3f90}{font\+Info}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The general information about the font. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a9ed6ac03958d8cbf8d243dde765520d5}\label{classTMPro_1_1TMP__FontAsset_a9ed6ac03958d8cbf8d243dde765520d5}} 
+Dictionary$<$ int, \mbox{\hyperlink{classTMPro_1_1TMP__Glyph}{T\+M\+P\+\_\+\+Glyph}} $>$ {\bfseries character\+Dictionary}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Dictionary$<$ int, \mbox{\hyperlink{classTMPro_1_1KerningPair}{Kerning\+Pair}} $>$ \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a0e8bcaaecbbd7d452709fbc92814c92e}{kerning\+Dictionary}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Dictionary containing the kerning data \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTMPro_1_1KerningTable}{Kerning\+Table}} \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a29e3d4b8a89e5bca2f9b8238257f4cd9}{kerning\+Info}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{structTMPro_1_1FontAssetCreationSettings}{Font\+Asset\+Creation\+Settings}} \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a5add1fb1c5ac1afb72c1f6c5b64f9d8a}{creation\+Settings}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The settings used in the Font Asset Creator when this font asset was created or edited. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 23 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a8189329802859389f3dd6152b4f9917f}\label{classTMPro_1_1TMP__FontAsset_a8189329802859389f3dd6152b4f9917f}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!AddFaceInfo@{AddFaceInfo}}
+\index{AddFaceInfo@{AddFaceInfo}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{AddFaceInfo()}{AddFaceInfo()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Add\+Face\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1FaceInfo}{Face\+Info}}}]{face\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em face\+Info} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 163 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{164         \{}
+\DoxyCodeLine{165             m\_fontInfo = faceInfo;}
+\DoxyCodeLine{166         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a6002e55fa6fdd78bbc65dac68e9f9192}\label{classTMPro_1_1TMP__FontAsset_a6002e55fa6fdd78bbc65dac68e9f9192}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!AddGlyphInfo@{AddGlyphInfo}}
+\index{AddGlyphInfo@{AddGlyphInfo}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{AddGlyphInfo()}{AddGlyphInfo()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Add\+Glyph\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1TMP__Glyph}{T\+M\+P\+\_\+\+Glyph}}\mbox{[}$\,$\mbox{]}}]{glyph\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em glyph\+Info} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 173 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{174         \{}
+\DoxyCodeLine{175             m\_glyphInfoList = \textcolor{keyword}{new} List<TMP\_Glyph>();}
+\DoxyCodeLine{176             \textcolor{keywordtype}{int} characterCount = glyphInfo.Length;}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178             m\_fontInfo.CharacterCount = characterCount;}
+\DoxyCodeLine{179             m\_characterSet = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[characterCount];}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < characterCount; i++)}
+\DoxyCodeLine{182             \{}
+\DoxyCodeLine{183                 TMP\_Glyph g = \textcolor{keyword}{new} TMP\_Glyph();}
+\DoxyCodeLine{184                 g.id = glyphInfo[i].id;}
+\DoxyCodeLine{185                 g.x = glyphInfo[i].x;}
+\DoxyCodeLine{186                 g.y = glyphInfo[i].y;}
+\DoxyCodeLine{187                 g.width = glyphInfo[i].width;}
+\DoxyCodeLine{188                 g.height = glyphInfo[i].height;}
+\DoxyCodeLine{189                 g.xOffset = glyphInfo[i].xOffset;}
+\DoxyCodeLine{190                 g.yOffset = (glyphInfo[i].yOffset);}
+\DoxyCodeLine{191                 g.xAdvance = glyphInfo[i].xAdvance;}
+\DoxyCodeLine{192                 g.scale = 1;}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194                 m\_glyphInfoList.Add(g);}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196                 \textcolor{comment}{// While iterating through list of glyphs, find the Descender \& Ascender for this GlyphSet.}}
+\DoxyCodeLine{197                 \textcolor{comment}{//m\_fontInfo.Ascender = Mathf.Max(m\_fontInfo.Ascender, glyphInfo[i].yOffset);}}
+\DoxyCodeLine{198                 \textcolor{comment}{//m\_fontInfo.Descender = Mathf.Min(m\_fontInfo.Descender, glyphInfo[i].yOffset -\/ glyphInfo[i].height);}}
+\DoxyCodeLine{199                 \textcolor{comment}{//Debug.Log(m\_fontInfo.Ascender + "  " + m\_fontInfo.Descender);}}
+\DoxyCodeLine{200                 m\_characterSet[i] = g.id; \textcolor{comment}{// Add Character ID to Array to make it easier to get the kerning pairs.}}
+\DoxyCodeLine{201             \}}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{203             \textcolor{comment}{// Sort List by ID.}}
+\DoxyCodeLine{204             m\_glyphInfoList = m\_glyphInfoList.OrderBy(s => s.id).ToList();}
+\DoxyCodeLine{205         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a45942ff82434c0e1e07f830b1d0c2af0}\label{classTMPro_1_1TMP__FontAsset_a45942ff82434c0e1e07f830b1d0c2af0}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!AddKerningInfo@{AddKerningInfo}}
+\index{AddKerningInfo@{AddKerningInfo}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{AddKerningInfo()}{AddKerningInfo()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Add\+Kerning\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1KerningTable}{Kerning\+Table}}}]{kerning\+Table }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em kerning\+Table} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 212 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{213         \{}
+\DoxyCodeLine{214             m\_kerningInfo = kerningTable;}
+\DoxyCodeLine{215         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a41da35d4c071829fecb1c8af92076969}\label{classTMPro_1_1TMP__FontAsset_a41da35d4c071829fecb1c8af92076969}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!GetCharacters@{GetCharacters}}
+\index{GetCharacters@{GetCharacters}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{GetCharacters()}{GetCharacters()}}
+{\footnotesize\ttfamily static string T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Get\+Characters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}}}]{font\+Asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function to extract all the characters from a font asset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Asset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 605 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{606         \{}
+\DoxyCodeLine{607             \textcolor{keywordtype}{string} characters = \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{608 }
+\DoxyCodeLine{609             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < fontAsset.m\_glyphInfoList.Count; i++)}
+\DoxyCodeLine{610             \{}
+\DoxyCodeLine{611                 characters += (char)fontAsset.m\_glyphInfoList[i].id;}
+\DoxyCodeLine{612             \}}
+\DoxyCodeLine{613 }
+\DoxyCodeLine{614             \textcolor{keywordflow}{return} characters;}
+\DoxyCodeLine{615         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a04f042c328bf55d9d675184132319112}\label{classTMPro_1_1TMP__FontAsset_a04f042c328bf55d9d675184132319112}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!GetCharactersArray@{GetCharactersArray}}
+\index{GetCharactersArray@{GetCharactersArray}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{GetCharactersArray()}{GetCharactersArray()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Get\+Characters\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}}}]{font\+Asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function which returns an array that contains all the characters from a font asset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Asset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 623 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{624         \{}
+\DoxyCodeLine{625             \textcolor{keywordtype}{int}[] characters = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[fontAsset.m\_glyphInfoList.Count];}
+\DoxyCodeLine{626 }
+\DoxyCodeLine{627             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < fontAsset.m\_glyphInfoList.Count; i++)}
+\DoxyCodeLine{628             \{}
+\DoxyCodeLine{629                 characters[i] = fontAsset.m\_glyphInfoList[i].id;}
+\DoxyCodeLine{630             \}}
+\DoxyCodeLine{631 }
+\DoxyCodeLine{632             \textcolor{keywordflow}{return} characters;}
+\DoxyCodeLine{633         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a2666ef452a0079b5595353c91b94bf3e}\label{classTMPro_1_1TMP__FontAsset_a2666ef452a0079b5595353c91b94bf3e}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!HasCharacter@{HasCharacter}}
+\index{HasCharacter@{HasCharacter}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{HasCharacter()}{HasCharacter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Has\+Character (\begin{DoxyParamCaption}\item[{char}]{character }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to check if a certain character exists in the font asset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 440 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{441         \{}
+\DoxyCodeLine{442             \textcolor{keywordflow}{if} (m\_characterDictionary == \textcolor{keyword}{null})}
+\DoxyCodeLine{443                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{444 }
+\DoxyCodeLine{445             \textcolor{keywordflow}{if} (m\_characterDictionary.ContainsKey(character))}
+\DoxyCodeLine{446                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{447 }
+\DoxyCodeLine{448             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{449         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_ab31b4d104cf7a6e0776a98d4d9c7ffee}\label{classTMPro_1_1TMP__FontAsset_ab31b4d104cf7a6e0776a98d4d9c7ffee}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!HasCharacter@{HasCharacter}}
+\index{HasCharacter@{HasCharacter}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{HasCharacter()}{HasCharacter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Has\+Character (\begin{DoxyParamCaption}\item[{char}]{character,  }\item[{bool}]{search\+Fallbacks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to check if a character is contained in the font asset with the option to also check through fallback font assets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & \\
+\hline
+{\em search\+Fallbacks} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 458 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{459         \{}
+\DoxyCodeLine{460             \textcolor{comment}{// Read font asset definition if it hasn't already been done.}}
+\DoxyCodeLine{461             \textcolor{keywordflow}{if} (m\_characterDictionary == \textcolor{keyword}{null})}
+\DoxyCodeLine{462             \{}
+\DoxyCodeLine{463                 \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_aecaed95f724698d0c77f8d38eab90640}{ReadFontDefinition}}();}
+\DoxyCodeLine{464 }
+\DoxyCodeLine{465                 \textcolor{keywordflow}{if} (m\_characterDictionary == \textcolor{keyword}{null})}
+\DoxyCodeLine{466                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{467             \}}
+\DoxyCodeLine{468 }
+\DoxyCodeLine{469             \textcolor{comment}{// Check font asset}}
+\DoxyCodeLine{470             \textcolor{keywordflow}{if} (m\_characterDictionary.ContainsKey(character))}
+\DoxyCodeLine{471                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{472 }
+\DoxyCodeLine{473             \textcolor{keywordflow}{if} (searchFallbacks)}
+\DoxyCodeLine{474             \{}
+\DoxyCodeLine{475                 \textcolor{comment}{// Check font asset fallbacks}}
+\DoxyCodeLine{476                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_acb4defd1335d404d2e984bd130c59fe1}{fallbackFontAssets}} != \textcolor{keyword}{null} \&\& \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_acb4defd1335d404d2e984bd130c59fe1}{fallbackFontAssets}}.Count > 0)}
+\DoxyCodeLine{477                 \{}
+\DoxyCodeLine{478                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_acb4defd1335d404d2e984bd130c59fe1}{fallbackFontAssets}}.Count \&\& \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_acb4defd1335d404d2e984bd130c59fe1}{fallbackFontAssets}}[i] != \textcolor{keyword}{null}; i++)}
+\DoxyCodeLine{479                     \{}
+\DoxyCodeLine{480                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_acb4defd1335d404d2e984bd130c59fe1}{fallbackFontAssets}}[i].HasCharacter\_Internal(character, searchFallbacks))}
+\DoxyCodeLine{481                             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{482                     \}}
+\DoxyCodeLine{483                 \}}
+\DoxyCodeLine{484 }
+\DoxyCodeLine{485                 \textcolor{comment}{// Check general fallback font assets.}}
+\DoxyCodeLine{486                 \textcolor{keywordflow}{if} (TMP\_Settings.fallbackFontAssets != \textcolor{keyword}{null} \&\& TMP\_Settings.fallbackFontAssets.Count > 0)}
+\DoxyCodeLine{487                 \{}
+\DoxyCodeLine{488                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < TMP\_Settings.fallbackFontAssets.Count \&\& TMP\_Settings.fallbackFontAssets[i] != \textcolor{keyword}{null}; i++)}
+\DoxyCodeLine{489                     \{}
+\DoxyCodeLine{490                         \textcolor{keywordflow}{if} (TMP\_Settings.fallbackFontAssets[i].characterDictionary == \textcolor{keyword}{null})}
+\DoxyCodeLine{491                             TMP\_Settings.fallbackFontAssets[i].ReadFontDefinition();}
+\DoxyCodeLine{492 }
+\DoxyCodeLine{493                         \textcolor{keywordflow}{if} (TMP\_Settings.fallbackFontAssets[i].characterDictionary != \textcolor{keyword}{null} \&\& TMP\_Settings.fallbackFontAssets[i].HasCharacter\_Internal(character, searchFallbacks))}
+\DoxyCodeLine{494                             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{495                     \}}
+\DoxyCodeLine{496                 \}}
+\DoxyCodeLine{497 }
+\DoxyCodeLine{498                 \textcolor{comment}{// Check TMP Settings Default Font Asset}}
+\DoxyCodeLine{499                 \textcolor{keywordflow}{if} (TMP\_Settings.defaultFontAsset != \textcolor{keyword}{null})}
+\DoxyCodeLine{500                 \{}
+\DoxyCodeLine{501                     \textcolor{keywordflow}{if} (TMP\_Settings.defaultFontAsset.characterDictionary == \textcolor{keyword}{null})}
+\DoxyCodeLine{502                         TMP\_Settings.defaultFontAsset.ReadFontDefinition();}
+\DoxyCodeLine{503 }
+\DoxyCodeLine{504                     \textcolor{keywordflow}{if} (TMP\_Settings.defaultFontAsset.characterDictionary != \textcolor{keyword}{null} \&\& TMP\_Settings.defaultFontAsset.HasCharacter\_Internal(character, searchFallbacks))}
+\DoxyCodeLine{505                         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{506                 \}}
+\DoxyCodeLine{507             \}}
+\DoxyCodeLine{508 }
+\DoxyCodeLine{509             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{510         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a10751e4fd6f455aa72ae50f688d0698a}\label{classTMPro_1_1TMP__FontAsset_a10751e4fd6f455aa72ae50f688d0698a}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!HasCharacter@{HasCharacter}}
+\index{HasCharacter@{HasCharacter}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{HasCharacter()}{HasCharacter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Has\+Character (\begin{DoxyParamCaption}\item[{int}]{character }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to check if a certain character exists in the font asset. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 423 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{424         \{}
+\DoxyCodeLine{425             \textcolor{keywordflow}{if} (m\_characterDictionary == \textcolor{keyword}{null})}
+\DoxyCodeLine{426                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{427 }
+\DoxyCodeLine{428             \textcolor{keywordflow}{if} (m\_characterDictionary.ContainsKey(character))}
+\DoxyCodeLine{429                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{430 }
+\DoxyCodeLine{431             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{432         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a6432ab839d799b8e91d1c279946c03cf}\label{classTMPro_1_1TMP__FontAsset_a6432ab839d799b8e91d1c279946c03cf}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!HasCharacters@{HasCharacters}}
+\index{HasCharacters@{HasCharacters}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{HasCharacters()}{HasCharacters()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Has\+Characters (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to check if certain characters exists in the font asset. Function returns false if any characters are missing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & String containing the characters to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 585 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{586         \{}
+\DoxyCodeLine{587             \textcolor{keywordflow}{if} (m\_characterDictionary == \textcolor{keyword}{null})}
+\DoxyCodeLine{588                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{589 }
+\DoxyCodeLine{590             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < text.Length; i++)}
+\DoxyCodeLine{591             \{}
+\DoxyCodeLine{592                 \textcolor{keywordflow}{if} (!m\_characterDictionary.ContainsKey(text[i]))}
+\DoxyCodeLine{593                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{594             \}}
+\DoxyCodeLine{595 }
+\DoxyCodeLine{596             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{597         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a8db6e186c97502bee308dfc32f82aa92}\label{classTMPro_1_1TMP__FontAsset_a8db6e186c97502bee308dfc32f82aa92}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!HasCharacters@{HasCharacters}}
+\index{HasCharacters@{HasCharacters}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{HasCharacters()}{HasCharacters()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Has\+Characters (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{out List$<$ char $>$}]{missing\+Characters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to check if certain characters exists in the font asset. Function returns a list of missing characters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 557 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{558         \{}
+\DoxyCodeLine{559             \textcolor{keywordflow}{if} (m\_characterDictionary == \textcolor{keyword}{null})}
+\DoxyCodeLine{560             \{}
+\DoxyCodeLine{561                 missingCharacters = \textcolor{keyword}{null};}
+\DoxyCodeLine{562                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{563             \}}
+\DoxyCodeLine{564 }
+\DoxyCodeLine{565             missingCharacters = \textcolor{keyword}{new} List<char>();}
+\DoxyCodeLine{566 }
+\DoxyCodeLine{567             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < text.Length; i++)}
+\DoxyCodeLine{568             \{}
+\DoxyCodeLine{569                 \textcolor{keywordflow}{if} (!m\_characterDictionary.ContainsKey(text[i]))}
+\DoxyCodeLine{570                     missingCharacters.Add(text[i]);}
+\DoxyCodeLine{571             \}}
+\DoxyCodeLine{572 }
+\DoxyCodeLine{573             \textcolor{keywordflow}{if} (missingCharacters.Count == 0)}
+\DoxyCodeLine{574                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{575 }
+\DoxyCodeLine{576             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{577         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_aecaed95f724698d0c77f8d38eab90640}\label{classTMPro_1_1TMP__FontAsset_aecaed95f724698d0c77f8d38eab90640}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!ReadFontDefinition@{ReadFontDefinition}}
+\index{ReadFontDefinition@{ReadFontDefinition}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{ReadFontDefinition()}{ReadFontDefinition()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Read\+Font\+Definition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+
+Definition at line 221 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{222         \{}
+\DoxyCodeLine{223             \textcolor{comment}{//Debug.Log("Reading Font Definition for " + this.name + ".");}}
+\DoxyCodeLine{224             \textcolor{comment}{// Make sure that we have a Font Asset file assigned.}}
+\DoxyCodeLine{225             \textcolor{keywordflow}{if} (m\_fontInfo == \textcolor{keyword}{null})}
+\DoxyCodeLine{226             \{}
+\DoxyCodeLine{227                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{228             \}}
+\DoxyCodeLine{229 }
+\DoxyCodeLine{230             \textcolor{comment}{// Check Font Asset type}}
+\DoxyCodeLine{231             \textcolor{comment}{//Debug.Log(name + "   " + fontAssetType);}}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233             \textcolor{comment}{// Create new instance of GlyphInfo Dictionary for fast access to glyph info.}}
+\DoxyCodeLine{234             m\_characterDictionary = \textcolor{keyword}{new} Dictionary<int, TMP\_Glyph>();}
+\DoxyCodeLine{235             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < m\_glyphInfoList.Count; i++)}
+\DoxyCodeLine{236             \{}
+\DoxyCodeLine{237                 TMP\_Glyph glyph = m\_glyphInfoList[i];}
+\DoxyCodeLine{238 }
+\DoxyCodeLine{239                 \textcolor{keywordflow}{if} (!m\_characterDictionary.ContainsKey(glyph.id))}
+\DoxyCodeLine{240                     m\_characterDictionary.Add(glyph.id, glyph);}
+\DoxyCodeLine{241 }
+\DoxyCodeLine{242                 \textcolor{comment}{// Compatibility}}
+\DoxyCodeLine{243                 \textcolor{keywordflow}{if} (glyph.scale == 0) glyph.scale = 1;}
+\DoxyCodeLine{244             \}}
+\DoxyCodeLine{245 }
+\DoxyCodeLine{246 }
+\DoxyCodeLine{247             \textcolor{comment}{//Debug.Log("PRE: BaseLine:" + m\_fontInfo.Baseline + "  Ascender:" + m\_fontInfo.Ascender + "  Descender:" + m\_fontInfo.Descender); // + "  Centerline:" + m\_fontInfo.CenterLine);}}
+\DoxyCodeLine{248 }
+\DoxyCodeLine{249             TMP\_Glyph temp\_charInfo = \textcolor{keyword}{new} TMP\_Glyph();}
+\DoxyCodeLine{250 }
+\DoxyCodeLine{251             \textcolor{comment}{// Add Character (10) LineFeed, (13) Carriage Return \& Space (32) to Dictionary if they don't exists.}}
+\DoxyCodeLine{252             \textcolor{keywordflow}{if} (m\_characterDictionary.ContainsKey(32))}
+\DoxyCodeLine{253             \{}
+\DoxyCodeLine{254                 m\_characterDictionary[32].width = m\_characterDictionary[32].xAdvance; \textcolor{comment}{// m\_fontInfo.Ascender / 5;}}
+\DoxyCodeLine{255                 m\_characterDictionary[32].height = m\_fontInfo.Ascender -\/ m\_fontInfo.Descender;}
+\DoxyCodeLine{256                 m\_characterDictionary[32].yOffset= m\_fontInfo.Ascender;}
+\DoxyCodeLine{257                 m\_characterDictionary[32].scale = 1;}
+\DoxyCodeLine{258             \}}
+\DoxyCodeLine{259             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{260             \{}
+\DoxyCodeLine{261                 \textcolor{comment}{//Debug.Log("Adding Character 32 (Space) to Dictionary for Font (" + m\_fontInfo.Name + ").");}}
+\DoxyCodeLine{262                 temp\_charInfo = \textcolor{keyword}{new} TMP\_Glyph();}
+\DoxyCodeLine{263                 temp\_charInfo.id = 32;}
+\DoxyCodeLine{264                 temp\_charInfo.x = 0; }
+\DoxyCodeLine{265                 temp\_charInfo.y = 0;}
+\DoxyCodeLine{266                 temp\_charInfo.width = m\_fontInfo.Ascender / 5;}
+\DoxyCodeLine{267                 temp\_charInfo.height = m\_fontInfo.Ascender -\/ m\_fontInfo.Descender;}
+\DoxyCodeLine{268                 temp\_charInfo.xOffset = 0; }
+\DoxyCodeLine{269                 temp\_charInfo.yOffset = m\_fontInfo.Ascender; }
+\DoxyCodeLine{270                 temp\_charInfo.xAdvance = m\_fontInfo.PointSize / 4;}
+\DoxyCodeLine{271                 temp\_charInfo.scale = 1;}
+\DoxyCodeLine{272                 m\_characterDictionary.Add(32, temp\_charInfo);}
+\DoxyCodeLine{273             \}}
+\DoxyCodeLine{274 }
+\DoxyCodeLine{275             \textcolor{comment}{// Add Non-\/Breaking Space (160)}}
+\DoxyCodeLine{276             \textcolor{keywordflow}{if} (!m\_characterDictionary.ContainsKey(160))}
+\DoxyCodeLine{277             \{}
+\DoxyCodeLine{278                 temp\_charInfo = TMP\_Glyph.Clone(m\_characterDictionary[32]);}
+\DoxyCodeLine{279                 m\_characterDictionary.Add(160, temp\_charInfo);}
+\DoxyCodeLine{280             \}}
+\DoxyCodeLine{281 }
+\DoxyCodeLine{282             \textcolor{comment}{// Add Zero Width Space (8203)}}
+\DoxyCodeLine{283             \textcolor{keywordflow}{if} (!m\_characterDictionary.ContainsKey(8203))}
+\DoxyCodeLine{284             \{}
+\DoxyCodeLine{285                 temp\_charInfo = TMP\_Glyph.Clone(m\_characterDictionary[32]);}
+\DoxyCodeLine{286                 temp\_charInfo.width = 0;}
+\DoxyCodeLine{287                 temp\_charInfo.xAdvance = 0;}
+\DoxyCodeLine{288                 m\_characterDictionary.Add(8203, temp\_charInfo);}
+\DoxyCodeLine{289             \}}
+\DoxyCodeLine{290 }
+\DoxyCodeLine{291             \textcolor{comment}{//Add Zero Width no-\/break space (8288)}}
+\DoxyCodeLine{292             \textcolor{keywordflow}{if} (!m\_characterDictionary.ContainsKey(8288))}
+\DoxyCodeLine{293             \{}
+\DoxyCodeLine{294                 temp\_charInfo = TMP\_Glyph.Clone(m\_characterDictionary[32]);}
+\DoxyCodeLine{295                 temp\_charInfo.width = 0;}
+\DoxyCodeLine{296                 temp\_charInfo.xAdvance = 0;}
+\DoxyCodeLine{297                 m\_characterDictionary.Add(8288, temp\_charInfo);}
+\DoxyCodeLine{298             \}}
+\DoxyCodeLine{299 }
+\DoxyCodeLine{300             \textcolor{comment}{// Add Linefeed (10)}}
+\DoxyCodeLine{301             \textcolor{keywordflow}{if} (m\_characterDictionary.ContainsKey(10) == \textcolor{keyword}{false})}
+\DoxyCodeLine{302             \{}
+\DoxyCodeLine{303                 \textcolor{comment}{//Debug.Log("Adding Character 10 (Linefeed) to Dictionary for Font (" + m\_fontInfo.Name + ").");}}
+\DoxyCodeLine{304 }
+\DoxyCodeLine{305                 temp\_charInfo = \textcolor{keyword}{new} TMP\_Glyph();}
+\DoxyCodeLine{306                 temp\_charInfo.id = 10;}
+\DoxyCodeLine{307                 temp\_charInfo.x = 0; \textcolor{comment}{// m\_characterDictionary[32].x;}}
+\DoxyCodeLine{308                 temp\_charInfo.y = 0; \textcolor{comment}{// m\_characterDictionary[32].y;}}
+\DoxyCodeLine{309                 temp\_charInfo.width = 10; \textcolor{comment}{// m\_characterDictionary[32].width;}}
+\DoxyCodeLine{310                 temp\_charInfo.height = m\_characterDictionary[32].height;}
+\DoxyCodeLine{311                 temp\_charInfo.xOffset = 0; \textcolor{comment}{// m\_characterDictionary[32].xOffset;}}
+\DoxyCodeLine{312                 temp\_charInfo.yOffset = m\_characterDictionary[32].yOffset;}
+\DoxyCodeLine{313                 temp\_charInfo.xAdvance = 0;}
+\DoxyCodeLine{314                 temp\_charInfo.scale = 1;}
+\DoxyCodeLine{315                 m\_characterDictionary.Add(10, temp\_charInfo);}
+\DoxyCodeLine{316 }
+\DoxyCodeLine{317                 \textcolor{keywordflow}{if} (!m\_characterDictionary.ContainsKey(13))}
+\DoxyCodeLine{318                     m\_characterDictionary.Add(13, temp\_charInfo);}
+\DoxyCodeLine{319             \}}
+\DoxyCodeLine{320 }
+\DoxyCodeLine{321             \textcolor{comment}{// Add Tab Character to Dictionary. Tab is Tab Size * Space Character Width.}}
+\DoxyCodeLine{322             \textcolor{keywordflow}{if} (m\_characterDictionary.ContainsKey(9) == \textcolor{keyword}{false})}
+\DoxyCodeLine{323             \{}
+\DoxyCodeLine{324                 \textcolor{comment}{//Debug.Log("Adding Character 9 (Tab) to Dictionary for Font (" + m\_fontInfo.Name + ").");}}
+\DoxyCodeLine{325 }
+\DoxyCodeLine{326                 temp\_charInfo = \textcolor{keyword}{new} TMP\_Glyph();}
+\DoxyCodeLine{327                 temp\_charInfo.id = 9;}
+\DoxyCodeLine{328                 temp\_charInfo.x = m\_characterDictionary[32].x;}
+\DoxyCodeLine{329                 temp\_charInfo.y = m\_characterDictionary[32].y;}
+\DoxyCodeLine{330                 temp\_charInfo.width = m\_characterDictionary[32].width * tabSize + (m\_characterDictionary[32].xAdvance -\/ m\_characterDictionary[32].width) * (tabSize -\/ 1);}
+\DoxyCodeLine{331                 temp\_charInfo.height = m\_characterDictionary[32].height;}
+\DoxyCodeLine{332                 temp\_charInfo.xOffset = m\_characterDictionary[32].xOffset;}
+\DoxyCodeLine{333                 temp\_charInfo.yOffset = m\_characterDictionary[32].yOffset;}
+\DoxyCodeLine{334                 temp\_charInfo.xAdvance = m\_characterDictionary[32].xAdvance * tabSize;}
+\DoxyCodeLine{335                 temp\_charInfo.scale = 1;}
+\DoxyCodeLine{336                 m\_characterDictionary.Add(9, temp\_charInfo);}
+\DoxyCodeLine{337             \}}
+\DoxyCodeLine{338 }
+\DoxyCodeLine{339             \textcolor{comment}{// Centerline is located at the center of character like \{ or in the middle of the lowercase o.}}
+\DoxyCodeLine{340             \textcolor{comment}{//m\_fontInfo.CenterLine = m\_characterDictionary[111].yOffset -\/ m\_characterDictionary[111].height * 0.5f;}}
+\DoxyCodeLine{341 }
+\DoxyCodeLine{342             \textcolor{comment}{// Tab Width is using the same xAdvance as space (32).}}
+\DoxyCodeLine{343             m\_fontInfo.TabWidth = m\_characterDictionary[9].xAdvance;}
+\DoxyCodeLine{344 }
+\DoxyCodeLine{345             \textcolor{comment}{// Set Cap Height}}
+\DoxyCodeLine{346             \textcolor{keywordflow}{if} (m\_fontInfo.CapHeight == 0 \&\& m\_characterDictionary.ContainsKey(72))}
+\DoxyCodeLine{347                 m\_fontInfo.CapHeight = m\_characterDictionary[72].yOffset;}
+\DoxyCodeLine{348 }
+\DoxyCodeLine{349             \textcolor{comment}{// Adjust Font Scale for compatibility reasons}}
+\DoxyCodeLine{350             if (m\_fontInfo.Scale == 0)}
+\DoxyCodeLine{351                 m\_fontInfo.Scale = 1.0f;}
+\DoxyCodeLine{352 }
+\DoxyCodeLine{353             \textcolor{comment}{// Set Strikethrough Offset (if needed)}}
+\DoxyCodeLine{354             \textcolor{keywordflow}{if} (m\_fontInfo.strikethrough == 0)}
+\DoxyCodeLine{355                 m\_fontInfo.strikethrough = m\_fontInfo.CapHeight / 2.5f;}
+\DoxyCodeLine{356 }
+\DoxyCodeLine{357             \textcolor{comment}{// Set Padding value for legacy font assets.}}
+\DoxyCodeLine{358             \textcolor{keywordflow}{if} (m\_fontInfo.Padding == 0)}
+\DoxyCodeLine{359             \{}
+\DoxyCodeLine{360                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTMPro_1_1TMP__Asset_a8dcd405969e8c3aaa441c0fe3b0b6eaa}{material}}.HasProperty(ShaderUtilities.ID\_GradientScale))}
+\DoxyCodeLine{361                     m\_fontInfo.Padding = \mbox{\hyperlink{classTMPro_1_1TMP__Asset_a8dcd405969e8c3aaa441c0fe3b0b6eaa}{material}}.GetFloat(ShaderUtilities.ID\_GradientScale) -\/ 1;}
+\DoxyCodeLine{362             \}}
+\DoxyCodeLine{363 }
+\DoxyCodeLine{364             \textcolor{comment}{// Populate Dictionary with Kerning Information}}
+\DoxyCodeLine{365             m\_kerningDictionary = \textcolor{keyword}{new} Dictionary<int, KerningPair>();}
+\DoxyCodeLine{366             List<KerningPair> pairs = m\_kerningInfo.kerningPairs;}
+\DoxyCodeLine{367 }
+\DoxyCodeLine{368             \textcolor{comment}{//Debug.Log(m\_fontInfo.Name + " has " + pairs.Count +  " Kerning Pairs.");}}
+\DoxyCodeLine{369             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < pairs.Count; i++)}
+\DoxyCodeLine{370             \{}
+\DoxyCodeLine{371                 KerningPair pair = pairs[i];}
+\DoxyCodeLine{372 }
+\DoxyCodeLine{373                 \textcolor{comment}{// Convert legacy kerning data}}
+\DoxyCodeLine{374                 \textcolor{keywordflow}{if} (pair.xOffset != 0)}
+\DoxyCodeLine{375                     pairs[i].ConvertLegacyKerningData();}
+\DoxyCodeLine{376 }
+\DoxyCodeLine{377                 KerningPairKey uniqueKey = \textcolor{keyword}{new} KerningPairKey(pair.firstGlyph, pair.secondGlyph);}
+\DoxyCodeLine{378 }
+\DoxyCodeLine{379                 \textcolor{keywordflow}{if} (m\_kerningDictionary.ContainsKey((\textcolor{keywordtype}{int})uniqueKey.key) == \textcolor{keyword}{false})}
+\DoxyCodeLine{380                 \{}
+\DoxyCodeLine{381                     m\_kerningDictionary.Add((\textcolor{keywordtype}{int})uniqueKey.key, pair);}
+\DoxyCodeLine{382                 \}}
+\DoxyCodeLine{383                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{384                 \{}
+\DoxyCodeLine{385                     \textcolor{keywordflow}{if} (!TMP\_Settings.warningsDisabled)}
+\DoxyCodeLine{386                         Debug.LogWarning(\textcolor{stringliteral}{"Kerning Key for ["} + uniqueKey.ascii\_Left + \textcolor{stringliteral}{"] and ["} + uniqueKey.ascii\_Right + \textcolor{stringliteral}{"] already exists."});}
+\DoxyCodeLine{387                 \}}
+\DoxyCodeLine{388             \}}
+\DoxyCodeLine{389 }
+\DoxyCodeLine{390 }
+\DoxyCodeLine{391             \textcolor{comment}{// Compute Hashcode for the font asset name}}
+\DoxyCodeLine{392             \mbox{\hyperlink{classTMPro_1_1TMP__Asset_a63f177ff7028859d2b431789737d8ccc}{hashCode}} = TMP\_TextUtilities.GetSimpleHashCode(this.name);}
+\DoxyCodeLine{393 }
+\DoxyCodeLine{394             \textcolor{comment}{// Compute Hashcode for the material name}}
+\DoxyCodeLine{395             \mbox{\hyperlink{classTMPro_1_1TMP__Asset_a55abe9aef1cf6d3e49fec1257abd152c}{materialHashCode}} = TMP\_TextUtilities.GetSimpleHashCode(\mbox{\hyperlink{classTMPro_1_1TMP__Asset_a8dcd405969e8c3aaa441c0fe3b0b6eaa}{material}}.name);}
+\DoxyCodeLine{396 }
+\DoxyCodeLine{397             \textcolor{comment}{// Unload font atlas texture}}
+\DoxyCodeLine{398             \textcolor{comment}{//ShaderUtilities.GetShaderPropertyIDs();}}
+\DoxyCodeLine{399             \textcolor{comment}{//Resources.UnloadAsset(material.GetTexture(ShaderUtilities.ID\_MainTex));}}
+\DoxyCodeLine{400 }
+\DoxyCodeLine{401             \textcolor{comment}{// Initialize Font Weights if needed}}
+\DoxyCodeLine{402             \textcolor{comment}{//InitializeFontWeights();}}
+\DoxyCodeLine{403         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a65d62154e56cd5bde1da7a8f9a183f5d}\label{classTMPro_1_1TMP__FontAsset_a65d62154e56cd5bde1da7a8f9a183f5d}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!SortGlyphs@{SortGlyphs}}
+\index{SortGlyphs@{SortGlyphs}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{SortGlyphs()}{SortGlyphs()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+Sort\+Glyphs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to sort the list of glyphs. 
+
+
+
+Definition at line 409 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{410         \{}
+\DoxyCodeLine{411             \textcolor{keywordflow}{if} (m\_glyphInfoList == \textcolor{keyword}{null} || m\_glyphInfoList.Count == 0) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{412 }
+\DoxyCodeLine{413             m\_glyphInfoList = m\_glyphInfoList.OrderBy(item => item.id).ToList();}
+\DoxyCodeLine{414         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_acb4defd1335d404d2e984bd130c59fe1}\label{classTMPro_1_1TMP__FontAsset_acb4defd1335d404d2e984bd130c59fe1}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!fallbackFontAssets@{fallbackFontAssets}}
+\index{fallbackFontAssets@{fallbackFontAssets}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{fallbackFontAssets}{fallbackFontAssets}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}}$>$ T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+fallback\+Font\+Assets}
+
+
+
+List containing the Fallback font assets for this font. 
+
+
+
+Definition at line 103 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a5add1fb1c5ac1afb72c1f6c5b64f9d8a}\label{classTMPro_1_1TMP__FontAsset_a5add1fb1c5ac1afb72c1f6c5b64f9d8a}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!creationSettings@{creationSettings}}
+\index{creationSettings@{creationSettings}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{creationSettings}{creationSettings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTMPro_1_1FontAssetCreationSettings}{Font\+Asset\+Creation\+Settings}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+creation\+Settings\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The settings used in the Font Asset Creator when this font asset was created or edited. 
+
+
+
+Definition at line 109 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{109         \{}
+\DoxyCodeLine{110             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_CreationSettings; \}}
+\DoxyCodeLine{111             \textcolor{keyword}{set} \{ m\_CreationSettings = value; \}}
+\DoxyCodeLine{112         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_abeca04093d0ee5e19bd3a1f2527b54fd}\label{classTMPro_1_1TMP__FontAsset_abeca04093d0ee5e19bd3a1f2527b54fd}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!defaultFontAsset@{defaultFontAsset}}
+\index{defaultFontAsset@{defaultFontAsset}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{defaultFontAsset}{defaultFontAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+default\+Font\+Asset\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Default Font Asset used as last resort when glyphs are missing. 
+
+
+
+Definition at line 29 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29         \{}
+\DoxyCodeLine{30             \textcolor{keyword}{get}}
+\DoxyCodeLine{31             \{}
+\DoxyCodeLine{32                 \textcolor{keywordflow}{if} (s\_defaultFontAsset == \textcolor{keyword}{null})}
+\DoxyCodeLine{33                 \{}
+\DoxyCodeLine{34                     s\_defaultFontAsset = Resources.Load<TMP\_FontAsset>(\textcolor{stringliteral}{"Fonts \& Materials/LiberationSans SDF"});}
+\DoxyCodeLine{35                 \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37                 \textcolor{keywordflow}{return} s\_defaultFontAsset;}
+\DoxyCodeLine{38             \}}
+\DoxyCodeLine{39         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a6afd05863cb5c5f39221cc63904b3f90}\label{classTMPro_1_1TMP__FontAsset_a6afd05863cb5c5f39221cc63904b3f90}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!fontInfo@{fontInfo}}
+\index{fontInfo@{fontInfo}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{fontInfo}{fontInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTMPro_1_1FaceInfo}{Face\+Info}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+font\+Info\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The general information about the font. 
+
+
+
+Definition at line 50 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_fontInfo; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a0e8bcaaecbbd7d452709fbc92814c92e}\label{classTMPro_1_1TMP__FontAsset_a0e8bcaaecbbd7d452709fbc92814c92e}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!kerningDictionary@{kerningDictionary}}
+\index{kerningDictionary@{kerningDictionary}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{kerningDictionary}{kerningDictionary}}
+{\footnotesize\ttfamily Dictionary$<$int, \mbox{\hyperlink{classTMPro_1_1KerningPair}{Kerning\+Pair}}$>$ T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+kerning\+Dictionary\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Dictionary containing the kerning data 
+
+
+
+Definition at line 79 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79         \{}
+\DoxyCodeLine{80             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_kerningDictionary; \}}
+\DoxyCodeLine{81         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__FontAsset_a29e3d4b8a89e5bca2f9b8238257f4cd9}\label{classTMPro_1_1TMP__FontAsset_a29e3d4b8a89e5bca2f9b8238257f4cd9}} 
+\index{TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}!kerningInfo@{kerningInfo}}
+\index{kerningInfo@{kerningInfo}!TMPro.TMP\_FontAsset@{TMPro.TMP\_FontAsset}}
+\doxysubsubsection{\texorpdfstring{kerningInfo}{kerningInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTMPro_1_1KerningTable}{Kerning\+Table}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Font\+Asset.\+kerning\+Info\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+
+
+
+
+Definition at line 88 of file T\+M\+P\+\_\+\+Font\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{88         \{}
+\DoxyCodeLine{89             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_kerningInfo; \}}
+\DoxyCodeLine{90         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Runtime/T\+M\+P\+\_\+\+Font\+Asset.\+cs\end{DoxyCompactItemize}

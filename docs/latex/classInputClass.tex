@@ -1,0 +1,140 @@
+\hypertarget{classInputClass}{}\doxysection{Input\+Class Class Reference}
+\label{classInputClass}\index{InputClass@{InputClass}}
+
+
+Class that contains data related to user input.  
+
+
+Inheritance diagram for Input\+Class\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classInputClass}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classInputClass_a6ebd3edc5075426ef4e09043103581f4}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Update is called once per frame. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classInputClass_aed8765a6a50b5c6e42639fb39a88b7c2}{Get\+Input\+Flag}} ()
+\begin{DoxyCompactList}\small\item\em Get the flag indicating input status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{classInputClass_ad4ae3592a14702b2443f2c3601f78278}{Camera}}
+\begin{DoxyCompactList}\small\item\em Camera object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that contains data related to user input. 
+
+
+
+Definition at line 9 of file Input\+Class.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInputClass_aed8765a6a50b5c6e42639fb39a88b7c2}\label{classInputClass_aed8765a6a50b5c6e42639fb39a88b7c2}} 
+\index{InputClass@{InputClass}!GetInputFlag@{GetInputFlag}}
+\index{GetInputFlag@{GetInputFlag}!InputClass@{InputClass}}
+\doxysubsubsection{\texorpdfstring{GetInputFlag()}{GetInputFlag()}}
+{\footnotesize\ttfamily int Input\+Class.\+Get\+Input\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the flag indicating input status. 
+
+\begin{DoxyReturn}{Returns}
+Return the flag indicating input status. 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Input\+Class.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74     \{}
+\DoxyCodeLine{75         Debug.Log(\textcolor{stringliteral}{"Click Flag: "} + this.clickFlag);}
+\DoxyCodeLine{76         \textcolor{keywordflow}{return} this.clickFlag;}
+\DoxyCodeLine{77     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInputClass_a6ebd3edc5075426ef4e09043103581f4}\label{classInputClass_a6ebd3edc5075426ef4e09043103581f4}} 
+\index{InputClass@{InputClass}!Update@{Update}}
+\index{Update@{Update}!InputClass@{InputClass}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Input\+Class.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update is called once per frame. 
+
+
+
+Definition at line 27 of file Input\+Class.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28     \{}
+\DoxyCodeLine{29         \textcolor{comment}{// Debug.Log("Working");}}
+\DoxyCodeLine{30         \textcolor{keywordflow}{if} (Input.GetMouseButtonDown(0))}
+\DoxyCodeLine{31         \{}
+\DoxyCodeLine{32             \textcolor{comment}{// Debug.Log("Screen Height: " + Screen.height);}}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34             \textcolor{comment}{// Debug.Log("Screen Input y pos: " + Input.mousePosition.y);}}
+\DoxyCodeLine{35             this.currCameraPos = this.transform.position.x;}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37             \textcolor{keywordtype}{float} touchPositionX = Input.mousePosition.x -\/ this.touchOffest + this.transform.position.x; \textcolor{comment}{// x position for touch}}
+\DoxyCodeLine{38             \textcolor{keywordtype}{float} touchPositiony = Input.mousePosition.y -\/ this.touchOffest + this.transform.position.y; \textcolor{comment}{// y position for y}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40             \textcolor{keywordtype}{float} middleVerticalBoundry = this.transform.position.x; \textcolor{comment}{// sets vertical boundary to divide touches}}
+\DoxyCodeLine{41             \textcolor{keywordtype}{float} middleHorizontalBoundry = this.\mbox{\hyperlink{classInputClass_ad4ae3592a14702b2443f2c3601f78278}{Camera}}.transform.position.y / 2; \textcolor{comment}{// sets horizontal boundary to divide touches}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43             \textcolor{keywordflow}{if} (touchPositionX > middleVerticalBoundry)}
+\DoxyCodeLine{44             \{}
+\DoxyCodeLine{45                 \textcolor{keywordflow}{if} (Input.mousePosition.y > Screen.height / 2)}
+\DoxyCodeLine{46                 \{}
+\DoxyCodeLine{47                     this.clickFlag = 2; \textcolor{comment}{// Top Right}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49                     \textcolor{comment}{// Debug.Log("Woah");}}
+\DoxyCodeLine{50                 \}}
+\DoxyCodeLine{51                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{52                 \{}
+\DoxyCodeLine{53                     this.clickFlag = 1; \textcolor{comment}{// Bottom Right}}
+\DoxyCodeLine{54                 \}}
+\DoxyCodeLine{55             \}}
+\DoxyCodeLine{56             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{57             \{}
+\DoxyCodeLine{58                 this.clickFlag = 0; \textcolor{comment}{// Left}}
+\DoxyCodeLine{59             \}}
+\DoxyCodeLine{60         \}}
+\DoxyCodeLine{61         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (Input.GetMouseButtonUp(0))}
+\DoxyCodeLine{62         \{}
+\DoxyCodeLine{63             this.clickFlag = -\/1; \textcolor{comment}{// No Click}}
+\DoxyCodeLine{64         \}}
+\DoxyCodeLine{65     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classInputClass_ad4ae3592a14702b2443f2c3601f78278}\label{classInputClass_ad4ae3592a14702b2443f2c3601f78278}} 
+\index{InputClass@{InputClass}!Camera@{Camera}}
+\index{Camera@{Camera}!InputClass@{InputClass}}
+\doxysubsubsection{\texorpdfstring{Camera}{Camera}}
+{\footnotesize\ttfamily Game\+Object Input\+Class.\+Camera}
+
+
+
+Camera object. 
+
+
+
+Definition at line 14 of file Input\+Class.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/Input\+Class.\+cs\end{DoxyCompactItemize}

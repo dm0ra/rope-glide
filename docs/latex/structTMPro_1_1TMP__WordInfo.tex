@@ -1,0 +1,76 @@
+\hypertarget{structTMPro_1_1TMP__WordInfo}{}\doxysection{T\+M\+Pro.\+T\+M\+P\+\_\+\+Word\+Info Struct Reference}
+\label{structTMPro_1_1TMP__WordInfo}\index{TMPro.TMP\_WordInfo@{TMPro.TMP\_WordInfo}}
+
+
+Structure containing information about the individual words contained in the text object.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{structTMPro_1_1TMP__WordInfo_a18da9e9a1373dc163f1da528d23849b3}{Get\+Word}} ()
+\begin{DoxyCompactList}\small\item\em Returns the word as a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__WordInfo_a5e83201afcc22882ca9131b1a3868d29}\label{structTMPro_1_1TMP__WordInfo_a5e83201afcc22882ca9131b1a3868d29}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__Text}{T\+M\+P\+\_\+\+Text}} {\bfseries text\+Component}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__WordInfo_a90c0f4fe19fdda6f9159dc2917bee776}\label{structTMPro_1_1TMP__WordInfo_a90c0f4fe19fdda6f9159dc2917bee776}} 
+int {\bfseries first\+Character\+Index}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__WordInfo_a34962a75f3d6228e01eea0f1c076d439}\label{structTMPro_1_1TMP__WordInfo_a34962a75f3d6228e01eea0f1c076d439}} 
+int {\bfseries last\+Character\+Index}
+\item 
+\mbox{\Hypertarget{structTMPro_1_1TMP__WordInfo_a238e4a5e9fa4f36ba464e4167751d170}\label{structTMPro_1_1TMP__WordInfo_a238e4a5e9fa4f36ba464e4167751d170}} 
+int {\bfseries character\+Count}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure containing information about the individual words contained in the text object. 
+
+
+
+Definition at line 247 of file T\+M\+Pro\+\_\+\+Mesh\+Utilities.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structTMPro_1_1TMP__WordInfo_a18da9e9a1373dc163f1da528d23849b3}\label{structTMPro_1_1TMP__WordInfo_a18da9e9a1373dc163f1da528d23849b3}} 
+\index{TMPro.TMP\_WordInfo@{TMPro.TMP\_WordInfo}!GetWord@{GetWord}}
+\index{GetWord@{GetWord}!TMPro.TMP\_WordInfo@{TMPro.TMP\_WordInfo}}
+\doxysubsubsection{\texorpdfstring{GetWord()}{GetWord()}}
+{\footnotesize\ttfamily string T\+M\+Pro.\+T\+M\+P\+\_\+\+Word\+Info.\+Get\+Word (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the word as a string. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 262 of file T\+M\+Pro\+\_\+\+Mesh\+Utilities.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{263         \{}
+\DoxyCodeLine{264             \textcolor{keywordtype}{string} word = \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{265             TMP\_CharacterInfo[] charInfo = textComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a4b2d23d558ff8f9aecf5814f046bcef6}{textInfo}}.characterInfo;}
+\DoxyCodeLine{266             }
+\DoxyCodeLine{267             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = firstCharacterIndex; i < lastCharacterIndex + 1; i++)}
+\DoxyCodeLine{268             \{}
+\DoxyCodeLine{269                 word += charInfo[i].character;}
+\DoxyCodeLine{270             \}}
+\DoxyCodeLine{271 }
+\DoxyCodeLine{272             \textcolor{keywordflow}{return} word;}
+\DoxyCodeLine{273         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Runtime/T\+M\+Pro\+\_\+\+Mesh\+Utilities.\+cs\end{DoxyCompactItemize}

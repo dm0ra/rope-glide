@@ -1,0 +1,103 @@
+\hypertarget{protocolUnityAdsDelegate-p}{}\doxysection{$<$Unity\+Ads\+Delegate$>$ Protocol Reference}
+\label{protocolUnityAdsDelegate-p}\index{$<$UnityAdsDelegate$>$@{$<$UnityAdsDelegate$>$}}
+
+
+{\ttfamily \#import $<$Unity\+Ads.\+h$>$}
+
+Inheritance diagram for $<$Unity\+Ads\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocolUnityAdsDelegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocolUnityAdsDelegate-p_a8fc6e8a10ffb53dbc8f4c84312e4d544}{unity\+Ads\+Ready\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocolUnityAdsDelegate-p_a62634f244c2ee0c76abc53cc71fb1b10}{unity\+Ads\+Did\+Error\+:with\+Message\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocolUnityAdsDelegate-p_a04f51d2948959482a526886a72a6769b}{unity\+Ads\+Did\+Start\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocolUnityAdsDelegate-p_a691233e0831868f877cc46543c8dc373}{unity\+Ads\+Did\+Finish\+:with\+Finish\+State\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{protocolUnityAdsDelegate-p}{Unity\+Ads\+Delegate}}} protocol defines the required methods for receiving messages from \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}. Must be implemented by the hosting app. The unity\+Ads\+Ready\+: method is called when it\textquotesingle{}s possible to show an ad. All other methods are used to provide notifications of events of the ad lifecycle. \begin{DoxyNote}{Note}
+On initialization, there are ready (or error) callbacks for each placement attached to the game identifier. 
+\end{DoxyNote}
+
+
+Definition at line 108 of file Unity\+Ads.\+h.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocolUnityAdsDelegate-p_a62634f244c2ee0c76abc53cc71fb1b10}\label{protocolUnityAdsDelegate-p_a62634f244c2ee0c76abc53cc71fb1b10}} 
+\index{$<$UnityAdsDelegate$>$@{$<$UnityAdsDelegate$>$}!unityAdsDidError:withMessage:@{unityAdsDidError:withMessage:}}
+\index{unityAdsDidError:withMessage:@{unityAdsDidError:withMessage:}!$<$UnityAdsDelegate$>$@{$<$UnityAdsDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unityAdsDidError:withMessage:()}{unityAdsDidError:withMessage:()}}
+{\footnotesize\ttfamily -\/ (void) unity\+Ads\+Did\+Error\+: \begin{DoxyParamCaption}\item[{(Unity\+Ads\+Error)}]{error }\item[{with\+Message\+:(N\+S\+String $\ast$)}]{message }\end{DoxyParamCaption}}
+
+Called when {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} encounters an error. All errors will be logged but this method can be used as an additional debugging aid. This callback can also be used for collecting statistics from different error scenarios.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & A {\ttfamily Unity\+Ads\+Error} error enum value indicating the type of error encountered. \\
+\hline
+{\em message} & A human readable string indicating the type of error encountered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocolUnityAdsDelegate-p_a691233e0831868f877cc46543c8dc373}\label{protocolUnityAdsDelegate-p_a691233e0831868f877cc46543c8dc373}} 
+\index{$<$UnityAdsDelegate$>$@{$<$UnityAdsDelegate$>$}!unityAdsDidFinish:withFinishState:@{unityAdsDidFinish:withFinishState:}}
+\index{unityAdsDidFinish:withFinishState:@{unityAdsDidFinish:withFinishState:}!$<$UnityAdsDelegate$>$@{$<$UnityAdsDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unityAdsDidFinish:withFinishState:()}{unityAdsDidFinish:withFinishState:()}}
+{\footnotesize\ttfamily -\/ (void) unity\+Ads\+Did\+Finish\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{placement\+Id }\item[{with\+Finish\+State\+:(Unity\+Ads\+Finish\+State)}]{state }\end{DoxyParamCaption}}
+
+Called after the ad has closed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em placement\+Id} & The ID of the placement that has finished, as defined in Unity Ads admin tools. \\
+\hline
+{\em state} & An enum value indicating the finish state of the ad. Possible values are {\ttfamily Completed}, {\ttfamily Skipped}, and {\ttfamily Error}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocolUnityAdsDelegate-p_a04f51d2948959482a526886a72a6769b}\label{protocolUnityAdsDelegate-p_a04f51d2948959482a526886a72a6769b}} 
+\index{$<$UnityAdsDelegate$>$@{$<$UnityAdsDelegate$>$}!unityAdsDidStart:@{unityAdsDidStart:}}
+\index{unityAdsDidStart:@{unityAdsDidStart:}!$<$UnityAdsDelegate$>$@{$<$UnityAdsDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unityAdsDidStart:()}{unityAdsDidStart:()}}
+{\footnotesize\ttfamily -\/ (void) unity\+Ads\+Did\+Start\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{placement\+Id }\end{DoxyParamCaption}}
+
+Called on a successful start of advertisement after calling the {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} {\ttfamily show\+:} method.
+
+\begin{DoxyWarning}{Warning}
+If there are errors in starting the advertisement, this method may never be called. Unity Ads will directly call {\ttfamily unity\+Ads\+Did\+Finish\+:with\+Finish\+State\+:} with error status.
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em placement\+Id} & The ID of the placement that has started, as defined in Unity Ads admin tools. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocolUnityAdsDelegate-p_a8fc6e8a10ffb53dbc8f4c84312e4d544}\label{protocolUnityAdsDelegate-p_a8fc6e8a10ffb53dbc8f4c84312e4d544}} 
+\index{$<$UnityAdsDelegate$>$@{$<$UnityAdsDelegate$>$}!unityAdsReady:@{unityAdsReady:}}
+\index{unityAdsReady:@{unityAdsReady:}!$<$UnityAdsDelegate$>$@{$<$UnityAdsDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unityAdsReady:()}{unityAdsReady:()}}
+{\footnotesize\ttfamily -\/ (void) unity\+Ads\+Ready\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{placement\+Id }\end{DoxyParamCaption}}
+
+Called when {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} is ready to show an ad. After this callback you can call the {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} {\ttfamily show\+:} method for this placement. Note that sometimes placement might no longer be ready due to exceptional reasons. These situations will give no new callbacks.
+
+\begin{DoxyWarning}{Warning}
+To avoid error situations, it is always best to check {\ttfamily is\+Ready} method status before calling show. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em placement\+Id} & The ID of the placement that is ready to show, as defined in Unity Ads admin tools. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+ads@2.\+3.\+1/\+Runtime/\+Plugins/i\+O\+S/\+Unity\+Ads.\+framework/\+Headers/Unity\+Ads.\+h\end{DoxyCompactItemize}

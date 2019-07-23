@@ -1,0 +1,7 @@
+This is the packaged version of Collab, currently limited to containing the History and Toolbar windows, along with supporting classes.\hypertarget{autotoc_md38_autotoc_md39}{}\doxysection{Development}\label{autotoc_md38_autotoc_md39}
+Check this repository out in your \{\$\+P\+R\+O\+J\+E\+CT\}/\+Packages/ folder, under the name com.\+unity.\+collab-\/proxy. The classes will be built by Unity.\hypertarget{autotoc_md38_autotoc_md40}{}\doxysection{Testing}\label{autotoc_md38_autotoc_md40}
+In order to run the tests, you will need to add this project to the testables key in your manifest.\+json -\/ once you have done this, the tests will be picked up by the Unity Test Runner window.\hypertarget{autotoc_md38_autotoc_md41}{}\doxysection{Building}\label{autotoc_md38_autotoc_md41}
+You may build this project using msbuild. The commands to do so can be seen under .gitlab-\/ci.\+yml.\hypertarget{autotoc_md38_autotoc_md42}{}\doxysection{Deploying}\label{autotoc_md38_autotoc_md42}
+Gitlab will automatically build your project when you deploy. You can download the resulting artifact, which will be a dll, and place it in your Editor/bin/ folder. Open the package in Unity to generate the meta files, and then you will be able to publish.
+
+We\textquotesingle{}re currently looking into a way to avoid this manual process. 

@@ -1,0 +1,434 @@
+\hypertarget{classTMPro_1_1MaterialReferenceManager}{}\doxysection{T\+M\+Pro.\+Material\+Reference\+Manager Class Reference}
+\label{classTMPro_1_1MaterialReferenceManager}\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_a573b9237cc9247f29300bd6074fa6cb0}{Contains}} (\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} font)
+\begin{DoxyCompactList}\small\item\em Add new material reference and return the index of this new reference in the material\+References array. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_a900e5d78f7716ac071050558f4f838fa}{Contains}} (\mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} sprite)
+\begin{DoxyCompactList}\small\item\em Function to check if the sprite asset is already referenced. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_aef7197e07d5b322b6ed3d8baf4d8c0cf}{Add\+Font\+Asset}} (\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} font\+Asset)
+\begin{DoxyCompactList}\small\item\em Add new font asset reference to dictionary. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_a3810186f9c82e44d3ca54ed456f6d8bd}{Add\+Sprite\+Asset}} (\mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} sprite\+Asset)
+\begin{DoxyCompactList}\small\item\em Add new Sprite Asset to dictionary. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_a6ec369694dfd5ba0c8dbebcbc7bd1f97}{Add\+Sprite\+Asset}} (int hash\+Code, \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} sprite\+Asset)
+\begin{DoxyCompactList}\small\item\em Add new Sprite Asset to dictionary. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_ad32f019ea73193084d8e7f90f387b679}{Add\+Font\+Material}} (int hash\+Code, Material material)
+\begin{DoxyCompactList}\small\item\em Add new Material reference to dictionary. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_aaff4d63fa8a94aa0b4badb98076ce0b3}{Add\+Color\+Gradient\+Preset}} (int hash\+Code, \mbox{\hyperlink{classTMPro_1_1TMP__ColorGradient}{T\+M\+P\+\_\+\+Color\+Gradient}} sprite\+Asset)
+\begin{DoxyCompactList}\small\item\em Add new Color Gradient Preset to dictionary. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_aea90526985cf5081a931bfbc4d36af81}{Try\+Get\+Font\+Asset}} (int hash\+Code, out \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} font\+Asset)
+\begin{DoxyCompactList}\small\item\em Function returning the Font Asset corresponding to the provided hash code. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_a134f55b51c7660176516e2fe3b71d4ae}{Try\+Get\+Sprite\+Asset}} (int hash\+Code, out \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} sprite\+Asset)
+\begin{DoxyCompactList}\small\item\em Function returning the Sprite Asset corresponding to the provided hash code. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_a61de4a348042d6714254fd9558f8f632}{Try\+Get\+Color\+Gradient\+Preset}} (int hash\+Code, out \mbox{\hyperlink{classTMPro_1_1TMP__ColorGradient}{T\+M\+P\+\_\+\+Color\+Gradient}} gradient\+Preset)
+\begin{DoxyCompactList}\small\item\em Function returning the Color Gradient Preset corresponding to the provided hash code. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_a4826b2b5ac5de579423e0eaee6955dfc}{Try\+Get\+Material}} (int hash\+Code, out Material material)
+\begin{DoxyCompactList}\small\item\em Function returning the Font Material corresponding to the provided hash code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager}{Material\+Reference\+Manager}} \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager_a51b1daac64638054a8ae2afbae3628f5}{instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get a singleton instance of the registry \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file Material\+Reference\+Manager.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_aaff4d63fa8a94aa0b4badb98076ce0b3}\label{classTMPro_1_1MaterialReferenceManager_aaff4d63fa8a94aa0b4badb98076ce0b3}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!AddColorGradientPreset@{AddColorGradientPreset}}
+\index{AddColorGradientPreset@{AddColorGradientPreset}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{AddColorGradientPreset()}{AddColorGradientPreset()}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+Material\+Reference\+Manager.\+Add\+Color\+Gradient\+Preset (\begin{DoxyParamCaption}\item[{int}]{hash\+Code,  }\item[{\mbox{\hyperlink{classTMPro_1_1TMP__ColorGradient}{T\+M\+P\+\_\+\+Color\+Gradient}}}]{sprite\+Asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Add new Color Gradient Preset to dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & \\
+\hline
+{\em sprite\+Asset} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 145 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{146         \{}
+\DoxyCodeLine{147             MaterialReferenceManager.instance.AddColorGradientPreset\_Internal(hashCode, spriteAsset);}
+\DoxyCodeLine{148         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_aef7197e07d5b322b6ed3d8baf4d8c0cf}\label{classTMPro_1_1MaterialReferenceManager_aef7197e07d5b322b6ed3d8baf4d8c0cf}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!AddFontAsset@{AddFontAsset}}
+\index{AddFontAsset@{AddFontAsset}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{AddFontAsset()}{AddFontAsset()}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+Material\+Reference\+Manager.\+Add\+Font\+Asset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}}}]{font\+Asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Add new font asset reference to dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Asset} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40         \{}
+\DoxyCodeLine{41             MaterialReferenceManager.instance.AddFontAssetInternal(fontAsset);}
+\DoxyCodeLine{42         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_ad32f019ea73193084d8e7f90f387b679}\label{classTMPro_1_1MaterialReferenceManager_ad32f019ea73193084d8e7f90f387b679}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!AddFontMaterial@{AddFontMaterial}}
+\index{AddFontMaterial@{AddFontMaterial}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{AddFontMaterial()}{AddFontMaterial()}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+Material\+Reference\+Manager.\+Add\+Font\+Material (\begin{DoxyParamCaption}\item[{int}]{hash\+Code,  }\item[{Material}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Add new Material reference to dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & \\
+\hline
+{\em material} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123         \{}
+\DoxyCodeLine{124             MaterialReferenceManager.instance.AddFontMaterialInternal(hashCode, material);}
+\DoxyCodeLine{125         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_a6ec369694dfd5ba0c8dbebcbc7bd1f97}\label{classTMPro_1_1MaterialReferenceManager_a6ec369694dfd5ba0c8dbebcbc7bd1f97}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!AddSpriteAsset@{AddSpriteAsset}}
+\index{AddSpriteAsset@{AddSpriteAsset}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{AddSpriteAsset()}{AddSpriteAsset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+Material\+Reference\+Manager.\+Add\+Sprite\+Asset (\begin{DoxyParamCaption}\item[{int}]{hash\+Code,  }\item[{\mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}}}]{sprite\+Asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Add new Sprite Asset to dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & \\
+\hline
+{\em sprite\+Asset} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 92 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{93         \{}
+\DoxyCodeLine{94             MaterialReferenceManager.instance.AddSpriteAssetInternal(hashCode, spriteAsset);}
+\DoxyCodeLine{95         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_a3810186f9c82e44d3ca54ed456f6d8bd}\label{classTMPro_1_1MaterialReferenceManager_a3810186f9c82e44d3ca54ed456f6d8bd}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!AddSpriteAsset@{AddSpriteAsset}}
+\index{AddSpriteAsset@{AddSpriteAsset}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{AddSpriteAsset()}{AddSpriteAsset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+Material\+Reference\+Manager.\+Add\+Sprite\+Asset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}}}]{sprite\+Asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Add new Sprite Asset to dictionary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & \\
+\hline
+{\em sprite\+Asset} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 66 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67         \{}
+\DoxyCodeLine{68             MaterialReferenceManager.instance.AddSpriteAssetInternal(spriteAsset);}
+\DoxyCodeLine{69         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_a573b9237cc9247f29300bd6074fa6cb0}\label{classTMPro_1_1MaterialReferenceManager_a573b9237cc9247f29300bd6074fa6cb0}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!Contains@{Contains}}
+\index{Contains@{Contains}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+Material\+Reference\+Manager.\+Contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}}}]{font }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add new material reference and return the index of this new reference in the material\+References array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & \\
+\hline
+{\em material\+Hash\+Code} & \\
+\hline
+{\em font\+Asset} & \\
+\hline
+\end{DoxyParams}
+
+
+Add new material reference and return the index of this new reference in the material\+References array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & \\
+\hline
+{\em material\+Hash\+Code} & \\
+\hline
+{\em sprite\+Asset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Function to check if the font asset is already referenced. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 247 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{248         \{}
+\DoxyCodeLine{249             \textcolor{keywordflow}{if} (m\_FontAssetReferenceLookup.ContainsKey(font.hashCode))}
+\DoxyCodeLine{250                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{251 }
+\DoxyCodeLine{252             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{253         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_a900e5d78f7716ac071050558f4f838fa}\label{classTMPro_1_1MaterialReferenceManager_a900e5d78f7716ac071050558f4f838fa}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!Contains@{Contains}}
+\index{Contains@{Contains}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+Material\+Reference\+Manager.\+Contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}}}]{sprite }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to check if the sprite asset is already referenced. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 261 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{262         \{}
+\DoxyCodeLine{263             \textcolor{keywordflow}{if} (m\_FontAssetReferenceLookup.ContainsKey(sprite.hashCode))}
+\DoxyCodeLine{264                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{265 }
+\DoxyCodeLine{266             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{267         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_a61de4a348042d6714254fd9558f8f632}\label{classTMPro_1_1MaterialReferenceManager_a61de4a348042d6714254fd9558f8f632}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!TryGetColorGradientPreset@{TryGetColorGradientPreset}}
+\index{TryGetColorGradientPreset@{TryGetColorGradientPreset}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{TryGetColorGradientPreset()}{TryGetColorGradientPreset()}}
+{\footnotesize\ttfamily static bool T\+M\+Pro.\+Material\+Reference\+Manager.\+Try\+Get\+Color\+Gradient\+Preset (\begin{DoxyParamCaption}\item[{int}]{hash\+Code,  }\item[{out \mbox{\hyperlink{classTMPro_1_1TMP__ColorGradient}{T\+M\+P\+\_\+\+Color\+Gradient}}}]{gradient\+Preset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function returning the Color Gradient Preset corresponding to the provided hash code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & \\
+\hline
+{\em gradient\+Preset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 338 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{339         \{}
+\DoxyCodeLine{340             \textcolor{keywordflow}{return} MaterialReferenceManager.instance.TryGetColorGradientPresetInternal(hashCode, out gradientPreset);}
+\DoxyCodeLine{341         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_aea90526985cf5081a931bfbc4d36af81}\label{classTMPro_1_1MaterialReferenceManager_aea90526985cf5081a931bfbc4d36af81}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!TryGetFontAsset@{TryGetFontAsset}}
+\index{TryGetFontAsset@{TryGetFontAsset}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{TryGetFontAsset()}{TryGetFontAsset()}}
+{\footnotesize\ttfamily static bool T\+M\+Pro.\+Material\+Reference\+Manager.\+Try\+Get\+Font\+Asset (\begin{DoxyParamCaption}\item[{int}]{hash\+Code,  }\item[{out \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}}}]{font\+Asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function returning the Font Asset corresponding to the provided hash code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & \\
+\hline
+{\em font\+Asset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 277 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{278         \{}
+\DoxyCodeLine{279             \textcolor{keywordflow}{return} MaterialReferenceManager.instance.TryGetFontAssetInternal(hashCode, out fontAsset);}
+\DoxyCodeLine{280         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_a4826b2b5ac5de579423e0eaee6955dfc}\label{classTMPro_1_1MaterialReferenceManager_a4826b2b5ac5de579423e0eaee6955dfc}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!TryGetMaterial@{TryGetMaterial}}
+\index{TryGetMaterial@{TryGetMaterial}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{TryGetMaterial()}{TryGetMaterial()}}
+{\footnotesize\ttfamily static bool T\+M\+Pro.\+Material\+Reference\+Manager.\+Try\+Get\+Material (\begin{DoxyParamCaption}\item[{int}]{hash\+Code,  }\item[{out Material}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function returning the Font Material corresponding to the provided hash code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & \\
+\hline
+{\em material} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 368 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{369         \{}
+\DoxyCodeLine{370             \textcolor{keywordflow}{return} MaterialReferenceManager.instance.TryGetMaterialInternal(hashCode, out material);}
+\DoxyCodeLine{371         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_a134f55b51c7660176516e2fe3b71d4ae}\label{classTMPro_1_1MaterialReferenceManager_a134f55b51c7660176516e2fe3b71d4ae}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!TryGetSpriteAsset@{TryGetSpriteAsset}}
+\index{TryGetSpriteAsset@{TryGetSpriteAsset}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{TryGetSpriteAsset()}{TryGetSpriteAsset()}}
+{\footnotesize\ttfamily static bool T\+M\+Pro.\+Material\+Reference\+Manager.\+Try\+Get\+Sprite\+Asset (\begin{DoxyParamCaption}\item[{int}]{hash\+Code,  }\item[{out \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}}}]{sprite\+Asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function returning the Sprite Asset corresponding to the provided hash code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & \\
+\hline
+{\em sprite\+Asset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 308 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{309         \{}
+\DoxyCodeLine{310             \textcolor{keywordflow}{return} MaterialReferenceManager.instance.TryGetSpriteAssetInternal(hashCode, out spriteAsset);}
+\DoxyCodeLine{311         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classTMPro_1_1MaterialReferenceManager_a51b1daac64638054a8ae2afbae3628f5}\label{classTMPro_1_1MaterialReferenceManager_a51b1daac64638054a8ae2afbae3628f5}} 
+\index{TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}!instance@{instance}}
+\index{instance@{instance}!TMPro.MaterialReferenceManager@{TMPro.MaterialReferenceManager}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTMPro_1_1MaterialReferenceManager}{Material\+Reference\+Manager}} T\+M\+Pro.\+Material\+Reference\+Manager.\+instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Get a singleton instance of the registry 
+
+
+
+Definition at line 24 of file Material\+Reference\+Manager.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24         \{}
+\DoxyCodeLine{25             \textcolor{keyword}{get}}
+\DoxyCodeLine{26             \{}
+\DoxyCodeLine{27                 \textcolor{keywordflow}{if} (MaterialReferenceManager.s\_Instance == \textcolor{keyword}{null})}
+\DoxyCodeLine{28                     MaterialReferenceManager.s\_Instance = \textcolor{keyword}{new} MaterialReferenceManager();}
+\DoxyCodeLine{29                 \textcolor{keywordflow}{return} MaterialReferenceManager.s\_Instance;}
+\DoxyCodeLine{30             \}}
+\DoxyCodeLine{31         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Runtime/Material\+Reference\+Manager.\+cs\end{DoxyCompactItemize}

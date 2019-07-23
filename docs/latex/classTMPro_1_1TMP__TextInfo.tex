@@ -1,0 +1,417 @@
+\hypertarget{classTMPro_1_1TMP__TextInfo}{}\doxysection{T\+M\+Pro.\+T\+M\+P\+\_\+\+Text\+Info Class Reference}
+\label{classTMPro_1_1TMP__TextInfo}\index{TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}}
+
+
+Class which contains information about every element contained within the text object.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a73cb6b530a8da8d58248b4dcacc5ee7c}\label{classTMPro_1_1TMP__TextInfo_a73cb6b530a8da8d58248b4dcacc5ee7c}} 
+{\bfseries T\+M\+P\+\_\+\+Text\+Info} (\mbox{\hyperlink{classTMPro_1_1TMP__Text}{T\+M\+P\+\_\+\+Text}} text\+Component)
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo_a15b8c8e9f46c5412276e45c6f675edf2}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Function to clear the counters of the text object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo_aa34f6fe698de702b8a775b4e57d91ed4}{Clear\+Mesh\+Info}} (bool update\+Mesh)
+\begin{DoxyCompactList}\small\item\em Function to clear the content of the Mesh\+Info array while preserving the Triangles, Normals and Tangents. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo_aaf8e50d7075ed34cd7668d5df8225194}{Clear\+All\+Mesh\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Function to clear the content of all the Mesh\+Info arrays while preserving their Triangles, Normals and Tangents. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo_a62fb378fdbe5f9cce0ac975968e4fe21}{Reset\+Vertex\+Layout}} (bool is\+Volumetric)
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo_a7f60ff4e9617668074499ef69eeb9c65}{Clear\+Unused\+Vertices}} (\mbox{\hyperlink{structTMPro_1_1MaterialReference}{Material\+Reference}}\mbox{[}$\,$\mbox{]} materials)
+\begin{DoxyCompactList}\small\item\em Function used to mark unused vertices as degenerate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo_a8681083e478f949f5ba57d1b2f59f9bf}{Clear\+Line\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Function to clear and initialize the line\+Info array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo}{T\+M\+P\+\_\+\+Mesh\+Info}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo_a665aff73b3e4eceb0198f198ae831a81}{Copy\+Mesh\+Info\+Vertex\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Function to copy the Mesh\+Info Arrays and their primary vertex data content. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo_a3d0a1c4a3f618976099dbaa0473395ff}{Resize$<$ T $>$}} (ref T\mbox{[}$\,$\mbox{]} array, int size)
+\begin{DoxyCompactList}\small\item\em Function to resize any of the structure contained in the \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo}{T\+M\+P\+\_\+\+Text\+Info}} class. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo_aef15865763027788edc0ed4eceb57d1c}{Resize$<$ T $>$}} (ref T\mbox{[}$\,$\mbox{]} array, int size, bool is\+Block\+Allocated)
+\begin{DoxyCompactList}\small\item\em Function to resize any of the structure contained in the \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo}{T\+M\+P\+\_\+\+Text\+Info}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_ab23d67636c516cc8bd985f7e0904d3d9}\label{classTMPro_1_1TMP__TextInfo_ab23d67636c516cc8bd985f7e0904d3d9}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__Text}{T\+M\+P\+\_\+\+Text}} {\bfseries text\+Component}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a8e78eb9b556174b94f41918799a1b85d}\label{classTMPro_1_1TMP__TextInfo_a8e78eb9b556174b94f41918799a1b85d}} 
+int {\bfseries character\+Count}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a0b176c87b6ba6fd91c22adb1bd7f780a}\label{classTMPro_1_1TMP__TextInfo_a0b176c87b6ba6fd91c22adb1bd7f780a}} 
+int {\bfseries sprite\+Count}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_ae7e41800a8dba2853e71bd357e79319f}\label{classTMPro_1_1TMP__TextInfo_ae7e41800a8dba2853e71bd357e79319f}} 
+int {\bfseries space\+Count}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_ac2bb20330e0efa71d8fecd90c783fe65}\label{classTMPro_1_1TMP__TextInfo_ac2bb20330e0efa71d8fecd90c783fe65}} 
+int {\bfseries word\+Count}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_aeab9550ef458ae133cd9d8bcb6c27a43}\label{classTMPro_1_1TMP__TextInfo_aeab9550ef458ae133cd9d8bcb6c27a43}} 
+int {\bfseries link\+Count}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a7a77f5e9e979808b269dae5501bb7697}\label{classTMPro_1_1TMP__TextInfo_a7a77f5e9e979808b269dae5501bb7697}} 
+int {\bfseries line\+Count}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a201730f545fe082335a1bb5a7ae8cd87}\label{classTMPro_1_1TMP__TextInfo_a201730f545fe082335a1bb5a7ae8cd87}} 
+int {\bfseries page\+Count}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a7658d04113158c9974dc48c867efd6d5}\label{classTMPro_1_1TMP__TextInfo_a7658d04113158c9974dc48c867efd6d5}} 
+int {\bfseries material\+Count}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_ae539414faa4f544ff7a08c2ef5c36d25}\label{classTMPro_1_1TMP__TextInfo_ae539414faa4f544ff7a08c2ef5c36d25}} 
+\mbox{\hyperlink{structTMPro_1_1TMP__CharacterInfo}{T\+M\+P\+\_\+\+Character\+Info}}\mbox{[}$\,$\mbox{]} {\bfseries character\+Info}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a5d98e3b54820b5c1368b8e9ee8205f5c}\label{classTMPro_1_1TMP__TextInfo_a5d98e3b54820b5c1368b8e9ee8205f5c}} 
+\mbox{\hyperlink{structTMPro_1_1TMP__WordInfo}{T\+M\+P\+\_\+\+Word\+Info}}\mbox{[}$\,$\mbox{]} {\bfseries word\+Info}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a1fb220afd41c977cfaf07e2254800947}\label{classTMPro_1_1TMP__TextInfo_a1fb220afd41c977cfaf07e2254800947}} 
+\mbox{\hyperlink{structTMPro_1_1TMP__LinkInfo}{T\+M\+P\+\_\+\+Link\+Info}}\mbox{[}$\,$\mbox{]} {\bfseries link\+Info}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a49c8350b475242f1a52b6a2a05e2d49d}\label{classTMPro_1_1TMP__TextInfo_a49c8350b475242f1a52b6a2a05e2d49d}} 
+\mbox{\hyperlink{structTMPro_1_1TMP__LineInfo}{T\+M\+P\+\_\+\+Line\+Info}}\mbox{[}$\,$\mbox{]} {\bfseries line\+Info}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a0da408eca7321046fa78659e3022ce4d}\label{classTMPro_1_1TMP__TextInfo_a0da408eca7321046fa78659e3022ce4d}} 
+\mbox{\hyperlink{structTMPro_1_1TMP__PageInfo}{T\+M\+P\+\_\+\+Page\+Info}}\mbox{[}$\,$\mbox{]} {\bfseries page\+Info}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a944c68132d16336aee460c0d99e78442}\label{classTMPro_1_1TMP__TextInfo_a944c68132d16336aee460c0d99e78442}} 
+\mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo}{T\+M\+P\+\_\+\+Mesh\+Info}}\mbox{[}$\,$\mbox{]} {\bfseries mesh\+Info}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class which contains information about every element contained within the text object. 
+
+
+
+Definition at line 13 of file T\+M\+P\+\_\+\+Text\+Info.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a15b8c8e9f46c5412276e45c6f675edf2}\label{classTMPro_1_1TMP__TextInfo_a15b8c8e9f46c5412276e45c6f675edf2}} 
+\index{TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}!Clear@{Clear}}
+\index{Clear@{Clear}!TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Text\+Info.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to clear the counters of the text object. 
+
+
+
+Definition at line 73 of file T\+M\+P\+\_\+\+Text\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74         \{}
+\DoxyCodeLine{75             characterCount = 0;}
+\DoxyCodeLine{76             spaceCount = 0;}
+\DoxyCodeLine{77             wordCount = 0;}
+\DoxyCodeLine{78             linkCount = 0;}
+\DoxyCodeLine{79             lineCount = 0;}
+\DoxyCodeLine{80             pageCount = 0;}
+\DoxyCodeLine{81             spriteCount = 0;}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this.meshInfo.Length; i++)}
+\DoxyCodeLine{84             \{}
+\DoxyCodeLine{85                 this.meshInfo[i].vertexCount = 0;}
+\DoxyCodeLine{86             \}}
+\DoxyCodeLine{87         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_aaf8e50d7075ed34cd7668d5df8225194}\label{classTMPro_1_1TMP__TextInfo_aaf8e50d7075ed34cd7668d5df8225194}} 
+\index{TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}!ClearAllMeshInfo@{ClearAllMeshInfo}}
+\index{ClearAllMeshInfo@{ClearAllMeshInfo}!TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}}
+\doxysubsubsection{\texorpdfstring{ClearAllMeshInfo()}{ClearAllMeshInfo()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Text\+Info.\+Clear\+All\+Mesh\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to clear the content of all the Mesh\+Info arrays while preserving their Triangles, Normals and Tangents. 
+
+
+
+Definition at line 103 of file T\+M\+P\+\_\+\+Text\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{104         \{}
+\DoxyCodeLine{105             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this.meshInfo.Length; i++)}
+\DoxyCodeLine{106                 this.meshInfo[i].\mbox{\hyperlink{classTMPro_1_1TMP__TextInfo_a15b8c8e9f46c5412276e45c6f675edf2}{Clear}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{107         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a8681083e478f949f5ba57d1b2f59f9bf}\label{classTMPro_1_1TMP__TextInfo_a8681083e478f949f5ba57d1b2f59f9bf}} 
+\index{TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}!ClearLineInfo@{ClearLineInfo}}
+\index{ClearLineInfo@{ClearLineInfo}!TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}}
+\doxysubsubsection{\texorpdfstring{ClearLineInfo()}{ClearLineInfo()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Text\+Info.\+Clear\+Line\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to clear and initialize the line\+Info array. 
+
+
+
+Definition at line 137 of file T\+M\+P\+\_\+\+Text\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{138         \{}
+\DoxyCodeLine{139             \textcolor{keywordflow}{if} (this.lineInfo == \textcolor{keyword}{null})}
+\DoxyCodeLine{140                 this.lineInfo = \textcolor{keyword}{new} TMP\_LineInfo[2];}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this.lineInfo.Length; i++)}
+\DoxyCodeLine{143             \{}
+\DoxyCodeLine{144                 this.lineInfo[i].characterCount = 0;}
+\DoxyCodeLine{145                 this.lineInfo[i].spaceCount = 0;}
+\DoxyCodeLine{146                 this.lineInfo[i].wordCount = 0;}
+\DoxyCodeLine{147                 this.lineInfo[i].controlCharacterCount = 0;}
+\DoxyCodeLine{148                 this.lineInfo[i].width = 0;}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150                 this.lineInfo[i].ascender = k\_InfinityVectorNegative.x;}
+\DoxyCodeLine{151                 this.lineInfo[i].descender = k\_InfinityVectorPositive.x;}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153                 this.lineInfo[i].lineExtents.min = k\_InfinityVectorPositive;}
+\DoxyCodeLine{154                 this.lineInfo[i].lineExtents.max = k\_InfinityVectorNegative;}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156                 this.lineInfo[i].maxAdvance = 0;}
+\DoxyCodeLine{157                 \textcolor{comment}{//this.lineInfo[i].maxScale = 0;}}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{159             \}}
+\DoxyCodeLine{160         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_aa34f6fe698de702b8a775b4e57d91ed4}\label{classTMPro_1_1TMP__TextInfo_aa34f6fe698de702b8a775b4e57d91ed4}} 
+\index{TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}!ClearMeshInfo@{ClearMeshInfo}}
+\index{ClearMeshInfo@{ClearMeshInfo}!TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}}
+\doxysubsubsection{\texorpdfstring{ClearMeshInfo()}{ClearMeshInfo()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Text\+Info.\+Clear\+Mesh\+Info (\begin{DoxyParamCaption}\item[{bool}]{update\+Mesh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to clear the content of the Mesh\+Info array while preserving the Triangles, Normals and Tangents. 
+
+
+
+Definition at line 93 of file T\+M\+P\+\_\+\+Text\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94         \{}
+\DoxyCodeLine{95             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this.meshInfo.Length; i++)}
+\DoxyCodeLine{96                 this.meshInfo[i].\mbox{\hyperlink{classTMPro_1_1TMP__TextInfo_a15b8c8e9f46c5412276e45c6f675edf2}{Clear}}(updateMesh);}
+\DoxyCodeLine{97         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a7f60ff4e9617668074499ef69eeb9c65}\label{classTMPro_1_1TMP__TextInfo_a7f60ff4e9617668074499ef69eeb9c65}} 
+\index{TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}!ClearUnusedVertices@{ClearUnusedVertices}}
+\index{ClearUnusedVertices@{ClearUnusedVertices}!TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}}
+\doxysubsubsection{\texorpdfstring{ClearUnusedVertices()}{ClearUnusedVertices()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Text\+Info.\+Clear\+Unused\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structTMPro_1_1MaterialReference}{Material\+Reference}}\mbox{[}$\,$\mbox{]}}]{materials }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function used to mark unused vertices as degenerate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em materials} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 124 of file T\+M\+P\+\_\+\+Text\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{125         \{}
+\DoxyCodeLine{126             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < meshInfo.Length; i++)}
+\DoxyCodeLine{127             \{}
+\DoxyCodeLine{128                 \textcolor{keywordtype}{int} start = 0; \textcolor{comment}{// materials[i].referenceCount * 4;}}
+\DoxyCodeLine{129                 meshInfo[i].\mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_a7abd732cdaf4d54113166700701defd4}{ClearUnusedVertices}}(start);}
+\DoxyCodeLine{130             \}}
+\DoxyCodeLine{131         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a665aff73b3e4eceb0198f198ae831a81}\label{classTMPro_1_1TMP__TextInfo_a665aff73b3e4eceb0198f198ae831a81}} 
+\index{TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}!CopyMeshInfoVertexData@{CopyMeshInfoVertexData}}
+\index{CopyMeshInfoVertexData@{CopyMeshInfoVertexData}!TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}}
+\doxysubsubsection{\texorpdfstring{CopyMeshInfoVertexData()}{CopyMeshInfoVertexData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo}{T\+M\+P\+\_\+\+Mesh\+Info}} \mbox{[}$\,$\mbox{]} T\+M\+Pro.\+T\+M\+P\+\_\+\+Text\+Info.\+Copy\+Mesh\+Info\+Vertex\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to copy the Mesh\+Info Arrays and their primary vertex data content. 
+
+\begin{DoxyReturn}{Returns}
+A copy of the Mesh\+Info\mbox{[}\mbox{]}
+\end{DoxyReturn}
+
+
+Definition at line 167 of file T\+M\+P\+\_\+\+Text\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{168         \{}
+\DoxyCodeLine{169             \textcolor{keywordflow}{if} (m\_CachedMeshInfo == \textcolor{keyword}{null} || m\_CachedMeshInfo.Length != meshInfo.Length)}
+\DoxyCodeLine{170             \{}
+\DoxyCodeLine{171                 m\_CachedMeshInfo = \textcolor{keyword}{new} TMP\_MeshInfo[meshInfo.Length];}
+\DoxyCodeLine{172 }
+\DoxyCodeLine{173                 \textcolor{comment}{// Initialize all the vertex data arrays}}
+\DoxyCodeLine{174                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < m\_CachedMeshInfo.Length; i++)}
+\DoxyCodeLine{175                 \{}
+\DoxyCodeLine{176                     \textcolor{keywordtype}{int} length = meshInfo[i].vertices.Length;}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178                     m\_CachedMeshInfo[i].vertices = \textcolor{keyword}{new} Vector3[length];}
+\DoxyCodeLine{179                     m\_CachedMeshInfo[i].uvs0 = \textcolor{keyword}{new} Vector2[length];}
+\DoxyCodeLine{180                     m\_CachedMeshInfo[i].uvs2 = \textcolor{keyword}{new} Vector2[length];}
+\DoxyCodeLine{181                     m\_CachedMeshInfo[i].colors32 = \textcolor{keyword}{new} Color32[length];}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183                     \textcolor{comment}{//m\_CachedMeshInfo[i].normals = new Vector3[length];}}
+\DoxyCodeLine{184                     \textcolor{comment}{//m\_CachedMeshInfo[i].tangents = new Vector4[length];}}
+\DoxyCodeLine{185                     \textcolor{comment}{//m\_CachedMeshInfo[i].triangles = new int[meshInfo[i].triangles.Length];}}
+\DoxyCodeLine{186                 \}}
+\DoxyCodeLine{187             \}}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < m\_CachedMeshInfo.Length; i++)}
+\DoxyCodeLine{190             \{}
+\DoxyCodeLine{191                 \textcolor{keywordtype}{int} length = meshInfo[i].vertices.Length;}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193                 \textcolor{keywordflow}{if} (m\_CachedMeshInfo[i].vertices.Length != length)}
+\DoxyCodeLine{194                 \{}
+\DoxyCodeLine{195                     m\_CachedMeshInfo[i].vertices = \textcolor{keyword}{new} Vector3[length];}
+\DoxyCodeLine{196                     m\_CachedMeshInfo[i].uvs0 = \textcolor{keyword}{new} Vector2[length];}
+\DoxyCodeLine{197                     m\_CachedMeshInfo[i].uvs2 = \textcolor{keyword}{new} Vector2[length];}
+\DoxyCodeLine{198                     m\_CachedMeshInfo[i].colors32 = \textcolor{keyword}{new} Color32[length];}
+\DoxyCodeLine{199 }
+\DoxyCodeLine{200                     \textcolor{comment}{//m\_CachedMeshInfo[i].normals = new Vector3[length];}}
+\DoxyCodeLine{201                     \textcolor{comment}{//m\_CachedMeshInfo[i].tangents = new Vector4[length];}}
+\DoxyCodeLine{202                     \textcolor{comment}{//m\_CachedMeshInfo[i].triangles = new int[meshInfo[i].triangles.Length];}}
+\DoxyCodeLine{203                 \}}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205 }
+\DoxyCodeLine{206                 \textcolor{comment}{// Only copy the primary vertex data}}
+\DoxyCodeLine{207                 Array.Copy(meshInfo[i].vertices, m\_CachedMeshInfo[i].vertices, length);}
+\DoxyCodeLine{208                 Array.Copy(meshInfo[i].uvs0, m\_CachedMeshInfo[i].uvs0, length);}
+\DoxyCodeLine{209                 Array.Copy(meshInfo[i].uvs2, m\_CachedMeshInfo[i].uvs2, length);}
+\DoxyCodeLine{210                 Array.Copy(meshInfo[i].colors32, m\_CachedMeshInfo[i].colors32, length);}
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212                 \textcolor{comment}{//Array.Copy(meshInfo[i].normals, m\_CachedMeshInfo[i].normals, length);}}
+\DoxyCodeLine{213                 \textcolor{comment}{//Array.Copy(meshInfo[i].tangents, m\_CachedMeshInfo[i].tangents, length);}}
+\DoxyCodeLine{214                 \textcolor{comment}{//Array.Copy(meshInfo[i].triangles, m\_CachedMeshInfo[i].triangles, meshInfo[i].triangles.Length);}}
+\DoxyCodeLine{215             \}}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217             \textcolor{keywordflow}{return} m\_CachedMeshInfo;}
+\DoxyCodeLine{218         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a62fb378fdbe5f9cce0ac975968e4fe21}\label{classTMPro_1_1TMP__TextInfo_a62fb378fdbe5f9cce0ac975968e4fe21}} 
+\index{TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}!ResetVertexLayout@{ResetVertexLayout}}
+\index{ResetVertexLayout@{ResetVertexLayout}!TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}}
+\doxysubsubsection{\texorpdfstring{ResetVertexLayout()}{ResetVertexLayout()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Text\+Info.\+Reset\+Vertex\+Layout (\begin{DoxyParamCaption}\item[{bool}]{is\+Volumetric }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+
+
+Definition at line 113 of file T\+M\+P\+\_\+\+Text\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{114         \{}
+\DoxyCodeLine{115             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this.meshInfo.Length; i++)}
+\DoxyCodeLine{116                 this.meshInfo[i].ResizeMeshInfo(0, isVolumetric);}
+\DoxyCodeLine{117         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_a3d0a1c4a3f618976099dbaa0473395ff}\label{classTMPro_1_1TMP__TextInfo_a3d0a1c4a3f618976099dbaa0473395ff}} 
+\index{TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}!Resize$<$ T $>$@{Resize$<$ T $>$}}
+\index{Resize$<$ T $>$@{Resize$<$ T $>$}!TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}}
+\doxysubsubsection{\texorpdfstring{Resize$<$ T $>$()}{Resize< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+T\+M\+P\+\_\+\+Text\+Info.\+Resize$<$ T $>$ (\begin{DoxyParamCaption}\item[{ref T\mbox{[}$\,$\mbox{]}}]{array,  }\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function to resize any of the structure contained in the \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo}{T\+M\+P\+\_\+\+Text\+Info}} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+{\em size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 228 of file T\+M\+P\+\_\+\+Text\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{229         \{}
+\DoxyCodeLine{230             \textcolor{comment}{// Allocated to the next power of two}}
+\DoxyCodeLine{231             \textcolor{keywordtype}{int} newSize = size > 1024 ? size + 256 : Mathf.NextPowerOfTwo(size);}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233             Array.Resize(ref array, newSize);}
+\DoxyCodeLine{234         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__TextInfo_aef15865763027788edc0ed4eceb57d1c}\label{classTMPro_1_1TMP__TextInfo_aef15865763027788edc0ed4eceb57d1c}} 
+\index{TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}!Resize$<$ T $>$@{Resize$<$ T $>$}}
+\index{Resize$<$ T $>$@{Resize$<$ T $>$}!TMPro.TMP\_TextInfo@{TMPro.TMP\_TextInfo}}
+\doxysubsubsection{\texorpdfstring{Resize$<$ T $>$()}{Resize< T >()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void T\+M\+Pro.\+T\+M\+P\+\_\+\+Text\+Info.\+Resize$<$ T $>$ (\begin{DoxyParamCaption}\item[{ref T\mbox{[}$\,$\mbox{]}}]{array,  }\item[{int}]{size,  }\item[{bool}]{is\+Block\+Allocated }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Function to resize any of the structure contained in the \mbox{\hyperlink{classTMPro_1_1TMP__TextInfo}{T\+M\+P\+\_\+\+Text\+Info}} class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+{\em size} & \\
+\hline
+{\em is\+Fixed\+Size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 244 of file T\+M\+P\+\_\+\+Text\+Info.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{245         \{}
+\DoxyCodeLine{246             \textcolor{comment}{//if (size <= array.Length) return;}}
+\DoxyCodeLine{247 }
+\DoxyCodeLine{248             \textcolor{keywordflow}{if} (isBlockAllocated) size = size > 1024 ? size + 256 : Mathf.NextPowerOfTwo(size);}
+\DoxyCodeLine{249 }
+\DoxyCodeLine{250             \textcolor{keywordflow}{if} (size == array.Length) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{251 }
+\DoxyCodeLine{252             Array.Resize(ref array, size);}
+\DoxyCodeLine{253         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Runtime/T\+M\+P\+\_\+\+Text\+Info.\+cs\end{DoxyCompactItemize}

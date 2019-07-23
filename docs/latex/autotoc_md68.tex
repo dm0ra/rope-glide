@@ -1,0 +1,412 @@
+A package is a container that holds any combination of Assets, Shaders, Textures, plug-\/ins, icons, and scripts that enhance various parts of your Project, including Unity modules (such as Physics or Animation). Unity packages are newer, more tightly integrated versions of Asset Store packages, able to deliver a wide range of enhancements to Unity.
+
+Use the Unity Package Manager (in Unity’s top menu\+: {\bfseries{Window}} $>$ {\bfseries{Package Manager}}) to view which packages are available for installation or already installed in your Project. In addition, you can use this window to see \href{\#VersionList}{\texttt{ which versions are available}}, and \href{\#PackManInstall}{\texttt{ install}}, \href{\#PackManRemove}{\texttt{ remove}}, \href{\#PackManDisable}{\texttt{ disable}}, or \href{\#PackManUpdate}{\texttt{ update}} packages for each Project.
+
+
+
+The Packages window displays\+:
+
+
+\begin{DoxyItemize}
+\item (A) The \href{\#scope}{\texttt{ package scope drop-\/down menu}}, which allows you to filter which packages appear in the list.
+\item (B) The \href{\#advanced}{\texttt{ Advanced button}}, which allows you to display preview packages in addition to packages that have been verified to work with Unity.
+\item (C) The \href{\#searchText}{\texttt{ search box}}, which allows you to look for packages by name.
+\item (D) The \href{\#PackManLists}{\texttt{ packages list view}}, which displays all packages that match the filter and search parameters you specify.
+\item (E) The \href{\#PackManDetails}{\texttt{ package-\/specific detail view}}, which displays information specific to the package selected in the list.
+\item (F) The \href{\#statusbar}{\texttt{ status bar}}, which displays messages about the package load status and warnings about the network.
+\item (G) The \href{\#extpkg}{\texttt{ Add package from disk button}}, which allows you to specify the location of an external package.
+\end{DoxyItemize}
+
+\label{_PackManLists}%
+ \hypertarget{autotoc_md68_autotoc_md69}{}\doxysection{Finding packages}\label{autotoc_md68_autotoc_md69}
+The Packages window displays the following types of Unity packages\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Read-\/only packages}}
+
+These are packages which the Package Manager downloads from the \href{\#PackManRegistry}{\texttt{ Unity package registry}} as needed. They are not bundled with the Project source and may have dependencies on other packages in external Projects. This type is typical of most Unity packages.
+\item {\bfseries{Local packages}}
+
+These are packages that you saved on your computer in an \href{\#extpkg}{\texttt{ external}} location outside of your current Unity Project.
+\item {\bfseries{Built-\/in packages}}
+
+These represent some of the core Unity features. You can use these packages to \href{\#PackManDisable}{\texttt{ turn Unity modules on and off}}.
+\end{DoxyItemize}
+
+{\bfseries{Note}}\+: You can find out more about what each module implements in the \href{https://docs.unity3d.com/ScriptReference/}{\texttt{ Unity Scripting A\+PI}}. Each module assembly page lists which A\+P\+Is the built-\/in package implements.
+
+By default, the Packages window displays the list of all packages either registered in the \href{\#PackManRegistry}{\texttt{ package registry}} or installed \href{\#extpkg}{\texttt{ locally}}.
+
+The following icons show you package status\+:
+
+ A check mark indicates that the package is already \href{\#PackManInstall}{\texttt{ installed}} or \href{\#PackManDisable}{\texttt{ enabled}}.
+
+ The download icon indicates that the installed packages has \href{\#PackManUpdate}{\texttt{ an available update}}.
+
+ An error icon indicates that something went wrong during installation or loading. For more advice on resolving errors, see \href{\#troubleshooting}{\texttt{ Error messages}} below.
+
+You can \href{\#scope}{\texttt{ filter}} the list to display only packages installed in your Project (including \href{\#extpkg}{\texttt{ local}} packages), or display only built-\/in Unity packages. You can also \href{\#searchText}{\texttt{ search}} for a specific package by package name, tag, or package version number.
+
+\label{_scope}%
+ \hypertarget{autotoc_md68_autotoc_md70}{}\doxysubsection{Filtering the list}\label{autotoc_md68_autotoc_md70}
+To change which packages appear in the list, select the scope you want from the drop-\/down menu in the left hand corner of the Packages window.
+
+You can select from these options\+:
+
+
+\begin{DoxyItemize}
+\item The {\bfseries{All packages}} scope (the default) displays all packages on the \href{\#PackManRegistry}{\texttt{ package registry}}, regardless of whether they are already installed in your Project. This also includes \href{\#extpkg}{\texttt{ local}} packages (which are always installed).
+\item The {\bfseries{In Project}} scope displays all packages currently installed in your Project, including \href{\#extpkg}{\texttt{ local}} packages.
+\item The {\bfseries{Built-\/in packages}} scope displays only built-\/in Unity packages.
+\end{DoxyItemize}
+
+When you select a new scope, your choice appears on the package scope drop-\/down menu and the list displays the packages matching your choice.
+
+{\bfseries{Note\+:}} If you entered any text in the \href{\#searchText}{\texttt{ search box}}, the list only displays packages which match both the scope and the search criteria.
+
+\label{_advanced}%
+ \hypertarget{autotoc_md68_autotoc_md71}{}\doxysubsection{Advanced button}\label{autotoc_md68_autotoc_md71}
+The {\bfseries{Advanced}} button opens a drop-\/down menu that allows you to show preview packages. Preview package are not verified to work with Unity and might be unstable. They are not not supported in production environments.
+
+To show the preview packages that are available, click the {\bfseries{Advanced}} button, then click the {\bfseries{Show preview packages}} menu item.
+
+\label{_searchText}%
+ \hypertarget{autotoc_md68_autotoc_md72}{}\doxysubsection{Searching for packages}\label{autotoc_md68_autotoc_md72}
+You can use the search box at the top of the Packages window to find any packages that match the text you enter. The Package Manager updates the package list as you enter text, displaying every package within the current scope that matches. For example, if you enter {\ttfamily web} in the search box, the list displays different results depending on whether you chose the {\bfseries{Built-\/in packages}} scope or the {\bfseries{All packages}} scope\+:
+
+
+
+You can look for a package by its \href{\#PackManManifestsPackage}{\texttt{ package name}}, its \href{\#version_tags}{\texttt{ tag name}}, or its \href{\#VersionList}{\texttt{ package version number}}. The Package Manager analyzes the text that you enter to detect which method you are using and updates the list of packages dynamically.
+
+{\bfseries{Package name}}
+
+You can search for either the display name as it appears in the Packages window, or the registered package name that begins with {\ttfamily com.\+unity}.
+
+Your search text could match the beginning, middle, or end of the package\textquotesingle{}s name.
+
+{\bfseries{Tag name}}
+
+To search by tag name, enter one of the package version tags. For example, if you enter {\ttfamily verified} in the search box, only packages with a verified tag appear, regardless of their package name.
+
+{\bfseries{Version number}}
+
+Enter the \href{\#VersionList}{\texttt{ version number}} in version order ({\ttfamily M\+A\+J\+O\+R.\+M\+I\+N\+O\+R.\+P\+A\+T\+CH}). For example, typing {\ttfamily 1} returns all packages with versions matching {\ttfamily 1.\+x.\+x} (for example, {\ttfamily 1.\+0.\+0}, {\ttfamily 1.\+3.\+2}, and {\ttfamily 1.\+10.\+1} all match but not {\ttfamily 0.\+1.\+0} ).
+
+\label{_statusbar}%
+ \hypertarget{autotoc_md68_autotoc_md73}{}\doxysubsection{Status bar}\label{autotoc_md68_autotoc_md73}
+The Package Manager displays messages in the status bar at the bottom left of the Packages window.
+
+There are typically three status messages that you might see. The {\bfseries{Loading packages}} message appears briefly the first time you open Packman UI in a new Project. However, if the Package Manager \href{\#troubleshooting}{\texttt{ detects a problem}}, such as a missing network connection, the Package Manager displays a warning in the status bar\+:
+
+
+
+You will also often see a message informing you when the last update occurred\+:
+
+
+
+\label{_PackManDetails}%
+ \hypertarget{autotoc_md68_autotoc_md74}{}\doxysection{Viewing package details}\label{autotoc_md68_autotoc_md74}
+The pane on the right side of the Packages window displays details about the selected package.
+
+
+
+These details include the following information\+:
+\begin{DoxyItemize}
+\item (A) The display name
+\item (B) The \href{\#VersionList}{\texttt{ version number}} (and \href{\#version_tags}{\texttt{ tag}}, if available)
+\item (C) The \href{\#links}{\texttt{ links}} to open the package documentation page, the package change log (if available), and the license information.
+\item (D) The official package name from the \href{\#PackManRegistry}{\texttt{ registry}} starting with {\ttfamily com.\+unity.}
+\item (E) The author
+\item (F) A brief description
+\item (G) Buttons to \href{\#PackManInstall}{\texttt{ install}} or \href{\#PackManUpdate}{\texttt{ update}} a package (or the {\bfseries{Up to date}} message if the selected version is already installed)
+\item (H) The package version drop-\/down menu
+\item (I) Buttons to \href{\#PackManRemove}{\texttt{ remove}} or \href{\#PackManDisable}{\texttt{ disable}} the package
+\end{DoxyItemize}
+
+\label{_VersionList}%
+ \hypertarget{autotoc_md68_autotoc_md75}{}\doxysubsection{List of versions}\label{autotoc_md68_autotoc_md75}
+You can view the list of versions available for the current package by clicking the version drop-\/down menu beside the {\bfseries{Update to}} or {\bfseries{Install}} button in the upper right of the Package specific detail view.
+
+
+\begin{DoxyItemize}
+\item (A) The main menu displays the current version, the latest version (even if it is a preview), and the verified version.
+\item (B) The submenu displays all available versions.
+\end{DoxyItemize}
+
+You can select any of these versions for the current package and install that specific version using the {\bfseries{Install}} or {\bfseries{Update to}} button.
+
+\label{_version_tags}%
+ \hypertarget{autotoc_md68_autotoc_md76}{}\doxysubsection{Version tags}\label{autotoc_md68_autotoc_md76}
+Some packages display tags next to the version number. These tags convey information about that version of the package.
+
+The Package Manager uses the following values\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Tag}}  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Meaning}}   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Tag}}  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ {\bfseries{Meaning}}   }\\\cline{1-2}
+\endhead
+{\ttfamily Verified}  &This package has been verified by Unity\textquotesingle{}s Quality Assurance team to work with a specific version of the Editor.   \\\cline{1-2}
+{\ttfamily Preview}  &This package is at an early stage of the release cycle and may not have been documented and fully validated by either the development team or Unity\textquotesingle{}s Quality Assurance team.   \\\cline{1-2}
+{\ttfamily Local}  &This package is located on your local disk but is external to your Unity Project folder.   \\\cline{1-2}
+$\ast$(no tag)$\ast$  &This package is considered production quality, which means it is fully validated, documented, supported, and incrementally updated.   \\\cline{1-2}
+\end{longtabu}
+
+
+\label{_links}%
+ \hypertarget{autotoc_md68_autotoc_md77}{}\doxysubsection{Finding more information}\label{autotoc_md68_autotoc_md77}
+You can find out more about a package by viewing its documentation, changelog, or license information.
+
+To access any of these pages, click the {\bfseries{View documentation}}, {\bfseries{View changelog}}, or {\bfseries{View licences}} links.
+
+The package page opens in your default browser.
+
+
+
+To switch back and forth between the {\itshape Manual} documentation, the {\itshape Scripting A\+PI} documentation, the {\itshape Changelog}, and the {\itshape License} information for this package, click the corresponding link at the top of the page.
+
+\label{_PackManOpen}%
+ \hypertarget{autotoc_md68_autotoc_md78}{}\doxysection{Installing, removing, disabling, and updating packages}\label{autotoc_md68_autotoc_md78}
+You can perform a variety of tasks through the Packages window\+:
+
+
+\begin{DoxyItemize}
+\item \href{\#PackManInstall}{\texttt{ Install a new package}}
+\item \href{\#PackManRemove}{\texttt{ Remove an installed package}}
+\item \href{\#PackManDisable}{\texttt{ Disable a built-\/in package}}
+\item \href{\#PackManUpdate}{\texttt{ Update an installed package}}
+\item \href{\#extpkg}{\texttt{ Specify an external package location}}
+\end{DoxyItemize}\hypertarget{autotoc_md68_autotoc_md79}{}\doxysubsection{Accessing the Packages window}\label{autotoc_md68_autotoc_md79}
+To open the Packages window, navigate to Unity\textquotesingle{}s main menu and go to {\bfseries{Window}} $>$ {\bfseries{Package Manager}}.
+
+\label{_PackManInstall}%
+ \hypertarget{autotoc_md68_autotoc_md80}{}\doxysubsection{Installing a new package}\label{autotoc_md68_autotoc_md80}
+To install a new package\+:
+
+
+\begin{DoxyEnumerate}
+\item Open the Packages window and select {\bfseries{All packages}} from the \href{\#scope}{\texttt{ package scope}} drop-\/down menu.
+\item Select the package you want to install from the \href{\#PackManLists}{\texttt{ list of packages}}. The package information appears in the \href{\#PackManDetails}{\texttt{ details pane}}.
+\item Select the version you want from the \href{\#VersionList}{\texttt{ version drop-\/down menu}}.
+\item Click the {\bfseries{Install}} button. When the progress bar finishes, the new package is ready to use.
+\end{DoxyEnumerate}
+
+\label{_PackManRemove}%
+ \hypertarget{autotoc_md68_autotoc_md81}{}\doxysubsection{Removing an installed package}\label{autotoc_md68_autotoc_md81}
+You can only remove packages which are not required by another package.
+
+When you remove a package, any Editor or run-\/time functionality which it implemented is no longer available.
+
+To remove an installed package\+:
+
+
+\begin{DoxyEnumerate}
+\item Open the Packages window and select {\bfseries{In Project}} (or {\bfseries{All packages}}) from the \href{\#scope}{\texttt{ package scope}} drop-\/down menu.
+\item Select the package you want to remove from the \href{\#PackManLists}{\texttt{ list of packages}}. The package information appears in the \href{\#PackManDetails}{\texttt{ details pane}}.
+\item Click the {\bfseries{Remove}} button. When the progress bar finishes, the package disappears from the list.
+\end{DoxyEnumerate}
+
+You can restore a removed package from the list when you are in the {\bfseries{All packages}} scope.
+
+\label{_PackManDisable}%
+ \hypertarget{autotoc_md68_autotoc_md82}{}\doxysubsection{Disabling a built-\/in package}\label{autotoc_md68_autotoc_md82}
+You can disable a built-\/in package if you don\textquotesingle{}t need some modules and you want to save resources. However, when you disable a built-\/in package, the corresponding Unity functionality is no longer available. This results in the following\+:
+
+
+\begin{DoxyItemize}
+\item If you use a Scripting A\+PI implemented by a disabled package, you get compiler errors.
+\item Components implemented by the disabled built-\/in package are also disabled, which means you cannot add them to any Game\+Objects. If you have a Game\+Object that already has one of these components, Unity ignores them in Play mode. You can see them in the Inspector window but they are greyed out to indicate that they are not available.
+\item When building a game, Unity strips all disabled components. For build targets which support engine code stripping (like Web\+GL, i\+OS, and Android), Unity doesn\textquotesingle{}t add any code from a disabled built-\/in package.
+\end{DoxyItemize}
+
+To disable a built-\/in package\+:
+\begin{DoxyEnumerate}
+\item Open the Packages window and select {\bfseries{Built-\/in packages}} from the \href{\#scope}{\texttt{ package scope}} drop-\/down menu.
+\item Select the package you want to remove from the \href{\#PackManLists}{\texttt{ list of packages}}. Its information appears in the Details pane.
+\item Click the {\bfseries{Disable}} button. When the progress bar finishes, the check mark no longer appears next to the built-\/in package and the {\bfseries{Disable}} button becomes an {\bfseries{Enable}} button.
+\end{DoxyEnumerate}
+
+To re-\/enable a disabled built-\/in package, click the {\bfseries{Enable}} button.
+
+\label{_PackManUpdate}%
+ \hypertarget{autotoc_md68_autotoc_md83}{}\doxysubsection{Updating an installed package}\label{autotoc_md68_autotoc_md83}
+You can update a package while in either the {\bfseries{In Project}} or {\bfseries{All}} mode\+:
+
+
+\begin{DoxyEnumerate}
+\item Open the Packages window. An arrow indicator appears next to any packages that have updates available.
+\item Select the package you want to update from the \href{\#PackManLists}{\texttt{ list of packages}}. The package information appears in the \href{\#PackManDetails}{\texttt{ details pane}}.
+\item Select the version you want from the \href{\#VersionList}{\texttt{ version drop-\/down menu}}.
+\item Click the {\bfseries{Update to}} button.
+\end{DoxyEnumerate}
+
+When the progress bar finishes, the new package version information appears in the Details pane, and any new functionality is immediately available.
+
+\label{_extpkg}%
+ \hypertarget{autotoc_md68_autotoc_md84}{}\doxysubsection{Specifying a local package location}\label{autotoc_md68_autotoc_md84}
+The Package Manager can load a package from anywhere on your computer even if you saved it outside your Unity Project folder. For example, if you have a package called {\ttfamily com.\+unity.\+my-\/local-\/package} and you save it on the {\ttfamily Desktop} but your Unity Project is under the {\ttfamily Documents} folder.
+
+To load a package from your local disk\+:
+
+
+\begin{DoxyEnumerate}
+\item Click the plus ({\ttfamily +}) icon in the status bar.
+
+The {\bfseries{Add package from disk}} button appears.
+
+
+\item Click the {\bfseries{Add package from disk}} button to bring up a file browser.
+\item Navigate to the folder root of your local package.
+\item Double-\/click the {\ttfamily package.\+json} file in the file browser.
+
+The file browser closes and the package now appears in the \href{\#PackManLists}{\texttt{ package list}} with the {\ttfamily local} tag.
+\end{DoxyEnumerate}
+
+\label{_troubleshooting}%
+ \hypertarget{autotoc_md68_autotoc_md85}{}\doxysection{Error messages}\label{autotoc_md68_autotoc_md85}
+The Package Manager displays error indicators when it encounters problems\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries{System-\/wide issues}}
+
+Error messages that appear in the \href{\#statusbar}{\texttt{ status bar}} indicate the Package Manager has detected an issue that is not related to a specific package. For example, if the Package Manager cannot access the \href{\#PackManRegistry}{\texttt{ package registry server}}, it displays this message in the status bar\+:
+
+
+
+If your network cannot reach the package registry server, it is probably because there is a connection problem with the network. When you or your system administrator fix the network error, the status bar clears.
+\item {\bfseries{Package-\/specific issues}}
+
+If a specific package has a problem when loading or installing, the error icon () appears in the \href{\#PackManLists}{\texttt{ package list}} next to the compromised package. To find out what the problem is, open the compromised package\textquotesingle{}s \href{\#PackManDetails}{\texttt{ details pane}}.
+\end{DoxyItemize}\hypertarget{autotoc_md68_autotoc_md86}{}\doxysection{Understanding how packages work}\label{autotoc_md68_autotoc_md86}
+In addition to its contents (Assets, Shaders, Textures, plug-\/ins, icons, and scripts), a Unity package contains a \href{\#PackManManifestsPackage}{\texttt{ package manifest file}}. The package manifest tells Unity how to display its information page in the Packages window, and how to install the package in the Project.
+
+It also contains several files that help manage package deployment, including the tests, samples, license, changelog, and documentation.
+
+\label{_PackManManifests}%
+ \hypertarget{autotoc_md68_autotoc_md87}{}\doxysubsection{Manifests}\label{autotoc_md68_autotoc_md87}
+There are two types of manifest files\+: \href{\#PackManManifestsProject}{\texttt{ Project}} manifests ({\ttfamily manifest.\+json}), and \href{\#PackManManifestsPackage}{\texttt{ package}} manifests ({\ttfamily package.\+json}). Both files use J\+S\+ON (Java\+Script Object Notation) syntax to communicate with the Package Manager, by describing which packages are available for each Project, and what each package contains.
+
+\label{_PackManManifestsProject}%
+ \hypertarget{autotoc_md68_autotoc_md88}{}\doxysubsubsection{Project manifests}\label{autotoc_md68_autotoc_md88}
+Project manifests ({\ttfamily manifest.\+json}) tell the Package Manager which packages and versions are available to the Project.
+
+Project manifests support the following value\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Key  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ J\+S\+ON Type  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Key  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ J\+S\+ON Type  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }\\\cline{1-3}
+\endhead
+{\ttfamily dependencies}  &Object  &List of packages for the Package Manager to load. These are usually packages officially registered with Unity, but may also include \href{\#extpkg}{\texttt{ local packages that are external}} to your Unity project.   \\\cline{1-3}
+\end{longtabu}
+
+
+Example of a {\ttfamily manifest.\+json} file\+: \begin{DoxyVerb}{
+    "dependencies": {
+        "com.unity.package-1": "1.0.0",
+        "com.unity.package-2": "2.0.0",
+        "com.unity.package-3": "3.0.0",
+        "com.unity.my-local-package": "file:/<external_path>/com.unity.my-local-package"
+    }
+}
+\end{DoxyVerb}
+
+
+Unity stores each Project manifest in the {\ttfamily \mbox{[}your\+\_\+\+Project\+\_\+root\+\_\+folder\mbox{]}/\+Packages/manifest.json} file.
+
+\label{_PackManManifestsPackage}%
+ \hypertarget{autotoc_md68_autotoc_md89}{}\doxysubsubsection{Package manifests}\label{autotoc_md68_autotoc_md89}
+The Package Manager uses package manifests ({\ttfamily package.\+json}) to determine which version of the package to load, and what information to display in the Packages window.
+
+Package manifests support the following values\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Key  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ J\+S\+ON Type  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Key  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ J\+S\+ON Type  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description   }\\\cline{1-3}
+\endhead
+{\ttfamily name}  &String  &The officially registered package name, following this naming convention\+: {\ttfamily \char`\"{}com.\+unity.\mbox{[}package name\mbox{]}\char`\"{}}. For example, {\ttfamily \char`\"{}com.\+unity.\+resourcemanager\char`\"{}}   \\\cline{1-3}
+{\ttfamily display\+Name}  &String  &The package name as it appears in the Packages window. For example, {\ttfamily \char`\"{}\+Resource Manager\char`\"{}}   \\\cline{1-3}
+{\ttfamily version}  &String  &The package version {\ttfamily \char`\"{}\+M\+A\+J\+O\+R.\+M\+I\+N\+O\+R.\+P\+A\+T\+C\+H\char`\"{}}. Unity packages follow the \href{https://semver.org}{\texttt{ Semantic Versioning}} system. For example, {\ttfamily \char`\"{}1.\+3.\+0\char`\"{}}.   \\\cline{1-3}
+{\ttfamily unity}  &String  &The Unity version that supports this package. For example, {\ttfamily \char`\"{}2018.\+1\char`\"{}} indicates compatibility starting with Unity version 2018.\+1.   \\\cline{1-3}
+{\ttfamily description}  &String  &A brief description of the package. This is the text that appears on the Details pane of the Packages window. Some special formatting character codes are supported, such as line breaks ({\ttfamily \textbackslash{}n}) and bullets ({\ttfamily \textbackslash{}u25\+AA}).   \\\cline{1-3}
+{\ttfamily category}  &String  &The category this packages is in. For example, {\ttfamily \char`\"{}\+Forces\char`\"{}}.   \\\cline{1-3}
+{\ttfamily dependencies}  &Object  &A list of packages that this package depends on, expressed as a J\+S\+ON dictionary where the key is the package name and the value is the version number. Unity downloads all dependencies and loads them into the project alongside this package.   \\\cline{1-3}
+\end{longtabu}
+
+
+Example of a {\ttfamily package.\+json} file\+: \begin{DoxyVerb}{
+    "name": "com.unity.package-4",
+    "displayName": "Package Number 4",
+    "version": "2.5.1",
+    "unity": "2018.2",
+    "description": "This package provides X, Y, and Z. \n\nTo find out more, click the \"View documentation\" link.",
+    "keywords": ["key X", "key Y", "key Z"],
+    "category": "Controllers",
+    "dependencies": {
+        "com.unity.package-1": "1.0.0",
+        "com.unity.package-2": "2.0.0",
+        "com.unity.package-3": "3.0.0"
+    }
+}
+\end{DoxyVerb}
+
+
+Unity stores each package manifest in the {\ttfamily \mbox{[}package\+\_\+root\+\_\+folder\mbox{]}/package.json} file.
+
+\label{_PackManRegistry}%
+ \hypertarget{autotoc_md68_autotoc_md90}{}\doxysubsection{Package registry}\label{autotoc_md68_autotoc_md90}
+Unity maintains a central registry of official packages that are available for distribution. When Unity loads, the Package Manager communicates with the registry, checks the Project manifest file, and displays the status of each available package in the Packages window.
+
+When you remove a package from the Project, the Package Manager updates the Project manifest to exclude that package from the list when in {\bfseries{In Project}} mode but it is still available in {\bfseries{All packages}} mode because it is still in the registry.
+
+When you install or update a package, the Package Manager downloads the package from the registry.\hypertarget{autotoc_md68_autotoc_md91}{}\doxysection{Technical details}\label{autotoc_md68_autotoc_md91}
+\hypertarget{autotoc_md68_autotoc_md92}{}\doxysubsection{Requirements}\label{autotoc_md68_autotoc_md92}
+This version of Unity Package Manager is compatible with the following versions of the Unity Editor\+:
+
+
+\begin{DoxyItemize}
+\item 2018.\+3 and later (recommended)
+\end{DoxyItemize}\hypertarget{autotoc_md68_autotoc_md93}{}\doxysubsection{Documentation revision history}\label{autotoc_md68_autotoc_md93}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Date  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Reason   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Date  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Reason   }\\\cline{1-2}
+\endhead
+October 3, 2018  &Documentation updated. Image updates and minor corrections.   \\\cline{1-2}
+September 14, 2018  &Documentation updated. Matches package version 2.\+0.\+1.   \\\cline{1-2}
+June 4, 2018  &Documentation updated. Matches package version 2.\+0.\+0.   \\\cline{1-2}
+May 25, 2018  &Documentation updated. Matches package version 1.\+9.\+9.   \\\cline{1-2}
+May 4, 2018  &Documentation updated. Matches package version 1.\+9.\+8.   \\\cline{1-2}
+March 19, 2018  &Documentation updated. Matches package version 1.\+9.\+0.   \\\cline{1-2}
+Feb 8, 2018  &Documentation updated. Matches package version 1.\+7.\+0.   \\\cline{1-2}
+Feb 6, 2018  &Documentation cleaned up. Matches package version 1.\+6.\+1.   \\\cline{1-2}
+Jan 31, 2018  &Documentation updated (developmental review)   \\\cline{1-2}
+Jan 29, 2018  &Document updated. Matches package version 1.\+6.\+0.   \\\cline{1-2}
+Jan 18, 2018  &Document updated. Matches package version 1.\+5.\+1.   \\\cline{1-2}
+Jan 17, 2018  &Document updated. Matches package version 1.\+5.\+0.   \\\cline{1-2}
+Jan 12, 2018  &Document updated. Matches package version 1.\+4.\+0.   \\\cline{1-2}
+Nov 7, 2017  &Document created. Matches package version 1.\+0.\+0.   \\\cline{1-2}
+\end{longtabu}

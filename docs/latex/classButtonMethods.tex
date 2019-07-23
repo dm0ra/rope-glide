@@ -1,0 +1,275 @@
+\hypertarget{classButtonMethods}{}\doxysection{Button\+Methods Class Reference}
+\label{classButtonMethods}\index{ButtonMethods@{ButtonMethods}}
+
+
+The button methods class is used to handle all button presses in the game as well as some logic for gliders, boosters, and purchasing there are helper functions.  
+
+
+Inheritance diagram for Button\+Methods\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classButtonMethods}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classButtonMethods_aa5f41fe1e016ab6520cb01508976d5e9}{Preview\+Booster}} ()
+\begin{DoxyCompactList}\small\item\em used to purchase a booster in the upgrade menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classButtonMethods_aa13abf10d6b65aa21a89c13ea6eff6d7}{Preview\+Glider}} ()
+\begin{DoxyCompactList}\small\item\em used to buy a glider in the upgrade menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classButtonMethods_ae3762352750dca5befc5533b530def47}{Purchase}} ()
+\begin{DoxyCompactList}\small\item\em called when a user clicks the buy button in the upgrades menu used to purchase upgrade items after previewing them. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classButtonMethods_a821bc278f5aa738aac27660a2e5f2612}{Goto\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to go to the main menu. Called when main menu buttons are pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classButtonMethods_a9908619af93a8938c6e8a3f743275b67}{Goto\+Upgrades}} ()
+\begin{DoxyCompactList}\small\item\em This method is used to go to the upgrades screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classButtonMethods_af5fb543d249c33b3d266c8027e4155e2}{Goto\+Play}} ()
+\begin{DoxyCompactList}\small\item\em Load swing game with main menu button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classButtonMethods_aad9e559ad620505747aace496bffd9aa}{Game\+Over\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em changes scene to the game over menu using main menu button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The button methods class is used to handle all button presses in the game as well as some logic for gliders, boosters, and purchasing there are helper functions. 
+
+
+
+Definition at line 14 of file button\+Methods.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classButtonMethods_aad9e559ad620505747aace496bffd9aa}\label{classButtonMethods_aad9e559ad620505747aace496bffd9aa}} 
+\index{ButtonMethods@{ButtonMethods}!GameOverMainMenu@{GameOverMainMenu}}
+\index{GameOverMainMenu@{GameOverMainMenu}!ButtonMethods@{ButtonMethods}}
+\doxysubsubsection{\texorpdfstring{GameOverMainMenu()}{GameOverMainMenu()}}
+{\footnotesize\ttfamily void Button\+Methods.\+Game\+Over\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+changes scene to the game over menu using main menu button. 
+
+
+
+Definition at line 177 of file button\+Methods.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{178     \{}
+\DoxyCodeLine{179         SceneManager.LoadScene(3);}
+\DoxyCodeLine{180     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classButtonMethods_a821bc278f5aa738aac27660a2e5f2612}\label{classButtonMethods_a821bc278f5aa738aac27660a2e5f2612}} 
+\index{ButtonMethods@{ButtonMethods}!GotoMainMenu@{GotoMainMenu}}
+\index{GotoMainMenu@{GotoMainMenu}!ButtonMethods@{ButtonMethods}}
+\doxysubsubsection{\texorpdfstring{GotoMainMenu()}{GotoMainMenu()}}
+{\footnotesize\ttfamily void Button\+Methods.\+Goto\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is used to go to the main menu. Called when main menu buttons are pressed. 
+
+
+
+Definition at line 153 of file button\+Methods.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{154     \{}
+\DoxyCodeLine{155         SceneManager.LoadScene(3); \textcolor{comment}{// switches scene to main menu}}
+\DoxyCodeLine{156     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classButtonMethods_af5fb543d249c33b3d266c8027e4155e2}\label{classButtonMethods_af5fb543d249c33b3d266c8027e4155e2}} 
+\index{ButtonMethods@{ButtonMethods}!GotoPlay@{GotoPlay}}
+\index{GotoPlay@{GotoPlay}!ButtonMethods@{ButtonMethods}}
+\doxysubsubsection{\texorpdfstring{GotoPlay()}{GotoPlay()}}
+{\footnotesize\ttfamily void Button\+Methods.\+Goto\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Load swing game with main menu button. 
+
+
+
+Definition at line 169 of file button\+Methods.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{170     \{}
+\DoxyCodeLine{171         SceneManager.LoadScene(0);}
+\DoxyCodeLine{172     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classButtonMethods_a9908619af93a8938c6e8a3f743275b67}\label{classButtonMethods_a9908619af93a8938c6e8a3f743275b67}} 
+\index{ButtonMethods@{ButtonMethods}!GotoUpgrades@{GotoUpgrades}}
+\index{GotoUpgrades@{GotoUpgrades}!ButtonMethods@{ButtonMethods}}
+\doxysubsubsection{\texorpdfstring{GotoUpgrades()}{GotoUpgrades()}}
+{\footnotesize\ttfamily void Button\+Methods.\+Goto\+Upgrades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is used to go to the upgrades screen. 
+
+
+
+Definition at line 161 of file button\+Methods.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162     \{}
+\DoxyCodeLine{163         SceneManager.LoadScene(4);}
+\DoxyCodeLine{164     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classButtonMethods_aa5f41fe1e016ab6520cb01508976d5e9}\label{classButtonMethods_aa5f41fe1e016ab6520cb01508976d5e9}} 
+\index{ButtonMethods@{ButtonMethods}!PreviewBooster@{PreviewBooster}}
+\index{PreviewBooster@{PreviewBooster}!ButtonMethods@{ButtonMethods}}
+\doxysubsubsection{\texorpdfstring{PreviewBooster()}{PreviewBooster()}}
+{\footnotesize\ttfamily void Button\+Methods.\+Preview\+Booster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+used to purchase a booster in the upgrade menu. 
+
+
+
+Definition at line 47 of file button\+Methods.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48     \{}
+\DoxyCodeLine{49         DB.PreviewIndex = 2; \textcolor{comment}{// sets preview index to booster}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51         \textcolor{comment}{// setting purchased button text}}
+\DoxyCodeLine{52         \textcolor{comment}{// checks if booster is purchased}}
+\DoxyCodeLine{53         \textcolor{keywordflow}{if} (DB.Booster == 1)}
+\DoxyCodeLine{54         \{}
+\DoxyCodeLine{55             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets button to display "purchased"}}
+\DoxyCodeLine{56         \}}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58         \textcolor{comment}{// if booster is not purchased}}
+\DoxyCodeLine{59         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             this.SetComponentText(this.purchaseButton, this.unpurchasedText); \textcolor{comment}{// sets button to display "buy"}}
+\DoxyCodeLine{62         \}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64         this.boosterImage.SetActive(\textcolor{keyword}{true}); \textcolor{comment}{// displays booster}}
+\DoxyCodeLine{65         this.gliderImage.SetActive(\textcolor{keyword}{false}); \textcolor{comment}{// removes glider}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67         this.SetComponentText(this.upgradeDescription, this.boosterDescriptionText); \textcolor{comment}{// sets the description to display in the upgrade menu}}
+\DoxyCodeLine{68         this.SetComponentText(this.upgradePrice, this.boosterPrice); \textcolor{comment}{// sets the price to display in upgrade menu}}
+\DoxyCodeLine{69     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classButtonMethods_aa13abf10d6b65aa21a89c13ea6eff6d7}\label{classButtonMethods_aa13abf10d6b65aa21a89c13ea6eff6d7}} 
+\index{ButtonMethods@{ButtonMethods}!PreviewGlider@{PreviewGlider}}
+\index{PreviewGlider@{PreviewGlider}!ButtonMethods@{ButtonMethods}}
+\doxysubsubsection{\texorpdfstring{PreviewGlider()}{PreviewGlider()}}
+{\footnotesize\ttfamily void Button\+Methods.\+Preview\+Glider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+used to buy a glider in the upgrade menu. 
+
+
+
+Definition at line 74 of file button\+Methods.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75     \{}
+\DoxyCodeLine{76         DB.PreviewIndex = 1;}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78         \textcolor{comment}{// setting purchase button text}}
+\DoxyCodeLine{79         \textcolor{comment}{// checks if glider is purchased}}
+\DoxyCodeLine{80         \textcolor{keywordflow}{if} (DB.Glider == 1)}
+\DoxyCodeLine{81         \{}
+\DoxyCodeLine{82             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets button to display "purchased"}}
+\DoxyCodeLine{83         \}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85         \textcolor{comment}{// if glider is not purchased}}
+\DoxyCodeLine{86         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{87         \{}
+\DoxyCodeLine{88             this.SetComponentText(this.purchaseButton, this.unpurchasedText); \textcolor{comment}{// sets button to display "buy"}}
+\DoxyCodeLine{89         \}}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91         this.SetComponentText(this.upgradeDescription, this.gliderDescriptionText); \textcolor{comment}{// sets the description to display in the upgrade menu}}
+\DoxyCodeLine{92         this.SetComponentText(this.upgradePrice, this.gliderPrice); \textcolor{comment}{// sets the price to display in upgrade menu}}
+\DoxyCodeLine{93         this.boosterImage.SetActive(\textcolor{keyword}{false}); \textcolor{comment}{// removes booster}}
+\DoxyCodeLine{94         this.gliderImage.SetActive(\textcolor{keyword}{true}); \textcolor{comment}{// display glider}}
+\DoxyCodeLine{95     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classButtonMethods_ae3762352750dca5befc5533b530def47}\label{classButtonMethods_ae3762352750dca5befc5533b530def47}} 
+\index{ButtonMethods@{ButtonMethods}!Purchase@{Purchase}}
+\index{Purchase@{Purchase}!ButtonMethods@{ButtonMethods}}
+\doxysubsubsection{\texorpdfstring{Purchase()}{Purchase()}}
+{\footnotesize\ttfamily void Button\+Methods.\+Purchase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+called when a user clicks the buy button in the upgrades menu used to purchase upgrade items after previewing them. 
+
+
+
+Definition at line 100 of file button\+Methods.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101     \{}
+\DoxyCodeLine{102         \textcolor{comment}{// checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased}}
+\DoxyCodeLine{103         \textcolor{keywordflow}{if} (DB.PreviewIndex == 1 \&\& DB.BankCash > \textcolor{keyword}{this}.gPrice \&\& DB.Glider != 1)}
+\DoxyCodeLine{104         \{}
+\DoxyCodeLine{105             DB.Glider = 1; \textcolor{comment}{// sets glider purchased flag}}
+\DoxyCodeLine{106             DB.BankCash -\/= this.gPrice; \textcolor{comment}{// decreases cash}}
+\DoxyCodeLine{107             Debug.Log(\textcolor{stringliteral}{"Glider Purchased"});}
+\DoxyCodeLine{108             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets the text of the button to a purchased message}}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110             \textcolor{comment}{// saves highscore and cash to csv file}}
+\DoxyCodeLine{111             var csv = \textcolor{keyword}{new} System.Text.StringBuilder();}
+\DoxyCodeLine{112             var highScoreString = DB.HighScore.ToString();}
+\DoxyCodeLine{113             var newLine = \textcolor{keywordtype}{string}.Format(highScoreString);}
+\DoxyCodeLine{114             var cashString = DB.BankCash.ToString();}
+\DoxyCodeLine{115             var glideString = DB.Glider.ToString();}
+\DoxyCodeLine{116             var boostString = DB.Booster.ToString();}
+\DoxyCodeLine{117             csv.AppendLine(newLine);}
+\DoxyCodeLine{118             csv.AppendLine(cashString);}
+\DoxyCodeLine{119             csv.AppendLine(glideString);}
+\DoxyCodeLine{120             csv.AppendLine(boostString);}
+\DoxyCodeLine{121             \mbox{\hyperlink{classDataSaver}{DataSaver}}.SaveData<\textcolor{keywordtype}{string}>(csv.ToString(), \textcolor{stringliteral}{"HighScore"});}
+\DoxyCodeLine{122         \}}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124         \textcolor{comment}{// checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased}}
+\DoxyCodeLine{125         \textcolor{keywordflow}{if} (DB.PreviewIndex == 2 \&\& DB.BankCash > \textcolor{keyword}{this}.bPrice \&\& DB.Booster != 1)}
+\DoxyCodeLine{126         \{}
+\DoxyCodeLine{127             DB.Booster = 1; \textcolor{comment}{// sets booster purchased flag}}
+\DoxyCodeLine{128             DB.BankCash -\/= this.bPrice; \textcolor{comment}{// decreases cash}}
+\DoxyCodeLine{129             Debug.Log(\textcolor{stringliteral}{"Booster Purchased"});}
+\DoxyCodeLine{130             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets the text of the button to a purchased message}}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132             \textcolor{comment}{// saves highscore and cash to csv file}}
+\DoxyCodeLine{133             var csv = \textcolor{keyword}{new} System.Text.StringBuilder();}
+\DoxyCodeLine{134             var highScoreString = DB.HighScore.ToString();}
+\DoxyCodeLine{135             var newLine = \textcolor{keywordtype}{string}.Format(highScoreString);}
+\DoxyCodeLine{136             var cashString = DB.BankCash.ToString();}
+\DoxyCodeLine{137             var glideString = DB.Glider.ToString();}
+\DoxyCodeLine{138             var boostString = DB.Booster.ToString();}
+\DoxyCodeLine{139             csv.AppendLine(newLine);}
+\DoxyCodeLine{140             csv.AppendLine(cashString);}
+\DoxyCodeLine{141             csv.AppendLine(glideString);}
+\DoxyCodeLine{142             csv.AppendLine(boostString);}
+\DoxyCodeLine{143             \mbox{\hyperlink{classDataSaver}{DataSaver}}.SaveData<\textcolor{keywordtype}{string}>(csv.ToString(), \textcolor{stringliteral}{"HighScore"});}
+\DoxyCodeLine{144         \}}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146         this.SetComponentText(this.userCash, this.cashString + DB.BankCash); \textcolor{comment}{// updates new cash variable}}
+\DoxyCodeLine{147     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/scripts/button\+Methods.\+cs\end{DoxyCompactItemize}

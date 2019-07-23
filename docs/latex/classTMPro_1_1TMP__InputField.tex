@@ -1,0 +1,1713 @@
+\hypertarget{classTMPro_1_1TMP__InputField}{}\doxysection{T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field Class Reference}
+\label{classTMPro_1_1TMP__InputField}\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+
+
+Editable text input field.  
+
+
+Inheritance diagram for T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{classTMPro_1_1TMP__InputField}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classTMPro_1_1TMP__InputField_1_1OnChangeEvent}{On\+Change\+Event}}
+\item 
+class \mbox{\hyperlink{classTMPro_1_1TMP__InputField_1_1SelectionEvent}{Selection\+Event}}
+\item 
+class \mbox{\hyperlink{classTMPro_1_1TMP__InputField_1_1SubmitEvent}{Submit\+Event}}
+\item 
+class \mbox{\hyperlink{classTMPro_1_1TMP__InputField_1_1TextSelectionEvent}{Text\+Selection\+Event}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a30e2af425a58881d8b71361e70ddbe27}\label{classTMPro_1_1TMP__InputField_a30e2af425a58881d8b71361e70ddbe27}} 
+enum {\bfseries Content\+Type} \{ \newline
+{\bfseries Standard}, 
+{\bfseries Autocorrected}, 
+{\bfseries Integer\+Number}, 
+{\bfseries Decimal\+Number}, 
+\newline
+{\bfseries Alphanumeric}, 
+{\bfseries Name}, 
+{\bfseries Email\+Address}, 
+{\bfseries Password}, 
+\newline
+{\bfseries Pin}, 
+{\bfseries Custom}
+ \}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ab72a4b889f55cc4a2f98611fca609ccf}\label{classTMPro_1_1TMP__InputField_ab72a4b889f55cc4a2f98611fca609ccf}} 
+enum {\bfseries Input\+Type} \{ {\bfseries Standard}, 
+{\bfseries Auto\+Correct}, 
+{\bfseries Password}
+ \}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a96ac8b8cc04492aadbf24839b8d6376e}\label{classTMPro_1_1TMP__InputField_a96ac8b8cc04492aadbf24839b8d6376e}} 
+enum {\bfseries Character\+Validation} \{ \newline
+{\bfseries None}, 
+{\bfseries Digit}, 
+{\bfseries Integer}, 
+{\bfseries Decimal}, 
+\newline
+{\bfseries Alphanumeric}, 
+{\bfseries Name}, 
+{\bfseries Regex}, 
+{\bfseries Email\+Address}, 
+\newline
+{\bfseries Custom\+Validator}
+ \}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a0da8af0aef5faef7c405ac72d28bd214}\label{classTMPro_1_1TMP__InputField_a0da8af0aef5faef7c405ac72d28bd214}} 
+enum {\bfseries Line\+Type} \{ {\bfseries Single\+Line}, 
+{\bfseries Multi\+Line\+Submit}, 
+{\bfseries Multi\+Line\+Newline}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a34dece90fcdb81bf3489208eab7a8a82}\label{classTMPro_1_1TMP__InputField_a34dece90fcdb81bf3489208eab7a8a82}} 
+delegate char {\bfseries On\+Validate\+Input} (string \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}, int char\+Index, char added\+Char)
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a0470349eb9f2156696cd6a921b558ba7}{Move\+Text\+End}} (bool shift)
+\begin{DoxyCompactList}\small\item\em Move to the end of the text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_aff69df0c224c73b666addf48c10eec44}{Move\+Text\+Start}} (bool shift)
+\begin{DoxyCompactList}\small\item\em Move to the start of the text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a817cdcf34d7711275ffa8643b02a73fa}{Move\+To\+End\+Of\+Line}} (bool shift, bool ctrl)
+\begin{DoxyCompactList}\small\item\em Move to the end of the current line of text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ad0c485854da42ede16b5127258120c40}{Move\+To\+Start\+Of\+Line}} (bool shift, bool ctrl)
+\begin{DoxyCompactList}\small\item\em Move to the start of the current line of text. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_afb0884739580ae97b441c56b1018786a}\label{classTMPro_1_1TMP__InputField_afb0884739580ae97b441c56b1018786a}} 
+virtual void {\bfseries On\+Begin\+Drag} (Pointer\+Event\+Data event\+Data)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ad670bf0eee71dbabbe95948062a0fea2}\label{classTMPro_1_1TMP__InputField_ad670bf0eee71dbabbe95948062a0fea2}} 
+virtual void {\bfseries On\+Drag} (Pointer\+Event\+Data event\+Data)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ae19fc88d3c5efaee7f436e700f16c54a}\label{classTMPro_1_1TMP__InputField_ae19fc88d3c5efaee7f436e700f16c54a}} 
+virtual void {\bfseries On\+End\+Drag} (Pointer\+Event\+Data event\+Data)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a9b56bc090d1633c3452c7be950b9b373}\label{classTMPro_1_1TMP__InputField_a9b56bc090d1633c3452c7be950b9b373}} 
+override void {\bfseries On\+Pointer\+Down} (Pointer\+Event\+Data event\+Data)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_abdbb932fc8d6aa12272b0a480ad13504}\label{classTMPro_1_1TMP__InputField_abdbb932fc8d6aa12272b0a480ad13504}} 
+void {\bfseries Process\+Event} (Event e)
+\item 
+virtual void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a6daaf6eadebb182f92aa088d7abb86dc}{On\+Update\+Selected}} (Base\+Event\+Data event\+Data)
+\item 
+virtual void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a459befbf2b33143cbcf80cf32f1953b8}{On\+Scroll}} (Pointer\+Event\+Data event\+Data)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_aa9dfe88bdbfa9c6490c14833711d604f}\label{classTMPro_1_1TMP__InputField_aa9dfe88bdbfa9c6490c14833711d604f}} 
+void {\bfseries Force\+Label\+Update} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_acb2dc09ce7a2a0ccda89e917a23d35f3}\label{classTMPro_1_1TMP__InputField_acb2dc09ce7a2a0ccda89e917a23d35f3}} 
+virtual void {\bfseries Rebuild} (Canvas\+Update update)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a3828d087682e3659d369879a4bffac42}\label{classTMPro_1_1TMP__InputField_a3828d087682e3659d369879a4bffac42}} 
+virtual void {\bfseries Layout\+Complete} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a89a96f3d5ff67619b0c24c9cec50859d}\label{classTMPro_1_1TMP__InputField_a89a96f3d5ff67619b0c24c9cec50859d}} 
+virtual void {\bfseries Graphic\+Update\+Complete} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ac9c67e94d54028f82f604b75bdeac336}\label{classTMPro_1_1TMP__InputField_ac9c67e94d54028f82f604b75bdeac336}} 
+void {\bfseries Activate\+Input\+Field} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a7bfcd4822d6fa704e155a822fd357879}\label{classTMPro_1_1TMP__InputField_a7bfcd4822d6fa704e155a822fd357879}} 
+override void {\bfseries On\+Select} (Base\+Event\+Data event\+Data)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a08cbf6021ac297247b38fbb6559b7996}\label{classTMPro_1_1TMP__InputField_a08cbf6021ac297247b38fbb6559b7996}} 
+virtual void {\bfseries On\+Pointer\+Click} (Pointer\+Event\+Data event\+Data)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a6b3e476c9e6b55214549999eedb4ff09}\label{classTMPro_1_1TMP__InputField_a6b3e476c9e6b55214549999eedb4ff09}} 
+void {\bfseries On\+Control\+Click} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a51726d0c870d54e1235c3b7d9c6a2425}\label{classTMPro_1_1TMP__InputField_a51726d0c870d54e1235c3b7d9c6a2425}} 
+void {\bfseries Deactivate\+Input\+Field} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a4408fce00917fd765ef1a1e5017a3464}\label{classTMPro_1_1TMP__InputField_a4408fce00917fd765ef1a1e5017a3464}} 
+override void {\bfseries On\+Deselect} (Base\+Event\+Data event\+Data)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a5d0a7dce46ca21b97a7a1554579d2887}\label{classTMPro_1_1TMP__InputField_a5d0a7dce46ca21b97a7a1554579d2887}} 
+virtual void {\bfseries On\+Submit} (Base\+Event\+Data event\+Data)
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_aba2ab9700cbd18d64736530a34d91068}{Set\+Global\+Point\+Size}} (float \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac8a2780c0a65e2ed41fd216d0c4454}{point\+Size}})
+\begin{DoxyCompactList}\small\item\em Function to conveniently set the point size of both Placeholder and Input Field text object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a2ed20e5b12507b1ff2e108dd99d4091f}{Set\+Global\+Font\+Asset}} (\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ac13a97bd7e0eb0e19b5a50efc11adb67}{font\+Asset}})
+\begin{DoxyCompactList}\small\item\em Function to conveniently set the Font Asset of both Placeholder and Input Field text object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a12fc070748fd5c39cbb8c907aa3145ee}\label{classTMPro_1_1TMP__InputField_a12fc070748fd5c39cbb8c907aa3145ee}} 
+enum {\bfseries Edit\+State} \{ {\bfseries Continue}, 
+{\bfseries Finish}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a732fc6d9f7104a4ce580164aa86e14d2}\label{classTMPro_1_1TMP__InputField_a732fc6d9f7104a4ce580164aa86e14d2}} 
+void {\bfseries Clamp\+String\+Pos} (ref int pos)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a80e2f1a3a3ab3fd938e07396f6cc7647}\label{classTMPro_1_1TMP__InputField_a80e2f1a3a3ab3fd938e07396f6cc7647}} 
+void {\bfseries Clamp\+Caret\+Pos} (ref int pos)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ad2ff861cc6eb60e636a7dc4cb8280437}\label{classTMPro_1_1TMP__InputField_ad2ff861cc6eb60e636a7dc4cb8280437}} 
+override void {\bfseries On\+Enable} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ae84831aa9c5d44a1ca91685d772b44d4}\label{classTMPro_1_1TMP__InputField_ae84831aa9c5d44a1ca91685d772b44d4}} 
+override void {\bfseries On\+Disable} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ab9ec006dcffd4f1aceb65e632e224c49}\label{classTMPro_1_1TMP__InputField_ab9ec006dcffd4f1aceb65e632e224c49}} 
+void {\bfseries On\+Focus} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ae7246b94a4be46fb34a132db2cbcbf98}\label{classTMPro_1_1TMP__InputField_ae7246b94a4be46fb34a132db2cbcbf98}} 
+void {\bfseries Select\+All} ()
+\item 
+virtual void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a4b7cccc36ecd8672c02a29ef7ebc2dd3}{Late\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Update the text based on input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a9ef972ef2261f10383fd4a900a9c3449}\label{classTMPro_1_1TMP__InputField_a9ef972ef2261f10383fd4a900a9c3449}} 
+Edit\+State {\bfseries Key\+Pressed} (Event evt)
+\item 
+virtual void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a3d675445c819058d84bfa8b8889fb119}{Append}} (string input)
+\begin{DoxyCompactList}\small\item\em Append the specified text to the end of the current. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a3d0b5e6b105dd61c4cfb9cfeb7956133}\label{classTMPro_1_1TMP__InputField_a3d0b5e6b105dd61c4cfb9cfeb7956133}} 
+virtual void {\bfseries Append} (char input)
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_adba4a85e3c7777a5573ed2ff139e4517}{Send\+On\+End\+Edit}} ()
+\begin{DoxyCompactList}\small\item\em Submit the input field\textquotesingle{}s text. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_abf60ea8cc14546e9e0ca9f88db152b13}\label{classTMPro_1_1TMP__InputField_abf60ea8cc14546e9e0ca9f88db152b13}} 
+void {\bfseries Send\+On\+Submit} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ac542ca4fb9d53a6a8c37b16dc07bb60a}\label{classTMPro_1_1TMP__InputField_ac542ca4fb9d53a6a8c37b16dc07bb60a}} 
+void {\bfseries Send\+On\+Focus} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a54f68d8730b8905a4a9a31c21c911926}\label{classTMPro_1_1TMP__InputField_a54f68d8730b8905a4a9a31c21c911926}} 
+void {\bfseries Send\+On\+Focus\+Lost} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a99c2a06204ab72d3bde231e3cca78254}\label{classTMPro_1_1TMP__InputField_a99c2a06204ab72d3bde231e3cca78254}} 
+void {\bfseries Send\+On\+Text\+Selection} ()
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ac3305c44c797f1f8c62d81851e8f118c}\label{classTMPro_1_1TMP__InputField_ac3305c44c797f1f8c62d81851e8f118c}} 
+void {\bfseries Send\+On\+End\+Text\+Selection} ()
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac4c595e5f686b371e27745b0a2c99b}{Update\+Label}} ()
+\begin{DoxyCompactList}\small\item\em Update the visual text Text. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{classTMPro_1_1TMP__InputField_afd6552ded1ac4de1c4efd868bdc66a33}{Validate}} (string \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}, int pos, char ch)
+\begin{DoxyCompactList}\small\item\em Validate the specified input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_af860afd96be9a72782c9b4c7ce91f5e6}\label{classTMPro_1_1TMP__InputField_af860afd96be9a72782c9b4c7ce91f5e6}} 
+override void {\bfseries Do\+State\+Transition} (Selection\+State state, bool instant)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a54d6e4dd9823a169ee043b0b1666bb3f}\label{classTMPro_1_1TMP__InputField_a54d6e4dd9823a169ee043b0b1666bb3f}} 
+Touch\+Screen\+Keyboard {\bfseries m\+\_\+\+Keyboard}
+\item 
+Rect\+Transform \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a9fd2bebbbaf2c101dc1b449cb8ab0d20}{m\+\_\+\+Text\+Viewport}}
+\begin{DoxyCompactList}\small\item\em Text Text used to display the input\textquotesingle{}s value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a44ea9a4d415404140ed245e28f8a589c}\label{classTMPro_1_1TMP__InputField_a44ea9a4d415404140ed245e28f8a589c}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__Text}{T\+M\+P\+\_\+\+Text}} {\bfseries m\+\_\+\+Text\+Component}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_adbd686703ef2fd1f51a620aacf112dbc}\label{classTMPro_1_1TMP__InputField_adbd686703ef2fd1f51a620aacf112dbc}} 
+Rect\+Transform {\bfseries m\+\_\+\+Text\+Component\+Rect\+Transform}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a1b11b8b2838c990e39234868d969922d}\label{classTMPro_1_1TMP__InputField_a1b11b8b2838c990e39234868d969922d}} 
+Graphic {\bfseries m\+\_\+\+Placeholder}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a72bb99d7d3c24889ba474b9957b87c86}\label{classTMPro_1_1TMP__InputField_a72bb99d7d3c24889ba474b9957b87c86}} 
+Scrollbar {\bfseries m\+\_\+\+Vertical\+Scrollbar}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a44b82f1f901c2db14d9d584a834f6b1f}\label{classTMPro_1_1TMP__InputField_a44b82f1f901c2db14d9d584a834f6b1f}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__ScrollbarEventHandler}{T\+M\+P\+\_\+\+Scrollbar\+Event\+Handler}} {\bfseries m\+\_\+\+Vertical\+Scrollbar\+Event\+Handler}
+\item 
+float \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a11ee0e78a149f3a7834002859bfbbd5b}{m\+\_\+\+Scroll\+Sensitivity}} = 1.\+0f
+\item 
+string \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\+\_\+\+Text}} = string.\+Empty
+\begin{DoxyCompactList}\small\item\em Input field\textquotesingle{}s value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a31d3a28972c4d3c6e1f7118538dfce8d}\label{classTMPro_1_1TMP__InputField_a31d3a28972c4d3c6e1f7118538dfce8d}} 
+int {\bfseries m\+\_\+\+String\+Position} = 0
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_abb17ee7de4a2f9ebaabec9e671928f61}\label{classTMPro_1_1TMP__InputField_abb17ee7de4a2f9ebaabec9e671928f61}} 
+int {\bfseries m\+\_\+\+String\+Select\+Position} = 0
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a9b15ea9c322d7d51733893da49799a9c}\label{classTMPro_1_1TMP__InputField_a9b15ea9c322d7d51733893da49799a9c}} 
+int {\bfseries m\+\_\+\+Caret\+Position} = 0
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_af5bfddd9f54a20f9c9ea8654e24eb45a}\label{classTMPro_1_1TMP__InputField_af5bfddd9f54a20f9c9ea8654e24eb45a}} 
+int {\bfseries m\+\_\+\+Caret\+Select\+Position} = 0
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a0b237f1b8bade0a11bd66f32d11f4c7e}\label{classTMPro_1_1TMP__InputField_a0b237f1b8bade0a11bd66f32d11f4c7e}} 
+U\+I\+Vertex\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Cursor\+Verts} = null
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_aa41edfd2c43f42a95c7f6ffcbf633686}\label{classTMPro_1_1TMP__InputField_aa41edfd2c43f42a95c7f6ffcbf633686}} 
+Mesh {\bfseries m\+\_\+\+Mesh}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a9bbaabf0475f8c76c7b48b4dd3c96b92}\label{classTMPro_1_1TMP__InputField_a9bbaabf0475f8c76c7b48b4dd3c96b92}} 
+bool {\bfseries m\+\_\+\+Caret\+Visible}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a867ba97e4606bacc2f3eca57faad9c48}\label{classTMPro_1_1TMP__InputField_a867ba97e4606bacc2f3eca57faad9c48}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} {\bfseries m\+\_\+\+Global\+Font\+Asset}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a7f595e104245fea77a81e309cc9e527b}\label{classTMPro_1_1TMP__InputField_a7f595e104245fea77a81e309cc9e527b}} 
+bool {\bfseries m\+\_\+\+On\+Focus\+Select\+All} = true
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a6d8562baedf249de6f7f6d12bc6c9a93}\label{classTMPro_1_1TMP__InputField_a6d8562baedf249de6f7f6d12bc6c9a93}} 
+bool {\bfseries m\+\_\+is\+Select\+All}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a565eda5a52adc73b118854dcd8c7f0e6}\label{classTMPro_1_1TMP__InputField_a565eda5a52adc73b118854dcd8c7f0e6}} 
+bool {\bfseries m\+\_\+\+Reset\+On\+De\+Activation} = true
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_accb94749f5654852ae2edef1165a6f34}\label{classTMPro_1_1TMP__InputField_accb94749f5654852ae2edef1165a6f34}} 
+bool {\bfseries m\+\_\+is\+Rich\+Text\+Editing\+Allowed} = true
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_aa0aae2c2fc753f1d7ed97f552399b685}\label{classTMPro_1_1TMP__InputField_aa0aae2c2fc753f1d7ed97f552399b685}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__InputValidator}{T\+M\+P\+\_\+\+Input\+Validator}} {\bfseries m\+\_\+\+Input\+Validator} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ad3640613447de8014aa5cbbb8230dbd2}\label{classTMPro_1_1TMP__InputField_ad3640613447de8014aa5cbbb8230dbd2}} 
+Mesh {\bfseries mesh}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classTMPro_1_1TMP__InputField_aef653449d7af3f273835cd4bcbcc6b16}{should\+Hide\+Mobile\+Input}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Should the mobile keyboard input be hidden. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Input field\textquotesingle{}s current text value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ad0adb2aaa39a20d28250502e300708a1}\label{classTMPro_1_1TMP__InputField_ad0adb2aaa39a20d28250502e300708a1}} 
+bool {\bfseries is\+Focused}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a189bdcef8ba63cfdb87663d7eda77ac5}\label{classTMPro_1_1TMP__InputField_a189bdcef8ba63cfdb87663d7eda77ac5}} 
+float {\bfseries caret\+Blink\+Rate}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a62dfe3f69bf1f6afa3f8d9202af93765}\label{classTMPro_1_1TMP__InputField_a62dfe3f69bf1f6afa3f8d9202af93765}} 
+int {\bfseries caret\+Width}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_aa426bf08e2a529483205e898eafa3270}\label{classTMPro_1_1TMP__InputField_aa426bf08e2a529483205e898eafa3270}} 
+Rect\+Transform {\bfseries text\+Viewport}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a53ff62868818b04e9a143824d281a4a1}\label{classTMPro_1_1TMP__InputField_a53ff62868818b04e9a143824d281a4a1}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__Text}{T\+M\+P\+\_\+\+Text}} {\bfseries text\+Component}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a1e9e0c35ae9c680e3a8840290583b2dc}\label{classTMPro_1_1TMP__InputField_a1e9e0c35ae9c680e3a8840290583b2dc}} 
+Graphic {\bfseries placeholder}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a0e0e0e5361b2ce210d8a23cdc955c1f1}\label{classTMPro_1_1TMP__InputField_a0e0e0e5361b2ce210d8a23cdc955c1f1}} 
+Scrollbar {\bfseries vertical\+Scrollbar}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_afcc210fa4443bf1e44612d6e525d5047}\label{classTMPro_1_1TMP__InputField_afcc210fa4443bf1e44612d6e525d5047}} 
+float {\bfseries scroll\+Sensitivity}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a1283cd81e1b18cd0a8903c0a659f4a4f}\label{classTMPro_1_1TMP__InputField_a1283cd81e1b18cd0a8903c0a659f4a4f}} 
+Color? {\bfseries caret\+Color}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ae95089918945d8b6cc2b669d4de7fb23}\label{classTMPro_1_1TMP__InputField_ae95089918945d8b6cc2b669d4de7fb23}} 
+bool {\bfseries custom\+Caret\+Color}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_afc5f2333c0987147b81b74b243bece87}\label{classTMPro_1_1TMP__InputField_afc5f2333c0987147b81b74b243bece87}} 
+Color {\bfseries selection\+Color}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_af9c998ec6ee4418ef8ad13d61cfc7226}\label{classTMPro_1_1TMP__InputField_af9c998ec6ee4418ef8ad13d61cfc7226}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__InputField_1_1SubmitEvent}{Submit\+Event}} {\bfseries on\+End\+Edit}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a5c3e2616c6bb71a9648f87c547f1b1e2}\label{classTMPro_1_1TMP__InputField_a5c3e2616c6bb71a9648f87c547f1b1e2}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__InputField_1_1SubmitEvent}{Submit\+Event}} {\bfseries on\+Submit}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_aff088e8d938f85dd7a143f7d4e9576af}\label{classTMPro_1_1TMP__InputField_aff088e8d938f85dd7a143f7d4e9576af}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__InputField_1_1SelectionEvent}{Selection\+Event}} {\bfseries on\+Select}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_af269e66a8c51c4677c569fd02983312d}\label{classTMPro_1_1TMP__InputField_af269e66a8c51c4677c569fd02983312d}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__InputField_1_1SelectionEvent}{Selection\+Event}} {\bfseries on\+Deselect}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_af1c52092e530ca45a1af4f2653fe320b}\label{classTMPro_1_1TMP__InputField_af1c52092e530ca45a1af4f2653fe320b}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__InputField_1_1TextSelectionEvent}{Text\+Selection\+Event}} {\bfseries on\+Text\+Selection}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a367d020208ed8d2d01f25e7c46b2806e}\label{classTMPro_1_1TMP__InputField_a367d020208ed8d2d01f25e7c46b2806e}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__InputField_1_1TextSelectionEvent}{Text\+Selection\+Event}} {\bfseries on\+End\+Text\+Selection}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_aaf909cd0451dbaa7fc816c22aba484b4}\label{classTMPro_1_1TMP__InputField_aaf909cd0451dbaa7fc816c22aba484b4}} 
+\mbox{\hyperlink{classTMPro_1_1TMP__InputField_1_1OnChangeEvent}{On\+Change\+Event}} {\bfseries on\+Value\+Changed}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_aee71958e449b48fa7df100ca8c9c5409}\label{classTMPro_1_1TMP__InputField_aee71958e449b48fa7df100ca8c9c5409}} 
+On\+Validate\+Input {\bfseries on\+Validate\+Input}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a973f5c94811ee85dad28d96193fb925e}\label{classTMPro_1_1TMP__InputField_a973f5c94811ee85dad28d96193fb925e}} 
+int {\bfseries character\+Limit}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac8a2780c0a65e2ed41fd216d0c4454}{point\+Size}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Set the point size on both Placeholder and Input text object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ac13a97bd7e0eb0e19b5a50efc11adb67}{font\+Asset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets the Font Asset on both Placeholder and Input child objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTMPro_1_1TMP__InputField_abf3bccd8c0c63eff2f8de40194d6aeb7}{on\+Focus\+Select\+All}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Determines if the whole text will be selected when focused. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a614c7ba0b401a31c87380e49fee3d443}{reset\+On\+De\+Activation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Determines if the text and caret position as well as selection will be reset when the input field is deactivated. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a9a402064db2a20ffce7abb59d2619688}{restore\+Original\+Text\+On\+Escape}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls whether the original text is restored when pressing \char`\"{}\+E\+S\+C\char`\"{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab710f2c64b44e6c2c4fe4a10542e67fc}{is\+Rich\+Text\+Editing\+Allowed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is Rich Text editing allowed? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_af72fd8ccfa126c4a684801ea3de9b93c}\label{classTMPro_1_1TMP__InputField_af72fd8ccfa126c4a684801ea3de9b93c}} 
+Content\+Type {\bfseries content\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_aca5c1fb3adf7c83602b96eaf7aa77405}\label{classTMPro_1_1TMP__InputField_aca5c1fb3adf7c83602b96eaf7aa77405}} 
+Line\+Type {\bfseries line\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a5c3a71f562853f264523c61e0f719683}\label{classTMPro_1_1TMP__InputField_a5c3a71f562853f264523c61e0f719683}} 
+Input\+Type {\bfseries input\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ae050f33bb2ccfacb6983c97a0cef4505}\label{classTMPro_1_1TMP__InputField_ae050f33bb2ccfacb6983c97a0cef4505}} 
+Touch\+Screen\+Keyboard\+Type {\bfseries keyboard\+Type}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a56b1eac3a3a883380b261358b4ccf63f}\label{classTMPro_1_1TMP__InputField_a56b1eac3a3a883380b261358b4ccf63f}} 
+Character\+Validation {\bfseries character\+Validation}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{classTMPro_1_1TMP__InputValidator}{T\+M\+P\+\_\+\+Input\+Validator}} \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a0133238d9e97ac0eafb921dede2f9ff7}{input\+Validator}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Sets the Input Validation to use a Custom Input Validation script. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a2148fac74d4c78ea333f8d4b589c4883}\label{classTMPro_1_1TMP__InputField_a2148fac74d4c78ea333f8d4b589c4883}} 
+bool {\bfseries read\+Only}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a5e4d09d36172c6647cf70dc6223c6bfa}\label{classTMPro_1_1TMP__InputField_a5e4d09d36172c6647cf70dc6223c6bfa}} 
+bool {\bfseries rich\+Text}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a76c102dad3fdfa675bd65d5c382a1c8d}\label{classTMPro_1_1TMP__InputField_a76c102dad3fdfa675bd65d5c382a1c8d}} 
+bool {\bfseries multi\+Line}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ac79a41642fb8efadc77aeaf6af2695dc}\label{classTMPro_1_1TMP__InputField_ac79a41642fb8efadc77aeaf6af2695dc}} 
+char {\bfseries asterisk\+Char}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a6f9abe7ff08ce17ffece2dc9a6df3ae9}\label{classTMPro_1_1TMP__InputField_a6f9abe7ff08ce17ffece2dc9a6df3ae9}} 
+bool {\bfseries was\+Canceled}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a48b9911b7de2a895d5411f4526a1acc1}{caret\+Position\+Internal}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Current position of the cursor. Getters are public Setters are protected \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a6d8ce3c8a0d73fc9eafc686186c6d75a}\label{classTMPro_1_1TMP__InputField_a6d8ce3c8a0d73fc9eafc686186c6d75a}} 
+int {\bfseries string\+Position\+Internal}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a370c7d141866bb8a55fe40919dd3c28d}\label{classTMPro_1_1TMP__InputField_a370c7d141866bb8a55fe40919dd3c28d}} 
+int {\bfseries caret\+Select\+Position\+Internal}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a70a7a69109043b8b87e3169cd2347501}\label{classTMPro_1_1TMP__InputField_a70a7a69109043b8b87e3169cd2347501}} 
+int {\bfseries string\+Select\+Position\+Internal}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a3d3a39b5c399ed120a847fed2d842d81}{caret\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get\+: Returns the focus position as thats the position that moves around even during selection. Set\+: Set both the anchor and focus position such that a selection doesn\textquotesingle{}t happen \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ad2940845ebee386ae2b382a25761ce8c}{selection\+Anchor\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get\+: Returns the fixed position of selection Set\+: If Input.\+composition\+String is 0 set the fixed position \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a93771e08f4ee7c293af4ebc1e5bc0d9a}{selection\+Focus\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Get\+: Returns the variable position of selection Set\+: If Input.\+composition\+String is 0 set the variable position \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a50c68e4085013bd06441947658e90317}{string\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ac36ae4cd4a58fa36661b49928217875e}{selection\+String\+Anchor\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The fixed position of the selection in the raw string which may contains rich text. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTMPro_1_1TMP__InputField_abfe0c449ec61505b163eb5949a09f9ff}{selection\+String\+Focus\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The variable position of the selection in the raw string which may contains rich text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Editable text input field. 
+
+
+
+Definition at line 21 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a3d675445c819058d84bfa8b8889fb119}\label{classTMPro_1_1TMP__InputField_a3d675445c819058d84bfa8b8889fb119}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!Append@{Append}}
+\index{Append@{Append}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{Append()}{Append()}}
+{\footnotesize\ttfamily virtual void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+Append (\begin{DoxyParamCaption}\item[{string}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Append the specified text to the end of the current. 
+
+
+
+Definition at line 2346 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2347         \{}
+\DoxyCodeLine{2348             \textcolor{keywordflow}{if} (m\_ReadOnly)}
+\DoxyCodeLine{2349                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{2350 }
+\DoxyCodeLine{2351             \textcolor{keywordflow}{if} (!InPlaceEditing())}
+\DoxyCodeLine{2352                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{2353 }
+\DoxyCodeLine{2354             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, imax = input.Length; i < imax; ++i)}
+\DoxyCodeLine{2355             \{}
+\DoxyCodeLine{2356                 \textcolor{keywordtype}{char} c = input[i];}
+\DoxyCodeLine{2357 }
+\DoxyCodeLine{2358                 \textcolor{keywordflow}{if} (c >= \textcolor{charliteral}{' '} || c == \textcolor{charliteral}{'\(\backslash\)t'} || c == \textcolor{charliteral}{'\(\backslash\)r'} || c == 10 || c == \textcolor{charliteral}{'\(\backslash\)n'})}
+\DoxyCodeLine{2359                 \{}
+\DoxyCodeLine{2360                     \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a3d675445c819058d84bfa8b8889fb119}{Append}}(c);}
+\DoxyCodeLine{2361                 \}}
+\DoxyCodeLine{2362             \}}
+\DoxyCodeLine{2363         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a4b7cccc36ecd8672c02a29ef7ebc2dd3}\label{classTMPro_1_1TMP__InputField_a4b7cccc36ecd8672c02a29ef7ebc2dd3}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!LateUpdate@{LateUpdate}}
+\index{LateUpdate@{LateUpdate}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{LateUpdate()}{LateUpdate()}}
+{\footnotesize\ttfamily virtual void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Update the text based on input. 
+
+
+
+Definition at line 1082 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1083         \{}
+\DoxyCodeLine{1084             \textcolor{comment}{// Only activate if we are not already activated.}}
+\DoxyCodeLine{1085             \textcolor{keywordflow}{if} (m\_ShouldActivateNextUpdate)}
+\DoxyCodeLine{1086             \{}
+\DoxyCodeLine{1087                 \textcolor{keywordflow}{if} (!isFocused)}
+\DoxyCodeLine{1088                 \{}
+\DoxyCodeLine{1089                     ActivateInputFieldInternal();}
+\DoxyCodeLine{1090                     m\_ShouldActivateNextUpdate = \textcolor{keyword}{false};}
+\DoxyCodeLine{1091                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1092                 \}}
+\DoxyCodeLine{1093 }
+\DoxyCodeLine{1094                 \textcolor{comment}{// Reset as we are already activated.}}
+\DoxyCodeLine{1095                 m\_ShouldActivateNextUpdate = \textcolor{keyword}{false};}
+\DoxyCodeLine{1096             \}}
+\DoxyCodeLine{1097 }
+\DoxyCodeLine{1098             \textcolor{comment}{// Update Scrollbar if needed}}
+\DoxyCodeLine{1099             \textcolor{keywordflow}{if} (m\_IsScrollbarUpdateRequired)}
+\DoxyCodeLine{1100             \{}
+\DoxyCodeLine{1101                 UpdateScrollbar();}
+\DoxyCodeLine{1102                 m\_IsScrollbarUpdateRequired = \textcolor{keyword}{false};}
+\DoxyCodeLine{1103             \}}
+\DoxyCodeLine{1104 }
+\DoxyCodeLine{1105             \textcolor{comment}{//if (!isFocused \&\& !m\_VerticalScrollbarEventHandler.isSelected)}}
+\DoxyCodeLine{1106             \textcolor{comment}{//\{}}
+\DoxyCodeLine{1107             \textcolor{comment}{//    m\_ForceDeactivation = true;}}
+\DoxyCodeLine{1108             \textcolor{comment}{//    DeactivateInputField();}}
+\DoxyCodeLine{1109 }
+\DoxyCodeLine{1110             \textcolor{comment}{//    return;}}
+\DoxyCodeLine{1111             \textcolor{comment}{//\}}}
+\DoxyCodeLine{1112 }
+\DoxyCodeLine{1113             \textcolor{comment}{//if (!isFocused)}}
+\DoxyCodeLine{1114             \textcolor{comment}{//\{}}
+\DoxyCodeLine{1115             \textcolor{comment}{//    GameObject currentSelection = EventSystem.current == null ? null : EventSystem.current.currentSelectedGameObject;}}
+\DoxyCodeLine{1116 }
+\DoxyCodeLine{1117             \textcolor{comment}{//    if (currentSelection != null)}}
+\DoxyCodeLine{1118             \textcolor{comment}{//        Debug.Log("Current Selection is: " + EventSystem.current.currentSelectedGameObject);}}
+\DoxyCodeLine{1119             \textcolor{comment}{//    else}}
+\DoxyCodeLine{1120             \textcolor{comment}{//        Debug.Log("No GameObject is selected...");}}
+\DoxyCodeLine{1121             \textcolor{comment}{//\}}}
+\DoxyCodeLine{1122 }
+\DoxyCodeLine{1123 }
+\DoxyCodeLine{1124             \textcolor{keywordflow}{if} (InPlaceEditing() || !isFocused)}
+\DoxyCodeLine{1125                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1126 }
+\DoxyCodeLine{1127             \textcolor{comment}{//Debug.Log(this + " has focus...");}}
+\DoxyCodeLine{1128 }
+\DoxyCodeLine{1129             AssignPositioningIfNeeded();}
+\DoxyCodeLine{1130 }
+\DoxyCodeLine{1131             \textcolor{keywordflow}{if} (m\_Keyboard == \textcolor{keyword}{null} || !m\_Keyboard.active)}
+\DoxyCodeLine{1132             \{}
+\DoxyCodeLine{1133                 \textcolor{keywordflow}{if} (m\_Keyboard != \textcolor{keyword}{null})}
+\DoxyCodeLine{1134                 \{}
+\DoxyCodeLine{1135                     \textcolor{keywordflow}{if} (!m\_ReadOnly)}
+\DoxyCodeLine{1136                         \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}} = m\_Keyboard.text;}
+\DoxyCodeLine{1137 }
+\DoxyCodeLine{1138                     \textcolor{keywordflow}{if} (m\_Keyboard.status == TouchScreenKeyboard.Status.Canceled)}
+\DoxyCodeLine{1139                         m\_WasCanceled = \textcolor{keyword}{true};}
+\DoxyCodeLine{1140 }
+\DoxyCodeLine{1141                     \textcolor{keywordflow}{if} (m\_Keyboard.status == TouchScreenKeyboard.Status.Done)}
+\DoxyCodeLine{1142                         OnSubmit(\textcolor{keyword}{null});}
+\DoxyCodeLine{1143                 \}}
+\DoxyCodeLine{1144 }
+\DoxyCodeLine{1145                 OnDeselect(\textcolor{keyword}{null});}
+\DoxyCodeLine{1146                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1147             \}}
+\DoxyCodeLine{1148 }
+\DoxyCodeLine{1149             \textcolor{keywordtype}{string} val = m\_Keyboard.text;}
+\DoxyCodeLine{1150 }
+\DoxyCodeLine{1151             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}} != val)}
+\DoxyCodeLine{1152             \{}
+\DoxyCodeLine{1153                 \textcolor{keywordflow}{if} (m\_ReadOnly)}
+\DoxyCodeLine{1154                 \{}
+\DoxyCodeLine{1155                     m\_Keyboard.text = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}};}
+\DoxyCodeLine{1156                 \}}
+\DoxyCodeLine{1157                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1158                 \{}
+\DoxyCodeLine{1159                     \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}} = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{1160 }
+\DoxyCodeLine{1161                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < val.Length; ++i)}
+\DoxyCodeLine{1162                     \{}
+\DoxyCodeLine{1163                         \textcolor{keywordtype}{char} c = val[i];}
+\DoxyCodeLine{1164 }
+\DoxyCodeLine{1165                         \textcolor{keywordflow}{if} (c == \textcolor{charliteral}{'\(\backslash\)r'} || (\textcolor{keywordtype}{int})c == 3)}
+\DoxyCodeLine{1166                             c = \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{1167 }
+\DoxyCodeLine{1168                         \textcolor{keywordflow}{if} (onValidateInput != \textcolor{keyword}{null})}
+\DoxyCodeLine{1169                             c = onValidateInput(\mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}}, \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}}.Length, c);}
+\DoxyCodeLine{1170                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (characterValidation != CharacterValidation.None)}
+\DoxyCodeLine{1171                             c = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_afd6552ded1ac4de1c4efd868bdc66a33}{Validate}}(\mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}}, \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}}.Length, c);}
+\DoxyCodeLine{1172 }
+\DoxyCodeLine{1173                         \textcolor{keywordflow}{if} (lineType == LineType.MultiLineSubmit \&\& c == \textcolor{charliteral}{'\(\backslash\)n'})}
+\DoxyCodeLine{1174                         \{}
+\DoxyCodeLine{1175                             m\_Keyboard.text = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}};}
+\DoxyCodeLine{1176 }
+\DoxyCodeLine{1177                             OnSubmit(\textcolor{keyword}{null});}
+\DoxyCodeLine{1178                             OnDeselect(\textcolor{keyword}{null});}
+\DoxyCodeLine{1179                             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1180                         \}}
+\DoxyCodeLine{1181 }
+\DoxyCodeLine{1182                         \textcolor{keywordflow}{if} (c != 0)}
+\DoxyCodeLine{1183                             \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}} += c;}
+\DoxyCodeLine{1184                     \}}
+\DoxyCodeLine{1185 }
+\DoxyCodeLine{1186                     \textcolor{keywordflow}{if} (characterLimit > 0 \&\& \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}}.Length > characterLimit)}
+\DoxyCodeLine{1187                         \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}} = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}}.Substring(0, characterLimit);}
+\DoxyCodeLine{1188                     stringPositionInternal = stringSelectPositionInternal = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}}.Length;}
+\DoxyCodeLine{1189 }
+\DoxyCodeLine{1190                     \textcolor{comment}{// Set keyboard text before updating label, as we might have changed it with validation}}
+\DoxyCodeLine{1191                     \textcolor{comment}{// and update label will take the old value from keyboard if we don't change it here}}
+\DoxyCodeLine{1192                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}} != val)}
+\DoxyCodeLine{1193                         m\_Keyboard.text = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}};}
+\DoxyCodeLine{1194 }
+\DoxyCodeLine{1195                     SendOnValueChangedAndUpdateLabel();}
+\DoxyCodeLine{1196                 \}}
+\DoxyCodeLine{1197             \}}
+\DoxyCodeLine{1198 }
+\DoxyCodeLine{1199 }
+\DoxyCodeLine{1200             \textcolor{keywordflow}{if} (m\_Keyboard.status == TouchScreenKeyboard.Status.Done)}
+\DoxyCodeLine{1201             \{}
+\DoxyCodeLine{1202                 \textcolor{keywordflow}{if} (m\_Keyboard.status == TouchScreenKeyboard.Status.Canceled)}
+\DoxyCodeLine{1203                     m\_WasCanceled = \textcolor{keyword}{true};}
+\DoxyCodeLine{1204 }
+\DoxyCodeLine{1205                 OnDeselect(\textcolor{keyword}{null});}
+\DoxyCodeLine{1206             \}}
+\DoxyCodeLine{1207         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a0470349eb9f2156696cd6a921b558ba7}\label{classTMPro_1_1TMP__InputField_a0470349eb9f2156696cd6a921b558ba7}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!MoveTextEnd@{MoveTextEnd}}
+\index{MoveTextEnd@{MoveTextEnd}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{MoveTextEnd()}{MoveTextEnd()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+Move\+Text\+End (\begin{DoxyParamCaption}\item[{bool}]{shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move to the end of the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shift} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 931 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{932         \{}
+\DoxyCodeLine{933             \textcolor{keywordflow}{if} (m\_isRichTextEditingAllowed)}
+\DoxyCodeLine{934             \{}
+\DoxyCodeLine{935                 \textcolor{keywordtype}{int} position = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Length;}
+\DoxyCodeLine{936 }
+\DoxyCodeLine{937                 \textcolor{keywordflow}{if} (shift)}
+\DoxyCodeLine{938                 \{}
+\DoxyCodeLine{939                     stringSelectPositionInternal = position;}
+\DoxyCodeLine{940                 \}}
+\DoxyCodeLine{941                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{942                 \{}
+\DoxyCodeLine{943                     stringPositionInternal = position;}
+\DoxyCodeLine{944                     stringSelectPositionInternal = stringPositionInternal;}
+\DoxyCodeLine{945                 \}}
+\DoxyCodeLine{946             \}}
+\DoxyCodeLine{947             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{948             \{}
+\DoxyCodeLine{949                 \textcolor{keywordtype}{int} position = m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a4b2d23d558ff8f9aecf5814f046bcef6}{textInfo}}.characterCount -\/ 1;}
+\DoxyCodeLine{950 }
+\DoxyCodeLine{951                 \textcolor{keywordflow}{if} (shift)}
+\DoxyCodeLine{952                 \{}
+\DoxyCodeLine{953                     caretSelectPositionInternal = position;}
+\DoxyCodeLine{954                     stringSelectPositionInternal = GetStringIndexFromCaretPosition(position);}
+\DoxyCodeLine{955                 \}}
+\DoxyCodeLine{956                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{957                 \{}
+\DoxyCodeLine{958                     \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a48b9911b7de2a895d5411f4526a1acc1}{caretPositionInternal}} = caretSelectPositionInternal = position;}
+\DoxyCodeLine{959                     stringSelectPositionInternal = stringPositionInternal = GetStringIndexFromCaretPosition(position);}
+\DoxyCodeLine{960                 \}}
+\DoxyCodeLine{961             \}}
+\DoxyCodeLine{962 }
+\DoxyCodeLine{963             \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac4c595e5f686b371e27745b0a2c99b}{UpdateLabel}}();}
+\DoxyCodeLine{964         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_aff69df0c224c73b666addf48c10eec44}\label{classTMPro_1_1TMP__InputField_aff69df0c224c73b666addf48c10eec44}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!MoveTextStart@{MoveTextStart}}
+\index{MoveTextStart@{MoveTextStart}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{MoveTextStart()}{MoveTextStart()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+Move\+Text\+Start (\begin{DoxyParamCaption}\item[{bool}]{shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move to the start of the text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shift} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 970 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{971         \{}
+\DoxyCodeLine{972             \textcolor{keywordflow}{if} (m\_isRichTextEditingAllowed)}
+\DoxyCodeLine{973             \{}
+\DoxyCodeLine{974                 \textcolor{keywordtype}{int} position = 0;}
+\DoxyCodeLine{975 }
+\DoxyCodeLine{976                 \textcolor{keywordflow}{if} (shift)}
+\DoxyCodeLine{977                 \{}
+\DoxyCodeLine{978                     stringSelectPositionInternal = position;}
+\DoxyCodeLine{979                 \}}
+\DoxyCodeLine{980                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{981                 \{}
+\DoxyCodeLine{982                     stringPositionInternal = position;}
+\DoxyCodeLine{983                     stringSelectPositionInternal = stringPositionInternal;}
+\DoxyCodeLine{984                 \}}
+\DoxyCodeLine{985             \}}
+\DoxyCodeLine{986             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{987             \{}
+\DoxyCodeLine{988                 \textcolor{keywordtype}{int} position = 0;}
+\DoxyCodeLine{989 }
+\DoxyCodeLine{990                 \textcolor{keywordflow}{if} (shift)}
+\DoxyCodeLine{991                 \{}
+\DoxyCodeLine{992                     caretSelectPositionInternal = position;}
+\DoxyCodeLine{993                     stringSelectPositionInternal = GetStringIndexFromCaretPosition(position);}
+\DoxyCodeLine{994                 \}}
+\DoxyCodeLine{995                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{996                 \{}
+\DoxyCodeLine{997                     \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a48b9911b7de2a895d5411f4526a1acc1}{caretPositionInternal}} = caretSelectPositionInternal = position;}
+\DoxyCodeLine{998                     stringSelectPositionInternal = stringPositionInternal = GetStringIndexFromCaretPosition(position);}
+\DoxyCodeLine{999                 \}}
+\DoxyCodeLine{1000             \}}
+\DoxyCodeLine{1001 }
+\DoxyCodeLine{1002             \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac4c595e5f686b371e27745b0a2c99b}{UpdateLabel}}();}
+\DoxyCodeLine{1003         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a817cdcf34d7711275ffa8643b02a73fa}\label{classTMPro_1_1TMP__InputField_a817cdcf34d7711275ffa8643b02a73fa}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!MoveToEndOfLine@{MoveToEndOfLine}}
+\index{MoveToEndOfLine@{MoveToEndOfLine}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{MoveToEndOfLine()}{MoveToEndOfLine()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+Move\+To\+End\+Of\+Line (\begin{DoxyParamCaption}\item[{bool}]{shift,  }\item[{bool}]{ctrl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move to the end of the current line of text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shift} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1010 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1011         \{}
+\DoxyCodeLine{1012             \textcolor{comment}{// Get the line the caret is currently located on.}}
+\DoxyCodeLine{1013             \textcolor{keywordtype}{int} currentLine = m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a4b2d23d558ff8f9aecf5814f046bcef6}{textInfo}}.characterInfo[\mbox{\hyperlink{classTMPro_1_1TMP__InputField_a48b9911b7de2a895d5411f4526a1acc1}{caretPositionInternal}}].lineNumber;}
+\DoxyCodeLine{1014 }
+\DoxyCodeLine{1015             \textcolor{comment}{// Get the last character of the given line.}}
+\DoxyCodeLine{1016             \textcolor{keywordtype}{int} position = ctrl == \textcolor{keyword}{true} ? m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a4b2d23d558ff8f9aecf5814f046bcef6}{textInfo}}.characterCount -\/ 1 : m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a4b2d23d558ff8f9aecf5814f046bcef6}{textInfo}}.lineInfo[currentLine].lastCharacterIndex;}
+\DoxyCodeLine{1017 }
+\DoxyCodeLine{1018             position = GetStringIndexFromCaretPosition(position);}
+\DoxyCodeLine{1019 }
+\DoxyCodeLine{1020             \textcolor{keywordflow}{if} (shift)}
+\DoxyCodeLine{1021             \{}
+\DoxyCodeLine{1022                 stringSelectPositionInternal = position;}
+\DoxyCodeLine{1023             \}}
+\DoxyCodeLine{1024             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1025             \{}
+\DoxyCodeLine{1026                 stringPositionInternal = position;}
+\DoxyCodeLine{1027                 stringSelectPositionInternal = stringPositionInternal;}
+\DoxyCodeLine{1028             \}}
+\DoxyCodeLine{1029 }
+\DoxyCodeLine{1030             \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac4c595e5f686b371e27745b0a2c99b}{UpdateLabel}}();}
+\DoxyCodeLine{1031         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ad0c485854da42ede16b5127258120c40}\label{classTMPro_1_1TMP__InputField_ad0c485854da42ede16b5127258120c40}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!MoveToStartOfLine@{MoveToStartOfLine}}
+\index{MoveToStartOfLine@{MoveToStartOfLine}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{MoveToStartOfLine()}{MoveToStartOfLine()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+Move\+To\+Start\+Of\+Line (\begin{DoxyParamCaption}\item[{bool}]{shift,  }\item[{bool}]{ctrl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move to the start of the current line of text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shift} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1037 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1038         \{}
+\DoxyCodeLine{1039             \textcolor{comment}{// Get the line the caret is currently located on.}}
+\DoxyCodeLine{1040             \textcolor{keywordtype}{int} currentLine = m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a4b2d23d558ff8f9aecf5814f046bcef6}{textInfo}}.characterInfo[\mbox{\hyperlink{classTMPro_1_1TMP__InputField_a48b9911b7de2a895d5411f4526a1acc1}{caretPositionInternal}}].lineNumber;}
+\DoxyCodeLine{1041 }
+\DoxyCodeLine{1042             \textcolor{comment}{// Get the last character of the given line.}}
+\DoxyCodeLine{1043             \textcolor{keywordtype}{int} position = ctrl == \textcolor{keyword}{true} ? 0 : m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a4b2d23d558ff8f9aecf5814f046bcef6}{textInfo}}.lineInfo[currentLine].firstCharacterIndex;}
+\DoxyCodeLine{1044 }
+\DoxyCodeLine{1045             position = GetStringIndexFromCaretPosition(position);}
+\DoxyCodeLine{1046 }
+\DoxyCodeLine{1047             \textcolor{keywordflow}{if} (shift)}
+\DoxyCodeLine{1048             \{}
+\DoxyCodeLine{1049                 stringSelectPositionInternal = position;}
+\DoxyCodeLine{1050             \}}
+\DoxyCodeLine{1051             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1052             \{}
+\DoxyCodeLine{1053                 stringPositionInternal = position;}
+\DoxyCodeLine{1054                 stringSelectPositionInternal = stringPositionInternal;}
+\DoxyCodeLine{1055             \}}
+\DoxyCodeLine{1056 }
+\DoxyCodeLine{1057             \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac4c595e5f686b371e27745b0a2c99b}{UpdateLabel}}();}
+\DoxyCodeLine{1058         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a459befbf2b33143cbcf80cf32f1953b8}\label{classTMPro_1_1TMP__InputField_a459befbf2b33143cbcf80cf32f1953b8}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!OnScroll@{OnScroll}}
+\index{OnScroll@{OnScroll}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{OnScroll()}{OnScroll()}}
+{\footnotesize\ttfamily virtual void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+On\+Scroll (\begin{DoxyParamCaption}\item[{Pointer\+Event\+Data}]{event\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Data} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1624 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1625         \{}
+\DoxyCodeLine{1626             \textcolor{keywordflow}{if} (m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a612f2886a41239955c33fe784b5f3437}{preferredHeight}} < \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a9fd2bebbbaf2c101dc1b449cb8ab0d20}{m\_TextViewport}}.rect.height) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1627 }
+\DoxyCodeLine{1628             \textcolor{keywordtype}{float} scrollDirection = -\/eventData.scrollDelta.y;}
+\DoxyCodeLine{1629 }
+\DoxyCodeLine{1630             m\_ScrollPosition = m\_ScrollPosition + (1f / m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a4b2d23d558ff8f9aecf5814f046bcef6}{textInfo}}.lineCount) * scrollDirection * \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a11ee0e78a149f3a7834002859bfbbd5b}{m\_ScrollSensitivity}};}
+\DoxyCodeLine{1631 }
+\DoxyCodeLine{1632             m\_ScrollPosition = Mathf.Clamp01(m\_ScrollPosition);}
+\DoxyCodeLine{1633 }
+\DoxyCodeLine{1634             AdjustTextPositionRelativeToViewport(m\_ScrollPosition);}
+\DoxyCodeLine{1635 }
+\DoxyCodeLine{1636             \textcolor{comment}{// Disable focus until user re-\/selected the input field.}}
+\DoxyCodeLine{1637             m\_AllowInput = \textcolor{keyword}{false};}
+\DoxyCodeLine{1638 }
+\DoxyCodeLine{1639             \textcolor{keywordflow}{if} (m\_VerticalScrollbar)}
+\DoxyCodeLine{1640             \{}
+\DoxyCodeLine{1641                 m\_IsUpdatingScrollbarValues = \textcolor{keyword}{true};}
+\DoxyCodeLine{1642                 m\_VerticalScrollbar.value = m\_ScrollPosition;}
+\DoxyCodeLine{1643                 \textcolor{comment}{//m\_VerticalScrollbar.numberOfSteps = (int)(m\_TextComponent.textInfo.lineCount / scrollSensitivity);}}
+\DoxyCodeLine{1644             \}}
+\DoxyCodeLine{1645 }
+\DoxyCodeLine{1646             \textcolor{comment}{//Debug.Log("Scroll Position:" + m\_ScrollPosition);}}
+\DoxyCodeLine{1647         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a6daaf6eadebb182f92aa088d7abb86dc}\label{classTMPro_1_1TMP__InputField_a6daaf6eadebb182f92aa088d7abb86dc}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!OnUpdateSelected@{OnUpdateSelected}}
+\index{OnUpdateSelected@{OnUpdateSelected}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{OnUpdateSelected()}{OnUpdateSelected()}}
+{\footnotesize\ttfamily virtual void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+On\+Update\+Selected (\begin{DoxyParamCaption}\item[{Base\+Event\+Data}]{event\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Data} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1578 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1579         \{}
+\DoxyCodeLine{1580             \textcolor{keywordflow}{if} (!isFocused)}
+\DoxyCodeLine{1581                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1582 }
+\DoxyCodeLine{1583             \textcolor{keywordtype}{bool} consumedEvent = \textcolor{keyword}{false};}
+\DoxyCodeLine{1584             \textcolor{keywordflow}{while} (Event.PopEvent(m\_ProcessingEvent))}
+\DoxyCodeLine{1585             \{}
+\DoxyCodeLine{1586                 \textcolor{keywordflow}{if} (m\_ProcessingEvent.rawType == EventType.KeyDown)}
+\DoxyCodeLine{1587                 \{}
+\DoxyCodeLine{1588                     consumedEvent = \textcolor{keyword}{true};}
+\DoxyCodeLine{1589                     var shouldContinue = KeyPressed(m\_ProcessingEvent);}
+\DoxyCodeLine{1590                     \textcolor{keywordflow}{if} (shouldContinue == EditState.Finish)}
+\DoxyCodeLine{1591                     \{}
+\DoxyCodeLine{1592                         SendOnSubmit();}
+\DoxyCodeLine{1593                         DeactivateInputField();}
+\DoxyCodeLine{1594                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{1595                     \}}
+\DoxyCodeLine{1596                 \}}
+\DoxyCodeLine{1597 }
+\DoxyCodeLine{1598                 \textcolor{keywordflow}{switch} (m\_ProcessingEvent.type)}
+\DoxyCodeLine{1599                 \{}
+\DoxyCodeLine{1600                     \textcolor{keywordflow}{case} EventType.ValidateCommand:}
+\DoxyCodeLine{1601                     \textcolor{keywordflow}{case} EventType.ExecuteCommand:}
+\DoxyCodeLine{1602                         \textcolor{keywordflow}{switch} (m\_ProcessingEvent.commandName)}
+\DoxyCodeLine{1603                         \{}
+\DoxyCodeLine{1604                             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"SelectAll"}:}
+\DoxyCodeLine{1605                                 SelectAll();}
+\DoxyCodeLine{1606                                 consumedEvent = \textcolor{keyword}{true};}
+\DoxyCodeLine{1607                                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{1608                         \}}
+\DoxyCodeLine{1609                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{1610                 \}}
+\DoxyCodeLine{1611             \}}
+\DoxyCodeLine{1612 }
+\DoxyCodeLine{1613             \textcolor{keywordflow}{if} (consumedEvent)}
+\DoxyCodeLine{1614                 \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac4c595e5f686b371e27745b0a2c99b}{UpdateLabel}}();}
+\DoxyCodeLine{1615 }
+\DoxyCodeLine{1616             eventData.Use();}
+\DoxyCodeLine{1617         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_adba4a85e3c7777a5573ed2ff139e4517}\label{classTMPro_1_1TMP__InputField_adba4a85e3c7777a5573ed2ff139e4517}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!SendOnEndEdit@{SendOnEndEdit}}
+\index{SendOnEndEdit@{SendOnEndEdit}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{SendOnEndEdit()}{SendOnEndEdit()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+Send\+On\+End\+Edit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Submit the input field\textquotesingle{}s text. 
+
+
+
+Definition at line 2440 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2441         \{}
+\DoxyCodeLine{2442             \textcolor{keywordflow}{if} (onEndEdit != \textcolor{keyword}{null})}
+\DoxyCodeLine{2443                 onEndEdit.Invoke(\mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}});}
+\DoxyCodeLine{2444         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a2ed20e5b12507b1ff2e108dd99d4091f}\label{classTMPro_1_1TMP__InputField_a2ed20e5b12507b1ff2e108dd99d4091f}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!SetGlobalFontAsset@{SetGlobalFontAsset}}
+\index{SetGlobalFontAsset@{SetGlobalFontAsset}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{SetGlobalFontAsset()}{SetGlobalFontAsset()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+Set\+Global\+Font\+Asset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}}}]{font\+Asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to conveniently set the Font Asset of both Placeholder and Input Field text object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Asset} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3496 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3497         \{}
+\DoxyCodeLine{3498             TMP\_Text placeholderTextComponent = m\_Placeholder as TMP\_Text;}
+\DoxyCodeLine{3499 }
+\DoxyCodeLine{3500             \textcolor{keywordflow}{if} (placeholderTextComponent != \textcolor{keyword}{null}) placeholderTextComponent.font = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ac13a97bd7e0eb0e19b5a50efc11adb67}{fontAsset}};}
+\DoxyCodeLine{3501             textComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a0a55f0d5dc209d8b265113c2669fd980}{font}} = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ac13a97bd7e0eb0e19b5a50efc11adb67}{fontAsset}};}
+\DoxyCodeLine{3502 }
+\DoxyCodeLine{3503         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_aba2ab9700cbd18d64736530a34d91068}\label{classTMPro_1_1TMP__InputField_aba2ab9700cbd18d64736530a34d91068}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!SetGlobalPointSize@{SetGlobalPointSize}}
+\index{SetGlobalPointSize@{SetGlobalPointSize}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{SetGlobalPointSize()}{SetGlobalPointSize()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+Set\+Global\+Point\+Size (\begin{DoxyParamCaption}\item[{float}]{point\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to conveniently set the point size of both Placeholder and Input Field text object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point\+Size} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3484 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3485         \{}
+\DoxyCodeLine{3486             TMP\_Text placeholderTextComponent = m\_Placeholder as TMP\_Text;}
+\DoxyCodeLine{3487 }
+\DoxyCodeLine{3488             \textcolor{keywordflow}{if} (placeholderTextComponent != \textcolor{keyword}{null}) placeholderTextComponent.fontSize = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac8a2780c0a65e2ed41fd216d0c4454}{pointSize}};}
+\DoxyCodeLine{3489             textComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a87683b2b2c721200b2822d16c0ce3dee}{fontSize}} = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac8a2780c0a65e2ed41fd216d0c4454}{pointSize}};}
+\DoxyCodeLine{3490         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a1ac4c595e5f686b371e27745b0a2c99b}\label{classTMPro_1_1TMP__InputField_a1ac4c595e5f686b371e27745b0a2c99b}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!UpdateLabel@{UpdateLabel}}
+\index{UpdateLabel@{UpdateLabel}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{UpdateLabel()}{UpdateLabel()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+Update\+Label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Update the visual text Text. 
+
+
+
+Definition at line 2487 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{2488         \{}
+\DoxyCodeLine{2489             \textcolor{keywordflow}{if} (m\_TextComponent != \textcolor{keyword}{null} \&\& m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a0a55f0d5dc209d8b265113c2669fd980}{font}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{2490             \{}
+\DoxyCodeLine{2491                 \textcolor{comment}{// TextGenerator.Populate invokes a callback that's called for anything}}
+\DoxyCodeLine{2492                 \textcolor{comment}{// that needs to be updated when the data for that font has changed.}}
+\DoxyCodeLine{2493                 \textcolor{comment}{// This makes all Text components that use that font update their vertices.}}
+\DoxyCodeLine{2494                 \textcolor{comment}{// In turn, this makes the InputField that's associated with that Text component}}
+\DoxyCodeLine{2495                 \textcolor{comment}{// update its label by calling this UpdateLabel method.}}
+\DoxyCodeLine{2496                 \textcolor{comment}{// This is a recursive call we want to prevent, since it makes the InputField}}
+\DoxyCodeLine{2497                 \textcolor{comment}{// update based on font data that didn't yet finish executing, or alternatively}}
+\DoxyCodeLine{2498                 \textcolor{comment}{// hang on infinite recursion, depending on whether the cached value is cached}}
+\DoxyCodeLine{2499                 \textcolor{comment}{// before or after the calculation.}}
+\DoxyCodeLine{2500                 \textcolor{comment}{//}}
+\DoxyCodeLine{2501                 \textcolor{comment}{// This callback also occurs when assigning text to our Text component, i.e.,}}
+\DoxyCodeLine{2502                 \textcolor{comment}{// m\_TextComponent.text = processed;}}
+\DoxyCodeLine{2503 }
+\DoxyCodeLine{2504                 \textcolor{comment}{//m\_PreventFontCallback = true;}}
+\DoxyCodeLine{2505 }
+\DoxyCodeLine{2506                 \textcolor{keywordtype}{string} fullText;}
+\DoxyCodeLine{2507                 \textcolor{keywordflow}{if} (Input.compositionString.Length > 0)}
+\DoxyCodeLine{2508                     fullText = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Substring(0, m\_StringPosition) + Input.compositionString + \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Substring(m\_StringPosition);}
+\DoxyCodeLine{2509                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{2510                     fullText = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}};}
+\DoxyCodeLine{2511 }
+\DoxyCodeLine{2512                 \textcolor{keywordtype}{string} processed;}
+\DoxyCodeLine{2513                 \textcolor{keywordflow}{if} (inputType == InputType.Password)}
+\DoxyCodeLine{2514                     processed = \textcolor{keyword}{new} string(asteriskChar, fullText.Length);}
+\DoxyCodeLine{2515                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{2516                     processed = fullText;}
+\DoxyCodeLine{2517 }
+\DoxyCodeLine{2518                 \textcolor{keywordtype}{bool} isEmpty = \textcolor{keywordtype}{string}.IsNullOrEmpty(fullText);}
+\DoxyCodeLine{2519 }
+\DoxyCodeLine{2520                 \textcolor{keywordflow}{if} (m\_Placeholder != \textcolor{keyword}{null})}
+\DoxyCodeLine{2521                     m\_Placeholder.enabled = isEmpty; \textcolor{comment}{// \&\& !isFocused;}}
+\DoxyCodeLine{2522 }
+\DoxyCodeLine{2523                 \textcolor{comment}{// If not currently editing the text, set the visible range to the whole text.}}
+\DoxyCodeLine{2524                 \textcolor{comment}{// The UpdateLabel method will then truncate it to the part that fits inside the Text area.}}
+\DoxyCodeLine{2525                 \textcolor{comment}{// We can't do this when text is being edited since it would discard the current scroll,}}
+\DoxyCodeLine{2526                 \textcolor{comment}{// which is defined by means of the m\_DrawStart and m\_DrawEnd indices.}}
+\DoxyCodeLine{2527 }
+\DoxyCodeLine{2528                 \textcolor{keywordflow}{if} (!isEmpty)}
+\DoxyCodeLine{2529                 \{}
+\DoxyCodeLine{2530                 \textcolor{comment}{//    // Determine what will actually fit into the given line}}
+\DoxyCodeLine{2531                 \textcolor{comment}{//    Vector2 extents = m\_TextComponent.rectTransform.rect.size;}}
+\DoxyCodeLine{2532 }
+\DoxyCodeLine{2533                 \textcolor{comment}{//    var settings = m\_TextComponent.GetGenerationSettings(extents);}}
+\DoxyCodeLine{2534                 \textcolor{comment}{//    settings.generateOutOfBounds = true;}}
+\DoxyCodeLine{2535 }
+\DoxyCodeLine{2536                 \textcolor{comment}{//    cachedInputTextGenerator.Populate(processed, settings);}}
+\DoxyCodeLine{2537 }
+\DoxyCodeLine{2538                 \textcolor{comment}{//    SetDrawRangeToContainCaretPosition(stringSelectPositionInternal -\/ 1);}}
+\DoxyCodeLine{2539 }
+\DoxyCodeLine{2540                 \textcolor{comment}{//    processed = processed.Substring(m\_DrawStart, Mathf.Min(m\_DrawEnd, processed.Length) -\/ m\_DrawStart);}}
+\DoxyCodeLine{2541 }
+\DoxyCodeLine{2542                     SetCaretVisible();}
+\DoxyCodeLine{2543                 \}}
+\DoxyCodeLine{2544 }
+\DoxyCodeLine{2545                 m\_TextComponent.\mbox{\hyperlink{classTMPro_1_1TMP__Text_a98a04e5078612c0586472bd510f91f5c}{text}} = processed + \textcolor{stringliteral}{"\(\backslash\)u200B"}; \textcolor{comment}{// Extra space is added for Caret tracking.}}
+\DoxyCodeLine{2546                 MarkGeometryAsDirty();}
+\DoxyCodeLine{2547 }
+\DoxyCodeLine{2548                 \textcolor{comment}{// Scrollbar should be updated.}}
+\DoxyCodeLine{2549                 m\_IsScrollbarUpdateRequired = \textcolor{keyword}{true};}
+\DoxyCodeLine{2550 }
+\DoxyCodeLine{2551                 \textcolor{comment}{//m\_PreventFontCallback = false;}}
+\DoxyCodeLine{2552             \}}
+\DoxyCodeLine{2553         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_afd6552ded1ac4de1c4efd868bdc66a33}\label{classTMPro_1_1TMP__InputField_afd6552ded1ac4de1c4efd868bdc66a33}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!Validate@{Validate}}
+\index{Validate@{Validate}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily char T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+Validate (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{int}]{pos,  }\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Validate the specified input. 
+
+
+
+Definition at line 3064 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3065         \{}
+\DoxyCodeLine{3066             \textcolor{comment}{// Validation is disabled}}
+\DoxyCodeLine{3067             \textcolor{keywordflow}{if} (characterValidation == CharacterValidation.None || !enabled)}
+\DoxyCodeLine{3068                 \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3069 }
+\DoxyCodeLine{3070             \textcolor{keywordflow}{if} (characterValidation == CharacterValidation.Integer || characterValidation == CharacterValidation.Decimal)}
+\DoxyCodeLine{3071             \{}
+\DoxyCodeLine{3072                 \textcolor{comment}{// Integer and decimal}}
+\DoxyCodeLine{3073                 \textcolor{keywordtype}{bool} cursorBeforeDash = (pos == 0 \&\& \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Length > 0 \&\& \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}[0] == \textcolor{charliteral}{'-\/'});}
+\DoxyCodeLine{3074                 \textcolor{keywordtype}{bool} selectionAtStart = stringPositionInternal == 0 || stringSelectPositionInternal == 0;}
+\DoxyCodeLine{3075                 \textcolor{keywordflow}{if} (!cursorBeforeDash)}
+\DoxyCodeLine{3076                 \{}
+\DoxyCodeLine{3077                     \textcolor{keywordflow}{if} (ch >= \textcolor{charliteral}{'0'} \&\& ch <= \textcolor{charliteral}{'9'}) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3078                     \textcolor{keywordflow}{if} (ch == \textcolor{charliteral}{'-\/'} \&\& (pos == 0 || selectionAtStart)) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3079                     \textcolor{keywordflow}{if} (ch == \textcolor{charliteral}{'.'} \&\& characterValidation == CharacterValidation.Decimal \&\& !\mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Contains(\textcolor{stringliteral}{"."})) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3080                 \}}
+\DoxyCodeLine{3081             \}}
+\DoxyCodeLine{3082             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (characterValidation == CharacterValidation.Digit)}
+\DoxyCodeLine{3083             \{}
+\DoxyCodeLine{3084                 \textcolor{keywordflow}{if} (ch >= \textcolor{charliteral}{'0'} \&\& ch <= \textcolor{charliteral}{'9'}) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3085             \}}
+\DoxyCodeLine{3086             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (characterValidation == CharacterValidation.Alphanumeric)}
+\DoxyCodeLine{3087             \{}
+\DoxyCodeLine{3088                 \textcolor{comment}{// All alphanumeric characters}}
+\DoxyCodeLine{3089                 \textcolor{keywordflow}{if} (ch >= \textcolor{charliteral}{'A'} \&\& ch <= \textcolor{charliteral}{'Z'}) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3090                 \textcolor{keywordflow}{if} (ch >= \textcolor{charliteral}{'a'} \&\& ch <= \textcolor{charliteral}{'z'}) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3091                 \textcolor{keywordflow}{if} (ch >= \textcolor{charliteral}{'0'} \&\& ch <= \textcolor{charliteral}{'9'}) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3092             \}}
+\DoxyCodeLine{3093             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (characterValidation == CharacterValidation.Name)}
+\DoxyCodeLine{3094             \{}
+\DoxyCodeLine{3095                 \textcolor{keywordtype}{char} lastChar = (\mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Length > 0) ? \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}[Mathf.Clamp(pos, 0, \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Length -\/ 1)] : \textcolor{charliteral}{' '};}
+\DoxyCodeLine{3096                 \textcolor{keywordtype}{char} nextChar = (\mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Length > 0) ? \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}[Mathf.Clamp(pos + 1, 0, \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Length -\/ 1)] : \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{3097 }
+\DoxyCodeLine{3098                 \textcolor{keywordflow}{if} (\textcolor{keywordtype}{char}.IsLetter(ch))}
+\DoxyCodeLine{3099                 \{}
+\DoxyCodeLine{3100                     \textcolor{comment}{// Space followed by a letter -\/-\/ make sure it's capitalized}}
+\DoxyCodeLine{3101                     \textcolor{keywordflow}{if} (\textcolor{keywordtype}{char}.IsLower(ch) \&\& lastChar == \textcolor{charliteral}{' '})}
+\DoxyCodeLine{3102                         \textcolor{keywordflow}{return} \textcolor{keywordtype}{char}.ToUpper(ch);}
+\DoxyCodeLine{3103 }
+\DoxyCodeLine{3104                     \textcolor{comment}{// Uppercase letters are only allowed after spaces (and apostrophes)}}
+\DoxyCodeLine{3105                     \textcolor{keywordflow}{if} (\textcolor{keywordtype}{char}.IsUpper(ch) \&\& lastChar != \textcolor{charliteral}{' '} \&\& lastChar != \textcolor{charliteral}{'\(\backslash\)''})}
+\DoxyCodeLine{3106                         \textcolor{keywordflow}{return} \textcolor{keywordtype}{char}.ToLower(ch);}
+\DoxyCodeLine{3107 }
+\DoxyCodeLine{3108                     \textcolor{comment}{// If character was already in correct case, return it as-\/is.}}
+\DoxyCodeLine{3109                     \textcolor{comment}{// Also, letters that are neither upper nor lower case are always allowed.}}
+\DoxyCodeLine{3110                     \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3111                 \}}
+\DoxyCodeLine{3112                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ch == \textcolor{charliteral}{'\(\backslash\)''})}
+\DoxyCodeLine{3113                 \{}
+\DoxyCodeLine{3114                     \textcolor{comment}{// Don't allow more than one apostrophe}}
+\DoxyCodeLine{3115                     \textcolor{keywordflow}{if} (lastChar != \textcolor{charliteral}{' '} \&\& lastChar != \textcolor{charliteral}{'\(\backslash\)''} \&\& nextChar != \textcolor{charliteral}{'\(\backslash\)''} \&\& !\mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Contains(\textcolor{stringliteral}{"'"}))}
+\DoxyCodeLine{3116                         \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3117                 \}}
+\DoxyCodeLine{3118                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ch == \textcolor{charliteral}{' '})}
+\DoxyCodeLine{3119                 \{}
+\DoxyCodeLine{3120                     \textcolor{comment}{// Don't allow more than one space in a row}}
+\DoxyCodeLine{3121                     \textcolor{keywordflow}{if} (lastChar != \textcolor{charliteral}{' '} \&\& lastChar != \textcolor{charliteral}{'\(\backslash\)''} \&\& nextChar != \textcolor{charliteral}{' '} \&\& nextChar != \textcolor{charliteral}{'\(\backslash\)''})}
+\DoxyCodeLine{3122                         \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3123                 \}}
+\DoxyCodeLine{3124             \}}
+\DoxyCodeLine{3125             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (characterValidation == CharacterValidation.EmailAddress)}
+\DoxyCodeLine{3126             \{}
+\DoxyCodeLine{3127                 \textcolor{comment}{// From StackOverflow about allowed characters in email addresses:}}
+\DoxyCodeLine{3128                 \textcolor{comment}{// Uppercase and lowercase English letters (a-\/z, A-\/Z)}}
+\DoxyCodeLine{3129                 \textcolor{comment}{// Digits 0 to 9}}
+\DoxyCodeLine{3130                 \textcolor{comment}{// Characters ! \# \$ \% \& ' * + -\/ / = ? \string^ \_ ` \{ | \} ~}}
+\DoxyCodeLine{3131                 \textcolor{comment}{// Character . (dot, period, full stop) provided that it is not the first or last character,}}
+\DoxyCodeLine{3132                 \textcolor{comment}{// and provided also that it does not appear two or more times consecutively.}}
+\DoxyCodeLine{3133 }
+\DoxyCodeLine{3134                 \textcolor{keywordflow}{if} (ch >= \textcolor{charliteral}{'A'} \&\& ch <= \textcolor{charliteral}{'Z'}) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3135                 \textcolor{keywordflow}{if} (ch >= \textcolor{charliteral}{'a'} \&\& ch <= \textcolor{charliteral}{'z'}) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3136                 \textcolor{keywordflow}{if} (ch >= \textcolor{charliteral}{'0'} \&\& ch <= \textcolor{charliteral}{'9'}) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3137                 \textcolor{keywordflow}{if} (ch == \textcolor{charliteral}{'@'} \&\& \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.IndexOf(\textcolor{charliteral}{'@'}) == -\/1) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3138                 \textcolor{keywordflow}{if} (kEmailSpecialCharacters.IndexOf(ch) != -\/1) \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3139                 \textcolor{keywordflow}{if} (ch == \textcolor{charliteral}{'.'})}
+\DoxyCodeLine{3140                 \{}
+\DoxyCodeLine{3141                     \textcolor{keywordtype}{char} lastChar = (\mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Length > 0) ? \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}[Mathf.Clamp(pos, 0, \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Length -\/ 1)] : \textcolor{charliteral}{' '};}
+\DoxyCodeLine{3142                     \textcolor{keywordtype}{char} nextChar = (\mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Length > 0) ? \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}[Mathf.Clamp(pos + 1, 0, \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}.Length -\/ 1)] : \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{3143                     \textcolor{keywordflow}{if} (lastChar != \textcolor{charliteral}{'.'} \&\& nextChar != \textcolor{charliteral}{'.'})}
+\DoxyCodeLine{3144                         \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3145                 \}}
+\DoxyCodeLine{3146             \}}
+\DoxyCodeLine{3147             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (characterValidation == CharacterValidation.Regex)}
+\DoxyCodeLine{3148             \{}
+\DoxyCodeLine{3149                 \textcolor{comment}{// Regex expression}}
+\DoxyCodeLine{3150                 \textcolor{keywordflow}{if} (Regex.IsMatch(ch.ToString(), m\_RegexValue))}
+\DoxyCodeLine{3151                 \{}
+\DoxyCodeLine{3152                     \textcolor{keywordflow}{return} ch;}
+\DoxyCodeLine{3153                 \}}
+\DoxyCodeLine{3154             \}}
+\DoxyCodeLine{3155             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (characterValidation == CharacterValidation.CustomValidator)}
+\DoxyCodeLine{3156             \{}
+\DoxyCodeLine{3157                 \textcolor{keywordflow}{if} (m\_InputValidator != \textcolor{keyword}{null})}
+\DoxyCodeLine{3158                 \{}
+\DoxyCodeLine{3159                     \textcolor{keywordtype}{char} c = m\_InputValidator.Validate(ref \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}}, ref pos, ch);}
+\DoxyCodeLine{3160                     \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}} = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}};}
+\DoxyCodeLine{3161                     stringSelectPositionInternal = stringPositionInternal = pos;}
+\DoxyCodeLine{3162                     \textcolor{keywordflow}{return} c;}
+\DoxyCodeLine{3163                 \}}
+\DoxyCodeLine{3164             \}}
+\DoxyCodeLine{3165             \textcolor{keywordflow}{return} (\textcolor{keywordtype}{char})0;}
+\DoxyCodeLine{3166         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a11ee0e78a149f3a7834002859bfbbd5b}\label{classTMPro_1_1TMP__InputField_a11ee0e78a149f3a7834002859bfbbd5b}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!m\_ScrollSensitivity@{m\_ScrollSensitivity}}
+\index{m\_ScrollSensitivity@{m\_ScrollSensitivity}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{m\_ScrollSensitivity}{m\_ScrollSensitivity}}
+{\footnotesize\ttfamily float T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+m\+\_\+\+Scroll\+Sensitivity = 1.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+
+
+
+
+Definition at line 125 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}\label{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!m\_Text@{m\_Text}}
+\index{m\_Text@{m\_Text}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{m\_Text}{m\_Text}}
+{\footnotesize\ttfamily string T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+m\+\_\+\+Text = string.\+Empty\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Input field\textquotesingle{}s value. 
+
+
+
+Definition at line 247 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a9fd2bebbbaf2c101dc1b449cb8ab0d20}\label{classTMPro_1_1TMP__InputField_a9fd2bebbbaf2c101dc1b449cb8ab0d20}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!m\_TextViewport@{m\_TextViewport}}
+\index{m\_TextViewport@{m\_TextViewport}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{m\_TextViewport}{m\_TextViewport}}
+{\footnotesize\ttfamily Rect\+Transform T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+m\+\_\+\+Text\+Viewport\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Text Text used to display the input\textquotesingle{}s value. 
+
+
+
+Definition at line 97 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a3d3a39b5c399ed120a847fed2d842d81}\label{classTMPro_1_1TMP__InputField_a3d3a39b5c399ed120a847fed2d842d81}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!caretPosition@{caretPosition}}
+\index{caretPosition@{caretPosition}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{caretPosition}{caretPosition}}
+{\footnotesize\ttfamily int T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+caret\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Get\+: Returns the focus position as thats the position that moves around even during selection. Set\+: Set both the anchor and focus position such that a selection doesn\textquotesingle{}t happen 
+
+
+
+Definition at line 629 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{629         \{}
+\DoxyCodeLine{630             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} caretSelectPositionInternal; \}}
+\DoxyCodeLine{631             \textcolor{keyword}{set} \{ \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ad2940845ebee386ae2b382a25761ce8c}{selectionAnchorPosition}} = value; \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a93771e08f4ee7c293af4ebc1e5bc0d9a}{selectionFocusPosition}} = value; isStringPositionDirty = \textcolor{keyword}{true}; \}}
+\DoxyCodeLine{632         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a48b9911b7de2a895d5411f4526a1acc1}\label{classTMPro_1_1TMP__InputField_a48b9911b7de2a895d5411f4526a1acc1}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!caretPositionInternal@{caretPositionInternal}}
+\index{caretPositionInternal@{caretPositionInternal}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{caretPositionInternal}{caretPositionInternal}}
+{\footnotesize\ttfamily int T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+caret\+Position\+Internal\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+Current position of the cursor. Getters are public Setters are protected 
+
+
+
+Definition at line 613 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{613 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_CaretPosition + Input.compositionString.Length; \} \textcolor{keyword}{set} \{ m\_CaretPosition = value; ClampCaretPos(ref m\_CaretPosition); \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ac13a97bd7e0eb0e19b5a50efc11adb67}\label{classTMPro_1_1TMP__InputField_ac13a97bd7e0eb0e19b5a50efc11adb67}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!fontAsset@{fontAsset}}
+\index{fontAsset@{fontAsset}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{fontAsset}{fontAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTMPro_1_1TMP__FontAsset}{T\+M\+P\+\_\+\+Font\+Asset}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+font\+Asset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Sets the Font Asset on both Placeholder and Input child objects. 
+
+
+
+Definition at line 498 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{498         \{}
+\DoxyCodeLine{499             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_GlobalFontAsset; \}}
+\DoxyCodeLine{500             \textcolor{keyword}{set}}
+\DoxyCodeLine{501             \{}
+\DoxyCodeLine{502                 \textcolor{keywordflow}{if} (SetPropertyUtility.SetClass(ref m\_GlobalFontAsset, value))}
+\DoxyCodeLine{503                 \{}
+\DoxyCodeLine{504                     \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a2ed20e5b12507b1ff2e108dd99d4091f}{SetGlobalFontAsset}}(m\_GlobalFontAsset);}
+\DoxyCodeLine{505                     \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac4c595e5f686b371e27745b0a2c99b}{UpdateLabel}}();}
+\DoxyCodeLine{506                 \}}
+\DoxyCodeLine{507             \}}
+\DoxyCodeLine{508         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a0133238d9e97ac0eafb921dede2f9ff7}\label{classTMPro_1_1TMP__InputField_a0133238d9e97ac0eafb921dede2f9ff7}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!inputValidator@{inputValidator}}
+\index{inputValidator@{inputValidator}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{inputValidator}{inputValidator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTMPro_1_1TMP__InputValidator}{T\+M\+P\+\_\+\+Input\+Validator}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+input\+Validator\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Sets the Input Validation to use a Custom Input Validation script. 
+
+
+
+Definition at line 574 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{574         \{}
+\DoxyCodeLine{575             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_InputValidator; \}}
+\DoxyCodeLine{576             \textcolor{keyword}{set} \{  \textcolor{keywordflow}{if} (SetPropertyUtility.SetClass(ref m\_InputValidator, value)) SetToCustom(CharacterValidation.CustomValidator); \}}
+\DoxyCodeLine{577         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ab710f2c64b44e6c2c4fe4a10542e67fc}\label{classTMPro_1_1TMP__InputField_ab710f2c64b44e6c2c4fe4a10542e67fc}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!isRichTextEditingAllowed@{isRichTextEditingAllowed}}
+\index{isRichTextEditingAllowed@{isRichTextEditingAllowed}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{isRichTextEditingAllowed}{isRichTextEditingAllowed}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+is\+Rich\+Text\+Editing\+Allowed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is Rich Text editing allowed? 
+
+
+
+Definition at line 550 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{550         \{}
+\DoxyCodeLine{551             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_isRichTextEditingAllowed; \}}
+\DoxyCodeLine{552             \textcolor{keyword}{set} \{ m\_isRichTextEditingAllowed = value; \}}
+\DoxyCodeLine{553         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_abf3bccd8c0c63eff2f8de40194d6aeb7}\label{classTMPro_1_1TMP__InputField_abf3bccd8c0c63eff2f8de40194d6aeb7}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!onFocusSelectAll@{onFocusSelectAll}}
+\index{onFocusSelectAll@{onFocusSelectAll}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{onFocusSelectAll}{onFocusSelectAll}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+on\+Focus\+Select\+All\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Determines if the whole text will be selected when focused. 
+
+
+
+Definition at line 516 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{516         \{}
+\DoxyCodeLine{517             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_OnFocusSelectAll; \}}
+\DoxyCodeLine{518             \textcolor{keyword}{set} \{ m\_OnFocusSelectAll = value; \}}
+\DoxyCodeLine{519         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a1ac8a2780c0a65e2ed41fd216d0c4454}\label{classTMPro_1_1TMP__InputField_a1ac8a2780c0a65e2ed41fd216d0c4454}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!pointSize@{pointSize}}
+\index{pointSize@{pointSize}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{pointSize}{pointSize}}
+{\footnotesize\ttfamily float T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+point\+Size\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Set the point size on both Placeholder and Input text object. 
+
+
+
+Definition at line 483 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{483         \{}
+\DoxyCodeLine{484             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_GlobalPointSize; \}}
+\DoxyCodeLine{485             \textcolor{keyword}{set} \{}
+\DoxyCodeLine{486                     \textcolor{keywordflow}{if} (SetPropertyUtility.SetStruct(ref m\_GlobalPointSize, Math.Max(0, value)))}
+\DoxyCodeLine{487                     \{}
+\DoxyCodeLine{488                         \mbox{\hyperlink{classTMPro_1_1TMP__InputField_aba2ab9700cbd18d64736530a34d91068}{SetGlobalPointSize}}(m\_GlobalPointSize);}
+\DoxyCodeLine{489                         \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a1ac4c595e5f686b371e27745b0a2c99b}{UpdateLabel}}();}
+\DoxyCodeLine{490                     \}}
+\DoxyCodeLine{491                 \}}
+\DoxyCodeLine{492         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a614c7ba0b401a31c87380e49fee3d443}\label{classTMPro_1_1TMP__InputField_a614c7ba0b401a31c87380e49fee3d443}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!resetOnDeActivation@{resetOnDeActivation}}
+\index{resetOnDeActivation@{resetOnDeActivation}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{resetOnDeActivation}{resetOnDeActivation}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+reset\+On\+De\+Activation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Determines if the text and caret position as well as selection will be reset when the input field is deactivated. 
+
+
+
+Definition at line 528 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{528         \{}
+\DoxyCodeLine{529             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_ResetOnDeActivation; \}}
+\DoxyCodeLine{530             \textcolor{keyword}{set} \{ m\_ResetOnDeActivation = value; \}}
+\DoxyCodeLine{531         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a9a402064db2a20ffce7abb59d2619688}\label{classTMPro_1_1TMP__InputField_a9a402064db2a20ffce7abb59d2619688}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!restoreOriginalTextOnEscape@{restoreOriginalTextOnEscape}}
+\index{restoreOriginalTextOnEscape@{restoreOriginalTextOnEscape}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{restoreOriginalTextOnEscape}{restoreOriginalTextOnEscape}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+restore\+Original\+Text\+On\+Escape\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls whether the original text is restored when pressing \char`\"{}\+E\+S\+C\char`\"{}. 
+
+
+
+Definition at line 539 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{539         \{}
+\DoxyCodeLine{540             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} m\_RestoreOriginalTextOnEscape; \}}
+\DoxyCodeLine{541             \textcolor{keyword}{set} \{ m\_RestoreOriginalTextOnEscape = value; \}}
+\DoxyCodeLine{542         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ad2940845ebee386ae2b382a25761ce8c}\label{classTMPro_1_1TMP__InputField_ad2940845ebee386ae2b382a25761ce8c}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!selectionAnchorPosition@{selectionAnchorPosition}}
+\index{selectionAnchorPosition@{selectionAnchorPosition}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{selectionAnchorPosition}{selectionAnchorPosition}}
+{\footnotesize\ttfamily int T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+selection\+Anchor\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Get\+: Returns the fixed position of selection Set\+: If Input.\+composition\+String is 0 set the fixed position 
+
+
+
+Definition at line 639 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{639         \{}
+\DoxyCodeLine{640             \textcolor{keyword}{get}}
+\DoxyCodeLine{641             \{}
+\DoxyCodeLine{642                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a48b9911b7de2a895d5411f4526a1acc1}{caretPositionInternal}};}
+\DoxyCodeLine{643             \}}
+\DoxyCodeLine{644 }
+\DoxyCodeLine{645             \textcolor{keyword}{set}}
+\DoxyCodeLine{646             \{}
+\DoxyCodeLine{647                 \textcolor{keywordflow}{if} (Input.compositionString.Length != 0)}
+\DoxyCodeLine{648                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{649 }
+\DoxyCodeLine{650                 \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a48b9911b7de2a895d5411f4526a1acc1}{caretPositionInternal}} = value;}
+\DoxyCodeLine{651                 isStringPositionDirty = \textcolor{keyword}{true};}
+\DoxyCodeLine{652             \}}
+\DoxyCodeLine{653         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a93771e08f4ee7c293af4ebc1e5bc0d9a}\label{classTMPro_1_1TMP__InputField_a93771e08f4ee7c293af4ebc1e5bc0d9a}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!selectionFocusPosition@{selectionFocusPosition}}
+\index{selectionFocusPosition@{selectionFocusPosition}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{selectionFocusPosition}{selectionFocusPosition}}
+{\footnotesize\ttfamily int T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+selection\+Focus\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Get\+: Returns the variable position of selection Set\+: If Input.\+composition\+String is 0 set the variable position 
+
+
+
+Definition at line 660 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{660         \{}
+\DoxyCodeLine{661             \textcolor{keyword}{get}}
+\DoxyCodeLine{662             \{}
+\DoxyCodeLine{663                 \textcolor{keywordflow}{return} caretSelectPositionInternal;}
+\DoxyCodeLine{664             \}}
+\DoxyCodeLine{665             \textcolor{keyword}{set}}
+\DoxyCodeLine{666             \{}
+\DoxyCodeLine{667                 \textcolor{keywordflow}{if} (Input.compositionString.Length != 0)}
+\DoxyCodeLine{668                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{669 }
+\DoxyCodeLine{670                 caretSelectPositionInternal = value;}
+\DoxyCodeLine{671                 isStringPositionDirty = \textcolor{keyword}{true};}
+\DoxyCodeLine{672             \}}
+\DoxyCodeLine{673         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ac36ae4cd4a58fa36661b49928217875e}\label{classTMPro_1_1TMP__InputField_ac36ae4cd4a58fa36661b49928217875e}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!selectionStringAnchorPosition@{selectionStringAnchorPosition}}
+\index{selectionStringAnchorPosition@{selectionStringAnchorPosition}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{selectionStringAnchorPosition}{selectionStringAnchorPosition}}
+{\footnotesize\ttfamily int T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+selection\+String\+Anchor\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The fixed position of the selection in the raw string which may contains rich text. 
+
+
+
+Definition at line 690 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{690         \{}
+\DoxyCodeLine{691             \textcolor{keyword}{get}}
+\DoxyCodeLine{692             \{}
+\DoxyCodeLine{693                 \textcolor{keywordflow}{return} stringPositionInternal;}
+\DoxyCodeLine{694             \}}
+\DoxyCodeLine{695 }
+\DoxyCodeLine{696             \textcolor{keyword}{set}}
+\DoxyCodeLine{697             \{}
+\DoxyCodeLine{698                 \textcolor{keywordflow}{if} (Input.compositionString.Length != 0)}
+\DoxyCodeLine{699                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{700 }
+\DoxyCodeLine{701                 stringPositionInternal = value;}
+\DoxyCodeLine{702                 \textcolor{comment}{//isStringPositionDirty = true;}}
+\DoxyCodeLine{703             \}}
+\DoxyCodeLine{704         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_abfe0c449ec61505b163eb5949a09f9ff}\label{classTMPro_1_1TMP__InputField_abfe0c449ec61505b163eb5949a09f9ff}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!selectionStringFocusPosition@{selectionStringFocusPosition}}
+\index{selectionStringFocusPosition@{selectionStringFocusPosition}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{selectionStringFocusPosition}{selectionStringFocusPosition}}
+{\footnotesize\ttfamily int T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+selection\+String\+Focus\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The variable position of the selection in the raw string which may contains rich text. 
+
+
+
+Definition at line 711 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{711         \{}
+\DoxyCodeLine{712             \textcolor{keyword}{get}}
+\DoxyCodeLine{713             \{}
+\DoxyCodeLine{714                 \textcolor{keywordflow}{return} stringSelectPositionInternal;}
+\DoxyCodeLine{715             \}}
+\DoxyCodeLine{716             \textcolor{keyword}{set}}
+\DoxyCodeLine{717             \{}
+\DoxyCodeLine{718                 \textcolor{keywordflow}{if} (Input.compositionString.Length != 0)}
+\DoxyCodeLine{719                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{720 }
+\DoxyCodeLine{721                 stringSelectPositionInternal = value;}
+\DoxyCodeLine{722                 \textcolor{comment}{//isStringPositionDirty = true;}}
+\DoxyCodeLine{723             \}}
+\DoxyCodeLine{724         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_aef653449d7af3f273835cd4bcbcc6b16}\label{classTMPro_1_1TMP__InputField_aef653449d7af3f273835cd4bcbcc6b16}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!shouldHideMobileInput@{shouldHideMobileInput}}
+\index{shouldHideMobileInput@{shouldHideMobileInput}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{shouldHideMobileInput}{shouldHideMobileInput}}
+{\footnotesize\ttfamily bool T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+should\+Hide\+Mobile\+Input\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Should the mobile keyboard input be hidden. 
+
+
+
+Definition at line 321 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{321         \{}
+\DoxyCodeLine{322             \textcolor{keyword}{set}}
+\DoxyCodeLine{323             \{}
+\DoxyCodeLine{324                 SetPropertyUtility.SetStruct(ref m\_HideMobileInput, value);}
+\DoxyCodeLine{325             \}}
+\DoxyCodeLine{326             \textcolor{keyword}{get}}
+\DoxyCodeLine{327             \{}
+\DoxyCodeLine{328                 \textcolor{keywordflow}{switch} (Application.platform)}
+\DoxyCodeLine{329                 \{}
+\DoxyCodeLine{330                     \textcolor{keywordflow}{case} RuntimePlatform.Android:}
+\DoxyCodeLine{331                     \textcolor{keywordflow}{case} RuntimePlatform.IPhonePlayer:}
+\DoxyCodeLine{332                     \textcolor{keywordflow}{case} RuntimePlatform.tvOS:}
+\DoxyCodeLine{333                         \textcolor{keywordflow}{return} m\_HideMobileInput;}
+\DoxyCodeLine{334                 \}}
+\DoxyCodeLine{335 }
+\DoxyCodeLine{336                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{337             \}}
+\DoxyCodeLine{338         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_a50c68e4085013bd06441947658e90317}\label{classTMPro_1_1TMP__InputField_a50c68e4085013bd06441947658e90317}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!stringPosition@{stringPosition}}
+\index{stringPosition@{stringPosition}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{stringPosition}{stringPosition}}
+{\footnotesize\ttfamily int T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+string\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+
+
+
+
+Definition at line 680 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{680         \{}
+\DoxyCodeLine{681             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} stringSelectPositionInternal; \}}
+\DoxyCodeLine{682             \textcolor{keyword}{set} \{ \mbox{\hyperlink{classTMPro_1_1TMP__InputField_ac36ae4cd4a58fa36661b49928217875e}{selectionStringAnchorPosition}} = value; \mbox{\hyperlink{classTMPro_1_1TMP__InputField_abfe0c449ec61505b163eb5949a09f9ff}{selectionStringFocusPosition}} = value; \}}
+\DoxyCodeLine{683         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}\label{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}} 
+\index{TMPro.TMP\_InputField@{TMPro.TMP\_InputField}!text@{text}}
+\index{text@{text}!TMPro.TMP\_InputField@{TMPro.TMP\_InputField}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily string T\+M\+Pro.\+T\+M\+P\+\_\+\+Input\+Field.\+text\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Input field\textquotesingle{}s current text value. 
+
+
+
+Definition at line 346 of file T\+M\+P\+\_\+\+Input\+Field.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{346         \{}
+\DoxyCodeLine{347             \textcolor{keyword}{get}}
+\DoxyCodeLine{348             \{}
+\DoxyCodeLine{349                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}};}
+\DoxyCodeLine{350             \}}
+\DoxyCodeLine{351             \textcolor{keyword}{set}}
+\DoxyCodeLine{352             \{}
+\DoxyCodeLine{353                 \textcolor{keywordflow}{if} (this.\mbox{\hyperlink{classTMPro_1_1TMP__InputField_ab89ad02ff00c4c076c5bd3303528e5de}{text}} == value)}
+\DoxyCodeLine{354                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{355 }
+\DoxyCodeLine{356                 \textcolor{keywordflow}{if} (value == \textcolor{keyword}{null}) value = \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{357 }
+\DoxyCodeLine{358                 \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}} = value;}
+\DoxyCodeLine{359 }
+\DoxyCodeLine{360                 \textcolor{comment}{//if (m\_LineType == LineType.SingleLine)}}
+\DoxyCodeLine{361                 \textcolor{comment}{//    m\_Text = m\_Text.Replace("\(\backslash\)n", "").Replace("\(\backslash\)t", "");}}
+\DoxyCodeLine{362 }
+\DoxyCodeLine{364                 \textcolor{comment}{//if (onValidateInput != null || characterValidation != CharacterValidation.None)}}
+\DoxyCodeLine{365                 \textcolor{comment}{//\{}}
+\DoxyCodeLine{366                 \textcolor{comment}{//    m\_Text = "";}}
+\DoxyCodeLine{367                 \textcolor{comment}{//    OnValidateInput validatorMethod = onValidateInput ?? Validate;}}
+\DoxyCodeLine{368                 \textcolor{comment}{//    m\_CaretPosition = m\_CaretSelectPosition = value.Length;}}
+\DoxyCodeLine{369                 \textcolor{comment}{//    int charactersToCheck = characterLimit > 0 ? Math.Min(characterLimit -\/ 1, value.Length) : value.Length;}}
+\DoxyCodeLine{370                 \textcolor{comment}{//    for (int i = 0; i < charactersToCheck; ++i)}}
+\DoxyCodeLine{371                 \textcolor{comment}{//    \{}}
+\DoxyCodeLine{372                 \textcolor{comment}{//        char c = validatorMethod(m\_Text, m\_Text.Length, value[i]);}}
+\DoxyCodeLine{373                 \textcolor{comment}{//        if (c != 0)}}
+\DoxyCodeLine{374                 \textcolor{comment}{//            m\_Text += c;}}
+\DoxyCodeLine{375                 \textcolor{comment}{//    \}}}
+\DoxyCodeLine{376                 \textcolor{comment}{//\}}}
+\DoxyCodeLine{377                 \textcolor{comment}{//else}}
+\DoxyCodeLine{378                 \textcolor{comment}{//\{}}
+\DoxyCodeLine{379                 \textcolor{comment}{//    m\_Text = characterLimit > 0 \&\& value.Length > characterLimit ? value.Substring(0, characterLimit) : value;}}
+\DoxyCodeLine{380                 \textcolor{comment}{//\}}}
+\DoxyCodeLine{381 }
+\DoxyCodeLine{382 \textcolor{preprocessor}{\#if UNITY\_EDITOR}}
+\DoxyCodeLine{383                 \textcolor{keywordflow}{if} (!Application.isPlaying)}
+\DoxyCodeLine{384                 \{}
+\DoxyCodeLine{385                     SendOnValueChangedAndUpdateLabel();}
+\DoxyCodeLine{386                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{387                 \}}
+\DoxyCodeLine{388 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{389 }
+\DoxyCodeLine{390                 \textcolor{keywordflow}{if} (m\_Keyboard != \textcolor{keyword}{null})}
+\DoxyCodeLine{391                     m\_Keyboard.text = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}};}
+\DoxyCodeLine{392 }
+\DoxyCodeLine{393                 \textcolor{keywordflow}{if} (m\_StringPosition > \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}}.Length)}
+\DoxyCodeLine{394                     m\_StringPosition = m\_StringSelectPosition = \mbox{\hyperlink{classTMPro_1_1TMP__InputField_a925d3f2771b9953684628c73b48b4d1e}{m\_Text}}.Length;}
+\DoxyCodeLine{395 }
+\DoxyCodeLine{396                 \textcolor{comment}{// Set RectTransform relative position to top of viewport.}}
+\DoxyCodeLine{397                 AdjustTextPositionRelativeToViewport(0);}
+\DoxyCodeLine{398 }
+\DoxyCodeLine{399                 m\_forceRectTransformAdjustment = \textcolor{keyword}{true};}
+\DoxyCodeLine{400 }
+\DoxyCodeLine{401                 SendOnValueChangedAndUpdateLabel();}
+\DoxyCodeLine{402             \}}
+\DoxyCodeLine{403         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Runtime/T\+M\+P\+\_\+\+Input\+Field.\+cs\end{DoxyCompactItemize}

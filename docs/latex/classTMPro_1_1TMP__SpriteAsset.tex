@@ -1,0 +1,376 @@
+\hypertarget{classTMPro_1_1TMP__SpriteAsset}{}\doxysection{T\+M\+Pro.\+T\+M\+P\+\_\+\+Sprite\+Asset Class Reference}
+\label{classTMPro_1_1TMP__SpriteAsset}\index{TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}}
+Inheritance diagram for T\+M\+Pro.\+T\+M\+P\+\_\+\+Sprite\+Asset\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classTMPro_1_1TMP__SpriteAsset}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_ac0d576c7ae191d74887684c5388ca32a}{Update\+Lookup\+Tables}} ()
+\begin{DoxyCompactList}\small\item\em Function to update the sprite name and unicode lookup tables. This function should be called when a sprite\textquotesingle{}s name or unicode value changes or when a new sprite is added. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_a9913527431a09b1d82e42f8365b2533c}{Get\+Sprite\+Index\+From\+Hashcode}} (int \mbox{\hyperlink{classTMPro_1_1TMP__Asset_a63f177ff7028859d2b431789737d8ccc}{hash\+Code}})
+\begin{DoxyCompactList}\small\item\em Function which returns the sprite index using the hashcode of the name \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_ae038e36239dc860b452fca1abd8284ef}{Get\+Sprite\+Index\+From\+Unicode}} (int unicode)
+\begin{DoxyCompactList}\small\item\em Returns the index of the sprite for the given unicode value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_afa0139e3dcab964f9cfcf1fc634caad2}{Get\+Sprite\+Index\+From\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the index of the sprite for the given name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_afb7045fdaad0e5ee7585d9ccac6b279c}{Search\+For\+Sprite\+By\+Unicode}} (\mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} sprite\+Asset, int unicode, bool include\+Fallbacks, out int sprite\+Index)
+\begin{DoxyCompactList}\small\item\em Search through the given sprite asset and its fallbacks for the specified sprite matching the given unicode character. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_a0a140b6024a1c437a950681c7c9f4212}{Search\+For\+Sprite\+By\+Hash\+Code}} (\mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} sprite\+Asset, int \mbox{\hyperlink{classTMPro_1_1TMP__Asset_a63f177ff7028859d2b431789737d8ccc}{hash\+Code}}, bool include\+Fallbacks, out int sprite\+Index)
+\begin{DoxyCompactList}\small\item\em Search the given sprite asset and fallbacks for a sprite whose hash code value of its name matches the target hash code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__SpriteAsset_ad58008ac004e19c361192d6159f34367}\label{classTMPro_1_1TMP__SpriteAsset_ad58008ac004e19c361192d6159f34367}} 
+Texture {\bfseries sprite\+Sheet}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__SpriteAsset_a6770844be35fbf6d455eadbc9a528372}\label{classTMPro_1_1TMP__SpriteAsset_a6770844be35fbf6d455eadbc9a528372}} 
+List$<$ \mbox{\hyperlink{classTMPro_1_1TMP__Sprite}{T\+M\+P\+\_\+\+Sprite}} $>$ {\bfseries sprite\+Info\+List}
+\item 
+List$<$ \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} $>$ \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_a417cdcac52c66835dcdb3ef8fdf15b3c}{fallback\+Sprite\+Assets}}
+\begin{DoxyCompactList}\small\item\em Dictionary used to lookup the index of a given sprite based on a Unicode value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1TMP__SpriteAsset_a9fb75fde5a5226e9ee1f05a0aaf94e9d}\label{classTMPro_1_1TMP__SpriteAsset_a9fb75fde5a5226e9ee1f05a0aaf94e9d}} 
+static \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} {\bfseries m\+\_\+default\+Sprite\+Asset}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_a8a0537826f6a024c10fa80ea29f957f7}{default\+Sprite\+Asset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Static reference to the default font asset included with Text\+Mesh Pro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file T\+M\+P\+\_\+\+Sprite\+Asset.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SpriteAsset_a9913527431a09b1d82e42f8365b2533c}\label{classTMPro_1_1TMP__SpriteAsset_a9913527431a09b1d82e42f8365b2533c}} 
+\index{TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}!GetSpriteIndexFromHashcode@{GetSpriteIndexFromHashcode}}
+\index{GetSpriteIndexFromHashcode@{GetSpriteIndexFromHashcode}!TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}}
+\doxysubsubsection{\texorpdfstring{GetSpriteIndexFromHashcode()}{GetSpriteIndexFromHashcode()}}
+{\footnotesize\ttfamily int T\+M\+Pro.\+T\+M\+P\+\_\+\+Sprite\+Asset.\+Get\+Sprite\+Index\+From\+Hashcode (\begin{DoxyParamCaption}\item[{int}]{hash\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function which returns the sprite index using the hashcode of the name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hash\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 130 of file T\+M\+P\+\_\+\+Sprite\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131         \{}
+\DoxyCodeLine{132             \textcolor{keywordflow}{if} (m\_NameLookup == \textcolor{keyword}{null})}
+\DoxyCodeLine{133                 \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_ac0d576c7ae191d74887684c5388ca32a}{UpdateLookupTables}}();}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135             \textcolor{keywordtype}{int} index = 0;}
+\DoxyCodeLine{136             \textcolor{keywordflow}{if} (m\_NameLookup.TryGetValue(\mbox{\hyperlink{classTMPro_1_1TMP__Asset_a63f177ff7028859d2b431789737d8ccc}{hashCode}}, out index))}
+\DoxyCodeLine{137                 \textcolor{keywordflow}{return} index;}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139             \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{140         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SpriteAsset_afa0139e3dcab964f9cfcf1fc634caad2}\label{classTMPro_1_1TMP__SpriteAsset_afa0139e3dcab964f9cfcf1fc634caad2}} 
+\index{TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}!GetSpriteIndexFromName@{GetSpriteIndexFromName}}
+\index{GetSpriteIndexFromName@{GetSpriteIndexFromName}!TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}}
+\doxysubsubsection{\texorpdfstring{GetSpriteIndexFromName()}{GetSpriteIndexFromName()}}
+{\footnotesize\ttfamily int T\+M\+Pro.\+T\+M\+P\+\_\+\+Sprite\+Asset.\+Get\+Sprite\+Index\+From\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the index of the sprite for the given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 166 of file T\+M\+P\+\_\+\+Sprite\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{167         \{}
+\DoxyCodeLine{168             \textcolor{keywordflow}{if} (m\_NameLookup == \textcolor{keyword}{null})}
+\DoxyCodeLine{169                 \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_ac0d576c7ae191d74887684c5388ca32a}{UpdateLookupTables}}();}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171             \textcolor{keywordtype}{int} \mbox{\hyperlink{classTMPro_1_1TMP__Asset_a63f177ff7028859d2b431789737d8ccc}{hashCode}} = TMP\_TextUtilities.GetSimpleHashCode(name);}
+\DoxyCodeLine{172 }
+\DoxyCodeLine{173             \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_a9913527431a09b1d82e42f8365b2533c}{GetSpriteIndexFromHashcode}}(\mbox{\hyperlink{classTMPro_1_1TMP__Asset_a63f177ff7028859d2b431789737d8ccc}{hashCode}});}
+\DoxyCodeLine{174         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SpriteAsset_ae038e36239dc860b452fca1abd8284ef}\label{classTMPro_1_1TMP__SpriteAsset_ae038e36239dc860b452fca1abd8284ef}} 
+\index{TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}!GetSpriteIndexFromUnicode@{GetSpriteIndexFromUnicode}}
+\index{GetSpriteIndexFromUnicode@{GetSpriteIndexFromUnicode}!TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}}
+\doxysubsubsection{\texorpdfstring{GetSpriteIndexFromUnicode()}{GetSpriteIndexFromUnicode()}}
+{\footnotesize\ttfamily int T\+M\+Pro.\+T\+M\+P\+\_\+\+Sprite\+Asset.\+Get\+Sprite\+Index\+From\+Unicode (\begin{DoxyParamCaption}\item[{int}]{unicode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the index of the sprite for the given unicode value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unicode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 148 of file T\+M\+P\+\_\+\+Sprite\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149         \{}
+\DoxyCodeLine{150             \textcolor{keywordflow}{if} (m\_UnicodeLookup == \textcolor{keyword}{null})}
+\DoxyCodeLine{151                 \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset_ac0d576c7ae191d74887684c5388ca32a}{UpdateLookupTables}}();}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153             \textcolor{keywordtype}{int} index = 0;}
+\DoxyCodeLine{154             \textcolor{keywordflow}{if} (m\_UnicodeLookup.TryGetValue(unicode, out index))}
+\DoxyCodeLine{155                 \textcolor{keywordflow}{return} index;}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157             \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{158         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SpriteAsset_a0a140b6024a1c437a950681c7c9f4212}\label{classTMPro_1_1TMP__SpriteAsset_a0a140b6024a1c437a950681c7c9f4212}} 
+\index{TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}!SearchForSpriteByHashCode@{SearchForSpriteByHashCode}}
+\index{SearchForSpriteByHashCode@{SearchForSpriteByHashCode}!TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}}
+\doxysubsubsection{\texorpdfstring{SearchForSpriteByHashCode()}{SearchForSpriteByHashCode()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Sprite\+Asset.\+Search\+For\+Sprite\+By\+Hash\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}}}]{sprite\+Asset,  }\item[{int}]{hash\+Code,  }\item[{bool}]{include\+Fallbacks,  }\item[{out int}]{sprite\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Search the given sprite asset and fallbacks for a sprite whose hash code value of its name matches the target hash code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Asset} & The Sprite Asset to search for the given sprite whose name matches the hashcode value\\
+\hline
+{\em hash\+Code} & The hash code value matching the name of the sprite\\
+\hline
+{\em include\+Fallbacks} & Include fallback sprite assets in the search\\
+\hline
+{\em sprite\+Index} & The index of the sprite matching the provided hash code\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Sprite Asset that contains the sprite
+\end{DoxyReturn}
+
+
+Definition at line 287 of file T\+M\+P\+\_\+\+Sprite\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{288         \{}
+\DoxyCodeLine{289             \textcolor{comment}{// Make sure sprite asset is not null}}
+\DoxyCodeLine{290             \textcolor{keywordflow}{if} (spriteAsset == \textcolor{keyword}{null}) \{ spriteIndex = -\/1; \textcolor{keywordflow}{return} \textcolor{keyword}{null}; \}}
+\DoxyCodeLine{291 }
+\DoxyCodeLine{292             spriteIndex = spriteAsset.GetSpriteIndexFromHashcode(\mbox{\hyperlink{classTMPro_1_1TMP__Asset_a63f177ff7028859d2b431789737d8ccc}{hashCode}});}
+\DoxyCodeLine{293             \textcolor{keywordflow}{if} (spriteIndex != -\/1)}
+\DoxyCodeLine{294                 \textcolor{keywordflow}{return} spriteAsset;}
+\DoxyCodeLine{295 }
+\DoxyCodeLine{296             \textcolor{comment}{// Initialize list to track instance of Sprite Assets that have already been searched.}}
+\DoxyCodeLine{297             \textcolor{keywordflow}{if} (k\_searchedSpriteAssets == \textcolor{keyword}{null})}
+\DoxyCodeLine{298                 k\_searchedSpriteAssets = \textcolor{keyword}{new} List<int>();}
+\DoxyCodeLine{299 }
+\DoxyCodeLine{300             k\_searchedSpriteAssets.Clear();}
+\DoxyCodeLine{301 }
+\DoxyCodeLine{302             \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = spriteAsset.GetInstanceID();}
+\DoxyCodeLine{303             \textcolor{comment}{// Add to list of font assets already searched.}}
+\DoxyCodeLine{304             k\_searchedSpriteAssets.Add(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{305 }
+\DoxyCodeLine{306             \textcolor{keywordflow}{if} (includeFallbacks \&\& spriteAsset.fallbackSpriteAssets != \textcolor{keyword}{null} \&\& spriteAsset.fallbackSpriteAssets.Count > 0)}
+\DoxyCodeLine{307                 \textcolor{keywordflow}{return} SearchForSpriteByHashCodeInternal(spriteAsset.fallbackSpriteAssets, \mbox{\hyperlink{classTMPro_1_1TMP__Asset_a63f177ff7028859d2b431789737d8ccc}{hashCode}}, includeFallbacks, out spriteIndex);}
+\DoxyCodeLine{308 }
+\DoxyCodeLine{309             \textcolor{comment}{// Search default sprite asset potentially assigned in the TMP Settings.}}
+\DoxyCodeLine{310             \textcolor{keywordflow}{if} (includeFallbacks \&\& TMP\_Settings.defaultSpriteAsset != \textcolor{keyword}{null})}
+\DoxyCodeLine{311                 \textcolor{keywordflow}{return} SearchForSpriteByHashCodeInternal(TMP\_Settings.defaultSpriteAsset, \mbox{\hyperlink{classTMPro_1_1TMP__Asset_a63f177ff7028859d2b431789737d8ccc}{hashCode}}, includeFallbacks, out spriteIndex);}
+\DoxyCodeLine{312 }
+\DoxyCodeLine{313             spriteIndex = -\/1;}
+\DoxyCodeLine{314             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{315         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SpriteAsset_afb7045fdaad0e5ee7585d9ccac6b279c}\label{classTMPro_1_1TMP__SpriteAsset_afb7045fdaad0e5ee7585d9ccac6b279c}} 
+\index{TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}!SearchForSpriteByUnicode@{SearchForSpriteByUnicode}}
+\index{SearchForSpriteByUnicode@{SearchForSpriteByUnicode}!TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}}
+\doxysubsubsection{\texorpdfstring{SearchForSpriteByUnicode()}{SearchForSpriteByUnicode()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Sprite\+Asset.\+Search\+For\+Sprite\+By\+Unicode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}}}]{sprite\+Asset,  }\item[{int}]{unicode,  }\item[{bool}]{include\+Fallbacks,  }\item[{out int}]{sprite\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Search through the given sprite asset and its fallbacks for the specified sprite matching the given unicode character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+Asset} & The font asset to search for the given character.\\
+\hline
+{\em unicode} & The character to find.\\
+\hline
+{\em glyph} & out parameter containing the glyph for the specified character (if found).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 189 of file T\+M\+P\+\_\+\+Sprite\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{190         \{}
+\DoxyCodeLine{191             \textcolor{comment}{// Check to make sure sprite asset is not null}}
+\DoxyCodeLine{192             \textcolor{keywordflow}{if} (spriteAsset == \textcolor{keyword}{null}) \{ spriteIndex = -\/1; \textcolor{keywordflow}{return} \textcolor{keyword}{null}; \}}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194             \textcolor{comment}{// Get sprite index for the given unicode}}
+\DoxyCodeLine{195             spriteIndex = spriteAsset.GetSpriteIndexFromUnicode(unicode);}
+\DoxyCodeLine{196             \textcolor{keywordflow}{if} (spriteIndex != -\/1)}
+\DoxyCodeLine{197                 \textcolor{keywordflow}{return} spriteAsset;}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{199             \textcolor{comment}{// Initialize list to track instance of Sprite Assets that have already been searched.}}
+\DoxyCodeLine{200             \textcolor{keywordflow}{if} (k\_searchedSpriteAssets == \textcolor{keyword}{null})}
+\DoxyCodeLine{201                 k\_searchedSpriteAssets = \textcolor{keyword}{new} List<int>();}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{203             k\_searchedSpriteAssets.Clear();}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205             \textcolor{comment}{// Get instance ID of sprite asset and add to list.}}
+\DoxyCodeLine{206             \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = spriteAsset.GetInstanceID();}
+\DoxyCodeLine{207             k\_searchedSpriteAssets.Add(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{208 }
+\DoxyCodeLine{209             \textcolor{comment}{// Search potential fallback sprite assets if includeFallbacks is true.}}
+\DoxyCodeLine{210             \textcolor{keywordflow}{if} (includeFallbacks \&\& spriteAsset.fallbackSpriteAssets != \textcolor{keyword}{null} \&\& spriteAsset.fallbackSpriteAssets.Count > 0)}
+\DoxyCodeLine{211                 \textcolor{keywordflow}{return} SearchForSpriteByUnicodeInternal(spriteAsset.fallbackSpriteAssets, unicode, includeFallbacks, out spriteIndex);}
+\DoxyCodeLine{212 }
+\DoxyCodeLine{213             \textcolor{comment}{// Search default sprite asset potentially assigned in the TMP Settings.}}
+\DoxyCodeLine{214             \textcolor{keywordflow}{if} (includeFallbacks \&\& TMP\_Settings.defaultSpriteAsset != \textcolor{keyword}{null})}
+\DoxyCodeLine{215                 \textcolor{keywordflow}{return} SearchForSpriteByUnicodeInternal(TMP\_Settings.defaultSpriteAsset, unicode, includeFallbacks, out spriteIndex);}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217             spriteIndex = -\/1;}
+\DoxyCodeLine{218             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{219         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SpriteAsset_ac0d576c7ae191d74887684c5388ca32a}\label{classTMPro_1_1TMP__SpriteAsset_ac0d576c7ae191d74887684c5388ca32a}} 
+\index{TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}!UpdateLookupTables@{UpdateLookupTables}}
+\index{UpdateLookupTables@{UpdateLookupTables}!TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}}
+\doxysubsubsection{\texorpdfstring{UpdateLookupTables()}{UpdateLookupTables()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+T\+M\+P\+\_\+\+Sprite\+Asset.\+Update\+Lookup\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to update the sprite name and unicode lookup tables. This function should be called when a sprite\textquotesingle{}s name or unicode value changes or when a new sprite is added. 
+
+
+
+Definition at line 102 of file T\+M\+P\+\_\+\+Sprite\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103         \{}
+\DoxyCodeLine{104             \textcolor{keywordflow}{if} (m\_NameLookup == \textcolor{keyword}{null}) m\_NameLookup = \textcolor{keyword}{new} Dictionary<int, int>();}
+\DoxyCodeLine{105             m\_NameLookup.Clear();}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107             \textcolor{keywordflow}{if} (m\_UnicodeLookup == \textcolor{keyword}{null}) m\_UnicodeLookup = \textcolor{keyword}{new} Dictionary<int, int>();}
+\DoxyCodeLine{108             m\_UnicodeLookup.Clear();}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < spriteInfoList.Count; i++)}
+\DoxyCodeLine{111             \{}
+\DoxyCodeLine{112                 \textcolor{keywordtype}{int} nameHashCode = spriteInfoList[i].hashCode;}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114                 \textcolor{keywordflow}{if} (m\_NameLookup.ContainsKey(nameHashCode) == \textcolor{keyword}{false})}
+\DoxyCodeLine{115                     m\_NameLookup.Add(nameHashCode, i);}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117                 \textcolor{keywordtype}{int} unicode = spriteInfoList[i].unicode;}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119                 \textcolor{keywordflow}{if} (m\_UnicodeLookup.ContainsKey(unicode) == \textcolor{keyword}{false})}
+\DoxyCodeLine{120                     m\_UnicodeLookup.Add(unicode, i);}
+\DoxyCodeLine{121             \}}
+\DoxyCodeLine{122         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SpriteAsset_a417cdcac52c66835dcdb3ef8fdf15b3c}\label{classTMPro_1_1TMP__SpriteAsset_a417cdcac52c66835dcdb3ef8fdf15b3c}} 
+\index{TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}!fallbackSpriteAssets@{fallbackSpriteAssets}}
+\index{fallbackSpriteAssets@{fallbackSpriteAssets}!TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}}
+\doxysubsubsection{\texorpdfstring{fallbackSpriteAssets}{fallbackSpriteAssets}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}}$>$ T\+M\+Pro.\+T\+M\+P\+\_\+\+Sprite\+Asset.\+fallback\+Sprite\+Assets}
+
+
+
+Dictionary used to lookup the index of a given sprite based on a Unicode value. 
+
+List which contains the Fallback font assets for this font. 
+
+Definition at line 47 of file T\+M\+P\+\_\+\+Sprite\+Asset.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classTMPro_1_1TMP__SpriteAsset_a8a0537826f6a024c10fa80ea29f957f7}\label{classTMPro_1_1TMP__SpriteAsset_a8a0537826f6a024c10fa80ea29f957f7}} 
+\index{TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}!defaultSpriteAsset@{defaultSpriteAsset}}
+\index{defaultSpriteAsset@{defaultSpriteAsset}!TMPro.TMP\_SpriteAsset@{TMPro.TMP\_SpriteAsset}}
+\doxysubsubsection{\texorpdfstring{defaultSpriteAsset}{defaultSpriteAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTMPro_1_1TMP__SpriteAsset}{T\+M\+P\+\_\+\+Sprite\+Asset}} T\+M\+Pro.\+T\+M\+P\+\_\+\+Sprite\+Asset.\+default\+Sprite\+Asset\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Static reference to the default font asset included with Text\+Mesh Pro. 
+
+
+
+Definition at line 17 of file T\+M\+P\+\_\+\+Sprite\+Asset.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17         \{}
+\DoxyCodeLine{18             \textcolor{keyword}{get}}
+\DoxyCodeLine{19             \{}
+\DoxyCodeLine{20                 \textcolor{keywordflow}{if} (m\_defaultSpriteAsset == \textcolor{keyword}{null})}
+\DoxyCodeLine{21                 \{}
+\DoxyCodeLine{22                     m\_defaultSpriteAsset = Resources.Load<TMP\_SpriteAsset>(\textcolor{stringliteral}{"Sprite Assets/Default Sprite Asset"});}
+\DoxyCodeLine{23                 \}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25                 \textcolor{keywordflow}{return} m\_defaultSpriteAsset;}
+\DoxyCodeLine{26             \}}
+\DoxyCodeLine{27         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Runtime/T\+M\+P\+\_\+\+Sprite\+Asset.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\hypertarget{classRope}{}\doxysection{Rope Class Reference}
+\label{classRope}\index{Rope@{Rope}}
+
+
+This class creates ropes. The code decides which cloud is closest to the player and connects a rope to the cloud on click/tap and hold.\+The rope holds the player, who uses the rope to progress through the game by swinging until the player swings too close to the ground, hits by picking up coins by swinging through them.  
+
+
+Inheritance diagram for Rope\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRope}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRope_a5f8aea6cf0812bfbf1c20ab1158b7d5a}\label{classRope_a5f8aea6cf0812bfbf1c20ab1158b7d5a}} 
+void {\bfseries Set\+First\+Connection} (bool b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Hinge\+Joint2D \mbox{\hyperlink{classRope_af1c503e4892e6498fe6f59dd3b72c327}{Curr\+Rope}}
+\begin{DoxyCompactList}\small\item\em The joint that holds the player and the cloud at a constant distance. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{classRope_a17bb204dc3ffa0bc5195e5ac86273df6}{Player}}
+\begin{DoxyCompactList}\small\item\em The games player. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{classRope_ad4ed92a663bd20d9631d1a1433d37066}{Hinge}}
+\begin{DoxyCompactList}\small\item\em Each instance of \mbox{\hyperlink{classRope}{Rope}} belongs to a cloud (hinge). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGameController}{Game\+Controller}} \mbox{\hyperlink{classRope_a0521f97a6f8776c7e4a181eed7b5aacb}{game}}
+\begin{DoxyCompactList}\small\item\em Game controller instance. See \mbox{\hyperlink{classGameController}{Game\+Controller}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class creates ropes. The code decides which cloud is closest to the player and connects a rope to the cloud on click/tap and hold.\+The rope holds the player, who uses the rope to progress through the game by swinging until the player swings too close to the ground, hits by picking up coins by swinging through them. 
+
+
+
+Definition at line 14 of file Rope.\+cs.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRope_af1c503e4892e6498fe6f59dd3b72c327}\label{classRope_af1c503e4892e6498fe6f59dd3b72c327}} 
+\index{Rope@{Rope}!CurrRope@{CurrRope}}
+\index{CurrRope@{CurrRope}!Rope@{Rope}}
+\doxysubsubsection{\texorpdfstring{CurrRope}{CurrRope}}
+{\footnotesize\ttfamily Hinge\+Joint2D Rope.\+Curr\+Rope}
+
+
+
+The joint that holds the player and the cloud at a constant distance. 
+
+
+
+Definition at line 19 of file Rope.\+cs.
+
+\mbox{\Hypertarget{classRope_a0521f97a6f8776c7e4a181eed7b5aacb}\label{classRope_a0521f97a6f8776c7e4a181eed7b5aacb}} 
+\index{Rope@{Rope}!game@{game}}
+\index{game@{game}!Rope@{Rope}}
+\doxysubsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGameController}{Game\+Controller}} Rope.\+game}
+
+
+
+Game controller instance. See \mbox{\hyperlink{classGameController}{Game\+Controller}} class. 
+
+
+
+Definition at line 44 of file Rope.\+cs.
+
+\mbox{\Hypertarget{classRope_ad4ed92a663bd20d9631d1a1433d37066}\label{classRope_ad4ed92a663bd20d9631d1a1433d37066}} 
+\index{Rope@{Rope}!Hinge@{Hinge}}
+\index{Hinge@{Hinge}!Rope@{Rope}}
+\doxysubsubsection{\texorpdfstring{Hinge}{Hinge}}
+{\footnotesize\ttfamily Game\+Object Rope.\+Hinge}
+
+
+
+Each instance of \mbox{\hyperlink{classRope}{Rope}} belongs to a cloud (hinge). 
+
+
+
+Definition at line 29 of file Rope.\+cs.
+
+\mbox{\Hypertarget{classRope_a17bb204dc3ffa0bc5195e5ac86273df6}\label{classRope_a17bb204dc3ffa0bc5195e5ac86273df6}} 
+\index{Rope@{Rope}!Player@{Player}}
+\index{Player@{Player}!Rope@{Rope}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily Game\+Object Rope.\+Player}
+
+
+
+The games player. 
+
+
+
+Definition at line 24 of file Rope.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/scripts/Rope.\+cs\end{DoxyCompactItemize}

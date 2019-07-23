@@ -1,0 +1,270 @@
+\hypertarget{interfaceUnityAds}{}\doxysection{Unity\+Ads Class Reference}
+\label{interfaceUnityAds}\index{UnityAds@{UnityAds}}
+
+
+{\ttfamily \#import $<$Unity\+Ads.\+h$>$}
+
+Inheritance diagram for Unity\+Ads\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceUnityAds}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceUnityAds_a5e5d2f9d0967ae24896451e0fa1d7d05}\label{interfaceUnityAds_a5e5d2f9d0967ae24896451e0fa1d7d05}} 
+(instancetype) -\/ {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceUnityAds_a5e5d2f9d0967ae24896451e0fa1d7d05}\label{interfaceUnityAds_a5e5d2f9d0967ae24896451e0fa1d7d05}} 
+(instancetype) + {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}
+\item 
+(void) + \mbox{\hyperlink{interfaceUnityAds_a817ac1f1677a4c954bdf15f26b0503ec}{initialize\+:delegate\+:}}
+\item 
+(void) + \mbox{\hyperlink{interfaceUnityAds_aae55ea056c66210237f9f819c3350baf}{initialize\+:delegate\+:test\+Mode\+:}}
+\item 
+(void) + \mbox{\hyperlink{interfaceUnityAds_a9246ffcfb9c831021f57cf81c21d3757}{show\+:}}
+\item 
+(void) + \mbox{\hyperlink{interfaceUnityAds_aca4fa4441ba69af5fd8e6af1d5b1114b}{show\+:placement\+Id\+:}}
+\item 
+(id$<$ \mbox{\hyperlink{protocolUnityAdsDelegate-p}{Unity\+Ads\+Delegate}} $>$) + \mbox{\hyperlink{interfaceUnityAds_a4b9aac259a3cb9906685eca5cbf5af5e}{get\+Delegate}}
+\item 
+(void) + \mbox{\hyperlink{interfaceUnityAds_af3fd5286dccef9e7f0557694cc0d747b}{set\+Delegate\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interfaceUnityAds_ad7d6aade30273f805bd0f077fd29e0c9}{get\+Debug\+Mode}}
+\item 
+(void) + \mbox{\hyperlink{interfaceUnityAds_a8fb72943aa227334bf7219725ef8eb5b}{set\+Debug\+Mode\+:}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interfaceUnityAds_a88647c57b1d0a967ac74d9f847982561}{is\+Supported}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interfaceUnityAds_ad6957c0e6ebdd2b2e5f17e97310ccd2d}{is\+Ready}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interfaceUnityAds_ab599b1f26750aa88f4e0c7be90203276}{is\+Ready\+:}}
+\item 
+(Unity\+Ads\+Placement\+State) + \mbox{\hyperlink{interfaceUnityAds_ae6cb2c812b3ecb379d4ece62e6d22b34}{get\+Placement\+State}}
+\item 
+(Unity\+Ads\+Placement\+State) + \mbox{\hyperlink{interfaceUnityAds_abcd2309e4f159ca5f6c8bc55e1d13e78}{get\+Placement\+State\+:}}
+\item 
+(N\+S\+String $\ast$) + \mbox{\hyperlink{interfaceUnityAds_adfc15977cddb12f40d465060e23f79f4}{get\+Version}}
+\item 
+(B\+O\+OL) + \mbox{\hyperlink{interfaceUnityAds_a8698d281f4758d79a70bd20f6db4a622}{is\+Initialized}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} is a static class with methods for preparing and showing ads.
+
+\begin{DoxyWarning}{Warning}
+In order to ensure expected behaviour, the delegate must always be set. 
+\end{DoxyWarning}
+
+
+Definition at line 148 of file Unity\+Ads.\+h.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interfaceUnityAds_ad7d6aade30273f805bd0f077fd29e0c9}\label{interfaceUnityAds_ad7d6aade30273f805bd0f077fd29e0c9}} 
+\index{UnityAds@{UnityAds}!getDebugMode@{getDebugMode}}
+\index{getDebugMode@{getDebugMode}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{getDebugMode()}{getDebugMode()}}
+{\footnotesize\ttfamily + (B\+O\+OL) get\+Debug\+Mode \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Get the current debug status of {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}}.
+
+\begin{DoxyReturn}{Returns}
+If {\ttfamily Y\+ES}, {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} will provide verbose logs. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceUnityAds_a4b9aac259a3cb9906685eca5cbf5af5e}\label{interfaceUnityAds_a4b9aac259a3cb9906685eca5cbf5af5e}} 
+\index{UnityAds@{UnityAds}!getDelegate@{getDelegate}}
+\index{getDelegate@{getDelegate}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{getDelegate()}{getDelegate()}}
+{\footnotesize\ttfamily + (id$<$\mbox{\hyperlink{protocolUnityAdsDelegate-p}{Unity\+Ads\+Delegate}}$>$) get\+Delegate \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Provides the currently assigned {\ttfamily \mbox{\hyperlink{protocolUnityAdsDelegate-p}{Unity\+Ads\+Delegate}}}.
+
+\begin{DoxyReturn}{Returns}
+The current {\ttfamily \mbox{\hyperlink{protocolUnityAdsDelegate-p}{Unity\+Ads\+Delegate}}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceUnityAds_ae6cb2c812b3ecb379d4ece62e6d22b34}\label{interfaceUnityAds_ae6cb2c812b3ecb379d4ece62e6d22b34}} 
+\index{UnityAds@{UnityAds}!getPlacementState@{getPlacementState}}
+\index{getPlacementState@{getPlacementState}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{getPlacementState()}{getPlacementState()}}
+{\footnotesize\ttfamily + (Unity\+Ads\+Placement\+State) get\+Placement\+State \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Check the current state of the default placement.
+
+\begin{DoxyReturn}{Returns}
+If this is {\ttfamily k\+Unity\+Ads\+Placement\+State\+Ready}, the placement is ready to show ads. Other states represent errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceUnityAds_abcd2309e4f159ca5f6c8bc55e1d13e78}\label{interfaceUnityAds_abcd2309e4f159ca5f6c8bc55e1d13e78}} 
+\index{UnityAds@{UnityAds}!getPlacementState:@{getPlacementState:}}
+\index{getPlacementState:@{getPlacementState:}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{getPlacementState:()}{getPlacementState:()}}
+{\footnotesize\ttfamily + (Unity\+Ads\+Placement\+State) get\+Placement\+State\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{placement\+Id }\end{DoxyParamCaption}}
+
+Check the current state of a placement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em placement\+Id} & The placement ID, as defined in Unity Ads admin tools.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If this is {\ttfamily k\+Unity\+Ads\+Placement\+State\+Ready}, the placement is ready to show ads. Other states represent errors. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceUnityAds_adfc15977cddb12f40d465060e23f79f4}\label{interfaceUnityAds_adfc15977cddb12f40d465060e23f79f4}} 
+\index{UnityAds@{UnityAds}!getVersion@{getVersion}}
+\index{getVersion@{getVersion}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{getVersion()}{getVersion()}}
+{\footnotesize\ttfamily + (N\+S\+String $\ast$) get\+Version \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Check the version of this {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} S\+DK
+
+\begin{DoxyReturn}{Returns}
+String representing the current version name. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceUnityAds_a817ac1f1677a4c954bdf15f26b0503ec}\label{interfaceUnityAds_a817ac1f1677a4c954bdf15f26b0503ec}} 
+\index{UnityAds@{UnityAds}!initialize:delegate:@{initialize:delegate:}}
+\index{initialize:delegate:@{initialize:delegate:}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{initialize:delegate:()}{initialize:delegate:()}}
+{\footnotesize\ttfamily + (void) initialize\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{game\+Id }\item[{delegate\+:(nullable id$<$ \mbox{\hyperlink{protocolUnityAdsDelegate-p}{Unity\+Ads\+Delegate}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+Initializes \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}. \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}} should be initialized when app starts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Id} & Unique identifier for a game, given by Unity Ads admin tools or Unity editor. \\
+\hline
+{\em delegate} & delegate for \mbox{\hyperlink{protocolUnityAdsDelegate-p}{Unity\+Ads\+Delegate}} callbacks \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceUnityAds_aae55ea056c66210237f9f819c3350baf}\label{interfaceUnityAds_aae55ea056c66210237f9f819c3350baf}} 
+\index{UnityAds@{UnityAds}!initialize:delegate:testMode:@{initialize:delegate:testMode:}}
+\index{initialize:delegate:testMode:@{initialize:delegate:testMode:}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{initialize:delegate:testMode:()}{initialize:delegate:testMode:()}}
+{\footnotesize\ttfamily + (void) initialize\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{game\+Id }\item[{delegate\+:(nullable id$<$ \mbox{\hyperlink{protocolUnityAdsDelegate-p}{Unity\+Ads\+Delegate}} $>$)}]{delegate }\item[{test\+Mode\+:(B\+O\+OL)}]{test\+Mode }\end{DoxyParamCaption}}
+
+Initializes \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}. \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}} should be initialized when app starts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Id} & Unique identifier for a game, given by Unity Ads admin tools or Unity editor. \\
+\hline
+{\em delegate} & delegate for \mbox{\hyperlink{protocolUnityAdsDelegate-p}{Unity\+Ads\+Delegate}} callbacks \\
+\hline
+{\em test\+Mode} & Set this flag to {\ttfamily Y\+ES} to indicate test mode and show only test ads. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceUnityAds_a8698d281f4758d79a70bd20f6db4a622}\label{interfaceUnityAds_a8698d281f4758d79a70bd20f6db4a622}} 
+\index{UnityAds@{UnityAds}!isInitialized@{isInitialized}}
+\index{isInitialized@{isInitialized}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{isInitialized()}{isInitialized()}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+Initialized \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Check that {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} has been initialized. This might be useful for debugging initialization problems.
+
+\begin{DoxyReturn}{Returns}
+If {\ttfamily Y\+ES}, Unity Ads has been successfully initialized. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceUnityAds_ad6957c0e6ebdd2b2e5f17e97310ccd2d}\label{interfaceUnityAds_ad6957c0e6ebdd2b2e5f17e97310ccd2d}} 
+\index{UnityAds@{UnityAds}!isReady@{isReady}}
+\index{isReady@{isReady}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{isReady()}{isReady()}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+Ready \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Check if the default placement is ready to show an ad.
+
+\begin{DoxyReturn}{Returns}
+If {\ttfamily Y\+ES}, the default placement is ready to show an ad. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceUnityAds_ab599b1f26750aa88f4e0c7be90203276}\label{interfaceUnityAds_ab599b1f26750aa88f4e0c7be90203276}} 
+\index{UnityAds@{UnityAds}!isReady:@{isReady:}}
+\index{isReady:@{isReady:}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{isReady:()}{isReady:()}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+Ready\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{placement\+Id }\end{DoxyParamCaption}}
+
+Check if a particular placement is ready to show an ad.
+
+
+\begin{DoxyParams}{Parameters}
+{\em placement\+Id} & The placement ID being checked.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If {\ttfamily Y\+ES}, the placement is ready to show an ad. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceUnityAds_a88647c57b1d0a967ac74d9f847982561}\label{interfaceUnityAds_a88647c57b1d0a967ac74d9f847982561}} 
+\index{UnityAds@{UnityAds}!isSupported@{isSupported}}
+\index{isSupported@{isSupported}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{isSupported()}{isSupported()}}
+{\footnotesize\ttfamily + (B\+O\+OL) is\+Supported \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Check to see if the current device supports using Unity Ads.
+
+\begin{DoxyReturn}{Returns}
+If {\ttfamily NO}, the current device cannot initialize {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} or show ads. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceUnityAds_a8fb72943aa227334bf7219725ef8eb5b}\label{interfaceUnityAds_a8fb72943aa227334bf7219725ef8eb5b}} 
+\index{UnityAds@{UnityAds}!setDebugMode:@{setDebugMode:}}
+\index{setDebugMode:@{setDebugMode:}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{setDebugMode:()}{setDebugMode:()}}
+{\footnotesize\ttfamily + (void) set\+Debug\+Mode\+: \begin{DoxyParamCaption}\item[{(B\+O\+OL)}]{enable\+Debug\+Mode }\end{DoxyParamCaption}}
+
+Set the logging verbosity of {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}}. Debug mode indicates verbose logging. \begin{DoxyWarning}{Warning}
+Does not relate to test mode for ad content. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em enable\+Debug\+Mode} & {\ttfamily Y\+ES} for verbose logging. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceUnityAds_af3fd5286dccef9e7f0557694cc0d747b}\label{interfaceUnityAds_af3fd5286dccef9e7f0557694cc0d747b}} 
+\index{UnityAds@{UnityAds}!setDelegate:@{setDelegate:}}
+\index{setDelegate:@{setDelegate:}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{setDelegate:()}{setDelegate:()}}
+{\footnotesize\ttfamily + (void) set\+Delegate\+: \begin{DoxyParamCaption}\item[{(id$<$ \mbox{\hyperlink{protocolUnityAdsDelegate-p}{Unity\+Ads\+Delegate}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+Allows the delegate to be reassigned after \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}} has already been initialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & The new `\mbox{\hyperlink{protocolUnityAdsDelegate-p}{Unity\+Ads\+Delegate}}' for \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}} to send callbacks to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceUnityAds_a9246ffcfb9c831021f57cf81c21d3757}\label{interfaceUnityAds_a9246ffcfb9c831021f57cf81c21d3757}} 
+\index{UnityAds@{UnityAds}!show:@{show:}}
+\index{show:@{show:}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{show:()}{show:()}}
+{\footnotesize\ttfamily + (void) show\+: \begin{DoxyParamCaption}\item[{(U\+I\+View\+Controller $\ast$)}]{view\+Controller }\end{DoxyParamCaption}}
+
+Show an ad using the defaul placement.
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Controller} & The {\ttfamily U\+I\+View\+Controller} that is to present the ad view controller. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceUnityAds_aca4fa4441ba69af5fd8e6af1d5b1114b}\label{interfaceUnityAds_aca4fa4441ba69af5fd8e6af1d5b1114b}} 
+\index{UnityAds@{UnityAds}!show:placementId:@{show:placementId:}}
+\index{show:placementId:@{show:placementId:}!UnityAds@{UnityAds}}
+\doxysubsubsection{\texorpdfstring{show:placementId:()}{show:placementId:()}}
+{\footnotesize\ttfamily + (void) \mbox{\hyperlink{interfaceUnityAds_a9246ffcfb9c831021f57cf81c21d3757}{show\+:}} \begin{DoxyParamCaption}\item[{(U\+I\+View\+Controller $\ast$)}]{view\+Controller }\item[{placement\+Id\+:(N\+S\+String $\ast$)}]{placement\+Id }\end{DoxyParamCaption}}
+
+Show an ad using the provided placement ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Controller} & The {\ttfamily U\+I\+View\+Controller} that is to present the ad view controller. \\
+\hline
+{\em placement\+Id} & The placement ID, as defined in Unity Ads admin tools. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+ads@2.\+3.\+1/\+Runtime/\+Plugins/i\+O\+S/\+Unity\+Ads.\+framework/\+Headers/Unity\+Ads.\+h\end{DoxyCompactItemize}

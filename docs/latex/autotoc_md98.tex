@@ -1,0 +1,115 @@
+These are the release notes for the Text\+Mesh Pro U\+PM package which was first introduced with Unity 2018.\+1. Please see the following link for the Release Notes for prior versions of Text\+Mesh Pro. \href{http://digitalnativestudios.com/forum/index.php?topic=1363.0}{\texttt{ http\+://digitalnativestudios.\+com/forum/index.\+php?topic=1363.\+0}}\hypertarget{autotoc_md98_autotoc_md99}{}\doxysection{\mbox{[}1.\+3.\+0\mbox{]} -\/ 2018-\/08-\/09}\label{autotoc_md98_autotoc_md99}
+\hypertarget{autotoc_md98_autotoc_md100}{}\doxysubsection{Changes}\label{autotoc_md98_autotoc_md100}
+
+\begin{DoxyItemize}
+\item Revamped UI to conform to Unity Human Interface Guidelines.
+\item Updated the title text on the Font Asset Creator window tab to \char`\"{}\+Font Asset Creator\char`\"{}.
+\item Using T\+M\+P\+\_\+\+Text.\+Set\+Char\+Array() with an empty char\mbox{[}\mbox{]} array will now clear the text.
+\item Made a small improvement to the T\+MP Input Field when using nested 2d Rect\+Masks.
+\item Renamed symbol defines used by T\+MP to append T\+M\+P\+\_\+ in front of the define to avoid potential conflicts with user defines.
+\item Improved the Project Files G\+U\+ID Remapping tool to allow specifying a target folder to scan.
+\item Added the ability to cancel the scanning process used by the Project Files G\+U\+ID Remapping tool.
+\item Moved T\+MP Settings to universal settings window in 2018.\+3 and above.
+\item Changing style sheet in the T\+MP Settings will now be reflected automatically on existing text objects in the editor.
+\item Added new function T\+M\+P\+\_\+\+Style\+Sheet.\+Update\+Style\+Sheet() to update the internal reference to which style sheet text objects should be using in conjunction with the style tag.
+\end{DoxyItemize}\hypertarget{autotoc_md98_autotoc_md101}{}\doxysection{\mbox{[}1.\+2.\+4\mbox{]} -\/ 2018-\/06-\/10}\label{autotoc_md98_autotoc_md101}
+\hypertarget{autotoc_md98_autotoc_md102}{}\doxysubsection{Changes}\label{autotoc_md98_autotoc_md102}
+
+\begin{DoxyItemize}
+\item Fixed a minor issue when using Justified and Flush alignment in conjunction with \textbackslash{}u00\+A0.
+\item The Font Asset creation\+Settings field is no longer an Editor only serialized field.
+\end{DoxyItemize}\hypertarget{autotoc_md98_autotoc_md103}{}\doxysection{\mbox{[}1.\+2.\+3\mbox{]} -\/ 2018-\/05-\/29}\label{autotoc_md98_autotoc_md103}
+\hypertarget{autotoc_md98_autotoc_md104}{}\doxysubsection{Changes}\label{autotoc_md98_autotoc_md104}
+
+\begin{DoxyItemize}
+\item Added new bitmap shader with support for Custom Font Atlas texture. This shader also includes a new property \char`\"{}\+Padding\char`\"{} to provide control over the geometry padding to closely fit a modified / custom font atlas texture.
+\item Fixed an issue with Force\+Mesh\+Update(bool ignore\+Active\+State) not being handled correctly.
+\item Cleaned up memory allocations from repeated use of the Font Asset Creator.
+\item Sprites are now scaled based on the current font instead of the primary font asset assigned to the text object.
+\item It is now possible to recall the most recent settings used when creating a font asset in the Font Asset Creator.
+\item Newly created font assets now contain the settings used when they were last created. This will make the process of updating / regenerating font assets much easier.
+\item New context menu \char`\"{}\+Update Font Asset\char`\"{} was added to the Font Asset inspector which will open the Font Asset Creator with the most recently used settings for that font asset.
+\item New Context Menu \char`\"{}\+Create Font Asset\char`\"{} was added to the Font inspector panel which will open the Font Asset Creator with this source font file already selected.
+\item Fixed 3 compiler warnings that would appear when using .Net 4.\+x.
+\item Modified the T\+MP Settings to place the Missing Glyph options in their own section.
+\item Renamed a symbol used for internal debugging to avoid potential conflicts with other user project defines.
+\item T\+MP Sprite Importer \char`\"{}\+Create Sprite Asset\char`\"{} and \char`\"{}\+Save Sprite Asset\char`\"{} options are disabled unless a Sprite Data Source, Import Format and Sprite Texture Atlas are provided.
+\item Improved the performance of the Project Files G\+U\+ID Remapping tool.
+\item Users will now be prompted to import the T\+MP Essential Resources when using the Font Asset Creator if such resources have not already been imported.
+\end{DoxyItemize}\hypertarget{autotoc_md98_autotoc_md105}{}\doxysection{\mbox{[}1.\+2.\+2\mbox{]} -\/ 2018-\/03-\/28}\label{autotoc_md98_autotoc_md105}
+\hypertarget{autotoc_md98_autotoc_md106}{}\doxysubsection{Changes}\label{autotoc_md98_autotoc_md106}
+
+\begin{DoxyItemize}
+\item Calling Set\+All\+Dirty() on a T\+MP text component will now force a regeneration of the text object including re-\/parsing of the text.
+\item Fixed potential Null Reference Exception that could occur when assigning a new fallback font asset.
+\item Removed public from test classes.
+\item Fixed an issue where using nested links (which doesn\textquotesingle{}t make sense conceptually) would result in an error. Should accidental use of nested links occurs, the last / most nested ends up being used.
+\item Fixed a potential text alignment issue where an hyphen at the end of a line followed by a new line containing a single word too long to fit the text container would result in miss alignment of the hyphen.
+\item Updated package license.
+\item Non-\/\+Breaking Space character (0x\+A0) will now be excluded from word spacing adjustments when using Justified or Flush text alignment.
+\item Improved handling of Underline, Strikethrough and Mark tag with regards to vertex color and Color tag alpha.
+\item Improved T\+M\+P\+\_\+\+Font\+Asset.\+Has\+Character(char character, bool search\+Fallbacks) to include a recursive search of fallbacks as well as T\+MP Settings fallback list and default font asset.
+\item The \&ltgradient\&gt tag will now also apply to sprites provided the sprite tint attribute is set to a value of 1. Ex. \&ltsprite=\char`\"{}\+Sprite Asset\char`\"{} index=0 tint=1\&gt.
+\item Updated Font Asset Creator Plugin to allow for cancellation of the font asset generation process.
+\item Added callback to support the Scriptable Render Pipeline (S\+RP) with the normal Text\+Mesh\+Pro component.
+\item Improved handling of some non-\/breaking space characters which should not be ignored at the end of a line.
+\item Sprite Asset fallbacks will now be searched when using the \&ltsprite\&gt tag and referencing a sprite by Unicode or by Name.
+\item Updated Emoji\+One samples from \href{https://www.emojione.com/}{\texttt{ https\+://www.\+emojione.\+com/}} and added attribution.
+\item Removed the 32bit versions of the T\+MP Plugins used by the Font Asset Creator since the Unity Editor is now only available as 64bit.
+\item The is\+Text\+Truncated property is now serialized.
+\item Added new event handler to the T\+M\+P\+\_\+\+Text\+Event\+Handler.\+cs script included in Example 12a to allow tracking of interactions with Sprites.
+\end{DoxyItemize}\hypertarget{autotoc_md98_autotoc_md107}{}\doxysection{\mbox{[}1.\+2.\+1\mbox{]} -\/ 2018-\/02-\/14}\label{autotoc_md98_autotoc_md107}
+\hypertarget{autotoc_md98_autotoc_md108}{}\doxysubsection{Changes}\label{autotoc_md98_autotoc_md108}
+
+\begin{DoxyItemize}
+\item Package is now backwards compatible with Unity 2018.\+1.
+\item Renamed Assembly Definitions (.asmdef) to new U\+PM package conventions.
+\item Added Display\+Name for T\+MP U\+PM package.
+\item Revised Editor and Playmode tests to ignore / skip over the tests if the required resources are not present in the project.
+\item Revised implementation of Font Asset Creator progress bar to use Unity\textquotesingle{}s Editor\+G\+U\+I.\+Progress\+Bar instead of custom texture.
+\item Fixed an issue where using the material tag in conjunction with fallback font assets was not handled correctly.
+\item Fixed an issue where changing the font\+Style property in conjunction with using alternative typefaces / font weights would not correctly trigger a regeneration of the text object.
+\end{DoxyItemize}\hypertarget{autotoc_md98_autotoc_md109}{}\doxysection{\mbox{[}1.\+2.\+0\mbox{]} -\/ 2018-\/01-\/23}\label{autotoc_md98_autotoc_md109}
+\hypertarget{autotoc_md98_autotoc_md110}{}\doxysubsection{Changes}\label{autotoc_md98_autotoc_md110}
+
+\begin{DoxyItemize}
+\item Package version \# increased to 1.\+2.\+0 which is the first release for Unity 2018.\+2.
+\end{DoxyItemize}\hypertarget{autotoc_md98_autotoc_md111}{}\doxysection{\mbox{[}1.\+1.\+0\mbox{]} -\/ 2018-\/01-\/23}\label{autotoc_md98_autotoc_md111}
+\hypertarget{autotoc_md98_autotoc_md112}{}\doxysubsection{Changes}\label{autotoc_md98_autotoc_md112}
+
+\begin{DoxyItemize}
+\item Package version \# increased to 1.\+1.\+0 which is the first release for Unity 2018.\+1.
+\end{DoxyItemize}\hypertarget{autotoc_md98_autotoc_md113}{}\doxysection{\mbox{[}1.\+0.\+27\mbox{]} -\/ 2018-\/01-\/16}\label{autotoc_md98_autotoc_md113}
+\hypertarget{autotoc_md98_autotoc_md114}{}\doxysubsection{Changes}\label{autotoc_md98_autotoc_md114}
+
+\begin{DoxyItemize}
+\item Fixed an issue where setting the T\+M\+P\+\_\+\+Input\+Field.\+text property to null would result in an error.
+\item Fixed issue with Raycast Target state not getting serialized properly when saving / reloading a scene.
+\item Changed reference to Prefab\+Utility.\+Get\+Prefab\+Parent() to Prefab\+Utility.\+Get\+Corresponding\+Object\+From\+Source() to reflect public A\+PI change in 2018.\+2
+\item Option to import package essential resources will only be presented to users when accessing a T\+MP component or the T\+MP Settings file via the project menu.
+\end{DoxyItemize}\hypertarget{autotoc_md98_autotoc_md115}{}\doxysection{\mbox{[}1.\+0.\+26\mbox{]} -\/ 2018-\/01-\/10}\label{autotoc_md98_autotoc_md115}
+\hypertarget{autotoc_md98_autotoc_md116}{}\doxysubsection{Added}\label{autotoc_md98_autotoc_md116}
+
+\begin{DoxyItemize}
+\item Removed Tizen player references in the T\+M\+P\+\_\+\+Input\+Field as the Tizen player is no longer supported as of Unity 2018.\+1.
+\end{DoxyItemize}\hypertarget{autotoc_md98_autotoc_md117}{}\doxysection{\mbox{[}1.\+0.\+25\mbox{]} -\/ 2018-\/01-\/05}\label{autotoc_md98_autotoc_md117}
+\hypertarget{autotoc_md98_autotoc_md118}{}\doxysubsection{Added}\label{autotoc_md98_autotoc_md118}
+
+\begin{DoxyItemize}
+\item Fixed a minor issue with Preferred\+Values calculation in conjunction with using text auto-\/sizing.
+\item Improved Kerning handling where it is now possible to define positional adjustments for the first and second glyph in the pair.
+\item Renamed Kerning Info Table to Glyph Adjustment Table to better reflect the added functionality of this table.
+\item Added Search toolbar to the Glyph Adjustment Table.
+\item Fixed incorrect detection / handling of Asset Serialization mode in the Project Conversion Utility.
+\item Removed Selection\+Base attribute from T\+MP components.
+\item Revised T\+MP Shaders to support the new U\+N\+I\+T\+Y\+\_\+\+U\+I\+\_\+\+C\+L\+I\+P\+\_\+\+R\+E\+CT shader keyword which can provide a performance improvement of up to 30\% on some devices.
+\item Added T\+M\+P\+\_\+\+P\+R\+E\+S\+E\+NT define as per the request of several third party asset publishers.
+\end{DoxyItemize}\hypertarget{autotoc_md98_autotoc_md119}{}\doxysection{\mbox{[}1.\+0.\+23\mbox{]} -\/ 2017-\/11-\/14}\label{autotoc_md98_autotoc_md119}
+\hypertarget{autotoc_md98_autotoc_md120}{}\doxysubsection{Added}\label{autotoc_md98_autotoc_md120}
+
+\begin{DoxyItemize}
+\item New menu option added to Import Examples and additional content like Font Assets, Materials Presets, etc for Text\+Mesh Pro. This new menu option is located in \char`\"{}\+Window -\/$>$ Text\+Mesh\+Pro -\/$>$ Import Examples and Extra Content\char`\"{}.
+\item New menu option added to Convert existing project files and assets created with either the Source Code or D\+LL only version of Text\+Mesh Pro. Please be sure to backup your project before using this option. The new menu option is located in \char`\"{}\+Window -\/$>$ Text\+Mesh\+Pro -\/$>$ Project Files G\+U\+I\+D Remapping Tool\char`\"{}.
+\item Added Assembly Definitions for the T\+MP Runtime and Editor scripts.
+\item Added support for the UI Dirty\+Layout\+Callback, Dirty\+Vertices\+Callback and Dirty\+Material\+Callback. 
+\end{DoxyItemize}

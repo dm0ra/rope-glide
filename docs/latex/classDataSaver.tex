@@ -1,0 +1,216 @@
+\hypertarget{classDataSaver}{}\doxysection{Data\+Saver Class Reference}
+\label{classDataSaver}\index{DataSaver@{DataSaver}}
+
+
+This class determines how to read from and write to a file.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classDataSaver_ae959f3d38d42cb12bd1c3b6cd154abae}{Save\+Data$<$ T $>$}} (T data\+To\+Save, string data\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Save data to file. \end{DoxyCompactList}\item 
+static T \mbox{\hyperlink{classDataSaver_a622691c316e8bba3cdd4f9db5a30a5ca}{Load\+Data$<$ T $>$}} (string data\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Load data from file. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classDataSaver_a650198650512929d1fd4c1ff6717d64a}{Delete\+Data}} (string data\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Deletes the data file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class determines how to read from and write to a file. 
+
+
+
+Definition at line 12 of file Data\+Saver.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataSaver_a650198650512929d1fd4c1ff6717d64a}\label{classDataSaver_a650198650512929d1fd4c1ff6717d64a}} 
+\index{DataSaver@{DataSaver}!DeleteData@{DeleteData}}
+\index{DeleteData@{DeleteData}!DataSaver@{DataSaver}}
+\doxysubsubsection{\texorpdfstring{DeleteData()}{DeleteData()}}
+{\footnotesize\ttfamily static bool Data\+Saver.\+Delete\+Data (\begin{DoxyParamCaption}\item[{string}]{data\+File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Deletes the data file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+File\+Name} & The name of the file to be deleted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a boolean indicating success or failure of the file deletion. 
+\end{DoxyReturn}
+
+
+Definition at line 114 of file Data\+Saver.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{115     \{}
+\DoxyCodeLine{116         \textcolor{keywordtype}{bool} success = \textcolor{keyword}{false};}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118         \textcolor{comment}{// Load Data}}
+\DoxyCodeLine{119         \textcolor{keywordtype}{string} tempPath = Path.Combine(Application.persistentDataPath, \textcolor{stringliteral}{"data"});}
+\DoxyCodeLine{120         tempPath = Path.Combine(tempPath, dataFileName + \textcolor{stringliteral}{".txt"});}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122         \textcolor{comment}{// Exit if Directory or File does not exist}}
+\DoxyCodeLine{123         \textcolor{keywordflow}{if} (!Directory.Exists(Path.GetDirectoryName(tempPath)))}
+\DoxyCodeLine{124         \{}
+\DoxyCodeLine{125             Debug.LogWarning(\textcolor{stringliteral}{"Directory does not exist"});}
+\DoxyCodeLine{126             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{127         \}}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129         \textcolor{keywordflow}{if} (!File.Exists(tempPath))}
+\DoxyCodeLine{130         \{}
+\DoxyCodeLine{131             Debug.Log(\textcolor{stringliteral}{"File does not exist"});}
+\DoxyCodeLine{132             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{133         \}}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{136         \{}
+\DoxyCodeLine{137             File.Delete(tempPath);}
+\DoxyCodeLine{138             Debug.Log(\textcolor{stringliteral}{"Data deleted from: "} + tempPath.Replace(\textcolor{stringliteral}{"/"}, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}));}
+\DoxyCodeLine{139             success = \textcolor{keyword}{true};}
+\DoxyCodeLine{140         \}}
+\DoxyCodeLine{141         \textcolor{keywordflow}{catch} (Exception e)}
+\DoxyCodeLine{142         \{}
+\DoxyCodeLine{143             Debug.LogWarning(\textcolor{stringliteral}{"Failed To Delete Data: "} + e.Message);}
+\DoxyCodeLine{144         \}}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146         \textcolor{keywordflow}{return} success;}
+\DoxyCodeLine{147     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDataSaver_a622691c316e8bba3cdd4f9db5a30a5ca}\label{classDataSaver_a622691c316e8bba3cdd4f9db5a30a5ca}} 
+\index{DataSaver@{DataSaver}!LoadData$<$ T $>$@{LoadData$<$ T $>$}}
+\index{LoadData$<$ T $>$@{LoadData$<$ T $>$}!DataSaver@{DataSaver}}
+\doxysubsubsection{\texorpdfstring{LoadData$<$ T $>$()}{LoadData< T >()}}
+{\footnotesize\ttfamily static T Data\+Saver.\+Load\+Data$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{data\+File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Load data from file. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Generic type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+File\+Name} & Name of the file being loaded. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return the data pulled from the file. 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file Data\+Saver.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68     \{}
+\DoxyCodeLine{69         \textcolor{keywordtype}{string} tempPath = Path.Combine(Application.persistentDataPath, \textcolor{stringliteral}{"data"});}
+\DoxyCodeLine{70         tempPath = Path.Combine(tempPath, dataFileName + \textcolor{stringliteral}{".txt"});}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72         \textcolor{comment}{// Exit if Directory or File does not exist}}
+\DoxyCodeLine{73         \textcolor{keywordflow}{if} (!Directory.Exists(Path.GetDirectoryName(tempPath)))}
+\DoxyCodeLine{74         \{}
+\DoxyCodeLine{75             Debug.LogWarning(\textcolor{stringliteral}{"Directory does not exist"});}
+\DoxyCodeLine{76             \textcolor{keywordflow}{return} \textcolor{keywordflow}{default}(T);}
+\DoxyCodeLine{77         \}}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79         \textcolor{keywordflow}{if} (!File.Exists(tempPath))}
+\DoxyCodeLine{80         \{}
+\DoxyCodeLine{81             Debug.Log(\textcolor{stringliteral}{"File does not exist"});}
+\DoxyCodeLine{82             \textcolor{keywordflow}{return} \textcolor{keywordflow}{default}(T);}
+\DoxyCodeLine{83         \}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85         \textcolor{keywordtype}{byte}[] bytes = \textcolor{keyword}{null};}
+\DoxyCodeLine{86         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{87         \{}
+\DoxyCodeLine{88             bytes = File.ReadAllBytes(tempPath);}
+\DoxyCodeLine{89             Debug.Log(\textcolor{stringliteral}{"Loaded Data from: "} + tempPath.Replace(\textcolor{stringliteral}{"/"}, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}));}
+\DoxyCodeLine{90         \}}
+\DoxyCodeLine{91         \textcolor{keywordflow}{catch} (Exception e)}
+\DoxyCodeLine{92         \{}
+\DoxyCodeLine{93             Debug.LogWarning(\textcolor{stringliteral}{"Failed To Load Data from: "} + tempPath.Replace(\textcolor{stringliteral}{"/"}, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}));}
+\DoxyCodeLine{94             Debug.LogWarning(\textcolor{stringliteral}{"Error: "} + e.Message);}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97         \textcolor{comment}{// Convert to json string}}
+\DoxyCodeLine{98         \textcolor{keywordtype}{string} ret = Encoding.ASCII.GetString(bytes);}
+\DoxyCodeLine{99         \textcolor{keywordtype}{object} ret1 = ret;}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101         \textcolor{comment}{// Convert to Object.}}
+\DoxyCodeLine{102         \textcolor{keywordflow}{return} (T)Convert.ChangeType(ret1, typeof(T));}
+\DoxyCodeLine{103     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDataSaver_ae959f3d38d42cb12bd1c3b6cd154abae}\label{classDataSaver_ae959f3d38d42cb12bd1c3b6cd154abae}} 
+\index{DataSaver@{DataSaver}!SaveData$<$ T $>$@{SaveData$<$ T $>$}}
+\index{SaveData$<$ T $>$@{SaveData$<$ T $>$}!DataSaver@{DataSaver}}
+\doxysubsubsection{\texorpdfstring{SaveData$<$ T $>$()}{SaveData< T >()}}
+{\footnotesize\ttfamily static void Data\+Saver.\+Save\+Data$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{data\+To\+Save,  }\item[{string}]{data\+File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Save data to file. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Generic type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+To\+Save} & The data to save. \\
+\hline
+{\em data\+File\+Name} & The name of the file to save to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file Data\+Saver.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         \textcolor{keywordtype}{string} tempPath = Path.Combine(Application.persistentDataPath, \textcolor{stringliteral}{"data"});}
+\DoxyCodeLine{29         tempPath = Path.Combine(tempPath, dataFileName + \textcolor{stringliteral}{".txt"});}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         \textcolor{comment}{// Convert To Json then to bytes}}
+\DoxyCodeLine{32         \textcolor{comment}{// string jsonData = JsonUtility.ToJson(dataToSave, true);}}
+\DoxyCodeLine{33         \textcolor{keywordtype}{string} temp = (string)(\textcolor{keywordtype}{object})dataToSave;}
+\DoxyCodeLine{34         \textcolor{keywordtype}{byte}[] bytes = Encoding.ASCII.GetBytes(temp);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36         \textcolor{comment}{// Create Directory if it does not exist}}
+\DoxyCodeLine{37         \textcolor{keywordflow}{if} (!Directory.Exists(Path.GetDirectoryName(tempPath)))}
+\DoxyCodeLine{38         \{}
+\DoxyCodeLine{39             Directory.CreateDirectory(Path.GetDirectoryName(tempPath));}
+\DoxyCodeLine{40         \}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42         \textcolor{comment}{// Debug.Log(path);}}
+\DoxyCodeLine{43         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{44         \{}
+\DoxyCodeLine{45             File.WriteAllBytes(tempPath, bytes);}
+\DoxyCodeLine{46             Debug.Log(\textcolor{stringliteral}{"Saved Data to: "} + tempPath.Replace(\textcolor{stringliteral}{"/"}, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}));}
+\DoxyCodeLine{47         \}}
+\DoxyCodeLine{48         \textcolor{keywordflow}{catch} (Exception e)}
+\DoxyCodeLine{49         \{}
+\DoxyCodeLine{50             Debug.LogWarning(\textcolor{stringliteral}{"Failed To PlayerInfo Data to: "} + tempPath.Replace(\textcolor{stringliteral}{"/"}, \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}));}
+\DoxyCodeLine{51             Debug.LogWarning(\textcolor{stringliteral}{"Error: "} + e.Message);}
+\DoxyCodeLine{52         \}}
+\DoxyCodeLine{53     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/scripts/Data\+Saver.\+cs\end{DoxyCompactItemize}

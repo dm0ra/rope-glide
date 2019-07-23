@@ -1,0 +1,97 @@
+\hypertarget{classTMPro_1_1EditorUtilities_1_1EditorCoroutine}{}\doxysection{T\+M\+Pro.\+Editor\+Utilities.\+Editor\+Coroutine Class Reference}
+\label{classTMPro_1_1EditorUtilities_1_1EditorCoroutine}\index{TMPro.EditorUtilities.EditorCoroutine@{TMPro.EditorUtilities.EditorCoroutine}}
+
+
+Simple implementation of coroutine working in the Unity Editor.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1EditorCoroutine_ae67a02fa202696210a86e3172a423e7a}{Stop}} ()
+\begin{DoxyCompactList}\small\item\em Unregister callback for editor updates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1EditorCoroutine}{Editor\+Coroutine}} \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1EditorCoroutine_abab6d5eb211e23d072db7181905df57b}{Start\+Coroutine}} (I\+Enumerator routine)
+\begin{DoxyCompactList}\small\item\em Starts a new \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1EditorCoroutine}{Editor\+Coroutine}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simple implementation of coroutine working in the Unity Editor. 
+
+
+
+Definition at line 13 of file Editor\+Coroutine.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1EditorCoroutine_abab6d5eb211e23d072db7181905df57b}\label{classTMPro_1_1EditorUtilities_1_1EditorCoroutine_abab6d5eb211e23d072db7181905df57b}} 
+\index{TMPro.EditorUtilities.EditorCoroutine@{TMPro.EditorUtilities.EditorCoroutine}!StartCoroutine@{StartCoroutine}}
+\index{StartCoroutine@{StartCoroutine}!TMPro.EditorUtilities.EditorCoroutine@{TMPro.EditorUtilities.EditorCoroutine}}
+\doxysubsubsection{\texorpdfstring{StartCoroutine()}{StartCoroutine()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1EditorCoroutine}{Editor\+Coroutine}} T\+M\+Pro.\+Editor\+Utilities.\+Editor\+Coroutine.\+Start\+Coroutine (\begin{DoxyParamCaption}\item[{I\+Enumerator}]{routine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Starts a new \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1EditorCoroutine}{Editor\+Coroutine}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Coroutine} & Coroutine\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1EditorCoroutine}{Editor\+Coroutine}}
+\end{DoxyReturn}
+
+
+Definition at line 34 of file Editor\+Coroutine.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35         \{}
+\DoxyCodeLine{36             EditorCoroutine coroutine = \textcolor{keyword}{new} EditorCoroutine(routine);}
+\DoxyCodeLine{37             coroutine.Start();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39             \textcolor{comment}{// Add coroutine to tracking list}}
+\DoxyCodeLine{40             \textcolor{comment}{//if (s\_ActiveCoroutines == null)}}
+\DoxyCodeLine{41             \textcolor{comment}{//    s\_ActiveCoroutines = new Dictionary<int, EditorCoroutine>();}}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43             \textcolor{comment}{// Add new instance of editor coroutine to dictionary.}}
+\DoxyCodeLine{44             \textcolor{comment}{//s\_ActiveCoroutines.Add(coroutine.GetHashCode(), coroutine);}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46             \textcolor{keywordflow}{return} coroutine;}
+\DoxyCodeLine{47         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1EditorCoroutine_ae67a02fa202696210a86e3172a423e7a}\label{classTMPro_1_1EditorUtilities_1_1EditorCoroutine_ae67a02fa202696210a86e3172a423e7a}} 
+\index{TMPro.EditorUtilities.EditorCoroutine@{TMPro.EditorUtilities.EditorCoroutine}!Stop@{Stop}}
+\index{Stop@{Stop}!TMPro.EditorUtilities.EditorCoroutine@{TMPro.EditorUtilities.EditorCoroutine}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void T\+M\+Pro.\+Editor\+Utilities.\+Editor\+Coroutine.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Unregister callback for editor updates. 
+
+
+
+Definition at line 71 of file Editor\+Coroutine.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72         \{}
+\DoxyCodeLine{73             \textcolor{keywordflow}{if} (EditorApplication.update != \textcolor{keyword}{null})}
+\DoxyCodeLine{74                 EditorApplication.update -\/= EditorUpdate;}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76             \textcolor{comment}{//s\_ActiveCoroutines.Remove(this.GetHashCode());}}
+\DoxyCodeLine{77         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Editor/Editor\+Coroutine.\+cs\end{DoxyCompactItemize}

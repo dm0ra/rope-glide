@@ -1,0 +1,260 @@
+\hypertarget{classDoxyRunner}{}\doxysection{Doxy\+Runner Class Reference}
+\label{classDoxyRunner}\index{DoxyRunner@{DoxyRunner}}
+
+
+This class spawns and runs Doxygen in a separate thread, and could serve as an example of how to create plugins for unity that call a command line application and then get the data back into Unity safely. ~\newline
+  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDoxyRunner_aed7742f6732027e7427393d727898eba}\label{classDoxyRunner_aed7742f6732027e7427393d727898eba}} 
+{\bfseries Doxy\+Runner} (string exepath, string\mbox{[}$\,$\mbox{]} args, \mbox{\hyperlink{classDoxyThreadSafeOutput}{Doxy\+Thread\+Safe\+Output}} safeoutput, Action$<$ int $>$ callback)
+\item 
+\mbox{\Hypertarget{classDoxyRunner_a4474ed980f895f97ac3517fe85834259}\label{classDoxyRunner_a4474ed980f895f97ac3517fe85834259}} 
+void {\bfseries update\+Ouput\+String} (string output)
+\item 
+\mbox{\Hypertarget{classDoxyRunner_a0a838402bf7b6661d4a1959c1b57aeb6}\label{classDoxyRunner_a0a838402bf7b6661d4a1959c1b57aeb6}} 
+void {\bfseries Run\+Threaded\+Doxy} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classDoxyRunner_a7458975df0c43d397051f225d6def184}{Run}} (Action$<$ string $>$ output, Text\+Reader input, string exe, params string\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Runs the specified executable with the provided arguments and returns the process\textquotesingle{} exit code. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{classDoxyRunner_a9e1ad0bb37f42899aeac2e2fb59cb769}{Escape\+Arguments}} (params string\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Quotes all arguments that contain whitespace, or begin with a quote and returns a single argument string for use with Process.\+Start(). \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{classDoxyRunner_a0923bf6769c3b99b4fb8e9ce67877a94}{Find\+Exe\+Path}} (string exe)
+\begin{DoxyCompactList}\small\item\em Expands environment variables and, if unqualified, locates the exe in the working directory or the evironment\textquotesingle{}s path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDoxyRunner_ac1401822d6b3dea5626b786a94aa98d5}\label{classDoxyRunner_ac1401822d6b3dea5626b786a94aa98d5}} 
+Action$<$ int $>$ {\bfseries on\+Complete\+Call\+Back}
+\item 
+\mbox{\Hypertarget{classDoxyRunner_a9661f03da50c7783e9bc99e2a92f14e6}\label{classDoxyRunner_a9661f03da50c7783e9bc99e2a92f14e6}} 
+string {\bfseries E\+XE} = null
+\item 
+\mbox{\Hypertarget{classDoxyRunner_a015e8e8211c24140065dfc92f5fba71b}\label{classDoxyRunner_a015e8e8211c24140065dfc92f5fba71b}} 
+string\mbox{[}$\,$\mbox{]} {\bfseries Args}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class spawns and runs Doxygen in a separate thread, and could serve as an example of how to create plugins for unity that call a command line application and then get the data back into Unity safely. ~\newline
+ 
+
+
+
+Definition at line 454 of file Doxygen\+Window.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDoxyRunner_a9e1ad0bb37f42899aeac2e2fb59cb769}\label{classDoxyRunner_a9e1ad0bb37f42899aeac2e2fb59cb769}} 
+\index{DoxyRunner@{DoxyRunner}!EscapeArguments@{EscapeArguments}}
+\index{EscapeArguments@{EscapeArguments}!DoxyRunner@{DoxyRunner}}
+\doxysubsubsection{\texorpdfstring{EscapeArguments()}{EscapeArguments()}}
+{\footnotesize\ttfamily static string Doxy\+Runner.\+Escape\+Arguments (\begin{DoxyParamCaption}\item[{params string\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Quotes all arguments that contain whitespace, or begin with a quote and returns a single argument string for use with Process.\+Start(). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & A list of strings for arguments, may not contain null, \textquotesingle{}\textbackslash{}0\textquotesingle{}, \textquotesingle{}\textbackslash{}r\textquotesingle{}, or \textquotesingle{}~\newline
+\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The combined list of escaped/quoted strings
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Argument\+Null\+Exception} & Raised when one of the arguments is null\\
+\hline
+{\em System.\+Argument\+Out\+Of\+Range\+Exception} & Raised if an argument contains \textquotesingle{}\textbackslash{}0\textquotesingle{}, \textquotesingle{}\textbackslash{}r\textquotesingle{}, or \textquotesingle{}~\newline
+\textquotesingle{}\\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 548 of file Doxygen\+Window.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{549     \{}
+\DoxyCodeLine{550         StringBuilder arguments = \textcolor{keyword}{new} StringBuilder();}
+\DoxyCodeLine{551         Regex invalidChar = \textcolor{keyword}{new} Regex(\textcolor{stringliteral}{"[\(\backslash\)x00\(\backslash\)x0a\(\backslash\)x0d]"});\textcolor{comment}{//  these can not be escaped}}
+\DoxyCodeLine{552         Regex needsQuotes = \textcolor{keyword}{new} Regex(\textcolor{stringliteral}{@"\(\backslash\)s|"""});\textcolor{comment}{//          contains whitespace or two quote characters}}
+\DoxyCodeLine{553         Regex escapeQuote = \textcolor{keyword}{new} Regex(\textcolor{stringliteral}{@"(\(\backslash\)\(\backslash\)*)(""|\$)"});\textcolor{comment}{//    one or more '\(\backslash\)' followed with a quote or end of string}}
+\DoxyCodeLine{554         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} carg = 0; args != \textcolor{keyword}{null} \&\& carg < args.Length; carg++)}
+\DoxyCodeLine{555         \{}
+\DoxyCodeLine{556             \textcolor{keywordflow}{if} (args[carg] == \textcolor{keyword}{null})}
+\DoxyCodeLine{557             \{}
+\DoxyCodeLine{558                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"args["} + carg + \textcolor{stringliteral}{"]"});}
+\DoxyCodeLine{559             \}}
+\DoxyCodeLine{560             \textcolor{keywordflow}{if} (invalidChar.IsMatch(args[carg]))}
+\DoxyCodeLine{561             \{}
+\DoxyCodeLine{562                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"args["} + carg + \textcolor{stringliteral}{"]"});}
+\DoxyCodeLine{563             \}}
+\DoxyCodeLine{564             \textcolor{keywordflow}{if} (args[carg] == String.Empty)}
+\DoxyCodeLine{565             \{}
+\DoxyCodeLine{566                 arguments.Append(\textcolor{stringliteral}{"\(\backslash\)"\(\backslash\)""});}
+\DoxyCodeLine{567             \}}
+\DoxyCodeLine{568             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!needsQuotes.IsMatch(args[carg]))}
+\DoxyCodeLine{569             \{}
+\DoxyCodeLine{570                 arguments.Append(args[carg]);}
+\DoxyCodeLine{571             \}}
+\DoxyCodeLine{572             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{573             \{}
+\DoxyCodeLine{574                 arguments.Append(\textcolor{charliteral}{'"'});}
+\DoxyCodeLine{575                 arguments.Append(escapeQuote.Replace(args[carg], m =>}
+\DoxyCodeLine{576                                                      m.Groups[1].Value + m.Groups[1].Value +}
+\DoxyCodeLine{577                                                      (m.Groups[2].Value == \textcolor{stringliteral}{"\(\backslash\)""} ? \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)\(\backslash\)""} : \textcolor{stringliteral}{""})}
+\DoxyCodeLine{578                                                     ));}
+\DoxyCodeLine{579                 arguments.Append(\textcolor{charliteral}{'"'});}
+\DoxyCodeLine{580             \}}
+\DoxyCodeLine{581             \textcolor{keywordflow}{if} (carg + 1 < args.Length)}
+\DoxyCodeLine{582                 arguments.Append(\textcolor{charliteral}{' '});}
+\DoxyCodeLine{583         \}}
+\DoxyCodeLine{584         \textcolor{keywordflow}{return} arguments.ToString();}
+\DoxyCodeLine{585     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDoxyRunner_a0923bf6769c3b99b4fb8e9ce67877a94}\label{classDoxyRunner_a0923bf6769c3b99b4fb8e9ce67877a94}} 
+\index{DoxyRunner@{DoxyRunner}!FindExePath@{FindExePath}}
+\index{FindExePath@{FindExePath}!DoxyRunner@{DoxyRunner}}
+\doxysubsubsection{\texorpdfstring{FindExePath()}{FindExePath()}}
+{\footnotesize\ttfamily static string Doxy\+Runner.\+Find\+Exe\+Path (\begin{DoxyParamCaption}\item[{string}]{exe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Expands environment variables and, if unqualified, locates the exe in the working directory or the evironment\textquotesingle{}s path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exe} & The name of the executable file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The fully-\/qualified path to the file
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+I\+O.\+File\+Not\+Found\+Exception} & Raised when the exe was not found\\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 595 of file Doxygen\+Window.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{596     \{}
+\DoxyCodeLine{597         exe = Environment.ExpandEnvironmentVariables(exe);}
+\DoxyCodeLine{598         \textcolor{keywordflow}{if} (!File.Exists(exe))}
+\DoxyCodeLine{599         \{}
+\DoxyCodeLine{600             \textcolor{keywordflow}{if} (Path.GetDirectoryName(exe) == String.Empty)}
+\DoxyCodeLine{601             \{}
+\DoxyCodeLine{602                 \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} test \textcolor{keywordflow}{in} (Environment.GetEnvironmentVariable(\textcolor{stringliteral}{"PATH"}) ?? \textcolor{stringliteral}{""}).Split(\textcolor{charliteral}{';'}))}
+\DoxyCodeLine{603                 \{}
+\DoxyCodeLine{604                     \textcolor{keywordtype}{string} path = test.Trim();}
+\DoxyCodeLine{605                     \textcolor{keywordflow}{if} (!String.IsNullOrEmpty(path) \&\& File.Exists(path = Path.Combine(path, exe)))}
+\DoxyCodeLine{606                         \textcolor{keywordflow}{return} Path.GetFullPath(path);}
+\DoxyCodeLine{607                 \}}
+\DoxyCodeLine{608             \}}
+\DoxyCodeLine{609             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FileNotFoundException(\textcolor{keyword}{new} FileNotFoundException().Message, exe);}
+\DoxyCodeLine{610         \}}
+\DoxyCodeLine{611         \textcolor{keywordflow}{return} Path.GetFullPath(exe);}
+\DoxyCodeLine{612     \}   }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDoxyRunner_a7458975df0c43d397051f225d6def184}\label{classDoxyRunner_a7458975df0c43d397051f225d6def184}} 
+\index{DoxyRunner@{DoxyRunner}!Run@{Run}}
+\index{Run@{Run}!DoxyRunner@{DoxyRunner}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily static int Doxy\+Runner.\+Run (\begin{DoxyParamCaption}\item[{Action$<$ string $>$}]{output,  }\item[{Text\+Reader}]{input,  }\item[{string}]{exe,  }\item[{params string\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Runs the specified executable with the provided arguments and returns the process\textquotesingle{} exit code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em output} & Recieves the output of either std/err or std/out\\
+\hline
+{\em input} & Provides the line-\/by-\/line input that will be written to std/in, null for empty\\
+\hline
+{\em exe} & The executable to run, may be unqualified or contain environment variables\\
+\hline
+{\em args} & The list of unescaped arguments to provide to the executable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns process\textquotesingle{} exit code after the program exits
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+I\+O.\+File\+Not\+Found\+Exception} & Raised when the exe was not found\\
+\hline
+{\em System.\+Argument\+Null\+Exception} & Raised when one of the arguments is null\\
+\hline
+{\em System.\+Argument\+Out\+Of\+Range\+Exception} & Raised if an argument contains \textquotesingle{}\textbackslash{}0\textquotesingle{}, \textquotesingle{}\textbackslash{}r\textquotesingle{}, or \textquotesingle{}~\newline
+\textquotesingle{} \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 499 of file Doxygen\+Window.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{500     \{}
+\DoxyCodeLine{501         \textcolor{keywordflow}{if} (String.IsNullOrEmpty(exe))}
+\DoxyCodeLine{502             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} FileNotFoundException();}
+\DoxyCodeLine{503         \textcolor{keywordflow}{if} (output == \textcolor{keyword}{null})}
+\DoxyCodeLine{504             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"output"});}
+\DoxyCodeLine{505 }
+\DoxyCodeLine{506         ProcessStartInfo psi = \textcolor{keyword}{new} ProcessStartInfo();}
+\DoxyCodeLine{507         psi.UseShellExecute = \textcolor{keyword}{false};}
+\DoxyCodeLine{508         psi.RedirectStandardError = \textcolor{keyword}{true};}
+\DoxyCodeLine{509         psi.RedirectStandardOutput = \textcolor{keyword}{true};}
+\DoxyCodeLine{510         psi.RedirectStandardInput = \textcolor{keyword}{true};}
+\DoxyCodeLine{511         psi.WindowStyle = ProcessWindowStyle.Hidden;}
+\DoxyCodeLine{512         psi.CreateNoWindow = \textcolor{keyword}{true};}
+\DoxyCodeLine{513         psi.ErrorDialog = \textcolor{keyword}{false};}
+\DoxyCodeLine{514         psi.WorkingDirectory = WorkingFolder;}
+\DoxyCodeLine{515         psi.FileName = \mbox{\hyperlink{classDoxyRunner_a0923bf6769c3b99b4fb8e9ce67877a94}{FindExePath}}(exe); }
+\DoxyCodeLine{516         psi.Arguments = \mbox{\hyperlink{classDoxyRunner_a9e1ad0bb37f42899aeac2e2fb59cb769}{EscapeArguments}}(args); }
+\DoxyCodeLine{517 }
+\DoxyCodeLine{518         \textcolor{keyword}{using} (Process process = Process.Start(psi))}
+\DoxyCodeLine{519         \textcolor{keyword}{using} (ManualResetEvent mreOut = \textcolor{keyword}{new} ManualResetEvent(\textcolor{keyword}{false}),}
+\DoxyCodeLine{520                mreErr = \textcolor{keyword}{new} ManualResetEvent(\textcolor{keyword}{false}))}
+\DoxyCodeLine{521         \{}
+\DoxyCodeLine{522             process.OutputDataReceived += (o, e) => \{ \textcolor{keywordflow}{if} (e.Data == \textcolor{keyword}{null}) mreOut.Set(); \textcolor{keywordflow}{else} output(e.Data); \};}
+\DoxyCodeLine{523         process.BeginOutputReadLine();}
+\DoxyCodeLine{524             process.ErrorDataReceived += (o, e) => \{ \textcolor{keywordflow}{if} (e.Data == \textcolor{keyword}{null}) mreErr.Set(); \textcolor{keywordflow}{else} output(e.Data); \};}
+\DoxyCodeLine{525         process.BeginErrorReadLine();}
+\DoxyCodeLine{526 }
+\DoxyCodeLine{527             \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{528             \textcolor{keywordflow}{while} (input != \textcolor{keyword}{null} \&\& \textcolor{keyword}{null} != (line = input.ReadLine()))}
+\DoxyCodeLine{529                 process.StandardInput.WriteLine(line);}
+\DoxyCodeLine{530 }
+\DoxyCodeLine{531             process.StandardInput.Close();}
+\DoxyCodeLine{532             process.WaitForExit();}
+\DoxyCodeLine{533 }
+\DoxyCodeLine{534             mreOut.WaitOne();}
+\DoxyCodeLine{535             mreErr.WaitOne();}
+\DoxyCodeLine{536             \textcolor{keywordflow}{return} process.ExitCode;}
+\DoxyCodeLine{537         \}}
+\DoxyCodeLine{538     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Editor/\+Doxygen/Doxygen\+Window.\+cs\end{DoxyCompactItemize}

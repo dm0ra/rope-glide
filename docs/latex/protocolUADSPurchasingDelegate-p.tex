@@ -1,0 +1,72 @@
+\hypertarget{protocolUADSPurchasingDelegate-p}{}\doxysection{$<$U\+A\+D\+S\+Purchasing\+Delegate$>$ Protocol Reference}
+\label{protocolUADSPurchasingDelegate-p}\index{$<$UADSPurchasingDelegate$>$@{$<$UADSPurchasingDelegate$>$}}
+
+
+{\ttfamily \#import $<$U\+A\+D\+S\+Purchasing.\+h$>$}
+
+Inheritance diagram for $<$U\+A\+D\+S\+Purchasing\+Delegate$>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocolUADSPurchasingDelegate-p}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \mbox{\hyperlink{protocolUADSPurchasingDelegate-p_a66b5be9281a0ebf3bb87fea5165caa0f}{unity\+Ads\+Purchasing\+Get\+Purchasing\+Version}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocolUADSPurchasingDelegate-p_a938976cd92b08760a6cfe2293a00ca8c}{unity\+Ads\+Purchasing\+Get\+Product\+Catalog}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocolUADSPurchasingDelegate-p_abd211fcbd8fad1fde545d65ca25fb805}{unity\+Ads\+Purchasing\+Did\+Initiate\+Purchasing\+Command\+:}}
+\item 
+(void) -\/ \mbox{\hyperlink{protocolUADSPurchasingDelegate-p_ac5b584b68557fe8a7c7e1f32821ed9d5}{unity\+Ads\+Purchasing\+Initialize}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{protocolUADSPurchasingDelegate-p}{U\+A\+D\+S\+Purchasing\+Delegate}}} protocol defines the required methods for receiving I\+AP promo-\/related messages from \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}. Implemented by the asset package. \begin{DoxyNote}{Note}
+These selectors return callback responses to the \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}} webview via events. 
+\end{DoxyNote}
+
+
+Definition at line 32 of file U\+A\+D\+S\+Purchasing.\+h.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{protocolUADSPurchasingDelegate-p_abd211fcbd8fad1fde545d65ca25fb805}\label{protocolUADSPurchasingDelegate-p_abd211fcbd8fad1fde545d65ca25fb805}} 
+\index{$<$UADSPurchasingDelegate$>$@{$<$UADSPurchasingDelegate$>$}!unityAdsPurchasingDidInitiatePurchasingCommand:@{unityAdsPurchasingDidInitiatePurchasingCommand:}}
+\index{unityAdsPurchasingDidInitiatePurchasingCommand:@{unityAdsPurchasingDidInitiatePurchasingCommand:}!$<$UADSPurchasingDelegate$>$@{$<$UADSPurchasingDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unityAdsPurchasingDidInitiatePurchasingCommand:()}{unityAdsPurchasingDidInitiatePurchasingCommand:()}}
+{\footnotesize\ttfamily -\/ (void) unity\+Ads\+Purchasing\+Did\+Initiate\+Purchasing\+Command\+: \begin{DoxyParamCaption}\item[{(N\+S\+String $\ast$)}]{event\+String }\end{DoxyParamCaption}}
+
+Called when an in-\/app purchase is initiated from an ad.
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+String} & The string provided via the ad. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{protocolUADSPurchasingDelegate-p_a938976cd92b08760a6cfe2293a00ca8c}\label{protocolUADSPurchasingDelegate-p_a938976cd92b08760a6cfe2293a00ca8c}} 
+\index{$<$UADSPurchasingDelegate$>$@{$<$UADSPurchasingDelegate$>$}!unityAdsPurchasingGetProductCatalog@{unityAdsPurchasingGetProductCatalog}}
+\index{unityAdsPurchasingGetProductCatalog@{unityAdsPurchasingGetProductCatalog}!$<$UADSPurchasingDelegate$>$@{$<$UADSPurchasingDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unityAdsPurchasingGetProductCatalog()}{unityAdsPurchasingGetProductCatalog()}}
+{\footnotesize\ttfamily -\/ (void) unity\+Ads\+Purchasing\+Get\+Product\+Catalog \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Called when {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} needs to fetch catalog of products currently available for purchase. \mbox{\Hypertarget{protocolUADSPurchasingDelegate-p_a66b5be9281a0ebf3bb87fea5165caa0f}\label{protocolUADSPurchasingDelegate-p_a66b5be9281a0ebf3bb87fea5165caa0f}} 
+\index{$<$UADSPurchasingDelegate$>$@{$<$UADSPurchasingDelegate$>$}!unityAdsPurchasingGetPurchasingVersion@{unityAdsPurchasingGetPurchasingVersion}}
+\index{unityAdsPurchasingGetPurchasingVersion@{unityAdsPurchasingGetPurchasingVersion}!$<$UADSPurchasingDelegate$>$@{$<$UADSPurchasingDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unityAdsPurchasingGetPurchasingVersion()}{unityAdsPurchasingGetPurchasingVersion()}}
+{\footnotesize\ttfamily -\/ (void) unity\+Ads\+Purchasing\+Get\+Purchasing\+Version \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Called when {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} needs to fetch the version of the Purchasing asset package. \mbox{\Hypertarget{protocolUADSPurchasingDelegate-p_ac5b584b68557fe8a7c7e1f32821ed9d5}\label{protocolUADSPurchasingDelegate-p_ac5b584b68557fe8a7c7e1f32821ed9d5}} 
+\index{$<$UADSPurchasingDelegate$>$@{$<$UADSPurchasingDelegate$>$}!unityAdsPurchasingInitialize@{unityAdsPurchasingInitialize}}
+\index{unityAdsPurchasingInitialize@{unityAdsPurchasingInitialize}!$<$UADSPurchasingDelegate$>$@{$<$UADSPurchasingDelegate$>$}}
+\doxysubsubsection{\texorpdfstring{unityAdsPurchasingInitialize()}{unityAdsPurchasingInitialize()}}
+{\footnotesize\ttfamily -\/ (void) unity\+Ads\+Purchasing\+Initialize \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+Called when {\ttfamily \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}}} needs to initialize Purchasing. 
+
+The documentation for this protocol was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+ads@2.\+3.\+1/\+Runtime/\+Plugins/i\+O\+S/\+Unity\+Ads.\+framework/\+Headers/U\+A\+D\+S\+Purchasing.\+h\end{DoxyCompactItemize}

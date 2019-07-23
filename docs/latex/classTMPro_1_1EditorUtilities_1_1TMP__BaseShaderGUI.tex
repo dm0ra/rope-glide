@@ -1,0 +1,166 @@
+\hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI}{}\doxysection{T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+Base\+Shader\+G\+UI Class Reference}
+\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI}\index{TMPro.EditorUtilities.TMP\_BaseShaderGUI@{TMPro.EditorUtilities.TMP\_BaseShaderGUI}}
+
+
+Base class for Text\+Mesh Pro shader G\+U\+Is.  
+
+
+Inheritance diagram for T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+Base\+Shader\+G\+UI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_1_1ShaderFeature}{Shader\+Feature}}
+\begin{DoxyCompactList}\small\item\em Representation of a \#pragma shader\+\_\+feature. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a54fd1ffc1f5f8d62f4475a94b9d1942c}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a54fd1ffc1f5f8d62f4475a94b9d1942c}} 
+override void {\bfseries On\+G\+UI} (Material\+Editor material\+Editor, Material\+Property\mbox{[}$\,$\mbox{]} properties)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_ae4663303cae2be2a85d7e82475743902}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_ae4663303cae2be2a85d7e82475743902}} 
+void {\bfseries End\+Panel} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a04c57cff2c8f6cf93b5bf50209ef9f5f}{Do\+G\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Override this method to create the specific shader G\+UI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a025663da6334820f0831da1f2b93acb4}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a025663da6334820f0831da1f2b93acb4}} 
+bool {\bfseries Begin\+Panel} (string panel, bool expanded)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_afe82d9e4c02166aa2223f7b4bb64e479}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_afe82d9e4c02166aa2223f7b4bb64e479}} 
+bool {\bfseries Begin\+Panel} (string panel, \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_1_1ShaderFeature}{Shader\+Feature}} feature, bool expanded, bool read\+State=true)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a89a098396bd3d15f1657932e598cd989}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a89a098396bd3d15f1657932e598cd989}} 
+void {\bfseries Do\+Popup} (string name, string label, G\+U\+I\+Content\mbox{[}$\,$\mbox{]} options)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a4a49537dbf39132cc76f9f7aa54b3ccb}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a4a49537dbf39132cc76f9f7aa54b3ccb}} 
+void {\bfseries Do\+Cube\+Map} (string name, string label)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_abdebef0320477a84a0a1fa5ed036866b}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_abdebef0320477a84a0a1fa5ed036866b}} 
+void {\bfseries Do\+Texture2D} (string name, string label, bool with\+Tiling\+Offset=false, string\mbox{[}$\,$\mbox{]} speed\+Names=null)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_aae11df19c3e706f686799da96eab4ea8}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_aae11df19c3e706f686799da96eab4ea8}} 
+void {\bfseries Do\+U\+V\+Speed} (Rect rect, string\mbox{[}$\,$\mbox{]} names)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a3197f15b4a17cdac8e7c1330c4fb4630}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a3197f15b4a17cdac8e7c1330c4fb4630}} 
+void {\bfseries Do\+Toggle} (string name, string label)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a1d899f08dbbdbea230663af27915bd00}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a1d899f08dbbdbea230663af27915bd00}} 
+void {\bfseries Do\+Float} (string name, string label)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a7f787e8efc629d8f87d64cf39b3b90ea}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a7f787e8efc629d8f87d64cf39b3b90ea}} 
+void {\bfseries Do\+Color} (string name, string label)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a9278fc8116e980740730349bb7eefae1}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a9278fc8116e980740730349bb7eefae1}} 
+void {\bfseries Do\+Slider} (string name, string label)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_aab81e299b6bf1facf1516791363f506a}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_aab81e299b6bf1facf1516791363f506a}} 
+void {\bfseries Do\+Vector3} (string name, string label)
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a6eea04ec09167d1fb27859fa72ceccdb}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a6eea04ec09167d1fb27859fa72ceccdb}} 
+void {\bfseries Do\+Vector} (string name, string label, G\+U\+I\+Content\mbox{[}$\,$\mbox{]} sub\+Labels)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_ae42b49b4a8ac0302df2a897428d8c021}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_ae42b49b4a8ac0302df2a897428d8c021}} 
+Material\+Editor {\bfseries m\+\_\+\+Editor}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a2cad2ee0e2fb562872b5dded13294a1c}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a2cad2ee0e2fb562872b5dded13294a1c}} 
+Material {\bfseries m\+\_\+\+Material}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_af34d65ed45b8cc1e90a2d1e61f4af8f7}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_af34d65ed45b8cc1e90a2d1e61f4af8f7}} 
+Material\+Property\mbox{[}$\,$\mbox{]} {\bfseries m\+\_\+\+Properties}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a22d7e05eae9963523b827e20e4d02d66}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a22d7e05eae9963523b827e20e4d02d66}} 
+static bool {\bfseries s\+\_\+\+Debug\+Extended}
+\item 
+static G\+U\+I\+Content\mbox{[}$\,$\mbox{]} {\bfseries s\+\_\+\+Xywh\+Vector\+Labels}
+\item 
+static G\+U\+I\+Content\mbox{[}$\,$\mbox{]} {\bfseries s\+\_\+\+Lbrt\+Vector\+Labels}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for Text\+Mesh Pro shader G\+U\+Is. 
+
+
+
+Definition at line 7 of file T\+M\+P\+\_\+\+Base\+Shader\+G\+U\+I.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a04c57cff2c8f6cf93b5bf50209ef9f5f}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a04c57cff2c8f6cf93b5bf50209ef9f5f}} 
+\index{TMPro.EditorUtilities.TMP\_BaseShaderGUI@{TMPro.EditorUtilities.TMP\_BaseShaderGUI}!DoGUI@{DoGUI}}
+\index{DoGUI@{DoGUI}!TMPro.EditorUtilities.TMP\_BaseShaderGUI@{TMPro.EditorUtilities.TMP\_BaseShaderGUI}}
+\doxysubsubsection{\texorpdfstring{DoGUI()}{DoGUI()}}
+{\footnotesize\ttfamily abstract void T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+Base\+Shader\+G\+U\+I.\+Do\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Override this method to create the specific shader G\+UI. 
+
+
+
+Implemented in \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1TMP__SDFShaderGUI_ad54675b667fc314961cedb1beeacd6b4}{T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+S\+D\+F\+Shader\+G\+UI}}, and \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1TMP__BitmapShaderGUI_af4f6c43167899462930161b3db412cb5}{T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+Bitmap\+Shader\+G\+UI}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a903a4fee71cd5e892772505489c02f70}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a903a4fee71cd5e892772505489c02f70}} 
+\index{TMPro.EditorUtilities.TMP\_BaseShaderGUI@{TMPro.EditorUtilities.TMP\_BaseShaderGUI}!s\_LbrtVectorLabels@{s\_LbrtVectorLabels}}
+\index{s\_LbrtVectorLabels@{s\_LbrtVectorLabels}!TMPro.EditorUtilities.TMP\_BaseShaderGUI@{TMPro.EditorUtilities.TMP\_BaseShaderGUI}}
+\doxysubsubsection{\texorpdfstring{s\_LbrtVectorLabels}{s\_LbrtVectorLabels}}
+{\footnotesize\ttfamily G\+U\+I\+Content \mbox{[}$\,$\mbox{]} T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+Base\+Shader\+G\+U\+I.\+s\+\_\+\+Lbrt\+Vector\+Labels\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"L"}, \textcolor{stringliteral}{"Left"}),}
+\DoxyCodeLine{            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"B"}, \textcolor{stringliteral}{"Bottom"}),}
+\DoxyCodeLine{            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"R"}, \textcolor{stringliteral}{"Right"}),}
+\DoxyCodeLine{            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"T"}, \textcolor{stringliteral}{"Top"})}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+Definition at line 102 of file T\+M\+P\+\_\+\+Base\+Shader\+G\+U\+I.\+cs.
+
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a66f48583d3d9e461112efa8fc0e78695}\label{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a66f48583d3d9e461112efa8fc0e78695}} 
+\index{TMPro.EditorUtilities.TMP\_BaseShaderGUI@{TMPro.EditorUtilities.TMP\_BaseShaderGUI}!s\_XywhVectorLabels@{s\_XywhVectorLabels}}
+\index{s\_XywhVectorLabels@{s\_XywhVectorLabels}!TMPro.EditorUtilities.TMP\_BaseShaderGUI@{TMPro.EditorUtilities.TMP\_BaseShaderGUI}}
+\doxysubsubsection{\texorpdfstring{s\_XywhVectorLabels}{s\_XywhVectorLabels}}
+{\footnotesize\ttfamily G\+U\+I\+Content \mbox{[}$\,$\mbox{]} T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+Base\+Shader\+G\+U\+I.\+s\+\_\+\+Xywh\+Vector\+Labels\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"X"}),}
+\DoxyCodeLine{            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Y"}),}
+\DoxyCodeLine{            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"W"}, \textcolor{stringliteral}{"Width"}),}
+\DoxyCodeLine{            \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"H"}, \textcolor{stringliteral}{"Height"})}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+Definition at line 94 of file T\+M\+P\+\_\+\+Base\+Shader\+G\+U\+I.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Editor/T\+M\+P\+\_\+\+Base\+Shader\+G\+U\+I.\+cs\end{DoxyCompactItemize}

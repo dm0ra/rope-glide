@@ -1,0 +1,68 @@
+\hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BitmapShaderGUI}{}\doxysection{T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+Bitmap\+Shader\+G\+UI Class Reference}
+\label{classTMPro_1_1EditorUtilities_1_1TMP__BitmapShaderGUI}\index{TMPro.EditorUtilities.TMP\_BitmapShaderGUI@{TMPro.EditorUtilities.TMP\_BitmapShaderGUI}}
+Inheritance diagram for T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+Bitmap\+Shader\+G\+UI\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classTMPro_1_1EditorUtilities_1_1TMP__BitmapShaderGUI}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1TMP__BitmapShaderGUI_af4f6c43167899462930161b3db412cb5}{Do\+G\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Override this method to create the specific shader G\+UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 6 of file T\+M\+P\+\_\+\+Bitmap\+Shader\+G\+U\+I.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTMPro_1_1EditorUtilities_1_1TMP__BitmapShaderGUI_af4f6c43167899462930161b3db412cb5}\label{classTMPro_1_1EditorUtilities_1_1TMP__BitmapShaderGUI_af4f6c43167899462930161b3db412cb5}} 
+\index{TMPro.EditorUtilities.TMP\_BitmapShaderGUI@{TMPro.EditorUtilities.TMP\_BitmapShaderGUI}!DoGUI@{DoGUI}}
+\index{DoGUI@{DoGUI}!TMPro.EditorUtilities.TMP\_BitmapShaderGUI@{TMPro.EditorUtilities.TMP\_BitmapShaderGUI}}
+\doxysubsubsection{\texorpdfstring{DoGUI()}{DoGUI()}}
+{\footnotesize\ttfamily override void T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+Bitmap\+Shader\+G\+U\+I.\+Do\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Override this method to create the specific shader G\+UI. 
+
+
+
+Implements \mbox{\hyperlink{classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI_a04c57cff2c8f6cf93b5bf50209ef9f5f}{T\+M\+Pro.\+Editor\+Utilities.\+T\+M\+P\+\_\+\+Base\+Shader\+G\+UI}}.
+
+
+
+Definition at line 10 of file T\+M\+P\+\_\+\+Bitmap\+Shader\+G\+U\+I.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11         \{}
+\DoxyCodeLine{12             s\_Face = BeginPanel(\textcolor{stringliteral}{"Face"}, s\_Face);}
+\DoxyCodeLine{13             \textcolor{keywordflow}{if} (s\_Face)}
+\DoxyCodeLine{14             \{}
+\DoxyCodeLine{15                 DoFacePanel();}
+\DoxyCodeLine{16             \}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18             EndPanel();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20             s\_DebugExtended = BeginPanel(\textcolor{stringliteral}{"Debug Settings"}, s\_DebugExtended);}
+\DoxyCodeLine{21             \textcolor{keywordflow}{if} (s\_DebugExtended)}
+\DoxyCodeLine{22             \{}
+\DoxyCodeLine{23                 DoDebugPanel();}
+\DoxyCodeLine{24             \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26             EndPanel();}
+\DoxyCodeLine{27         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+textmeshpro@1.\+3.\+0/\+Scripts/\+Editor/T\+M\+P\+\_\+\+Bitmap\+Shader\+G\+U\+I.\+cs\end{DoxyCompactItemize}

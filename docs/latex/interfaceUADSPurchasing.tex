@@ -1,0 +1,76 @@
+\hypertarget{interfaceUADSPurchasing}{}\doxysection{U\+A\+D\+S\+Purchasing Class Reference}
+\label{interfaceUADSPurchasing}\index{UADSPurchasing@{UADSPurchasing}}
+
+
+{\ttfamily \#import $<$U\+A\+D\+S\+Purchasing.\+h$>$}
+
+Inheritance diagram for U\+A\+D\+S\+Purchasing\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceUADSPurchasing}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceUADSPurchasing_adc0fc3223719ae2d5a97fca7664969ff}\label{interfaceUADSPurchasing_adc0fc3223719ae2d5a97fca7664969ff}} 
+(instancetype) -\/ {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}
+\end{DoxyCompactItemize}
+\doxysubsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interfaceUADSPurchasing_adc0fc3223719ae2d5a97fca7664969ff}\label{interfaceUADSPurchasing_adc0fc3223719ae2d5a97fca7664969ff}} 
+(instancetype) + {\bfseries N\+S\+\_\+\+U\+N\+A\+V\+A\+I\+L\+A\+B\+LE}
+\item 
+(void) + \mbox{\hyperlink{interfaceUADSPurchasing_a29a6bb8ea1371ec5a1ac281146fdb6ba}{initialize\+:}}
+\item 
+(void) + \mbox{\hyperlink{interfaceUADSPurchasing_add1b2490e46562e0dd9292977513e5d7}{dispatch\+Return\+Event\+:with\+Payload\+:}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+{\ttfamily \mbox{\hyperlink{interfaceUADSPurchasing}{U\+A\+D\+S\+Purchasing}}} is a static class with methods initializing with a delegate and dispatching return values to the webview.
+
+\begin{DoxyWarning}{Warning}
+In order to ensure expected behaviour, the delegate must always be set. 
+\end{DoxyWarning}
+
+
+Definition at line 62 of file U\+A\+D\+S\+Purchasing.\+h.
+
+
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interfaceUADSPurchasing_add1b2490e46562e0dd9292977513e5d7}\label{interfaceUADSPurchasing_add1b2490e46562e0dd9292977513e5d7}} 
+\index{UADSPurchasing@{UADSPurchasing}!dispatchReturnEvent:withPayload:@{dispatchReturnEvent:withPayload:}}
+\index{dispatchReturnEvent:withPayload:@{dispatchReturnEvent:withPayload:}!UADSPurchasing@{UADSPurchasing}}
+\doxysubsubsection{\texorpdfstring{dispatchReturnEvent:withPayload:()}{dispatchReturnEvent:withPayload:()}}
+{\footnotesize\ttfamily + (void) dispatch\+Return\+Event\+: \begin{DoxyParamCaption}\item[{(Unity\+Ads\+Purchasing\+Event)}]{event }\item[{with\+Payload\+:(N\+S\+String $\ast$)}]{payload }\end{DoxyParamCaption}}
+
+Dispatches a callback to the \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}} webview
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & the type of event to be dispatched \\
+\hline
+{\em payload} & the string payload to be dispatched to the webview \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interfaceUADSPurchasing_a29a6bb8ea1371ec5a1ac281146fdb6ba}\label{interfaceUADSPurchasing_a29a6bb8ea1371ec5a1ac281146fdb6ba}} 
+\index{UADSPurchasing@{UADSPurchasing}!initialize:@{initialize:}}
+\index{initialize:@{initialize:}!UADSPurchasing@{UADSPurchasing}}
+\doxysubsubsection{\texorpdfstring{initialize:()}{initialize:()}}
+{\footnotesize\ttfamily + (void) initialize\+: \begin{DoxyParamCaption}\item[{(nullable id$<$ \mbox{\hyperlink{protocolUADSPurchasingDelegate-p}{U\+A\+D\+S\+Purchasing\+Delegate}} $>$)}]{delegate }\end{DoxyParamCaption}}
+
+Initializes \mbox{\hyperlink{interfaceUnityAds}{Unity\+Ads}} Purchasing. Should be initialized when app starts.
+
+
+\begin{DoxyParams}{Parameters}
+{\em delegate} & delegate for \mbox{\hyperlink{interfaceUADSPurchasing}{U\+A\+D\+S\+Purchasing}} callbacks \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Library/\+Package\+Cache/com.\+unity.\+ads@2.\+3.\+1/\+Runtime/\+Plugins/i\+O\+S/\+Unity\+Ads.\+framework/\+Headers/U\+A\+D\+S\+Purchasing.\+h\end{DoxyCompactItemize}
