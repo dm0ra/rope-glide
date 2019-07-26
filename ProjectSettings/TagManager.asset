@@ -15,6 +15,7 @@ TagManager:
   - BoosterImage
   - GliderImage
   - UserCash
+  - Rope
   layers:
   - Default
   - TransparentFX

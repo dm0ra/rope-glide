@@ -147,10 +147,12 @@ public class Rope : MonoBehaviour
          // !game.GetConnectedFlag()
         if (this.game.GetJumpClick() && Input.GetMouseButtonDown(0) && this.game.IsHingeClosest(this.index) && !this.game.GetConnectedFlag())
         {
+            //Debug.Log("Glider: " + DB.Glider + "Booster: " + DB.Booster);
             // If the glider is active, connect only when the left half of the screen is pressed
             if (DB.Glider == 1 || DB.Booster == 1)
             {
 #pragma warning disable SA1108 // Block statements should not contain embedded comments
+                Debug.Log("input flag: " + this.gameInput.GetInputFlag());
                 if (this.gameInput.GetInputFlag() == 0) // Only connect when left side of the screen is pressed
 #pragma warning restore SA1108 // Block statements should not contain embedded comments
                 {
