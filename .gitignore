@@ -4,6 +4,10 @@
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
+[Ll]ibrary/ScriptAssemblies
+[Ll]ibrary/metadata
+{Ll]ibrary/PackageCache
+
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # [Aa]ssets/AssetStoreTools*
