@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/GameOver.unity
+=======
+- path: Assets/Scenes/Swing Game.unity
+>>>>>>> eca11bc18a857d845360406fc24f6fde06dee85f
   isLoaded: 1
   isActive: 1

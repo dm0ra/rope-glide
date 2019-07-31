@@ -52,13 +52,13 @@ changes scene to the game over menu using main menu button.
 
 
 
-Definition at line 177 of file button\+Methods.\+cs.
+Definition at line 203 of file button\+Methods.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{178     \{}
-\DoxyCodeLine{179         SceneManager.LoadScene(3);}
-\DoxyCodeLine{180     \}}
+\DoxyCodeLine{205     \{}
+\DoxyCodeLine{206         SceneManager.LoadScene(3);}
+\DoxyCodeLine{207     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classButtonMethods_a821bc278f5aa738aac27660a2e5f2612}\label{classButtonMethods_a821bc278f5aa738aac27660a2e5f2612}} 
@@ -73,13 +73,13 @@ This method is used to go to the main menu. Called when main menu buttons are pr
 
 
 
-Definition at line 153 of file button\+Methods.\+cs.
+Definition at line 173 of file button\+Methods.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{154     \{}
-\DoxyCodeLine{155         SceneManager.LoadScene(3); \textcolor{comment}{// switches scene to main menu}}
-\DoxyCodeLine{156     \}}
+\DoxyCodeLine{175     \{}
+\DoxyCodeLine{176         SceneManager.LoadScene(3); \textcolor{comment}{// switches scene to main menu}}
+\DoxyCodeLine{177     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classButtonMethods_af5fb543d249c33b3d266c8027e4155e2}\label{classButtonMethods_af5fb543d249c33b3d266c8027e4155e2}} 
@@ -94,13 +94,13 @@ Load swing game with main menu button.
 
 
 
-Definition at line 169 of file button\+Methods.\+cs.
+Definition at line 193 of file button\+Methods.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{170     \{}
-\DoxyCodeLine{171         SceneManager.LoadScene(0);}
-\DoxyCodeLine{172     \}}
+\DoxyCodeLine{195     \{}
+\DoxyCodeLine{196         SceneManager.LoadScene(0);}
+\DoxyCodeLine{197     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classButtonMethods_a9908619af93a8938c6e8a3f743275b67}\label{classButtonMethods_a9908619af93a8938c6e8a3f743275b67}} 
@@ -115,13 +115,13 @@ This method is used to go to the upgrades screen.
 
 
 
-Definition at line 161 of file button\+Methods.\+cs.
+Definition at line 183 of file button\+Methods.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{162     \{}
-\DoxyCodeLine{163         SceneManager.LoadScene(4);}
-\DoxyCodeLine{164     \}}
+\DoxyCodeLine{185     \{}
+\DoxyCodeLine{186         SceneManager.LoadScene(4);}
+\DoxyCodeLine{187     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classButtonMethods_aa5f41fe1e016ab6520cb01508976d5e9}\label{classButtonMethods_aa5f41fe1e016ab6520cb01508976d5e9}} 
@@ -136,32 +136,32 @@ used to purchase a booster in the upgrade menu.
 
 
 
-Definition at line 47 of file button\+Methods.\+cs.
+Definition at line 46 of file button\+Methods.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{48     \{}
-\DoxyCodeLine{49         DB.PreviewIndex = 2; \textcolor{comment}{// sets preview index to booster}}
-\DoxyCodeLine{50 }
-\DoxyCodeLine{51         \textcolor{comment}{// setting purchased button text}}
-\DoxyCodeLine{52         \textcolor{comment}{// checks if booster is purchased}}
-\DoxyCodeLine{53         \textcolor{keywordflow}{if} (DB.Booster == 1)}
-\DoxyCodeLine{54         \{}
-\DoxyCodeLine{55             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets button to display "purchased"}}
-\DoxyCodeLine{56         \}}
-\DoxyCodeLine{57 }
-\DoxyCodeLine{58         \textcolor{comment}{// if booster is not purchased}}
-\DoxyCodeLine{59         \textcolor{keywordflow}{else}}
-\DoxyCodeLine{60         \{}
-\DoxyCodeLine{61             this.SetComponentText(this.purchaseButton, this.unpurchasedText); \textcolor{comment}{// sets button to display "buy"}}
-\DoxyCodeLine{62         \}}
-\DoxyCodeLine{63 }
-\DoxyCodeLine{64         this.boosterImage.SetActive(\textcolor{keyword}{true}); \textcolor{comment}{// displays booster}}
-\DoxyCodeLine{65         this.gliderImage.SetActive(\textcolor{keyword}{false}); \textcolor{comment}{// removes glider}}
-\DoxyCodeLine{66 }
-\DoxyCodeLine{67         this.SetComponentText(this.upgradeDescription, this.boosterDescriptionText); \textcolor{comment}{// sets the description to display in the upgrade menu}}
-\DoxyCodeLine{68         this.SetComponentText(this.upgradePrice, this.boosterPrice); \textcolor{comment}{// sets the price to display in upgrade menu}}
-\DoxyCodeLine{69     \}}
+\DoxyCodeLine{47     \{}
+\DoxyCodeLine{48         DB.PreviewIndex = 2; \textcolor{comment}{// sets preview index to booster}}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50         \textcolor{comment}{// setting purchased button text}}
+\DoxyCodeLine{51         \textcolor{comment}{// checks if booster is purchased}}
+\DoxyCodeLine{52         \textcolor{keywordflow}{if} (DB.Booster == 1)}
+\DoxyCodeLine{53         \{}
+\DoxyCodeLine{54             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets button to display "purchased"}}
+\DoxyCodeLine{55         \}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57         \textcolor{comment}{// if booster is not purchased}}
+\DoxyCodeLine{58         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{59         \{}
+\DoxyCodeLine{60             this.SetComponentText(this.purchaseButton, this.unpurchasedText); \textcolor{comment}{// sets button to display "buy"}}
+\DoxyCodeLine{61         \}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63         this.boosterImage.SetActive(\textcolor{keyword}{true}); \textcolor{comment}{// displays booster}}
+\DoxyCodeLine{64         this.gliderImage.SetActive(\textcolor{keyword}{false}); \textcolor{comment}{// removes glider}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66         this.SetComponentText(this.upgradeDescription, this.boosterDescriptionText); \textcolor{comment}{// sets the description to display in the upgrade menu}}
+\DoxyCodeLine{67         this.SetComponentText(this.upgradePrice, this.boosterPrice); \textcolor{comment}{// sets the price to display in upgrade menu}}
+\DoxyCodeLine{68     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classButtonMethods_aa13abf10d6b65aa21a89c13ea6eff6d7}\label{classButtonMethods_aa13abf10d6b65aa21a89c13ea6eff6d7}} 
@@ -176,31 +176,31 @@ used to buy a glider in the upgrade menu.
 
 
 
-Definition at line 74 of file button\+Methods.\+cs.
+Definition at line 73 of file button\+Methods.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{75     \{}
-\DoxyCodeLine{76         DB.PreviewIndex = 1;}
-\DoxyCodeLine{77 }
-\DoxyCodeLine{78         \textcolor{comment}{// setting purchase button text}}
-\DoxyCodeLine{79         \textcolor{comment}{// checks if glider is purchased}}
-\DoxyCodeLine{80         \textcolor{keywordflow}{if} (DB.Glider == 1)}
-\DoxyCodeLine{81         \{}
-\DoxyCodeLine{82             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets button to display "purchased"}}
-\DoxyCodeLine{83         \}}
-\DoxyCodeLine{84 }
-\DoxyCodeLine{85         \textcolor{comment}{// if glider is not purchased}}
-\DoxyCodeLine{86         \textcolor{keywordflow}{else}}
-\DoxyCodeLine{87         \{}
-\DoxyCodeLine{88             this.SetComponentText(this.purchaseButton, this.unpurchasedText); \textcolor{comment}{// sets button to display "buy"}}
-\DoxyCodeLine{89         \}}
-\DoxyCodeLine{90 }
-\DoxyCodeLine{91         this.SetComponentText(this.upgradeDescription, this.gliderDescriptionText); \textcolor{comment}{// sets the description to display in the upgrade menu}}
-\DoxyCodeLine{92         this.SetComponentText(this.upgradePrice, this.gliderPrice); \textcolor{comment}{// sets the price to display in upgrade menu}}
-\DoxyCodeLine{93         this.boosterImage.SetActive(\textcolor{keyword}{false}); \textcolor{comment}{// removes booster}}
-\DoxyCodeLine{94         this.gliderImage.SetActive(\textcolor{keyword}{true}); \textcolor{comment}{// display glider}}
-\DoxyCodeLine{95     \}}
+\DoxyCodeLine{74     \{}
+\DoxyCodeLine{75         DB.PreviewIndex = 1;}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77         \textcolor{comment}{// setting purchase button text}}
+\DoxyCodeLine{78         \textcolor{comment}{// checks if glider is purchased}}
+\DoxyCodeLine{79         \textcolor{keywordflow}{if} (DB.Glider == 1)}
+\DoxyCodeLine{80         \{}
+\DoxyCodeLine{81             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets button to display "purchased"}}
+\DoxyCodeLine{82         \}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84         \textcolor{comment}{// if glider is not purchased}}
+\DoxyCodeLine{85         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{86         \{}
+\DoxyCodeLine{87             this.SetComponentText(this.purchaseButton, this.unpurchasedText); \textcolor{comment}{// sets button to display "buy"}}
+\DoxyCodeLine{88         \}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90         this.SetComponentText(this.upgradeDescription, this.gliderDescriptionText); \textcolor{comment}{// sets the description to display in the upgrade menu}}
+\DoxyCodeLine{91         this.SetComponentText(this.upgradePrice, this.gliderPrice); \textcolor{comment}{// sets the price to display in upgrade menu}}
+\DoxyCodeLine{92         this.boosterImage.SetActive(\textcolor{keyword}{false}); \textcolor{comment}{// removes booster}}
+\DoxyCodeLine{93         this.gliderImage.SetActive(\textcolor{keyword}{true}); \textcolor{comment}{// display glider}}
+\DoxyCodeLine{94     \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classButtonMethods_ae3762352750dca5befc5533b530def47}\label{classButtonMethods_ae3762352750dca5befc5533b530def47}} 
@@ -215,57 +215,77 @@ called when a user clicks the buy button in the upgrades menu used to purchase u
 
 
 
-Definition at line 100 of file button\+Methods.\+cs.
+Definition at line 99 of file button\+Methods.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{101     \{}
-\DoxyCodeLine{102         \textcolor{comment}{// checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased}}
-\DoxyCodeLine{103         \textcolor{keywordflow}{if} (DB.PreviewIndex == 1 \&\& DB.BankCash > \textcolor{keyword}{this}.gPrice \&\& DB.Glider != 1)}
-\DoxyCodeLine{104         \{}
-\DoxyCodeLine{105             DB.Glider = 1; \textcolor{comment}{// sets glider purchased flag}}
-\DoxyCodeLine{106             DB.BankCash -\/= this.gPrice; \textcolor{comment}{// decreases cash}}
-\DoxyCodeLine{107             Debug.Log(\textcolor{stringliteral}{"Glider Purchased"});}
-\DoxyCodeLine{108             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets the text of the button to a purchased message}}
-\DoxyCodeLine{109 }
-\DoxyCodeLine{110             \textcolor{comment}{// saves highscore and cash to csv file}}
-\DoxyCodeLine{111             var csv = \textcolor{keyword}{new} System.Text.StringBuilder();}
+\DoxyCodeLine{100     \{}
+\DoxyCodeLine{101         \textcolor{comment}{// checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased}}
+\DoxyCodeLine{102         \textcolor{keywordflow}{if} (DB.PreviewIndex == 1 \&\& DB.BankCash > \textcolor{keyword}{this}.gPrice \&\& DB.Glider != 1)}
+\DoxyCodeLine{103         \{}
+\DoxyCodeLine{104             DB.Glider = 1; \textcolor{comment}{// sets glider purchased flag}}
+\DoxyCodeLine{105             DB.BankCash -\/= this.gPrice; \textcolor{comment}{// decreases cash}}
+\DoxyCodeLine{106             Debug.Log(\textcolor{stringliteral}{"Glider Purchased"});}
+\DoxyCodeLine{107             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets the text of the button to a purchased message}}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109             \textcolor{comment}{// saves highscore and cash to csv file}}
+\DoxyCodeLine{110             var csv = \textcolor{keyword}{new} System.Text.StringBuilder();}
+\DoxyCodeLine{111 \textcolor{preprocessor}{\#pragma warning disable CA1305 // Specify IFormatProvider}}
 \DoxyCodeLine{112             var highScoreString = DB.HighScore.ToString();}
-\DoxyCodeLine{113             var newLine = \textcolor{keywordtype}{string}.Format(highScoreString);}
-\DoxyCodeLine{114             var cashString = DB.BankCash.ToString();}
-\DoxyCodeLine{115             var glideString = DB.Glider.ToString();}
-\DoxyCodeLine{116             var boostString = DB.Booster.ToString();}
-\DoxyCodeLine{117             csv.AppendLine(newLine);}
-\DoxyCodeLine{118             csv.AppendLine(cashString);}
-\DoxyCodeLine{119             csv.AppendLine(glideString);}
-\DoxyCodeLine{120             csv.AppendLine(boostString);}
-\DoxyCodeLine{121             \mbox{\hyperlink{classDataSaver}{DataSaver}}.SaveData<\textcolor{keywordtype}{string}>(csv.ToString(), \textcolor{stringliteral}{"HighScore"});}
-\DoxyCodeLine{122         \}}
-\DoxyCodeLine{123 }
-\DoxyCodeLine{124         \textcolor{comment}{// checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased}}
-\DoxyCodeLine{125         \textcolor{keywordflow}{if} (DB.PreviewIndex == 2 \&\& DB.BankCash > \textcolor{keyword}{this}.bPrice \&\& DB.Booster != 1)}
-\DoxyCodeLine{126         \{}
-\DoxyCodeLine{127             DB.Booster = 1; \textcolor{comment}{// sets booster purchased flag}}
-\DoxyCodeLine{128             DB.BankCash -\/= this.bPrice; \textcolor{comment}{// decreases cash}}
-\DoxyCodeLine{129             Debug.Log(\textcolor{stringliteral}{"Booster Purchased"});}
-\DoxyCodeLine{130             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets the text of the button to a purchased message}}
-\DoxyCodeLine{131 }
-\DoxyCodeLine{132             \textcolor{comment}{// saves highscore and cash to csv file}}
-\DoxyCodeLine{133             var csv = \textcolor{keyword}{new} System.Text.StringBuilder();}
-\DoxyCodeLine{134             var highScoreString = DB.HighScore.ToString();}
-\DoxyCodeLine{135             var newLine = \textcolor{keywordtype}{string}.Format(highScoreString);}
-\DoxyCodeLine{136             var cashString = DB.BankCash.ToString();}
-\DoxyCodeLine{137             var glideString = DB.Glider.ToString();}
-\DoxyCodeLine{138             var boostString = DB.Booster.ToString();}
-\DoxyCodeLine{139             csv.AppendLine(newLine);}
-\DoxyCodeLine{140             csv.AppendLine(cashString);}
-\DoxyCodeLine{141             csv.AppendLine(glideString);}
-\DoxyCodeLine{142             csv.AppendLine(boostString);}
-\DoxyCodeLine{143             \mbox{\hyperlink{classDataSaver}{DataSaver}}.SaveData<\textcolor{keywordtype}{string}>(csv.ToString(), \textcolor{stringliteral}{"HighScore"});}
-\DoxyCodeLine{144         \}}
-\DoxyCodeLine{145 }
-\DoxyCodeLine{146         this.SetComponentText(this.userCash, this.cashString + DB.BankCash); \textcolor{comment}{// updates new cash variable}}
-\DoxyCodeLine{147     \}}
+\DoxyCodeLine{113 \textcolor{preprocessor}{\#pragma warning restore CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{114 \textcolor{preprocessor}{\#pragma warning disable CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{115             var newLine = \textcolor{keywordtype}{string}.Format(highScoreString);}
+\DoxyCodeLine{116 \textcolor{preprocessor}{\#pragma warning restore CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{117 \textcolor{preprocessor}{\#pragma warning disable CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{118             var cashString = DB.BankCash.ToString();}
+\DoxyCodeLine{119 \textcolor{preprocessor}{\#pragma warning restore CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{120 \textcolor{preprocessor}{\#pragma warning disable CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{121             var glideString = DB.Glider.ToString();}
+\DoxyCodeLine{122 \textcolor{preprocessor}{\#pragma warning restore CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{123 \textcolor{preprocessor}{\#pragma warning disable CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{124             var boostString = DB.Booster.ToString();}
+\DoxyCodeLine{125 \textcolor{preprocessor}{\#pragma warning restore CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{126             csv.AppendLine(newLine);}
+\DoxyCodeLine{127             csv.AppendLine(cashString);}
+\DoxyCodeLine{128             csv.AppendLine(glideString);}
+\DoxyCodeLine{129             csv.AppendLine(boostString);}
+\DoxyCodeLine{130             \mbox{\hyperlink{classDataSaver}{DataSaver}}.SaveData<\textcolor{keywordtype}{string}>(csv.ToString(), \textcolor{stringliteral}{"HighScore"});}
+\DoxyCodeLine{131         \}}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133         \textcolor{comment}{// checks which item is being previewed and that the user has enough cash, and checks that it is already not purchased}}
+\DoxyCodeLine{134         \textcolor{keywordflow}{if} (DB.PreviewIndex == 2 \&\& DB.BankCash > \textcolor{keyword}{this}.bPrice \&\& DB.Booster != 1)}
+\DoxyCodeLine{135         \{}
+\DoxyCodeLine{136             DB.Booster = 1; \textcolor{comment}{// sets booster purchased flag}}
+\DoxyCodeLine{137             DB.BankCash -\/= this.bPrice; \textcolor{comment}{// decreases cash}}
+\DoxyCodeLine{138             Debug.Log(\textcolor{stringliteral}{"Booster Purchased"});}
+\DoxyCodeLine{139             this.SetComponentText(this.purchaseButton, this.purchasedText); \textcolor{comment}{// sets the text of the button to a purchased message}}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141             \textcolor{comment}{// saves highscore and cash to csv file}}
+\DoxyCodeLine{142             var csv = \textcolor{keyword}{new} System.Text.StringBuilder();}
+\DoxyCodeLine{143 \textcolor{preprocessor}{\#pragma warning disable CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{144             var highScoreString = DB.HighScore.ToString();}
+\DoxyCodeLine{145 \textcolor{preprocessor}{\#pragma warning restore CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{146 \textcolor{preprocessor}{\#pragma warning disable CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{147             var newLine = \textcolor{keywordtype}{string}.Format(highScoreString);}
+\DoxyCodeLine{148 \textcolor{preprocessor}{\#pragma warning restore CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{149 \textcolor{preprocessor}{\#pragma warning disable CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{150             var cashString = DB.BankCash.ToString();}
+\DoxyCodeLine{151 \textcolor{preprocessor}{\#pragma warning restore CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{152 \textcolor{preprocessor}{\#pragma warning disable CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{153             var glideString = DB.Glider.ToString();}
+\DoxyCodeLine{154 \textcolor{preprocessor}{\#pragma warning restore CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{155 \textcolor{preprocessor}{\#pragma warning disable CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{156             var boostString = DB.Booster.ToString();}
+\DoxyCodeLine{157 \textcolor{preprocessor}{\#pragma warning restore CA1305 // Specify IFormatProvider}}
+\DoxyCodeLine{158             csv.AppendLine(newLine);}
+\DoxyCodeLine{159             csv.AppendLine(cashString);}
+\DoxyCodeLine{160             csv.AppendLine(glideString);}
+\DoxyCodeLine{161             csv.AppendLine(boostString);}
+\DoxyCodeLine{162             \mbox{\hyperlink{classDataSaver}{DataSaver}}.SaveData<\textcolor{keywordtype}{string}>(csv.ToString(), \textcolor{stringliteral}{"HighScore"});}
+\DoxyCodeLine{163         \}}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{165         this.SetComponentText(this.userCash, this.cashString + DB.BankCash); \textcolor{comment}{// updates new cash variable}}
+\DoxyCodeLine{166     \}}
 
 \end{DoxyCode}
 

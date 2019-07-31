@@ -13,1356 +13,3210 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-31T00:55:59.934-04:00
-  initializedAtString: 2019-07-30T23:59:33.063-04:00
+  lastUpdatedAtString: 2019-07-31T19:44:20.407-04:00
+  initializedAtString: 2019-07-31T19:43:45.221-04:00
   entries:
+  - path: .gitattributes
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\.gitattributes
+    projectPath: .gitattributes
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: .gitignore
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\.gitignore
+    projectPath: .gitignore
+    originalPath: 
+    status: 3
+    staged: 1
   - path: .vs\Rope-Glide\v15\.suo
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\.suo
     projectPath: .vs\Rope-Glide\v15\.suo
     originalPath: 
-    status: 3
-    staged: 0
-  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
-    originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-wal
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Assembly-CSharp.csproj
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     status: 3
-    staged: 0
+    staged: 1
   - path: Assembly-CSharp-Editor-firstpass.csproj
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assembly-CSharp-Editor-firstpass.csproj
     projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     status: 3
-    staged: 0
-  - path: Assets\Editor Default Resources.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources.meta
-    projectPath: Assets\Editor Default Resources.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase.meta
-    projectPath: Assets\Editor Default Resources\Firebase.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_analytics.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_analytics.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_analytics.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_analytics.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_analytics.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_analytics.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_analytics_dark.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_analytics_dark.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_analytics_dark.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_analytics_dark.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_analytics_dark.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_analytics_dark.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_auth.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_auth.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_auth.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_auth.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_auth.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_auth.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_auth_dark.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_auth_dark.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_auth_dark.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_auth_dark.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_auth_dark.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_auth_dark.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_config.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_config.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_config.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_config.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_config.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_config.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_config_dark.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_config_dark.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_config_dark.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_config_dark.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_config_dark.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_config_dark.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_crashlytics.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_crashlytics.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_crashlytics.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_crashlytics.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_crashlytics.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_crashlytics.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_database.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_database.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_database.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_database.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_database.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_database.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_database_dark.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_database_dark.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_database_dark.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_database_dark.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_database_dark.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_database_dark.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_dynamic_links.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_dynamic_links.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_dynamic_links.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_dynamic_links.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_dynamic_links.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_dynamic_links.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_functions.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_functions.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_functions.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_functions.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_functions.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_functions.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_functions_dark.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_functions_dark.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_functions_dark.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_functions_dark.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_functions_dark.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_functions_dark.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_storage.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_storage.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_storage.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_storage.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_storage.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_storage.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_storage_dark.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_storage_dark.png
-    projectPath: Assets\Editor Default Resources\Firebase\fb_storage_dark.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\fb_storage_dark.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_storage_dark.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\fb_storage_dark.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\firebase_lockup.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\firebase_lockup.png
-    projectPath: Assets\Editor Default Resources\Firebase\firebase_lockup.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\firebase_lockup.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\firebase_lockup.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\firebase_lockup.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png
-    projectPath: Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png.meta
-    projectPath: Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase.meta
-    projectPath: Assets\Firebase.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor.meta
-    projectPath: Assets\Firebase\Editor.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\AppDependencies.xml
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\AppDependencies.xml
-    projectPath: Assets\Firebase\Editor\AppDependencies.xml
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\AppDependencies.xml.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\AppDependencies.xml.meta
-    projectPath: Assets\Firebase\Editor\AppDependencies.xml.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\AuthDependencies.xml
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\AuthDependencies.xml
-    projectPath: Assets\Firebase\Editor\AuthDependencies.xml
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\AuthDependencies.xml.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\AuthDependencies.xml.meta
-    projectPath: Assets\Firebase\Editor\AuthDependencies.xml.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\DatabaseDependencies.xml
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\DatabaseDependencies.xml
-    projectPath: Assets\Firebase\Editor\DatabaseDependencies.xml
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\DatabaseDependencies.xml.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\DatabaseDependencies.xml.meta
-    projectPath: Assets\Firebase\Editor\DatabaseDependencies.xml.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\Firebase.Editor.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\Firebase.Editor.dll
-    projectPath: Assets\Firebase\Editor\Firebase.Editor.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\Firebase.Editor.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\Firebase.Editor.dll.meta
-    projectPath: Assets\Firebase\Editor\Firebase.Editor.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED
-    projectPath: Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED.meta
-    projectPath: Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt
-    projectPath: Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt.meta
-    projectPath: Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt
-    projectPath: Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt.meta
-    projectPath: Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\generate_xml_from_google_services_json.exe
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\generate_xml_from_google_services_json.exe
-    projectPath: Assets\Firebase\Editor\generate_xml_from_google_services_json.exe
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\generate_xml_from_google_services_json.exe.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\generate_xml_from_google_services_json.exe.meta
-    projectPath: Assets\Firebase\Editor\generate_xml_from_google_services_json.exe.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\generate_xml_from_google_services_json.py
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\generate_xml_from_google_services_json.py
-    projectPath: Assets\Firebase\Editor\generate_xml_from_google_services_json.py
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\generate_xml_from_google_services_json.py.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\generate_xml_from_google_services_json.py.meta
-    projectPath: Assets\Firebase\Editor\generate_xml_from_google_services_json.py.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\network_request.exe
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\network_request.exe
-    projectPath: Assets\Firebase\Editor\network_request.exe
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\network_request.exe.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\network_request.exe.meta
-    projectPath: Assets\Firebase\Editor\network_request.exe.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\network_request.py
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\network_request.py
-    projectPath: Assets\Firebase\Editor\network_request.py
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\network_request.py.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\network_request.py.meta
-    projectPath: Assets\Firebase\Editor\network_request.py.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\NOTICE
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\NOTICE
-    projectPath: Assets\Firebase\Editor\NOTICE
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\NOTICE.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\NOTICE.meta
-    projectPath: Assets\Firebase\Editor\NOTICE.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\readme.md
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\readme.md
-    projectPath: Assets\Firebase\Editor\readme.md
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Editor\readme.md.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\readme.md.meta
-    projectPath: Assets\Firebase\Editor\readme.md.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository.meta
-    projectPath: Assets\Firebase\m2repository.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com.meta
-    projectPath: Assets\Firebase\m2repository\com.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google.meta
-    projectPath: Assets\Firebase\m2repository\com\google.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml.meta
-    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins.meta
-    projectPath: Assets\Firebase\Plugins.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Firebase.App.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.App.dll
-    projectPath: Assets\Firebase\Plugins\Firebase.App.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Firebase.App.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.App.dll.meta
-    projectPath: Assets\Firebase\Plugins\Firebase.App.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Firebase.Auth.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Auth.dll
-    projectPath: Assets\Firebase\Plugins\Firebase.Auth.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Firebase.Auth.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Auth.dll.meta
-    projectPath: Assets\Firebase\Plugins\Firebase.Auth.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Firebase.Database.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Database.dll
-    projectPath: Assets\Firebase\Plugins\Firebase.Database.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Firebase.Database.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Database.dll.meta
-    projectPath: Assets\Firebase\Plugins\Firebase.Database.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Firebase.Platform.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Platform.dll
-    projectPath: Assets\Firebase\Plugins\Firebase.Platform.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Firebase.Platform.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Platform.dll.meta
-    projectPath: Assets\Firebase\Plugins\Firebase.Platform.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Firebase.TaskExtension.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.TaskExtension.dll
-    projectPath: Assets\Firebase\Plugins\Firebase.TaskExtension.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Firebase.TaskExtension.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.TaskExtension.dll.meta
-    projectPath: Assets\Firebase\Plugins\Firebase.TaskExtension.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Google.MiniJson.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Google.MiniJson.dll
-    projectPath: Assets\Firebase\Plugins\Google.MiniJson.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Google.MiniJson.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Google.MiniJson.dll.meta
-    projectPath: Assets\Firebase\Plugins\Google.MiniJson.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Google.Sharpen.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Google.Sharpen.dll
-    projectPath: Assets\Firebase\Plugins\Google.Sharpen.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Google.Sharpen.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Google.Sharpen.dll.meta
-    projectPath: Assets\Firebase\Plugins\Google.Sharpen.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Http.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Http.meta
-    projectPath: Assets\Firebase\Plugins\Http.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Http\link.xml_DISABLED
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Http\link.xml_DISABLED
-    projectPath: Assets\Firebase\Plugins\Http\link.xml_DISABLED
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\Http\link.xml_DISABLED.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Http\link.xml_DISABLED.meta
-    projectPath: Assets\Firebase\Plugins\Http\link.xml_DISABLED.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\iOS.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS.meta
-    projectPath: Assets\Firebase\Plugins\iOS.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\iOS\Firebase.App.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.App.dll
-    projectPath: Assets\Firebase\Plugins\iOS\Firebase.App.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\iOS\Firebase.App.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.App.dll.meta
-    projectPath: Assets\Firebase\Plugins\iOS\Firebase.App.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\iOS\Firebase.Auth.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.Auth.dll
-    projectPath: Assets\Firebase\Plugins\iOS\Firebase.Auth.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\iOS\Firebase.Auth.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.Auth.dll.meta
-    projectPath: Assets\Firebase\Plugins\iOS\Firebase.Auth.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\iOS\Firebase.Database.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.Database.dll
-    projectPath: Assets\Firebase\Plugins\iOS\Firebase.Database.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\iOS\Firebase.Database.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.Database.dll.meta
-    projectPath: Assets\Firebase\Plugins\iOS\Firebase.Database.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\link.xml_DISABLED
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\link.xml_DISABLED
-    projectPath: Assets\Firebase\Plugins\link.xml_DISABLED
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\link.xml_DISABLED.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\link.xml_DISABLED.meta
-    projectPath: Assets\Firebase\Plugins\link.xml_DISABLED.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64.meta
-    projectPath: Assets\Firebase\Plugins\x86_64.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle.meta
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll.meta
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so.meta
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle.meta
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll.meta
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so.meta
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle.meta
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll.meta
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so.meta
-    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\GoogleService-Info.plist
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\GoogleService-Info.plist
-    projectPath: Assets\GoogleService-Info.plist
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\GoogleService-Info.plist.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\GoogleService-Info.plist.meta
-    projectPath: Assets\GoogleService-Info.plist.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Parse.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse.meta
-    projectPath: Assets\Parse.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Parse\Plugins.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins.meta
-    projectPath: Assets\Parse\Plugins.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Parse\Plugins\dotNet45.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\dotNet45.meta
-    projectPath: Assets\Parse\Plugins\dotNet45.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Parse\Plugins\dotNet45\Unity.Compat.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\dotNet45\Unity.Compat.dll
-    projectPath: Assets\Parse\Plugins\dotNet45\Unity.Compat.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Parse\Plugins\dotNet45\Unity.Compat.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\dotNet45\Unity.Compat.dll.meta
-    projectPath: Assets\Parse\Plugins\dotNet45\Unity.Compat.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll
-    projectPath: Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll.meta
-    projectPath: Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Parse\Plugins\Unity.Compat.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\Unity.Compat.dll
-    projectPath: Assets\Parse\Plugins\Unity.Compat.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Parse\Plugins\Unity.Compat.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\Unity.Compat.dll.meta
-    projectPath: Assets\Parse\Plugins\Unity.Compat.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Parse\Plugins\Unity.Tasks.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\Unity.Tasks.dll
-    projectPath: Assets\Parse\Plugins\Unity.Tasks.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Parse\Plugins\Unity.Tasks.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\Unity.Tasks.dll.meta
-    projectPath: Assets\Parse\Plugins\Unity.Tasks.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver.meta
-    projectPath: Assets\PlayServicesResolver.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver\Editor.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor.meta
-    projectPath: Assets\PlayServicesResolver\Editor.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll
-    projectPath: Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll.meta
-    projectPath: Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll
-    projectPath: Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll.meta
-    projectPath: Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll
-    projectPath: Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll.meta
-    projectPath: Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll
-    projectPath: Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll.meta
-    projectPath: Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt
-    projectPath: Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt.meta
-    projectPath: Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\Android.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android.meta
-    projectPath: Assets\Plugins\Android.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\Android\Firebase.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android\Firebase.meta
-    projectPath: Assets\Plugins\Android\Firebase.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\Android\Firebase\AndroidManifest.xml
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android\Firebase\AndroidManifest.xml
-    projectPath: Assets\Plugins\Android\Firebase\AndroidManifest.xml
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\Android\Firebase\AndroidManifest.xml.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android\Firebase\AndroidManifest.xml.meta
-    projectPath: Assets\Plugins\Android\Firebase\AndroidManifest.xml.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\Android\Firebase\project.properties
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android\Firebase\project.properties
-    projectPath: Assets\Plugins\Android\Firebase\project.properties
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\Android\Firebase\project.properties.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android\Firebase\project.properties.meta
-    projectPath: Assets\Plugins\Android\Firebase\project.properties.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\iOS.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS.meta
-    projectPath: Assets\Plugins\iOS.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\iOS\Firebase.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase.meta
-    projectPath: Assets\Plugins\iOS\Firebase.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a
-    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a.meta
-    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a
-    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a.meta
-    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a
-    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a.meta
-    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scenes\GameOver.unity
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Scenes\GameOver.unity
-    projectPath: Assets\Scenes\GameOver.unity
+    staged: 1
+  - path: Assets\glider.cs
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\glider.cs
+    projectPath: Assets\glider.cs
     originalPath: 
     status: 3
-    staged: 0
-  - path: Assets\scripts\EndScreenText.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\EndScreenText.cs
-    projectPath: Assets\scripts\EndScreenText.cs
+    staged: 1
+  - path: Assets\InputClass.cs
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\InputClass.cs
+    projectPath: Assets\InputClass.cs
     originalPath: 
     status: 3
-    staged: 0
-  - path: Assets\scripts\GameController.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\GameController.cs
-    projectPath: Assets\scripts\GameController.cs
+    staged: 1
+  - path: Assets\Resources\VisualRope.prefab
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Resources\VisualRope.prefab
+    projectPath: Assets\Resources\VisualRope.prefab
     originalPath: 
     status: 3
-    staged: 0
-  - path: Assets\scripts\saverUnitTest.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\saverUnitTest.cs
-    projectPath: Assets\scripts\saverUnitTest.cs
+    staged: 1
+  - path: Assets\scripts\CSVParsing.cs
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\CSVParsing.cs
+    projectPath: Assets\scripts\CSVParsing.cs
     originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\scripts\saverUnitTest.cs.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\saverUnitTest.cs.meta
-    projectPath: Assets\scripts\saverUnitTest.cs.meta
+    status: 3
+    staged: 1
+  - path: Assets\scripts\Rope.cs
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Rope.cs
+    projectPath: Assets\scripts\Rope.cs
     originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\StreamingAssets.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\StreamingAssets.meta
-    projectPath: Assets\StreamingAssets.meta
+    status: 3
+    staged: 1
+  - path: docs\annotated.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\annotated.html
+    projectPath: docs\annotated.html
     originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\StreamingAssets\google-services-desktop.json
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\StreamingAssets\google-services-desktop.json
-    projectPath: Assets\StreamingAssets\google-services-desktop.json
+    status: 3
+    staged: 1
+  - path: docs\Booster_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\Booster_8cs_source.html
+    projectPath: docs\Booster_8cs_source.html
     originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\StreamingAssets\google-services-desktop.json.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\StreamingAssets\google-services-desktop.json.meta
-    projectPath: Assets\StreamingAssets\google-services-desktop.json.meta
+    status: 3
+    staged: 1
+  - path: docs\button_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\button_8cs_source.html
+    projectPath: docs\button_8cs_source.html
     originalPath: 
-    status: 1
-    staged: 0
+    status: 3
+    staged: 1
+  - path: docs\buttonMethods_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\buttonMethods_8cs_source.html
+    projectPath: docs\buttonMethods_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\cameraControl_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\cameraControl_8cs_source.html
+    projectPath: docs\cameraControl_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classBooster.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classBooster.html
+    projectPath: docs\classBooster.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classBooster-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classBooster-members.html
+    projectPath: docs\classBooster-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classbutton.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classbutton.html
+    projectPath: docs\classbutton.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classButtonMethods.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classButtonMethods.html
+    projectPath: docs\classButtonMethods.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classcameraControl.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classcameraControl.html
+    projectPath: docs\classcameraControl.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classCSVParsing.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classCSVParsing.html
+    projectPath: docs\classCSVParsing.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classCSVParsing-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classCSVParsing-members.html
+    projectPath: docs\classCSVParsing-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classDataSaver.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classDataSaver.html
+    projectPath: docs\classDataSaver.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classEndScreenText.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classEndScreenText.html
+    projectPath: docs\classEndScreenText.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classEnemies.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classEnemies.html
+    projectPath: docs\classEnemies.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classEnemies-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classEnemies-members.html
+    projectPath: docs\classEnemies-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classes.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classes.html
+    projectPath: docs\classes.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classGameController.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classGameController.html
+    projectPath: docs\classGameController.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classGameController-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classGameController-members.html
+    projectPath: docs\classGameController-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classglider.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classglider.html
+    projectPath: docs\classglider.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classHingeManager.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classHingeManager.html
+    projectPath: docs\classHingeManager.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classInputClass.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classInputClass.html
+    projectPath: docs\classInputClass.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classLevelControl.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classLevelControl.html
+    projectPath: docs\classLevelControl.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classPickUpItem.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classPickUpItem.html
+    projectPath: docs\classPickUpItem.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classPickUpItem-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classPickUpItem-members.html
+    projectPath: docs\classPickUpItem-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classRope.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classRope.html
+    projectPath: docs\classRope.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classRope-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classRope-members.html
+    projectPath: docs\classRope-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classSceneSwitch.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classSceneSwitch.html
+    projectPath: docs\classSceneSwitch.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classSceneSwitch-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classSceneSwitch-members.html
+    projectPath: docs\classSceneSwitch-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\classTMPro_1_1TMP__Dropdown_1_1OptionData.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\classTMPro_1_1TMP__Dropdown_1_1OptionData.html
+    projectPath: docs\classTMPro_1_1TMP__Dropdown_1_1OptionData.html
+    originalPath: obj\Debug\Assembly-CSharp.csproj.CopyComplete
+    status: 6
+    staged: 1
+  - path: docs\CloudMovement_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\CloudMovement_8cs_source.html
+    projectPath: docs\CloudMovement_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\CSVParsing_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\CSVParsing_8cs_source.html
+    projectPath: docs\CSVParsing_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\DataSaver_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\DataSaver_8cs_source.html
+    projectPath: docs\DataSaver_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\DB_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\DB_8cs_source.html
+    projectPath: docs\DB_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\EndScreenText_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\EndScreenText_8cs_source.html
+    projectPath: docs\EndScreenText_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\Enemies_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\Enemies_8cs_source.html
+    projectPath: docs\Enemies_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\files.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\files.html
+    projectPath: docs\files.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions.html
+    projectPath: docs\functions.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_b.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_b.html
+    projectPath: docs\functions_b.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_c.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_c.html
+    projectPath: docs\functions_c.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_e.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_e.html
+    projectPath: docs\functions_e.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_func.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_func.html
+    projectPath: docs\functions_func.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_func_c.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_func_c.html
+    projectPath: docs\functions_func_c.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_func_g.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_func_g.html
+    projectPath: docs\functions_func_g.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_func_s.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_func_s.html
+    projectPath: docs\functions_func_s.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_g.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_g.html
+    projectPath: docs\functions_g.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_h.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_h.html
+    projectPath: docs\functions_h.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_i.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_i.html
+    projectPath: docs\functions_i.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_j.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_j.html
+    projectPath: docs\functions_j.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\functions_n.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_n.html
+    projectPath: docs\functions_n.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_p.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_p.html
+    projectPath: docs\functions_p.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_r.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_r.html
+    projectPath: docs\functions_r.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_s.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_s.html
+    projectPath: docs\functions_s.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_t.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_t.html
+    projectPath: docs\functions_t.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\functions_vars.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\functions_vars.html
+    projectPath: docs\functions_vars.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\GameController_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\GameController_8cs_source.html
+    projectPath: docs\GameController_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\glider_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\glider_8cs_source.html
+    projectPath: docs\glider_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\GlobalSuppressions_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\GlobalSuppressions_8cs_source.html
+    projectPath: docs\GlobalSuppressions_8cs_source.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\hierarchy.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\hierarchy.html
+    projectPath: docs\hierarchy.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\HingeManager_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\HingeManager_8cs_source.html
+    projectPath: docs\HingeManager_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\annotated.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\annotated.html
+    projectPath: docs\html\annotated.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\Booster_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\Booster_8cs_source.html
+    projectPath: docs\html\Booster_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\button_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\button_8cs_source.html
+    projectPath: docs\html\button_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\buttonMethods_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\buttonMethods_8cs_source.html
+    projectPath: docs\html\buttonMethods_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\cameraControl_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\cameraControl_8cs_source.html
+    projectPath: docs\html\cameraControl_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classBooster.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classBooster.html
+    projectPath: docs\html\classBooster.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classBooster-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classBooster-members.html
+    projectPath: docs\html\classBooster-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classbutton.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classbutton.html
+    projectPath: docs\html\classbutton.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classButtonMethods.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classButtonMethods.html
+    projectPath: docs\html\classButtonMethods.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classcameraControl.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classcameraControl.html
+    projectPath: docs\html\classcameraControl.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classCSVParsing.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classCSVParsing.html
+    projectPath: docs\html\classCSVParsing.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classCSVParsing-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classCSVParsing-members.html
+    projectPath: docs\html\classCSVParsing-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classDataSaver.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classDataSaver.html
+    projectPath: docs\html\classDataSaver.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classEndScreenText.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classEndScreenText.html
+    projectPath: docs\html\classEndScreenText.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classEnemies.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classEnemies.html
+    projectPath: docs\html\classEnemies.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classEnemies-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classEnemies-members.html
+    projectPath: docs\html\classEnemies-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classes.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classes.html
+    projectPath: docs\html\classes.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classGameController.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classGameController.html
+    projectPath: docs\html\classGameController.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classGameController-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classGameController-members.html
+    projectPath: docs\html\classGameController-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classglider.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classglider.html
+    projectPath: docs\html\classglider.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classHingeManager.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classHingeManager.html
+    projectPath: docs\html\classHingeManager.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classInputClass.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classInputClass.html
+    projectPath: docs\html\classInputClass.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classLevelControl.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classLevelControl.html
+    projectPath: docs\html\classLevelControl.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classPickUpItem.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classPickUpItem.html
+    projectPath: docs\html\classPickUpItem.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classPickUpItem-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classPickUpItem-members.html
+    projectPath: docs\html\classPickUpItem-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classRope.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classRope.html
+    projectPath: docs\html\classRope.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classRope-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classRope-members.html
+    projectPath: docs\html\classRope-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classSceneSwitch.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classSceneSwitch.html
+    projectPath: docs\html\classSceneSwitch.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classSceneSwitch-members.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classSceneSwitch-members.html
+    projectPath: docs\html\classSceneSwitch-members.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\classTMPro_1_1TMP__Dropdown_1_1OptionData.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\classTMPro_1_1TMP__Dropdown_1_1OptionData.html
+    projectPath: docs\html\classTMPro_1_1TMP__Dropdown_1_1OptionData.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\CloudMovement_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\CloudMovement_8cs_source.html
+    projectPath: docs\html\CloudMovement_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\CSVParsing_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\CSVParsing_8cs_source.html
+    projectPath: docs\html\CSVParsing_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\DataSaver_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\DataSaver_8cs_source.html
+    projectPath: docs\html\DataSaver_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\DB_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\DB_8cs_source.html
+    projectPath: docs\html\DB_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\EndScreenText_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\EndScreenText_8cs_source.html
+    projectPath: docs\html\EndScreenText_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\Enemies_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\Enemies_8cs_source.html
+    projectPath: docs\html\Enemies_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\files.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\files.html
+    projectPath: docs\html\files.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions.html
+    projectPath: docs\html\functions.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_b.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_b.html
+    projectPath: docs\html\functions_b.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_c.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_c.html
+    projectPath: docs\html\functions_c.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_e.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_e.html
+    projectPath: docs\html\functions_e.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_func.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_func.html
+    projectPath: docs\html\functions_func.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_func_c.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_func_c.html
+    projectPath: docs\html\functions_func_c.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_func_g.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_func_g.html
+    projectPath: docs\html\functions_func_g.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_func_s.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_func_s.html
+    projectPath: docs\html\functions_func_s.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_g.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_g.html
+    projectPath: docs\html\functions_g.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_h.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_h.html
+    projectPath: docs\html\functions_h.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_i.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_i.html
+    projectPath: docs\html\functions_i.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_j.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_j.html
+    projectPath: docs\html\functions_j.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\html\functions_n.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_n.html
+    projectPath: docs\html\functions_n.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_p.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_p.html
+    projectPath: docs\html\functions_p.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_r.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_r.html
+    projectPath: docs\html\functions_r.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_s.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_s.html
+    projectPath: docs\html\functions_s.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_t.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_t.html
+    projectPath: docs\html\functions_t.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\functions_vars.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\functions_vars.html
+    projectPath: docs\html\functions_vars.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\GameController_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\GameController_8cs_source.html
+    projectPath: docs\html\GameController_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\glider_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\glider_8cs_source.html
+    projectPath: docs\html\glider_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\GlobalSuppressions_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\GlobalSuppressions_8cs_source.html
+    projectPath: docs\html\GlobalSuppressions_8cs_source.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\html\hierarchy.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\hierarchy.html
+    projectPath: docs\html\hierarchy.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\HingeManager_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\HingeManager_8cs_source.html
+    projectPath: docs\html\HingeManager_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\InputClass_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\InputClass_8cs_source.html
+    projectPath: docs\html\InputClass_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\LevelControl_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\LevelControl_8cs_source.html
+    projectPath: docs\html\LevelControl_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\menudata.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\menudata.js
+    projectPath: docs\html\menudata.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\PackageDetails_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\PackageDetails_8cs_source.html
+    projectPath: docs\html\PackageDetails_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\PickUpItem_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\PickUpItem_8cs_source.html
+    projectPath: docs\html\PickUpItem_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\Rope_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\Rope_8cs_source.html
+    projectPath: docs\html\Rope_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\SceneSwitch_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\SceneSwitch_8cs_source.html
+    projectPath: docs\html\SceneSwitch_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_1.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_1.js
+    projectPath: docs\html\search\all_1.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_10.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_10.js
+    projectPath: docs\html\search\all_10.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_11.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_11.js
+    projectPath: docs\html\search\all_11.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_12.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_12.js
+    projectPath: docs\html\search\all_12.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_13.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_13.js
+    projectPath: docs\html\search\all_13.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_2.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_2.js
+    projectPath: docs\html\search\all_2.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_3.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_3.js
+    projectPath: docs\html\search\all_3.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_4.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_4.js
+    projectPath: docs\html\search\all_4.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_5.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_5.js
+    projectPath: docs\html\search\all_5.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_7.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_7.js
+    projectPath: docs\html\search\all_7.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_8.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_8.js
+    projectPath: docs\html\search\all_8.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_9.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_9.js
+    projectPath: docs\html\search\all_9.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_a.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_a.js
+    projectPath: docs\html\search\all_a.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\all_e.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\all_e.js
+    projectPath: docs\html\search\all_e.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\classes_10.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\classes_10.js
+    projectPath: docs\html\search\classes_10.js
+    originalPath: docs\html\search\classes_11.js
+    status: 6
+    staged: 1
+  - path: docs\html\search\classes_11.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\classes_11.js
+    projectPath: docs\html\search\classes_11.js
+    originalPath: docs\html\search\classes_12.js
+    status: 6
+    staged: 1
+  - path: docs\html\search\classes_13.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\classes_13.js
+    projectPath: docs\html\search\classes_13.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\classes_14.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\classes_14.js
+    projectPath: docs\html\search\classes_14.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\classes_15.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\classes_15.js
+    projectPath: docs\html\search\classes_15.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\classes_3.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\classes_3.js
+    projectPath: docs\html\search\classes_3.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\classes_d.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\classes_d.js
+    projectPath: docs\html\search\classes_d.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\classes_e.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\classes_e.js
+    projectPath: docs\html\search\classes_e.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\classes_f.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\classes_f.js
+    projectPath: docs\html\search\classes_f.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\functions_0.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\functions_0.js
+    projectPath: docs\html\search\functions_0.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\functions_1.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\functions_1.js
+    projectPath: docs\html\search\functions_1.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\functions_5.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\functions_5.js
+    projectPath: docs\html\search\functions_5.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\functions_d.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\functions_d.js
+    projectPath: docs\html\search\functions_d.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\searchdata.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\searchdata.js
+    projectPath: docs\html\search\searchdata.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\variables_0.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_0.js
+    projectPath: docs\html\search\variables_0.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\variables_1.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_1.js
+    projectPath: docs\html\search\variables_1.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\variables_10.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_10.html
+    projectPath: docs\html\search\variables_10.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\html\search\variables_10.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_10.js
+    projectPath: docs\html\search\variables_10.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\html\search\variables_2.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_2.js
+    projectPath: docs\html\search\variables_2.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\variables_3.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_3.js
+    projectPath: docs\html\search\variables_3.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\variables_4.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_4.js
+    projectPath: docs\html\search\variables_4.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\variables_5.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_5.js
+    projectPath: docs\html\search\variables_5.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\variables_7.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_7.js
+    projectPath: docs\html\search\variables_7.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\variables_8.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_8.js
+    projectPath: docs\html\search\variables_8.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\variables_9.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_9.js
+    projectPath: docs\html\search\variables_9.js
+    originalPath: docs\html\search\variables_6.js
+    status: 6
+    staged: 1
+  - path: docs\html\search\variables_a.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_a.js
+    projectPath: docs\html\search\variables_a.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\variables_c.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_c.js
+    projectPath: docs\html\search\variables_c.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\html\search\variables_d.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_d.html
+    projectPath: docs\html\search\variables_d.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\html\search\variables_d.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_d.js
+    projectPath: docs\html\search\variables_d.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\html\search\variables_e.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_e.html
+    projectPath: docs\html\search\variables_e.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\html\search\variables_e.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_e.js
+    projectPath: docs\html\search\variables_e.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\html\search\variables_f.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_f.html
+    projectPath: docs\html\search\variables_f.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\html\search\variables_f.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\search\variables_f.js
+    projectPath: docs\html\search\variables_f.js
+    originalPath: docs\html\search\variables_b.js
+    status: 6
+    staged: 1
+  - path: docs\html\Upgrades_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\html\Upgrades_8cs_source.html
+    projectPath: docs\html\Upgrades_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\InputClass_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\InputClass_8cs_source.html
+    projectPath: docs\InputClass_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\annotated.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\annotated.tex
+    projectPath: docs\latex\annotated.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classBooster.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classBooster.tex
+    projectPath: docs\latex\classBooster.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classbutton.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classbutton.tex
+    projectPath: docs\latex\classbutton.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classButtonMethods.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classButtonMethods.tex
+    projectPath: docs\latex\classButtonMethods.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classcameraControl.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classcameraControl.tex
+    projectPath: docs\latex\classcameraControl.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classCSVParsing.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classCSVParsing.tex
+    projectPath: docs\latex\classCSVParsing.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classDataSaver.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classDataSaver.tex
+    projectPath: docs\latex\classDataSaver.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classEndScreenText.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classEndScreenText.tex
+    projectPath: docs\latex\classEndScreenText.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classEnemies.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classEnemies.tex
+    projectPath: docs\latex\classEnemies.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classGameController.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classGameController.tex
+    projectPath: docs\latex\classGameController.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classglider.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classglider.tex
+    projectPath: docs\latex\classglider.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classHingeManager.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classHingeManager.tex
+    projectPath: docs\latex\classHingeManager.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classInputClass.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classInputClass.tex
+    projectPath: docs\latex\classInputClass.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classLevelControl.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classLevelControl.tex
+    projectPath: docs\latex\classLevelControl.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classPickUpItem.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classPickUpItem.tex
+    projectPath: docs\latex\classPickUpItem.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classRope.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classRope.tex
+    projectPath: docs\latex\classRope.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classSceneSwitch.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classSceneSwitch.tex
+    projectPath: docs\latex\classSceneSwitch.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classTMPro_1_1TextMeshPro.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classTMPro_1_1TextMeshPro.tex
+    projectPath: docs\latex\classTMPro_1_1TextMeshPro.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classTMPro_1_1TextMeshProUGUI.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classTMPro_1_1TextMeshProUGUI.tex
+    projectPath: docs\latex\classTMPro_1_1TextMeshProUGUI.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classTMPro_1_1TMP__InputField.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classTMPro_1_1TMP__InputField.tex
+    projectPath: docs\latex\classTMPro_1_1TMP__InputField.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classTMPro_1_1TMP__Settings.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classTMPro_1_1TMP__Settings.tex
+    projectPath: docs\latex\classTMPro_1_1TMP__Settings.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classTMPro_1_1TMP__Style.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classTMPro_1_1TMP__Style.tex
+    projectPath: docs\latex\classTMPro_1_1TMP__Style.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classTMPro_1_1TMP__SubMesh.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classTMPro_1_1TMP__SubMesh.tex
+    projectPath: docs\latex\classTMPro_1_1TMP__SubMesh.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classTMPro_1_1TMP__SubMeshUI.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classTMPro_1_1TMP__SubMeshUI.tex
+    projectPath: docs\latex\classTMPro_1_1TMP__SubMeshUI.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classTMPro_1_1TMP__Text.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classTMPro_1_1TMP__Text.tex
+    projectPath: docs\latex\classTMPro_1_1TMP__Text.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\classTMPro_1_1TMP__UpdateManager.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\classTMPro_1_1TMP__UpdateManager.tex
+    projectPath: docs\latex\classTMPro_1_1TMP__UpdateManager.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\hierarchy.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\hierarchy.tex
+    projectPath: docs\latex\hierarchy.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\latex\refman.tex
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\latex\refman.tex
+    projectPath: docs\latex\refman.tex
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\LevelControl_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\LevelControl_8cs_source.html
+    projectPath: docs\LevelControl_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\menudata.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\menudata.js
+    projectPath: docs\menudata.js
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\PackageDetails_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\PackageDetails_8cs_source.html
+    projectPath: docs\PackageDetails_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\PickUpItem_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\PickUpItem_8cs_source.html
+    projectPath: docs\PickUpItem_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\Rope_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\Rope_8cs_source.html
+    projectPath: docs\Rope_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\SceneSwitch_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\SceneSwitch_8cs_source.html
+    projectPath: docs\SceneSwitch_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: docs\search\all_0.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_0.html
+    projectPath: docs\search\all_0.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_0.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_0.js
+    projectPath: docs\search\all_0.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_1.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_1.html
+    projectPath: docs\search\all_1.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_1.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_1.js
+    projectPath: docs\search\all_1.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_10.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_10.html
+    projectPath: docs\search\all_10.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_10.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_10.js
+    projectPath: docs\search\all_10.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_11.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_11.html
+    projectPath: docs\search\all_11.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_11.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_11.js
+    projectPath: docs\search\all_11.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_12.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_12.html
+    projectPath: docs\search\all_12.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_12.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_12.js
+    projectPath: docs\search\all_12.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_13.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_13.html
+    projectPath: docs\search\all_13.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_13.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_13.js
+    projectPath: docs\search\all_13.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_14.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_14.html
+    projectPath: docs\search\all_14.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_14.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_14.js
+    projectPath: docs\search\all_14.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_15.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_15.html
+    projectPath: docs\search\all_15.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_15.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_15.js
+    projectPath: docs\search\all_15.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_16.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_16.html
+    projectPath: docs\search\all_16.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_16.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_16.js
+    projectPath: docs\search\all_16.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_17.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_17.html
+    projectPath: docs\search\all_17.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_17.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_17.js
+    projectPath: docs\search\all_17.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_2.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_2.html
+    projectPath: docs\search\all_2.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_2.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_2.js
+    projectPath: docs\search\all_2.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_3.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_3.html
+    projectPath: docs\search\all_3.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_3.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_3.js
+    projectPath: docs\search\all_3.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_4.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_4.html
+    projectPath: docs\search\all_4.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_4.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_4.js
+    projectPath: docs\search\all_4.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_5.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_5.html
+    projectPath: docs\search\all_5.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_5.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_5.js
+    projectPath: docs\search\all_5.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_6.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_6.html
+    projectPath: docs\search\all_6.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_6.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_6.js
+    projectPath: docs\search\all_6.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_7.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_7.html
+    projectPath: docs\search\all_7.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_7.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_7.js
+    projectPath: docs\search\all_7.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_8.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_8.html
+    projectPath: docs\search\all_8.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_8.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_8.js
+    projectPath: docs\search\all_8.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_9.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_9.html
+    projectPath: docs\search\all_9.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_9.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_9.js
+    projectPath: docs\search\all_9.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_a.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_a.html
+    projectPath: docs\search\all_a.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_a.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_a.js
+    projectPath: docs\search\all_a.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_b.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_b.html
+    projectPath: docs\search\all_b.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_b.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_b.js
+    projectPath: docs\search\all_b.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_c.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_c.html
+    projectPath: docs\search\all_c.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_c.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_c.js
+    projectPath: docs\search\all_c.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_d.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_d.html
+    projectPath: docs\search\all_d.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_d.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_d.js
+    projectPath: docs\search\all_d.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_e.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_e.html
+    projectPath: docs\search\all_e.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_e.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_e.js
+    projectPath: docs\search\all_e.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_f.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_f.html
+    projectPath: docs\search\all_f.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\all_f.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\all_f.js
+    projectPath: docs\search\all_f.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_0.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_0.html
+    projectPath: docs\search\classes_0.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_0.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_0.js
+    projectPath: docs\search\classes_0.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_1.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_1.html
+    projectPath: docs\search\classes_1.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_1.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_1.js
+    projectPath: docs\search\classes_1.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_10.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_10.html
+    projectPath: docs\search\classes_10.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_10.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_10.js
+    projectPath: docs\search\classes_10.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_11.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_11.html
+    projectPath: docs\search\classes_11.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_11.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_11.js
+    projectPath: docs\search\classes_11.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_12.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_12.html
+    projectPath: docs\search\classes_12.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_12.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_12.js
+    projectPath: docs\search\classes_12.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_13.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_13.html
+    projectPath: docs\search\classes_13.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_13.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_13.js
+    projectPath: docs\search\classes_13.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_14.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_14.html
+    projectPath: docs\search\classes_14.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_14.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_14.js
+    projectPath: docs\search\classes_14.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_15.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_15.html
+    projectPath: docs\search\classes_15.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_15.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_15.js
+    projectPath: docs\search\classes_15.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_16.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_16.html
+    projectPath: docs\search\classes_16.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_16.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_16.js
+    projectPath: docs\search\classes_16.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_2.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_2.html
+    projectPath: docs\search\classes_2.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_2.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_2.js
+    projectPath: docs\search\classes_2.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_3.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_3.html
+    projectPath: docs\search\classes_3.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_3.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_3.js
+    projectPath: docs\search\classes_3.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_4.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_4.html
+    projectPath: docs\search\classes_4.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_4.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_4.js
+    projectPath: docs\search\classes_4.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_5.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_5.html
+    projectPath: docs\search\classes_5.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_5.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_5.js
+    projectPath: docs\search\classes_5.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_6.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_6.html
+    projectPath: docs\search\classes_6.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_6.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_6.js
+    projectPath: docs\search\classes_6.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_7.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_7.html
+    projectPath: docs\search\classes_7.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_7.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_7.js
+    projectPath: docs\search\classes_7.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_8.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_8.html
+    projectPath: docs\search\classes_8.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_8.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_8.js
+    projectPath: docs\search\classes_8.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_9.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_9.html
+    projectPath: docs\search\classes_9.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_9.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_9.js
+    projectPath: docs\search\classes_9.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_a.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_a.html
+    projectPath: docs\search\classes_a.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_a.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_a.js
+    projectPath: docs\search\classes_a.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_b.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_b.html
+    projectPath: docs\search\classes_b.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_b.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_b.js
+    projectPath: docs\search\classes_b.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_c.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_c.html
+    projectPath: docs\search\classes_c.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_c.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_c.js
+    projectPath: docs\search\classes_c.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_d.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_d.html
+    projectPath: docs\search\classes_d.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_d.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_d.js
+    projectPath: docs\search\classes_d.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_e.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_e.html
+    projectPath: docs\search\classes_e.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_e.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_e.js
+    projectPath: docs\search\classes_e.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_f.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_f.html
+    projectPath: docs\search\classes_f.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\classes_f.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\classes_f.js
+    projectPath: docs\search\classes_f.js
+    originalPath: docs\html\search\classes_10.js
+    status: 6
+    staged: 1
+  - path: docs\search\close.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\close.png
+    projectPath: docs\search\close.png
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\enums_0.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\enums_0.html
+    projectPath: docs\search\enums_0.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\enums_0.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\enums_0.js
+    projectPath: docs\search\enums_0.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\enums_1.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\enums_1.html
+    projectPath: docs\search\enums_1.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\enums_1.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\enums_1.js
+    projectPath: docs\search\enums_1.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_0.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_0.html
+    projectPath: docs\search\functions_0.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_0.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_0.js
+    projectPath: docs\search\functions_0.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_1.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_1.html
+    projectPath: docs\search\functions_1.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_1.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_1.js
+    projectPath: docs\search\functions_1.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_10.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_10.html
+    projectPath: docs\search\functions_10.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_10.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_10.js
+    projectPath: docs\search\functions_10.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_2.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_2.html
+    projectPath: docs\search\functions_2.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_2.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_2.js
+    projectPath: docs\search\functions_2.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_3.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_3.html
+    projectPath: docs\search\functions_3.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_3.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_3.js
+    projectPath: docs\search\functions_3.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_4.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_4.html
+    projectPath: docs\search\functions_4.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_4.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_4.js
+    projectPath: docs\search\functions_4.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_5.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_5.html
+    projectPath: docs\search\functions_5.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_5.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_5.js
+    projectPath: docs\search\functions_5.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_6.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_6.html
+    projectPath: docs\search\functions_6.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_6.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_6.js
+    projectPath: docs\search\functions_6.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_7.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_7.html
+    projectPath: docs\search\functions_7.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_7.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_7.js
+    projectPath: docs\search\functions_7.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_8.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_8.html
+    projectPath: docs\search\functions_8.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_8.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_8.js
+    projectPath: docs\search\functions_8.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_9.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_9.html
+    projectPath: docs\search\functions_9.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_9.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_9.js
+    projectPath: docs\search\functions_9.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_a.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_a.html
+    projectPath: docs\search\functions_a.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_a.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_a.js
+    projectPath: docs\search\functions_a.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_b.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_b.html
+    projectPath: docs\search\functions_b.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_b.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_b.js
+    projectPath: docs\search\functions_b.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_c.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_c.html
+    projectPath: docs\search\functions_c.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_c.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_c.js
+    projectPath: docs\search\functions_c.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_d.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_d.html
+    projectPath: docs\search\functions_d.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_d.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_d.js
+    projectPath: docs\search\functions_d.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_e.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_e.html
+    projectPath: docs\search\functions_e.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_e.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_e.js
+    projectPath: docs\search\functions_e.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_f.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_f.html
+    projectPath: docs\search\functions_f.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\functions_f.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\functions_f.js
+    projectPath: docs\search\functions_f.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\mag_sel.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\mag_sel.png
+    projectPath: docs\search\mag_sel.png
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\namespaces_0.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\namespaces_0.html
+    projectPath: docs\search\namespaces_0.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\namespaces_0.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\namespaces_0.js
+    projectPath: docs\search\namespaces_0.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\namespaces_1.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\namespaces_1.html
+    projectPath: docs\search\namespaces_1.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\namespaces_1.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\namespaces_1.js
+    projectPath: docs\search\namespaces_1.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\namespaces_2.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\namespaces_2.html
+    projectPath: docs\search\namespaces_2.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\namespaces_2.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\namespaces_2.js
+    projectPath: docs\search\namespaces_2.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\namespaces_3.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\namespaces_3.html
+    projectPath: docs\search\namespaces_3.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\namespaces_3.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\namespaces_3.js
+    projectPath: docs\search\namespaces_3.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\namespaces_4.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\namespaces_4.html
+    projectPath: docs\search\namespaces_4.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\namespaces_4.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\namespaces_4.js
+    projectPath: docs\search\namespaces_4.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\nomatches.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\nomatches.html
+    projectPath: docs\search\nomatches.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_0.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_0.html
+    projectPath: docs\search\pages_0.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_0.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_0.js
+    projectPath: docs\search\pages_0.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_1.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_1.html
+    projectPath: docs\search\pages_1.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_1.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_1.js
+    projectPath: docs\search\pages_1.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_2.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_2.html
+    projectPath: docs\search\pages_2.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_2.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_2.js
+    projectPath: docs\search\pages_2.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_3.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_3.html
+    projectPath: docs\search\pages_3.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_3.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_3.js
+    projectPath: docs\search\pages_3.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_4.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_4.html
+    projectPath: docs\search\pages_4.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_4.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_4.js
+    projectPath: docs\search\pages_4.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_5.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_5.html
+    projectPath: docs\search\pages_5.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_5.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_5.js
+    projectPath: docs\search\pages_5.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_6.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_6.html
+    projectPath: docs\search\pages_6.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\pages_6.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\pages_6.js
+    projectPath: docs\search\pages_6.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_0.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_0.html
+    projectPath: docs\search\properties_0.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_0.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_0.js
+    projectPath: docs\search\properties_0.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_1.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_1.html
+    projectPath: docs\search\properties_1.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_1.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_1.js
+    projectPath: docs\search\properties_1.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_10.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_10.html
+    projectPath: docs\search\properties_10.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_10.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_10.js
+    projectPath: docs\search\properties_10.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_11.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_11.html
+    projectPath: docs\search\properties_11.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_11.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_11.js
+    projectPath: docs\search\properties_11.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_12.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_12.html
+    projectPath: docs\search\properties_12.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_12.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_12.js
+    projectPath: docs\search\properties_12.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_13.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_13.html
+    projectPath: docs\search\properties_13.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_13.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_13.js
+    projectPath: docs\search\properties_13.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_14.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_14.html
+    projectPath: docs\search\properties_14.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_14.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_14.js
+    projectPath: docs\search\properties_14.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_2.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_2.html
+    projectPath: docs\search\properties_2.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_2.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_2.js
+    projectPath: docs\search\properties_2.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_3.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_3.html
+    projectPath: docs\search\properties_3.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_3.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_3.js
+    projectPath: docs\search\properties_3.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_4.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_4.html
+    projectPath: docs\search\properties_4.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_4.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_4.js
+    projectPath: docs\search\properties_4.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_5.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_5.html
+    projectPath: docs\search\properties_5.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_5.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_5.js
+    projectPath: docs\search\properties_5.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_6.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_6.html
+    projectPath: docs\search\properties_6.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_6.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_6.js
+    projectPath: docs\search\properties_6.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_7.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_7.html
+    projectPath: docs\search\properties_7.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_7.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_7.js
+    projectPath: docs\search\properties_7.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_8.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_8.html
+    projectPath: docs\search\properties_8.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_8.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_8.js
+    projectPath: docs\search\properties_8.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_9.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_9.html
+    projectPath: docs\search\properties_9.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_9.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_9.js
+    projectPath: docs\search\properties_9.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_a.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_a.html
+    projectPath: docs\search\properties_a.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_a.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_a.js
+    projectPath: docs\search\properties_a.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_b.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_b.html
+    projectPath: docs\search\properties_b.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_b.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_b.js
+    projectPath: docs\search\properties_b.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_c.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_c.html
+    projectPath: docs\search\properties_c.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_c.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_c.js
+    projectPath: docs\search\properties_c.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_d.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_d.html
+    projectPath: docs\search\properties_d.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_d.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_d.js
+    projectPath: docs\search\properties_d.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_e.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_e.html
+    projectPath: docs\search\properties_e.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_e.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_e.js
+    projectPath: docs\search\properties_e.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_f.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_f.html
+    projectPath: docs\search\properties_f.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\properties_f.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\properties_f.js
+    projectPath: docs\search\properties_f.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\search.css
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\search.css
+    projectPath: docs\search\search.css
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\search.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\search.js
+    projectPath: docs\search\search.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\search_l.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\search_l.png
+    projectPath: docs\search\search_l.png
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\search_m.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\search_m.png
+    projectPath: docs\search\search_m.png
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\search_r.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\search_r.png
+    projectPath: docs\search\search_r.png
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\searchdata.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\searchdata.js
+    projectPath: docs\search\searchdata.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_0.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_0.html
+    projectPath: docs\search\variables_0.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_0.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_0.js
+    projectPath: docs\search\variables_0.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_1.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_1.html
+    projectPath: docs\search\variables_1.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_1.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_1.js
+    projectPath: docs\search\variables_1.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_10.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_10.html
+    projectPath: docs\search\variables_10.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_10.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_10.js
+    projectPath: docs\search\variables_10.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_2.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_2.html
+    projectPath: docs\search\variables_2.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_3.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_3.html
+    projectPath: docs\search\variables_3.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_3.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_3.js
+    projectPath: docs\search\variables_3.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_4.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_4.html
+    projectPath: docs\search\variables_4.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_4.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_4.js
+    projectPath: docs\search\variables_4.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_5.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_5.html
+    projectPath: docs\search\variables_5.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_5.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_5.js
+    projectPath: docs\search\variables_5.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_6.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_6.html
+    projectPath: docs\search\variables_6.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_6.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_6.js
+    projectPath: docs\search\variables_6.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_7.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_7.html
+    projectPath: docs\search\variables_7.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_7.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_7.js
+    projectPath: docs\search\variables_7.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_8.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_8.html
+    projectPath: docs\search\variables_8.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_8.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_8.js
+    projectPath: docs\search\variables_8.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_9.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_9.html
+    projectPath: docs\search\variables_9.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_9.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_9.js
+    projectPath: docs\search\variables_9.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_a.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_a.html
+    projectPath: docs\search\variables_a.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_a.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_a.js
+    projectPath: docs\search\variables_a.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_b.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_b.html
+    projectPath: docs\search\variables_b.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_b.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_b.js
+    projectPath: docs\search\variables_b.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_c.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_c.html
+    projectPath: docs\search\variables_c.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_c.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_c.js
+    projectPath: docs\search\variables_c.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_d.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_d.html
+    projectPath: docs\search\variables_d.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_d.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_d.js
+    projectPath: docs\search\variables_d.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_e.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_e.html
+    projectPath: docs\search\variables_e.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_e.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_e.js
+    projectPath: docs\search\variables_e.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_f.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_f.html
+    projectPath: docs\search\variables_f.html
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\search\variables_f.js
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\search\variables_f.js
+    projectPath: docs\search\variables_f.js
+    originalPath: 
+    status: 4
+    staged: 1
+  - path: docs\Upgrades_8cs_source.html
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\docs\Upgrades_8cs_source.html
+    projectPath: docs\Upgrades_8cs_source.html
+    originalPath: 
+    status: 3
+    staged: 1
   - path: Library\assetDatabase3
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     projectPath: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\CurrentLayout.dwlt
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\CurrentLayout.dwlt
     projectPath: Library\CurrentLayout.dwlt
     originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\expandedItems
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\expandedItems
-    projectPath: Library\expandedItems
-    originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\gfu\cache\branches.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\gfu\cache\gitlog.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\gfu\cache\gitstatusentries.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\LastSceneManagerSetup.txt
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\LastSceneManagerSetup.txt
     projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
-  - path: Library\metadata\08\0815acb276965af48801d4db866252b5
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\08\0815acb276965af48801d4db866252b5
-    projectPath: Library\metadata\08\0815acb276965af48801d4db866252b5
+  - path: Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
+    projectPath: Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\2d\2d6ecb5c7d3efd34ebc719ee138f1651
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\2d\2d6ecb5c7d3efd34ebc719ee138f1651
+    projectPath: Library\metadata\2d\2d6ecb5c7d3efd34ebc719ee138f1651
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\2d\2d6ecb5c7d3efd34ebc719ee138f1651.info
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\2d\2d6ecb5c7d3efd34ebc719ee138f1651.info
+    projectPath: Library\metadata\2d\2d6ecb5c7d3efd34ebc719ee138f1651.info
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ProjectSettings.asset
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ProjectSettings.asset
-    projectPath: Library\ProjectSettings.asset
+  - path: Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc
+    projectPath: Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc
     originalPath: 
     status: 3
-    staged: 0
+    staged: 1
+  - path: Library\metadata\3a\3a84de5cd0624681b6b6dcd8921d912a
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\3a\3a84de5cd0624681b6b6dcd8921d912a
+    projectPath: Library\metadata\3a\3a84de5cd0624681b6b6dcd8921d912a
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\3b\3bb0254b9671413d9d08a855c5090237
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\3b\3bb0254b9671413d9d08a855c5090237
+    projectPath: Library\metadata\3b\3bb0254b9671413d9d08a855c5090237
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0
+    projectPath: Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\40\405b9b51bb344a128608d968297df79c
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\40\405b9b51bb344a128608d968297df79c
+    projectPath: Library\metadata\40\405b9b51bb344a128608d968297df79c
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+    projectPath: Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\46\46098a81a64a45c5b756320e10a22f13
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\46\46098a81a64a45c5b756320e10a22f13
+    projectPath: Library\metadata\46\46098a81a64a45c5b756320e10a22f13
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\4a\4a3ecb1425d14502837abea459cf2b70
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\4a\4a3ecb1425d14502837abea459cf2b70
+    projectPath: Library\metadata\4a\4a3ecb1425d14502837abea459cf2b70
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+    projectPath: Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+    projectPath: Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\53\53b28e480f84452449972da4c75d4ce7
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\53\53b28e480f84452449972da4c75d4ce7
+    projectPath: Library\metadata\53\53b28e480f84452449972da4c75d4ce7
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+    projectPath: Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7
+    projectPath: Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5
+    projectPath: Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442
+    projectPath: Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9
+    projectPath: Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\76\7668179ede524d6396c8b7d84461ea29
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\76\7668179ede524d6396c8b7d84461ea29
+    projectPath: Library\metadata\76\7668179ede524d6396c8b7d84461ea29
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
+    projectPath: Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\84\844f815391db42d49455cbf1a7bfc434
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\84\844f815391db42d49455cbf1a7bfc434
+    projectPath: Library\metadata\84\844f815391db42d49455cbf1a7bfc434
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\87\870353891bb340e2b2a9c8707e7419ba
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\87\870353891bb340e2b2a9c8707e7419ba
+    projectPath: Library\metadata\87\870353891bb340e2b2a9c8707e7419ba
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
+    projectPath: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90.info
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90.info
+    projectPath: Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90.info
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+    projectPath: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
+    projectPath: Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\b5\b5da970776034f77a070d99423d68791
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\b5\b5da970776034f77a070d99423d68791
+    projectPath: Library\metadata\b5\b5da970776034f77a070d99423d68791
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    projectPath: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a
+    projectPath: Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb
+    projectPath: Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\e1\e1007cd261c84053beb0c3537782908d
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\e1\e1007cd261c84053beb0c3537782908d
+    projectPath: Library\metadata\e1\e1007cd261c84053beb0c3537782908d
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\e4\e4f4cf1b9b434137a499903a7a1d651a
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\e4\e4f4cf1b9b434137a499903a7a1d651a
+    projectPath: Library\metadata\e4\e4f4cf1b9b434137a499903a7a1d651a
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\ea\ead147da21254ff9a0a936bdd75e1680
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\ea\ead147da21254ff9a0a936bdd75e1680
+    projectPath: Library\metadata\ea\ead147da21254ff9a0a936bdd75e1680
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\ed\ed7343f30e3843b3afda8f8b02669cea
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\ed\ed7343f30e3843b3afda8f8b02669cea
+    projectPath: Library\metadata\ed\ed7343f30e3843b3afda8f8b02669cea
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
+    projectPath: Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\f7\f70555f144d8491a825f0804e09c671c
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\f7\f70555f144d8491a825f0804e09c671c
+    projectPath: Library\metadata\f7\f70555f144d8491a825f0804e09c671c
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\f7\f7551022d25321741ac25c4df9a2a364.info
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\f7\f7551022d25321741ac25c4df9a2a364.info
+    projectPath: Library\metadata\f7\f7551022d25321741ac25c4df9a2a364.info
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+    projectPath: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c.info
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\fa\fab313a20f661b245bad8b8d998b093c.info
+    projectPath: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c.info
+    originalPath: 
+    status: 3
+    staged: 1
   - path: Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp.pdb
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
+  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
+    originalPath: 
+    status: 3
+    staged: 1
   - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
     projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
+  - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
+    originalPath: 
+    status: 3
+    staged: 1
   - path: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
     projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
+  - path: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
+    originalPath: 
+    status: 3
+    staged: 1
   - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
     projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
+  - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
+    originalPath: 
+    status: 3
+    staged: 1
   - path: Library\ScriptAssemblies\Unity.TextMeshPro.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.dll
     projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
     projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
+  - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
+    originalPath: 
+    status: 3
+    staged: 1
+  - path: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
+    originalPath: 
+    status: 3
+    staged: 1
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
-    staged: 0
+    staged: 1
   - path: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
     projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
+  - path: obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+    projectPath: obj\Debug\Assembly-CSharp.csproj.FileListAbsolute.txt
+    originalPath: 
+    status: 5
+    staged: 1
   - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: obj\Debug\Assembly-CSharp.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.dll
     projectPath: obj\Debug\Assembly-CSharp.dll
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
   - path: obj\Debug\Assembly-CSharp.pdb
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.pdb
     projectPath: obj\Debug\Assembly-CSharp.pdb
     originalPath: 
-    status: 3
+    status: 9
     staged: 0
-  - path: ProjectSettings\ProjectSettings.asset
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\ProjectSettings\ProjectSettings.asset
-    projectPath: ProjectSettings\ProjectSettings.asset
+  - path: ProjectSettings\TagManager.asset
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\ProjectSettings\TagManager.asset
+    projectPath: ProjectSettings\TagManager.asset
     originalPath: 
     status: 3
-    staged: 0
+    staged: 1

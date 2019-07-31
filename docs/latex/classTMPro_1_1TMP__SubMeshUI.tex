@@ -300,7 +300,7 @@ Definition at line 245 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
 \DoxyCodeLine{250             \textcolor{keywordflow}{if} (!m\_isRegisteredForEvents)}
 \DoxyCodeLine{251             \{}
 \DoxyCodeLine{252 }
-\DoxyCodeLine{253 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{253 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
 \DoxyCodeLine{254                 TMPro\_EventManager.MATERIAL\_PROPERTY\_EVENT.Add(ON\_MATERIAL\_PROPERTY\_CHANGED);}
 \DoxyCodeLine{255                 TMPro\_EventManager.FONT\_PROPERTY\_EVENT.Add(ON\_FONT\_PROPERTY\_CHANGED);}
 \DoxyCodeLine{256                 \textcolor{comment}{//TMPro\_EventManager.TEXTMESHPRO\_PROPERTY\_EVENT.Add(ON\_TEXTMESHPRO\_PROPERTY\_CHANGED);}}
@@ -308,7 +308,7 @@ Definition at line 245 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
 \DoxyCodeLine{258                 \textcolor{comment}{//TMPro\_EventManager.TEXT\_STYLE\_PROPERTY\_EVENT.Add(ON\_TEXT\_STYLE\_CHANGED);}}
 \DoxyCodeLine{259                 TMPro\_EventManager.SPRITE\_ASSET\_PROPERTY\_EVENT.Add(ON\_SPRITE\_ASSET\_PROPERTY\_CHANGED);}
 \DoxyCodeLine{260                 \textcolor{comment}{//TMPro\_EventManager.TMP\_SETTINGS\_PROPERTY\_EVENT.Add(ON\_TMP\_SETTINGS\_CHANGED);}}
-\DoxyCodeLine{261 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{261 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{262 }
 \DoxyCodeLine{263                 m\_isRegisteredForEvents = \textcolor{keyword}{true};}
 \DoxyCodeLine{264             \}}
@@ -629,10 +629,10 @@ Definition at line 662 of file T\+M\+P\+\_\+\+Sub\+Mesh\+U\+I.\+cs.
 \DoxyCodeLine{672             m\_canvasRenderer.SetMaterial(\mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_acf8eb0b73fe8fe9f4b12d71550739bb1}{materialForRendering}}, 0);}
 \DoxyCodeLine{673             m\_canvasRenderer.SetTexture(\mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a455c7c479e81a37c0de77570b4bf3578}{mainTexture}});}
 \DoxyCodeLine{674 }
-\DoxyCodeLine{675 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{675 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
 \DoxyCodeLine{676             \textcolor{keywordflow}{if} (m\_sharedMaterial != \textcolor{keyword}{null} \&\& gameObject.name != \textcolor{stringliteral}{"TMP SubMeshUI ["} + m\_sharedMaterial.name + \textcolor{stringliteral}{"]"})}
 \DoxyCodeLine{677                 gameObject.name = \textcolor{stringliteral}{"TMP SubMeshUI ["} + m\_sharedMaterial.name + \textcolor{stringliteral}{"]"};}
-\DoxyCodeLine{678 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{678 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{679         \}}
 
 \end{DoxyCode}

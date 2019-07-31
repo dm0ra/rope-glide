@@ -20,6 +20,7 @@ public class InputClass : MonoBehaviour
     private float currCameraPos; // current camera position
     private float cameraWidth; // width of camera
     private int clickFlag; // represents what side of the screen is clicked
+    private bool releasedButtonFlag = true; // flag used to know when the button has been released for it to check for a down press again.
     private float waitTime;
     private float timer;
     private float touchOffest;
@@ -29,8 +30,7 @@ public class InputClass : MonoBehaviour
     /// </summary>
     public void Update()
     {
-        // Debug.Log("Working");
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             // Debug.Log("Screen Height: " + Screen.height);
 
@@ -43,6 +43,7 @@ public class InputClass : MonoBehaviour
             float middleVerticalBoundry = this.transform.position.x; // sets vertical boundary to divide touches
             float middleHorizontalBoundry = this.Camera.transform.position.y / 2; // sets horizontal boundary to divide touches
 
+            //Debug.Log("touch pos: " + touchPositionX + "middle vert boundary");
             if (touchPositionX > middleVerticalBoundry)
             {
                 if (Input.mousePosition.y > Screen.height / 2)
@@ -61,7 +62,7 @@ public class InputClass : MonoBehaviour
                 this.clickFlag = 0; // Left
             }
         }
-        else if (Input.GetMouseButtonUp(0))
+        else
         {
             this.clickFlag = -1; // No Click
         }
@@ -75,7 +76,7 @@ public class InputClass : MonoBehaviour
     /// </returns>
     public int GetInputFlag()
     {
-        Debug.Log("Click Flag: " + this.clickFlag);
+        ///Debug.Log("Click Flag: " + this.clickFlag);
         return this.clickFlag;
     }
 

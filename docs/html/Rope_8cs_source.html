@@ -79,162 +79,191 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classRope.html">   14</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classRope.html">Rope</a> : MonoBehaviour</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classRope.html#af1c503e4892e6498fe6f59dd3b72c327">   19</a></span>&#160;    <span class="keyword">public</span> HingeJoint2D <a class="code" href="classRope.html#af1c503e4892e6498fe6f59dd3b72c327">CurrRope</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">   24</a></span>&#160;    <span class="keyword">public</span> GameObject <a class="code" href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Player</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classRope.html#ad4ed92a663bd20d9631d1a1433d37066">   29</a></span>&#160;    <span class="keyword">public</span> GameObject <a class="code" href="classRope.html#ad4ed92a663bd20d9631d1a1433d37066">Hinge</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> mouseState;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">private</span> <a class="code" href="classInputClass.html">InputClass</a> gameInput;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">   44</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classGameController.html">GameController</a> <a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> index;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">private</span> GameObject VisualRope;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">float</span> xOffset;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">float</span> yOffset;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">bool</span> firstConnection;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> Start()</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        xOffset = 19.2f;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        yOffset = 67.9f;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        mouseState = -1;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Player</a> = GameObject.FindWithTag(<span class="stringliteral">&quot;Player&quot;</span>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a> = GameObject.FindWithTag(<span class="stringliteral">&quot;GameController&quot;</span>).GetComponent&lt;<a class="code" href="classGameController.html">GameController</a>&gt;();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        index = <a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a>.<a class="code" href="classGameController.html#aaac106e34b0da0857d95e6f11537163a">AddHinge</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        firstConnection = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="comment">//bool a = CurrRope.isActiveAndEnabled;</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        gameInput = GameObject.FindWithTag(<span class="stringliteral">&quot;MainCamera&quot;</span>).GetComponent&lt;<a class="code" href="classInputClass.html">InputClass</a>&gt;();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> Update()</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// Form the visable rope you see on screen if the mouse state is 1 (left click held down),</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// The index (the index of THIS connection point in the array of connection points)</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// of the cloud that is being swung from is the same as the one in the game controller</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// (game.getConnected()), and the game controller has a flag set with (game.GetConnectedFlag()).</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">if</span> (mouseState == 1 &amp;&amp; index == <a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a>.<a class="code" href="classGameController.html#a14cbdcafec96c0ffb5062d1977bea724">GetConnected</a>() &amp;&amp; <a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a>.<a class="code" href="classGameController.html#a73b56f012aae8c9d3ff2a6ba44a29b39">GetConnectedFlag</a>())</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="comment">// Transform.position gives the transform of the gameobject</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="comment">// This script is connected to in the unity editor.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            Vector3 temp = (<a class="code" href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Player</a>.transform.position + transform.position);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            Vector3 tempAng = (<a class="code" href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Player</a>.transform.position - transform.position);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="comment">// temp now holds the coordinates at the half way point between the point of</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="comment">// connection and the player, using the midpoint formula</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            temp *= 0.5f;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordtype">float</span> angle = Mathf.Atan2(tempAng.y, tempAng.x) * Mathf.Rad2Deg;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="comment">//Create/Update the ropes scale, posiition and angle.</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            VisualRope.transform.position = <span class="keyword">new</span> Vector3(temp.x, temp.y, -5);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            VisualRope.transform.localScale = <span class="keyword">new</span> Vector3(.25f, tempAng.magnitude / 10f, .25f);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            VisualRope.transform.eulerAngles = <span class="keyword">new</span> Vector3(0, 0, angle + 90);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;         <span class="comment">// This if statement is run on first press and connects the player to the nearest connection point.</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;         <span class="comment">// It relies on the following to be true:</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;         <span class="comment">// game.GetJumpClick()  -  </span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;         <span class="comment">// Input.GetMouseButtonDown(0) - Left mouse click down (also works for touch)</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;         <span class="comment">// game.IsHingeClosest(index)  - Looks through an array of all possible connection points</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;         <span class="comment">// !game.GetConnectedFlag()</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;         </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a>.<a class="code" href="classGameController.html#ad33c2d3a594f5d2604aa8ca043aa425a">GetJumpClick</a>() &amp;&amp; Input.GetMouseButtonDown(0) &amp;&amp; <a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a>.<a class="code" href="classGameController.html#a21e44c9808d0d0e34e9ddce7f9172ad4">IsHingeClosest</a>(index) &amp;&amp; !<a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a>.<a class="code" href="classGameController.html#a73b56f012aae8c9d3ff2a6ba44a29b39">GetConnectedFlag</a>())</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="comment">// If the glider is active, connect only when the left half of the screen is pressed</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">if</span> (DB.Glider == 1 || DB.Booster == 1)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keywordflow">if</span> (gameInput.<a class="code" href="classInputClass.html#aed8765a6a50b5c6e42639fb39a88b7c2">GetInputFlag</a>() == 0) <span class="comment">// Only connect when left side of the screen is pressed</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    Connect();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="comment">// Connect on any input when no upgrades are active.</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">if</span> (DB.Glider == 0 &amp;&amp; DB.Booster == 0)</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                Connect();</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">if</span> (Input.GetMouseButtonUp(0))</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        {</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a>.<a class="code" href="classGameController.html#ac5ec56cc4e7170de7e6971ec93fe1a49">SetConnectedFlag</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <a class="code" href="classRope.html#af1c503e4892e6498fe6f59dd3b72c327">CurrRope</a>.connectedBody = <span class="keyword">null</span>;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            mouseState = 0;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            Destroy(VisualRope);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    Vector3 CorrectedHingePosition()</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(<a class="code" href="classRope.html#ad4ed92a663bd20d9631d1a1433d37066">Hinge</a>.transform.position.x - xOffset, <a class="code" href="classRope.html#ad4ed92a663bd20d9631d1a1433d37066">Hinge</a>.transform.position.y - yOffset,</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <a class="code" href="classRope.html#ad4ed92a663bd20d9631d1a1433d37066">Hinge</a>.transform.position.z);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">void</span> DrawLine(Vector3 start, Vector3 end, Color color)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        GameObject myLine = <span class="keyword">new</span> GameObject();</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        myLine.transform.position = start;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        myLine.AddComponent&lt;LineRenderer&gt;();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        myLine.GetComponent&lt;LineRenderer&gt;().sortingLayerName = <span class="stringliteral">&quot;Default&quot;</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        myLine.GetComponent&lt;LineRenderer&gt;().sortingOrder = 1;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        LineRenderer lr = myLine.GetComponent&lt;LineRenderer&gt;();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        lr.material = <span class="keyword">new</span> Material(Shader.Find(<span class="stringliteral">&quot;Specular&quot;</span>));</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        lr.SetColors(color, color);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        lr.SetWidth(0.5f, 0.5f);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        lr.SetPosition(0, start);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        lr.SetPosition(1, end);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        GameObject.Destroy(myLine, .01f);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> SetFirstConnection(<span class="keywordtype">bool</span> b)</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        firstConnection = b;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> Connect()</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">if</span> (mouseState != 1)</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">if</span> (firstConnection)</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                firstConnection = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a>.<a class="code" href="classGameController.html#a98608dea84b1d7450164fd533df1d196">incrementConnections</a>();</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            }</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            VisualRope = Instantiate(Resources.Load(<span class="stringliteral">&quot;VisualRope&quot;</span>, typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="comment">// Modify the clone to your heart&#39;s content</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            Vector3 temp = (<a class="code" href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Player</a>.transform.position + CorrectedHingePosition()) * 0.5f;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            VisualRope.transform.position = <span class="keyword">new</span> Vector3(temp.x, temp.y, -5);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a>.<a class="code" href="classGameController.html#ab40624d6f9b2963664ea1cf3663d6ff6">SetIsConnected</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            Vector2 vel = <a class="code" href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Player</a>.GetComponent&lt;Rigidbody2D&gt;().velocity + (12 * <a class="code" href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Player</a>.GetComponent&lt;Rigidbody2D&gt;().velocity.normalized);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <a class="code" href="classRope.html#af1c503e4892e6498fe6f59dd3b72c327">CurrRope</a>.connectedBody = <a class="code" href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Player</a>.GetComponent&lt;Rigidbody2D&gt;();</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        mouseState = 1;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma warning disable SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#pragma warning disable CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span> HingeJoint2D <a class="code" href="classRope.html#af1c503e4892e6498fe6f59dd3b72c327">CurrRope</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#pragma warning restore CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#pragma warning restore SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma warning disable SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#pragma warning disable CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span> GameObject <a class="code" href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Player</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#pragma warning restore CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#pragma warning restore SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#pragma warning disable SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#pragma warning disable CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">public</span> GameObject <a class="code" href="classRope.html#ad4ed92a663bd20d9631d1a1433d37066">Hinge</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#pragma warning restore CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#pragma warning restore SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#pragma warning disable SA1307 // Accessible fields should begin with upper-case letter</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#pragma warning disable SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#pragma warning disable CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">public</span> <a class="code" href="classGameController.html">GameController</a> <a class="code" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#pragma warning restore CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#pragma warning restore SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#pragma warning restore SA1307 // Accessible fields should begin with upper-case letter</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> mouseState;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">private</span> <a class="code" href="classInputClass.html">InputClass</a> gameInput;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> index;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">private</span> GameObject visualRope;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">float</span> xOffset;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">float</span> yOffset;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">bool</span> firstConnection;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classRope.html#a5f8aea6cf0812bfbf1c20ab1158b7d5a">   93</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classRope.html#a5f8aea6cf0812bfbf1c20ab1158b7d5a">SetFirstConnection</a>(<span class="keywordtype">bool</span> b)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        this.firstConnection = b;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> Start()</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        this.xOffset = 19.2f;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        this.yOffset = 67.9f;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        mouseState = -1;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        this.Player = GameObject.FindWithTag(<span class="stringliteral">&quot;Player&quot;</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        this.game = GameObject.FindWithTag(<span class="stringliteral">&quot;GameController&quot;</span>).GetComponent&lt;<a class="code" href="classGameController.html">GameController</a>&gt;();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        this.index = this.game.<a class="code" href="classGameController.html#a82c2b54ad70417ce06e41646366990eb">AddHinge</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        this.firstConnection = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="comment">// bool a = CurrRope.isActiveAndEnabled;</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        this.gameInput = GameObject.FindWithTag(<span class="stringliteral">&quot;MainCamera&quot;</span>).GetComponent&lt;<a class="code" href="classInputClass.html">InputClass</a>&gt;();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> Update()</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">// Form the visable rope you see on screen if the mouse state is 1 (left click held down),</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// The index (the index of THIS connection point in the array of connection points)</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="comment">// of the cloud that is being swung from is the same as the one in the game controller</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="comment">// (game.getConnected()), and the game controller has a flag set with (game.GetConnectedFlag()).</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">if</span> (mouseState == 1 &amp;&amp; this.index == this.game.<a class="code" href="classGameController.html#a14cbdcafec96c0ffb5062d1977bea724">GetConnected</a>() &amp;&amp; this.game.<a class="code" href="classGameController.html#a73b56f012aae8c9d3ff2a6ba44a29b39">GetConnectedFlag</a>())</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="comment">// Transform.position gives the transform of the gameobject</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="comment">// This script is connected to in the unity editor.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            Vector3 temp = this.Player.transform.position + this.transform.position;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            Vector3 tempAng = this.Player.transform.position - this.transform.position;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="comment">// temp now holds the coordinates at the half way point between the point of</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="comment">// connection and the player, using the midpoint formula</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            temp *= 0.5f;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordtype">float</span> angle = Mathf.Atan2(tempAng.y, tempAng.x) * Mathf.Rad2Deg;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="comment">// Create/Update the ropes scale, posiition and angle.</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            this.visualRope.transform.position = <span class="keyword">new</span> Vector3(temp.x, temp.y, -5);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            this.visualRope.transform.localScale = <span class="keyword">new</span> Vector3(.25f, tempAng.magnitude / 10f, .25f);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            this.visualRope.transform.eulerAngles = <span class="keyword">new</span> Vector3(0, 0, angle + 90);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;         <span class="comment">// This if statement is run on first press and connects the player to the nearest connection point.</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;         <span class="comment">// It relies on the following to be true:</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;         <span class="comment">// game.GetJumpClick()  -</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;         <span class="comment">// Input.GetMouseButtonDown(0) - Left mouse click down (also works for touch)</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;         <span class="comment">// game.IsHingeClosest(index)  - Looks through an array of all possible connection points</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;         <span class="comment">// !game.GetConnectedFlag()</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">if</span> (this.game.<a class="code" href="classGameController.html#ad33c2d3a594f5d2604aa8ca043aa425a">GetJumpClick</a>() &amp;&amp; Input.GetMouseButtonDown(0) &amp;&amp; this.game.<a class="code" href="classGameController.html#a21e44c9808d0d0e34e9ddce7f9172ad4">IsHingeClosest</a>(this.index) &amp;&amp; !this.game.<a class="code" href="classGameController.html#a73b56f012aae8c9d3ff2a6ba44a29b39">GetConnectedFlag</a>())</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="comment">// If the glider is active, connect only when the left half of the screen is pressed</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">if</span> (DB.Glider == 1 || DB.Booster == 1)</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#pragma warning disable SA1108 // Block statements should not contain embedded comments</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">if</span> (this.gameInput.<a class="code" href="classInputClass.html#aed8765a6a50b5c6e42639fb39a88b7c2">GetInputFlag</a>() == 0) <span class="comment">// Only connect when left side of the screen is pressed</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;#pragma warning restore SA1108 <span class="comment">// Block statements should not contain embedded comments</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                    this.Connect();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">// Connect on any input when no upgrades are active.</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">if</span> (DB.Glider == 0 &amp;&amp; DB.Booster == 0)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                this.Connect();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">if</span> (Input.GetMouseButtonUp(0))</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            this.game.<a class="code" href="classGameController.html#ac5ec56cc4e7170de7e6971ec93fe1a49">SetConnectedFlag</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            this.CurrRope.connectedBody = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            mouseState = 0;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            Destroy(this.visualRope);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keyword">private</span> Vector3 CorrectedHingePosition()</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> Vector3(this.Hinge.transform.position.x - <span class="keyword">this</span>.xOffset, <span class="keyword">this</span>.Hinge.transform.position.y - <span class="keyword">this</span>.yOffset, <span class="keyword">this</span>.Hinge.transform.position.z);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> DrawLine(Vector3 start, Vector3 end, Color color)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        GameObject myLine = <span class="keyword">new</span> GameObject();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        myLine.transform.position = start;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        myLine.AddComponent&lt;LineRenderer&gt;();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        myLine.GetComponent&lt;LineRenderer&gt;().sortingLayerName = <span class="stringliteral">&quot;Default&quot;</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        myLine.GetComponent&lt;LineRenderer&gt;().sortingOrder = 1;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        LineRenderer lr = myLine.GetComponent&lt;LineRenderer&gt;();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        lr.material = <span class="keyword">new</span> Material(Shader.Find(<span class="stringliteral">&quot;Specular&quot;</span>));</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#pragma warning disable CS0618 // Type or member is obsolete</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        lr.SetColors(color, color);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#pragma warning restore CS0618 // Type or member is obsolete</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#pragma warning disable CS0618 // Type or member is obsolete</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        lr.SetWidth(0.5f, 0.5f);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#pragma warning restore CS0618 // Type or member is obsolete</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        lr.SetPosition(0, start);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        lr.SetPosition(1, end);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        GameObject.Destroy(myLine, .01f);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> Connect()</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">if</span> (mouseState != 1)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">if</span> (this.firstConnection)</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                this.firstConnection = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                this.game.<a class="code" href="classGameController.html#a98608dea84b1d7450164fd533df1d196">incrementConnections</a>();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            this.visualRope = Instantiate(Resources.Load(<span class="stringliteral">&quot;VisualRope&quot;</span>, typeof(GameObject)), Vector3.zero, Quaternion.identity) as GameObject;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="comment">// Modify the clone to your heart&#39;s content</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            Vector3 temp = (this.Player.transform.position + this.CorrectedHingePosition()) * 0.5f;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            this.visualRope.transform.position = <span class="keyword">new</span> Vector3(temp.x, temp.y, -5);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            this.game.<a class="code" href="classGameController.html#ab40624d6f9b2963664ea1cf3663d6ff6">SetIsConnected</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            Vector2 vel = this.Player.GetComponent&lt;Rigidbody2D&gt;().velocity + (12 * this.Player.GetComponent&lt;Rigidbody2D&gt;().velocity.normalized);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            this.CurrRope.connectedBody = this.Player.GetComponent&lt;Rigidbody2D&gt;();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        mouseState = 1;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassRope_html"><div class="ttname"><a href="classRope.html">Rope</a></div><div class="ttdoc">This class creates ropes. The code decides which cloud is closest to the player and connects a rope t...</div><div class="ttdef"><b>Definition:</b> <a href="Rope_8cs_source.html#l00014">Rope.cs:14</a></div></div>
-<div class="ttc" id="aclassGameController_html_ac5ec56cc4e7170de7e6971ec93fe1a49"><div class="ttname"><a href="classGameController.html#ac5ec56cc4e7170de7e6971ec93fe1a49">GameController.SetConnectedFlag</a></div><div class="ttdeci">void SetConnectedFlag(bool s)</div><div class="ttdoc">Sets connected flag.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00391">GameController.cs:391</a></div></div>
-<div class="ttc" id="aclassRope_html_ad4ed92a663bd20d9631d1a1433d37066"><div class="ttname"><a href="classRope.html#ad4ed92a663bd20d9631d1a1433d37066">Rope.Hinge</a></div><div class="ttdeci">GameObject Hinge</div><div class="ttdoc">Each instance of Rope belongs to a cloud (hinge).</div><div class="ttdef"><b>Definition:</b> <a href="Rope_8cs_source.html#l00029">Rope.cs:29</a></div></div>
-<div class="ttc" id="aclassGameController_html_a21e44c9808d0d0e34e9ddce7f9172ad4"><div class="ttname"><a href="classGameController.html#a21e44c9808d0d0e34e9ddce7f9172ad4">GameController.IsHingeClosest</a></div><div class="ttdeci">bool IsHingeClosest(int index)</div><div class="ttdoc">This function is called in Rope.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00419">GameController.cs:419</a></div></div>
-<div class="ttc" id="aclassGameController_html_a14cbdcafec96c0ffb5062d1977bea724"><div class="ttname"><a href="classGameController.html#a14cbdcafec96c0ffb5062d1977bea724">GameController.GetConnected</a></div><div class="ttdeci">int GetConnected()</div><div class="ttdoc">gets connected flag.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00409">GameController.cs:409</a></div></div>
-<div class="ttc" id="aclassGameController_html_ab40624d6f9b2963664ea1cf3663d6ff6"><div class="ttname"><a href="classGameController.html#ab40624d6f9b2963664ea1cf3663d6ff6">GameController.SetIsConnected</a></div><div class="ttdeci">void SetIsConnected(Rope rope)</div><div class="ttdoc">Sets connected flag and sets the index of the cloud that is connected.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00381">GameController.cs:381</a></div></div>
-<div class="ttc" id="aclassGameController_html_a98608dea84b1d7450164fd533df1d196"><div class="ttname"><a href="classGameController.html#a98608dea84b1d7450164fd533df1d196">GameController.incrementConnections</a></div><div class="ttdeci">void incrementConnections()</div><div class="ttdoc">used to calculate score.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00231">GameController.cs:231</a></div></div>
-<div class="ttc" id="aclassInputClass_html_aed8765a6a50b5c6e42639fb39a88b7c2"><div class="ttname"><a href="classInputClass.html#aed8765a6a50b5c6e42639fb39a88b7c2">InputClass.GetInputFlag</a></div><div class="ttdeci">int GetInputFlag()</div><div class="ttdoc">Get the flag indicating input status.</div><div class="ttdef"><b>Definition:</b> <a href="InputClass_8cs_source.html#l00073">InputClass.cs:73</a></div></div>
-<div class="ttc" id="aclassGameController_html_aaac106e34b0da0857d95e6f11537163a"><div class="ttname"><a href="classGameController.html#aaac106e34b0da0857d95e6f11537163a">GameController.AddHinge</a></div><div class="ttdeci">int AddHinge(Rope H)</div><div class="ttdoc">Add rope to the list of hinges.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00214">GameController.cs:214</a></div></div>
-<div class="ttc" id="aclassRope_html_af1c503e4892e6498fe6f59dd3b72c327"><div class="ttname"><a href="classRope.html#af1c503e4892e6498fe6f59dd3b72c327">Rope.CurrRope</a></div><div class="ttdeci">HingeJoint2D CurrRope</div><div class="ttdoc">The joint that holds the player and the cloud at a constant distance.</div><div class="ttdef"><b>Definition:</b> <a href="Rope_8cs_source.html#l00019">Rope.cs:19</a></div></div>
-<div class="ttc" id="aclassGameController_html_ad33c2d3a594f5d2604aa8ca043aa425a"><div class="ttname"><a href="classGameController.html#ad33c2d3a594f5d2604aa8ca043aa425a">GameController.GetJumpClick</a></div><div class="ttdeci">bool GetJumpClick()</div><div class="ttdoc">Has the player clicked/tapped the screen for the first time.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00193">GameController.cs:193</a></div></div>
+<div class="ttc" id="aclassGameController_html_ac5ec56cc4e7170de7e6971ec93fe1a49"><div class="ttname"><a href="classGameController.html#ac5ec56cc4e7170de7e6971ec93fe1a49">GameController.SetConnectedFlag</a></div><div class="ttdeci">void SetConnectedFlag(bool s)</div><div class="ttdoc">Sets connected flag.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00360">GameController.cs:360</a></div></div>
+<div class="ttc" id="aclassGameController_html_a82c2b54ad70417ce06e41646366990eb"><div class="ttname"><a href="classGameController.html#a82c2b54ad70417ce06e41646366990eb">GameController.AddHinge</a></div><div class="ttdeci">int AddHinge(Rope h)</div><div class="ttdoc">Add rope to the list of hinges.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00163">GameController.cs:163</a></div></div>
+<div class="ttc" id="aclassRope_html_ad4ed92a663bd20d9631d1a1433d37066"><div class="ttname"><a href="classRope.html#ad4ed92a663bd20d9631d1a1433d37066">Rope.Hinge</a></div><div class="ttdeci">GameObject Hinge</div><div class="ttdoc">Each instance of Rope belongs to a cloud (hinge).</div><div class="ttdef"><b>Definition:</b> <a href="Rope_8cs_source.html#l00039">Rope.cs:39</a></div></div>
+<div class="ttc" id="aclassGameController_html_a21e44c9808d0d0e34e9ddce7f9172ad4"><div class="ttname"><a href="classGameController.html#a21e44c9808d0d0e34e9ddce7f9172ad4">GameController.IsHingeClosest</a></div><div class="ttdeci">bool IsHingeClosest(int index)</div><div class="ttdoc">This function is called in Rope.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00388">GameController.cs:388</a></div></div>
+<div class="ttc" id="aclassGameController_html_a14cbdcafec96c0ffb5062d1977bea724"><div class="ttname"><a href="classGameController.html#a14cbdcafec96c0ffb5062d1977bea724">GameController.GetConnected</a></div><div class="ttdeci">int GetConnected()</div><div class="ttdoc">gets connected flag.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00378">GameController.cs:378</a></div></div>
+<div class="ttc" id="aclassGameController_html_ab40624d6f9b2963664ea1cf3663d6ff6"><div class="ttname"><a href="classGameController.html#ab40624d6f9b2963664ea1cf3663d6ff6">GameController.SetIsConnected</a></div><div class="ttdeci">void SetIsConnected(Rope rope)</div><div class="ttdoc">Sets connected flag and sets the index of the cloud that is connected.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00350">GameController.cs:350</a></div></div>
+<div class="ttc" id="aclassGameController_html_a98608dea84b1d7450164fd533df1d196"><div class="ttname"><a href="classGameController.html#a98608dea84b1d7450164fd533df1d196">GameController.incrementConnections</a></div><div class="ttdeci">void incrementConnections()</div><div class="ttdoc">used to calculate score.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00186">GameController.cs:186</a></div></div>
+<div class="ttc" id="aclassInputClass_html_aed8765a6a50b5c6e42639fb39a88b7c2"><div class="ttname"><a href="classInputClass.html#aed8765a6a50b5c6e42639fb39a88b7c2">InputClass.GetInputFlag</a></div><div class="ttdeci">int GetInputFlag()</div><div class="ttdoc">Get the flag indicating input status.</div><div class="ttdef"><b>Definition:</b> <a href="InputClass_8cs_source.html#l00076">InputClass.cs:76</a></div></div>
+<div class="ttc" id="aclassRope_html_af1c503e4892e6498fe6f59dd3b72c327"><div class="ttname"><a href="classRope.html#af1c503e4892e6498fe6f59dd3b72c327">Rope.CurrRope</a></div><div class="ttdeci">HingeJoint2D CurrRope</div><div class="ttdoc">The joint that holds the player and the cloud at a constant distance.</div><div class="ttdef"><b>Definition:</b> <a href="Rope_8cs_source.html#l00021">Rope.cs:21</a></div></div>
+<div class="ttc" id="aclassGameController_html_ad33c2d3a594f5d2604aa8ca043aa425a"><div class="ttname"><a href="classGameController.html#ad33c2d3a594f5d2604aa8ca043aa425a">GameController.GetJumpClick</a></div><div class="ttdeci">bool GetJumpClick()</div><div class="ttdoc">Has the player clicked/tapped the screen for the first time.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00143">GameController.cs:143</a></div></div>
 <div class="ttc" id="aclassGameController_html"><div class="ttname"><a href="classGameController.html">GameController</a></div><div class="ttdoc">GameController is being updated when the game is being played it handles death of the player and scen...</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00021">GameController.cs:21</a></div></div>
-<div class="ttc" id="aclassRope_html_a0521f97a6f8776c7e4a181eed7b5aacb"><div class="ttname"><a href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">Rope.game</a></div><div class="ttdeci">GameController game</div><div class="ttdoc">Game controller instance. See GameController class.</div><div class="ttdef"><b>Definition:</b> <a href="Rope_8cs_source.html#l00044">Rope.cs:44</a></div></div>
+<div class="ttc" id="aclassRope_html_a0521f97a6f8776c7e4a181eed7b5aacb"><div class="ttname"><a href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">Rope.game</a></div><div class="ttdeci">GameController game</div><div class="ttdoc">Game controller instance. See GameController class.</div><div class="ttdef"><b>Definition:</b> <a href="Rope_8cs_source.html#l00049">Rope.cs:49</a></div></div>
 <div class="ttc" id="aclassInputClass_html"><div class="ttname"><a href="classInputClass.html">InputClass</a></div><div class="ttdoc">Class that contains data related to user input.</div><div class="ttdef"><b>Definition:</b> <a href="InputClass_8cs_source.html#l00009">InputClass.cs:9</a></div></div>
-<div class="ttc" id="aclassGameController_html_a73b56f012aae8c9d3ff2a6ba44a29b39"><div class="ttname"><a href="classGameController.html#a73b56f012aae8c9d3ff2a6ba44a29b39">GameController.GetConnectedFlag</a></div><div class="ttdeci">bool GetConnectedFlag()</div><div class="ttdoc">gets connected index.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00400">GameController.cs:400</a></div></div>
+<div class="ttc" id="aclassGameController_html_a73b56f012aae8c9d3ff2a6ba44a29b39"><div class="ttname"><a href="classGameController.html#a73b56f012aae8c9d3ff2a6ba44a29b39">GameController.GetConnectedFlag</a></div><div class="ttdeci">bool GetConnectedFlag()</div><div class="ttdoc">gets connected index.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00369">GameController.cs:369</a></div></div>
+<div class="ttc" id="aclassRope_html_a5f8aea6cf0812bfbf1c20ab1158b7d5a"><div class="ttname"><a href="classRope.html#a5f8aea6cf0812bfbf1c20ab1158b7d5a">Rope.SetFirstConnection</a></div><div class="ttdeci">void SetFirstConnection(bool b)</div><div class="ttdoc">This method signals whether the first connection has occurred.</div><div class="ttdef"><b>Definition:</b> <a href="Rope_8cs_source.html#l00093">Rope.cs:93</a></div></div>
 <div class="ttc" id="anamespaceUnityEngine_html"><div class="ttname"><a href="namespaceUnityEngine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="AchievementStepTests_8cs_source.html#l00004">AchievementStepTests.cs:4</a></div></div>
-<div class="ttc" id="aclassRope_html_a17bb204dc3ffa0bc5195e5ac86273df6"><div class="ttname"><a href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Rope.Player</a></div><div class="ttdeci">GameObject Player</div><div class="ttdoc">The games player.</div><div class="ttdef"><b>Definition:</b> <a href="Rope_8cs_source.html#l00024">Rope.cs:24</a></div></div>
+<div class="ttc" id="aclassRope_html_a17bb204dc3ffa0bc5195e5ac86273df6"><div class="ttname"><a href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Rope.Player</a></div><div class="ttdeci">GameObject Player</div><div class="ttdoc">The games player.</div><div class="ttdef"><b>Definition:</b> <a href="Rope_8cs_source.html#l00030">Rope.cs:30</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -127,7 +127,7 @@ public class CSVParsing : MonoBehaviour
             // Maybe it is also necessary to terminate / restart the application.
         }
 
-        print(this.results);
+        //print(this.results);
     }
 
     // Read data from CSV file

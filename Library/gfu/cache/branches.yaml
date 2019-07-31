@@ -13,9 +13,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-07-31T00:13:06.552-04:00
   initializedAtString: 2019-07-31T00:12:53.399-04:00
   localBranches:
+=======
+  lastUpdatedAtString: 2019-07-26T14:11:38.343-04:00
+  initializedAtString: 2019-07-26T14:02:28.780-04:00
+  localBranches:
+  - name: dm0ra
+    tracking: 
+  - name: dm0ra_branch
+    tracking: origin/dm0ra_branch
+>>>>>>> eca11bc18a857d845360406fc24f6fde06dee85f
   - name: master
     tracking: origin/master
   remoteBranches:
@@ -24,8 +34,11 @@ MonoBehaviour:
   - name: origin/andreabranch
     tracking: '[None]'
   - name: origin/dm0ra_branch
+<<<<<<< HEAD
     tracking: '[None]'
   - name: origin/HEAD
+=======
+>>>>>>> eca11bc18a857d845360406fc24f6fde06dee85f
     tracking: '[None]'
   - name: origin/John
     tracking: '[None]'
@@ -33,7 +46,7 @@ MonoBehaviour:
     tracking: '[None]'
   remotes:
   - name: origin
-    url: https://github.com/dm0ra/Rope-Glide
+    url: https://github.com/dm0ra/Rope-Glide.git
     login: 
     user: 
     host: 
@@ -41,12 +54,29 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+<<<<<<< HEAD
     - master
     values:
+=======
+    - dm0ra
+    - dm0ra_branch
+    - master
+    values:
+    - name: dm0ra
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
+    - name: dm0ra_branch
+      remote:
+        name: origin
+        url: https://github.com/dm0ra/Rope-Glide.git
+      trackingBranch: dm0ra_branch
+>>>>>>> eca11bc18a857d845360406fc24f6fde06dee85f
     - name: master
       remote:
         name: origin
-        url: https://github.com/dm0ra/Rope-Glide
+        url: https://github.com/dm0ra/Rope-Glide.git
       trackingBranch: master
   remoteConfigBranches:
     keys:
@@ -56,7 +86,10 @@ MonoBehaviour:
       - Andrea
       - andreabranch
       - dm0ra_branch
+<<<<<<< HEAD
       - HEAD
+=======
+>>>>>>> eca11bc18a857d845360406fc24f6fde06dee85f
       - John
       - master
     subKeyValues:
@@ -64,36 +97,43 @@ MonoBehaviour:
       - name: Andrea
         remote:
           name: origin
+<<<<<<< HEAD
           url: https://github.com/dm0ra/Rope-Glide
+=======
+          url: https://github.com/dm0ra/Rope-Glide.git
+>>>>>>> eca11bc18a857d845360406fc24f6fde06dee85f
         trackingBranch: 
       - name: andreabranch
         remote:
           name: origin
-          url: https://github.com/dm0ra/Rope-Glide
+          url: https://github.com/dm0ra/Rope-Glide.git
         trackingBranch: 
       - name: dm0ra_branch
+<<<<<<< HEAD
         remote:
           name: origin
           url: https://github.com/dm0ra/Rope-Glide
         trackingBranch: 
       - name: HEAD
+=======
+>>>>>>> eca11bc18a857d845360406fc24f6fde06dee85f
         remote:
           name: origin
-          url: https://github.com/dm0ra/Rope-Glide
+          url: https://github.com/dm0ra/Rope-Glide.git
         trackingBranch: 
       - name: John
         remote:
           name: origin
-          url: https://github.com/dm0ra/Rope-Glide
+          url: https://github.com/dm0ra/Rope-Glide.git
         trackingBranch: 
       - name: master
         remote:
           name: origin
-          url: https://github.com/dm0ra/Rope-Glide
+          url: https://github.com/dm0ra/Rope-Glide.git
         trackingBranch: 
   configRemotes:
     keys:
     - origin
     values:
     - name: origin
-      url: https://github.com/dm0ra/Rope-Glide
+      url: https://github.com/dm0ra/Rope-Glide.git

@@ -79,39 +79,49 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classLevelControl.html">   10</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classLevelControl.html">LevelControl</a> : MonoBehaviour</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classLevelControl.html#acb53a575ee4ca5f33438216789569fbb">   15</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classLevelControl.html#acb53a575ee4ca5f33438216789569fbb">LvlIndex</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classLevelControl.html#ad26b4cc556bcbb508bfe5e0b6294585c">   20</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classLevelControl.html#ad26b4cc556bcbb508bfe5e0b6294585c">RequestLvlChange</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// private void Update()</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// {</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// Debug.Log(&quot;sugma&quot;);</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//   if(requestLvlChange == 1)</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//    {</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//         SceneManager.LoadScene(2);</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//         requestLvlChange = 0;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//     }</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// }</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classLevelControl.html#a4c224dff13f2b9bd836afeadbb434ab7">   35</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classLevelControl.html#a4c224dff13f2b9bd836afeadbb434ab7">Restart</a>()</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        GameObject game = GameObject.FindWithTag(<span class="stringliteral">&quot;Game Controller&quot;</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        SceneManager.LoadScene(0);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> OnTriggerEnter2D(Collider2D collision)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (collision.CompareTag(<span class="stringliteral">&quot;Player&quot;</span>))</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            SceneManager.LoadScene(this.LvlIndex);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma warning disable SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma warning disable CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classLevelControl.html#acb53a575ee4ca5f33438216789569fbb">LvlIndex</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#pragma warning restore CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#pragma warning restore SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#pragma warning disable SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#pragma warning disable CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classLevelControl.html#ad26b4cc556bcbb508bfe5e0b6294585c">RequestLvlChange</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#pragma warning restore CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#pragma warning restore SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// private void Update()</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// {</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// Debug.Log(&quot;sugma&quot;);</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//   if(requestLvlChange == 1)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//    {</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//         SceneManager.LoadScene(2);</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//         requestLvlChange = 0;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//     }</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// }</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#pragma warning disable CA1822 // Mark members as static</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classLevelControl.html#a4c224dff13f2b9bd836afeadbb434ab7">Restart</a>()</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#pragma warning restore CA1822 // Mark members as static</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        GameObject game = GameObject.FindWithTag(<span class="stringliteral">&quot;Game Controller&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        SceneManager.LoadScene(0);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> OnTriggerEnter2D(Collider2D collision)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (collision.CompareTag(<span class="stringliteral">&quot;Player&quot;</span>))</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            SceneManager.LoadScene(this.LvlIndex);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassLevelControl_html_ad26b4cc556bcbb508bfe5e0b6294585c"><div class="ttname"><a href="classLevelControl.html#ad26b4cc556bcbb508bfe5e0b6294585c">LevelControl.RequestLvlChange</a></div><div class="ttdeci">int RequestLvlChange</div><div class="ttdoc">Request for level to be changed.</div><div class="ttdef"><b>Definition:</b> <a href="LevelControl_8cs_source.html#l00020">LevelControl.cs:20</a></div></div>
+<div class="ttc" id="aclassLevelControl_html_ad26b4cc556bcbb508bfe5e0b6294585c"><div class="ttname"><a href="classLevelControl.html#ad26b4cc556bcbb508bfe5e0b6294585c">LevelControl.RequestLvlChange</a></div><div class="ttdeci">int RequestLvlChange</div><div class="ttdoc">Request for level to be changed.</div><div class="ttdef"><b>Definition:</b> <a href="LevelControl_8cs_source.html#l00026">LevelControl.cs:26</a></div></div>
 <div class="ttc" id="aclassLevelControl_html"><div class="ttname"><a href="classLevelControl.html">LevelControl</a></div><div class="ttdoc">This class controls the level that is loaded.</div><div class="ttdef"><b>Definition:</b> <a href="LevelControl_8cs_source.html#l00010">LevelControl.cs:10</a></div></div>
-<div class="ttc" id="aclassLevelControl_html_a4c224dff13f2b9bd836afeadbb434ab7"><div class="ttname"><a href="classLevelControl.html#a4c224dff13f2b9bd836afeadbb434ab7">LevelControl.Restart</a></div><div class="ttdeci">void Restart()</div><div class="ttdoc">Restart the game.</div><div class="ttdef"><b>Definition:</b> <a href="LevelControl_8cs_source.html#l00035">LevelControl.cs:35</a></div></div>
-<div class="ttc" id="aclassLevelControl_html_acb53a575ee4ca5f33438216789569fbb"><div class="ttname"><a href="classLevelControl.html#acb53a575ee4ca5f33438216789569fbb">LevelControl.LvlIndex</a></div><div class="ttdeci">int LvlIndex</div><div class="ttdoc">The currently loaded level.</div><div class="ttdef"><b>Definition:</b> <a href="LevelControl_8cs_source.html#l00015">LevelControl.cs:15</a></div></div>
+<div class="ttc" id="aclassLevelControl_html_a4c224dff13f2b9bd836afeadbb434ab7"><div class="ttname"><a href="classLevelControl.html#a4c224dff13f2b9bd836afeadbb434ab7">LevelControl.Restart</a></div><div class="ttdeci">void Restart()</div><div class="ttdoc">Restart the game.</div><div class="ttdef"><b>Definition:</b> <a href="LevelControl_8cs_source.html#l00044">LevelControl.cs:44</a></div></div>
+<div class="ttc" id="aclassLevelControl_html_acb53a575ee4ca5f33438216789569fbb"><div class="ttname"><a href="classLevelControl.html#acb53a575ee4ca5f33438216789569fbb">LevelControl.LvlIndex</a></div><div class="ttdeci">int LvlIndex</div><div class="ttdoc">The currently loaded level.</div><div class="ttdef"><b>Definition:</b> <a href="LevelControl_8cs_source.html#l00017">LevelControl.cs:17</a></div></div>
 <div class="ttc" id="anamespaceUnityEngine_html"><div class="ttname"><a href="namespaceUnityEngine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="AchievementStepTests_8cs_source.html#l00004">AchievementStepTests.cs:4</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

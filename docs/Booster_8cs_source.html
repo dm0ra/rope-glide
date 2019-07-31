@@ -79,76 +79,105 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classBooster.html">   10</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classBooster.html">Booster</a> : MonoBehaviour</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span> <a class="code" href="classGameController.html">GameController</a> Game; <span class="comment">// gamecontroller object</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span> GameObject Player; <span class="comment">// player game object</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span> GameObject booster; <span class="comment">// booster game object</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> BoosterPrice; <span class="comment">// booster price integer</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> fuelMax = 100; <span class="comment">// maximum fuel for booster</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> fuelUseRate = 3; <span class="comment">// usage rate of fuel</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">private</span> <a class="code" href="classInputClass.html">InputClass</a> gameInput; <span class="comment">// gameInput to read what buttons were pressed</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">float</span> a = 3000f; <span class="comment">// acceleration constant</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma warning disable SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma warning disable CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span> <a class="code" href="classGameController.html">GameController</a> <a class="code" href="classBooster.html#a9cdb2bdba64c1e66c5c2f5238826b798">Game</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#pragma warning restore CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#pragma warning restore SA1401 // Fields should be private</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> fuel; <span class="comment">// amount of fuel left</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">private</span> Vector3 playerDelta; <span class="comment">// this variable represents the distance between the player and the booster images</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> Start()</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        this.booster = GameObject.FindGameObjectWithTag(<span class="stringliteral">&quot;Booster&quot;</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        this.fuel = fuelMax; <span class="comment">// fuel starts at max</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        this.Game = GameObject.FindWithTag(<span class="stringliteral">&quot;GameController&quot;</span>).GetComponent&lt;<a class="code" href="classGameController.html">GameController</a>&gt;(); <span class="comment">// links game object</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        this.Player = GameObject.FindWithTag(<span class="stringliteral">&quot;Player&quot;</span>); <span class="comment">// links player object</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        this.gameInput = GameObject.FindWithTag(<span class="stringliteral">&quot;MainCamera&quot;</span>).GetComponent&lt;<a class="code" href="classInputClass.html">InputClass</a>&gt;(); <span class="comment">// link inputs</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this.playerDelta = this.Player.transform.position - this.transform.position; <span class="comment">// sets delta of player and booster</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        this.playerDelta.z = this.Player.transform.position.z - 100; <span class="comment">// sets z position</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        this.BoosterPrice = 100;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> Update()</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">// maps booster to player</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (DB.Booster == 1)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            this.playerDelta.z = this.Player.transform.position.z;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            this.playerDelta.z = this.Player.transform.position.z - 100;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        this.transform.position = (Player.transform.position - playerDelta); <span class="comment">// sets the booster position close to the player position</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        this.Refuel(); <span class="comment">// refuels if needed</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">// if click on the proper side of the screen and upgrade is selected</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">if</span> ((this.gameInput.<a class="code" href="classInputClass.html#aed8765a6a50b5c6e42639fb39a88b7c2">GetInputFlag</a>() == 2 &amp;&amp; DB.Booster == 1 &amp;&amp; DB.Glider == 1) || (this.gameInput.<a class="code" href="classInputClass.html#aed8765a6a50b5c6e42639fb39a88b7c2">GetInputFlag</a>() == 1 &amp;&amp; DB.Glider == 0 &amp;&amp; DB.Booster == 1))</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            this.AccelerateYVelocity(); <span class="comment">// accelerates player</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> AccelerateYVelocity()</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        Debug.Log(<span class="stringliteral">&quot;lift off&quot;</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// checks if there is fuel left</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> (this.fuel &gt;= 0)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            this.Player.GetComponent&lt;Rigidbody2D&gt;().AddForce(<span class="keyword">new</span> Vector2(0, this.a)); <span class="comment">// adds force to the player in the y direction only</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            this.fuel -= fuelUseRate; <span class="comment">// reduces fuel</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> Refuel()</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span> (this.fuel &lt; fuelMax)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            this.fuel++;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#pragma warning disable SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#pragma warning disable CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">public</span> GameObject <a class="code" href="classBooster.html#ad270d16fdea0e8988f2d401058949ed6">Player</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#pragma warning restore CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#pragma warning restore SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#pragma warning disable SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#pragma warning disable SA1307 // Accessible fields should begin with upper-case letter</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#pragma warning disable CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">public</span> GameObject <a class="code" href="classBooster.html#a6576bc90ef868e6f5348f7c69b437ebd">booster</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#pragma warning restore CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#pragma warning restore SA1307 // Accessible fields should begin with upper-case letter</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#pragma warning restore SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#pragma warning disable SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#pragma warning disable CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classBooster.html#ad86bb3957375c1138f86509d6780700f">BoosterPrice</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#pragma warning restore CA1051 // Do not declare visible instance fields</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#pragma warning restore SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> fuelMax; <span class="comment">// maximum fuel for booster</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">int</span> fuelUseRate; <span class="comment">// usage rate of fuel</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">private</span> <a class="code" href="classInputClass.html">InputClass</a> gameInput; <span class="comment">// gameInput to read what buttons were pressed</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">float</span> a; <span class="comment">// acceleration constant</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">int</span> fuel; <span class="comment">// amount of fuel left</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">private</span> Vector3 playerDelta; <span class="comment">// this variable represents the distance between the player and the booster images</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> Start()</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        fuelMax = 100;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        fuelUseRate = 3;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        a = 3000f;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        this.booster = GameObject.FindGameObjectWithTag(<span class="stringliteral">&quot;Booster&quot;</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        this.fuel = fuelMax; <span class="comment">// fuel starts at max</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        this.Game = GameObject.FindWithTag(<span class="stringliteral">&quot;GameController&quot;</span>).GetComponent&lt;<a class="code" href="classGameController.html">GameController</a>&gt;(); <span class="comment">// links game object</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        this.Player = GameObject.FindWithTag(<span class="stringliteral">&quot;Player&quot;</span>); <span class="comment">// links player object</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        this.gameInput = GameObject.FindWithTag(<span class="stringliteral">&quot;MainCamera&quot;</span>).GetComponent&lt;<a class="code" href="classInputClass.html">InputClass</a>&gt;(); <span class="comment">// link inputs</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        this.playerDelta = this.Player.transform.position - this.transform.position; <span class="comment">// sets delta of player and booster</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        this.playerDelta.z = this.Player.transform.position.z - 100; <span class="comment">// sets z position</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        this.BoosterPrice = 100;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> Update()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">// maps booster to player</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (DB.Booster == 1)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            this.playerDelta.z = this.Player.transform.position.z;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            this.playerDelta.z = this.Player.transform.position.z - 100;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        this.transform.position = this.Player.transform.position - this.playerDelta; <span class="comment">// sets the booster position close to the player position</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        this.Refuel(); <span class="comment">// refuels if needed</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// if click on the proper side of the screen and upgrade is selected</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span> ((this.gameInput.<a class="code" href="classInputClass.html#aed8765a6a50b5c6e42639fb39a88b7c2">GetInputFlag</a>() == 2 &amp;&amp; DB.Booster == 1 &amp;&amp; DB.Glider == 1) || (this.gameInput.<a class="code" href="classInputClass.html#aed8765a6a50b5c6e42639fb39a88b7c2">GetInputFlag</a>() == 1 &amp;&amp; DB.Glider == 0 &amp;&amp; DB.Booster == 1))</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            this.AccelerateYVelocity(); <span class="comment">// accelerates player</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> AccelerateYVelocity()</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        Debug.Log(<span class="stringliteral">&quot;lift off&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">// checks if there is fuel left</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span> (this.fuel &gt;= 0)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            this.Player.GetComponent&lt;Rigidbody2D&gt;().AddForce(<span class="keyword">new</span> Vector2(0, this.a)); <span class="comment">// adds force to the player in the y direction only</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            this.fuel -= fuelUseRate; <span class="comment">// reduces fuel</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">void</span> Refuel()</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (this.fuel &lt; fuelMax)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            this.fuel++;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassInputClass_html_aed8765a6a50b5c6e42639fb39a88b7c2"><div class="ttname"><a href="classInputClass.html#aed8765a6a50b5c6e42639fb39a88b7c2">InputClass.GetInputFlag</a></div><div class="ttdeci">int GetInputFlag()</div><div class="ttdoc">Get the flag indicating input status.</div><div class="ttdef"><b>Definition:</b> <a href="InputClass_8cs_source.html#l00073">InputClass.cs:73</a></div></div>
+<div class="ttc" id="aclassBooster_html_ad86bb3957375c1138f86509d6780700f"><div class="ttname"><a href="classBooster.html#ad86bb3957375c1138f86509d6780700f">Booster.BoosterPrice</a></div><div class="ttdeci">int BoosterPrice</div><div class="ttdoc">booster price integer.</div><div class="ttdef"><b>Definition:</b> <a href="Booster_8cs_source.html#l00046">Booster.cs:46</a></div></div>
+<div class="ttc" id="aclassBooster_html_ad270d16fdea0e8988f2d401058949ed6"><div class="ttname"><a href="classBooster.html#ad270d16fdea0e8988f2d401058949ed6">Booster.Player</a></div><div class="ttdeci">GameObject Player</div><div class="ttdoc">player game object.</div><div class="ttdef"><b>Definition:</b> <a href="Booster_8cs_source.html#l00026">Booster.cs:26</a></div></div>
+<div class="ttc" id="aclassBooster_html_a9cdb2bdba64c1e66c5c2f5238826b798"><div class="ttname"><a href="classBooster.html#a9cdb2bdba64c1e66c5c2f5238826b798">Booster.Game</a></div><div class="ttdeci">GameController Game</div><div class="ttdoc">gamecontroller object.</div><div class="ttdef"><b>Definition:</b> <a href="Booster_8cs_source.html#l00017">Booster.cs:17</a></div></div>
+<div class="ttc" id="aclassInputClass_html_aed8765a6a50b5c6e42639fb39a88b7c2"><div class="ttname"><a href="classInputClass.html#aed8765a6a50b5c6e42639fb39a88b7c2">InputClass.GetInputFlag</a></div><div class="ttdeci">int GetInputFlag()</div><div class="ttdoc">Get the flag indicating input status.</div><div class="ttdef"><b>Definition:</b> <a href="InputClass_8cs_source.html#l00076">InputClass.cs:76</a></div></div>
 <div class="ttc" id="aclassBooster_html"><div class="ttname"><a href="classBooster.html">Booster</a></div><div class="ttdoc">This class is used for booster logic when the upgrade is purchased.</div><div class="ttdef"><b>Definition:</b> <a href="Booster_8cs_source.html#l00010">Booster.cs:10</a></div></div>
 <div class="ttc" id="aclassGameController_html"><div class="ttname"><a href="classGameController.html">GameController</a></div><div class="ttdoc">GameController is being updated when the game is being played it handles death of the player and scen...</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00021">GameController.cs:21</a></div></div>
 <div class="ttc" id="aclassInputClass_html"><div class="ttname"><a href="classInputClass.html">InputClass</a></div><div class="ttdoc">Class that contains data related to user input.</div><div class="ttdef"><b>Definition:</b> <a href="InputClass_8cs_source.html#l00009">InputClass.cs:9</a></div></div>
+<div class="ttc" id="aclassBooster_html_a6576bc90ef868e6f5348f7c69b437ebd"><div class="ttname"><a href="classBooster.html#a6576bc90ef868e6f5348f7c69b437ebd">Booster.booster</a></div><div class="ttdeci">GameObject booster</div><div class="ttdoc">booster game object.</div><div class="ttdef"><b>Definition:</b> <a href="Booster_8cs_source.html#l00036">Booster.cs:36</a></div></div>
 <div class="ttc" id="anamespaceUnityEngine_html"><div class="ttname"><a href="namespaceUnityEngine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="AchievementStepTests_8cs_source.html#l00004">AchievementStepTests.cs:4</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

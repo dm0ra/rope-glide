@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['facecolor',['faceColor',['../classTMPro_1_1TMP__Text.html#a636390b562bc0a1f6794db74660e2291',1,'TMPro::TMP_Text']]],
+  ['fallbackfontassets',['fallbackFontAssets',['../classTMPro_1_1TMP__Settings.html#a2239a7f8504614b295bcee82ccffeaa5',1,'TMPro::TMP_Settings']]],
+  ['fallbackmaterial',['fallbackMaterial',['../classTMPro_1_1TMP__SubMesh.html#ab77df446a9272aeb7b29e189ed42d408',1,'TMPro.TMP_SubMesh.fallbackMaterial()'],['../classTMPro_1_1TMP__SubMeshUI.html#a752da89e0deb52b9e005365ebc315fa1',1,'TMPro.TMP_SubMeshUI.fallbackMaterial()']]],
+  ['fallbacksourcematerial',['fallbackSourceMaterial',['../classTMPro_1_1TMP__SubMesh.html#a323c171d10bb001f23b750d9404b68a8',1,'TMPro.TMP_SubMesh.fallbackSourceMaterial()'],['../classTMPro_1_1TMP__SubMeshUI.html#a9b771a5f56a567373c07d24fae47011c',1,'TMPro.TMP_SubMeshUI.fallbackSourceMaterial()']]],
+  ['firstglyph',['firstGlyph',['../classTMPro_1_1KerningPair.html#af9aa2a18d3992d1fa6080e44c69fe7c5',1,'TMPro::KerningPair']]],
+  ['firstglyphadjustments',['firstGlyphAdjustments',['../classTMPro_1_1KerningPair.html#a5eed997a7f25917e7de7804a6cf052f4',1,'TMPro::KerningPair']]],
+  ['firstoverflowcharacterindex',['firstOverflowCharacterIndex',['../classTMPro_1_1TMP__Text.html#a41e1120f3d5667fbe6ad537937a579fa',1,'TMPro::TMP_Text']]],
+  ['firstvisiblecharacter',['firstVisibleCharacter',['../classTMPro_1_1TMP__Text.html#aae7cd2f640ffd5936f7e8a09d95a221d',1,'TMPro::TMP_Text']]],
+  ['flexibleheight',['flexibleHeight',['../classTMPro_1_1TMP__Text.html#a19b8af303698cfa8117dcac2381bca90',1,'TMPro::TMP_Text']]],
+  ['flexiblewidth',['flexibleWidth',['../classTMPro_1_1TMP__Text.html#a8be9f32bae4a94101351d359c926ed82',1,'TMPro::TMP_Text']]],
+  ['followingcharacters',['followingCharacters',['../classTMPro_1_1TMP__Settings.html#a05637d0bf743beb9317c129c960bc654',1,'TMPro::TMP_Settings']]],
+  ['font',['font',['../classTMPro_1_1TMP__Text.html#a0a55f0d5dc209d8b265113c2669fd980',1,'TMPro::TMP_Text']]],
+  ['fontasset',['fontAsset',['../classTMPro_1_1TMP__InputField.html#ac13a97bd7e0eb0e19b5a50efc11adb67',1,'TMPro.TMP_InputField.fontAsset()'],['../classTMPro_1_1TMP__SubMesh.html#a964077af399140595270238950a3b931',1,'TMPro.TMP_SubMesh.fontAsset()'],['../classTMPro_1_1TMP__SubMeshUI.html#ac26089f074be39cd7f88b0b2b36c9e6b',1,'TMPro.TMP_SubMeshUI.fontAsset()']]],
+  ['fontinfo',['fontInfo',['../classTMPro_1_1TMP__FontAsset.html#a6afd05863cb5c5f39221cc63904b3f90',1,'TMPro::TMP_FontAsset']]],
+  ['fontmaterial',['fontMaterial',['../classTMPro_1_1TMP__Text.html#a43469e73ada24bcd98556df734ed3062',1,'TMPro::TMP_Text']]],
+  ['fontmaterials',['fontMaterials',['../classTMPro_1_1TMP__Text.html#a9fdf319f4f5ef63d80c9a575472d800f',1,'TMPro::TMP_Text']]],
+  ['fontscale',['fontScale',['../classTMPro_1_1TMP__Text.html#abf3c8050ad39a6a25615082085d4d05b',1,'TMPro::TMP_Text']]],
+  ['fontsharedmaterial',['fontSharedMaterial',['../classTMPro_1_1TMP__Text.html#ae8499604279c5c7af4ce94b3ba839a32',1,'TMPro::TMP_Text']]],
+  ['fontsharedmaterials',['fontSharedMaterials',['../classTMPro_1_1TMP__Text.html#ad5f432b62b573b9d9156443562c7d840',1,'TMPro::TMP_Text']]],
+  ['fontsize',['fontSize',['../classTMPro_1_1TMP__Text.html#a87683b2b2c721200b2822d16c0ce3dee',1,'TMPro::TMP_Text']]],
+  ['fontsizemax',['fontSizeMax',['../classTMPro_1_1TMP__Text.html#ab277a475e80198b4c17e808465d455af',1,'TMPro::TMP_Text']]],
+  ['fontsizemin',['fontSizeMin',['../classTMPro_1_1TMP__Text.html#ab6642b203f0de62e49407ce5caada06d',1,'TMPro::TMP_Text']]],
+  ['fontstyle',['fontStyle',['../classTMPro_1_1TMP__Text.html#af2e472645f4e0ab2f33ab3236def7dc4',1,'TMPro::TMP_Text']]],
+  ['fontweight',['fontWeight',['../classTMPro_1_1TMP__Text.html#a571c8cac097b25de7c9cea8da1c27d47',1,'TMPro::TMP_Text']]]
+];

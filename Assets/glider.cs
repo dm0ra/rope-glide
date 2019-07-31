@@ -465,7 +465,7 @@ public class glider : MonoBehaviour
         // Vertical speed to high stall glider
         else
         {
-            Debug.Log("STALL" + "  vertical speed " + this.Player.GetComponent<Rigidbody2D>().velocity.y);
+            //Debug.Log("STALL" + "  vertical speed " + this.Player.GetComponent<Rigidbody2D>().velocity.y);
         }
     }
 }

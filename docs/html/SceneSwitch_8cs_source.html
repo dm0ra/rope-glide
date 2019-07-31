@@ -79,27 +79,28 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classSceneSwitch.html">   10</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classSceneSwitch.html">SceneSwitch</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> sceneIndex;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">     * switch scene to index. The index for scenes are set in build settings</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> SwitchScenes(<span class="keywordtype">int</span> index)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        sceneIndex = index;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        SceneManager.LoadScene(index);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     * Get current scene index.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> GetSceneIndex()</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> sceneIndex;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma warning disable SA1307 // Accessible fields should begin with upper-case letter</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma warning disable SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classSceneSwitch.html#ab04d05531671ff922a2f59179c011f87">sceneIndex</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#pragma warning restore SA1401 // Fields should be private</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#pragma warning restore SA1307 // Accessible fields should begin with upper-case letter</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classSceneSwitch.html#a0decd304c94b42f22eba2ef70b3b00e2">   25</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classSceneSwitch.html#a0decd304c94b42f22eba2ef70b3b00e2">SwitchScenes</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        this.sceneIndex = index;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        SceneManager.LoadScene(index);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classSceneSwitch.html#aa8290565e53427b958749c56f1ae2117">   35</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classSceneSwitch.html#aa8290565e53427b958749c56f1ae2117">GetSceneIndex</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> this.<a class="code" href="classSceneSwitch.html#ab04d05531671ff922a2f59179c011f87">sceneIndex</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassSceneSwitch_html"><div class="ttname"><a href="classSceneSwitch.html">SceneSwitch</a></div><div class="ttdoc">A class that controls scene switching.</div><div class="ttdef"><b>Definition:</b> <a href="SceneSwitch_8cs_source.html#l00010">SceneSwitch.cs:10</a></div></div>
+<div class="ttc" id="aclassSceneSwitch_html_a0decd304c94b42f22eba2ef70b3b00e2"><div class="ttname"><a href="classSceneSwitch.html#a0decd304c94b42f22eba2ef70b3b00e2">SceneSwitch.SwitchScenes</a></div><div class="ttdeci">void SwitchScenes(int index)</div><div class="ttdoc">switch scene to index. The index for scenes are set in build settings.</div><div class="ttdef"><b>Definition:</b> <a href="SceneSwitch_8cs_source.html#l00025">SceneSwitch.cs:25</a></div></div>
+<div class="ttc" id="aclassSceneSwitch_html_aa8290565e53427b958749c56f1ae2117"><div class="ttname"><a href="classSceneSwitch.html#aa8290565e53427b958749c56f1ae2117">SceneSwitch.GetSceneIndex</a></div><div class="ttdeci">int GetSceneIndex()</div><div class="ttdoc">Get current scene index.</div><div class="ttdef"><b>Definition:</b> <a href="SceneSwitch_8cs_source.html#l00035">SceneSwitch.cs:35</a></div></div>
+<div class="ttc" id="aclassSceneSwitch_html_ab04d05531671ff922a2f59179c011f87"><div class="ttname"><a href="classSceneSwitch.html#ab04d05531671ff922a2f59179c011f87">SceneSwitch.sceneIndex</a></div><div class="ttdeci">int sceneIndex</div><div class="ttdoc">This holds the index for the next scene.</div><div class="ttdef"><b>Definition:</b> <a href="SceneSwitch_8cs_source.html#l00017">SceneSwitch.cs:17</a></div></div>
 <div class="ttc" id="anamespaceUnityEngine_html"><div class="ttname"><a href="namespaceUnityEngine.html">UnityEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="AchievementStepTests_8cs_source.html#l00004">AchievementStepTests.cs:4</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
