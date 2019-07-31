@@ -5,6 +5,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Firebase;
+using Firebase.Database;
+using Firebase.Unity.Editor;
 
 /// <summary>
 /// This class contains the data used to update the text boxes
@@ -60,11 +63,24 @@ public class EndScreenText : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://ropeglide.firebaseio.com/");
+        DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
+       
+        
         // update score text
         this.Score.text = "Score: " + DB.Score;
 
         // update high score text
-        this.HighScore.text = "High Score: " + DB.HighScore;
+        float hiscore = DB.HighScore;
+        this.HighScore.text = "High Score: " + hiscore;
+
+        //if hiscore > leaderboard hiscores
+        string displayName = "testName";
+        if ((Application.platform == RuntimePlatform.IPhonePlayer) || SystemInfo.operatingSystem.Contains("Mac"))
+        {
+            reference.Child("Leaderboard").Child(displayName).SetPriorityAsync(hiscore);
+        }
+            
 
         // update cash text
         this.Cash.text = "Cash: $" + DB.BankCash;

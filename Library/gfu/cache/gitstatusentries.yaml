@@ -13,9 +13,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-07-23T00:44:34.203-04:00
-  initializedAtString: 2019-07-23T00:38:50.639-04:00
+  lastUpdatedAtString: 2019-07-31T00:55:59.934-04:00
+  initializedAtString: 2019-07-30T23:59:33.063-04:00
   entries:
+  - path: .vs\Rope-Glide\v15\.suo
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\.suo
+    projectPath: .vs\Rope-Glide\v15\.suo
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide
+    projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide
+    originalPath: 
+    status: 3
+    staged: 0
   - path: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\.vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
     projectPath: .vs\Rope-Glide\v15\Server\sqlite3\storage.ide-shm
@@ -40,75 +52,1107 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\cameraControl.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\cameraControl.cs
-    projectPath: Assets\cameraControl.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\Enemies.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Enemies.cs
-    projectPath: Assets\Enemies.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\glider.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\glider.cs
-    projectPath: Assets\glider.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\InitTestScene636994005143330816.unity
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\InitTestScene636994005143330816.unity
-    projectPath: Assets\InitTestScene636994005143330816.unity
+  - path: Assets\Editor Default Resources.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources.meta
+    projectPath: Assets\Editor Default Resources.meta
     originalPath: 
     status: 1
     staged: 0
-  - path: Assets\InitTestScene636994005143330816.unity.meta
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\InitTestScene636994005143330816.unity.meta
-    projectPath: Assets\InitTestScene636994005143330816.unity.meta
+  - path: Assets\Editor Default Resources\Firebase.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase.meta
+    projectPath: Assets\Editor Default Resources\Firebase.meta
     originalPath: 
     status: 1
     staged: 0
-  - path: Assets\InputClass.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\InputClass.cs
-    projectPath: Assets\InputClass.cs
+  - path: Assets\Editor Default Resources\Firebase\fb_analytics.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_analytics.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_analytics.png
     originalPath: 
-    status: 3
+    status: 1
     staged: 0
-  - path: Assets\LevelControl.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\LevelControl.cs
-    projectPath: Assets\LevelControl.cs
+  - path: Assets\Editor Default Resources\Firebase\fb_analytics.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_analytics.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_analytics.png.meta
     originalPath: 
-    status: 3
+    status: 1
     staged: 0
-  - path: Assets\PickUpItem.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PickUpItem.cs
-    projectPath: Assets\PickUpItem.cs
+  - path: Assets\Editor Default Resources\Firebase\fb_analytics_dark.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_analytics_dark.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_analytics_dark.png
     originalPath: 
-    status: 3
+    status: 1
     staged: 0
-  - path: Assets\scripts\Booster.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Booster.cs
-    projectPath: Assets\scripts\Booster.cs
+  - path: Assets\Editor Default Resources\Firebase\fb_analytics_dark.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_analytics_dark.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_analytics_dark.png.meta
     originalPath: 
-    status: 3
+    status: 1
     staged: 0
-  - path: Assets\scripts\buttonMethods.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\buttonMethods.cs
-    projectPath: Assets\scripts\buttonMethods.cs
+  - path: Assets\Editor Default Resources\Firebase\fb_auth.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_auth.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_auth.png
     originalPath: 
-    status: 3
+    status: 1
     staged: 0
-  - path: Assets\scripts\CSVParsing.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\CSVParsing.cs
-    projectPath: Assets\scripts\CSVParsing.cs
+  - path: Assets\Editor Default Resources\Firebase\fb_auth.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_auth.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_auth.png.meta
     originalPath: 
-    status: 3
+    status: 1
     staged: 0
-  - path: Assets\scripts\DataSaver.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\DataSaver.cs
-    projectPath: Assets\scripts\DataSaver.cs
+  - path: Assets\Editor Default Resources\Firebase\fb_auth_dark.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_auth_dark.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_auth_dark.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_auth_dark.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_auth_dark.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_auth_dark.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_cloud_messaging.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_cloud_messaging_dark.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_config.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_config.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_config.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_config.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_config.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_config.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_config_dark.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_config_dark.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_config_dark.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_config_dark.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_config_dark.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_config_dark.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_crashlytics.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_crashlytics.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_crashlytics.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_crashlytics.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_crashlytics.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_crashlytics.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_crashlytics_dark.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_database.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_database.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_database.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_database.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_database.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_database.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_database_dark.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_database_dark.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_database_dark.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_database_dark.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_database_dark.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_database_dark.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_dynamic_links.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_dynamic_links.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_dynamic_links.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_dynamic_links.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_dynamic_links.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_dynamic_links.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_dynamic_links_dark.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_functions.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_functions.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_functions.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_functions.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_functions.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_functions.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_functions_dark.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_functions_dark.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_functions_dark.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_functions_dark.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_functions_dark.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_functions_dark.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_storage.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_storage.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_storage.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_storage.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_storage.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_storage.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_storage_dark.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_storage_dark.png
+    projectPath: Assets\Editor Default Resources\Firebase\fb_storage_dark.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\fb_storage_dark.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\fb_storage_dark.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\fb_storage_dark.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\firebase_lockup.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\firebase_lockup.png
+    projectPath: Assets\Editor Default Resources\Firebase\firebase_lockup.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\firebase_lockup.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\firebase_lockup.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\firebase_lockup.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png
+    projectPath: Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png.meta
+    projectPath: Assets\Editor Default Resources\Firebase\firebase_lockup_dark.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase.meta
+    projectPath: Assets\Firebase.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor.meta
+    projectPath: Assets\Firebase\Editor.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\AppDependencies.xml
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\AppDependencies.xml
+    projectPath: Assets\Firebase\Editor\AppDependencies.xml
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\AppDependencies.xml.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\AppDependencies.xml.meta
+    projectPath: Assets\Firebase\Editor\AppDependencies.xml.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\AuthDependencies.xml
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\AuthDependencies.xml
+    projectPath: Assets\Firebase\Editor\AuthDependencies.xml
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\AuthDependencies.xml.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\AuthDependencies.xml.meta
+    projectPath: Assets\Firebase\Editor\AuthDependencies.xml.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\DatabaseDependencies.xml
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\DatabaseDependencies.xml
+    projectPath: Assets\Firebase\Editor\DatabaseDependencies.xml
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\DatabaseDependencies.xml.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\DatabaseDependencies.xml.meta
+    projectPath: Assets\Firebase\Editor\DatabaseDependencies.xml.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\Firebase.Editor.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\Firebase.Editor.dll
+    projectPath: Assets\Firebase\Editor\Firebase.Editor.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\Firebase.Editor.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\Firebase.Editor.dll.meta
+    projectPath: Assets\Firebase\Editor\Firebase.Editor.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED
+    projectPath: Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED.meta
+    projectPath: Assets\Firebase\Editor\Firebase.Editor.dll.mdb_DISABLED.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt
+    projectPath: Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt.meta
+    projectPath: Assets\Firebase\Editor\FirebaseAuth_v1.1.2_manifest.txt.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt
+    projectPath: Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt.meta
+    projectPath: Assets\Firebase\Editor\FirebaseDatabase_version-6.2.2_manifest.txt.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\generate_xml_from_google_services_json.exe
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\generate_xml_from_google_services_json.exe
+    projectPath: Assets\Firebase\Editor\generate_xml_from_google_services_json.exe
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\generate_xml_from_google_services_json.exe.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\generate_xml_from_google_services_json.exe.meta
+    projectPath: Assets\Firebase\Editor\generate_xml_from_google_services_json.exe.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\generate_xml_from_google_services_json.py
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\generate_xml_from_google_services_json.py
+    projectPath: Assets\Firebase\Editor\generate_xml_from_google_services_json.py
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\generate_xml_from_google_services_json.py.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\generate_xml_from_google_services_json.py.meta
+    projectPath: Assets\Firebase\Editor\generate_xml_from_google_services_json.py.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\network_request.exe
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\network_request.exe
+    projectPath: Assets\Firebase\Editor\network_request.exe
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\network_request.exe.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\network_request.exe.meta
+    projectPath: Assets\Firebase\Editor\network_request.exe.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\network_request.py
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\network_request.py
+    projectPath: Assets\Firebase\Editor\network_request.py
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\network_request.py.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\network_request.py.meta
+    projectPath: Assets\Firebase\Editor\network_request.py.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\NOTICE
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\NOTICE
+    projectPath: Assets\Firebase\Editor\NOTICE
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\NOTICE.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\NOTICE.meta
+    projectPath: Assets\Firebase\Editor\NOTICE.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\readme.md
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\readme.md
+    projectPath: Assets\Firebase\Editor\readme.md
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Editor\readme.md.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Editor\readme.md.meta
+    projectPath: Assets\Firebase\Editor\readme.md.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository.meta
+    projectPath: Assets\Firebase\m2repository.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com.meta
+    projectPath: Assets\Firebase\m2repository\com.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google.meta
+    projectPath: Assets\Firebase\m2repository\com\google.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.pom.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\6.2.2\firebase-app-unity-6.2.2.srcaar.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.pom.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\6.2.2\firebase-auth-unity-6.2.2.srcaar.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.pom.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\6.2.2\firebase-database-unity-6.2.2.srcaar.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml.meta
+    projectPath: Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins.meta
+    projectPath: Assets\Firebase\Plugins.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Firebase.App.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.App.dll
+    projectPath: Assets\Firebase\Plugins\Firebase.App.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Firebase.App.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.App.dll.meta
+    projectPath: Assets\Firebase\Plugins\Firebase.App.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Firebase.Auth.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Auth.dll
+    projectPath: Assets\Firebase\Plugins\Firebase.Auth.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Firebase.Auth.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Auth.dll.meta
+    projectPath: Assets\Firebase\Plugins\Firebase.Auth.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Firebase.Database.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Database.dll
+    projectPath: Assets\Firebase\Plugins\Firebase.Database.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Firebase.Database.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Database.dll.meta
+    projectPath: Assets\Firebase\Plugins\Firebase.Database.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Firebase.Platform.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Platform.dll
+    projectPath: Assets\Firebase\Plugins\Firebase.Platform.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Firebase.Platform.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.Platform.dll.meta
+    projectPath: Assets\Firebase\Plugins\Firebase.Platform.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Firebase.TaskExtension.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.TaskExtension.dll
+    projectPath: Assets\Firebase\Plugins\Firebase.TaskExtension.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Firebase.TaskExtension.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Firebase.TaskExtension.dll.meta
+    projectPath: Assets\Firebase\Plugins\Firebase.TaskExtension.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Google.MiniJson.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Google.MiniJson.dll
+    projectPath: Assets\Firebase\Plugins\Google.MiniJson.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Google.MiniJson.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Google.MiniJson.dll.meta
+    projectPath: Assets\Firebase\Plugins\Google.MiniJson.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Google.Sharpen.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Google.Sharpen.dll
+    projectPath: Assets\Firebase\Plugins\Google.Sharpen.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Google.Sharpen.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Google.Sharpen.dll.meta
+    projectPath: Assets\Firebase\Plugins\Google.Sharpen.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Http.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Http.meta
+    projectPath: Assets\Firebase\Plugins\Http.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Http\link.xml_DISABLED
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Http\link.xml_DISABLED
+    projectPath: Assets\Firebase\Plugins\Http\link.xml_DISABLED
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\Http\link.xml_DISABLED.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\Http\link.xml_DISABLED.meta
+    projectPath: Assets\Firebase\Plugins\Http\link.xml_DISABLED.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\iOS.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS.meta
+    projectPath: Assets\Firebase\Plugins\iOS.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\iOS\Firebase.App.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.App.dll
+    projectPath: Assets\Firebase\Plugins\iOS\Firebase.App.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\iOS\Firebase.App.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.App.dll.meta
+    projectPath: Assets\Firebase\Plugins\iOS\Firebase.App.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\iOS\Firebase.Auth.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.Auth.dll
+    projectPath: Assets\Firebase\Plugins\iOS\Firebase.Auth.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\iOS\Firebase.Auth.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.Auth.dll.meta
+    projectPath: Assets\Firebase\Plugins\iOS\Firebase.Auth.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\iOS\Firebase.Database.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.Database.dll
+    projectPath: Assets\Firebase\Plugins\iOS\Firebase.Database.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\iOS\Firebase.Database.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\iOS\Firebase.Database.dll.meta
+    projectPath: Assets\Firebase\Plugins\iOS\Firebase.Database.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\link.xml_DISABLED
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\link.xml_DISABLED
+    projectPath: Assets\Firebase\Plugins\link.xml_DISABLED
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\link.xml_DISABLED.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\link.xml_DISABLED.meta
+    projectPath: Assets\Firebase\Plugins\link.xml_DISABLED.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64.meta
+    projectPath: Assets\Firebase\Plugins\x86_64.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle.meta
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.bundle.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll.meta
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so.meta
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppApp-6_2_2.so.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle.meta
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.bundle.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll.meta
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so.meta
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppAuth.so.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle.meta
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.bundle.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll.meta
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so.meta
+    projectPath: Assets\Firebase\Plugins\x86_64\FirebaseCppDatabase.so.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\GoogleService-Info.plist
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\GoogleService-Info.plist
+    projectPath: Assets\GoogleService-Info.plist
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\GoogleService-Info.plist.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\GoogleService-Info.plist.meta
+    projectPath: Assets\GoogleService-Info.plist.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Parse.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse.meta
+    projectPath: Assets\Parse.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Parse\Plugins.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins.meta
+    projectPath: Assets\Parse\Plugins.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Parse\Plugins\dotNet45.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\dotNet45.meta
+    projectPath: Assets\Parse\Plugins\dotNet45.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Parse\Plugins\dotNet45\Unity.Compat.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\dotNet45\Unity.Compat.dll
+    projectPath: Assets\Parse\Plugins\dotNet45\Unity.Compat.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Parse\Plugins\dotNet45\Unity.Compat.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\dotNet45\Unity.Compat.dll.meta
+    projectPath: Assets\Parse\Plugins\dotNet45\Unity.Compat.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll
+    projectPath: Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll.meta
+    projectPath: Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Parse\Plugins\Unity.Compat.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\Unity.Compat.dll
+    projectPath: Assets\Parse\Plugins\Unity.Compat.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Parse\Plugins\Unity.Compat.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\Unity.Compat.dll.meta
+    projectPath: Assets\Parse\Plugins\Unity.Compat.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Parse\Plugins\Unity.Tasks.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\Unity.Tasks.dll
+    projectPath: Assets\Parse\Plugins\Unity.Tasks.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Parse\Plugins\Unity.Tasks.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Parse\Plugins\Unity.Tasks.dll.meta
+    projectPath: Assets\Parse\Plugins\Unity.Tasks.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver.meta
+    projectPath: Assets\PlayServicesResolver.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver\Editor.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor.meta
+    projectPath: Assets\PlayServicesResolver\Editor.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll
+    projectPath: Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll.meta
+    projectPath: Assets\PlayServicesResolver\Editor\Google.IOSResolver_v1.2.122.0.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll
+    projectPath: Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll.meta
+    projectPath: Assets\PlayServicesResolver\Editor\Google.JarResolver_v1.2.122.0.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll
+    projectPath: Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll.meta
+    projectPath: Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll
+    projectPath: Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll.meta
+    projectPath: Assets\PlayServicesResolver\Editor\Google.VersionHandlerImpl_v1.2.122.0.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt
+    projectPath: Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt.meta
+    projectPath: Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.122.0.txt.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\Android.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android.meta
+    projectPath: Assets\Plugins\Android.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\Android\Firebase.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android\Firebase.meta
+    projectPath: Assets\Plugins\Android\Firebase.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\Android\Firebase\AndroidManifest.xml
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android\Firebase\AndroidManifest.xml
+    projectPath: Assets\Plugins\Android\Firebase\AndroidManifest.xml
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\Android\Firebase\AndroidManifest.xml.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android\Firebase\AndroidManifest.xml.meta
+    projectPath: Assets\Plugins\Android\Firebase\AndroidManifest.xml.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\Android\Firebase\project.properties
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android\Firebase\project.properties
+    projectPath: Assets\Plugins\Android\Firebase\project.properties
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\Android\Firebase\project.properties.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\Android\Firebase\project.properties.meta
+    projectPath: Assets\Plugins\Android\Firebase\project.properties.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\iOS.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS.meta
+    projectPath: Assets\Plugins\iOS.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\iOS\Firebase.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase.meta
+    projectPath: Assets\Plugins\iOS\Firebase.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a
+    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a.meta
+    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppApp.a.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a
+    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a.meta
+    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppAuth.a.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a
+    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a.meta
+    projectPath: Assets\Plugins\iOS\Firebase\libFirebaseCppDatabase.a.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\GameOver.unity
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\Scenes\GameOver.unity
+    projectPath: Assets\Scenes\GameOver.unity
     originalPath: 
     status: 3
     staged: 0
@@ -124,17 +1168,35 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\scripts\HingeManager.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\HingeManager.cs
-    projectPath: Assets\scripts\HingeManager.cs
+  - path: Assets\scripts\saverUnitTest.cs
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\saverUnitTest.cs
+    projectPath: Assets\scripts\saverUnitTest.cs
     originalPath: 
-    status: 3
+    status: 1
     staged: 0
-  - path: Assets\scripts\Rope.cs
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\Rope.cs
-    projectPath: Assets\scripts\Rope.cs
+  - path: Assets\scripts\saverUnitTest.cs.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\scripts\saverUnitTest.cs.meta
+    projectPath: Assets\scripts\saverUnitTest.cs.meta
     originalPath: 
-    status: 3
+    status: 1
+    staged: 0
+  - path: Assets\StreamingAssets.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\StreamingAssets.meta
+    projectPath: Assets\StreamingAssets.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\StreamingAssets\google-services-desktop.json
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\StreamingAssets\google-services-desktop.json
+    projectPath: Assets\StreamingAssets\google-services-desktop.json
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\StreamingAssets\google-services-desktop.json.meta
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Assets\StreamingAssets\google-services-desktop.json.meta
+    projectPath: Assets\StreamingAssets\google-services-desktop.json.meta
+    originalPath: 
+    status: 1
     staged: 0
   - path: Library\assetDatabase3
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\assetDatabase3
@@ -145,6 +1207,24 @@ MonoBehaviour:
   - path: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
     projectPath: Library\Collab\CollabSnapshot_37aef590-e84b-4d29-84d0-61ce36c3716c.txt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\CurrentLayout.dwlt
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\expandedItems
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\expandedItems
+    projectPath: Library\expandedItems
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
     status: 3
     staged: 0
@@ -178,93 +1258,27 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\LastSceneManagerSetup.txt
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Library\metadata\08\0815acb276965af48801d4db866252b5
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\08\0815acb276965af48801d4db866252b5
     projectPath: Library\metadata\08\0815acb276965af48801d4db866252b5
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    projectPath: Library\metadata\13\135862d7de01e3840b56f01765d8af45
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\3b\3b5d84cf239eca94c92b4f5f9e88ac1c
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\3b\3b5d84cf239eca94c92b4f5f9e88ac1c
-    projectPath: Library\metadata\3b\3b5d84cf239eca94c92b4f5f9e88ac1c
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\53\53b28e480f84452449972da4c75d4ce7
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\53\53b28e480f84452449972da4c75d4ce7
-    projectPath: Library\metadata\53\53b28e480f84452449972da4c75d4ce7
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
-    projectPath: Library\metadata\6b\6be6c8a1002900c4cab98cf2728f884a
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
-    projectPath: Library\metadata\9b\9bf20c20a397ebc489dfa7bf58e5a4ee
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
-    projectPath: Library\metadata\9f\9f9a8c5f1f55bd741854e29814699cdd
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90.info
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90.info
-    projectPath: Library\metadata\a6\a6318e994ae073a4d8ebd970a1441e90.info
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
-    projectPath: Library\metadata\aa\aaa57dd7f922bba4daea1bb821ba49b4
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
-    projectPath: Library\metadata\b3\b3a3b8e4ca2254b4da7e2e83119d8381
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
-    projectPath: Library\metadata\b7\b7e75620aeb23a34cae7b6a9c186f874
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
-    projectPath: Library\metadata\c6\c6220c498a2dc66478d3cec777b9ae07
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\d6\d6ad9db72dc6c4949ad256018baf170e
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\d6\d6ad9db72dc6c4949ad256018baf170e
-    projectPath: Library\metadata\d6\d6ad9db72dc6c4949ad256018baf170e
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\f7\f7551022d25321741ac25c4df9a2a364.info
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\f7\f7551022d25321741ac25c4df9a2a364.info
-    projectPath: Library\metadata\f7\f7551022d25321741ac25c4df9a2a364.info
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
-    projectPath: Library\metadata\fa\fab313a20f661b245bad8b8d998b093c
+  - path: Library\ProjectSettings.asset
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ProjectSettings.asset
+    projectPath: Library\ProjectSettings.asset
     originalPath: 
     status: 3
     staged: 0
@@ -286,21 +1300,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.pdb
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
     projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
-    projectPath: Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.pdb
     originalPath: 
     status: 3
     staged: 0
@@ -310,21 +1312,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.pdb
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
     projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.pdb
     originalPath: 
     status: 3
     staged: 0
@@ -337,18 +1327,6 @@ MonoBehaviour:
   - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
     fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
     projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.pdb
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Library\ScriptAssemblies\Unity.TextMeshPro.pdb
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.pdb
     originalPath: 
     status: 3
     staged: 0
@@ -370,291 +1348,21 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Packages\Microsoft.CodeCoverage.16.2.0\.signature.p7s
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\Microsoft.CodeCoverage.16.2.0\.signature.p7s
-    projectPath: Packages\Microsoft.CodeCoverage.16.2.0\.signature.p7s
+  - path: obj\Debug\Assembly-CSharp.dll
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.dll
+    projectPath: obj\Debug\Assembly-CSharp.dll
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
-  - path: Packages\Microsoft.CodeCoverage.16.2.0\lib\net45\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\Microsoft.CodeCoverage.16.2.0\lib\net45\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-    projectPath: Packages\Microsoft.CodeCoverage.16.2.0\lib\net45\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+  - path: obj\Debug\Assembly-CSharp.pdb
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\obj\Debug\Assembly-CSharp.pdb
+    projectPath: obj\Debug\Assembly-CSharp.pdb
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
-  - path: Packages\Microsoft.CodeCoverage.16.2.0\lib\netcoreapp1.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\Microsoft.CodeCoverage.16.2.0\lib\netcoreapp1.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-    projectPath: Packages\Microsoft.CodeCoverage.16.2.0\lib\netcoreapp1.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\Microsoft.CodeCoverage.16.2.0\Microsoft.CodeCoverage.16.2.0.nupkg
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\Microsoft.CodeCoverage.16.2.0\Microsoft.CodeCoverage.16.2.0.nupkg
-    projectPath: Packages\Microsoft.CodeCoverage.16.2.0\Microsoft.CodeCoverage.16.2.0.nupkg
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\.signature.p7s
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\.signature.p7s
-    projectPath: Packages\OpenCover.4.7.922\.signature.p7s
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\docs\ReleaseNotes.txt
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\docs\ReleaseNotes.txt
-    projectPath: Packages\OpenCover.4.7.922\docs\ReleaseNotes.txt
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\docs\Usage.rtf
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\docs\Usage.rtf
-    projectPath: Packages\OpenCover.4.7.922\docs\Usage.rtf
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\License.rtf
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\License.rtf
-    projectPath: Packages\OpenCover.4.7.922\License.rtf
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\MSBuild\OpenCover.MSBuild.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\MSBuild\OpenCover.MSBuild.dll
-    projectPath: Packages\OpenCover.4.7.922\MSBuild\OpenCover.MSBuild.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\MSBuild\OpenCover.targets
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\MSBuild\OpenCover.targets
-    projectPath: Packages\OpenCover.4.7.922\MSBuild\OpenCover.targets
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\OpenCover.4.7.922.nupkg
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\OpenCover.4.7.922.nupkg
-    projectPath: Packages\OpenCover.4.7.922\OpenCover.4.7.922.nupkg
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\readme_with_releasenotes.txt
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\readme_with_releasenotes.txt
-    projectPath: Packages\OpenCover.4.7.922\readme_with_releasenotes.txt
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\Samples\x64\OpenCover.Simple.Target.exe
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\Samples\x64\OpenCover.Simple.Target.exe
-    projectPath: Packages\OpenCover.4.7.922\Samples\x64\OpenCover.Simple.Target.exe
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\Samples\x86\OpenCover.Simple.Target.exe
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\Samples\x86\OpenCover.Simple.Target.exe
-    projectPath: Packages\OpenCover.4.7.922\Samples\x86\OpenCover.Simple.Target.exe
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Autofac.Configuration.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Autofac.Configuration.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Autofac.Configuration.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Autofac.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Autofac.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Autofac.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\autofac.json
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\autofac.json
-    projectPath: Packages\OpenCover.4.7.922\tools\autofac.json
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Gendarme.Framework.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Gendarme.Framework.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Gendarme.Framework.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Gendarme.Rules.Maintainability.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Gendarme.Rules.Maintainability.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Gendarme.Rules.Maintainability.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\log4net.config
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\log4net.config
-    projectPath: Packages\OpenCover.4.7.922\tools\log4net.config
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\log4net.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\log4net.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\log4net.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.Abstractions.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.Abstractions.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.Abstractions.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.FileExtensions.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.FileExtensions.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.FileExtensions.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.Json.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.Json.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Configuration.Json.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.FileProviders.Abstractions.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.FileProviders.Abstractions.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.FileProviders.Abstractions.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.FileProviders.Physical.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.FileProviders.Physical.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.FileProviders.Physical.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.FileSystemGlobbing.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.FileSystemGlobbing.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.FileSystemGlobbing.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Primitives.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Primitives.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Microsoft.Extensions.Primitives.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Mono.Cecil.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Mono.Cecil.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Mono.Cecil.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Mono.Cecil.Mdb.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Mono.Cecil.Mdb.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Mono.Cecil.Mdb.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Mono.Cecil.Pdb.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Mono.Cecil.Pdb.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Mono.Cecil.Pdb.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Mono.Cecil.Rocks.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Mono.Cecil.Rocks.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Mono.Cecil.Rocks.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Newtonsoft.Json.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Newtonsoft.Json.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Newtonsoft.Json.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\OpenCover.Console.exe
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\OpenCover.Console.exe
-    projectPath: Packages\OpenCover.4.7.922\tools\OpenCover.Console.exe
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\OpenCover.Console.exe.config
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\OpenCover.Console.exe.config
-    projectPath: Packages\OpenCover.4.7.922\tools\OpenCover.Console.exe.config
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\OpenCover.Extensions.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\OpenCover.Extensions.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\OpenCover.Extensions.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\OpenCover.Framework.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\OpenCover.Framework.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\OpenCover.Framework.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\SampleSln\SampleSln.zip
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\SampleSln\SampleSln.zip
-    projectPath: Packages\OpenCover.4.7.922\tools\SampleSln\SampleSln.zip
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Sentry.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Sentry.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Sentry.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Sentry.PlatformAbstractions.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Sentry.PlatformAbstractions.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Sentry.PlatformAbstractions.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\Sentry.Protocol.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\Sentry.Protocol.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\Sentry.Protocol.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\System.Collections.Immutable.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\System.Collections.Immutable.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\System.Collections.Immutable.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\x64\OpenCover.Profiler.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\x64\OpenCover.Profiler.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\x64\OpenCover.Profiler.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\tools\x86\OpenCover.Profiler.dll
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\tools\x86\OpenCover.Profiler.dll
-    projectPath: Packages\OpenCover.4.7.922\tools\x86\OpenCover.Profiler.dll
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\transform\simple_report.xslt
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\transform\simple_report.xslt
-    projectPath: Packages\OpenCover.4.7.922\transform\simple_report.xslt
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Packages\OpenCover.4.7.922\transform\transform.ps1
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Packages\OpenCover.4.7.922\transform\transform.ps1
-    projectPath: Packages\OpenCover.4.7.922\transform\transform.ps1
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Rope-Glide.sln
-    fullPath: C:\Users\bluhm\Documents\Rope-Glide\Rope-Glide.sln
-    projectPath: Rope-Glide.sln
+  - path: ProjectSettings\ProjectSettings.asset
+    fullPath: C:\Users\bluhm\Documents\Rope-Glide\ProjectSettings\ProjectSettings.asset
+    projectPath: ProjectSettings\ProjectSettings.asset
     originalPath: 
     status: 3
     staged: 0

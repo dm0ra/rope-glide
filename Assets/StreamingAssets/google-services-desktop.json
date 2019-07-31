@@ -1,0 +1,37 @@
+{
+  "client": [
+    {
+      "services": {
+        "appinvite_service": {
+          "status": 1
+        }, 
+        "analytics_service": {
+          "status": 0
+        }
+      }, 
+      "oauth_client": [
+        {
+          "client_id": "330270249026-in38j2763a2iqo3193rhu9ie222iqrbl.apps.googleusercontent.com"
+        }
+      ], 
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMDFapEsAnaEjdtOO5oJrj-07h2Nu96Ik"
+        }
+      ], 
+      "client_info": {
+        "mobilesdk_app_id": "1:330270249026:ios:ddb8232425a8981d", 
+        "android_client_info": {
+          "package_name": "com.Bluhm.RopeGlide"
+        }
+      }
+    }
+  ], 
+  "configuration_version": "1", 
+  "project_info": {
+    "storage_bucket": "ropeglide.appspot.com", 
+    "project_id": "ropeglide", 
+    "firebase_url": "https://ropeglide.firebaseio.com", 
+    "project_number": "330270249026"
+  }
+}

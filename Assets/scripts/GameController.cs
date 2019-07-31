@@ -463,6 +463,7 @@ public class GameController : MonoBehaviour
     /// </summary>
     private void Awake()
     {
+        
         // Load the highscore and set highscore upon each life
         string fileData = DataSaver.LoadData<string>("HighScore");
         string[] fileLines = fileData.Split('\n');

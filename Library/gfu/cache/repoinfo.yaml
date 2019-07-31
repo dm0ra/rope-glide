@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-07-23T00:44:25.978-04:00
-  initializedAtString: 2019-07-23T00:38:48.484-04:00
+  lastUpdatedAtString: 2019-07-31T00:12:53.362-04:00
+  initializedAtString: 2019-07-30T23:59:32.460-04:00
   currentGitRemote:
     name: origin
     url: https://github.com/dm0ra/Rope-Glide
