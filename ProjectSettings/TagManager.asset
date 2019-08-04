@@ -16,6 +16,11 @@ TagManager:
   - GliderImage
   - UserCash
   - Rope
+  - LB0
+  - LB1
+  - LB2
+  - LB3
+  - LB4
   layers:
   - Default
   - TransparentFX
