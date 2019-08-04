@@ -1,21 +1,3 @@
-using System.Linq;
-
-namespace UnityEditor.PackageManager.UI
-{
-    internal class PackageAssetPostprocessor : AssetPostprocessor
-    {
-        static bool IsPackageJsonAsset(string path)
-        {
-            var pathComponents = (path ?? "").Split('/');
-            return pathComponents.Length == 3 && pathComponents[0] == "Packages" && pathComponents[2] == "package.json";
-        }
-
-        static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)
-        {
-            if (PackageCollection.Instance != null && (importedAssets.Any(IsPackageJsonAsset) || deletedAssets.Any(IsPackageJsonAsset) || movedAssets.Any(IsPackageJsonAsset)))
-            {
-                PackageCollection.Instance.FetchListOfflineCache(true);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8d432dc3f2df96d86b533d019d27ba30abcb78b51fe9c5d75a5428d21451c803
+size 853

@@ -16,6 +16,9 @@ TagManager:
   - GliderImage
   - UserCash
   - Rope
+  - Dart
+  - Mace
+  - DartShooterImage
   layers:
   - Default
   - TransparentFX

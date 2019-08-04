@@ -1,34 +1,3 @@
-﻿using UnityEngine.Experimental.UIElements;
-
-namespace UnityEditor.PackageManager.UI
-{
-    /// <summary>
-    /// Interface for Package Manager UI Extension
-    /// </summary>
-    public interface IPackageManagerExtension
-    {
-        /// <summary>
-        /// Creates the extension UI visual element.
-        /// </summary>
-        /// <returns>A visual element that represents the UI or null if none</returns>
-        VisualElement CreateExtensionUI();
-        
-        /// <summary>
-        /// Called by the Package Manager UI when the package selection changed.
-        /// </summary>
-        /// <param name="packageInfo">The newly selected package information (can be null)</param>
-        void OnPackageSelectionChange(PackageManager.PackageInfo packageInfo);
-        
-        /// <summary>
-        /// Called by the Package Manager UI when a package is added or updated.
-        /// </summary>
-        /// <param name="packageInfo">The package information</param>
-        void OnPackageAddedOrUpdated(PackageManager.PackageInfo packageInfo);
-        
-        /// <summary>
-        /// Called by the Package Manager UI when a package is removed.
-        /// </summary>
-        /// <param name="packageInfo">The package information</param>
-        void OnPackageRemoved(PackageManager.PackageInfo packageInfo);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4724751a9bd9a104c7613533221a0837edab5dc84307d08426f76f379d508f37
+size 1360

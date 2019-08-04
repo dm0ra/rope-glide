@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Booster">
+    <Position X="16.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAABAAASAQAQAAAAAAAAAAAggCAAAoEAAAAQAAAAA=</HashCode>
+      <FileName>Assets\scripts\Booster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonMethods">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQQBEAAAACAIAAIQBIAoEgCCIEAABAAAEAcBECIgAEA=</HashCode>
+      <FileName>Assets\scripts\buttonMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CSVParsing">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAEAAiABAAAAAEAAIAJAAAAAAAgIAAAAAAAAIQA=</HashCode>
+      <FileName>Assets\scripts\CSVParsing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataSaver">
+    <Position X="6.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAQAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\scripts\DataSaver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAQABAAQAAEAB5ABAA8QBAAIAAABAAABAAAAAAAEAA=</HashCode>
+      <FileName>Assets\scripts\DB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndScreenText">
+    <Position X="10.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQABCAAAAgAAAAgAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\scripts\EndScreenText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameController">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAdCIEAAAAcASAAAAFIIYFIkjEAgABBAAAA0DUACgEA=</HashCode>
+      <FileName>Assets\scripts\GameController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HingeManager">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAABAAAAAAAAACAAA=</HashCode>
+      <FileName>Assets\scripts\HingeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rope">
+    <Position X="8.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACwAAAEAIAAAAIAAAgAAAAAIAEAwAQADIAI=</HashCode>
+      <FileName>Assets\scripts\Rope.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Upgrades">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\scripts\Upgrades.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="cameraControl">
+    <Position X="5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAYAAAAAACQAAAAAIAgIAAQgBACAAJAJAAQAAQAAyAI=</HashCode>
+      <FileName>Assets\cameraControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemies">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAwQACAAAAAAAAAAAAAAAEiAAAAAAAAAAQEQgAI=</HashCode>
+      <FileName>Assets\Enemies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="glider">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAMCgEAAAgAAAAwAAAAgBAAAAIEAACAQAAgIA=</HashCode>
+      <FileName>Assets\glider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputClass">
+    <Position X="16.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAgCQAAAAAAACQAAAAAACAAAAAAAEAAAAACAA=</HashCode>
+      <FileName>Assets\InputClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PickUpItem">
+    <Position X="11" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACQAAAAAAAIAQAAAAEkABAAAAEAAAQAQAAA=</HashCode>
+      <FileName>Assets\PickUpItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,11 +1,3 @@
-﻿using System;
-
-namespace UnityEditor.PackageManager.UI
-{
-    internal interface IRemoveOperation : IBaseOperation
-    {
-        event Action<PackageInfo> OnOperationSuccess;
-
-        void RemovePackageAsync(PackageInfo package, Action<PackageInfo> doneCallbackAction = null,  Action<Error> errorCallbackAction = null);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:52f7e4ccccf3d1f4591f9b29a39206b2c991bf468eaf0a0c43aa64533f3ad4fc
+size 341

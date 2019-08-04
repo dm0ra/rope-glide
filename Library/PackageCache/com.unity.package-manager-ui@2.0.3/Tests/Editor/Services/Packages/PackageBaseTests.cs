@@ -1,24 +1,3 @@
-﻿using NUnit.Framework;
-
-namespace UnityEditor.PackageManager.UI.Tests
-{
-    internal class PackageBaseTests
-    {
-        protected MockOperationFactory Factory;
-        protected const string kPackageTestName = "com.unity.test";
-
-
-        [OneTimeSetUp]
-        public void OneTimeSetup()
-        {
-            Factory = new MockOperationFactory();
-            OperationFactory.Instance = Factory;
-        }
-
-        [OneTimeTearDown]
-        public void OneTimeTearDown()
-        {
-            OperationFactory.Reset();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:97a385471a309d343f7f32de84508ee0e511f2cd7dae48e5d27c84938e66b9f3
+size 565

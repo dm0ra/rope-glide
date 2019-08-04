@@ -1,24 +1,3 @@
-﻿using UnityEditor;
-using UnityEditor.Collaboration;
-using UnityEngine;
-
-namespace CollabProxy.UI
-{
-    [InitializeOnLoad]
-    public class Bootstrap
-    {
-        private const float kCollabToolbarButtonWidth = 78.0f;
-        
-        static Bootstrap()
-        {
-            Collab.ShowHistoryWindow = CollabHistoryWindow.ShowHistoryWindow;
-            Collab.ShowToolbarAtPosition = CollabToolbarWindow.ShowCenteredAtPosition;
-            Collab.IsToolbarVisible = CollabToolbarWindow.IsVisible;
-            Collab.CloseToolbar = CollabToolbarWindow.CloseToolbar;
-            Toolbar.AddSubToolbar(new CollabToolbarButton
-            {
-                Width = kCollabToolbarButtonWidth
-            });
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d9b8d790fc4ad64fed883be8517a82320e67d7a947d7ebad8ba2704794eba4d1
+size 747

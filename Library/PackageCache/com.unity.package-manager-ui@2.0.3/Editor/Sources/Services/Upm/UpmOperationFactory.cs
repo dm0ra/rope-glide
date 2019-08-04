@@ -1,25 +1,3 @@
-﻿namespace UnityEditor.PackageManager.UI
-{
-    internal class UpmOperationFactory : IOperationFactory
-    {
-        public IListOperation CreateListOperation(bool offlineMode = false)
-        {
-            return new UpmListOperation(offlineMode);
-        }
-
-        public ISearchOperation CreateSearchOperation()
-        {
-            return new UpmSearchOperation();
-        }
-
-        public IAddOperation CreateAddOperation()
-        {
-            return new UpmAddOperation();
-        }
-
-        public IRemoveOperation CreateRemoveOperation()
-        {
-            return new UpmRemoveOperation();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2c353b4325b4fce979ce4fade5fe8705a5e96370f3f84a9f9bc4887b69505af6
+size 650

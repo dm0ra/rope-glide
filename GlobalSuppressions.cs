@@ -1,9 +1,3 @@
-﻿
-// This file is used by Code Analysis to maintain SuppressMessage 
-// attributes that are applied to this project.
-// Project-level suppressions either have no target or are given 
-// a specific target and scoped to a namespace, type, member, etc.
-
-[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1401:Fields should be private", Justification = "<Pending>", Scope = "member", Target = "~F:Rope.CurrRope")]
-[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1401:Fields should be private", Justification = "<Pending>", Scope = "member", Target = "~F:Rope.Hinge")]
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:fea6088fca3ddbea9f5ad9d6e3a3f2b28c187fb192896c631bbb91b08f93a53a
+size 682

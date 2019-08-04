@@ -1,31 +1,3 @@
-﻿using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.EventSystems;
-using System;
-
-
-namespace TMPro
-{
-
-    public class TMP_ScrollbarEventHandler : MonoBehaviour, IPointerClickHandler, ISelectHandler, IDeselectHandler
-    {
-        public bool isSelected;
-
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            Debug.Log("Scrollbar click...");
-        }
-
-        public void OnSelect(BaseEventData eventData)
-        {
-            Debug.Log("Scrollbar selected");
-            isSelected = true;
-        }
-
-        public void OnDeselect(BaseEventData eventData)
-        {
-            Debug.Log("Scrollbar De-Selected");
-            isSelected = false;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:55a138f2c031dd73a5d70d08d61bc69f18295932c92e09700242b40bfe847ce6
+size 744

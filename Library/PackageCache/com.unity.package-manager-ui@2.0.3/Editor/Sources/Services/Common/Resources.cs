@@ -1,19 +1,3 @@
-﻿using UnityEngine.Experimental.UIElements;
-
-namespace UnityEditor.PackageManager.UI
-{
-    internal static class Resources
-    {
-        private static string TemplateRoot { get { return PackageManagerWindow.ResourcesPath + "Templates"; } }
-
-        private static string TemplatePath(string filename)
-        {
-            return string.Format("{0}/{1}", TemplateRoot, filename);
-        }
-
-        public static VisualElement GetTemplate(string templateFilename)
-        {
-            return AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(TemplatePath(templateFilename)).CloneTree(null);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:625ad9039c3e8f4a982da634ae6a8427a92e62e782337678971e59fd2a384c0c
+size 627

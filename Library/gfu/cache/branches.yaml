@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-07-26T14:11:38.343-04:00
-  initializedAtString: 2019-07-26T14:02:28.780-04:00
+  lastUpdatedAtString: 2019-08-04T19:28:57.860-04:00
+  initializedAtString: 2019-08-04T17:54:49.127-04:00
   localBranches:
+  - name: DartShooterBranch
+    tracking: 
   - name: dm0ra
     tracking: 
   - name: dm0ra_branch
@@ -43,10 +45,16 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - DartShooterBranch
     - dm0ra
     - dm0ra_branch
     - master
     values:
+    - name: DartShooterBranch
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
     - name: dm0ra
       remote:
         name: 

@@ -1,26 +1,3 @@
-﻿using UnityEngine;
-
-namespace TMPro
-{
-
-    // Base class inherited by the various TextMeshPro Assets.
-    [System.Serializable]
-    public class TMP_Asset : ScriptableObject
-    {
-        /// <summary>
-        /// HashCode based on the name of the asset.
-        /// </summary>
-        public int hashCode;
-
-        /// <summary>
-        /// The material used by this asset.
-        /// </summary>
-        public Material material;
-
-        /// <summary>
-        /// HashCode based on the name of the material assigned to this asset.
-        /// </summary>
-        public int materialHashCode;
-
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e0b5266a7b7e3bf05fe0af75f87b0355f4c3ff1b494bce1d6ccca903f9d89b7a
+size 632

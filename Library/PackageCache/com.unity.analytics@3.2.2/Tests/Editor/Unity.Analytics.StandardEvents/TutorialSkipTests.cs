@@ -1,26 +1,3 @@
-using NUnit.Framework;
-
-namespace UnityEngine.Analytics.Tests
-{
-    public partial class AnalyticsEventTests
-    {
-        [Test]
-        public void TutorialSkip_TutorialIdTest(
-            [Values("test_tutorial", "", null)] string tutorialId
-            )
-        {
-            Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.TutorialSkip(tutorialId));
-            EvaluateAnalyticsResult(m_Result);
-        }
-
-        [Test]
-        public void TutorialSkip_CustomDataTest()
-        {
-            var tutorialId = "test_tutorial";
-
-            Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.TutorialSkip(tutorialId, m_CustomData));
-            EvaluateCustomData(m_CustomData);
-            EvaluateAnalyticsResult(m_Result);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:40cbc09d3067296a32f3a3a1873219b96585eb2d6ff9fd22bb5fd313090afc2d
+size 782

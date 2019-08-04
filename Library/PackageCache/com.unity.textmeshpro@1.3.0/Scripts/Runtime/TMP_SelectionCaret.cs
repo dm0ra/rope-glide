@@ -1,23 +1,3 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-
-
-namespace TMPro
-{
-    /// <summary>
-    /// A simple component that can be added to a newly created object where inheriting from MaskableGraphic is needed.
-    /// </summary>
-    public class TMP_SelectionCaret : MaskableGraphic
-    {
-
-        /// <summary>
-        /// Override to Cull function of MaskableGraphic to prevent Culling.
-        /// </summary>
-        /// <param name="clipRect"></param>
-        /// <param name="validRect"></param>
-        public override void Cull(Rect clipRect, bool validRect)
-        {
-            //base.Cull(clipRect, validRect);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:572042e087e33869b6024ed7c90f7b37d5583544256be4f8d9b8e50a60c6bfc3
+size 655

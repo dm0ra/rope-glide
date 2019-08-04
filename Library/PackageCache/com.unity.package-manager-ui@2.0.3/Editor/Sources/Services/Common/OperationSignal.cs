@@ -1,30 +1,3 @@
-﻿using System;
-
-namespace UnityEditor.PackageManager.UI
-{
-    [Serializable]
-    internal class OperationSignal<T> where T: IBaseOperation
-    {
-        public event Action<T> OnOperation = delegate { };
-
-        public T Operation { get; set; }
-
-        public void SetOperation(T operation)
-        {
-            Operation = operation;
-            OnOperation(operation);
-        }
-
-        public void WhenOperation(Action<T> callback)
-        {
-            if (Operation != null)
-                callback(Operation);
-            OnOperation += callback;
-        }
-
-        internal void ResetEvents()
-        {
-            OnOperation = delegate { };
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:66cd3b60e13a68df7ab18536d769e532c275e2a763080921369e9e79f59d9ca5
+size 703
