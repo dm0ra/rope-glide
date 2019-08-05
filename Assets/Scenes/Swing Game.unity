@@ -358,10 +358,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135862d7de01e3840b56f01765d8af45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 0}
+  Game: {fileID: 0}
   Player: {fileID: 0}
   booster: {fileID: 0}
-  boosterPrice: 0
+  BoosterPrice: 0
 --- !u!1001 &1432651632
 PrefabInstance:
   m_ObjectHideFlags: 0
