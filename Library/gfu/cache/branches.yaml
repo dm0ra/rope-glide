@@ -13,13 +13,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-08-04T20:08:43.927-04:00
-  initializedAtString: 2019-08-04T19:57:00.886-04:00
+  lastUpdatedAtString: 2019-08-05T00:32:47.797-04:00
+  initializedAtString: 2019-08-05T00:32:46.273-04:00
   localBranches:
+  - name: John_Ninjas
+    tracking: 
   - name: master
     tracking: origin/master
   remoteBranches:
+  - name: origin/DartShooterBranch
+    tracking: '[None]'
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/master
     tracking: '[None]'
   remotes:
   - name: origin
@@ -31,8 +37,14 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - John_Ninjas
     - master
     values:
+    - name: John_Ninjas
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
     - name: master
       remote:
         name: origin
@@ -43,10 +55,22 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - DartShooterBranch
       - HEAD
+      - master
     subKeyValues:
     - Values:
+      - name: DartShooterBranch
+        remote:
+          name: origin
+          url: https://github.com/dm0ra/Rope-Glide
+        trackingBranch: 
       - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/dm0ra/Rope-Glide
+        trackingBranch: 
+      - name: master
         remote:
           name: origin
           url: https://github.com/dm0ra/Rope-Glide
