@@ -47,5 +47,6 @@ var searchData=
   ['forcemeshupdate',['ForceMeshUpdate',['../classTMPro_1_1TextMeshPro.html#a3b4ae4094196a6522a70ac86cdb30e02',1,'TMPro.TextMeshPro.ForceMeshUpdate()'],['../classTMPro_1_1TextMeshPro.html#adba5343dcc85a77bcd3dd57c22dd1753',1,'TMPro.TextMeshPro.ForceMeshUpdate(bool ignoreInactive)'],['../classTMPro_1_1TextMeshProUGUI.html#af5d2e586548f3dd722fd804019261304',1,'TMPro.TextMeshProUGUI.ForceMeshUpdate()'],['../classTMPro_1_1TextMeshProUGUI.html#aab2c39e0fc65227e83401eeac525f010',1,'TMPro.TextMeshProUGUI.ForceMeshUpdate(bool ignoreInactive)'],['../classTMPro_1_1TMP__Text.html#a93c463ff2bb3b846a468f3d1764bdef4',1,'TMPro.TMP_Text.ForceMeshUpdate()'],['../classTMPro_1_1TMP__Text.html#a2cd34e05c191658295c67c373e608f5d',1,'TMPro.TMP_Text.ForceMeshUpdate(bool ignoreActiveState)']]],
   ['ft_5ffaceinfo',['FT_FaceInfo',['../structTMPro_1_1EditorUtilities_1_1FT__FaceInfo.html',1,'TMPro::EditorUtilities']]],
   ['ft_5fglyphinfo',['FT_GlyphInfo',['../structTMPro_1_1EditorUtilities_1_1FT__GlyphInfo.html',1,'TMPro::EditorUtilities']]],
-  ['ft_5fkerningpair',['FT_KerningPair',['../structTMPro_1_1EditorUtilities_1_1FT__KerningPair.html',1,'TMPro::EditorUtilities']]]
+  ['ft_5fkerningpair',['FT_KerningPair',['../structTMPro_1_1EditorUtilities_1_1FT__KerningPair.html',1,'TMPro::EditorUtilities']]],
+  ['firebase_20unity_20sdk',['Firebase Unity SDK',['../md_Assets_Firebase_Editor_readme.html',1,'']]]
 ];

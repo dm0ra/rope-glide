@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['booster',['Booster',['../classGameController.html#ac1937833bb188e878d7ecfc867b341fc',1,'GameController.Booster()'],['../classBooster.html#a6576bc90ef868e6f5348f7c69b437ebd',1,'Booster.booster()']]],
-  ['boosterprice',['BoosterPrice',['../classBooster.html#ad86bb3957375c1138f86509d6780700f',1,'Booster']]]
+  ['fallbackfontassets',['fallbackFontAssets',['../classTMPro_1_1TMP__FontAsset.html#acb4defd1335d404d2e984bd130c59fe1',1,'TMPro::TMP_FontAsset']]],
+  ['fallbackspriteassets',['fallbackSpriteAssets',['../classTMPro_1_1TMP__SpriteAsset.html#a417cdcac52c66835dcdb3ef8fdf15b3c',1,'TMPro::TMP_SpriteAsset']]]
 ];
