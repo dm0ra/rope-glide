@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Rope-Glide: Unity Package Manager UI</title>
+<title>Rope-Glide: Collab Proxy UPM Package</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,10 +64,23 @@ $(function() {
 </div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Unity Package Manager UI </div>  </div>
+<div class="title">Collab Proxy UPM Package </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Unity Package Manager UI as a Unity Package </p>
+<div class="textblock"><p>This is the packaged version of Collab, currently limited to containing the History and Toolbar windows, along with supporting classes.</p>
+<h1><a class="anchor" id="autotoc_md95"></a>
+Development</h1>
+<p>Check this repository out in your {$PROJECT}/Packages/ folder, under the name com.unity.collab-proxy. The classes will be built by Unity.</p>
+<h1><a class="anchor" id="autotoc_md96"></a>
+Testing</h1>
+<p>In order to run the tests, you will need to add this project to the testables key in your manifest.json - once you have done this, the tests will be picked up by the Unity Test Runner window.</p>
+<h1><a class="anchor" id="autotoc_md97"></a>
+Building</h1>
+<p>You may build this project using msbuild. The commands to do so can be seen under .gitlab-ci.yml.</p>
+<h1><a class="anchor" id="autotoc_md98"></a>
+Deploying</h1>
+<p>Gitlab will automatically build your project when you deploy. You can download the resulting artifact, which will be a dll, and place it in your Editor/bin/ folder. Open the package in Unity to generate the meta files, and then you will be able to publish.</p>
+<p>We're currently looking into a way to avoid this manual process. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

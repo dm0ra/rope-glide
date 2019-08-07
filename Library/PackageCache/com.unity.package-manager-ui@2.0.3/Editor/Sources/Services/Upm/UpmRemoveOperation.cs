@@ -1,33 +1,3 @@
-﻿using System;
-using UnityEngine;
-using UnityEditor.PackageManager.Requests;
-
-namespace UnityEditor.PackageManager.UI
-{
-    internal class UpmRemoveOperation : UpmBaseOperation, IRemoveOperation
-    {
-        [SerializeField]
-        private PackageInfo _package;
-
-        public event Action<PackageInfo> OnOperationSuccess = delegate { };
-
-        public void RemovePackageAsync(PackageInfo package, Action<PackageInfo> doneCallbackAction = null,  Action<Error> errorCallbackAction = null)
-        {
-            _package = package;
-            OnOperationError += errorCallbackAction;
-            OnOperationSuccess += doneCallbackAction;
-
-            Start();
-        }
-
-        protected override Request CreateRequest()
-        {
-            return Client.Remove(_package.Name);
-        }
-
-        protected override void ProcessData()
-        {
-            OnOperationSuccess(_package);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:adf4a56f8da313e08c587e5e71c4449d63dd2cf113746065b9c7baf8993d0443
+size 913

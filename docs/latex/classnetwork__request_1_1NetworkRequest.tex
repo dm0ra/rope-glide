@@ -1,0 +1,159 @@
+\hypertarget{classnetwork__request_1_1NetworkRequest}{}\doxysection{network\+\_\+request.\+Network\+Request Class Reference}
+\label{classnetwork__request_1_1NetworkRequest}\index{network\_request.NetworkRequest@{network\_request.NetworkRequest}}
+Inheritance diagram for network\+\_\+request.\+Network\+Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classnetwork__request_1_1NetworkRequest}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classnetwork__request_1_1NetworkRequest_a0aa5df5f6c09593f889aa7c88ed9812e}\label{classnetwork__request_1_1NetworkRequest_a0aa5df5f6c09593f889aa7c88ed9812e}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, url, method, headers, body, timeout)
+\item 
+def \mbox{\hyperlink{classnetwork__request_1_1NetworkRequest_ad851080def445722f7d8d479a24ed0a3}{execute\+\_\+request}} (self)
+\item 
+def \mbox{\hyperlink{classnetwork__request_1_1NetworkRequest_ac35a9fcfad061fca6ae080412bf1ca65}{get\+\_\+hostname}} (self)
+\item 
+def \mbox{\hyperlink{classnetwork__request_1_1NetworkRequest_aedd92bbcc34b38de43aa74a03cb4d732}{is\+\_\+secure\+\_\+connection}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classnetwork__request_1_1NetworkRequest_a382a79a21f594913d4c835349ae775ae}\label{classnetwork__request_1_1NetworkRequest_a382a79a21f594913d4c835349ae775ae}} 
+{\bfseries url}
+\item 
+\mbox{\Hypertarget{classnetwork__request_1_1NetworkRequest_a318a7bb5ef25d52fae8b2d87da6f1aeb}\label{classnetwork__request_1_1NetworkRequest_a318a7bb5ef25d52fae8b2d87da6f1aeb}} 
+{\bfseries parsed\+\_\+url}
+\item 
+\mbox{\Hypertarget{classnetwork__request_1_1NetworkRequest_a06ca16f2fabf10bcf17fdea13389845a}\label{classnetwork__request_1_1NetworkRequest_a06ca16f2fabf10bcf17fdea13389845a}} 
+{\bfseries method}
+\item 
+\mbox{\Hypertarget{classnetwork__request_1_1NetworkRequest_a9909a1056c48b39aa1e03b89d6d696ef}\label{classnetwork__request_1_1NetworkRequest_a9909a1056c48b39aa1e03b89d6d696ef}} 
+{\bfseries headers}
+\item 
+\mbox{\Hypertarget{classnetwork__request_1_1NetworkRequest_ae59826ab2a89b813ca59f79a4b138f61}\label{classnetwork__request_1_1NetworkRequest_ae59826ab2a89b813ca59f79a4b138f61}} 
+{\bfseries body}
+\item 
+\mbox{\Hypertarget{classnetwork__request_1_1NetworkRequest_aa015f2eeb13055c2a6545778606477c8}\label{classnetwork__request_1_1NetworkRequest_aa015f2eeb13055c2a6545778606477c8}} 
+{\bfseries timeout}
+\item 
+\mbox{\Hypertarget{classnetwork__request_1_1NetworkRequest_a61f319646da27a22f80cd5565b7df24f}\label{classnetwork__request_1_1NetworkRequest_a61f319646da27a22f80cd5565b7df24f}} 
+{\bfseries is\+\_\+secure\+\_\+connection}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A container for an network request object.
+
+This class holds on to all of the attributes necessary for making a
+network request via httplib.
+\end{DoxyVerb}
+ 
+
+Definition at line 116 of file network\+\_\+request.\+py.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classnetwork__request_1_1NetworkRequest_ad851080def445722f7d8d479a24ed0a3}\label{classnetwork__request_1_1NetworkRequest_ad851080def445722f7d8d479a24ed0a3}} 
+\index{network\_request.NetworkRequest@{network\_request.NetworkRequest}!execute\_request@{execute\_request}}
+\index{execute\_request@{execute\_request}!network\_request.NetworkRequest@{network\_request.NetworkRequest}}
+\doxysubsubsection{\texorpdfstring{execute\_request()}{execute\_request()}}
+{\footnotesize\ttfamily def network\+\_\+request.\+Network\+Request.\+execute\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}"Execute the request, and get a response.
+
+Returns:
+  an HttpResponse object from httplib
+\end{DoxyVerb}
+ 
+
+Definition at line 132 of file network\+\_\+request.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{132   \textcolor{keyword}{def }\mbox{\hyperlink{classnetwork__request_1_1NetworkRequest_ad851080def445722f7d8d479a24ed0a3}{execute\_request}}(self):}
+\DoxyCodeLine{133     \textcolor{stringliteral}{""""Execute the request, and get a response.}}
+\DoxyCodeLine{134 \textcolor{stringliteral}{}}
+\DoxyCodeLine{135 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{136 \textcolor{stringliteral}{      an HttpResponse object from httplib}}
+\DoxyCodeLine{137 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{138     \textcolor{keywordflow}{if} self.is\_secure\_connection:}
+\DoxyCodeLine{139       conn = httplib.HTTPSConnection(self.get\_hostname(), timeout=self.timeout)}
+\DoxyCodeLine{140     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{141       conn = httplib.HTTPConnection(self.get\_hostname(), timeout=self.timeout)}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143     conn.request(self.method, self.url, self.body, self.headers)}
+\DoxyCodeLine{144     response = conn.getresponse()}
+\DoxyCodeLine{145     \textcolor{keywordflow}{return} response}
+\DoxyCodeLine{146 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classnetwork__request_1_1NetworkRequest_ac35a9fcfad061fca6ae080412bf1ca65}\label{classnetwork__request_1_1NetworkRequest_ac35a9fcfad061fca6ae080412bf1ca65}} 
+\index{network\_request.NetworkRequest@{network\_request.NetworkRequest}!get\_hostname@{get\_hostname}}
+\index{get\_hostname@{get\_hostname}!network\_request.NetworkRequest@{network\_request.NetworkRequest}}
+\doxysubsubsection{\texorpdfstring{get\_hostname()}{get\_hostname()}}
+{\footnotesize\ttfamily def network\+\_\+request.\+Network\+Request.\+get\+\_\+hostname (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the hostname for the url.\end{DoxyVerb}
+ 
+
+Definition at line 147 of file network\+\_\+request.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{147   \textcolor{keyword}{def }\mbox{\hyperlink{classnetwork__request_1_1NetworkRequest_ac35a9fcfad061fca6ae080412bf1ca65}{get\_hostname}}(self):}
+\DoxyCodeLine{148     \textcolor{stringliteral}{"""Return the hostname for the url."""}}
+\DoxyCodeLine{149     \textcolor{keywordflow}{return} self.parsed\_url.netloc}
+\DoxyCodeLine{150 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classnetwork__request_1_1NetworkRequest_aedd92bbcc34b38de43aa74a03cb4d732}\label{classnetwork__request_1_1NetworkRequest_aedd92bbcc34b38de43aa74a03cb4d732}} 
+\index{network\_request.NetworkRequest@{network\_request.NetworkRequest}!is\_secure\_connection@{is\_secure\_connection}}
+\index{is\_secure\_connection@{is\_secure\_connection}!network\_request.NetworkRequest@{network\_request.NetworkRequest}}
+\doxysubsubsection{\texorpdfstring{is\_secure\_connection()}{is\_secure\_connection()}}
+{\footnotesize\ttfamily def network\+\_\+request.\+Network\+Request.\+is\+\_\+secure\+\_\+connection (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks for a secure connection of https.
+
+Returns:
+  True if the scheme is "https"; False if "http"
+
+Raises:
+  ValueError when the scheme does not match http or https
+\end{DoxyVerb}
+ 
+
+Definition at line 151 of file network\+\_\+request.\+py.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{151   \textcolor{keyword}{def }is\_secure\_connection(self):}
+\DoxyCodeLine{152     \textcolor{stringliteral}{"""Checks for a secure connection of https.}}
+\DoxyCodeLine{153 \textcolor{stringliteral}{}}
+\DoxyCodeLine{154 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{155 \textcolor{stringliteral}{      True if the scheme is "https"; False if "http"}}
+\DoxyCodeLine{156 \textcolor{stringliteral}{}}
+\DoxyCodeLine{157 \textcolor{stringliteral}{    Raises:}}
+\DoxyCodeLine{158 \textcolor{stringliteral}{      ValueError when the scheme does not match http or https}}
+\DoxyCodeLine{159 \textcolor{stringliteral}{    """}}
+\DoxyCodeLine{160     scheme = self.parsed\_url.scheme}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162     \textcolor{keywordflow}{if} scheme == \textcolor{stringliteral}{'http'}:}
+\DoxyCodeLine{163       \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{164     \textcolor{keywordflow}{elif} scheme == \textcolor{stringliteral}{'https'}:}
+\DoxyCodeLine{165       \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{166     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{167       \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{'The url scheme is not "http" nor "https"'}}
+\DoxyCodeLine{168                        \textcolor{stringliteral}{': \{\}'}.format(scheme))}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{170 }
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Firebase/\+Editor/network\+\_\+request.\+py\end{DoxyCompactItemize}

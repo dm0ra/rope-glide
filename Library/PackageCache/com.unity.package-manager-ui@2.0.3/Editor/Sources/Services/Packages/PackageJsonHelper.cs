@@ -1,34 +1,3 @@
-using System.IO;
-using UnityEngine;
-
-namespace UnityEditor.PackageManager.UI
-{
-    internal class PackageJsonHelper
-    {
-        [SerializeField]
-        private string name = string.Empty;
-
-        private string path = string.Empty;
-
-        public static string GetPackagePath(string jsonPath)
-        {
-            return Path.GetDirectoryName(jsonPath).Replace("\\", "/");
-        }
-
-        public static PackageJsonHelper Load(string path)
-        {
-            // If the path is a directory, find the `package.json` file path
-            var jsonPath = Directory.Exists(path) ? Path.Combine(path, "package.json") : path;
-            if (!File.Exists(jsonPath))
-                return null;
-            var packageJson = JsonUtility.FromJson<PackageJsonHelper>(File.ReadAllText(jsonPath));
-            packageJson.path = GetPackagePath(jsonPath);
-            return string.IsNullOrEmpty(packageJson.name) ? null : packageJson;
-        }
-
-        public PackageInfo PackageInfo
-        {
-            get { return new PackageInfo {PackageId = string.Format("{0}@file:{1}", name, path)}; }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:185c3cac961c58b3afb6844ae40f6a877d0d4c2bf2293e777a84cceac4affaf1
+size 1112

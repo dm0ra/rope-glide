@@ -1,14 +1,3 @@
-﻿namespace UnityEditor.PackageManager.UI
-{
-    /// <summary>
-    /// This is the Interface we will use to create the facade we need for testing.
-    /// In the case of the Fake factory, we can create fake operations with doctored data we use for our tests.
-    /// </summary>
-    internal interface IOperationFactory
-    {
-        IListOperation CreateListOperation(bool offlineMode = false);
-        ISearchOperation CreateSearchOperation();
-        IAddOperation CreateAddOperation();
-        IRemoveOperation CreateRemoveOperation();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c4d9799c6d95f4956880f069570820f2dbf684125304109e76c30bc9cde767bd
+size 547

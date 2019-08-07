@@ -1,10 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace UnityEditor.PackageManager.UI
-{
-    internal interface ISearchOperation : IBaseOperation
-    {
-        void GetAllPackageAsync(Action<IEnumerable<PackageInfo>> doneCallbackAction = null, Action<Error> errorCallbackAction = null);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b6033a162f90fbee3a3fd21e0a6b99ffee8af4cdd2525357cdfb8cbee1baa7f
+size 300

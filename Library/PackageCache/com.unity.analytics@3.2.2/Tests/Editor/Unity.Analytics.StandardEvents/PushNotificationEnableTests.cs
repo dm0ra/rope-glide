@@ -1,22 +1,3 @@
-using NUnit.Framework;
-
-namespace UnityEngine.Analytics.Tests
-{
-    public partial class AnalyticsEventTests
-    {
-        [Test]
-        public void PushNotificationEnable_NoArgsTest()
-        {
-            Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.PushNotificationEnable());
-            EvaluateAnalyticsResult(m_Result);
-        }
-
-        [Test]
-        public void PushNotificationEnable_CustomDataTest()
-        {
-            Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.PushNotificationEnable(m_CustomData));
-            EvaluateCustomData(m_CustomData);
-            EvaluateAnalyticsResult(m_Result);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a18fb8d3dd31a5d504cad423815cb0ef9c2ec6a9e02a2ca914b18edb7b379c45
+size 644

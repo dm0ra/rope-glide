@@ -632,9 +632,9 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1831             loopCountA += 1;}
 \DoxyCodeLine{1832             \textcolor{comment}{//Profiler.EndSample();}}
 \DoxyCodeLine{1833 }
-\DoxyCodeLine{1834 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
+\DoxyCodeLine{1834 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
 \DoxyCodeLine{1835             Profiler.BeginSample(\textcolor{stringliteral}{"TMP Generate Text -\/ Phase I"});}
-\DoxyCodeLine{1836 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{1836 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{1837 }
 \DoxyCodeLine{1838             \textcolor{keywordtype}{int} endTagIndex = 0;}
 \DoxyCodeLine{1839             \textcolor{comment}{// Parse through Character buffer to read HTML tags and begin creating mesh.}}
@@ -646,7 +646,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1845                 }
 \DoxyCodeLine{1846 }
 \DoxyCodeLine{1847                 \textcolor{comment}{// Parse Rich Text Tag}}
-\DoxyCodeLine{1848 \textcolor{preprocessor}{                \#region Parse Rich Text Tag}}
+\DoxyCodeLine{1848 \textcolor{preprocessor}{                \#region Parse Rich Text Tag}}
 \DoxyCodeLine{1849                 \textcolor{keywordflow}{if} (m\_isRichText \&\& charCode == 60)  \textcolor{comment}{// '<'}}
 \DoxyCodeLine{1850                 \{}
 \DoxyCodeLine{1851                     m\_isParsingText = \textcolor{keyword}{true};}
@@ -669,7 +669,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1868                     m\_currentFontAsset = m\_textInfo.characterInfo[m\_characterCount].fontAsset;}
 \DoxyCodeLine{1869                     \textcolor{comment}{//m\_currentFontAsset = m\_materialReferences[m\_currentMaterialIndex].fontAsset;}}
 \DoxyCodeLine{1870                 \}}
-\DoxyCodeLine{1871 \textcolor{preprocessor}{                \#endregion End Parse Rich Text Tag}}
+\DoxyCodeLine{1871 \textcolor{preprocessor}{                \#endregion End Parse Rich Text Tag}}
 \DoxyCodeLine{1872 }
 \DoxyCodeLine{1873                 \textcolor{keywordtype}{int} prev\_MaterialIndex = m\_currentMaterialIndex;}
 \DoxyCodeLine{1874                 \textcolor{keywordtype}{bool} isUsingAltTypeface = m\_textInfo.characterInfo[m\_characterCount].isUsingAlternateTypeface;}
@@ -686,10 +686,10 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1885                 \}}
 \DoxyCodeLine{1886 }
 \DoxyCodeLine{1887                 \textcolor{comment}{// Handle Font Styles like LowerCase, UpperCase and SmallCaps.}}
-\DoxyCodeLine{1888 \textcolor{preprocessor}{                \#region Handling of LowerCase, UpperCase and SmallCaps Font Styles}}
-\DoxyCodeLine{1889 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{1888 \textcolor{preprocessor}{                \#region Handling of LowerCase, UpperCase and SmallCaps Font Styles}}
+\DoxyCodeLine{1889 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{1890                 Profiler.BeginSample(\textcolor{stringliteral}{"Handle Font Style"});}
-\DoxyCodeLine{1891 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{1891 \textcolor{preprocessor}{                \#endif}}
 \DoxyCodeLine{1892                 \textcolor{keywordtype}{float} smallCapsMultiplier = 1.0f;}
 \DoxyCodeLine{1893 }
 \DoxyCodeLine{1894                 \textcolor{keywordflow}{if} (m\_textElementType == TMP\_TextElementType.Character)}
@@ -716,17 +716,17 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1915                         \}}
 \DoxyCodeLine{1916                     \}}
 \DoxyCodeLine{1917                 \}}
-\DoxyCodeLine{1918 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{1918 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{1919                 Profiler.EndSample();}
-\DoxyCodeLine{1920 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{1921 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{1920 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{1921 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{1922 }
 \DoxyCodeLine{1923 }
 \DoxyCodeLine{1924                 \textcolor{comment}{// Look up Character Data from Dictionary and cache it.}}
-\DoxyCodeLine{1925 \textcolor{preprocessor}{                \#region Look up Character Data}}
-\DoxyCodeLine{1926 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{1925 \textcolor{preprocessor}{                \#region Look up Character Data}}
+\DoxyCodeLine{1926 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{1927                 Profiler.BeginSample(\textcolor{stringliteral}{"Lookup Character Data"});}
-\DoxyCodeLine{1928 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{1928 \textcolor{preprocessor}{                \#endif}}
 \DoxyCodeLine{1929                 \textcolor{keywordflow}{if} (m\_textElementType == TMP\_TextElementType.Sprite)}
 \DoxyCodeLine{1930                 \{}
 \DoxyCodeLine{1931                     \textcolor{comment}{// If a sprite is used as a fallback then get a reference to it and set the color to white.}}
@@ -777,20 +777,20 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1976 }
 \DoxyCodeLine{1977                     padding = m\_currentMaterialIndex == 0 ? m\_padding : m\_subTextObjects[m\_currentMaterialIndex].\mbox{\hyperlink{classTMPro_1_1TMP__SubMeshUI_a739f793cbda2c66b096ddf5ce3b1658f}{padding}};}
 \DoxyCodeLine{1978                 \}}
-\DoxyCodeLine{1979 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{1979 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{1980                 Profiler.EndSample();}
-\DoxyCodeLine{1981 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{1982 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{1981 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{1982 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{1983 }
 \DoxyCodeLine{1984 }
 \DoxyCodeLine{1985                 \textcolor{comment}{// Handle Soft Hyphen}}
-\DoxyCodeLine{1986 \textcolor{preprocessor}{                \#region Handle Soft Hyphen}}
+\DoxyCodeLine{1986 \textcolor{preprocessor}{                \#region Handle Soft Hyphen}}
 \DoxyCodeLine{1987                 \textcolor{keywordtype}{float} old\_scale = currentElementScale;}
 \DoxyCodeLine{1988                 \textcolor{keywordflow}{if} (charCode == 0xAD)}
 \DoxyCodeLine{1989                 \{}
 \DoxyCodeLine{1990                     currentElementScale = 0;}
 \DoxyCodeLine{1991                 \}}
-\DoxyCodeLine{1992 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{1992 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{1993 }
 \DoxyCodeLine{1994 }
 \DoxyCodeLine{1995                 \textcolor{comment}{// Store some of the text object's information}}
@@ -806,7 +806,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2005 }
 \DoxyCodeLine{2006 }
 \DoxyCodeLine{2007                 \textcolor{comment}{// Handle Kerning if Enabled.}}
-\DoxyCodeLine{2008 \textcolor{preprocessor}{                \#region Handle Kerning}}
+\DoxyCodeLine{2008 \textcolor{preprocessor}{                \#region Handle Kerning}}
 \DoxyCodeLine{2009                 GlyphValueRecord glyphAdjustments = \textcolor{keyword}{new} GlyphValueRecord();}
 \DoxyCodeLine{2010                 \textcolor{keywordflow}{if} (m\_enableKerning)}
 \DoxyCodeLine{2011                 \{}
@@ -832,11 +832,11 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2031                             glyphAdjustments += adjustmentPair.secondGlyphAdjustments;}
 \DoxyCodeLine{2032                     \}}
 \DoxyCodeLine{2033                 \}}
-\DoxyCodeLine{2034 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{2034 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{2035 }
 \DoxyCodeLine{2036 }
 \DoxyCodeLine{2037                 \textcolor{comment}{// Initial Implementation for RTL support.}}
-\DoxyCodeLine{2038 \textcolor{preprocessor}{                \#region Handle Right-\/to-\/Left}}
+\DoxyCodeLine{2038 \textcolor{preprocessor}{                \#region Handle Right-\/to-\/Left}}
 \DoxyCodeLine{2039                 \textcolor{keywordflow}{if} (m\_isRightToLeft)}
 \DoxyCodeLine{2040                 \{}
 \DoxyCodeLine{2041                     m\_xAdvance -\/= ((m\_cached\_TextElement.xAdvance * bold\_xAdvance\_multiplier + m\_characterSpacing + m\_wordSpacing + m\_currentFontAsset.normalSpacingOffset) * currentElementScale + m\_cSpacing) * (1 -\/ m\_charWidthAdjDelta);}
@@ -844,22 +844,22 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2043                     \textcolor{keywordflow}{if} (\textcolor{keywordtype}{char}.IsWhiteSpace((\textcolor{keywordtype}{char})charCode) || charCode == 0x200B)}
 \DoxyCodeLine{2044                         m\_xAdvance -\/= m\_wordSpacing * currentElementScale;}
 \DoxyCodeLine{2045                 \}}
-\DoxyCodeLine{2046 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{2046 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{2047 }
 \DoxyCodeLine{2048 }
 \DoxyCodeLine{2049                 \textcolor{comment}{// Handle Mono Spacing}}
-\DoxyCodeLine{2050 \textcolor{preprocessor}{                \#region Handle Mono Spacing}}
+\DoxyCodeLine{2050 \textcolor{preprocessor}{                \#region Handle Mono Spacing}}
 \DoxyCodeLine{2051                 \textcolor{keywordtype}{float} monoAdvance = 0;}
 \DoxyCodeLine{2052                 \textcolor{keywordflow}{if} (m\_monoSpacing != 0)}
 \DoxyCodeLine{2053                 \{}
 \DoxyCodeLine{2054                     monoAdvance = (m\_monoSpacing / 2 -\/ (m\_cached\_TextElement.width / 2 + m\_cached\_TextElement.xOffset) * currentElementScale) * (1 -\/ m\_charWidthAdjDelta);}
 \DoxyCodeLine{2055                     m\_xAdvance += monoAdvance;}
 \DoxyCodeLine{2056                 \}}
-\DoxyCodeLine{2057 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{2057 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{2058 }
 \DoxyCodeLine{2059 }
 \DoxyCodeLine{2060                 \textcolor{comment}{// Set Padding based on selected font style}}
-\DoxyCodeLine{2061 \textcolor{preprocessor}{                \#region Handle Style Padding}}
+\DoxyCodeLine{2061 \textcolor{preprocessor}{                \#region Handle Style Padding}}
 \DoxyCodeLine{2062                 \textcolor{keywordflow}{if} (m\_textElementType == TMP\_TextElementType.Character \&\& !isUsingAltTypeface \&\& ((m\_style \& FontStyles.Bold) == FontStyles.Bold || (m\_fontStyle \& FontStyles.Bold) == FontStyles.Bold)) \textcolor{comment}{// Checks for any combination of Bold Style.}}
 \DoxyCodeLine{2063                 \{}
 \DoxyCodeLine{2064                     \textcolor{keywordflow}{if} (m\_currentMaterial.HasProperty(ShaderUtilities.ID\_GradientScale))}
@@ -892,14 +892,14 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2091 }
 \DoxyCodeLine{2092                     bold\_xAdvance\_multiplier = 1.0f;}
 \DoxyCodeLine{2093                 \}}
-\DoxyCodeLine{2094 \textcolor{preprocessor}{                \#endregion Handle Style Padding}}
+\DoxyCodeLine{2094 \textcolor{preprocessor}{                \#endregion Handle Style Padding}}
 \DoxyCodeLine{2095 }
 \DoxyCodeLine{2096 }
 \DoxyCodeLine{2097                 \textcolor{comment}{// Determine the position of the vertices of the Character or Sprite.}}
-\DoxyCodeLine{2098 \textcolor{preprocessor}{                \#region Calculate Vertices Position}}
-\DoxyCodeLine{2099 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{2098 \textcolor{preprocessor}{                \#region Calculate Vertices Position}}
+\DoxyCodeLine{2099 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2100                 Profiler.BeginSample(\textcolor{stringliteral}{"Calculate Vertices Position"});}
-\DoxyCodeLine{2101 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{2101 \textcolor{preprocessor}{                \#endif}}
 \DoxyCodeLine{2102                 \textcolor{keywordtype}{float} fontBaseLineOffset = m\_currentFontAsset.\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a6afd05863cb5c5f39221cc63904b3f90}{fontInfo}}.Baseline * m\_fontScale * m\_fontScaleMultiplier * m\_currentFontAsset.\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a6afd05863cb5c5f39221cc63904b3f90}{fontInfo}}.Scale;}
 \DoxyCodeLine{2103                 Vector3 top\_left;}
 \DoxyCodeLine{2104                 top\_left.x = m\_xAdvance + ((m\_cached\_TextElement.xOffset -\/ padding -\/ style\_padding + glyphAdjustments.xPlacement) * currentElementScale * (1 -\/ m\_charWidthAdjDelta));}
@@ -921,14 +921,14 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2120                 bottom\_right.y = bottom\_left.y;}
 \DoxyCodeLine{2121                 bottom\_right.z = 0;}
 \DoxyCodeLine{2122 }
-\DoxyCodeLine{2123 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{2123 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2124                 Profiler.EndSample();}
-\DoxyCodeLine{2125 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{2126 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{2125 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{2126 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{2127 }
 \DoxyCodeLine{2128 }
 \DoxyCodeLine{2129                 \textcolor{comment}{// Check if we need to Shear the rectangles for Italic styles}}
-\DoxyCodeLine{2130 \textcolor{preprocessor}{                \#region Handle Italic \& Shearing}}
+\DoxyCodeLine{2130 \textcolor{preprocessor}{                \#region Handle Italic \& Shearing}}
 \DoxyCodeLine{2131                 \textcolor{keywordflow}{if} (m\_textElementType == TMP\_TextElementType.Character \&\& !isUsingAltTypeface \&\& ((m\_style \& FontStyles.Italic) == FontStyles.Italic || (m\_fontStyle \& FontStyles.Italic) == FontStyles.Italic))}
 \DoxyCodeLine{2132                 \{}
 \DoxyCodeLine{2133                     \textcolor{comment}{// Shift Top vertices forward by half (Shear Value * height of character) and Bottom vertices back by same amount. }}
@@ -941,11 +941,11 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2140                     top\_right = top\_right + topShear;}
 \DoxyCodeLine{2141                     bottom\_right = bottom\_right + bottomShear;}
 \DoxyCodeLine{2142                 \}}
-\DoxyCodeLine{2143 \textcolor{preprocessor}{                \#endregion Handle Italics \& Shearing}}
+\DoxyCodeLine{2143 \textcolor{preprocessor}{                \#endregion Handle Italics \& Shearing}}
 \DoxyCodeLine{2144 }
 \DoxyCodeLine{2145 }
 \DoxyCodeLine{2146                 \textcolor{comment}{// Handle Character Rotation}}
-\DoxyCodeLine{2147 \textcolor{preprocessor}{                \#region Handle Character Rotation}}
+\DoxyCodeLine{2147 \textcolor{preprocessor}{                \#region Handle Character Rotation}}
 \DoxyCodeLine{2148                 \textcolor{keywordflow}{if} (m\_isFXMatrixSet)}
 \DoxyCodeLine{2149                 \{}
 \DoxyCodeLine{2150                     \textcolor{comment}{// Apply scale matrix when simulating Condensed text.}}
@@ -964,7 +964,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2163                     top\_right = m\_FXMatrix.MultiplyPoint3x4(top\_right -\/ positionOffset) + positionOffset;}
 \DoxyCodeLine{2164                     bottom\_right = m\_FXMatrix.MultiplyPoint3x4(bottom\_right -\/ positionOffset) + positionOffset;}
 \DoxyCodeLine{2165                 \}}
-\DoxyCodeLine{2166 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{2166 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{2167 }
 \DoxyCodeLine{2168 }
 \DoxyCodeLine{2169                 \textcolor{comment}{// Store vertex information for the character or sprite.}}
@@ -1012,7 +1012,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2211                 m\_textInfo.characterInfo[m\_characterCount].isVisible = \textcolor{keyword}{false};}
 \DoxyCodeLine{2212 }
 \DoxyCodeLine{2213                 \textcolor{comment}{// Setup Mesh for visible text elements. ie. not a SPACE / LINEFEED / CARRIAGE RETURN.}}
-\DoxyCodeLine{2214 \textcolor{preprocessor}{                \#region Handle Visible Characters}}
+\DoxyCodeLine{2214 \textcolor{preprocessor}{                \#region Handle Visible Characters}}
 \DoxyCodeLine{2215                 \textcolor{comment}{//\#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2216                 \textcolor{comment}{//Profiler.BeginSample("Handle Visible Characters");}}
 \DoxyCodeLine{2217                 \textcolor{comment}{//\#endif}}
@@ -1020,7 +1020,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2219                 \{}
 \DoxyCodeLine{2220                     m\_textInfo.characterInfo[m\_characterCount].isVisible = \textcolor{keyword}{true};}
 \DoxyCodeLine{2221 }
-\DoxyCodeLine{2222 \textcolor{preprocessor}{                    \#region Experimental Margin Shaper}}
+\DoxyCodeLine{2222 \textcolor{preprocessor}{                    \#region Experimental Margin Shaper}}
 \DoxyCodeLine{2223                     \textcolor{comment}{//Vector2 shapedMargins;}}
 \DoxyCodeLine{2224                     \textcolor{comment}{//if (marginShaper)}}
 \DoxyCodeLine{2225                     \textcolor{comment}{//\{}}
@@ -1053,7 +1053,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2252                     \textcolor{comment}{//    width = m\_width;}}
 \DoxyCodeLine{2253                     \textcolor{comment}{//\}}}
 \DoxyCodeLine{2254                     \textcolor{comment}{//m\_textInfo.lineInfo[m\_lineNumber].marginLeft = shapedMargins.x;}}
-\DoxyCodeLine{2255 \textcolor{preprocessor}{                    \#endregion}}
+\DoxyCodeLine{2255 \textcolor{preprocessor}{                    \#endregion}}
 \DoxyCodeLine{2256 }
 \DoxyCodeLine{2257                     width = m\_width != -\/1 ? Mathf.Min(marginWidth + 0.0001f -\/ m\_marginLeft -\/ m\_marginRight, m\_width) : marginWidth + 0.0001f -\/ m\_marginLeft -\/ m\_marginRight;}
 \DoxyCodeLine{2258                     m\_textInfo.lineInfo[m\_lineNumber].marginLeft = m\_marginLeft;}
@@ -1064,24 +1064,24 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2263                     linebreakingWidth = Mathf.Abs(m\_xAdvance) + (!m\_isRightToLeft ? m\_cached\_TextElement.xAdvance : 0) * (1 -\/ m\_charWidthAdjDelta) * (charCode != 0xAD ? currentElementScale : old\_scale);}
 \DoxyCodeLine{2264 }
 \DoxyCodeLine{2265                     \textcolor{comment}{// Check if Character exceeds the width of the Text Container}}
-\DoxyCodeLine{2266 \textcolor{preprocessor}{                    \#region Handle Line Breaking, Text Auto-\/Sizing and Horizontal Overflow}}
+\DoxyCodeLine{2266 \textcolor{preprocessor}{                    \#region Handle Line Breaking, Text Auto-\/Sizing and Horizontal Overflow}}
 \DoxyCodeLine{2267                     \textcolor{keywordflow}{if} (linebreakingWidth > width * (isJustifiedOrFlush ? 1.05f : 1.0f))}
 \DoxyCodeLine{2268                     \{}
 \DoxyCodeLine{2269                         ellipsisIndex = m\_characterCount -\/ 1; \textcolor{comment}{// Last safely rendered character}}
 \DoxyCodeLine{2270 }
 \DoxyCodeLine{2271                         \textcolor{comment}{// Word Wrapping}}
-\DoxyCodeLine{2272 \textcolor{preprocessor}{                        \#region Handle Word Wrapping}}
+\DoxyCodeLine{2272 \textcolor{preprocessor}{                        \#region Handle Word Wrapping}}
 \DoxyCodeLine{2273                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTMPro_1_1TMP__Text_a9add0d44e7faabf1070b2ace2ac89378}{enableWordWrapping}} \&\& m\_characterCount != m\_firstCharacterOfLine)}
 \DoxyCodeLine{2274                         \{}
 \DoxyCodeLine{2275                             \textcolor{comment}{// Check if word wrapping is still possible}}
-\DoxyCodeLine{2276 \textcolor{preprocessor}{                            \#region Line Breaking Check}}
+\DoxyCodeLine{2276 \textcolor{preprocessor}{                            \#region Line Breaking Check}}
 \DoxyCodeLine{2277                             \textcolor{keywordflow}{if} (wrappingIndex == m\_SavedWordWrapState.previous\_WordBreak || isFirstWord)}
 \DoxyCodeLine{2278                             \{}
 \DoxyCodeLine{2279                                 \textcolor{comment}{// Word wrapping is no longer possible. Shrink size of text if auto-\/sizing is enabled.}}
 \DoxyCodeLine{2280                                 \textcolor{keywordflow}{if} (m\_enableAutoSizing \&\& m\_fontSize > m\_fontSizeMin)}
 \DoxyCodeLine{2281                                 \{}
 \DoxyCodeLine{2282                                     \textcolor{comment}{// Handle Character Width Adjustments}}
-\DoxyCodeLine{2283 \textcolor{preprocessor}{                                    \#region Character Width Adjustments}}
+\DoxyCodeLine{2283 \textcolor{preprocessor}{                                    \#region Character Width Adjustments}}
 \DoxyCodeLine{2284                                     \textcolor{keywordflow}{if} (m\_charWidthAdjDelta < m\_charWidthMaxAdj / 100)}
 \DoxyCodeLine{2285                                     \{}
 \DoxyCodeLine{2286                                         loopCountA = 0;}
@@ -1089,7 +1089,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2288                                         \mbox{\hyperlink{classTMPro_1_1TextMeshProUGUI_ae43d87969cffe98fbaea5edabc0d55dd}{GenerateTextMesh}}();}
 \DoxyCodeLine{2289                                         \textcolor{keywordflow}{return};}
 \DoxyCodeLine{2290                                     \}}
-\DoxyCodeLine{2291 \textcolor{preprocessor}{                                    \#endregion}}
+\DoxyCodeLine{2291 \textcolor{preprocessor}{                                    \#endregion}}
 \DoxyCodeLine{2292 }
 \DoxyCodeLine{2293                                     \textcolor{comment}{// Adjust Point Size}}
 \DoxyCodeLine{2294                                     m\_maxFontSize = m\_fontSize;}
@@ -1120,7 +1120,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2319                                 \textcolor{comment}{//    continue;}}
 \DoxyCodeLine{2320                                 \textcolor{comment}{//\}}}
 \DoxyCodeLine{2321                             \}}
-\DoxyCodeLine{2322 \textcolor{preprocessor}{                            \#endregion}}
+\DoxyCodeLine{2322 \textcolor{preprocessor}{                            \#endregion}}
 \DoxyCodeLine{2323 }
 \DoxyCodeLine{2324                             \textcolor{comment}{// Restore to previously stored state of last valid (space character or linefeed)}}
 \DoxyCodeLine{2325                             i = \mbox{\hyperlink{classTMPro_1_1TMP__Text_a0555e7043aed6e3db5ef6113eac2fa77}{RestoreWordWrappingState}}(ref m\_SavedWordWrapState);}
@@ -1219,15 +1219,15 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2418 }
 \DoxyCodeLine{2419                             \textcolor{keywordflow}{continue};}
 \DoxyCodeLine{2420                         \}}
-\DoxyCodeLine{2421 \textcolor{preprocessor}{                        \#endregion End Word Wrapping}}
+\DoxyCodeLine{2421 \textcolor{preprocessor}{                        \#endregion End Word Wrapping}}
 \DoxyCodeLine{2422 }
 \DoxyCodeLine{2423 }
 \DoxyCodeLine{2424                         \textcolor{comment}{// Text Auto-\/Sizing (text exceeding Width of container. }}
-\DoxyCodeLine{2425 \textcolor{preprocessor}{                        \#region Handle Text Auto-\/Sizing}}
+\DoxyCodeLine{2425 \textcolor{preprocessor}{                        \#region Handle Text Auto-\/Sizing}}
 \DoxyCodeLine{2426                         \textcolor{keywordflow}{if} (m\_enableAutoSizing \&\& m\_fontSize > m\_fontSizeMin)}
 \DoxyCodeLine{2427                         \{}
 \DoxyCodeLine{2428                             \textcolor{comment}{// Handle Character Width Adjustments}}
-\DoxyCodeLine{2429 \textcolor{preprocessor}{                            \#region Character Width Adjustments}}
+\DoxyCodeLine{2429 \textcolor{preprocessor}{                            \#region Character Width Adjustments}}
 \DoxyCodeLine{2430                             \textcolor{keywordflow}{if} (m\_charWidthAdjDelta < m\_charWidthMaxAdj / 100)}
 \DoxyCodeLine{2431                             \{}
 \DoxyCodeLine{2432                                 loopCountA = 0;}
@@ -1235,7 +1235,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2434                                 \mbox{\hyperlink{classTMPro_1_1TextMeshProUGUI_ae43d87969cffe98fbaea5edabc0d55dd}{GenerateTextMesh}}();}
 \DoxyCodeLine{2435                                 \textcolor{keywordflow}{return};}
 \DoxyCodeLine{2436                             \}}
-\DoxyCodeLine{2437 \textcolor{preprocessor}{                            \#endregion}}
+\DoxyCodeLine{2437 \textcolor{preprocessor}{                            \#endregion}}
 \DoxyCodeLine{2438 }
 \DoxyCodeLine{2439                             \textcolor{comment}{// Adjust Point Size}}
 \DoxyCodeLine{2440                             m\_maxFontSize = m\_fontSize;}
@@ -1248,11 +1248,11 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2447                             \mbox{\hyperlink{classTMPro_1_1TextMeshProUGUI_ae43d87969cffe98fbaea5edabc0d55dd}{GenerateTextMesh}}();}
 \DoxyCodeLine{2448                             \textcolor{keywordflow}{return};}
 \DoxyCodeLine{2449                         \}}
-\DoxyCodeLine{2450 \textcolor{preprocessor}{                        \#endregion End Text Auto-\/Sizing}}
+\DoxyCodeLine{2450 \textcolor{preprocessor}{                        \#endregion End Text Auto-\/Sizing}}
 \DoxyCodeLine{2451 }
 \DoxyCodeLine{2452 }
 \DoxyCodeLine{2453                         \textcolor{comment}{// Handle Text Overflow}}
-\DoxyCodeLine{2454 \textcolor{preprocessor}{                        \#region Handle Text Overflow}}
+\DoxyCodeLine{2454 \textcolor{preprocessor}{                        \#region Handle Text Overflow}}
 \DoxyCodeLine{2455                         \textcolor{keywordflow}{switch} (m\_overflowMode)}
 \DoxyCodeLine{2456                         \{}
 \DoxyCodeLine{2457                             \textcolor{keywordflow}{case} TextOverflowModes.Overflow:}
@@ -1318,10 +1318,10 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2517                                 \textcolor{comment}{//\}}}
 \DoxyCodeLine{2518                                 \textcolor{keywordflow}{break};}
 \DoxyCodeLine{2519                         \}}
-\DoxyCodeLine{2520 \textcolor{preprocessor}{                        \#endregion End Text Overflow}}
+\DoxyCodeLine{2520 \textcolor{preprocessor}{                        \#endregion End Text Overflow}}
 \DoxyCodeLine{2521 }
 \DoxyCodeLine{2522                     \}}
-\DoxyCodeLine{2523 \textcolor{preprocessor}{                    \#endregion End Check for Characters Exceeding Width of Text Container}}
+\DoxyCodeLine{2523 \textcolor{preprocessor}{                    \#endregion End Check for Characters Exceeding Width of Text Container}}
 \DoxyCodeLine{2524 }
 \DoxyCodeLine{2525 }
 \DoxyCodeLine{2526                     \textcolor{comment}{// Special handling of characters that are not ignored at the end of a line.}}
@@ -1378,14 +1378,14 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2577                 \textcolor{comment}{//\#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2578                 \textcolor{comment}{//Profiler.EndSample();}}
 \DoxyCodeLine{2579                 \textcolor{comment}{//\#endif}}
-\DoxyCodeLine{2580 \textcolor{preprocessor}{                \#endregion Handle Visible Characters}}
+\DoxyCodeLine{2580 \textcolor{preprocessor}{                \#endregion Handle Visible Characters}}
 \DoxyCodeLine{2581 }
 \DoxyCodeLine{2582 }
 \DoxyCodeLine{2583                 \textcolor{comment}{// Check if Line Spacing of previous line needs to be adjusted.}}
-\DoxyCodeLine{2584 \textcolor{preprocessor}{                \#region Adjust Line Spacing}}
-\DoxyCodeLine{2585 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{2584 \textcolor{preprocessor}{                \#region Adjust Line Spacing}}
+\DoxyCodeLine{2585 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2586                 Profiler.BeginSample(\textcolor{stringliteral}{"Adjust Line Spacing"});}
-\DoxyCodeLine{2587 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{2587 \textcolor{preprocessor}{                \#endif}}
 \DoxyCodeLine{2588                 \textcolor{keywordflow}{if} (m\_lineNumber > 0 \&\& !TMP\_Math.Approximately(m\_maxLineAscender, m\_startOfLineAscender) \&\& m\_lineHeight == TMP\_Math.FLOAT\_UNSET \&\& !m\_isNewPage)}
 \DoxyCodeLine{2589                 \{}
 \DoxyCodeLine{2590                     \textcolor{comment}{//Debug.Log("Inline -\/ Adjusting Line Spacing on line \#" + m\_lineNumber);}}
@@ -1400,31 +1400,31 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2599                     m\_SavedWordWrapState.lineOffset = m\_lineOffset;}
 \DoxyCodeLine{2600                     m\_SavedWordWrapState.previousLineAscender = m\_startOfLineAscender;}
 \DoxyCodeLine{2601                 \}}
-\DoxyCodeLine{2602 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{2602 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2603                 Profiler.EndSample();}
-\DoxyCodeLine{2604 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{2605 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{2604 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{2605 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{2606 }
 \DoxyCodeLine{2607 }
 \DoxyCodeLine{2608                 \textcolor{comment}{// Store Rectangle positions for each Character.}}
-\DoxyCodeLine{2609 \textcolor{preprocessor}{                \#region Store Character Data}}
+\DoxyCodeLine{2609 \textcolor{preprocessor}{                \#region Store Character Data}}
 \DoxyCodeLine{2610                 m\_textInfo.characterInfo[m\_characterCount].lineNumber = m\_lineNumber;}
 \DoxyCodeLine{2611                 m\_textInfo.characterInfo[m\_characterCount].pageNumber = m\_pageNumber;}
 \DoxyCodeLine{2612 }
 \DoxyCodeLine{2613                 \textcolor{keywordflow}{if} (charCode != 10 \&\& charCode != 13 \&\& charCode != 8230 || m\_textInfo.lineInfo[m\_lineNumber].characterCount == 1)}
 \DoxyCodeLine{2614                     m\_textInfo.lineInfo[m\_lineNumber].alignment = m\_lineJustification;}
-\DoxyCodeLine{2615 \textcolor{preprocessor}{                \#endregion Store Character Data}}
+\DoxyCodeLine{2615 \textcolor{preprocessor}{                \#endregion Store Character Data}}
 \DoxyCodeLine{2616 }
 \DoxyCodeLine{2617 }
 \DoxyCodeLine{2618                 \textcolor{comment}{// Check if text Exceeds the vertical bounds of the margin area.}}
-\DoxyCodeLine{2619 \textcolor{preprocessor}{                \#region Check Vertical Bounds \& Auto-\/Sizing}}
-\DoxyCodeLine{2620 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{2619 \textcolor{preprocessor}{                \#region Check Vertical Bounds \& Auto-\/Sizing}}
+\DoxyCodeLine{2620 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2621                 Profiler.BeginSample(\textcolor{stringliteral}{"Check Vertical Bounds"});}
-\DoxyCodeLine{2622 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{2622 \textcolor{preprocessor}{                \#endif}}
 \DoxyCodeLine{2623                 \textcolor{keywordflow}{if} (m\_maxAscender -\/ elementDescenderII > marginHeight + 0.0001f)}
 \DoxyCodeLine{2624                 \{}
 \DoxyCodeLine{2625                     \textcolor{comment}{// Handle Line spacing adjustments}}
-\DoxyCodeLine{2626 \textcolor{preprocessor}{                    \#region Line Spacing Adjustments}}
+\DoxyCodeLine{2626 \textcolor{preprocessor}{                    \#region Line Spacing Adjustments}}
 \DoxyCodeLine{2627                     \textcolor{keywordflow}{if} (m\_enableAutoSizing \&\& m\_lineSpacingDelta > m\_lineSpacingMax \&\& m\_lineNumber > 0)}
 \DoxyCodeLine{2628                     \{}
 \DoxyCodeLine{2629                         loopCountA = 0;}
@@ -1433,11 +1433,11 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2632                         \mbox{\hyperlink{classTMPro_1_1TextMeshProUGUI_ae43d87969cffe98fbaea5edabc0d55dd}{GenerateTextMesh}}();}
 \DoxyCodeLine{2633                         \textcolor{keywordflow}{return};}
 \DoxyCodeLine{2634                     \}}
-\DoxyCodeLine{2635 \textcolor{preprocessor}{                    \#endregion}}
+\DoxyCodeLine{2635 \textcolor{preprocessor}{                    \#endregion}}
 \DoxyCodeLine{2636 }
 \DoxyCodeLine{2637 }
 \DoxyCodeLine{2638                     \textcolor{comment}{// Handle Text Auto-\/sizing resulting from text exceeding vertical bounds.}}
-\DoxyCodeLine{2639 \textcolor{preprocessor}{                    \#region Text Auto-\/Sizing (Text greater than vertical bounds)}}
+\DoxyCodeLine{2639 \textcolor{preprocessor}{                    \#region Text Auto-\/Sizing (Text greater than vertical bounds)}}
 \DoxyCodeLine{2640                     \textcolor{keywordflow}{if} (m\_enableAutoSizing \&\& m\_fontSize > m\_fontSizeMin)}
 \DoxyCodeLine{2641                     \{}
 \DoxyCodeLine{2642                         m\_maxFontSize = m\_fontSize;}
@@ -1450,14 +1450,14 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2649                         \mbox{\hyperlink{classTMPro_1_1TextMeshProUGUI_ae43d87969cffe98fbaea5edabc0d55dd}{GenerateTextMesh}}();}
 \DoxyCodeLine{2650                         \textcolor{keywordflow}{return};}
 \DoxyCodeLine{2651                     \}}
-\DoxyCodeLine{2652 \textcolor{preprocessor}{                    \#endregion Text Auto-\/Sizing}}
+\DoxyCodeLine{2652 \textcolor{preprocessor}{                    \#endregion Text Auto-\/Sizing}}
 \DoxyCodeLine{2653 }
 \DoxyCodeLine{2654                     \textcolor{comment}{// Set isTextOverflowing and firstOverflowCharacterIndex}}
 \DoxyCodeLine{2655                     \textcolor{keywordflow}{if} (m\_firstOverflowCharacterIndex == -\/1)}
 \DoxyCodeLine{2656                         m\_firstOverflowCharacterIndex = m\_characterCount;}
 \DoxyCodeLine{2657 }
 \DoxyCodeLine{2658                     \textcolor{comment}{// Handle Text Overflow}}
-\DoxyCodeLine{2659 \textcolor{preprocessor}{                    \#region Text Overflow}}
+\DoxyCodeLine{2659 \textcolor{preprocessor}{                    \#region Text Overflow}}
 \DoxyCodeLine{2660                     \textcolor{keywordflow}{switch} (m\_overflowMode)}
 \DoxyCodeLine{2661                     \{}
 \DoxyCodeLine{2662                         \textcolor{keywordflow}{case} TextOverflowModes.Overflow:}
@@ -1585,17 +1585,17 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2784                                 \textcolor{keywordflow}{return};}
 \DoxyCodeLine{2785                             \}}
 \DoxyCodeLine{2786                     \}}
-\DoxyCodeLine{2787 \textcolor{preprocessor}{                    \#endregion End Text Overflow}}
+\DoxyCodeLine{2787 \textcolor{preprocessor}{                    \#endregion End Text Overflow}}
 \DoxyCodeLine{2788 }
 \DoxyCodeLine{2789                 \}}
-\DoxyCodeLine{2790 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{2790 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2791                 Profiler.EndSample();}
-\DoxyCodeLine{2792 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{2793 \textcolor{preprocessor}{                \#endregion Check Vertical Bounds}}
+\DoxyCodeLine{2792 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{2793 \textcolor{preprocessor}{                \#endregion Check Vertical Bounds}}
 \DoxyCodeLine{2794 }
 \DoxyCodeLine{2795 }
 \DoxyCodeLine{2796                 \textcolor{comment}{// Handle xAdvance \& Tabulation Stops. Tab stops at every 25\% of Font Size.}}
-\DoxyCodeLine{2797 \textcolor{preprocessor}{                \#region XAdvance, Tabulation \& Stops}}
+\DoxyCodeLine{2797 \textcolor{preprocessor}{                \#region XAdvance, Tabulation \& Stops}}
 \DoxyCodeLine{2798                 \textcolor{keywordflow}{if} (charCode == 9)}
 \DoxyCodeLine{2799                 \{}
 \DoxyCodeLine{2800                     \textcolor{keywordtype}{float} tabSize = m\_currentFontAsset.\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a6afd05863cb5c5f39221cc63904b3f90}{fontInfo}}.TabWidth * currentElementScale;}
@@ -1628,23 +1628,23 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2827                 \textcolor{comment}{// Store xAdvance information}}
 \DoxyCodeLine{2828                 m\_textInfo.characterInfo[m\_characterCount].xAdvance = m\_xAdvance;}
 \DoxyCodeLine{2829 }
-\DoxyCodeLine{2830 \textcolor{preprocessor}{                \#endregion Tabulation \& Stops}}
+\DoxyCodeLine{2830 \textcolor{preprocessor}{                \#endregion Tabulation \& Stops}}
 \DoxyCodeLine{2831 }
 \DoxyCodeLine{2832 }
 \DoxyCodeLine{2833                 \textcolor{comment}{// Handle Carriage Return}}
-\DoxyCodeLine{2834 \textcolor{preprocessor}{                \#region Carriage Return}}
+\DoxyCodeLine{2834 \textcolor{preprocessor}{                \#region Carriage Return}}
 \DoxyCodeLine{2835                 \textcolor{keywordflow}{if} (charCode == 13)}
 \DoxyCodeLine{2836                 \{}
 \DoxyCodeLine{2837                     m\_xAdvance = 0 + tag\_Indent;}
 \DoxyCodeLine{2838                 \}}
-\DoxyCodeLine{2839 \textcolor{preprocessor}{                \#endregion Carriage Return}}
+\DoxyCodeLine{2839 \textcolor{preprocessor}{                \#endregion Carriage Return}}
 \DoxyCodeLine{2840 }
 \DoxyCodeLine{2841 }
 \DoxyCodeLine{2842                 \textcolor{comment}{// Handle Line Spacing Adjustments + Word Wrapping \& special case for last line.}}
-\DoxyCodeLine{2843 \textcolor{preprocessor}{                \#region Check for Line Feed and Last Character}}
-\DoxyCodeLine{2844 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{2843 \textcolor{preprocessor}{                \#region Check for Line Feed and Last Character}}
+\DoxyCodeLine{2844 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2845                 Profiler.BeginSample(\textcolor{stringliteral}{"Process Linefeed"});}
-\DoxyCodeLine{2846 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{2846 \textcolor{preprocessor}{                \#endif}}
 \DoxyCodeLine{2847                 \textcolor{keywordflow}{if} (charCode == 10 || m\_characterCount == totalCharacterCount -\/ 1)}
 \DoxyCodeLine{2848                 \{}
 \DoxyCodeLine{2849                     \textcolor{comment}{// Check if Line Spacing of previous line needs to be adjusted.}}
@@ -1737,17 +1737,17 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2936                         \textcolor{keywordflow}{continue};}
 \DoxyCodeLine{2937                     \}}
 \DoxyCodeLine{2938                 \}}
-\DoxyCodeLine{2939 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{2939 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2940                 Profiler.EndSample();}
-\DoxyCodeLine{2941 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{2942 \textcolor{preprocessor}{                \#endregion Check for Linefeed or Last Character}}
+\DoxyCodeLine{2941 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{2942 \textcolor{preprocessor}{                \#endregion Check for Linefeed or Last Character}}
 \DoxyCodeLine{2943 }
 \DoxyCodeLine{2944 }
 \DoxyCodeLine{2945                 \textcolor{comment}{// Store Rectangle positions for each Character.}}
-\DoxyCodeLine{2946 \textcolor{preprocessor}{                \#region Save CharacterInfo for the current character.}}
-\DoxyCodeLine{2947 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{2946 \textcolor{preprocessor}{                \#region Save CharacterInfo for the current character.}}
+\DoxyCodeLine{2947 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2948                 Profiler.BeginSample(\textcolor{stringliteral}{"Save CharacterInfo \& Extents"});}
-\DoxyCodeLine{2949 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{2949 \textcolor{preprocessor}{                \#endif}}
 \DoxyCodeLine{2950                 \textcolor{comment}{// Determine the bounds of the Mesh.}}
 \DoxyCodeLine{2951                 \textcolor{keywordflow}{if} (m\_textInfo.characterInfo[m\_characterCount].isVisible)}
 \DoxyCodeLine{2952                 \{}
@@ -1782,17 +1782,17 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{2981                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (m\_characterCount == totalCharacterCount -\/ 1)}
 \DoxyCodeLine{2982                         m\_textInfo.pageInfo[m\_pageNumber].lastCharacterIndex = m\_characterCount;}
 \DoxyCodeLine{2983                 \}}
-\DoxyCodeLine{2984 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{2984 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2985                 Profiler.EndSample();}
-\DoxyCodeLine{2986 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{2987 \textcolor{preprocessor}{                \#endregion Saving CharacterInfo}}
+\DoxyCodeLine{2986 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{2987 \textcolor{preprocessor}{                \#endregion Saving CharacterInfo}}
 \DoxyCodeLine{2988 }
 \DoxyCodeLine{2989 }
 \DoxyCodeLine{2990                 \textcolor{comment}{// Save State of Mesh Creation for handling of Word Wrapping}}
-\DoxyCodeLine{2991 \textcolor{preprocessor}{                \#region Save Word Wrapping State}}
-\DoxyCodeLine{2992 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{2991 \textcolor{preprocessor}{                \#region Save Word Wrapping State}}
+\DoxyCodeLine{2992 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{2993                 Profiler.BeginSample(\textcolor{stringliteral}{"Save Word Wrapping State"});}
-\DoxyCodeLine{2994 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{2994 \textcolor{preprocessor}{                \#endif}}
 \DoxyCodeLine{2995                 \textcolor{keywordflow}{if} (m\_enableWordWrapping || m\_overflowMode == TextOverflowModes.Truncate || m\_overflowMode == TextOverflowModes.Ellipsis)}
 \DoxyCodeLine{2996                 \{}
 \DoxyCodeLine{2997                     \textcolor{keywordflow}{if} ((\textcolor{keywordtype}{char}.IsWhiteSpace((\textcolor{keywordtype}{char})charCode) || charCode == 0x200B || charCode == 0x2D || charCode == 0xAD) \&\& (!m\_isNonBreakingSpace || ignoreNonBreakingSpace) \&\& charCode != 0xA0 \&\& charCode != 0x2007 \&\& charCode != 0x2011 \&\& charCode != 0x202F \&\& charCode != 0x2060)}
@@ -1826,16 +1826,16 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3025                         \mbox{\hyperlink{classTMPro_1_1TMP__Text_af4575fb91d41221be3bd2764a356eda1}{SaveWordWrappingState}}(ref m\_SavedWordWrapState, i, m\_characterCount);}
 \DoxyCodeLine{3026 }
 \DoxyCodeLine{3027                 \}}
-\DoxyCodeLine{3028 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3028 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3029                 Profiler.EndSample();}
-\DoxyCodeLine{3030 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{3031 \textcolor{preprocessor}{                \#endregion Save Word Wrapping State}}
+\DoxyCodeLine{3030 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{3031 \textcolor{preprocessor}{                \#endregion Save Word Wrapping State}}
 \DoxyCodeLine{3032 }
 \DoxyCodeLine{3033                 m\_characterCount += 1;}
 \DoxyCodeLine{3034             \}}
 \DoxyCodeLine{3035 }
 \DoxyCodeLine{3036             \textcolor{comment}{// Check Auto Sizing and increase font size to fill text container.}}
-\DoxyCodeLine{3037 \textcolor{preprocessor}{            \#region Check Auto-\/Sizing (Upper Font Size Bounds)}}
+\DoxyCodeLine{3037 \textcolor{preprocessor}{            \#region Check Auto-\/Sizing (Upper Font Size Bounds)}}
 \DoxyCodeLine{3038             fontSizeDelta = m\_maxFontSize -\/ m\_minFontSize;}
 \DoxyCodeLine{3039             \textcolor{keywordflow}{if} (!m\_isCharacterWrappingEnabled \&\& m\_enableAutoSizing \&\& fontSizeDelta > 0.051f \&\& m\_fontSize < m\_fontSizeMax)}
 \DoxyCodeLine{3040             \{}
@@ -1849,21 +1849,21 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3048                 \mbox{\hyperlink{classTMPro_1_1TextMeshProUGUI_ae43d87969cffe98fbaea5edabc0d55dd}{GenerateTextMesh}}();}
 \DoxyCodeLine{3049                 \textcolor{keywordflow}{return};}
 \DoxyCodeLine{3050             \}}
-\DoxyCodeLine{3051 \textcolor{preprocessor}{            \#endregion End Auto-\/sizing Check}}
+\DoxyCodeLine{3051 \textcolor{preprocessor}{            \#endregion End Auto-\/sizing Check}}
 \DoxyCodeLine{3052 }
 \DoxyCodeLine{3053 }
 \DoxyCodeLine{3054             m\_isCharacterWrappingEnabled = \textcolor{keyword}{false};}
 \DoxyCodeLine{3055 }
-\DoxyCodeLine{3056 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
+\DoxyCodeLine{3056 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
 \DoxyCodeLine{3057                 Profiler.EndSample();}
-\DoxyCodeLine{3058 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{3058 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{3059 }
 \DoxyCodeLine{3060             \textcolor{comment}{//Debug.Log("Iteration Count: " + loopCountA + ". Final Point Size: " + m\_fontSize); // + "  B: " + loopCountB + "  C: " + loopCountC + "  D: " + loopCountD);}}
 \DoxyCodeLine{3061 }
 \DoxyCodeLine{3062             \textcolor{comment}{// *** PHASE II of Text Generation ***}}
-\DoxyCodeLine{3063 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
+\DoxyCodeLine{3063 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
 \DoxyCodeLine{3064                 Profiler.BeginSample(\textcolor{stringliteral}{"TMP Generate Text -\/ Phase II"});}
-\DoxyCodeLine{3065 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{3065 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{3066 }
 \DoxyCodeLine{3067             \textcolor{comment}{// If there are no visible characters... no need to continue}}
 \DoxyCodeLine{3068             \textcolor{keywordflow}{if} (m\_characterCount == 0) \textcolor{comment}{// \&\& m\_visibleSpriteCount == 0)}}
@@ -1883,10 +1883,10 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3082             m\_textInfo.meshInfo[0].\mbox{\hyperlink{structTMPro_1_1TMP__MeshInfo_add2e199157007db54ca91226a7d8a3dc}{Clear}}(\textcolor{keyword}{false});}
 \DoxyCodeLine{3083 }
 \DoxyCodeLine{3084             \textcolor{comment}{// Handle Text Alignment}}
-\DoxyCodeLine{3085 \textcolor{preprocessor}{            \#region Text Vertical Alignment}}
-\DoxyCodeLine{3086 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3085 \textcolor{preprocessor}{            \#region Text Vertical Alignment}}
+\DoxyCodeLine{3086 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3087             Profiler.BeginSample(\textcolor{stringliteral}{"Vertical Text Alignment"});}
-\DoxyCodeLine{3088 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{3088 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{3089             Vector3 anchorOffset = Vector3.zero;}
 \DoxyCodeLine{3090             Vector3[] corners = m\_RectTransformCorners; \textcolor{comment}{// GetTextContainerLocalCorners();}}
 \DoxyCodeLine{3091 }
@@ -1961,10 +1961,10 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3160                     anchorOffset = (corners[0] + corners[1]) / 2 + \textcolor{keyword}{new} Vector3(0 + margins.x, 0 -\/ (m\_maxCapHeight -\/ margins.y -\/ margins.w) / 2, 0);}
 \DoxyCodeLine{3161                     \textcolor{keywordflow}{break};}
 \DoxyCodeLine{3162             \}}
-\DoxyCodeLine{3163 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3163 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3164             Profiler.EndSample();}
-\DoxyCodeLine{3165 \textcolor{preprocessor}{            \#endif}}
-\DoxyCodeLine{3166 \textcolor{preprocessor}{            \#endregion}}
+\DoxyCodeLine{3165 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{3166 \textcolor{preprocessor}{            \#endregion}}
 \DoxyCodeLine{3167 }
 \DoxyCodeLine{3168 }
 \DoxyCodeLine{3169             \textcolor{comment}{// Initialization for Second Pass}}
@@ -1983,7 +1983,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3182             \textcolor{keywordtype}{int} wordLastChar = 0;}
 \DoxyCodeLine{3183 }
 \DoxyCodeLine{3184             \textcolor{comment}{// Second Pass : Line Justification, UV Mapping, Character \& Line Visibility \& more.}}
-\DoxyCodeLine{3185 \textcolor{preprocessor}{            \#region Handle Line Justification \& UV Mapping \& Character Visibility \& More}}
+\DoxyCodeLine{3185 \textcolor{preprocessor}{            \#region Handle Line Justification \& UV Mapping \& Character Visibility \& More}}
 \DoxyCodeLine{3186 }
 \DoxyCodeLine{3187             \textcolor{comment}{// Variables used to handle Canvas Render Modes and SDF Scaling}}
 \DoxyCodeLine{3188             \textcolor{keywordtype}{bool} isCameraAssigned = m\_canvas.worldCamera == \textcolor{keyword}{null} ? false : \textcolor{keyword}{true};}
@@ -2006,7 +2006,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3205             \textcolor{keywordtype}{float} strikethroughBaseline = 0;}
 \DoxyCodeLine{3206 }
 \DoxyCodeLine{3207             TMP\_CharacterInfo[] characterInfos = m\_textInfo.characterInfo;}
-\DoxyCodeLine{3208 \textcolor{preprocessor}{            \#region Handle Line Justification \& UV Mapping \& Character Visibility \& More}}
+\DoxyCodeLine{3208 \textcolor{preprocessor}{            \#region Handle Line Justification \& UV Mapping \& Character Visibility \& More}}
 \DoxyCodeLine{3209             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < m\_characterCount; i++)}
 \DoxyCodeLine{3210             \{}
 \DoxyCodeLine{3211                 TMP\_FontAsset currentFontAsset = characterInfos[i].fontAsset;}
@@ -2020,10 +2020,10 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3219                 TextAlignmentOptions lineAlignment = lineInfo.alignment;}
 \DoxyCodeLine{3220 }
 \DoxyCodeLine{3221                 \textcolor{comment}{// Process Line Justification}}
-\DoxyCodeLine{3222 \textcolor{preprocessor}{                \#region Handle Line Justification}}
-\DoxyCodeLine{3223 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3222 \textcolor{preprocessor}{                \#region Handle Line Justification}}
+\DoxyCodeLine{3223 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3224                 Profiler.BeginSample(\textcolor{stringliteral}{"Horizontal Text Alignment"});}
-\DoxyCodeLine{3225 \textcolor{preprocessor}{                \#endif }}
+\DoxyCodeLine{3225 \textcolor{preprocessor}{                \#endif }}
 \DoxyCodeLine{3226                 \textcolor{comment}{//if (!characterInfos[i].isIgnoringAlignment)}}
 \DoxyCodeLine{3227                 \textcolor{comment}{//\{}}
 \DoxyCodeLine{3228                 \textcolor{keywordflow}{switch} (lineAlignment)}
@@ -2147,15 +2147,15 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3346                         \textcolor{keywordflow}{break};}
 \DoxyCodeLine{3347                 \}}
 \DoxyCodeLine{3348                 \textcolor{comment}{//\}}}
-\DoxyCodeLine{3349 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3349 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3350                 Profiler.EndSample();}
-\DoxyCodeLine{3351 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{3352 \textcolor{preprocessor}{                \#endregion End Text Justification}}
+\DoxyCodeLine{3351 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{3352 \textcolor{preprocessor}{                \#endregion End Text Justification}}
 \DoxyCodeLine{3353 }
 \DoxyCodeLine{3354                 offset = anchorOffset + justificationOffset;}
 \DoxyCodeLine{3355 }
 \DoxyCodeLine{3356                 \textcolor{comment}{// Handle UV2 mapping options and packing of scale information into UV2.}}
-\DoxyCodeLine{3357 \textcolor{preprocessor}{                \#region Handling of UV2 mapping \& Scale packing}}
+\DoxyCodeLine{3357 \textcolor{preprocessor}{                \#region Handling of UV2 mapping \& Scale packing}}
 \DoxyCodeLine{3358                 \textcolor{keywordtype}{bool} isCharacterVisible = characterInfos[i].isVisible;}
 \DoxyCodeLine{3359                 \textcolor{keywordflow}{if} (isCharacterVisible)}
 \DoxyCodeLine{3360                 \{}
@@ -2168,10 +2168,10 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3367                             \textcolor{keywordtype}{float} uvOffset = (m\_uvLineOffset * currentLine) \% 1; \textcolor{comment}{// + m\_uvOffset.x;}}
 \DoxyCodeLine{3368 }
 \DoxyCodeLine{3369                             \textcolor{comment}{// Setup UV2 based on Character Mapping Options Selected}}
-\DoxyCodeLine{3370 \textcolor{preprocessor}{                            \#region Handle UV Mapping Options}}
-\DoxyCodeLine{3371 \textcolor{preprocessor}{                            \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3370 \textcolor{preprocessor}{                            \#region Handle UV Mapping Options}}
+\DoxyCodeLine{3371 \textcolor{preprocessor}{                            \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3372                             Profiler.BeginSample(\textcolor{stringliteral}{"UV MAPPING"});}
-\DoxyCodeLine{3373 \textcolor{preprocessor}{                            \#endif}}
+\DoxyCodeLine{3373 \textcolor{preprocessor}{                            \#endif}}
 \DoxyCodeLine{3374                             \textcolor{keywordflow}{switch} (m\_horizontalMapping)}
 \DoxyCodeLine{3375                             \{}
 \DoxyCodeLine{3376                                 \textcolor{keywordflow}{case} TextureMappingOptions.Character:}
@@ -2278,16 +2278,16 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3477                                     characterInfos[i].vertex\_TR.uv2.y = characterInfos[i].vertex\_TL.uv2.y;}
 \DoxyCodeLine{3478                                     \textcolor{keywordflow}{break};}
 \DoxyCodeLine{3479                             \}}
-\DoxyCodeLine{3480 \textcolor{preprocessor}{                            \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3480 \textcolor{preprocessor}{                            \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3481                             Profiler.EndSample();}
-\DoxyCodeLine{3482 \textcolor{preprocessor}{                            \#endif}}
-\DoxyCodeLine{3483 \textcolor{preprocessor}{                            \#endregion End UV Mapping Options}}
+\DoxyCodeLine{3482 \textcolor{preprocessor}{                            \#endif}}
+\DoxyCodeLine{3483 \textcolor{preprocessor}{                            \#endregion End UV Mapping Options}}
 \DoxyCodeLine{3484 }
 \DoxyCodeLine{3485                             \textcolor{comment}{// Pack UV's so that we can pass Xscale needed for Shader to maintain 1:1 ratio.}}
-\DoxyCodeLine{3486 \textcolor{preprocessor}{                            \#region Pack Scale into UV2}}
-\DoxyCodeLine{3487 \textcolor{preprocessor}{                            \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3486 \textcolor{preprocessor}{                            \#region Pack Scale into UV2}}
+\DoxyCodeLine{3487 \textcolor{preprocessor}{                            \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3488                             Profiler.BeginSample(\textcolor{stringliteral}{"Pack UV"});}
-\DoxyCodeLine{3489 \textcolor{preprocessor}{                            \#endif}}
+\DoxyCodeLine{3489 \textcolor{preprocessor}{                            \#endif}}
 \DoxyCodeLine{3490                             xScale = characterInfos[i].scale * (1 -\/ m\_charWidthAdjDelta);}
 \DoxyCodeLine{3491                             \textcolor{keywordflow}{if} (!characterInfos[i].isUsingAlternateTypeface \&\& (characterInfos[i].style \& FontStyles.Bold) == FontStyles.Bold) xScale *= -\/1;}
 \DoxyCodeLine{3492 }
@@ -2329,10 +2329,10 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3528                             characterInfos[i].vertex\_TL.uv2.x = \mbox{\hyperlink{classTMPro_1_1TMP__Text_ab3678ea5e10c2193b87d1ee79f8ef5c3}{PackUV}}(x0, y1); characterInfos[i].vertex\_TL.uv2.y = xScale;}
 \DoxyCodeLine{3529                             characterInfos[i].vertex\_TR.uv2.x = \mbox{\hyperlink{classTMPro_1_1TMP__Text_ab3678ea5e10c2193b87d1ee79f8ef5c3}{PackUV}}(x1, y1); characterInfos[i].vertex\_TR.uv2.y = xScale;}
 \DoxyCodeLine{3530                             characterInfos[i].vertex\_BR.uv2.x = \mbox{\hyperlink{classTMPro_1_1TMP__Text_ab3678ea5e10c2193b87d1ee79f8ef5c3}{PackUV}}(x1, y0); characterInfos[i].vertex\_BR.uv2.y = xScale;}
-\DoxyCodeLine{3531 \textcolor{preprocessor}{                            \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3531 \textcolor{preprocessor}{                            \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3532                                 Profiler.EndSample();}
-\DoxyCodeLine{3533 \textcolor{preprocessor}{                            \#endif}}
-\DoxyCodeLine{3534 \textcolor{preprocessor}{                            \#endregion}}
+\DoxyCodeLine{3533 \textcolor{preprocessor}{                            \#endif}}
+\DoxyCodeLine{3534 \textcolor{preprocessor}{                            \#endregion}}
 \DoxyCodeLine{3535                             \textcolor{keywordflow}{break};}
 \DoxyCodeLine{3536                         }
 \DoxyCodeLine{3537                         \textcolor{comment}{// SPRITES}}
@@ -2342,10 +2342,10 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3541                     \}}
 \DoxyCodeLine{3542 }
 \DoxyCodeLine{3543                     \textcolor{comment}{// Handle maxVisibleCharacters, maxVisibleLines and Overflow Page Mode.}}
-\DoxyCodeLine{3544 \textcolor{preprocessor}{                    \#region Handle maxVisibleCharacters / maxVisibleLines / Page Mode}}
-\DoxyCodeLine{3545 \textcolor{preprocessor}{                    \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3544 \textcolor{preprocessor}{                    \#region Handle maxVisibleCharacters / maxVisibleLines / Page Mode}}
+\DoxyCodeLine{3545 \textcolor{preprocessor}{                    \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3546                     Profiler.BeginSample(\textcolor{stringliteral}{"Process MaxVisible Characters \& Lines"});}
-\DoxyCodeLine{3547 \textcolor{preprocessor}{                    \#endif}}
+\DoxyCodeLine{3547 \textcolor{preprocessor}{                    \#endif}}
 \DoxyCodeLine{3548                     \textcolor{keywordflow}{if} (i < m\_maxVisibleCharacters \&\& wordCount < m\_maxVisibleWords \&\& currentLine < m\_maxVisibleLines \&\& m\_overflowMode != TextOverflowModes.Page)}
 \DoxyCodeLine{3549                     \{}
 \DoxyCodeLine{3550                         characterInfos[i].vertex\_BL.position += offset;}
@@ -2368,10 +2368,10 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3567                         characterInfos[i].vertex\_BR.position = Vector3.zero;}
 \DoxyCodeLine{3568                         characterInfos[i].isVisible = \textcolor{keyword}{false};}
 \DoxyCodeLine{3569                     \}}
-\DoxyCodeLine{3570 \textcolor{preprocessor}{                    \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3570 \textcolor{preprocessor}{                    \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3571                     Profiler.EndSample();}
-\DoxyCodeLine{3572 \textcolor{preprocessor}{                    \#endif}}
-\DoxyCodeLine{3573 \textcolor{preprocessor}{                    \#endregion}}
+\DoxyCodeLine{3572 \textcolor{preprocessor}{                    \#endif}}
+\DoxyCodeLine{3573 \textcolor{preprocessor}{                    \#endregion}}
 \DoxyCodeLine{3574 }
 \DoxyCodeLine{3575 }
 \DoxyCodeLine{3576                     \textcolor{comment}{// Fill Vertex Buffers for the various types of element}}
@@ -2384,7 +2384,7 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3583                         \mbox{\hyperlink{classTMPro_1_1TMP__Text_a6f919375c12a3e03f3ded228043e9513}{FillSpriteVertexBuffers}}(i, sprite\_index\_X4);}
 \DoxyCodeLine{3584                     \}}
 \DoxyCodeLine{3585                 \}}
-\DoxyCodeLine{3586 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{3586 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{3587 }
 \DoxyCodeLine{3588                 \textcolor{comment}{// Apply Alignment and Justification Offset}}
 \DoxyCodeLine{3589                 m\_textInfo.characterInfo[i].bottomLeft += offset;}
@@ -2407,10 +2407,10 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3606                 \}}
 \DoxyCodeLine{3607 }
 \DoxyCodeLine{3608                 \textcolor{comment}{// Need to recompute lineExtent to account for the offset from justification.}}
-\DoxyCodeLine{3609 \textcolor{preprocessor}{                \#region Adjust lineExtents resulting from alignment offset}}
-\DoxyCodeLine{3610 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3609 \textcolor{preprocessor}{                \#region Adjust lineExtents resulting from alignment offset}}
+\DoxyCodeLine{3610 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3611                     Profiler.BeginSample(\textcolor{stringliteral}{"Adjust LineExtents"});}
-\DoxyCodeLine{3612 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{3612 \textcolor{preprocessor}{                \#endif}}
 \DoxyCodeLine{3613                 \textcolor{keywordflow}{if} (currentLine != lastLine || i == m\_characterCount -\/ 1)}
 \DoxyCodeLine{3614                 \{}
 \DoxyCodeLine{3615                     \textcolor{comment}{// Update the previous line's extents}}
@@ -2435,17 +2435,17 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3634                         m\_textInfo.lineInfo[currentLine].lineExtents.max = \textcolor{keyword}{new} Vector2(m\_textInfo.characterInfo[m\_textInfo.lineInfo[currentLine].lastVisibleCharacterIndex].topRight.x, m\_textInfo.lineInfo[currentLine].ascender);}
 \DoxyCodeLine{3635                     \}}
 \DoxyCodeLine{3636                 \}}
-\DoxyCodeLine{3637 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3637 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3638                 Profiler.EndSample();}
-\DoxyCodeLine{3639 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{3640 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{3639 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{3640 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{3641 }
 \DoxyCodeLine{3642 }
 \DoxyCodeLine{3643                 \textcolor{comment}{// Track Word Count per line and for the object}}
-\DoxyCodeLine{3644 \textcolor{preprocessor}{                \#region Track Word Count}}
-\DoxyCodeLine{3645 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3644 \textcolor{preprocessor}{                \#region Track Word Count}}
+\DoxyCodeLine{3645 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3646                 Profiler.BeginSample(\textcolor{stringliteral}{"Track Word Count"});}
-\DoxyCodeLine{3647 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{3647 \textcolor{preprocessor}{                \#endif}}
 \DoxyCodeLine{3648                 \textcolor{keywordflow}{if} (\textcolor{keywordtype}{char}.IsLetterOrDigit(currentCharacter) || currentCharacter == 0x2D || currentCharacter == 0xAD || currentCharacter == 0x2010 || currentCharacter == 0x2011)}
 \DoxyCodeLine{3649                 \{}
 \DoxyCodeLine{3650                     \textcolor{keywordflow}{if} (isStartOfWord == \textcolor{keyword}{false})}
@@ -2502,17 +2502,17 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3701                         m\_textInfo.lineInfo[currentLine].wordCount += 1;}
 \DoxyCodeLine{3702                     \}}
 \DoxyCodeLine{3703                 \}}
-\DoxyCodeLine{3704 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3704 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3705                 Profiler.EndSample();}
-\DoxyCodeLine{3706 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{3707 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{3706 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{3707 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{3708 }
 \DoxyCodeLine{3709 }
 \DoxyCodeLine{3710                 \textcolor{comment}{// Setup \& Handle Underline}}
-\DoxyCodeLine{3711 \textcolor{preprocessor}{                \#region Underline}}
-\DoxyCodeLine{3712 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{3711 \textcolor{preprocessor}{                \#region Underline}}
+\DoxyCodeLine{3712 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{3713                 Profiler.BeginSample(\textcolor{stringliteral}{"Process Underline \& Strikethrough"});}
-\DoxyCodeLine{3714 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{3714 \textcolor{preprocessor}{                \#endif}}
 \DoxyCodeLine{3715                 \textcolor{comment}{// NOTE: Need to figure out how underline will be handled with multiple fonts and which font will be used for the underline.}}
 \DoxyCodeLine{3716                 \textcolor{keywordtype}{bool} isUnderline = (m\_textInfo.characterInfo[i].style \& FontStyles.Underline) == FontStyles.Underline;}
 \DoxyCodeLine{3717                 if (isUnderline)}
@@ -2612,11 +2612,11 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3811                         underlineBaseLine = k\_LargePositiveFloat;}
 \DoxyCodeLine{3812                     \}}
 \DoxyCodeLine{3813                 \}}
-\DoxyCodeLine{3814 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{3814 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{3815 }
 \DoxyCodeLine{3816 }
 \DoxyCodeLine{3817                 \textcolor{comment}{// Setup \& Handle Strikethrough}}
-\DoxyCodeLine{3818 \textcolor{preprocessor}{                \#region Strikethrough}}
+\DoxyCodeLine{3818 \textcolor{preprocessor}{                \#region Strikethrough}}
 \DoxyCodeLine{3819                 \textcolor{comment}{// NOTE: Need to figure out how underline will be handled with multiple fonts and which font will be used for the underline.}}
 \DoxyCodeLine{3820                 \textcolor{keywordtype}{bool} isStrikethrough = (m\_textInfo.characterInfo[i].style \& FontStyles.Strikethrough) == FontStyles.Strikethrough;}
 \DoxyCodeLine{3821                 \textcolor{keywordtype}{float} strikethroughOffset = currentFontAsset.fontInfo.strikethrough;}
@@ -2711,11 +2711,11 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{3910                         \mbox{\hyperlink{classTMPro_1_1TMP__Text_a735c1a7bbfc899272bc80bb9175720cc}{DrawUnderlineMesh}}(strikethrough\_start, strikethrough\_end, ref last\_vert\_index, strikethroughScale, strikethroughScale, strikethroughScale, xScale, strikethroughColor);}
 \DoxyCodeLine{3911                     \}}
 \DoxyCodeLine{3912                 \}}
-\DoxyCodeLine{3913 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{3913 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{3914 }
 \DoxyCodeLine{3915 }
 \DoxyCodeLine{3916                 \textcolor{comment}{// HANDLE TEXT HIGHLIGHTING}}
-\DoxyCodeLine{3917 \textcolor{preprocessor}{                \#region Text Highlighting}}
+\DoxyCodeLine{3917 \textcolor{preprocessor}{                \#region Text Highlighting}}
 \DoxyCodeLine{3918                 \textcolor{keywordtype}{bool} isHighlight = (m\_textInfo.characterInfo[i].style \& FontStyles.Highlight) == FontStyles.Highlight;}
 \DoxyCodeLine{3919                 if (isHighlight)}
 \DoxyCodeLine{3920                 \{}
@@ -2801,15 +2801,15 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{4000                         DrawTextHighlight(highlight\_start, highlight\_end, ref last\_vert\_index, highlightColor);}
 \DoxyCodeLine{4001                     \}}
 \DoxyCodeLine{4002                 \}}
-\DoxyCodeLine{4003 \textcolor{preprocessor}{                \#endregion}}
-\DoxyCodeLine{4004 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{4003 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{4004 \textcolor{preprocessor}{                \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{4005                 Profiler.EndSample();}
-\DoxyCodeLine{4006 \textcolor{preprocessor}{                \#endif}}
-\DoxyCodeLine{4007 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{4006 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{4007 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{4008 }
 \DoxyCodeLine{4009                 lastLine = currentLine;}
 \DoxyCodeLine{4010             \}}
-\DoxyCodeLine{4011 \textcolor{preprocessor}{            \#endregion}}
+\DoxyCodeLine{4011 \textcolor{preprocessor}{            \#endregion}}
 \DoxyCodeLine{4012 }
 \DoxyCodeLine{4013 }
 \DoxyCodeLine{4014             \textcolor{comment}{// METRICS ABOUT THE TEXT OBJECT}}
@@ -2819,15 +2819,15 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{4018             m\_textInfo.wordCount = wordCount != 0 \&\& m\_characterCount > 0 ? wordCount : 1;}
 \DoxyCodeLine{4019             m\_textInfo.pageCount = m\_pageNumber + 1;}
 \DoxyCodeLine{4020 }
-\DoxyCodeLine{4021 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
+\DoxyCodeLine{4021 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
 \DoxyCodeLine{4022                 Profiler.EndSample();}
-\DoxyCodeLine{4023 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{4023 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{4024 }
 \DoxyCodeLine{4025 }
 \DoxyCodeLine{4026             \textcolor{comment}{// *** UPLOAD MESH DATA ***}}
-\DoxyCodeLine{4027 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
+\DoxyCodeLine{4027 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
 \DoxyCodeLine{4028                 Profiler.BeginSample(\textcolor{stringliteral}{"TMP Generate Text -\/ Phase III"});}
-\DoxyCodeLine{4029 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{4029 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{4030             \textcolor{keywordflow}{if} (m\_renderMode == \mbox{\hyperlink{namespaceTMPro_ac5a571bdd8e4873a73f2c05b62feff0e}{TextRenderFlags}}.Render \&\& IsActive())}
 \DoxyCodeLine{4031             \{}
 \DoxyCodeLine{4032                 \textcolor{comment}{// Clear unused vertices}}
@@ -2889,9 +2889,9 @@ Definition at line 1651 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{4088             TMPro\_EventManager.ON\_TEXT\_CHANGED(\textcolor{keyword}{this});}
 \DoxyCodeLine{4089             \textcolor{comment}{//SendOnTextChanged();}}
 \DoxyCodeLine{4090 }
-\DoxyCodeLine{4091 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
+\DoxyCodeLine{4091 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_PHASES\_ON}}
 \DoxyCodeLine{4092                 Profiler.EndSample();}
-\DoxyCodeLine{4093 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{4093 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{4094 }
 \DoxyCodeLine{4095             \textcolor{comment}{//Debug.Log("Done Rendering Text.");}}
 \DoxyCodeLine{4096         \}}
@@ -3634,9 +3634,9 @@ Definition at line 1027 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{1028         \{}
 \DoxyCodeLine{1029             \textcolor{comment}{//Debug.Log("*** SetArraySizes() on Instance ID (" + GetInstanceID() + ") ***");}}
-\DoxyCodeLine{1030 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{1030 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{1031             Profiler.BeginSample(\textcolor{stringliteral}{"SetArraySizes"});}
-\DoxyCodeLine{1032 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{1032 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{1033 }
 \DoxyCodeLine{1034             \textcolor{keywordtype}{int} tagEnd = 0;}
 \DoxyCodeLine{1035             \textcolor{keywordtype}{int} spriteCount = 0;}
@@ -3679,7 +3679,7 @@ Definition at line 1027 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1072                 \textcolor{keywordtype}{int} c = chars[i];}
 \DoxyCodeLine{1073 }
 \DoxyCodeLine{1074                 \textcolor{comment}{// PARSE XML TAGS}}
-\DoxyCodeLine{1075 \textcolor{preprocessor}{                \#region PARSE XML TAGS}}
+\DoxyCodeLine{1075 \textcolor{preprocessor}{                \#region PARSE XML TAGS}}
 \DoxyCodeLine{1076                 \textcolor{keywordflow}{if} (m\_isRichText \&\& c == 60) \textcolor{comment}{// if Char '<'}}
 \DoxyCodeLine{1077                 \{}
 \DoxyCodeLine{1078                     \textcolor{keywordtype}{int} prev\_MaterialIndex = m\_currentMaterialIndex;}
@@ -3713,7 +3713,7 @@ Definition at line 1027 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1106                         \textcolor{keywordflow}{continue};}
 \DoxyCodeLine{1107                     \}}
 \DoxyCodeLine{1108                 \}}
-\DoxyCodeLine{1109 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{1109 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{1110 }
 \DoxyCodeLine{1111 }
 \DoxyCodeLine{1112                 \textcolor{keywordtype}{bool} isUsingFallback = \textcolor{keyword}{false};}
@@ -3727,7 +3727,7 @@ Definition at line 1027 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1120 }
 \DoxyCodeLine{1121 }
 \DoxyCodeLine{1122                 \textcolor{comment}{// Handle Font Styles like LowerCase, UpperCase and SmallCaps.}}
-\DoxyCodeLine{1123 \textcolor{preprocessor}{                \#region Handling of LowerCase, UpperCase and SmallCaps Font Styles}}
+\DoxyCodeLine{1123 \textcolor{preprocessor}{                \#region Handling of LowerCase, UpperCase and SmallCaps Font Styles}}
 \DoxyCodeLine{1124                 \textcolor{keywordflow}{if} (m\_textElementType == TMP\_TextElementType.Character)}
 \DoxyCodeLine{1125                 \{}
 \DoxyCodeLine{1126                     \textcolor{keywordflow}{if} ((m\_style \& FontStyles.UpperCase) == FontStyles.UpperCase)}
@@ -3750,11 +3750,11 @@ Definition at line 1027 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1143                             c = \textcolor{keywordtype}{char}.ToUpper((\textcolor{keywordtype}{char})c);}
 \DoxyCodeLine{1144                     \}}
 \DoxyCodeLine{1145                 \}}
-\DoxyCodeLine{1146 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{1146 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{1147 }
 \DoxyCodeLine{1148 }
 \DoxyCodeLine{1149                 \textcolor{comment}{// Handling of font weights.}}
-\DoxyCodeLine{1150 \textcolor{preprocessor}{                \#region HANDLING OF FONT WEIGHT}}
+\DoxyCodeLine{1150 \textcolor{preprocessor}{                \#region HANDLING OF FONT WEIGHT}}
 \DoxyCodeLine{1151                 tempFontAsset = \mbox{\hyperlink{classTMPro_1_1TMP__Text_a473e6fb93717c196a1d7d3c4670557a2}{GetFontAssetForWeight}}(m\_fontWeightInternal);}
 \DoxyCodeLine{1152                 \textcolor{keywordflow}{if} (tempFontAsset != \textcolor{keyword}{null})}
 \DoxyCodeLine{1153                 \{}
@@ -3763,11 +3763,11 @@ Definition at line 1027 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1156                     m\_currentFontAsset = tempFontAsset;}
 \DoxyCodeLine{1157                     \textcolor{comment}{//m\_currentMaterialIndex = MaterialReference.AddMaterialReference(m\_currentMaterial, tempFontAsset, m\_materialReferences, m\_materialReferenceIndexLookup);}}
 \DoxyCodeLine{1158                 \}}
-\DoxyCodeLine{1159 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{1159 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{1160 }
 \DoxyCodeLine{1161 }
 \DoxyCodeLine{1162                 \textcolor{comment}{// Lookup the Glyph data for each character and cache it.}}
-\DoxyCodeLine{1163 \textcolor{preprocessor}{                \#region LOOKUP GLYPH}}
+\DoxyCodeLine{1163 \textcolor{preprocessor}{                \#region LOOKUP GLYPH}}
 \DoxyCodeLine{1164                 tempFontAsset = TMP\_FontUtilities.SearchForGlyph(m\_currentFontAsset, c, out glyph);}
 \DoxyCodeLine{1165 }
 \DoxyCodeLine{1166                 \textcolor{comment}{// Search for the glyph in the Sprite Asset assigned to the text object.}}
@@ -3922,7 +3922,7 @@ Definition at line 1027 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1315                         m\_currentFontAsset = tempFontAsset;}
 \DoxyCodeLine{1316                     \}}
 \DoxyCodeLine{1317                 \}}
-\DoxyCodeLine{1318 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{1318 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{1319 }
 \DoxyCodeLine{1320 }
 \DoxyCodeLine{1321                 m\_textInfo.characterInfo[m\_totalCharacterCount].elementType = TMP\_TextElementType.Character;}
@@ -4077,9 +4077,9 @@ Definition at line 1027 of file T\+M\+Pro\+\_\+\+U\+G\+U\+I\+\_\+\+Private.\+cs.
 \DoxyCodeLine{1470                 \}}
 \DoxyCodeLine{1471             \}}
 \DoxyCodeLine{1472 }
-\DoxyCodeLine{1473 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_ON}}
+\DoxyCodeLine{1473 \textcolor{preprocessor}{            \#if TMP\_PROFILE\_ON}}
 \DoxyCodeLine{1474             Profiler.EndSample();}
-\DoxyCodeLine{1475 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{1475 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{1476 }
 \DoxyCodeLine{1477             \textcolor{keywordflow}{return} m\_totalCharacterCount;}
 \DoxyCodeLine{1478         \}}

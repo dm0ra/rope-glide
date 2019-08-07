@@ -677,14 +677,14 @@ Definition at line 285 of file T\+M\+P\+\_\+\+Settings.\+cs.
 \DoxyCodeLine{289                 \{}
 \DoxyCodeLine{290                     TMP\_Settings.s\_Instance = Resources.Load<TMP\_Settings>(\textcolor{stringliteral}{"TMP Settings"});}
 \DoxyCodeLine{291 }
-\DoxyCodeLine{292 \textcolor{preprocessor}{                    \#if UNITY\_EDITOR}}
+\DoxyCodeLine{292 \textcolor{preprocessor}{                    \#if UNITY\_EDITOR}}
 \DoxyCodeLine{293                     \textcolor{comment}{// Make sure TextMesh Pro UPM packages resources have been added to the user project}}
 \DoxyCodeLine{294                     \textcolor{keywordflow}{if} (TMP\_Settings.s\_Instance == \textcolor{keyword}{null})}
 \DoxyCodeLine{295                     \{}
 \DoxyCodeLine{296                         \textcolor{comment}{// Open TMP Resources Importer}}
 \DoxyCodeLine{297                         PackageResourceImporterWindow.ShowPackageImporterWindow();}
 \DoxyCodeLine{298                     \}}
-\DoxyCodeLine{299 \textcolor{preprocessor}{                    \#endif}}
+\DoxyCodeLine{299 \textcolor{preprocessor}{                    \#endif}}
 \DoxyCodeLine{300                 \}}
 \DoxyCodeLine{301 }
 \DoxyCodeLine{302                 \textcolor{keywordflow}{return} TMP\_Settings.s\_Instance;}

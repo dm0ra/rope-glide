@@ -13,26 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-08-05T00:32:46.260-04:00
-  initializedAtString: 2019-08-04T23:55:28.491-04:00
+  lastUpdatedAtString: 2019-08-06T21:46:32.252-04:00
+  initializedAtString: 2019-08-06T21:46:32.252-04:00
   currentGitRemote:
     name: origin
-    url: https://github.com/dm0ra/Rope-Glide
+    url: https://github.com/dm0ra/Rope-Glide.git
     login: 
     user: 
     host: 
     function: 0
     token: 
   currentGitBranch:
-    name: master
-    tracking: origin/master
+    name: DartShooterBranch
+    tracking: origin/DartShooterBranch
   currentConfigBranch:
-    name: master
+    name: DartShooterBranch
     remote:
       name: origin
-      url: https://github.com/dm0ra/Rope-Glide
-    trackingBranch: master
+      url: https://github.com/dm0ra/Rope-Glide.git
+    trackingBranch: DartShooterBranch
   currentConfigRemote:
     name: origin
-    url: https://github.com/dm0ra/Rope-Glide
+    url: https://github.com/dm0ra/Rope-Glide.git
   currentHead: 

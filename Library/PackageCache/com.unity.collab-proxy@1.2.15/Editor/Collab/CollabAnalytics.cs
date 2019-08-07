@@ -1,21 +1,3 @@
-using System;
-
-namespace UnityEditor.Collaboration
-{
-    internal static class CollabAnalytics
-    {
-        [Serializable]
-        private struct CollabUserActionAnalyticsEvent
-        {
-            public string category;
-            public string action;
-        }
-
-        public static void SendUserAction(string category, string action)
-        {
-            EditorAnalytics.SendCollabUserAction(new CollabUserActionAnalyticsEvent() { category = category, action = action });
-        }
-
-        public static readonly string historyCategoryString = "History";
-    };
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d29237efdbfe478cc02ce27ba53d7de6807c8e1a21645bcda0077db930a9ed2c
+size 575

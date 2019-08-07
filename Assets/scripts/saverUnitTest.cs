@@ -1,26 +1,3 @@
-﻿
-
-
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using NUnit.Framework;
-
-public class saverUnitTest
-{
-    [Test]
-    public void DB_UnitTest()
-    {
-
-        string ret;
-        DataSaver.SaveData<string>("Hello", "testFile");
-
-        ret = DataSaver.LoadData<string>("testFile");
-
-        // Assert
-        Assert.That(ret, Is.EqualTo("Hello"));
-  
-    }
-}
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:76cf494f719c0cfd955553f05ef87ee83293cf245d9636261627a59a8c3a613e
+size 389

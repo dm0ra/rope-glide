@@ -65,7 +65,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classRope-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Rope Class Reference</div>  </div>
@@ -86,27 +85,87 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f8aea6cf0812bfbf1c20ab1158b7d5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRope.html#a5f8aea6cf0812bfbf1c20ab1158b7d5a">SetFirstConnection</a> (bool b)</td></tr>
 <tr class="memdesc:a5f8aea6cf0812bfbf1c20ab1158b7d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method signals whether the first connection has occurred.  <a href="classRope.html#a5f8aea6cf0812bfbf1c20ab1158b7d5a">More...</a><br /></td></tr>
 <tr class="separator:a5f8aea6cf0812bfbf1c20ab1158b7d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:af1c503e4892e6498fe6f59dd3b72c327"><td class="memItemLeft" align="right" valign="top">HingeJoint2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRope.html#af1c503e4892e6498fe6f59dd3b72c327">CurrRope</a></td></tr>
-<tr class="memdesc:af1c503e4892e6498fe6f59dd3b72c327"><td class="mdescLeft">&#160;</td><td class="mdescRight">The joint that holds the player and the cloud at a constant distance.  <a href="classRope.html#af1c503e4892e6498fe6f59dd3b72c327">More...</a><br /></td></tr>
-<tr class="separator:af1c503e4892e6498fe6f59dd3b72c327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17bb204dc3ffa0bc5195e5ac86273df6"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">Player</a></td></tr>
-<tr class="memdesc:a17bb204dc3ffa0bc5195e5ac86273df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The games player.  <a href="classRope.html#a17bb204dc3ffa0bc5195e5ac86273df6">More...</a><br /></td></tr>
-<tr class="separator:a17bb204dc3ffa0bc5195e5ac86273df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4ed92a663bd20d9631d1a1433d37066"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRope.html#ad4ed92a663bd20d9631d1a1433d37066">Hinge</a></td></tr>
-<tr class="memdesc:ad4ed92a663bd20d9631d1a1433d37066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each instance of <a class="el" href="classRope.html" title="This class creates ropes. The code decides which cloud is closest to the player and connects a rope t...">Rope</a> belongs to a cloud (hinge).  <a href="classRope.html#ad4ed92a663bd20d9631d1a1433d37066">More...</a><br /></td></tr>
-<tr class="separator:ad4ed92a663bd20d9631d1a1433d37066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0521f97a6f8776c7e4a181eed7b5aacb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGameController.html">GameController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">game</a></td></tr>
-<tr class="memdesc:a0521f97a6f8776c7e4a181eed7b5aacb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Game controller instance. See <a class="el" href="classGameController.html" title="GameController is being updated when the game is being played it handles death of the player and scen...">GameController</a> class.  <a href="classRope.html#a0521f97a6f8776c7e4a181eed7b5aacb">More...</a><br /></td></tr>
-<tr class="separator:a0521f97a6f8776c7e4a181eed7b5aacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd644af0f6bf774e8e3e3cb54db4bcf"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRope.html#a4cd644af0f6bf774e8e3e3cb54db4bcf">GetHinge</a> ()</td></tr>
+<tr class="memdesc:a4cd644af0f6bf774e8e3e3cb54db4bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for hinge.  <a href="classRope.html#a4cd644af0f6bf774e8e3e3cb54db4bcf">More...</a><br /></td></tr>
+<tr class="separator:a4cd644af0f6bf774e8e3e3cb54db4bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af661f30f4f909a20652159c1a1246090"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRope.html#af661f30f4f909a20652159c1a1246090">RopeDestroy</a> ()</td></tr>
+<tr class="memdesc:af661f30f4f909a20652159c1a1246090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy rope object.  <a href="classRope.html#af661f30f4f909a20652159c1a1246090">More...</a><br /></td></tr>
+<tr class="separator:af661f30f4f909a20652159c1a1246090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class creates ropes. The code decides which cloud is closest to the player and connects a rope to the cloud on click/tap and hold.The rope holds the player, who uses the rope to progress through the game by swinging until the player swings too close to the ground, hits by picking up coins by swinging through them. </p>
 
 <p class="definition">Definition at line <a class="el" href="Rope_8cs_source.html#l00014">14</a> of file <a class="el" href="Rope_8cs_source.html">Rope.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4cd644af0f6bf774e8e3e3cb54db4bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd644af0f6bf774e8e3e3cb54db4bcf">&#9670;&nbsp;</a></span>GetHinge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject Rope.GetHinge </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>getter for hinge. </p>
+<dl class="section return"><dt>Returns</dt><dd>hinge object.</dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Rope_8cs_source.html#l00094">94</a> of file <a class="el" href="Rope_8cs_source.html">Rope.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> this.hinge;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af661f30f4f909a20652159c1a1246090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af661f30f4f909a20652159c1a1246090">&#9670;&nbsp;</a></span>RopeDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Rope.RopeDestroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroy rope object. </p>
+
+<p class="definition">Definition at line <a class="el" href="Rope_8cs_source.html#l00102">102</a> of file <a class="el" href="Rope_8cs_source.html">Rope.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        this.game.<a class="code" href="classGameController.html#ac5ec56cc4e7170de7e6971ec93fe1a49">SetConnectedFlag</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        this.currRope.connectedBody = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        mouseState = 0;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        Destroy(this.visualRope);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        this.breakRope = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a5f8aea6cf0812bfbf1c20ab1158b7d5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f8aea6cf0812bfbf1c20ab1158b7d5a">&#9670;&nbsp;</a></span>SetFirstConnection()</h2>
 
@@ -139,90 +198,18 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Rope_8cs_source.html#l00093">93</a> of file <a class="el" href="Rope_8cs_source.html">Rope.cs</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        this.firstConnection = b;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="Rope_8cs_source.html#l00085">85</a> of file <a class="el" href="Rope_8cs_source.html">Rope.cs</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        this.firstConnection = b;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
 </div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="af1c503e4892e6498fe6f59dd3b72c327"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1c503e4892e6498fe6f59dd3b72c327">&#9670;&nbsp;</a></span>CurrRope</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">HingeJoint2D Rope.CurrRope</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The joint that holds the player and the cloud at a constant distance. </p>
-
-<p class="definition">Definition at line <a class="el" href="Rope_8cs_source.html#l00021">21</a> of file <a class="el" href="Rope_8cs_source.html">Rope.cs</a>.</p>
-
-</div>
-</div>
-<a id="a0521f97a6f8776c7e4a181eed7b5aacb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0521f97a6f8776c7e4a181eed7b5aacb">&#9670;&nbsp;</a></span>game</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classGameController.html">GameController</a> Rope.game</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Game controller instance. See <a class="el" href="classGameController.html" title="GameController is being updated when the game is being played it handles death of the player and scen...">GameController</a> class. </p>
-
-<p class="definition">Definition at line <a class="el" href="Rope_8cs_source.html#l00049">49</a> of file <a class="el" href="Rope_8cs_source.html">Rope.cs</a>.</p>
-
-</div>
-</div>
-<a id="ad4ed92a663bd20d9631d1a1433d37066"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4ed92a663bd20d9631d1a1433d37066">&#9670;&nbsp;</a></span>Hinge</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameObject Rope.Hinge</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Each instance of <a class="el" href="classRope.html" title="This class creates ropes. The code decides which cloud is closest to the player and connects a rope t...">Rope</a> belongs to a cloud (hinge). </p>
-
-<p class="definition">Definition at line <a class="el" href="Rope_8cs_source.html#l00039">39</a> of file <a class="el" href="Rope_8cs_source.html">Rope.cs</a>.</p>
-
-</div>
-</div>
-<a id="a17bb204dc3ffa0bc5195e5ac86273df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17bb204dc3ffa0bc5195e5ac86273df6">&#9670;&nbsp;</a></span>Player</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameObject Rope.Player</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The games player. </p>
-
-<p class="definition">Definition at line <a class="el" href="Rope_8cs_source.html#l00030">30</a> of file <a class="el" href="Rope_8cs_source.html">Rope.cs</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Assets/scripts/<a class="el" href="Rope_8cs_source.html">Rope.cs</a></li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassGameController_html_ac5ec56cc4e7170de7e6971ec93fe1a49"><div class="ttname"><a href="classGameController.html#ac5ec56cc4e7170de7e6971ec93fe1a49">GameController.SetConnectedFlag</a></div><div class="ttdeci">void SetConnectedFlag(bool s)</div><div class="ttdoc">Sets connected flag.</div><div class="ttdef"><b>Definition:</b> <a href="GameController_8cs_source.html#l00265">GameController.cs:265</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

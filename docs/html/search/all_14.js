@@ -1,11 +1,11 @@
 var searchData=
 [
   ['analytics',['Analytics',['../namespaceUnityEngine_1_1Analytics.html',1,'UnityEngine']]],
-  ['unity_20ads',['Unity Ads',['../autotoc_md10.html',1,'']]],
-  ['unity_20package_20manager',['Unity Package Manager',['../autotoc_md68.html',1,'']]],
-  ['unity_20package_20manager_20ui',['Unity Package Manager UI',['../autotoc_md94.html',1,'']]],
-  ['unity_20in_2dapp_20purchasing_20_28iap_29',['Unity In-App Purchasing (IAP)',['../autotoc_md95.html',1,'']]],
-  ['unity_20in_20app_20purchasing',['Unity In App Purchasing',['../autotoc_md96.html',1,'']]],
+  ['unity_20package_20manager',['Unity Package Manager',['../autotoc_md124.html',1,'']]],
+  ['unity_20package_20manager_20ui',['Unity Package Manager UI',['../autotoc_md150.html',1,'']]],
+  ['unity_20in_2dapp_20purchasing_20_28iap_29',['Unity In-App Purchasing (IAP)',['../autotoc_md151.html',1,'']]],
+  ['unity_20in_20app_20purchasing',['Unity In App Purchasing',['../autotoc_md152.html',1,'']]],
+  ['unity_20ads',['Unity Ads',['../autotoc_md66.html',1,'']]],
   ['collaboration',['Collaboration',['../namespaceUnityEditor_1_1Collaboration.html',1,'UnityEditor']]],
   ['unity_20analytics_3a_20tracker',['Unity Analytics: Tracker',['../md_Library_PackageCache_com_8unity_8analytics_0d3_82_82_README.html',1,'']]],
   ['packagemanager',['PackageManager',['../namespaceUnityEditor_1_1PackageManager.html',1,'UnityEditor']]],
@@ -46,5 +46,6 @@ var searchData=
   ['updatescore',['UpdateScore',['../classGameController.html#a46eceb5ab3f1167f11ebc202ce6d98db',1,'GameController']]],
   ['updatestylesheet',['UpdateStyleSheet',['../classTMPro_1_1TMP__StyleSheet.html#a4bab3ca47934d537b41ae066eabac404',1,'TMPro::TMP_StyleSheet']]],
   ['updatevertexdata',['UpdateVertexData',['../classTMPro_1_1TextMeshPro.html#a0011d887bd47e96fc4d12ee9d6c486f3',1,'TMPro.TextMeshPro.UpdateVertexData(TMP_VertexDataUpdateFlags flags)'],['../classTMPro_1_1TextMeshPro.html#a73f2ed2115c65a8a5efcab863eb53383',1,'TMPro.TextMeshPro.UpdateVertexData()'],['../classTMPro_1_1TextMeshProUGUI.html#a2fb671e18fda5d2e996ed13347fefffa',1,'TMPro.TextMeshProUGUI.UpdateVertexData(TMP_VertexDataUpdateFlags flags)'],['../classTMPro_1_1TextMeshProUGUI.html#a3f32882137aab111603158a4452bc53b',1,'TMPro.TextMeshProUGUI.UpdateVertexData()'],['../classTMPro_1_1TMP__Text.html#ae4079b9679758f2a086a0e9f63893475',1,'TMPro.TMP_Text.UpdateVertexData(TMP_VertexDataUpdateFlags flags)'],['../classTMPro_1_1TMP__Text.html#a63f0f98478ef7b8c9a314f74c9836e39',1,'TMPro.TMP_Text.UpdateVertexData()']]],
-  ['usemaxvisibledescender',['useMaxVisibleDescender',['../classTMPro_1_1TMP__Text.html#a4c2000ddd0b1c55d4804c6a458952776',1,'TMPro::TMP_Text']]]
+  ['usemaxvisibledescender',['useMaxVisibleDescender',['../classTMPro_1_1TMP__Text.html#a4c2000ddd0b1c55d4804c6a458952776',1,'TMPro::TMP_Text']]],
+  ['usernameentered',['UserNameEntered',['../classEndScreenText.html#aa8e9dba9bbb042c6274a762b303c8a9a',1,'EndScreenText']]]
 ];

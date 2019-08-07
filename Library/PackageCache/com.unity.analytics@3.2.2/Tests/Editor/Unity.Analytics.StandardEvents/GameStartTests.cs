@@ -1,22 +1,3 @@
-using NUnit.Framework;
-
-namespace UnityEngine.Analytics.Tests
-{
-    public partial class AnalyticsEventTests
-    {
-        [Test]
-        public void GameStart_NoArgsTest()
-        {
-            Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.GameStart());
-            EvaluateAnalyticsResult(m_Result);
-        }
-
-        [Test]
-        public void GameStart_CustomDataTest()
-        {
-            Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.GameStart(m_CustomData));
-            EvaluateCustomData(m_CustomData);
-            EvaluateAnalyticsResult(m_Result);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f99047627c144d7ddc279cbaa5c83dd6151a3ed18ad28c3f9018652196b0ff91
+size 592

@@ -1,27 +1,3 @@
-using System.Collections.Generic;
-using NUnit.Framework;
-
-namespace UnityEngine.Analytics.Tests
-{
-    public partial class AnalyticsEventTests
-    {
-        [Test]
-        public void StoreOpened_StoreTypeTest(
-            [Values(StoreType.Premium, StoreType.Soft)] StoreType storeType
-            )
-        {
-            Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.StoreOpened(storeType));
-            EvaluateAnalyticsResult(m_Result);
-        }
-
-        [Test]
-        public void StoreOpened_CustomDataTest()
-        {
-            var storeType = StoreType.Soft;
-
-            Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.StoreOpened(storeType, m_CustomData));
-            EvaluateCustomData(m_CustomData);
-            EvaluateAnalyticsResult(m_Result);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a945c576c4952371f1fc4ad4f1d3d553bc318afe9fc71e0fd3e542f80097f5e
+size 791

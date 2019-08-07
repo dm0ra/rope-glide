@@ -80,7 +80,7 @@ SpriteRenderer:
   m_Size: {x: 11.36, y: 11.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &4041162928753423224
@@ -128,12 +128,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4041162928753423205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d88d81c980d72b4d92fe9e59a95cfe1, type: 3}
+  m_Script: {fileID: 11500000, guid: b5d2f6a14eac23842b28846f74c3a1c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1494385043620574335}
   delayAttack: 3
-  hostProj: {fileID: 6118044758249809106, guid: 5582eac0ba903bf46a3a24b22d5fe964,
+  hostProj: {fileID: 6118044758249809106, guid: fd068cd01d8421547b08ace3fbf2b54a,
     type: 3}
   weaponSpeed: 1000
   attackRange: 500
@@ -148,7 +148,7 @@ Animator:
   m_GameObject: {fileID: 4041162928753423205}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bd04a9c5f0f1dd3409ee4f785f4b22c3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 22ece0a7be790de40b7f5dabf2478b5c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -13,23 +13,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-08-05T00:32:47.797-04:00
-  initializedAtString: 2019-08-05T00:32:46.273-04:00
+  lastUpdatedAtString: 2019-08-06T21:09:53.210-04:00
+  initializedAtString: 2019-08-06T21:09:25.989-04:00
   localBranches:
-  - name: John_Ninjas
+  - name: DartShooterBranch
+    tracking: origin/DartShooterBranch
+  - name: dm0ra
     tracking: 
+  - name: dm0ra_branch
+    tracking: origin/dm0ra_branch
   - name: master
     tracking: origin/master
   remoteBranches:
+  - name: origin/Andrea
+    tracking: '[None]'
+  - name: origin/andreabranch
+    tracking: '[None]'
   - name: origin/DartShooterBranch
     tracking: '[None]'
-  - name: origin/HEAD
+  - name: origin/demo2
+    tracking: '[None]'
+  - name: origin/dm0ra_branch
+    tracking: '[None]'
+  - name: origin/John
     tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
   remotes:
   - name: origin
-    url: https://github.com/dm0ra/Rope-Glide
+    url: https://github.com/dm0ra/Rope-Glide.git
     login: 
     user: 
     host: 
@@ -37,47 +49,83 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
-    - John_Ninjas
+    - DartShooterBranch
+    - dm0ra
+    - dm0ra_branch
     - master
     values:
-    - name: John_Ninjas
+    - name: DartShooterBranch
+      remote:
+        name: origin
+        url: https://github.com/dm0ra/Rope-Glide.git
+      trackingBranch: DartShooterBranch
+    - name: dm0ra
       remote:
         name: 
         url: 
       trackingBranch: 
+    - name: dm0ra_branch
+      remote:
+        name: origin
+        url: https://github.com/dm0ra/Rope-Glide.git
+      trackingBranch: dm0ra_branch
     - name: master
       remote:
         name: origin
-        url: https://github.com/dm0ra/Rope-Glide
+        url: https://github.com/dm0ra/Rope-Glide.git
       trackingBranch: master
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
+      - Andrea
+      - andreabranch
       - DartShooterBranch
-      - HEAD
+      - demo2
+      - dm0ra_branch
+      - John
       - master
     subKeyValues:
     - Values:
+      - name: Andrea
+        remote:
+          name: origin
+          url: https://github.com/dm0ra/Rope-Glide.git
+        trackingBranch: 
+      - name: andreabranch
+        remote:
+          name: origin
+          url: https://github.com/dm0ra/Rope-Glide.git
+        trackingBranch: 
       - name: DartShooterBranch
         remote:
           name: origin
-          url: https://github.com/dm0ra/Rope-Glide
+          url: https://github.com/dm0ra/Rope-Glide.git
         trackingBranch: 
-      - name: HEAD
+      - name: demo2
         remote:
           name: origin
-          url: https://github.com/dm0ra/Rope-Glide
+          url: https://github.com/dm0ra/Rope-Glide.git
+        trackingBranch: 
+      - name: dm0ra_branch
+        remote:
+          name: origin
+          url: https://github.com/dm0ra/Rope-Glide.git
+        trackingBranch: 
+      - name: John
+        remote:
+          name: origin
+          url: https://github.com/dm0ra/Rope-Glide.git
         trackingBranch: 
       - name: master
         remote:
           name: origin
-          url: https://github.com/dm0ra/Rope-Glide
+          url: https://github.com/dm0ra/Rope-Glide.git
         trackingBranch: 
   configRemotes:
     keys:
     - origin
     values:
     - name: origin
-      url: https://github.com/dm0ra/Rope-Glide
+      url: https://github.com/dm0ra/Rope-Glide.git

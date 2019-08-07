@@ -1,25 +1,3 @@
-﻿using UnityEngine;
-using System;
-using System.Collections;
-
-
-namespace TMPro
-{
-
-    /// <summary>
-    /// Base class for all text elements like characters (glyphs) and sprites.
-    /// </summary>
-    [Serializable]
-    public class TMP_TextElement
-    {
-        public int id;
-        public float x;
-        public float y;
-        public float width;
-        public float height;
-        public float xOffset;
-        public float yOffset;
-        public float xAdvance;
-        public float scale;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:05bcb7ae4900fb67f9d626f95ae35ce70b365c43543e933903eeb747bf16af07
+size 512

@@ -94,8 +94,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game: {fileID: 0}
-  Player: {fileID: 0}
-  Glider: {fileID: 8088131661667210174}
+  player: {fileID: 0}
+  glider: {fileID: 8088131661667210174}
+  gliderPrice: 0
 --- !u!114 &5039035922386585839
 MonoBehaviour:
   m_ObjectHideFlags: 0

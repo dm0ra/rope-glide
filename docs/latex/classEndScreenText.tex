@@ -11,19 +11,13 @@ Inheritance diagram for End\+Screen\+Text\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{classEndScreenText}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Attributes}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-Text \mbox{\hyperlink{classEndScreenText_a2c7437f65b91599c29b7f45f071172dc}{Score}}
-\begin{DoxyCompactList}\small\item\em Score text box. \end{DoxyCompactList}\item 
-Text \mbox{\hyperlink{classEndScreenText_ab2e02e88857fb793ae7c75ba9c72c528}{High\+Score}}
-\begin{DoxyCompactList}\small\item\em High score text box. \end{DoxyCompactList}\item 
-Text \mbox{\hyperlink{classEndScreenText_a175fff12c2ce6d6a9b79c813915af193}{Cash}}
-\begin{DoxyCompactList}\small\item\em Cash text box. \end{DoxyCompactList}\item 
-Text \mbox{\hyperlink{classEndScreenText_ab9a5d57386b613777f0a49823a2a7fa5}{Height}}
-\begin{DoxyCompactList}\small\item\em Run maximum height text box. \end{DoxyCompactList}\item 
-Text \mbox{\hyperlink{classEndScreenText_a6e23f50fb599a0d262610e2f50b452a2}{Dist}}
-\begin{DoxyCompactList}\small\item\em Run distance text box. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classEndScreenText_a3a22b321bae85f669dac9efe76b28235}{Text\+\_\+\+Changed}} (string new\+Text)
+\begin{DoxyCompactList}\small\item\em Anytime the textbox on End game screen text is changed this function updates the field display\+Name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEndScreenText_aa8e9dba9bbb042c6274a762b303c8a9a}{User\+Name\+Entered}} ()
+\begin{DoxyCompactList}\small\item\em User\+Name\+Entered is run when the user clicks the done button after, the username is saved to a file and to DB. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -31,81 +25,59 @@ This class contains the data used to update the text boxes on the game over scre
 
 
 
-Definition at line 13 of file End\+Screen\+Text.\+cs.
+Definition at line 16 of file End\+Screen\+Text.\+cs.
 
 
 
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classEndScreenText_a175fff12c2ce6d6a9b79c813915af193}\label{classEndScreenText_a175fff12c2ce6d6a9b79c813915af193}} 
-\index{EndScreenText@{EndScreenText}!Cash@{Cash}}
-\index{Cash@{Cash}!EndScreenText@{EndScreenText}}
-\doxysubsubsection{\texorpdfstring{Cash}{Cash}}
-{\footnotesize\ttfamily Text End\+Screen\+Text.\+Cash}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEndScreenText_a3a22b321bae85f669dac9efe76b28235}\label{classEndScreenText_a3a22b321bae85f669dac9efe76b28235}} 
+\index{EndScreenText@{EndScreenText}!Text\_Changed@{Text\_Changed}}
+\index{Text\_Changed@{Text\_Changed}!EndScreenText@{EndScreenText}}
+\doxysubsubsection{\texorpdfstring{Text\_Changed()}{Text\_Changed()}}
+{\footnotesize\ttfamily void End\+Screen\+Text.\+Text\+\_\+\+Changed (\begin{DoxyParamCaption}\item[{string}]{new\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Cash text box. 
+Anytime the textbox on End game screen text is changed this function updates the field display\+Name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Text} & Entered Text.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 117 of file End\+Screen\+Text.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{119     \{}
+\DoxyCodeLine{120         this.displayName = newText;}
+\DoxyCodeLine{121     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEndScreenText_aa8e9dba9bbb042c6274a762b303c8a9a}\label{classEndScreenText_aa8e9dba9bbb042c6274a762b303c8a9a}} 
+\index{EndScreenText@{EndScreenText}!UserNameEntered@{UserNameEntered}}
+\index{UserNameEntered@{UserNameEntered}!EndScreenText@{EndScreenText}}
+\doxysubsubsection{\texorpdfstring{UserNameEntered()}{UserNameEntered()}}
+{\footnotesize\ttfamily void End\+Screen\+Text.\+User\+Name\+Entered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Definition at line 38 of file End\+Screen\+Text.\+cs.
-
-\mbox{\Hypertarget{classEndScreenText_a6e23f50fb599a0d262610e2f50b452a2}\label{classEndScreenText_a6e23f50fb599a0d262610e2f50b452a2}} 
-\index{EndScreenText@{EndScreenText}!Dist@{Dist}}
-\index{Dist@{Dist}!EndScreenText@{EndScreenText}}
-\doxysubsubsection{\texorpdfstring{Dist}{Dist}}
-{\footnotesize\ttfamily Text End\+Screen\+Text.\+Dist}
+User\+Name\+Entered is run when the user clicks the done button after, the username is saved to a file and to DB. 
 
 
 
-Run distance text box. 
+Definition at line 127 of file End\+Screen\+Text.\+cs.
 
 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128     \{}
+\DoxyCodeLine{129         DB.UserName = this.displayName;}
+\DoxyCodeLine{130         this.WriteData();}
+\DoxyCodeLine{131     \}}
 
-Definition at line 56 of file End\+Screen\+Text.\+cs.
-
-\mbox{\Hypertarget{classEndScreenText_ab9a5d57386b613777f0a49823a2a7fa5}\label{classEndScreenText_ab9a5d57386b613777f0a49823a2a7fa5}} 
-\index{EndScreenText@{EndScreenText}!Height@{Height}}
-\index{Height@{Height}!EndScreenText@{EndScreenText}}
-\doxysubsubsection{\texorpdfstring{Height}{Height}}
-{\footnotesize\ttfamily Text End\+Screen\+Text.\+Height}
-
-
-
-Run maximum height text box. 
-
-
-
-Definition at line 47 of file End\+Screen\+Text.\+cs.
-
-\mbox{\Hypertarget{classEndScreenText_ab2e02e88857fb793ae7c75ba9c72c528}\label{classEndScreenText_ab2e02e88857fb793ae7c75ba9c72c528}} 
-\index{EndScreenText@{EndScreenText}!HighScore@{HighScore}}
-\index{HighScore@{HighScore}!EndScreenText@{EndScreenText}}
-\doxysubsubsection{\texorpdfstring{HighScore}{HighScore}}
-{\footnotesize\ttfamily Text End\+Screen\+Text.\+High\+Score}
-
-
-
-High score text box. 
-
-
-
-Definition at line 29 of file End\+Screen\+Text.\+cs.
-
-\mbox{\Hypertarget{classEndScreenText_a2c7437f65b91599c29b7f45f071172dc}\label{classEndScreenText_a2c7437f65b91599c29b7f45f071172dc}} 
-\index{EndScreenText@{EndScreenText}!Score@{Score}}
-\index{Score@{Score}!EndScreenText@{EndScreenText}}
-\doxysubsubsection{\texorpdfstring{Score}{Score}}
-{\footnotesize\ttfamily Text End\+Screen\+Text.\+Score}
-
-
-
-Score text box. 
-
-
-
-Definition at line 20 of file End\+Screen\+Text.\+cs.
-
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

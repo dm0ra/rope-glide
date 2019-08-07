@@ -1,26 +1,3 @@
-﻿using System;
-
-namespace UnityEditor.PackageManager.UI
-{
-    [Serializable]
-    internal class PackageSearchFilter
-    {
-        private static PackageSearchFilter instance = new PackageSearchFilter();
-        public static PackageSearchFilter Instance { get { return instance; } }
-
-        public string SearchText { get; set; }
-        
-        public static void InitInstance(ref PackageSearchFilter value)
-        {
-            if (value == null)  // UI window opened
-                value = instance;
-            else // Domain reload
-                instance = value;
-        }
-
-        public void ResetSearch()
-        {
-            SearchText = string.Empty;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:eeb8adfabc29bd305dee53c6ab543d6597602e9364b8e8c84c10d4c85a3c3e7c
+size 688

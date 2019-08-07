@@ -1,17 +1,3 @@
-using System;
-using System.Collections.Generic;
-using UnityEditor.Collaboration;
-
-#if UNITY_2019_1_OR_NEWER
-using UnityEngine.UIElements;
-#else
-using UnityEngine.Experimental.UIElements;
-#endif
-
-namespace UnityEditor.Collaboration
-{
-    internal interface ICollabHistoryItemFactory
-    {
-        IEnumerable<RevisionData> GenerateElements(IEnumerable<Revision> revsRevisions, int mTotalRevisions, int startIndex, string tipRev, string inProgressRevision, bool revisionActionsEnabled, bool buildServiceEnabled, string currentUser);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:648abad14bf330c16ed92f1bc250666453811ab31fa25c65235d8c02a7bf0392
+size 539

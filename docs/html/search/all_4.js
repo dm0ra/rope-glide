@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['dart',['Dart',['../classDart.html',1,'']]],
+  ['dartshooter',['DartShooter',['../classDartShooter.html',1,'']]],
   ['datasaver',['DataSaver',['../classDataSaver.html',1,'']]],
   ['defaultcolorgradientpresetspath',['defaultColorGradientPresetsPath',['../classTMPro_1_1TMP__Settings.html#a3a6d7260b925a52e2c0e10ef9b91aed6',1,'TMPro::TMP_Settings']]],
   ['defaultfontasset',['defaultFontAsset',['../classTMPro_1_1TMP__FontAsset.html#abeca04093d0ee5e19bd3a1f2527b54fd',1,'TMPro.TMP_FontAsset.defaultFontAsset()'],['../classTMPro_1_1TMP__Settings.html#a662e85495fdb4320e6d01287cc673220',1,'TMPro.TMP_Settings.defaultFontAsset()']]],
@@ -14,7 +16,6 @@ var searchData=
   ['defaulttextmeshprouitextcontainersize',['defaultTextMeshProUITextContainerSize',['../classTMPro_1_1TMP__Settings.html#a569c6d3b17242a88608906822f485ec6',1,'TMPro::TMP_Settings']]],
   ['deletedata',['DeleteData',['../classDataSaver.html#a650198650512929d1fd4c1ff6717d64a',1,'DataSaver']]],
   ['dispatchreturnevent_3awithpayload_3a',['dispatchReturnEvent:withPayload:',['../interfaceUADSPurchasing.html#add1b2490e46562e0dd9292977513e5d7',1,'UADSPurchasing']]],
-  ['dist',['Dist',['../classEndScreenText.html#a6e23f50fb599a0d262610e2f50b452a2',1,'EndScreenText']]],
   ['dogui',['DoGUI',['../classTMPro_1_1EditorUtilities_1_1TMP__BaseShaderGUI.html#a04c57cff2c8f6cf93b5bf50209ef9f5f',1,'TMPro.EditorUtilities.TMP_BaseShaderGUI.DoGUI()'],['../classTMPro_1_1EditorUtilities_1_1TMP__BitmapShaderGUI.html#af4f6c43167899462930161b3db412cb5',1,'TMPro.EditorUtilities.TMP_BitmapShaderGUI.DoGUI()'],['../classTMPro_1_1EditorUtilities_1_1TMP__SDFShaderGUI.html#ad54675b667fc314961cedb1beeacd6b4',1,'TMPro.EditorUtilities.TMP_SDFShaderGUI.DoGUI()']]],
   ['doxygenconfig',['DoxygenConfig',['../classDoxygenConfig.html',1,'']]],
   ['doxygenwindow',['DoxygenWindow',['../classDoxygenWindow.html',1,'']]],

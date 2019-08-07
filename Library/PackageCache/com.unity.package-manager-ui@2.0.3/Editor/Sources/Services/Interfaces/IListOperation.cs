@@ -1,11 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace UnityEditor.PackageManager.UI
-{
-    internal interface IListOperation : IBaseOperation
-    {
-        bool OfflineMode { get; set; }
-        void GetPackageListAsync(Action<IEnumerable<PackageInfo>> doneCallbackAction, Action<Error> errorCallbackAction = null);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fcfc46f0ebba86268a8ba0c496e17b59dde70662f3e1961801e8013aac62597f
+size 331

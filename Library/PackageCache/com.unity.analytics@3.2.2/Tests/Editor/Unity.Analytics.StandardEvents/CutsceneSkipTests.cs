@@ -1,34 +1,3 @@
-using System;
-using NUnit.Framework;
-
-namespace UnityEngine.Analytics.Tests
-{
-    public partial class AnalyticsEventTests
-    {
-        [Test]
-        public void CutsceneSkip_CutsceneNameTest(
-            [Values("test_cutscene", "", null)] string name
-            )
-        {
-            if (string.IsNullOrEmpty(name))
-            {
-                Assert.Throws<ArgumentException>(() => AnalyticsEvent.CutsceneSkip(name));
-            }
-            else
-            {
-                Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.CutsceneSkip(name));
-                EvaluateAnalyticsResult(m_Result);
-            }
-        }
-
-        [Test]
-        public void CutsceneSkip_CustomDataTest()
-        {
-            var name = "test_cutscene";
-
-            Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.CutsceneSkip(name, m_CustomData));
-            EvaluateCustomData(m_CustomData);
-            EvaluateAnalyticsResult(m_Result);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:db550dc8ab4ac903fb4583851acbddd28351bacd5ce9eb7065e13833e27dc0ed
+size 964

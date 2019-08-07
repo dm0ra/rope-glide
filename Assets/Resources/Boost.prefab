@@ -119,8 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bf20c20a397ebc489dfa7bf58e5a4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThisItem: {fileID: 8737160671152590130}
-  Game: {fileID: 0}
-  Player: {fileID: 0}
-  Glider: {fileID: 0}
-  Cam: {fileID: 0}
+  item: {fileID: 8737160671152590130}
+  game: {fileID: 0}
+  player: {fileID: 0}
+  glider: {fileID: 0}
+  cam: {fileID: 0}

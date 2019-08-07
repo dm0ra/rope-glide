@@ -1,34 +1,3 @@
-using System;
-using NUnit.Framework;
-
-namespace UnityEngine.Analytics.Tests
-{
-    public partial class AnalyticsEventTests
-    {
-        [Test]
-        public void AchievementUnlocked_AchievementIdTest(
-            [Values("unit_tester", "", null)] string achievementId
-            )
-        {
-            if (string.IsNullOrEmpty(achievementId))
-            {
-                Assert.Throws<ArgumentException>(() => AnalyticsEvent.AchievementUnlocked(achievementId));
-            }
-            else
-            {
-                Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.AchievementUnlocked(achievementId));
-                EvaluateAnalyticsResult(m_Result);
-            }
-        }
-
-        [Test]
-        public void AchievementUnlocked_CustomDataTest()
-        {
-            var achievementId = "unit_tester";
-
-            Assert.DoesNotThrow(() => m_Result = AnalyticsEvent.AchievementUnlocked(achievementId, m_CustomData));
-            EvaluateCustomData(m_CustomData);
-            EvaluateAnalyticsResult(m_Result);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:26c7a6abd3986ef13c039513e15874e91691a29d1369c60f9d3bd9ca76bcb454
+size 1050
