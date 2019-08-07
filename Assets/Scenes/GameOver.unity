@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2272,18 +2272,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ca0f97268fcc2499366b1b2df6a7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: {fileID: 82214829}
-  HighScore: {fileID: 1973401683}
-  Cash: {fileID: 709078773}
-  Height: {fileID: 647641649}
-  EnterNamePromt: {fileID: 651416058}
-  DisplayNameText: {fileID: 1964549217}
-  LBText0: {fileID: 1557656774}
-  LBText1: {fileID: 1336359694}
-  LBText2: {fileID: 766177609}
-  LBText3: {fileID: 1893957592}
-  LBText4: {fileID: 411870112}
-  Dist: {fileID: 1393573737}
+  score: {fileID: 82214829}
+  highScore: {fileID: 1973401683}
+  cash: {fileID: 709078773}
+  height: {fileID: 647641649}
+  enterNamePrompt: {fileID: 651416058}
+  displayNameText: {fileID: 444882773}
+  lBText0: {fileID: 1557656774}
+  lBText1: {fileID: 1336359694}
+  lBText2: {fileID: 766177609}
+  lBText3: {fileID: 1893957592}
+  lBText4: {fileID: 411870112}
+  dist: {fileID: 1393573737}
 --- !u!1 &1775953359
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cameracontrol',['cameraControl',['../classcameraControl.html',1,'']]],
+  ['cameracontrol',['CameraControl',['../classCameraControl.html',1,'']]],
   ['caretinfo',['CaretInfo',['../structTMPro_1_1CaretInfo.html',1,'TMPro']]],
   ['cloudmovement',['CloudMovement',['../classCloudMovement.html',1,'']]],
   ['colortweencallback',['ColorTweenCallback',['../classTMPro_1_1ColorTween_1_1ColorTweenCallback.html',1,'TMPro::ColorTween']]],

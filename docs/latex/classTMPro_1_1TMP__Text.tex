@@ -1294,7 +1294,7 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{3789                 charCode = m\_char\_buffer[i];}
 \DoxyCodeLine{3790 }
 \DoxyCodeLine{3791                 \textcolor{comment}{// Parse Rich Text Tag}}
-\DoxyCodeLine{3792 \textcolor{preprocessor}{                \#region Parse Rich Text Tag}}
+\DoxyCodeLine{3792 \textcolor{preprocessor}{                \#region Parse Rich Text Tag}}
 \DoxyCodeLine{3793                 \textcolor{keywordflow}{if} (m\_isRichText \&\& charCode == 60)  \textcolor{comment}{// '<'}}
 \DoxyCodeLine{3794                 \{}
 \DoxyCodeLine{3795                     m\_isParsingText = \textcolor{keyword}{true};}
@@ -1316,7 +1316,7 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{3811                     m\_currentMaterialIndex = m\_textInfo.characterInfo[m\_characterCount].materialReferenceIndex;}
 \DoxyCodeLine{3812                     m\_currentFontAsset = m\_textInfo.characterInfo[m\_characterCount].fontAsset;}
 \DoxyCodeLine{3813                 \}}
-\DoxyCodeLine{3814 \textcolor{preprocessor}{                \#endregion End Parse Rich Text Tag}}
+\DoxyCodeLine{3814 \textcolor{preprocessor}{                \#endregion End Parse Rich Text Tag}}
 \DoxyCodeLine{3815 }
 \DoxyCodeLine{3816                 \textcolor{keywordtype}{int} prev\_MaterialIndex = m\_currentMaterialIndex;}
 \DoxyCodeLine{3817                 \textcolor{keywordtype}{bool} isUsingAltTypeface = m\_textInfo.characterInfo[m\_characterCount].isUsingAlternateTypeface;}
@@ -1324,7 +1324,7 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{3819                 m\_isParsingText = \textcolor{keyword}{false};}
 \DoxyCodeLine{3820 }
 \DoxyCodeLine{3821                 \textcolor{comment}{// Handle Font Styles like LowerCase, UpperCase and SmallCaps.}}
-\DoxyCodeLine{3822 \textcolor{preprocessor}{                \#region Handling of LowerCase, UpperCase and SmallCaps Font Styles}}
+\DoxyCodeLine{3822 \textcolor{preprocessor}{                \#region Handling of LowerCase, UpperCase and SmallCaps Font Styles}}
 \DoxyCodeLine{3823 }
 \DoxyCodeLine{3824                 \textcolor{keywordtype}{float} smallCapsMultiplier = 1.0f;}
 \DoxyCodeLine{3825 }
@@ -1352,11 +1352,11 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{3847                         \}}
 \DoxyCodeLine{3848                     \}}
 \DoxyCodeLine{3849                 \}}
-\DoxyCodeLine{3850 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{3850 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{3851 }
 \DoxyCodeLine{3852 }
 \DoxyCodeLine{3853                 \textcolor{comment}{// Look up Character Data from Dictionary and cache it.}}
-\DoxyCodeLine{3854 \textcolor{preprocessor}{                \#region Look up Character Data}}
+\DoxyCodeLine{3854 \textcolor{preprocessor}{                \#region Look up Character Data}}
 \DoxyCodeLine{3855                 \textcolor{keywordflow}{if} (m\_textElementType == TMP\_TextElementType.Sprite)}
 \DoxyCodeLine{3856                 \{}
 \DoxyCodeLine{3857                     \textcolor{comment}{// If a sprite is used as a fallback then get a reference to it and set the color to white.}}
@@ -1405,17 +1405,17 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{3900                     m\_internalCharacterInfo[m\_characterCount].elementType = TMP\_TextElementType.Character;}
 \DoxyCodeLine{3901 }
 \DoxyCodeLine{3902                 \}}
-\DoxyCodeLine{3903 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{3903 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{3904 }
 \DoxyCodeLine{3905 }
 \DoxyCodeLine{3906                 \textcolor{comment}{// Handle Soft Hyphen}}
-\DoxyCodeLine{3907 \textcolor{preprocessor}{                \#region Handle Soft Hyphen}}
+\DoxyCodeLine{3907 \textcolor{preprocessor}{                \#region Handle Soft Hyphen}}
 \DoxyCodeLine{3908                 \textcolor{keywordtype}{float} old\_scale = currentElementScale;}
 \DoxyCodeLine{3909                 \textcolor{keywordflow}{if} (charCode == 0xAD)}
 \DoxyCodeLine{3910                 \{}
 \DoxyCodeLine{3911                     currentElementScale = 0;}
 \DoxyCodeLine{3912                 \}}
-\DoxyCodeLine{3913 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{3913 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{3914 }
 \DoxyCodeLine{3915 }
 \DoxyCodeLine{3916                 \textcolor{comment}{// Store some of the text object's information}}
@@ -1423,7 +1423,7 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{3918 }
 \DoxyCodeLine{3919 }
 \DoxyCodeLine{3920                 \textcolor{comment}{// Handle Kerning if Enabled.}}
-\DoxyCodeLine{3921 \textcolor{preprocessor}{                \#region Handle Kerning}}
+\DoxyCodeLine{3921 \textcolor{preprocessor}{                \#region Handle Kerning}}
 \DoxyCodeLine{3922                 GlyphValueRecord glyphAdjustments = \textcolor{keyword}{new} GlyphValueRecord();}
 \DoxyCodeLine{3923                 \textcolor{keywordflow}{if} (m\_enableKerning)}
 \DoxyCodeLine{3924                 \{}
@@ -1449,11 +1449,11 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{3944                             glyphAdjustments += adjustmentPair.secondGlyphAdjustments;}
 \DoxyCodeLine{3945                     \}}
 \DoxyCodeLine{3946                 \}}
-\DoxyCodeLine{3947 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{3947 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{3948 }
 \DoxyCodeLine{3949 }
 \DoxyCodeLine{3950                 \textcolor{comment}{// Initial Implementation for RTL support.}}
-\DoxyCodeLine{3951 \textcolor{preprocessor}{                \#region Handle Right-\/to-\/Left}}
+\DoxyCodeLine{3951 \textcolor{preprocessor}{                \#region Handle Right-\/to-\/Left}}
 \DoxyCodeLine{3952                 \textcolor{comment}{//if (m\_isRightToLeft)}}
 \DoxyCodeLine{3953                 \textcolor{comment}{//\{}}
 \DoxyCodeLine{3954                 \textcolor{comment}{//    m\_xAdvance -\/= ((m\_cached\_TextElement.xAdvance * bold\_xAdvance\_multiplier + m\_characterSpacing + m\_wordSpacing + m\_currentFontAsset.normalSpacingOffset) * currentElementScale + m\_cSpacing) * (1 -\/ m\_charWidthAdjDelta);}}
@@ -1461,22 +1461,22 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{3956                 \textcolor{comment}{//    if (char.IsWhiteSpace((char)charCode) || charCode == 0x200B)}}
 \DoxyCodeLine{3957                 \textcolor{comment}{//        m\_xAdvance -\/= m\_wordSpacing * currentElementScale;}}
 \DoxyCodeLine{3958                 \textcolor{comment}{//\}}}
-\DoxyCodeLine{3959 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{3959 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{3960 }
 \DoxyCodeLine{3961 }
 \DoxyCodeLine{3962                 \textcolor{comment}{// Handle Mono Spacing}}
-\DoxyCodeLine{3963 \textcolor{preprocessor}{                \#region Handle Mono Spacing}}
+\DoxyCodeLine{3963 \textcolor{preprocessor}{                \#region Handle Mono Spacing}}
 \DoxyCodeLine{3964                 \textcolor{keywordtype}{float} monoAdvance = 0;}
 \DoxyCodeLine{3965                 \textcolor{keywordflow}{if} (m\_monoSpacing != 0)}
 \DoxyCodeLine{3966                 \{}
 \DoxyCodeLine{3967                     monoAdvance = (m\_monoSpacing / 2 -\/ (m\_cached\_TextElement.width / 2 + m\_cached\_TextElement.xOffset) * currentElementScale);}
 \DoxyCodeLine{3968                     m\_xAdvance += monoAdvance;}
 \DoxyCodeLine{3969                 \}}
-\DoxyCodeLine{3970 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{3970 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{3971 }
 \DoxyCodeLine{3972 }
 \DoxyCodeLine{3973                 \textcolor{comment}{// Set Padding based on selected font style}}
-\DoxyCodeLine{3974 \textcolor{preprocessor}{                \#region Handle Style Padding}}
+\DoxyCodeLine{3974 \textcolor{preprocessor}{                \#region Handle Style Padding}}
 \DoxyCodeLine{3975                 \textcolor{keywordflow}{if} (m\_textElementType == TMP\_TextElementType.Character \&\& !isUsingAltTypeface \&\& ((m\_style \& FontStyles.Bold) == FontStyles.Bold || (m\_fontStyle \& FontStyles.Bold) == FontStyles.Bold)) \textcolor{comment}{// Checks for any combination of Bold Style.}}
 \DoxyCodeLine{3976                 \{}
 \DoxyCodeLine{3977                     \textcolor{comment}{//style\_padding = m\_currentFontAsset.boldStyle * 2;}}
@@ -1487,7 +1487,7 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{3982                     \textcolor{comment}{//style\_padding = m\_currentFontAsset.normalStyle * 2;}}
 \DoxyCodeLine{3983                     bold\_xAdvance\_multiplier = 1.0f;}
 \DoxyCodeLine{3984                 \}}
-\DoxyCodeLine{3985 \textcolor{preprocessor}{                \#endregion Handle Style Padding}}
+\DoxyCodeLine{3985 \textcolor{preprocessor}{                \#endregion Handle Style Padding}}
 \DoxyCodeLine{3986 }
 \DoxyCodeLine{3987                 m\_internalCharacterInfo[m\_characterCount].baseLine = 0 -\/ m\_lineOffset + m\_baselineOffset;}
 \DoxyCodeLine{3988 }
@@ -1518,11 +1518,11 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4013                 \textcolor{comment}{//if (m\_lineOffset == 0) pageAscender = pageAscender > elementAscender ? pageAscender : elementAscender;}}
 \DoxyCodeLine{4014 }
 \DoxyCodeLine{4015                 \textcolor{comment}{// Setup Mesh for visible text elements. ie. not a SPACE / LINEFEED / CARRIAGE RETURN.}}
-\DoxyCodeLine{4016 \textcolor{preprocessor}{                \#region Handle Visible Characters}}
+\DoxyCodeLine{4016 \textcolor{preprocessor}{                \#region Handle Visible Characters}}
 \DoxyCodeLine{4017                 \textcolor{keywordflow}{if} (charCode == 9 || charCode == 0xA0 || charCode == 0x2007 || (!\textcolor{keywordtype}{char}.IsWhiteSpace((\textcolor{keywordtype}{char})charCode) \&\& charCode != 0x200B) || m\_textElementType == TMP\_TextElementType.Sprite)}
 \DoxyCodeLine{4018                 \{}
 \DoxyCodeLine{4019                     \textcolor{comment}{// Check if Character exceeds the width of the Text Container}}
-\DoxyCodeLine{4020 \textcolor{preprocessor}{                    \#region Handle Line Breaking, Text Auto-\/Sizing and Horizontal Overflow}}
+\DoxyCodeLine{4020 \textcolor{preprocessor}{                    \#region Handle Line Breaking, Text Auto-\/Sizing and Horizontal Overflow}}
 \DoxyCodeLine{4021                     \textcolor{keywordtype}{float} width = m\_width != -\/1 ? Mathf.Min(marginWidth + 0.0001f -\/ m\_marginLeft -\/ m\_marginRight, m\_width) : marginWidth + 0.0001f -\/ m\_marginLeft -\/ m\_marginRight;}
 \DoxyCodeLine{4022 }
 \DoxyCodeLine{4023                     \textcolor{keywordtype}{bool} isJustifiedOrFlush = ((\mbox{\hyperlink{namespaceTMPro_a79f7a2a68b3f84bfa58703520cbf4398}{\_HorizontalAlignmentOptions}})m\_lineJustification \& \mbox{\hyperlink{namespaceTMPro_a79f7a2a68b3f84bfa58703520cbf4398}{\_HorizontalAlignmentOptions}}.Flush) == \mbox{\hyperlink{namespaceTMPro_a79f7a2a68b3f84bfa58703520cbf4398}{\_HorizontalAlignmentOptions}}.Flush || ((\mbox{\hyperlink{namespaceTMPro_a79f7a2a68b3f84bfa58703520cbf4398}{\_HorizontalAlignmentOptions}})m\_lineJustification \& \mbox{\hyperlink{namespaceTMPro_a79f7a2a68b3f84bfa58703520cbf4398}{\_HorizontalAlignmentOptions}}.Justified) == \mbox{\hyperlink{namespaceTMPro_a79f7a2a68b3f84bfa58703520cbf4398}{\_HorizontalAlignmentOptions}}.Justified;}
@@ -1534,26 +1534,26 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4029                     \textcolor{keywordflow}{if} (linebreakingWidth > width * (isJustifiedOrFlush ? 1.05f : 1.0f))}
 \DoxyCodeLine{4030                     \{}
 \DoxyCodeLine{4031                         \textcolor{comment}{// Word Wrapping}}
-\DoxyCodeLine{4032 \textcolor{preprocessor}{                        \#region Handle Word Wrapping}}
+\DoxyCodeLine{4032 \textcolor{preprocessor}{                        \#region Handle Word Wrapping}}
 \DoxyCodeLine{4033                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classTMPro_1_1TMP__Text_a9add0d44e7faabf1070b2ace2ac89378}{enableWordWrapping}} \&\& m\_characterCount != m\_firstCharacterOfLine)}
 \DoxyCodeLine{4034                         \{}
 \DoxyCodeLine{4035                             \textcolor{comment}{// Check if word wrapping is still possible}}
-\DoxyCodeLine{4036 \textcolor{preprocessor}{                            \#region Line Breaking Check}}
+\DoxyCodeLine{4036 \textcolor{preprocessor}{                            \#region Line Breaking Check}}
 \DoxyCodeLine{4037                             \textcolor{keywordflow}{if} (wrappingIndex == savedWordWrapState.previous\_WordBreak || isFirstWord)}
 \DoxyCodeLine{4038                             \{}
 \DoxyCodeLine{4039                                 \textcolor{comment}{// Word wrapping is no longer possible. Shrink size of text if auto-\/sizing is enabled.}}
-\DoxyCodeLine{4040 \textcolor{preprocessor}{                                \#region Text Auto-\/Sizing}}
+\DoxyCodeLine{4040 \textcolor{preprocessor}{                                \#region Text Auto-\/Sizing}}
 \DoxyCodeLine{4041                                 \textcolor{keywordflow}{if} (ignoreTextAutoSizing == \textcolor{keyword}{false} \&\& m\_currentFontSize > m\_fontSizeMin)}
 \DoxyCodeLine{4042                                 \{}
 \DoxyCodeLine{4043                                     \textcolor{comment}{// Handle Character Width Adjustments}}
-\DoxyCodeLine{4044 \textcolor{preprocessor}{                                    \#region Character Width Adjustments}}
+\DoxyCodeLine{4044 \textcolor{preprocessor}{                                    \#region Character Width Adjustments}}
 \DoxyCodeLine{4045                                     \textcolor{keywordflow}{if} (m\_charWidthAdjDelta < m\_charWidthMaxAdj / 100)}
 \DoxyCodeLine{4046                                     \{}
 \DoxyCodeLine{4047                                         m\_recursiveCount = 0;}
 \DoxyCodeLine{4048                                         m\_charWidthAdjDelta += 0.01f;}
 \DoxyCodeLine{4049                                         \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__Text_a238e31eb1178a4793a7a7f9b624341c3}{CalculatePreferredValues}}(defaultFontSize, marginSize, \textcolor{keyword}{false});}
 \DoxyCodeLine{4050                                     \}}
-\DoxyCodeLine{4051 \textcolor{preprocessor}{                                    \#endregion}}
+\DoxyCodeLine{4051 \textcolor{preprocessor}{                                    \#endregion}}
 \DoxyCodeLine{4052 }
 \DoxyCodeLine{4053                                     \textcolor{comment}{// Adjust Point Size}}
 \DoxyCodeLine{4054                                     m\_maxFontSize = defaultFontSize;}
@@ -1564,7 +1564,7 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4059                                     \textcolor{keywordflow}{if} (m\_recursiveCount > 20) \textcolor{keywordflow}{return} \textcolor{keyword}{new} Vector2(\mbox{\hyperlink{classTMPro_1_1TMP__Text_a101c97facd69481e2a0aed24b310b9c4}{renderedWidth}}, \mbox{\hyperlink{classTMPro_1_1TMP__Text_a6471229b4d6df638b673ce4bd00a62ce}{renderedHeight}});}
 \DoxyCodeLine{4060                                     \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__Text_a238e31eb1178a4793a7a7f9b624341c3}{CalculatePreferredValues}}(defaultFontSize, marginSize, \textcolor{keyword}{false});}
 \DoxyCodeLine{4061                                 \}}
-\DoxyCodeLine{4062 \textcolor{preprocessor}{                                \#endregion}}
+\DoxyCodeLine{4062 \textcolor{preprocessor}{                                \#endregion}}
 \DoxyCodeLine{4063 }
 \DoxyCodeLine{4064                                 \textcolor{comment}{// Word wrapping is no longer possible, now breaking up individual words.}}
 \DoxyCodeLine{4065                                 \textcolor{keywordflow}{if} (m\_isCharacterWrappingEnabled == \textcolor{keyword}{false})}
@@ -1574,7 +1574,7 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4069                                 \textcolor{keywordflow}{else}}
 \DoxyCodeLine{4070                                     isLastBreakingChar = \textcolor{keyword}{true};}
 \DoxyCodeLine{4071                             \}}
-\DoxyCodeLine{4072 \textcolor{preprocessor}{                            \#endregion}}
+\DoxyCodeLine{4072 \textcolor{preprocessor}{                            \#endregion}}
 \DoxyCodeLine{4073 }
 \DoxyCodeLine{4074                             \textcolor{comment}{// Restore to previously stored state of last valid (space character or linefeed)}}
 \DoxyCodeLine{4075                             i = \mbox{\hyperlink{classTMPro_1_1TMP__Text_a0555e7043aed6e3db5ef6113eac2fa77}{RestoreWordWrappingState}}(ref savedWordWrapState);}
@@ -1651,21 +1651,21 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4146 }
 \DoxyCodeLine{4147                             \textcolor{keywordflow}{continue};}
 \DoxyCodeLine{4148                         \}}
-\DoxyCodeLine{4149 \textcolor{preprocessor}{                        \#endregion End Word Wrapping}}
+\DoxyCodeLine{4149 \textcolor{preprocessor}{                        \#endregion End Word Wrapping}}
 \DoxyCodeLine{4150 }
 \DoxyCodeLine{4151                         \textcolor{comment}{// Text Auto-\/Sizing (text exceeding Width of container. }}
-\DoxyCodeLine{4152 \textcolor{preprocessor}{                        \#region Handle Text Auto-\/Sizing}}
+\DoxyCodeLine{4152 \textcolor{preprocessor}{                        \#region Handle Text Auto-\/Sizing}}
 \DoxyCodeLine{4153                         \textcolor{keywordflow}{if} (ignoreTextAutoSizing == \textcolor{keyword}{false} \&\& defaultFontSize > m\_fontSizeMin)}
 \DoxyCodeLine{4154                         \{}
 \DoxyCodeLine{4155                             \textcolor{comment}{// Handle Character Width Adjustments}}
-\DoxyCodeLine{4156 \textcolor{preprocessor}{                            \#region Character Width Adjustments}}
+\DoxyCodeLine{4156 \textcolor{preprocessor}{                            \#region Character Width Adjustments}}
 \DoxyCodeLine{4157                             \textcolor{keywordflow}{if} (m\_charWidthAdjDelta < m\_charWidthMaxAdj / 100)}
 \DoxyCodeLine{4158                             \{}
 \DoxyCodeLine{4159                                 m\_recursiveCount = 0;}
 \DoxyCodeLine{4160                                 m\_charWidthAdjDelta += 0.01f;}
 \DoxyCodeLine{4161                                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__Text_a238e31eb1178a4793a7a7f9b624341c3}{CalculatePreferredValues}}(defaultFontSize, marginSize, \textcolor{keyword}{false});}
 \DoxyCodeLine{4162                             \}}
-\DoxyCodeLine{4163 \textcolor{preprocessor}{                            \#endregion}}
+\DoxyCodeLine{4163 \textcolor{preprocessor}{                            \#endregion}}
 \DoxyCodeLine{4164 }
 \DoxyCodeLine{4165                             \textcolor{comment}{// Adjust Point Size}}
 \DoxyCodeLine{4166                             m\_maxFontSize = defaultFontSize;}
@@ -1676,16 +1676,16 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4171                             \textcolor{keywordflow}{if} (m\_recursiveCount > 20) \textcolor{keywordflow}{return} \textcolor{keyword}{new} Vector2(\mbox{\hyperlink{classTMPro_1_1TMP__Text_a101c97facd69481e2a0aed24b310b9c4}{renderedWidth}}, \mbox{\hyperlink{classTMPro_1_1TMP__Text_a6471229b4d6df638b673ce4bd00a62ce}{renderedHeight}});}
 \DoxyCodeLine{4172                             \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__Text_a238e31eb1178a4793a7a7f9b624341c3}{CalculatePreferredValues}}(defaultFontSize, marginSize, \textcolor{keyword}{false});}
 \DoxyCodeLine{4173                         \}}
-\DoxyCodeLine{4174 \textcolor{preprocessor}{                        \#endregion End Text Auto-\/Sizing}}
+\DoxyCodeLine{4174 \textcolor{preprocessor}{                        \#endregion End Text Auto-\/Sizing}}
 \DoxyCodeLine{4175                     \}}
-\DoxyCodeLine{4176 \textcolor{preprocessor}{                    \#endregion End Check for Characters Exceeding Width of Text Container}}
+\DoxyCodeLine{4176 \textcolor{preprocessor}{                    \#endregion End Check for Characters Exceeding Width of Text Container}}
 \DoxyCodeLine{4177 }
 \DoxyCodeLine{4178                 \}}
-\DoxyCodeLine{4179 \textcolor{preprocessor}{                \#endregion Handle Visible Characters}}
+\DoxyCodeLine{4179 \textcolor{preprocessor}{                \#endregion Handle Visible Characters}}
 \DoxyCodeLine{4180 }
 \DoxyCodeLine{4181 }
 \DoxyCodeLine{4182                 \textcolor{comment}{// Check if Line Spacing of previous line needs to be adjusted.}}
-\DoxyCodeLine{4183 \textcolor{preprocessor}{                \#region Adjust Line Spacing}}
+\DoxyCodeLine{4183 \textcolor{preprocessor}{                \#region Adjust Line Spacing}}
 \DoxyCodeLine{4184                 \textcolor{keywordflow}{if} (m\_lineNumber > 0 \&\& !TMP\_Math.Approximately(m\_maxLineAscender, m\_startOfLineAscender) \&\& m\_lineHeight == TMP\_Math.FLOAT\_UNSET \&\& !m\_isNewPage)}
 \DoxyCodeLine{4185                 \{}
 \DoxyCodeLine{4186                     \textcolor{comment}{//Debug.Log("Inline -\/ Adjusting Line Spacing on line \#" + m\_lineNumber);}}
@@ -1700,49 +1700,49 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4195                     savedWordWrapState.lineOffset = m\_lineOffset;}
 \DoxyCodeLine{4196                     savedWordWrapState.previousLineAscender = m\_startOfLineAscender;}
 \DoxyCodeLine{4197                 \}}
-\DoxyCodeLine{4198 \textcolor{preprocessor}{                \#endregion}}
+\DoxyCodeLine{4198 \textcolor{preprocessor}{                \#endregion}}
 \DoxyCodeLine{4199 }
 \DoxyCodeLine{4200 }
 \DoxyCodeLine{4201                 \textcolor{comment}{// Check if text Exceeds the vertical bounds of the margin area.}}
-\DoxyCodeLine{4202 \textcolor{preprocessor}{                \#region Check Vertical Bounds \& Auto-\/Sizing}}
+\DoxyCodeLine{4202 \textcolor{preprocessor}{                \#region Check Vertical Bounds \& Auto-\/Sizing}}
 \DoxyCodeLine{4203                 \textcolor{comment}{/*}}
-\DoxyCodeLine{4204 \textcolor{comment}{                if (m\_maxAscender -\/ elementDescenderII > marginHeight + 0.0001f)}}
-\DoxyCodeLine{4205 \textcolor{comment}{                \{}}
-\DoxyCodeLine{4206 \textcolor{comment}{                    // Handle Line spacing adjustments}}
-\DoxyCodeLine{4207 \textcolor{comment}{                    \#region Line Spacing Adjustments}}
-\DoxyCodeLine{4208 \textcolor{comment}{                    if (m\_enableAutoSizing \&\& m\_lineSpacingDelta > m\_lineSpacingMax \&\& m\_lineNumber > 0)}}
-\DoxyCodeLine{4209 \textcolor{comment}{                    \{}}
-\DoxyCodeLine{4210 \textcolor{comment}{                        //loopCountA = 0;}}
+\DoxyCodeLine{4204 \textcolor{comment}{                if (m\_maxAscender -\/ elementDescenderII > marginHeight + 0.0001f)}}
+\DoxyCodeLine{4205 \textcolor{comment}{                \{}}
+\DoxyCodeLine{4206 \textcolor{comment}{                    // Handle Line spacing adjustments}}
+\DoxyCodeLine{4207 \textcolor{comment}{                    \#region Line Spacing Adjustments}}
+\DoxyCodeLine{4208 \textcolor{comment}{                    if (m\_enableAutoSizing \&\& m\_lineSpacingDelta > m\_lineSpacingMax \&\& m\_lineNumber > 0)}}
+\DoxyCodeLine{4209 \textcolor{comment}{                    \{}}
+\DoxyCodeLine{4210 \textcolor{comment}{                        //loopCountA = 0;}}
 \DoxyCodeLine{4211 \textcolor{comment}{}}
-\DoxyCodeLine{4212 \textcolor{comment}{                        //m\_lineSpacingDelta -\/= 1;}}
-\DoxyCodeLine{4213 \textcolor{comment}{                        //GenerateTextMesh();}}
-\DoxyCodeLine{4214 \textcolor{comment}{                        //return;}}
-\DoxyCodeLine{4215 \textcolor{comment}{                    \}}}
-\DoxyCodeLine{4216 \textcolor{comment}{                    \#endregion}}
+\DoxyCodeLine{4212 \textcolor{comment}{                        //m\_lineSpacingDelta -\/= 1;}}
+\DoxyCodeLine{4213 \textcolor{comment}{                        //GenerateTextMesh();}}
+\DoxyCodeLine{4214 \textcolor{comment}{                        //return;}}
+\DoxyCodeLine{4215 \textcolor{comment}{                    \}}}
+\DoxyCodeLine{4216 \textcolor{comment}{                    \#endregion}}
 \DoxyCodeLine{4217 \textcolor{comment}{}}
 \DoxyCodeLine{4218 \textcolor{comment}{}}
-\DoxyCodeLine{4219 \textcolor{comment}{                    // Handle Text Auto-\/sizing resulting from text exceeding vertical bounds.}}
-\DoxyCodeLine{4220 \textcolor{comment}{                    \#region Text Auto-\/Sizing (Text greater than vertical bounds)}}
-\DoxyCodeLine{4221 \textcolor{comment}{                    if (m\_enableAutoSizing \&\& m\_fontSize > m\_fontSizeMin)}}
-\DoxyCodeLine{4222 \textcolor{comment}{                    \{}}
-\DoxyCodeLine{4223 \textcolor{comment}{                        m\_maxFontSize = m\_fontSize;}}
+\DoxyCodeLine{4219 \textcolor{comment}{                    // Handle Text Auto-\/sizing resulting from text exceeding vertical bounds.}}
+\DoxyCodeLine{4220 \textcolor{comment}{                    \#region Text Auto-\/Sizing (Text greater than vertical bounds)}}
+\DoxyCodeLine{4221 \textcolor{comment}{                    if (m\_enableAutoSizing \&\& m\_fontSize > m\_fontSizeMin)}}
+\DoxyCodeLine{4222 \textcolor{comment}{                    \{}}
+\DoxyCodeLine{4223 \textcolor{comment}{                        m\_maxFontSize = m\_fontSize;}}
 \DoxyCodeLine{4224 \textcolor{comment}{}}
-\DoxyCodeLine{4225 \textcolor{comment}{                        m\_fontSize -\/= Mathf.Max((m\_fontSize -\/ m\_minFontSize) / 2, 0.05f);}}
-\DoxyCodeLine{4226 \textcolor{comment}{                        m\_fontSize = (int)(Mathf.Max(m\_fontSize, m\_fontSizeMin) * 20 + 0.5f) / 20f;}}
+\DoxyCodeLine{4225 \textcolor{comment}{                        m\_fontSize -\/= Mathf.Max((m\_fontSize -\/ m\_minFontSize) / 2, 0.05f);}}
+\DoxyCodeLine{4226 \textcolor{comment}{                        m\_fontSize = (int)(Mathf.Max(m\_fontSize, m\_fontSizeMin) * 20 + 0.5f) / 20f;}}
 \DoxyCodeLine{4227 \textcolor{comment}{}}
-\DoxyCodeLine{4228 \textcolor{comment}{                        //m\_recursiveCount = 0;}}
-\DoxyCodeLine{4229 \textcolor{comment}{                        //if (loopCountA > 20) return; // Added to debug }}
-\DoxyCodeLine{4230 \textcolor{comment}{                        CalculatePreferredValues(m\_fontSize, marginSize, false);}}
-\DoxyCodeLine{4231 \textcolor{comment}{                        return Vector2.zero;}}
-\DoxyCodeLine{4232 \textcolor{comment}{                    \}}}
-\DoxyCodeLine{4233 \textcolor{comment}{                    \#endregion Text Auto-\/Sizing}}
-\DoxyCodeLine{4234 \textcolor{comment}{                \}}}
+\DoxyCodeLine{4228 \textcolor{comment}{                        //m\_recursiveCount = 0;}}
+\DoxyCodeLine{4229 \textcolor{comment}{                        //if (loopCountA > 20) return; // Added to debug }}
+\DoxyCodeLine{4230 \textcolor{comment}{                        CalculatePreferredValues(m\_fontSize, marginSize, false);}}
+\DoxyCodeLine{4231 \textcolor{comment}{                        return Vector2.zero;}}
+\DoxyCodeLine{4232 \textcolor{comment}{                    \}}}
+\DoxyCodeLine{4233 \textcolor{comment}{                    \#endregion Text Auto-\/Sizing}}
+\DoxyCodeLine{4234 \textcolor{comment}{                \}}}
 \DoxyCodeLine{4235 \textcolor{comment}{                */}}
-\DoxyCodeLine{4236 \textcolor{preprocessor}{                \#endregion Check Vertical Bounds}}
+\DoxyCodeLine{4236 \textcolor{preprocessor}{                \#endregion Check Vertical Bounds}}
 \DoxyCodeLine{4237 }
 \DoxyCodeLine{4238 }
 \DoxyCodeLine{4239                 \textcolor{comment}{// Handle xAdvance \& Tabulation Stops. Tab stops at every 25\% of Font Size.}}
-\DoxyCodeLine{4240 \textcolor{preprocessor}{                \#region XAdvance, Tabulation \& Stops}}
+\DoxyCodeLine{4240 \textcolor{preprocessor}{                \#region XAdvance, Tabulation \& Stops}}
 \DoxyCodeLine{4241                 \textcolor{keywordflow}{if} (charCode == 9)}
 \DoxyCodeLine{4242                 \{}
 \DoxyCodeLine{4243                     \textcolor{keywordtype}{float} tabSize = m\_currentFontAsset.\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a6afd05863cb5c5f39221cc63904b3f90}{fontInfo}}.TabWidth * currentElementScale;}
@@ -1765,22 +1765,22 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4260                 \}}
 \DoxyCodeLine{4261 }
 \DoxyCodeLine{4262 }
-\DoxyCodeLine{4263 \textcolor{preprocessor}{                \#endregion Tabulation \& Stops}}
+\DoxyCodeLine{4263 \textcolor{preprocessor}{                \#endregion Tabulation \& Stops}}
 \DoxyCodeLine{4264 }
 \DoxyCodeLine{4265 }
 \DoxyCodeLine{4266                 \textcolor{comment}{// Handle Carriage Return}}
-\DoxyCodeLine{4267 \textcolor{preprocessor}{                \#region Carriage Return}}
+\DoxyCodeLine{4267 \textcolor{preprocessor}{                \#region Carriage Return}}
 \DoxyCodeLine{4268                 \textcolor{keywordflow}{if} (charCode == 13)}
 \DoxyCodeLine{4269                 \{}
 \DoxyCodeLine{4270                     maxXAdvance = Mathf.Max(maxXAdvance, \mbox{\hyperlink{classTMPro_1_1TMP__Text_a101c97facd69481e2a0aed24b310b9c4}{renderedWidth}} + m\_xAdvance);}
 \DoxyCodeLine{4271                     \mbox{\hyperlink{classTMPro_1_1TMP__Text_a101c97facd69481e2a0aed24b310b9c4}{renderedWidth}} = 0;}
 \DoxyCodeLine{4272                     m\_xAdvance = 0 + tag\_Indent;}
 \DoxyCodeLine{4273                 \}}
-\DoxyCodeLine{4274 \textcolor{preprocessor}{                \#endregion Carriage Return}}
+\DoxyCodeLine{4274 \textcolor{preprocessor}{                \#endregion Carriage Return}}
 \DoxyCodeLine{4275 }
 \DoxyCodeLine{4276 }
 \DoxyCodeLine{4277                 \textcolor{comment}{// Handle Line Spacing Adjustments + Word Wrapping \& special case for last line.}}
-\DoxyCodeLine{4278 \textcolor{preprocessor}{                \#region Check for Line Feed and Last Character}}
+\DoxyCodeLine{4278 \textcolor{preprocessor}{                \#region Check for Line Feed and Last Character}}
 \DoxyCodeLine{4279                 \textcolor{keywordflow}{if} (charCode == 10 || m\_characterCount == totalCharacterCount -\/ 1)}
 \DoxyCodeLine{4280                 \{}
 \DoxyCodeLine{4281                     \textcolor{comment}{// Check if Line Spacing of previous line needs to be adjusted.}}
@@ -1844,11 +1844,11 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4339                         \textcolor{keywordflow}{continue};}
 \DoxyCodeLine{4340                     \}}
 \DoxyCodeLine{4341                 \}}
-\DoxyCodeLine{4342 \textcolor{preprocessor}{                \#endregion Check for Linefeed or Last Character}}
+\DoxyCodeLine{4342 \textcolor{preprocessor}{                \#endregion Check for Linefeed or Last Character}}
 \DoxyCodeLine{4343 }
 \DoxyCodeLine{4344 }
 \DoxyCodeLine{4345                 \textcolor{comment}{// Save State of Mesh Creation for handling of Word Wrapping}}
-\DoxyCodeLine{4346 \textcolor{preprocessor}{                \#region Save Word Wrapping State}}
+\DoxyCodeLine{4346 \textcolor{preprocessor}{                \#region Save Word Wrapping State}}
 \DoxyCodeLine{4347                 \textcolor{keywordflow}{if} (m\_enableWordWrapping || m\_overflowMode == TextOverflowModes.Truncate || m\_overflowMode == TextOverflowModes.Ellipsis)}
 \DoxyCodeLine{4348                 \{}
 \DoxyCodeLine{4349                     \textcolor{keywordflow}{if} ((\textcolor{keywordtype}{char}.IsWhiteSpace((\textcolor{keywordtype}{char})charCode) || charCode == 0x200B || charCode == 0x2D || charCode == 0xAD) \&\& !m\_isNonBreakingSpace \&\& charCode != 0xA0 \&\& charCode != 0x2011 \&\& charCode != 0x202F \&\& charCode != 0x2060)}
@@ -1881,13 +1881,13 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4376                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((isFirstWord || m\_isCharacterWrappingEnabled == \textcolor{keyword}{true} || isLastBreakingChar))}
 \DoxyCodeLine{4377                         \mbox{\hyperlink{classTMPro_1_1TMP__Text_af4575fb91d41221be3bd2764a356eda1}{SaveWordWrappingState}}(ref savedWordWrapState, i, m\_characterCount);}
 \DoxyCodeLine{4378                 \}}
-\DoxyCodeLine{4379 \textcolor{preprocessor}{                \#endregion Save Word Wrapping State}}
+\DoxyCodeLine{4379 \textcolor{preprocessor}{                \#endregion Save Word Wrapping State}}
 \DoxyCodeLine{4380 }
 \DoxyCodeLine{4381                 m\_characterCount += 1;}
 \DoxyCodeLine{4382             \}}
 \DoxyCodeLine{4383 }
 \DoxyCodeLine{4384             \textcolor{comment}{// Check Auto Sizing and increase font size to fill text container.}}
-\DoxyCodeLine{4385 \textcolor{preprocessor}{            \#region Check Auto-\/Sizing (Upper Font Size Bounds)}}
+\DoxyCodeLine{4385 \textcolor{preprocessor}{            \#region Check Auto-\/Sizing (Upper Font Size Bounds)}}
 \DoxyCodeLine{4386             fontSizeDelta = m\_maxFontSize -\/ m\_minFontSize;}
 \DoxyCodeLine{4387             \textcolor{keywordflow}{if} (!m\_isCharacterWrappingEnabled \&\& ignoreTextAutoSizing == \textcolor{keyword}{false} \&\& fontSizeDelta > 0.051f \&\& defaultFontSize < m\_fontSizeMax)}
 \DoxyCodeLine{4388             \{}
@@ -1898,7 +1898,7 @@ Definition at line 3677 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4393                 \textcolor{keywordflow}{if} (m\_recursiveCount > 20) \textcolor{keywordflow}{return} \textcolor{keyword}{new} Vector2(\mbox{\hyperlink{classTMPro_1_1TMP__Text_a101c97facd69481e2a0aed24b310b9c4}{renderedWidth}}, \mbox{\hyperlink{classTMPro_1_1TMP__Text_a6471229b4d6df638b673ce4bd00a62ce}{renderedHeight}});}
 \DoxyCodeLine{4394                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classTMPro_1_1TMP__Text_a238e31eb1178a4793a7a7f9b624341c3}{CalculatePreferredValues}}(defaultFontSize, marginSize, \textcolor{keyword}{false});}
 \DoxyCodeLine{4395             \}}
-\DoxyCodeLine{4396 \textcolor{preprocessor}{            \#endregion End Auto-\/sizing Check}}
+\DoxyCodeLine{4396 \textcolor{preprocessor}{            \#endregion End Auto-\/sizing Check}}
 \DoxyCodeLine{4397 }
 \DoxyCodeLine{4398 }
 \DoxyCodeLine{4399             m\_isCharacterWrappingEnabled = \textcolor{keyword}{false};}
@@ -2319,7 +2319,7 @@ Definition at line 5167 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{5197             \textcolor{keywordtype}{float} underlineThickness = m\_cached\_Underline\_GlyphInfo.height;}
 \DoxyCodeLine{5198 }
 \DoxyCodeLine{5199             \textcolor{comment}{// UNDERLINE VERTICES FOR (3) LINE SEGMENTS}}
-\DoxyCodeLine{5200 \textcolor{preprocessor}{            \#region UNDERLINE VERTICES}}
+\DoxyCodeLine{5200 \textcolor{preprocessor}{            \#region UNDERLINE VERTICES}}
 \DoxyCodeLine{5201             Vector3[] vertices = m\_textInfo.meshInfo[0].vertices;}
 \DoxyCodeLine{5202 }
 \DoxyCodeLine{5203             \textcolor{comment}{// Front Part of the Underline}}
@@ -2339,10 +2339,10 @@ Definition at line 5167 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{5217             vertices[index + 9] = vertices[index + 6]; \textcolor{comment}{// TL}}
 \DoxyCodeLine{5218             vertices[index + 10] = end + \textcolor{keyword}{new} Vector3(0, m\_padding * maxScale, 0); \textcolor{comment}{// TR}}
 \DoxyCodeLine{5219             vertices[index + 11] = end + \textcolor{keyword}{new} Vector3(0, -\/(underlineThickness + m\_padding) * maxScale, 0); \textcolor{comment}{// BR}}
-\DoxyCodeLine{5220 \textcolor{preprocessor}{            \#endregion}}
+\DoxyCodeLine{5220 \textcolor{preprocessor}{            \#endregion}}
 \DoxyCodeLine{5221 }
 \DoxyCodeLine{5222             \textcolor{comment}{// UNDERLINE UV0}}
-\DoxyCodeLine{5223 \textcolor{preprocessor}{            \#region HANDLE UV0}}
+\DoxyCodeLine{5223 \textcolor{preprocessor}{            \#region HANDLE UV0}}
 \DoxyCodeLine{5224             Vector2[] uvs0 = m\_textInfo.meshInfo[0].uvs0;}
 \DoxyCodeLine{5225 }
 \DoxyCodeLine{5226             \textcolor{comment}{// Calculate UV required to setup the 3 Quads for the Underline.}}
@@ -2372,10 +2372,10 @@ Definition at line 5167 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{5250             uvs0[9 + index] = uv4;}
 \DoxyCodeLine{5251             uvs0[10 + index] = uv6;}
 \DoxyCodeLine{5252             uvs0[11 + index] = uv7;}
-\DoxyCodeLine{5253 \textcolor{preprocessor}{            \#endregion}}
+\DoxyCodeLine{5253 \textcolor{preprocessor}{            \#endregion}}
 \DoxyCodeLine{5254 }
 \DoxyCodeLine{5255             \textcolor{comment}{// UNDERLINE UV2}}
-\DoxyCodeLine{5256 \textcolor{preprocessor}{            \#region HANDLE UV2 -\/ SDF SCALE}}
+\DoxyCodeLine{5256 \textcolor{preprocessor}{            \#region HANDLE UV2 -\/ SDF SCALE}}
 \DoxyCodeLine{5257             \textcolor{comment}{// UV1 contains Face / Border UV layout.}}
 \DoxyCodeLine{5258             \textcolor{keywordtype}{float} min\_UvX = 0;}
 \DoxyCodeLine{5259             \textcolor{keywordtype}{float} max\_UvX = (vertices[index + 2].x -\/ start.x) / (end.x -\/ start.x);}
@@ -2405,10 +2405,10 @@ Definition at line 5167 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{5283             uvs2[9 + index] = \mbox{\hyperlink{classTMPro_1_1TMP__Text_ab3678ea5e10c2193b87d1ee79f8ef5c3}{PackUV}}(min\_UvX, 1, xScale);}
 \DoxyCodeLine{5284             uvs2[10 + index] = \mbox{\hyperlink{classTMPro_1_1TMP__Text_ab3678ea5e10c2193b87d1ee79f8ef5c3}{PackUV}}(1, 1, xScale);}
 \DoxyCodeLine{5285             uvs2[11 + index] = \mbox{\hyperlink{classTMPro_1_1TMP__Text_ab3678ea5e10c2193b87d1ee79f8ef5c3}{PackUV}}(1, 0, xScale);}
-\DoxyCodeLine{5286 \textcolor{preprocessor}{            \#endregion}}
+\DoxyCodeLine{5286 \textcolor{preprocessor}{            \#endregion}}
 \DoxyCodeLine{5287 }
 \DoxyCodeLine{5288             \textcolor{comment}{// UNDERLINE VERTEX COLORS}}
-\DoxyCodeLine{5289 \textcolor{preprocessor}{            \#region}}
+\DoxyCodeLine{5289 \textcolor{preprocessor}{            \#region}}
 \DoxyCodeLine{5290             \textcolor{comment}{// Alpha is the lower of the vertex color or tag color alpha used.}}
 \DoxyCodeLine{5291             underlineColor.a = m\_fontColor32.a < underlineColor.a ? (byte)(m\_fontColor32.a) : (byte)(underlineColor.a);}
 \DoxyCodeLine{5292 }
@@ -2427,7 +2427,7 @@ Definition at line 5167 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{5305             colors32[9 + index] = underlineColor;}
 \DoxyCodeLine{5306             colors32[10 + index] = underlineColor;}
 \DoxyCodeLine{5307             colors32[11 + index] = underlineColor;}
-\DoxyCodeLine{5308 \textcolor{preprocessor}{            \#endregion}}
+\DoxyCodeLine{5308 \textcolor{preprocessor}{            \#endregion}}
 \DoxyCodeLine{5309 }
 \DoxyCodeLine{5310             index += 12;}
 \DoxyCodeLine{5311         \}}
@@ -4412,15 +4412,15 @@ Definition at line 4763 of file T\+M\+P\+\_\+\+Text.\+cs.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{4764         \{}
 \DoxyCodeLine{4765             \textcolor{comment}{// Save the Vertex Position for the Character}}
-\DoxyCodeLine{4766 \textcolor{preprocessor}{            \#region Setup Mesh Vertices}}
+\DoxyCodeLine{4766 \textcolor{preprocessor}{            \#region Setup Mesh Vertices}}
 \DoxyCodeLine{4767             m\_textInfo.characterInfo[m\_characterCount].vertex\_BL.position = m\_textInfo.characterInfo[m\_characterCount].bottomLeft;}
 \DoxyCodeLine{4768             m\_textInfo.characterInfo[m\_characterCount].vertex\_TL.position = m\_textInfo.characterInfo[m\_characterCount].topLeft;}
 \DoxyCodeLine{4769             m\_textInfo.characterInfo[m\_characterCount].vertex\_TR.position = m\_textInfo.characterInfo[m\_characterCount].topRight;}
 \DoxyCodeLine{4770             m\_textInfo.characterInfo[m\_characterCount].vertex\_BR.position = m\_textInfo.characterInfo[m\_characterCount].bottomRight;}
-\DoxyCodeLine{4771 \textcolor{preprocessor}{            \#endregion}}
+\DoxyCodeLine{4771 \textcolor{preprocessor}{            \#endregion}}
 \DoxyCodeLine{4772 }
 \DoxyCodeLine{4773 }
-\DoxyCodeLine{4774 \textcolor{preprocessor}{            \#region Setup Vertex Colors}}
+\DoxyCodeLine{4774 \textcolor{preprocessor}{            \#region Setup Vertex Colors}}
 \DoxyCodeLine{4775             \textcolor{comment}{// Alpha is the lower of the vertex color or tag color alpha used.}}
 \DoxyCodeLine{4776             vertexColor.a = m\_fontColor32.a < vertexColor.a ? (byte)(m\_fontColor32.a) : (byte)(vertexColor.a);}
 \DoxyCodeLine{4777 }
@@ -4468,7 +4468,7 @@ Definition at line 4763 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4819                 m\_textInfo.characterInfo[m\_characterCount].vertex\_TR.color *= m\_colorGradientPreset.topRight;}
 \DoxyCodeLine{4820                 m\_textInfo.characterInfo[m\_characterCount].vertex\_BR.color *= m\_colorGradientPreset.bottomRight;}
 \DoxyCodeLine{4821             \}}
-\DoxyCodeLine{4822 \textcolor{preprocessor}{            \#endregion}}
+\DoxyCodeLine{4822 \textcolor{preprocessor}{            \#endregion}}
 \DoxyCodeLine{4823 }
 \DoxyCodeLine{4824             \textcolor{comment}{// Apply style\_padding only if this is a SDF Shader.}}
 \DoxyCodeLine{4825             \textcolor{keywordflow}{if} (!m\_isSDFShader)}
@@ -4476,7 +4476,7 @@ Definition at line 4763 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4827 }
 \DoxyCodeLine{4828 }
 \DoxyCodeLine{4829             \textcolor{comment}{// Setup UVs for the Character}}
-\DoxyCodeLine{4830 \textcolor{preprocessor}{            \#region Setup UVs}}
+\DoxyCodeLine{4830 \textcolor{preprocessor}{            \#region Setup UVs}}
 \DoxyCodeLine{4831             FaceInfo faceInfo = m\_currentFontAsset.\mbox{\hyperlink{classTMPro_1_1TMP__FontAsset_a6afd05863cb5c5f39221cc63904b3f90}{fontInfo}};}
 \DoxyCodeLine{4832 }
 \DoxyCodeLine{4833             Vector2 uv0;}
@@ -4505,11 +4505,11 @@ Definition at line 4763 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4856             m\_textInfo.characterInfo[m\_characterCount].vertex\_TL.uv = uv1;}
 \DoxyCodeLine{4857             m\_textInfo.characterInfo[m\_characterCount].vertex\_TR.uv = uv2;}
 \DoxyCodeLine{4858             m\_textInfo.characterInfo[m\_characterCount].vertex\_BR.uv = uv3;}
-\DoxyCodeLine{4859 \textcolor{preprocessor}{            \#endregion Setup UVs}}
+\DoxyCodeLine{4859 \textcolor{preprocessor}{            \#endregion Setup UVs}}
 \DoxyCodeLine{4860 }
 \DoxyCodeLine{4861 }
 \DoxyCodeLine{4862             \textcolor{comment}{// Normal}}
-\DoxyCodeLine{4863 \textcolor{preprocessor}{            \#region Setup Normals \& Tangents}}
+\DoxyCodeLine{4863 \textcolor{preprocessor}{            \#region Setup Normals \& Tangents}}
 \DoxyCodeLine{4864             \textcolor{comment}{//Vector3 normal = new Vector3(0, 0, -\/1);}}
 \DoxyCodeLine{4865             \textcolor{comment}{//m\_textInfo.characterInfo[m\_characterCount].vertex\_BL.normal = normal;}}
 \DoxyCodeLine{4866             \textcolor{comment}{//m\_textInfo.characterInfo[m\_characterCount].vertex\_TL.normal = normal;}}
@@ -4522,7 +4522,7 @@ Definition at line 4763 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4873             \textcolor{comment}{//m\_textInfo.characterInfo[m\_characterCount].vertex\_TL.tangent = tangent;}}
 \DoxyCodeLine{4874             \textcolor{comment}{//m\_textInfo.characterInfo[m\_characterCount].vertex\_TR.tangent = tangent;}}
 \DoxyCodeLine{4875             \textcolor{comment}{//m\_textInfo.characterInfo[m\_characterCount].vertex\_BR.tangent = tangent;}}
-\DoxyCodeLine{4876 \textcolor{preprocessor}{            \#endregion end Normals \& Tangents}}
+\DoxyCodeLine{4876 \textcolor{preprocessor}{            \#endregion end Normals \& Tangents}}
 \DoxyCodeLine{4877         \}}
 
 \end{DoxyCode}
@@ -4553,12 +4553,12 @@ Definition at line 4886 of file T\+M\+P\+\_\+\+Text.\+cs.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{4887         \{}
 \DoxyCodeLine{4888             \textcolor{comment}{// Save the Vertex Position for the Character}}
-\DoxyCodeLine{4889 \textcolor{preprocessor}{            \#region Setup Mesh Vertices}}
+\DoxyCodeLine{4889 \textcolor{preprocessor}{            \#region Setup Mesh Vertices}}
 \DoxyCodeLine{4890             m\_textInfo.characterInfo[m\_characterCount].vertex\_BL.position = m\_textInfo.characterInfo[m\_characterCount].bottomLeft;}
 \DoxyCodeLine{4891             m\_textInfo.characterInfo[m\_characterCount].vertex\_TL.position = m\_textInfo.characterInfo[m\_characterCount].topLeft;}
 \DoxyCodeLine{4892             m\_textInfo.characterInfo[m\_characterCount].vertex\_TR.position = m\_textInfo.characterInfo[m\_characterCount].topRight;}
 \DoxyCodeLine{4893             m\_textInfo.characterInfo[m\_characterCount].vertex\_BR.position = m\_textInfo.characterInfo[m\_characterCount].bottomRight;}
-\DoxyCodeLine{4894 \textcolor{preprocessor}{            \#endregion}}
+\DoxyCodeLine{4894 \textcolor{preprocessor}{            \#endregion}}
 \DoxyCodeLine{4895 }
 \DoxyCodeLine{4896             \textcolor{comment}{// Vertex Color Alpha}}
 \DoxyCodeLine{4897             \textcolor{keywordflow}{if} (m\_tintAllSprites) m\_tintSprite = \textcolor{keyword}{true};}
@@ -4603,7 +4603,7 @@ Definition at line 4886 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4936 }
 \DoxyCodeLine{4937 }
 \DoxyCodeLine{4938             \textcolor{comment}{// Setup UVs for the Character}}
-\DoxyCodeLine{4939 \textcolor{preprocessor}{            \#region Setup UVs}}
+\DoxyCodeLine{4939 \textcolor{preprocessor}{            \#region Setup UVs}}
 \DoxyCodeLine{4940             Vector2 uv0 = \textcolor{keyword}{new} Vector2(m\_cached\_TextElement.x / m\_currentSpriteAsset.spriteSheet.width, m\_cached\_TextElement.y / m\_currentSpriteAsset.spriteSheet.height);  \textcolor{comment}{// bottom left}}
 \DoxyCodeLine{4941             Vector2 uv1 = \textcolor{keyword}{new} Vector2(uv0.x, (m\_cached\_TextElement.y + m\_cached\_TextElement.height) / m\_currentSpriteAsset.spriteSheet.height);  \textcolor{comment}{// top left}}
 \DoxyCodeLine{4942             Vector2 uv2 = \textcolor{keyword}{new} Vector2((m\_cached\_TextElement.x + m\_cached\_TextElement.width) / m\_currentSpriteAsset.spriteSheet.width, uv1.y); \textcolor{comment}{// top right}}
@@ -4614,11 +4614,11 @@ Definition at line 4886 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4947             m\_textInfo.characterInfo[m\_characterCount].vertex\_TL.uv = uv1;}
 \DoxyCodeLine{4948             m\_textInfo.characterInfo[m\_characterCount].vertex\_TR.uv = uv2;}
 \DoxyCodeLine{4949             m\_textInfo.characterInfo[m\_characterCount].vertex\_BR.uv = uv3;}
-\DoxyCodeLine{4950 \textcolor{preprocessor}{            \#endregion Setup UVs}}
+\DoxyCodeLine{4950 \textcolor{preprocessor}{            \#endregion Setup UVs}}
 \DoxyCodeLine{4951 }
 \DoxyCodeLine{4952 }
 \DoxyCodeLine{4953             \textcolor{comment}{// Normal}}
-\DoxyCodeLine{4954 \textcolor{preprocessor}{            \#region Setup Normals \& Tangents}}
+\DoxyCodeLine{4954 \textcolor{preprocessor}{            \#region Setup Normals \& Tangents}}
 \DoxyCodeLine{4955             \textcolor{comment}{//Vector3 normal = new Vector3(0, 0, -\/1);}}
 \DoxyCodeLine{4956             \textcolor{comment}{//m\_textInfo.characterInfo[m\_characterCount].vertex\_BL.normal = normal;}}
 \DoxyCodeLine{4957             \textcolor{comment}{//m\_textInfo.characterInfo[m\_characterCount].vertex\_TL.normal = normal;}}
@@ -4631,7 +4631,7 @@ Definition at line 4886 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{4964             \textcolor{comment}{//m\_textInfo.characterInfo[m\_characterCount].vertex\_TL.tangent = tangent;}}
 \DoxyCodeLine{4965             \textcolor{comment}{//m\_textInfo.characterInfo[m\_characterCount].vertex\_TR.tangent = tangent;}}
 \DoxyCodeLine{4966             \textcolor{comment}{//m\_textInfo.characterInfo[m\_characterCount].vertex\_BR.tangent = tangent;}}
-\DoxyCodeLine{4967 \textcolor{preprocessor}{            \#endregion end Normals \& Tangents}}
+\DoxyCodeLine{4967 \textcolor{preprocessor}{            \#endregion end Normals \& Tangents}}
 \DoxyCodeLine{4968 }
 \DoxyCodeLine{4969         \}}
 
@@ -4829,13 +4829,13 @@ Definition at line 1882 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{1884             \textcolor{comment}{// Initialize internal character buffer if necessary}}
 \DoxyCodeLine{1885             \textcolor{keywordflow}{if} (m\_char\_buffer == \textcolor{keyword}{null}) m\_char\_buffer = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[8];}
 \DoxyCodeLine{1886 }
-\DoxyCodeLine{1887 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{1887 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
 \DoxyCodeLine{1888             \textcolor{comment}{// Create new string to be displayed in the Input Text Box of the Editor Panel.}}
 \DoxyCodeLine{1889             \textcolor{keywordflow}{if} (sourceText == \textcolor{keyword}{null} || sourceText.Length == 0)}
 \DoxyCodeLine{1890                 m\_text = \textcolor{keywordtype}{string}.Empty;}
 \DoxyCodeLine{1891             \textcolor{keywordflow}{else}}
 \DoxyCodeLine{1892                 m\_text = \textcolor{keyword}{new} string(sourceText);}
-\DoxyCodeLine{1893 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{1893 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{1894 }
 \DoxyCodeLine{1895             \textcolor{comment}{// Clear the Style stack.}}
 \DoxyCodeLine{1896             m\_styleStack.\mbox{\hyperlink{structTMPro_1_1TMP__XmlTagStack_a58f2d9eef0b3308d87ffe390e223bced}{Clear}}();}
@@ -4949,7 +4949,7 @@ Definition at line 1986 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{1988             \textcolor{comment}{// Initialize internal character buffer if necessary}}
 \DoxyCodeLine{1989             \textcolor{keywordflow}{if} (m\_char\_buffer == \textcolor{keyword}{null}) m\_char\_buffer = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[8];}
 \DoxyCodeLine{1990 }
-\DoxyCodeLine{1991 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{1991 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
 \DoxyCodeLine{1992             \textcolor{comment}{// Create new string to be displayed in the Input Text Box of the Editor Panel.}}
 \DoxyCodeLine{1993             \textcolor{keywordflow}{if} (sourceText == \textcolor{keyword}{null} || sourceText.Length == 0 || length == 0)}
 \DoxyCodeLine{1994             \{}
@@ -4962,7 +4962,7 @@ Definition at line 1986 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{2001                 \textcolor{comment}{// TODO: Add potential range check on start + length relative to array size.}}
 \DoxyCodeLine{2002                 m\_text = \textcolor{keyword}{new} string(sourceText, start, length);}
 \DoxyCodeLine{2003             \}}
-\DoxyCodeLine{2004 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{2004 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{2005 }
 \DoxyCodeLine{2006             \textcolor{comment}{// Clear the Style stack.}}
 \DoxyCodeLine{2007             m\_styleStack.\mbox{\hyperlink{structTMPro_1_1TMP__XmlTagStack_a58f2d9eef0b3308d87ffe390e223bced}{Clear}}();}
@@ -5078,7 +5078,7 @@ Definition at line 2099 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{2101             \textcolor{comment}{// Initialize internal character buffer if necessary}}
 \DoxyCodeLine{2102             \textcolor{keywordflow}{if} (m\_char\_buffer == \textcolor{keyword}{null}) m\_char\_buffer = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[8];}
 \DoxyCodeLine{2103 }
-\DoxyCodeLine{2104 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{2104 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
 \DoxyCodeLine{2105             \textcolor{comment}{// Create new string to be displayed in the Input Text Box of the Editor Panel.}}
 \DoxyCodeLine{2106             \textcolor{keywordflow}{if} (sourceText == \textcolor{keyword}{null} || sourceText.Length == 0 || length == 0)}
 \DoxyCodeLine{2107             \{}
@@ -5090,7 +5090,7 @@ Definition at line 2099 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{2113             \{}
 \DoxyCodeLine{2114                 m\_text = sourceText.IntToString(start, length);}
 \DoxyCodeLine{2115             \}}
-\DoxyCodeLine{2116 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{2116 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{2117 }
 \DoxyCodeLine{2118             \textcolor{comment}{// Clear the Style stack.}}
 \DoxyCodeLine{2119             m\_styleStack.\mbox{\hyperlink{structTMPro_1_1TMP__XmlTagStack_a58f2d9eef0b3308d87ffe390e223bced}{Clear}}();}
@@ -5441,12 +5441,12 @@ Definition at line 1719 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{1726 }
 \DoxyCodeLine{1727             \mbox{\hyperlink{classTMPro_1_1TMP__Text_added9ace8138f71b06a8a4df70ac8c6a}{StringToCharArray}}(\mbox{\hyperlink{classTMPro_1_1TMP__Text_a98a04e5078612c0586472bd510f91f5c}{text}}, ref m\_char\_buffer);}
 \DoxyCodeLine{1728 }
-\DoxyCodeLine{1729 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{1729 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
 \DoxyCodeLine{1730             \textcolor{comment}{// Set the text in the Text Input Box in the Unity Editor only.}}
 \DoxyCodeLine{1731             \textcolor{comment}{// TODO: Could revise to convert to string literal}}
 \DoxyCodeLine{1732             \textcolor{keywordflow}{if} (syncTextInputBox)}
 \DoxyCodeLine{1733                 m\_text = \mbox{\hyperlink{classTMPro_1_1TMP__Text_a98a04e5078612c0586472bd510f91f5c}{text}};}
-\DoxyCodeLine{1734 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{1734 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{1735 }
 \DoxyCodeLine{1736             m\_isInputParsingRequired = \textcolor{keyword}{true};}
 \DoxyCodeLine{1737             m\_havePropertiesChanged = \textcolor{keyword}{true};}
@@ -5619,10 +5619,10 @@ Definition at line 1779 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{1833             m\_input\_CharArray[index] = (char)0;}
 \DoxyCodeLine{1834             m\_charArray\_Length = index; \textcolor{comment}{// Set the length to where this '0' termination is.}}
 \DoxyCodeLine{1835 }
-\DoxyCodeLine{1836 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{1836 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
 \DoxyCodeLine{1837             \textcolor{comment}{// Create new string to be displayed in the Input Text Box of the Editor Panel.}}
 \DoxyCodeLine{1838             m\_text = \textcolor{keyword}{new} string(m\_input\_CharArray, 0, index);}
-\DoxyCodeLine{1839 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{1839 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{1840 }
 \DoxyCodeLine{1841             m\_inputSource = TextInputSources.SetText;}
 \DoxyCodeLine{1842             m\_isInputParsingRequired = \textcolor{keyword}{true};}
@@ -5658,10 +5658,10 @@ Definition at line 1858 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{1859         \{}
 \DoxyCodeLine{1860             m\_inputSource = TextInputSources.SetCharArray;}
 \DoxyCodeLine{1861 }
-\DoxyCodeLine{1862 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{1862 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
 \DoxyCodeLine{1863             \textcolor{comment}{// Set the text in the Text Input Box in the Unity Editor only.}}
 \DoxyCodeLine{1864             m\_text = \mbox{\hyperlink{classTMPro_1_1TMP__Text_a98a04e5078612c0586472bd510f91f5c}{text}}.ToString();}
-\DoxyCodeLine{1865 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{1865 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{1866 }
 \DoxyCodeLine{1867             \mbox{\hyperlink{classTMPro_1_1TMP__Text_a8924da6e6d1cecb3b8c542d3ad9d92cd}{StringBuilderToIntArray}}(\mbox{\hyperlink{classTMPro_1_1TMP__Text_a98a04e5078612c0586472bd510f91f5c}{text}}, ref m\_char\_buffer);}
 \DoxyCodeLine{1868 }
@@ -5872,10 +5872,10 @@ Definition at line 2431 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{2441             \textcolor{comment}{// Clear the Style stack.}}
 \DoxyCodeLine{2442             m\_styleStack.\mbox{\hyperlink{structTMPro_1_1TMP__XmlTagStack_a58f2d9eef0b3308d87ffe390e223bced}{Clear}}();}
 \DoxyCodeLine{2443 }
-\DoxyCodeLine{2444 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{2444 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
 \DoxyCodeLine{2445             \textcolor{comment}{// Create new string to be displayed in the Input Text Box of the Editor Panel.}}
 \DoxyCodeLine{2446             m\_text = sourceText.ToString();}
-\DoxyCodeLine{2447 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{2447 \textcolor{preprocessor}{            \#endif}}
 \DoxyCodeLine{2448 }
 \DoxyCodeLine{2449             \textcolor{keywordtype}{int} writeIndex = 0;}
 \DoxyCodeLine{2450 }
@@ -6763,20 +6763,20 @@ Definition at line 5979 of file T\+M\+P\+\_\+\+Text.\+cs.
 \DoxyCodeLine{6447                     \textcolor{keywordflow}{case} 22501: \textcolor{comment}{// </pos>}}
 \DoxyCodeLine{6448                     \textcolor{keywordflow}{case} 20677: \textcolor{comment}{// </POS>}}
 \DoxyCodeLine{6449                                 \textcolor{comment}{/*}}
-\DoxyCodeLine{6450 \textcolor{comment}{                                // Should retrun the index of where the tag started and adjust xAdvance.}}
-\DoxyCodeLine{6451 \textcolor{comment}{                                if (m\_isParsingText)}}
-\DoxyCodeLine{6452 \textcolor{comment}{                                \{}}
-\DoxyCodeLine{6453 \textcolor{comment}{                                    if (m\_SavedAlignment.previous\_WordBreak != 0) }}
-\DoxyCodeLine{6454 \textcolor{comment}{                                    \{}}
-\DoxyCodeLine{6455 \textcolor{comment}{                                        float current\_xAdvance = m\_xAdvance; }}
-\DoxyCodeLine{6456 \textcolor{comment}{                                        endIndex = RestoreWordWrappingState (ref m\_SavedAlignment);}}
-\DoxyCodeLine{6457 \textcolor{comment}{                                        m\_characterCount -\/= 1;}}
-\DoxyCodeLine{6458 \textcolor{comment}{                                        m\_xAdvance -\/= current\_xAdvance -\/ m\_xAdvance;}}
-\DoxyCodeLine{6459 \textcolor{comment}{                                    \}}}
-\DoxyCodeLine{6460 \textcolor{comment}{                                    m\_SavedAlignment.previous\_WordBreak = 0;}}
+\DoxyCodeLine{6450 \textcolor{comment}{                                // Should retrun the index of where the tag started and adjust xAdvance.}}
+\DoxyCodeLine{6451 \textcolor{comment}{                                if (m\_isParsingText)}}
+\DoxyCodeLine{6452 \textcolor{comment}{                                \{}}
+\DoxyCodeLine{6453 \textcolor{comment}{                                    if (m\_SavedAlignment.previous\_WordBreak != 0) }}
+\DoxyCodeLine{6454 \textcolor{comment}{                                    \{}}
+\DoxyCodeLine{6455 \textcolor{comment}{                                        float current\_xAdvance = m\_xAdvance; }}
+\DoxyCodeLine{6456 \textcolor{comment}{                                        endIndex = RestoreWordWrappingState (ref m\_SavedAlignment);}}
+\DoxyCodeLine{6457 \textcolor{comment}{                                        m\_characterCount -\/= 1;}}
+\DoxyCodeLine{6458 \textcolor{comment}{                                        m\_xAdvance -\/= current\_xAdvance -\/ m\_xAdvance;}}
+\DoxyCodeLine{6459 \textcolor{comment}{                                    \}}}
+\DoxyCodeLine{6460 \textcolor{comment}{                                    m\_SavedAlignment.previous\_WordBreak = 0;}}
 \DoxyCodeLine{6461 \textcolor{comment}{}}
-\DoxyCodeLine{6462 \textcolor{comment}{                                    m\_isIgnoringAlignment = false;}}
-\DoxyCodeLine{6463 \textcolor{comment}{                                \}}}
+\DoxyCodeLine{6462 \textcolor{comment}{                                    m\_isIgnoringAlignment = false;}}
+\DoxyCodeLine{6463 \textcolor{comment}{                                \}}}
 \DoxyCodeLine{6464 \textcolor{comment}{                                */}}
 \DoxyCodeLine{6465                         m\_isIgnoringAlignment = \textcolor{keyword}{false};}
 \DoxyCodeLine{6466                         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}

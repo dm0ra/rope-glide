@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['text_5fchanged',['Text_Changed',['../classEndScreenText.html#a3a22b321bae85f669dac9efe76b28235',1,'EndScreenText']]],
   ['tmp_5fcolorgradient',['TMP_ColorGradient',['../classTMPro_1_1TMP__ColorGradient.html#ade6a10f2d14048890c9e4d93c8f33012',1,'TMPro.TMP_ColorGradient.TMP_ColorGradient()'],['../classTMPro_1_1TMP__ColorGradient.html#ad8a5ef960c6adff7252e289593bbcbd2',1,'TMPro.TMP_ColorGradient.TMP_ColorGradient(Color color)'],['../classTMPro_1_1TMP__ColorGradient.html#acfc78a5c6cb6511ef9f6b9c8c13d1748',1,'TMPro.TMP_ColorGradient.TMP_ColorGradient(Color color0, Color color1, Color color2, Color color3)']]],
   ['tmp_5fmeshinfo',['TMP_MeshInfo',['../structTMPro_1_1TMP__MeshInfo.html#a457cf31e803ba04bcbc37a88fe70ab12',1,'TMPro.TMP_MeshInfo.TMP_MeshInfo(Mesh mesh, int size)'],['../structTMPro_1_1TMP__MeshInfo.html#a34bbcd82d7626fdc9d7598eac632f2b9',1,'TMPro.TMP_MeshInfo.TMP_MeshInfo(Mesh mesh, int size, bool isVolumetric)']]],
   ['tmp_5fupdatemanager',['TMP_UpdateManager',['../classTMPro_1_1TMP__UpdateManager.html#aac91ee76bdd5a4fe9e77536d51a644b8',1,'TMPro::TMP_UpdateManager']]],

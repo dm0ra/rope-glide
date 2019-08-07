@@ -1,0 +1,944 @@
+The Firebase Unity S\+DK provides Unity packages for the following Firebase features on {\itshape i\+OS} and {\itshape Android}\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Feature  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Unity Package   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Feature  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Unity Package   }\\\cline{1-2}
+\endhead
+\PBS\centering Firebase Analytics  &\PBS\centering Firebase\+Analytics.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Authentication  &\PBS\centering Firebase\+Auth.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Crashlytics  &\PBS\centering Firebase\+Crashlytics.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Realtime Database  &\PBS\centering Firebase\+Database.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Dynamic Links  &\PBS\centering Firebase\+Dynamic\+Links.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Functions  &\PBS\centering Firebase\+Functions.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Instance ID  &\PBS\centering Firebase\+Instance\+Id.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Messaging  &\PBS\centering Firebase\+Messaging.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Realtime Database  &\PBS\centering Firebase\+Database.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Remote Config  &\PBS\centering Firebase\+Remote\+Config.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Storage  &\PBS\centering Firebase\+Storage.\+unitypackage   \\\cline{1-2}
+\end{longtabu}
+
+
+The S\+DK provides .N\+ET 3.\+x and .N\+ET 4.\+x compatible packages in the {\ttfamily dotnet3} and {\ttfamily dotnet4} directories of the S\+DK\+:
+
+
+\begin{DoxyItemize}
+\item Unity 5.\+x and earlier use the .N\+ET 3.\+x framework, so you need to import packages from the {\ttfamily dotnet3} directory.
+\item Unity 2017.\+x and newer allow the use of the .N\+ET 4.\+x framework. If your project is configured to use .N\+ET 4.\+x, import packages from the {\ttfamily dotnet4} directory.
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md0}{}\doxysection{Desktop Workflow Implementations}\label{md_Assets_Firebase_Editor_readme_autotoc_md0}
+The Firebase Unity S\+DK includes desktop workflow support for the following Firebase features, enabling their use in the Unity editor and in standalone desktop builds on Windows, OS X, and Linux\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Feature  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Unity Package   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Feature  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Unity Package   }\\\cline{1-2}
+\endhead
+\PBS\centering Firebase Authentication  &\PBS\centering Firebase\+Auth.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Realtime Database$\ast$  &\PBS\centering Firebase\+Database.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Functions  &\PBS\centering Firebase\+Functions.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Remote Config  &\PBS\centering Firebase\+Remote\+Config.\+unitypackage   \\\cline{1-2}
+\PBS\centering Firebase Storage  &\PBS\centering Firebase\+Storage.\+unitypackage   \\\cline{1-2}
+\end{longtabu}
+
+
+($\ast$ See Known Issues in the Release Notes below.)
+
+This is a Beta feature, and is intended for workflow use only during the development of your app, not for publicly shipping code.\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md1}{}\doxysection{Stub Implementations}\label{md_Assets_Firebase_Editor_readme_autotoc_md1}
+Stub (non-\/functional) implementations of the remaining libraries are provided for convenience when building for Windows, OS X, and Linux, so that you don\textquotesingle{}t need to conditionally compile code when also targeting the desktop.\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md2}{}\doxysection{Ad\+Mob}\label{md_Assets_Firebase_Editor_readme_autotoc_md2}
+The Ad\+Mob Unity plugin is distributed separately and is available from the \href{https://firebase.google.com/docs/admob/unity/start}{\texttt{ Ad\+Mob Get Started}} guide.\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md3}{}\doxysection{Known Issues}\label{md_Assets_Firebase_Editor_readme_autotoc_md3}
+\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md4}{}\doxysubsection{.\+N\+E\+T 4.\+x compatibility when using Unity 2017.\+x and newer.}\label{md_Assets_Firebase_Editor_readme_autotoc_md4}
+.N\+ET 4.\+x support is available as a build option in Unity 2017 and newer. Firebase plugins use components of the \href{https://github.com/parse-community/Parse-SDK-dotNET}{\texttt{ Parse S\+DK}} to provide some .N\+ET 4.\+x classes in earlier versions of .N\+ET. Therefore, versions {\ttfamily 5.\+4.\+0} and newer of the \{\{unity\+\_\+sdk\}\} provide plugins that are compatible with either .N\+ET 3.\+x or .N\+ET 4.\+x in {\ttfamily dotnet3} and {\ttfamily dotnet4} directories of the \{\{unity\+\_\+sdk\+\_\+link\}\}.
+
+If you import a Firebase plugin that is incompatible with the .N\+ET version enabled in your project, you\textquotesingle{}ll see compile errors from some types in the .N\+ET framework that are implemented by the Parse S\+DK.
+
+To resolve the compilation error, if you\textquotesingle{}re using .N\+ET 3.\+x\+:
+
+
+\begin{DoxyEnumerate}
+\item Remove or disable the following D\+L\+Ls for all platforms\+:
+\begin{DoxyItemize}
+\item {\ttfamily Parse/\+Plugins/dot\+Net45/\+Unity.\+Compat.\+dll}
+\item {\ttfamily Parse/\+Plugins/dot\+Net45/\+Unity.\+Tasks.\+dll}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Enable the following D\+L\+Ls for all platforms\+:
+\begin{DoxyItemize}
+\item {\ttfamily Parse/\+Plugins/\+Unity.\+Compat.\+dll}
+\item {\ttfamily Parse/\+Plugins/\+Unity.\+Tasks.\+dll}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+To resolve the compilation error, if you\textquotesingle{}re using .N\+ET 4.\+x\+:
+
+
+\begin{DoxyEnumerate}
+\item Remove or disable the following D\+L\+Ls for all platforms\+:
+\begin{DoxyItemize}
+\item {\ttfamily Parse/\+Plugins/\+Unity.\+Compat.\+dll}
+\item {\ttfamily Parse/\+Plugins/\+Unity.\+Tasks.\+dll}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Enable the following D\+L\+Ls for all platforms\+:
+\begin{DoxyItemize}
+\item {\ttfamily Parse/\+Plugins/dot\+Net45/\+Unity.\+Compat.\+dll}
+\item {\ttfamily Parse/\+Plugins/dot\+Net45/\+Unity.\+Tasks.\+dll}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+If you import another Firebase plugin\+:
+
+
+\begin{DoxyItemize}
+\item Select the menu item {\ttfamily Assets $>$ Play Services Resolver $>$ Version Handler $>$ Update} to enable the correct D\+L\+Ls for your project.
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md5}{}\doxysubsection{Unity 2017.\+2 Networking}\label{md_Assets_Firebase_Editor_readme_autotoc_md5}
+Realtime Database creates T\+LS network connections using the .N\+ET networking stack. T\+LS functionality is broken in Unity 2017.\+2 when using .N\+ET 4.\+6 causing the Realtime Database plugin to fail in editor and on desktop. There is no workaround for this issue, you have to use a different version of Unity, for example 2017.\+1 or 2017.\+3.\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md6}{}\doxysubsection{Unity 4 workarounds}\label{md_Assets_Firebase_Editor_readme_autotoc_md6}
+Firebase plugins are not officially supported in Unity 4. However, we do make an effort to ensure the plugins can work with some manual setup.
+
+A couple of components do not work in Unity 4\+:
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/googlesamples/unity-jar-resolver\#unity-plugin-version-management}{\texttt{ Version Handler}} does not work due to no Plugin\+Importer and no clean way to prevent managed D\+L\+Ls from being loaded by Unity 4.
+\begin{DoxyItemize}
+\item This means it\textquotesingle{}s not possible for plugins to automatically enable the most recent version of shared components (e.\+g Firebase, Ad\+Mob, Facebook etc. may share a common component).
+\item D\+L\+Ls that target a specific .N\+ET version (e.\+g .N\+ET 4.\+x) are not disabled.
+\end{DoxyItemize}
+\item Managed (C\#) D\+L\+Ls cannot be targeted to a specific platform which breaks our plugin where we have platform specific C\# D\+L\+Ls for some components.
+\end{DoxyItemize}
+
+To use in Unity 4 you will need to\+:
+
+
+\begin{DoxyItemize}
+\item Resolve any dependencies that are shared between multiple plugins. For example, Firebase and Ad\+Mob use the \href{https://github.com/googlesamples/unity-jar-resolver}{\texttt{ Play Services Resolver}} which contains D\+L\+Ls that encode the version in their filename under the folder {\ttfamily Play\+Services\+Resolver/\+Editor}. For each versioned D\+LL under the folder {\ttfamily Play\+Services\+Resolver/\+Editor} delete the oldest version of each D\+LL.
+\item Remove .N\+ET 4.\+x D\+L\+Ls from {\ttfamily Parse/\+Plugins/dot\+Net45}.
+\item Remove / rename platform specific D\+L\+Ls. Firebase plugins contain i\+OS specific D\+L\+Ls under the folder {\ttfamily Firebase/\+Plugins/i\+OS}.
+\begin{DoxyItemize}
+\item When {\itshape not} building for i\+OS\+:
+\begin{DoxyItemize}
+\item Change the extension of files under the {\ttfamily Firebase/\+Plugins/i\+OS} folder from {\ttfamily .dll} to {\ttfamily .dlldisabled}
+\end{DoxyItemize}
+\item When building for i\+OS\+:
+\begin{DoxyItemize}
+\item Change the extension of files under the {\ttfamily Firebase/\+Plugins/i\+OS} folder from {\ttfamily .dlldisabled} to {\ttfamily .dll}
+\item For each file in {\ttfamily Firebase/\+Plugins/i\+OS} change the file extension of the same name under {\ttfamily Firebase/\+Plugins} from {\ttfamily .dll} to {\ttfamily .dlldisabled}. For example, {\ttfamily Firebase/\+Plugins/i\+O\+S/\+Firebase.\+App.\+dll} and {\ttfamily Firebase/\+Plugins/\+Firebase.\+App.\+dlldisabled}.
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md7}{}\doxysection{Setup}\label{md_Assets_Firebase_Editor_readme_autotoc_md7}
+You need to follow the \href{https://firebase.google.com/docs/unity/setup}{\texttt{ S\+DK setup instructions}}. Each Firebase package requires configuration in the \href{https://firebase.google.com/console}{\texttt{ Firebase Console}}. If you fail to configure your project your app\textquotesingle{}s initialization will fail.\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md8}{}\doxysection{Support}\label{md_Assets_Firebase_Editor_readme_autotoc_md8}
+\href{http://firebase.google.com/support/}{\texttt{ Firebase Support}}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md9}{}\doxysection{Release Notes}\label{md_Assets_Firebase_Editor_readme_autotoc_md9}
+\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md10}{}\doxysubsection{6.\+2.\+2}\label{md_Assets_Firebase_Editor_readme_autotoc_md10}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fixes.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (Editor)\+: Worked around regression in Unity 2019.\+2 and 2019.\+3 which caused Dll\+Not\+Found\+Exception.
+\item General (Editor, mac\+OS)\+: Add support for mac\+OS 10.\+11.\+x.
+\item Auth (Editor)\+: After loading a persisted user data, ensure token is not expired.
+\item Auth (desktop)\+: Ensure Database, Storage and Functions do not use an expired token after it\textquotesingle{}s loaded from persistent storage.
+\item Database (Editor)\+: Fixed a crash when calling Update\+Children\+Async.
+\item Database (Editor)\+: Deprecated service account authentication.
+\item Database (Editor)\+: Fixed Database\+Reference.\+Run\+Transaction() sending invalid data to the server which causes error message \char`\"{}\+Error on
+      incoming message\char`\"{} and freeze.
+\end{DoxyItemize}
+\item Known Issues
+\begin{DoxyItemize}
+\item Database/\+Storage/\+Functions may fail to send authentication token to server if Firebase\+Auth is garbage-\/collected. If you are unable to access to the server due to \char`\"{}\+Permission Denied\char`\"{}, please try to keep Firebase\+Auth alive.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md11}{}\doxysubsection{6.\+2.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md11}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fixed Crashlytics on Android not working correctly.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Crashlytics (Android)\+: Fixed an issue causing Crashlytics to believe it was shut down, blocking all functionality.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md12}{}\doxysubsection{6.\+2.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md12}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Moved Realtime Database to a C++ implementation on desktop, added support for custom domains to Dynamic Links, and fixed issues in Database, Instance ID, and Crashlytics.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (Editor)\+: Fixed an issue that could cause errors when trying to read a google-\/services.\+json file with unicode characters in its path.
+\item General (Editor, i\+OS)\+: Added support for patching Xcode projects in Unity 2019.\+3+.
+\item General\+: Fixed a race that could lead to a crash when gabarge collecting Firebase\+App objects.
+\item General\+: Updated Play Services Resolver from 1.\+2.\+116 to 1.\+2.\+121 For more information, see \href{https://github.com/googlesamples/unity-jar-resolver/blob/master/CHANGELOG.md\#version-12121---jun-27-2019}{\texttt{ this document}}. Added support for the \href{https://developer.android.com/studio/command-line/jetifier}{\texttt{ Jetpack Jetifier}} , this allows the use of legacy Android support libraries with the latest release of Google Play Services that uses AndroidX.
+\item Crashlytics (Android)\+: Fixed a crash when logging large call stacks.
+\item Crashlytics (Android)\+: Fixed a crash in exception logging when the application is shutting down.
+\item Instance ID (Android)\+: Fixed a crash when destroying Instance\+ID objects.
+\item Instance ID\+: Fixed a crash if multiple Instance ID objects are created and destroyed quickly.
+\item Dynamic Links\+: Added support for custom domains.
+\item Database (Editor)\+: Moved Realtime Database to a C++ implementation on desktop to improve reliability across different Unity versions.
+\item Database (Editor)\+: Moved transaction callbacks to the main thread to mirror Android and i\+OS.
+\item Database\+: Added a way to configure log verbosity of Realtime Database instances.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md13}{}\doxysubsection{6.\+1.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md13}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fixed an issue when generating Firebase config files on Windows.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (Editor)\+: Fixed an issue when generating Firebase config files on Windows.
+\item General (Editor)\+: Upgraded Play Services Resolver to from 1.\+2.\+115 to 1.\+2.\+116. For more information see \href{https://github.com/googlesamples/unity-jar-resolver/blob/master/CHANGELOG.md\#version-12115---jun-7-2019}{\texttt{ this document}}.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md14}{}\doxysubsection{6.\+1.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md14}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Added Auth credential persistence on Desktop, fixed and cleaned up some documentation, converted testapps to use Continue\+On\+Main\+Thread(), fixed issues in Auth and Database, and added additional information to Messaging notifications.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (Editor)\+: Removed Firebase Invites documentation from the in-\/editor documentation.
+\item General (Editor)\+: Fixed an issue with resource generation when Firebase plugin files have been moved from their default locations.
+\item General (i\+OS)\+: Fixed an issue where connections via N\+S\+U\+R\+L\+Session (used internally by the i\+OS S\+DK) can be prematurely closed by the client if N\+S\+App\+Transport\+Security is set to Y\+ES in the Info.\+plist and N\+S\+Allows\+Arbitrary\+Loads\+In\+Web\+Content is not set. This can be fixed by setting N\+S\+Allows\+Arbitrary\+Loads\+In\+Web\+Content to the same value as N\+S\+App\+Transport\+Security.
+\item General (Editor)\+: Upgraded Play Services Resolver to from 1.\+2.\+109 to 1.\+2.\+115. For more information see \href{https://github.com/googlesamples/unity-jar-resolver/blob/master/CHANGELOG.md\#version-12115---may-28-2019}{\texttt{ this document}}.
+\item Auth (Desktop)\+: User\textquotesingle{}s credentials will now persist between sessions. See the \href{http://firebase.google.com/docs/auth/unity/manage-users\#persist_a_users_credential}{\texttt{ documentation}} for more information.
+\item Auth (Desktop)\+: As part of the above change, if you access Current\+User immediately after creating the Firebase\+Auth instance, it will block until the saved user\textquotesingle{}s state is finished loading.
+\item Auth (Desktop)\+: Fixed an issue where Database/\+Functions/\+Storage might not use the latest auth token immediately after sign-\/in.
+\item Auth (Android)\+: Fixed an issue where an error code could get reported incorrectly on Android.
+\item Crashlytics, Functions\+: Fixed an issue that could cause a crash during shutdown due to the destruction order of plugins being nondeterministic.
+\item Database (i\+OS)\+: Fixed a race condition that could cause a crash when cleaning up database listeners on i\+OS.
+\item Database (i\+OS)\+: Fixed an issue where long (64-\/bit) values could get written to the database incorrectly (truncated to 32-\/bits) on 32-\/bit devices.
+\item Messaging (Android)\+: Added channel\+\_\+id to Messaging notifications.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md15}{}\doxysubsection{6.\+0.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md15}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Released \href{https://firebase.google.com/docs/crashlytics/get-started?platform=unity}{\texttt{ Crashlytics}} as generally available (GA); added Task.\+Continue\+With\+On\+Main\+Thread(); fixed issues in the Android Resolver, i\+OS Resolver, Auth, Database, Messaging, and Remote Config; removed Firebase Invites, removed deprecated methods in Firebase Remote Config, and deprecated a method in Firebase Analytics.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Updated \href{https://firebase.google.com/support/release-notes/ios\#6.0.0}{\texttt{ Firebase i\+OS}} and \href{https://firebase.google.com/support/release-notes/ios\#2019-05-07}{\texttt{ Firebase Android}} dependencies.
+\item Crashlytics (i\+O\+S/\+Android)\+: \href{https://firebase.google.com/docs/crashlytics/get-started?platform=unity}{\texttt{ Crashlytics for Unity}} is now generally available (GA). Get the next evolution with Big\+Query exports, Jira integration, and more. To migrate from Fabric Crashlytics for Unity to Firebase Crashlytics, follow the \href{https://firebase.google.com/docs/crashlytics/migrate-from-fabric}{\texttt{ migration guide}}.
+\item Added an extension method, {\ttfamily Task.\+Continue\+With\+On\+Main\+Thread()}, which forces the continuation of asynchronous operations to occur in the Unity main thread rather than in a background thread.
+\item General\+: Upgraded Play Services Resolver to from 1.\+2.\+104 to 1.\+2.\+109. For more information see \href{https://github.com/googlesamples/unity-jar-resolver/blob/master/CHANGELOG.md\#version-12109---may-6-2019}{\texttt{ this document}}.
+\item General (Android)\+: Added support for Android S\+DK installed directly in Unity 2019.
+\item General (i\+OS)\+: Fixed issues generating projects without using Cocoapods.
+\item Database (i\+O\+S/\+Android)\+: Fixed an issue where integrating the S\+DK greatly increased the size of your app.
+\item Database\+: Fixed exception handling during listener events.
+\item Remote Config\+: Fixed an issue parsing boolean values.
+\item Auth (Desktop)\+: Fixed a crash when attempting to call Game Center authentication methods from the Unity editor.
+\item Messaging (i\+O\+S/\+Android)\+: Fix an issue where Subscribe and Unsubscribe never returned if the A\+PI was configured not to receive a registration token.
+\item Invites\+: Removed Firebase Invites, as it is no longer supported.
+\item Remote Config\+: Removed functions using config namespaces.
+\item Analytics\+: Deprecated Set\+Minimum\+Session\+Duration.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md16}{}\doxysubsection{5.\+7.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md16}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fixed an issue with escape characters in Auth, deprecated functions in Remote Config, and fixed an issue in the Android Resolver.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Auth\+: Fixed User\+Profile.\+Photo\+Url removing percent encoded characters when being set.
+\item Remote Config\+: Config namespaces are now deprecated. You\textquotesingle{}ll need to switch to methods that use the default namespace.
+\item General (Android)\+: Fixed an exception on resolution in some versions of Unity 2017.\+4 by changing how Android A\+BI selection is handled.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md17}{}\doxysubsection{5.\+6.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md17}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fixed race condition on i\+OS S\+DK startup and fixed some issues in the Android Resolver.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (i\+OS)\+: Updated to the latest i\+OS S\+DK to fix a crash on firebase\+::\+App creation caused by a race condition. The crash could occur when accessing the \mbox{[}F\+I\+R\+App firebase\+User\+Agent\mbox{]} property of the i\+OS F\+I\+R\+App.
+\item General (Android)\+: Fixed Java version check in Android resolver when using Java SE 12 and above.
+\item General (Android)\+: Whitelisted Unity 2017.\+4 and above for A\+R\+M64 builds. Previously required A\+R\+M64 libraries would be stripped from all Unity 2017 builds resulting in a Dll\+Not\+Found\+Exception.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md18}{}\doxysubsection{5.\+6.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md18}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Added Game Center sign-\/in to Auth and fixed intermittent crashes due to garbage collection.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Auth (i\+OS)\+: Added Game Center authentication.
+\item General\+: Fixed intermittent crashes caused when multiple native objects were garbage-\/collected at the same time.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md19}{}\doxysubsection{5.\+5.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md19}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Added support for \href{https://firebase.google.com/docs/crashlytics/get-started\#unity}{\texttt{ Crashlytics}} as a Beta release, deprecated Firebase Invites, and updated the Android Resolver.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Crashlytics\+: \href{https://firebase.google.com/docs/crashlytics/get-started\#unity}{\texttt{ Crashlytics for Unity}} is now available as a Beta release. Get the next evolution with Big\+Query exports, Jira integration, and more. To migrate from Fabric Crashlytics for Unity to Firebase Crashlytics, follow the \href{https://firebase.google.com/docs/crashlytics/migrate-from-fabric}{\texttt{ migration guide}}.
+\item General (Android)\+: Updated to using version 1.\+2.\+101 of the Android Resolver. Prompt the user before the resolver runs for the first time and allow the user to elect to disable from the prompt.
+\item Invites\+: Firebase Invites is deprecated. Please refer to \href{https://firebase.google.com/docs/invites}{\texttt{ https\+://firebase.\+google.\+com/docs/invites}} for details.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md20}{}\doxysubsection{5.\+4.\+4}\label{md_Assets_Firebase_Editor_readme_autotoc_md20}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fixed bugs in i\+O\+S/\+Android Resolver components, Realtime Database on mobile, and Cloud Functions on Android; fixed a general i\+OS bug; and fixed issues with Unity 5.\+6 and Unity 2018.\+3 and newer.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (Android)\+: Fixed packaging of A\+A\+Rs in the Android Resolver when using Unity 2018 and a recent version of Gradle.
+\item General\+: Reduced auto-\/resolution frequency in i\+OS and Android Resolvers, speeding up builds and reducing memory footprint.
+\item General\+: Fixed an issue with version number handling in i\+OS and Android Resolvers.
+\item General (i\+OS)\+: Fixed an issue that caused apps to crash when exiting the app.
+\item General\+: Fixed parsing of Unity 5.\+6 metadata.
+\item General\+: Workaround for Unity 2018.\+3 and newer ignoring the \char`\"{}\+Any\char`\"{} platform.
+\item Realtime Database (mobile)\+: Fixed an issue where certain Data\+Snapshots were missing data.
+\item Cloud Functions (Android)\+: Fixed an issue with error handling.
+\end{DoxyItemize}
+\item Known Issues
+\begin{DoxyItemize}
+\item The garbage collection race condition mentioned in version 5.\+4.\+2 still occurs in Firebase Auth, Database, Storage, and Instance ID. To work around the issue until a fixed is released, keep a reference to the Firebase object instance (for example, Firebase\+Auth.\+Default\+Instance) to prevent garbage collection.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md21}{}\doxysubsection{5.\+4.\+3}\label{md_Assets_Firebase_Editor_readme_autotoc_md21}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fix for Firebase Storage on i\+OS.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Storage (i\+OS)\+: Fixed an issue when downloading files with {\ttfamily Get\+Bytes\+Async}.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md22}{}\doxysubsection{5.\+4.\+2}\label{md_Assets_Firebase_Editor_readme_autotoc_md22}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Updated i\+OS and Android dependency versions, and fixed issues in the Android Resolver, Firebase\+App, Auth on Android, Database, and Dynamic Links on i\+OS.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (Android)\+: Fixed an infinite loop in Android Resolver when using auto-\/resolution.
+\item App\+: Fixed a race condition causing an occasional crash when Firebase\+App is garbage collected.
+\item Auth (Android)\+: Removed an irrelevant error about the Java class Firebase\+Auth\+Web\+Exception.
+\item Database\+: Fixed a race condition causing an occasional crash when Firebase\+Database is garbage collected.
+\item Dynamic Links (i\+OS)\+: Fixed Dynamic Links i\+OS when using Unity Cloud builds.
+\end{DoxyItemize}
+\item Known Issues
+\begin{DoxyItemize}
+\item The garbage collection race condition mentioned above still occurs in Firebase Auth, Storage, and Instance ID. To work around the issue until a fixed is released, keep a reference to the Firebase object instance (for example, Firebase\+Auth.\+Default\+Instance) to prevent garbage collection.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md23}{}\doxysubsection{5.\+4.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md23}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fix for Google Analytics i\+OS dependency.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Analytics (i\+OS)\+: Fixed issue with Google Analytics and Google App Measurement mismatch.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md24}{}\doxysubsection{5.\+4.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md24}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Improved support for .N\+ET 4.\+x Unity projects, exposed method to enable Realtime Database peristence, bug fix for link shortening in Dynamic Links.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General\+: Added plugins that are pre-\/configured for import into .N\+ET 4.\+x Unity projects.
+\item Realtime Database\+: Exposed method to enable persistence on mobile platforms.
+\item Dynamic Links (Android)\+: Fixed short link generation failing with \char`\"{}error 8\char`\"{}.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md25}{}\doxysubsection{5.\+3.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md25}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Updated i\+OS and Android dependency versions, bug fix for Invites, improved Android module initialization, fixed issue with Unity 2018.\+3 beta, added C\# symbols and upgraded the Play Services Resolver.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General\+: Added symbols for all C\# assemblies.
+\item General (Android)\+: Improved module initialization so that the Unity S\+DK does not attempt to use Android libraries unless the C\# assembly is included. For example, this allows users of the Firebase Analytics plugin to use the {\ttfamily firebase-\/messaging} Android library without the Firebase Unity Messaging component.
+\item General (Editor)\+: Fixed loading of the Firebase.\+Editor.\+dll component in Unity 2018.\+3.\+0b2
+\item General (Editor)\+: Updated the Play Services Resolver from version 1.\+2.\+88 to 1.\+2.\+91, see the \href{https://github.com/googlesamples/unity-jar-resolver/blob/master/CHANGELOG.md}{\texttt{ Git\+Hub changelog}} for details.
+\item General (Editor)\+: Fixed the Android \char`\"{}\+Open in Console\char`\"{} button of the Firebase window (accessible under the {\bfseries{Window $>$ Firebase}} menu option) to correctly open the Firebase console in a web browser when the selected target platform is not Android in Unity 5.\+6 and above.
+\item Invites (Android)\+: Fixed an exception when the Android Minimum Version code option is used on the Android.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md26}{}\doxysubsection{5.\+3.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md26}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fixed bugs in Database, Functions, Storage, and the Android Resolver; changed minimum Xcode version to 9.\+4.\+1.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (i\+OS)\+: Minimum Xcode version is now 9.\+4.\+1.
+\item General (Android)\+: Fixed an issue resolving additional types of version conflicts in the Android Resolver.
+\item General (Android)\+: Fixed a hang in Unity 5.\+6.
+\item Database (Desktop)\+: Fixed issues in Child\+Listener.
+\item Database (Desktop)\+: Fixed a crash related to objects being garbage
+\item Functions (Android)\+: Fixed an issue when a function returns an array.
+\item Storage\+: Fixed issues when transactions are canceled in .N\+ET 4.\+6.
+\end{DoxyItemize}
+\item Known Issues
+\begin{DoxyItemize}
+\item Dynamic Links (Android)\+: Shortening dynamic links fails with \char`\"{}\+Error 8\char`\"{}.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md27}{}\doxysubsection{5.\+2.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md27}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Updated Android and i\+OS dependency versions, and fixed bugs in App, Auth, Database, and the Android Resolver.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (Android)\+: Fixed an issue resolving certain types of version conflicts in the Android Resolver.
+\item App\+: Now throws an exception if any Firebase libraries are initialized while {\ttfamily Check\+And\+Fix\+Dependencies\+Async()} is still in progress.
+\item Auth, Database\+: Fixed a race condition returning Tasks when calling the same method twice in quick succession.
+\item Database (i\+O\+S/\+Android)\+: Fixed a crash in Database\+Reference/\+Query during garbage collection (and other times).
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md28}{}\doxysubsection{5.\+2.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md28}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fixed bugs in Auth, changes to Functions, Messaging and Android builds.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Auth\+: Fixed per-\/frame allocation in the token refresh logic.
+\item Auth (Android)\+: Fixed a crash in {\ttfamily Firebase\+User.\+Update\+Phone\+Number\+Credential\+Async()}.
+\item Functions\+: Added a way to specify which region to run the function in.
+\item Messaging\+: Added {\ttfamily Subscribe\+Async} and {\ttfamily Unsubscribe\+Async}, which return Tasks, and deprecated {\ttfamily Subscribe} and {\ttfamily Unsubscribe}.
+\item General (Android)\+: Fixed a null reference in the Google Play Services availability checker.
+\item General (Android)\+: Fixed Android problems merging Android library manifests in Unity 2018.
+\item General (Android)\+: Added arm64-\/v8a build support.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md29}{}\doxysubsection{5.\+1.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md29}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Updated Android and i\+OS dependency versions only.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md30}{}\doxysubsection{5.\+1.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md30}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Changes to Analytics, Auth, and Database; and added Cloud Functions for Firebase.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Android (General)\+: Fixed build issues due to the broken Android\+Manifest merger in Unity 2018.\+x.
+\item Android (General)\+: Improved compatibility with plugins that use Google Play services versions older than 15.\+0.\+0.
+\item Android (General)\+: Improved dependency resolution when the Android S\+DK path is not configured.
+\item Analytics\+: Added {\ttfamily Reset\+Analytics\+Data()} to clear all analytics data for an app from the device.
+\item Analytics\+: Added {\ttfamily Get\+Analytics\+Instance\+Id\+Async()} which allows developers to retrieve the current app\textquotesingle{}s analytics instance ID.
+\item Auth\+: Linking a credential with a provider that has already been linked now produces an error.
+\item Auth (i\+OS)\+: Fixed crashes in {\ttfamily Firebase\+User.\+Link\+And\+Retrieve\+Data\+With\+Credential()} and {\ttfamily Firebase\+User.\+Reauthenticate\+And\+Retrieve\+Data()}.
+\item Auth (i\+OS)\+: Fixed photo U\+RL never returning a value on i\+OS.
+\item Auth (Android)\+: Fixed setting the profile photo U\+RL with {\ttfamily Firebase\+User.\+Update\+User\+Profile()}.
+\item Database\+: Added support for Server\+Values in Set\+Priority methods.
+\item Database (i\+OS / Android)\+: Now implemented as a wrapper around Firebase i\+OS and Android S\+D\+Ks, to add offline support and increase reliability and performance.
+\item Functions\+: Added support for Cloud Functions for Firebase on i\+OS, Android, and desktop.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md31}{}\doxysubsection{5.\+0.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md31}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Renamed the static libraries to include firebase in their name, removed deprecated methods in App, Auth, and Storage, and exposed new A\+P\+Is in Dynamic Links and Invites.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General\+: Library names that previously did not mention Firebase now have a \char`\"{}\+Firebase\+Cpp\char`\"{} prefix. For example, Auth.\+dll is now Firebase\+Cpp\+Auth.\+dll.
+\item General (Android)\+: Improved error handling when device is out of space.
+\item App\+: Removed deprecated method Set\+Log\+Level.
+\item Auth\+: Removed deprecated properties Photo\+Uri and Refresh\+Token.
+\item Dynamic Links\+: Added Match\+Strength to Received\+Dynamic\+Link, that describes the strength of the match for the received link.
+\item Invites\+: Added Match\+Strength to Invites\+Received\+Event\+Args, that describes the strength of the match for the received invite.
+\item Storage\+: Deprecated Storage\+Metadata.\+Download\+Url and Storage\+Metadata.\+Download\+Urls. Please use Storage\+Reference.\+Get\+Download\+Url\+Async() instead.
+\item Messaging\+: Added an optional initialization options struct. This can be used to suppress the prompt on i\+OS that requests permission to receive notifications at start up. Permission can be requested manually using the function {\ttfamily Firebase\+Messaging.\+Request\+Permission\+Async()}.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md32}{}\doxysubsection{4.\+5.\+2}\label{md_Assets_Firebase_Editor_readme_autotoc_md32}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fixed a build issue, and bugs in Firebase\+App, Auth and Linux Desktop.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Common\+: Updated Parse .N\+ET 4.\+6 forwarding D\+L\+Ls to fix build issues when using I\+L2\+C\+PP with the .N\+ET 4.\+6 framework. The update works with I\+L2\+C\+PP in Unity 2017.\+2 and beyond. I\+L2\+C\+PP builds still fail in Unity 2017.\+1 as the I\+L2\+C\+PP distribution bundled with Unity 2017.\+1 does not correctly support type forwarding D\+L\+Ls.
+\item Common\+: Root cert installation is now {\itshape only} performed in plugins that use the .N\+ET network stack (currently only the Realtime Database). This should resolve exceptions on initialization that reference {\ttfamily /\+System/\+Library/\+Frameworks/\+Core\+Foundation.framework/\+Core\+Foundation}.
+\item Common (Desktop)\+: Fixed crash when using Firebase Auth, Storage, Realtime Database and Remote Config on Linux.
+\item Common (Android)\+: Loading default App\+Options is now more robust on Android resulting in errors reported for missing fields rather than exiting the application with an error in the native library.
+\item Auth\+: Fixed regression in release 4.\+5.\+0 which led to an unhandled exception on auth token refresh.
+\end{DoxyItemize}
+\item Known Issues
+\begin{DoxyItemize}
+\item I\+L2\+C\+PP builds will fail in Unity 2017.\+1 as the I\+L2\+C\+PP distribution bundled with Unity 2017.\+1 does not correctly support type forwarding D\+L\+Ls.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md33}{}\doxysubsection{4.\+5.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md33}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fixed some build issues, fixed bugs in Database, Dynamic Links, Invites, Remote Config, and Storage, and exposed new A\+P\+Is in Auth on Desktop and Analytics.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Auth (Desktop)\+: Added support for accessing user metadata.
+\item Analytics\+: Added Set\+Minimum\+Session\+Duration() and Set\+Session\+Timeout\+Duration().
+\item Desktop\+: Fixed a bug when using i\+OS Google\+Services\+Info.\+plist config settings on desktop, which prevented \char`\"{}play in editor\char`\"{} mode from loading the correct project settings. (Only affected users who developed for i\+OS and not Android, who were using Desktop).
+\item Dynamic Links and Invites (Android)\+: Fixed an issue with Dynamic Links getting lost when calling Check\+And\+Fix\+Dependencies\+Async.
+\item Messaging\+: Added Token\+Registration\+On\+Init\+Enabled property to enable or disable auto-\/token generation.
+\item Remote Config\+: Fixed a bug causing incorrect reporting of success or failure during a Fetch().
+\item Storage\+: Fixed a bug in Storage that was unescaping \textquotesingle{}/\textquotesingle{} characters in U\+RL returned by Storage\+Reference.\+Get\+Download\+Url\+Async(). This caused an \char`\"{}\+Invalid H\+T\+T\+P method/\+U\+R\+L pair\char`\"{} error when attempting to download using the U\+RL.
+\item General (Android)\+: Fixed a bug causing Unity to hang due to Firebase\+App initializing on the wrong thread, when building in -\/batchmode.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md34}{}\doxysubsection{4.\+5.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md34}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Desktop workflow support for some features, Google Play Games authentication on Android, improved editor support, and changes to Auth, Instance ID and Storage.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General\+: Added support for plugins within the Unity Editor context.
+\item Auth, Remote Config\+: Stub implementations have been replaced with functional desktop implementations on Windows, OS X and Linux.
+\item Auth (Android)\+: Added support for Google Play Games authentication.
+\item Auth, Instance ID\+: Fixed issues when destroying/finalizing Firebase objects.
+\item Storage\+: Added Md5\+Hash to Storage\+Metadata.
+\item Storage (i\+OS / Android)\+: Now implemented as wrapper around Firebase i\+OS and Android S\+D\+Ks, to increase reliability and performance.
+\end{DoxyItemize}
+\item Known Issues
+\begin{DoxyItemize}
+\item On Windows and Mac OS, only 64-\/bit builds are supported (x86\+\_\+64), not 32-\/bit.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md35}{}\doxysubsection{4.\+4.\+3}\label{md_Assets_Firebase_Editor_readme_autotoc_md35}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fixes in Dynamic Links, Invites, Remote Config and Storage.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Dynamic Links (i\+OS)\+: Now fetches the invite ID when using universal links.
+\item Dynamic Links (i\+OS)\+: Fixed crash on failure of dynamic link completion.
+\item Dynamic Links (i\+OS)\+: Fixed an issue where some errors weren\textquotesingle{}t correctly reported.
+\item Invites (Editor)\+: Fixed Send\+Invite never completing.
+\item Remote Config (i\+OS)\+: Fixed an issue where some errors weren\textquotesingle{}t correctly reported.
+\item Storage\+: Fixed Metadata\+::content\+\_\+language returning the wrong data.
+\item Storage (i\+OS)\+: Reference paths formats are now consistent with other platforms.
+\item Storage (i\+OS)\+: Fixed an issue where trying to upload to a non-\/existent path would not complete the Task.
+\item Storage (i\+OS)\+: Fixed a crash when a download fails.
+\item Editor\+: Fixed a crash in the editor when using .N\+ET 4.\+6 with certain versions of Unity 2017.
+\item General (Android)\+: Fixed an issue when Google Play Services was out of date and would hang after returning from the update workflow.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md36}{}\doxysubsection{4.\+4.\+2}\label{md_Assets_Firebase_Editor_readme_autotoc_md36}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Updated Firebase i\+OS dependency version.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (i\+OS)\+: Updated Firebase i\+OS Cocoapod dependency version.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md37}{}\doxysubsection{4.\+4.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md37}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fixes for .Net 4.\+x, Storage, Realtime Database, and Instance ID on i\+OS.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Instance ID (i\+OS)\+: Get\+Token\+Async no longer fails without an A\+P\+NS certificate, and no longer forces registering for notifications.
+\item Storage\+: Added support for a progress listener and cancellation token to {\ttfamily Get\+Bytes\+Async}.
+\item Storage\+: Fixed an issue where the auth token was not refreshed when the application is started.
+\item Realtime Database\+: Fixed an issue where the auth token was not refreshed when the application is started.
+\item General (Android)\+: Fixed a bug with handling transitive dependencies in the Android Resolver, where there was a common dependency name from different sources.
+\item General (Android)\+: Fixed Android Resolver reporting non-\/existent conflicts.
+\item General\+: Fixed \textquotesingle{}get\+\_\+realtime\+Since\+Startup\textquotesingle{} Assert in development builds.
+\item General\+: Fixed issues when using types added in .N\+ET 4.\+x such as Tuple. This requires switching to the appropriate Unity.\+Compat.\+dll when using .N\+ET 4.\+x (see Known Issues).
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md38}{}\doxysubsection{4.\+4.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md38}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Support for Instance ID, and an Auth fix.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Instance ID\+: Added Instance ID library.
+\item Auth\+: Fixed user metadata property names.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md39}{}\doxysubsection{4.\+3.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md39}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item General threading / callback and other bug fixes and new features in Auth.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General\+: Fixed some invalid calls to Unity A\+P\+Is from threads.
+\item General (Editor)\+: Changed Firebase settings window to work with Unity 4.\+x
+\item General (Editor)\+: Fixed Google\+Services-\/\+Info.\+plist not being read in batch mode.
+\item Auth\+: Fixed a bug due to a race condition fetching the authentication token which could cause Database and Storage operations to hang.
+\item Auth\+: Added support for accessing user metadata.
+\item Remote Config (Android)\+: Fixed a bug where remote config values retrieved were misclassified as coming from a default config vs an active config.
+\item Database\+: Fixed hang when Time.\+time\+Scale is 0.
+\item Storage\+: Fixed hang when Time.\+time\+Scale is 0.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md40}{}\doxysubsection{4.\+2.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md40}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fixes for Real-\/\+Time Database, Storage, A\+PI initialization in .N\+ET 4.\+x, and improvements to the i\+OS and Android Resolver components.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (Android)\+: Fixed Android resolution when a project path contains apostrophes.
+\item General (i\+OS)\+: Increased speed of i\+OS resolver dependency loading.
+\item General (Android)\+: Removed legacy resolution method from Android Resolver. It is now only possible to use the Gradle or Gradle prebuild resolution methods.
+\item General (Android)\+: Fixed Android Resolution issues with Open\+J\+DK by updating the Gradle wrapper to 4.\+2.\+1.
+\item General (Android)\+: Android resolution now also uses gradle.\+properties to pass parameters to Gradle in an attempt to workaround problems with command line argument parsing on Windows 10.
+\item General\+: Fixed some invalid calls to Unity A\+P\+Is from threads, when using .N\+ET 4.\+x which is added in Unity 2017.
+\item Database\+: Fixed hang in Real-\/\+Time Database when Time.\+time\+Scale is 0 in Unity 2017.
+\item Storage\+: Fixed hang in Storage when Time.\+time\+Scale is 0 in Unity 2017.
+\item Storage\+: Fixed file download in Unity 2017.\+2.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md41}{}\doxysubsection{4.\+2.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md41}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Added U\+RL support in Messaging, improved the initialization process on Android and fixed bugs in the i\+OS and Android build systems, Analytics, Auth, Database and Messaging.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Messaging\+: Messages sent to users can now contain a link U\+RL.
+\item Auth\+: Added more specific error codes for failed operations.
+\item Auth (i\+OS)\+: Phone Authentication no longer requires push notifications. When push notifications aren\textquotesingle{}t available, re\+C\+A\+P\+T\+C\+HA verification is used instead.
+\item Analytics (i\+OS)\+: Fixed bug which prevented the user ID and user properties being cleared.
+\item Database\+: Fixed issue where user authentication tokens are ignored if the application uses the database A\+PI before initializing authentication.
+\item Messaging (Android)\+: Fixed a bug which prevented the message ID field being set.
+\item General (i\+OS)\+: Fixed incorrect processing of framework modulemap files which resulted in the wrong link flags being generated when Cocoapod project integration is enabled.
+\item General (Android)\+: Added support for Google Play services dependency resolution when including multiple plugins (e.\+g Ad\+Mob, Google Play Games services) that require different versions of Google Play services.
+\item General (Android)\+: Fixed Android dependency resolution when local project paths contain spaces.
+\item General (Android)\+: Fixed race condition in Android Resolver which could cause a hang when running auto-\/resolution.
+\item General (Android)\+: Forced Android Gradle resolution process to not use the Gradle daemon to improve reliability of the process.
+\item General (Android)\+: Added a check for at least J\+DK 8 when running Android dependency resolution.
+\item General\+: Fixed Mono\+P\+Invoke\+Callback\+Attribute incorrectly being added to the root namespace causing incompatibility with plugins like slua.
+\end{DoxyItemize}
+\item Known Issues
+\begin{DoxyItemize}
+\item General (Android)\+: Unity (not the Firebase S\+DK) has a bug that causes applications to crash after running the Google Play services update on Android 8.\+0 Oreo devices.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md42}{}\doxysubsection{4.\+1.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md42}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fixes for the i\+OS build system, Auth, Messaging, and Remote Config.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (i\+OS)\+: Fixed spurious errors on initialization of Firebase\+App.
+\item General (i\+OS)\+: Fixed i\+OS build with Cocoapod Project integration enabled. This affected all i\+OS builds when using Unity 5.\+5 or below or when using Unity Cloud Build.
+\item General (i\+OS)\+: Fixed issue which prevented the use of Unity Cloud Build with Unity 5.\+6 and above. Unity Cloud Build does not open generated Xcode workspaces so we force Cocoapod Project integration in the Unity Cloud Build environment.
+\item Auth (Android)\+: Now throws an exception if you call Get\+Credential without an Auth instance created.
+\item Messaging (Android)\+: Fixed a bug resulting in Firebase\+Messages not having their Message\+Type field populated.
+\item Messaging (i\+OS)\+: Fixed a race condition if a message is received before Firebase Cloud Messaging is initialized.
+\item Messaging (i\+OS)\+: Fixed a bug detecting whether the notification was opened if the app was running in the background.
+\item Remote Config\+: When listing keys, the list now includes keys with defaults set, even if they were not present in the fetched config.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md43}{}\doxysubsection{4.\+0.\+3}\label{md_Assets_Firebase_Editor_readme_autotoc_md43}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fixes for Database, Dynamic Links, Messaging, i\+OS S\+DK compatibility, .N\+ET 4.\+x compatibility.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General\+: Added support for .N\+ET 4.\+x in the System.\+Task implementation used by the S\+DK. The Version\+Handler editor plugin is now used to switch Task implementations based upon the selected .N\+ET version.
+\item General\+: Fixed root cert installation failure if Firebase is initialized after other network operations are performed by an application.
+\item General\+: Improved native shared library name mangling when targeting Linux.
+\item General (i\+OS)\+: Fixed an issue which resulted in custom options not being applied to Firebase\+App instances.
+\item General (i\+OS)\+: Fixed a bug which caused method implementation look ups to fail when other i\+OS S\+D\+Ks rename the selectors of swizzled methods. This could result in a hang on startup when using some i\+OS S\+D\+Ks.
+\item Dynamic Links (Android)\+: Fixed task completion if short link creation fails.
+\item Database\+: Fixed a bug that caused database connections to fail when using the .N\+ET 4.\+x framework in Unity 2017 on O\+SX.
+\item Database\+: Fixed a bug where large data updates could be ignored.
+\item Messaging (i\+OS)\+: Fixed message handling when messages they are received via the direct channel to the F\+CM backend (i.\+e not via A\+P\+NS).
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md44}{}\doxysubsection{4.\+0.\+2}\label{md_Assets_Firebase_Editor_readme_autotoc_md44}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fixes for Analytics, Auth, Dynamic Links, and Messaging; added support for Android S\+DK 25.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (Android)\+: Fixed a manifest issue with Android S\+DK tools and support library $>$= 25.\+x.
+\item General (Android)\+: Fixed an issue which caused Analytics to not be enabled in all plugins.
+\item General (Android)\+: Fixed native libraries not being included in built A\+P\+Ks when using the internal build system in Unity 2017.
+\item Analytics (Android)\+: Fix Set\+Current\+Screen to work from any thread.
+\item Auth (i\+OS)\+: Fixed user being invalidated when linking a credential fails.
+\item Dynamic Links\+: Fixed an issue which caused an app to crash or not receive a Dynamic Link if the link is opened when the app is installed and not running.
+\item Messaging (i\+OS)\+: Fixed a crash when no notification event is registered.
+\item Messaging\+: Fixed token notification event occasionally being raised twice with the same token.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md45}{}\doxysection{4.\+0.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md45}
+
+\begin{DoxyItemize}
+\item Overview\+:
+\begin{DoxyItemize}
+\item Bug fixes for Dynamic links and Invites on i\+OS, the Google Play services updater when using Cloud Messaging and Cloud Messaging on i\+OS.
+\end{DoxyItemize}
+\item Changes\+:
+\begin{DoxyItemize}
+\item Cloud Messaging (Android)\+: Fixed crash when updating Google Play services in projects that include the Cloud Messaging functionality.
+\item Cloud Messaging (i\+OS)\+: Fixed an issue where library would crash on start up if there was no registration token.
+\item Dynamic Links \& Invites (i\+OS)\+: Fixed an issue that resulted in apps not receiving a link when opening a link if the app is installed and not running.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md46}{}\doxysection{4.\+0.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md46}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Added support for phone number authentication, access to user metadata, a standalone dynamic links plugin and bug fixes.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Auth\+: Added support for phone number authentication.
+\item Auth\+: Added the ability to retrieve user metadata.
+\item Auth\+: Moved token notification into a separate token change event.
+\item Dynamic Links\+: Added a standalone Unity plugin separate from Invites.
+\item Invites (i\+OS)\+: Fixed an issue in the analytics S\+DK\textquotesingle{}s method swizzling which resulted in dynamic links / invites not being sent to the application.
+\item Messaging (Android)\+: Fixed a regression introduced in 3.\+0.\+3 which caused a crash when opening up a notification when the app is running in the background.
+\item Messaging (i\+OS)\+: Fixed interoperation with other users of local notifications.
+\item General (Android)\+: Fixed crash in some circumstances after resolving dependencies by updating Google Play services.
+\item General (Editor)\+: Fixed i\+OS resolver and Jar resolver plugins getting disabled when importing multiple Firebase, Google Play Games or Ad\+Mob plugins into a project.
+\item General (i\+OS)\+: Added support for Cocoapod builds that use Xcode workspaces in Unity 5.\+6 and above.
+\item General (i\+OS)\+: Fixed Cocoapod version pinning which was broken in 3.\+0.\+3 causing the S\+DK to pull in the most recent Firebase i\+OS S\+DK rather than the correct version for the current Unity S\+DK release.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md47}{}\doxysection{3.\+0.\+3}\label{md_Assets_Firebase_Editor_readme_autotoc_md47}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fixes for Auth.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Auth\+: Fixed a crash caused by a stale memory reference when a firebase\+::auth\+::\+Auth object is destroyed and then recreated for the same App object.
+\item Auth\+: Fixed potential memory corruption when Auth\+State\+Listener is destroyed.
+\item Auth\+: Fixed occasional crash in Unity editor when using Auth sign-\/in methods. 
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md48}{}\doxysection{3.\+0.\+2}\label{md_Assets_Firebase_Editor_readme_autotoc_md48}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fixes for Auth, Database, Invites, Messaging, Storage, and a general fix, plus improved compatibility with Unity 5.\+6 when using the Google\+VR S\+DK.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item General (Android)\+: Fixed unhandled exception if Firebase\+App creation fails due to an out of date Google Play services.
+\item General (Android)\+: Fixed Google Play Services updater crash when clicking outside of the dialog on Android 4.\+x devices.
+\item Auth\+: Fixed user being invalidated when linking a credential fails.
+\item Auth\+: Fixed an occasional crash when events are fired. This could manifest in a crash when signing in.
+\item Auth\+: Deprecated Firebase\+User.\+Refresh\+Token.
+\item Database\+: Fixed an issue which caused the application to manually refresh the auth token.
+\item Messaging\+: Fixed incorrectly notifying the app of a message when a notification is received while the app is in the background and the app is then opened by via the app icon rather than the notification.
+\item Invites (i\+OS)\+: Fixed an issue which resulted in the app delegate method application\+:open\+U\+R\+L\+:source\+Application\+:annotation\+: not being called when linking the invites library. This caused the Facebook S\+DK login flow to fail.
+\item Storage\+: Fixed a bug that prevented the construction of Metadata without a storage reference.
+\item Editor (Android)\+: Fixed referenced Android dependencies in maven where the P\+OM references a specific version e.\+g \textquotesingle{}\mbox{[}1.\+2.\+3\mbox{]}\textquotesingle{}.
+\item Editor (i\+OS)\+: Improved compatibility with Unity 5.\+6\textquotesingle{}s Cocoapods support required to use the Google\+VR S\+DK.
+\item Editor (Android)\+: Fixed Android dependency resolution when the bundle ID is modified.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md49}{}\doxysection{3.\+0.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md49}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fixed Google Play Services checker on Android and improved Android build configuration checks.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item (Android)\+: Fixed Google Play Services checker on Android. Previously when Google Play Services was out of date, Firebase\+App.\+Check\+Dependencies() incorrectly returned Dependency\+Status.\+Available.
+\item Editor (Android)\+: Added check for auto-\/resolution being enabled in the Android Resolver. If auto-\/resolution is disabled by the user or by another plugin (e.\+g Google Play Games), the user is warned about the configuration problem and given the opportunity to fix it.
+\item (Android) Fixed single architecture builds when using Gradle.
+\item (Android) Resolved an issue which caused the R\+E\+A\+D\+\_\+\+P\+H\+O\+N\+E\+\_\+\+S\+T\+A\+TE permission to be requested.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md50}{}\doxysection{3.\+0.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md50}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Streamlined editor integration, build support and some bug fixes for Auth, Database, Messaging, Invites and Storage.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Added link.\+xml files to allow byte stripping to be enabled.
+\item Fixed issues with Android builds when targeting a single A\+BI.
+\item Auth\+: Fixed race condition when accessing user properties.
+\item Auth\+: Added Set\+Current\+Screen() method.
+\item Database\+: Resolved issue where large queries resulted in empty results.
+\item Database\+: Fixed an issue which prevented saving boolean values.
+\item Mesaging\+: Fixed issue with initialization on i\+OS that caused problems with other S\+D\+Ks.
+\item Invites\+: Fixed issue with initialization on i\+OS that caused problems with other S\+D\+Ks.
+\item Storage\+: Fixed a bug which prevented download U\+R\+Ls from containing slashes.
+\item Storage\+: Fixed a bug on i\+OS which caused networking to fail when the full .N\+ET 2.\+0 is used.
+\item Editor\+: Added process of cleaning stale / moved files when upgrading to a newer plugin version.
+\item Editor\+: Automated Cocoapod tool installation and improved Pod tool detection when using R\+VM. This enables i\+OS projects to build with Unity Cloud Build.
+\item Editor\+: Added support for pods that reference static libraries.
+\item Editor\+: Bundle ID selection dialog for i\+OS and Android is now displayed when the project bundle ID doesn\textquotesingle{}t match the Firebase configuration.
+\item Editor\+: Added experimental support for building with Proguard stripping enabled.
+\item Editor\+: Fixed Android package (A\+AR) synchronization when the project bundle ID is modified.
+\item Editor\+: Fixed clean up of stale A\+AR dependencies when users change Android S\+DK versions.
+\item Editor\+: Android Jar Resolver now remembers -\/ for the editor session -\/ which A\+A\+Rs to keep when new A\+A\+Rs are available compared to what is included in a project.
+\item Editor\+: Added support for projects that use Google Play Services at different versions.
+\item Editor\+: Fixed minor issue with the Firebase window not being repainted as Firebase configuration files are added to or removed from a project.
+\item Desktop\+: Added fake -\/ but valid -\/ J\+WT in the Authentication mock.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md51}{}\doxysection{1.\+1.\+2}\label{md_Assets_Firebase_Editor_readme_autotoc_md51}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Fix for a major bug causing Auth to hang, as well as other bug fixes.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Auth\+: Fixed a potential deadlock when running callbacks registered via Task.\+Continue\+With()
+\item Auth\+: (Android) Fixed an error in {\ttfamily Firebase.\+Auth.\+Firebase\+User.\+Photo\+Url}.
+\item Messaging\+: (i\+OS) Removed hard dependency on Xcode 8.
+\item Messaging\+: (Android) Fixed an issue where the application would receive an empty message on startup.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md52}{}\doxysection{1.\+1.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md52}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fixes for the editor plugin, Firebase Authentication, Messaging, Invites, Real-\/\+Time Database and Storage.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Fixed an issue in the editor plugin that caused an exception to be thrown when the project bundle ID didn\textquotesingle{}t match a bundle ID in the Android configuration file (google-\/services.\+json).
+\item Fixed a bug in the editor plugin that caused a stack overflow when multiple i\+OS configuration files (Google\+Services-\/\+Info.\+plist) are present in a project.
+\item Auth\+: (Android) Fixed an issue that caused a Task to never complete when signing in while a user is already signed in.
+\item Auth\+: Renamed the Auth.\+User\+Profile.\+Proto\+Uri property to Auth.\+User\+Profile.\+Proto\+Url in order to be consistent with the other U\+RL properties across the S\+DK.
+\item Messaging / Invites\+: Fixed an issue with method swizzling that caused some of the application\textquotesingle{}s U\+I\+Application\+Delegate methods to not be called.
+\item Storage\+: The Storage plugin was using a Unity A\+PI that is only present in Unity 5.\+4. We have modified the component so that it is now backwards compatible with previous versions of Unity.
+\item Real-\/\+Time Database\+: Fixed an issue that prevented saving floating point values.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md53}{}\doxysection{1.\+1.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md53}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Added support for Firebase Storage and bug fixes.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Added support for Firebase Storage.
+\item Fixed crash in Firebase Analytics when logging arrays of parameters.
+\item Fixed crash in Firebase Messaging when receiving messages with empty payloads on Android.
+\item Fixed random hang when initializing Firebase Messaging on i\+OS.
+\item Fixed topic subscriptions in Firebase Messaging.
+\item Fixed an issue that resulted in a missing app icon when using Firebase Messaging on Android.
+\item Fixed exception in error message construction when Firebase\+App initialization fails.
+\item Fixed reporting of null events in the Firebase Realtime Database.
+\item Fixed unsubscribe for complex queries in the Firebase Realtime Database.
+\item Fixed service account authentication in the Firebase Realtime Database.
+\item Fixed Firebase.\+Database.\+Unity being stripped from i\+OS builds.
+\item Fixed support for building with Firebase plugins in Microsoft Visual Studio.
+\item Fixed scene transitions causing event routing to break across all components.
+\item Changed editor plugins for Firebase Authentication and Invites to return success for all operations instead of raising exceptions.
+\item Changed editor plugin to read J\+A\+V\+A\+\_\+\+H\+O\+ME from the Unity editor preferences.
+\item Changed editor plugin to scan all google-\/services.\+json and Google\+Service-\/\+Info.\+plist files in the project and select the config file matching the project\textquotesingle{}s current bundle ID.
+\item Improved the performance of A\+AR / J\+AR resolution when the Android config is selected and auto-\/resolution is enabled.
+\item Improved error messages in the editor plugin.
+\end{DoxyItemize}
+\item Known Issues
+\begin{DoxyItemize}
+\item Proguard is not integrated into Android builds. We have distributed proguard files that can be manually integrated into Android builds within A\+AR files matching the following pattern in each Unity package\+: {\ttfamily Firebase/m2repository/com/google/firebase/firebase-\/$\ast$-\/unity/$\ast$firebase-\/$\ast$.srcaar}
+\item Incompatible A\+A\+Rs are not resolved correctly when building for Android. This can require manual intervention when using multiple plugins (e.\+g Firebase + Ad\+Mob + Google Play Games). A workaround is documented on the \href{https://github.com/googleads/googleads-mobile-unity/issues/314}{\texttt{ Ad\+Mob Unity plugin issue tracker}}.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md54}{}\doxysection{1.\+0.\+1}\label{md_Assets_Firebase_Editor_readme_autotoc_md54}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item Bug fixes.
+\end{DoxyItemize}
+\item Changes
+\begin{DoxyItemize}
+\item Fixed Realtime Database restricted access from the Unity Editor on Windows.
+\item Fixed load and build errors when i\+OS support is not installed.
+\item Fixed an issue that prevented the creation of multiple Firebase\+App instances and customization of the default instance on i\+OS.
+\item Removed all dependencies on Python for Android resource generation on Windows.
+\item Fixed an issue with pod tool discovery when the Ruby Gem binary directory is modified from the default location.
+\item Fixed problems when building for Android with the I\+L2\+C\+PP scripting backend.
+\end{DoxyItemize}
+\item Known Issues
+\begin{DoxyItemize}
+\item Proguard is not integrated into Android builds. We have distributed proguard files that can be manually integrated into Android builds within A\+AR files matching the following pattern in each Unity package\+: {\ttfamily Firebase/m2repository/com/google/firebase/firebase-\/$\ast$-\/unity/$\ast$firebase-\/$\ast$.srcaar}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_Assets_Firebase_Editor_readme_autotoc_md55}{}\doxysection{1.\+0.\+0}\label{md_Assets_Firebase_Editor_readme_autotoc_md55}
+
+\begin{DoxyItemize}
+\item Overview
+\begin{DoxyItemize}
+\item First public release with support for Firebase Analytics, Authentication, Real-\/time Database, Invites, Dynamic Links and Remote Config. See our \href{https://firebase.google.com/docs/unity/setup}{\texttt{ setup guide}} to get started.
+\end{DoxyItemize}
+\item Known Issues
+\begin{DoxyItemize}
+\item Proguard is not integrated into Android builds. We have distributed proguard files that can be manually integrated into Android builds within A\+AR files matching the following pattern in each Unity package\+: {\ttfamily Firebase/m2repository/com/google/firebase/firebase-\/$\ast$-\/unity/$\ast$firebase-\/$\ast$.srcaar} 
+\end{DoxyItemize}
+\end{DoxyItemize}

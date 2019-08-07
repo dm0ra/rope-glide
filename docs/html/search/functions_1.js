@@ -3,8 +3,6 @@ var searchData=
   ['calculatelayoutinputhorizontal',['CalculateLayoutInputHorizontal',['../classTMPro_1_1TextMeshProUGUI.html#a2a8879e4aa818ad1338e1cbf2ca31b6d',1,'TMPro::TextMeshProUGUI']]],
   ['calculatelayoutinputvertical',['CalculateLayoutInputVertical',['../classTMPro_1_1TextMeshProUGUI.html#a5d1d50b2bf96c764e4decc60c0b5762c',1,'TMPro::TextMeshProUGUI']]],
   ['calculatepreferredvalues',['CalculatePreferredValues',['../classTMPro_1_1TMP__Text.html#a238e31eb1178a4793a7a7f9b624341c3',1,'TMPro::TMP_Text']]],
-  ['calculatescore',['CalculateScore',['../classGameController.html#ab7499dacfe76c9d59489705485b6fa1b',1,'GameController']]],
-  ['checkforenter',['CheckForEnter',['../classGameController.html#a3eec1c81281d3e959d88f8dbc8edc9b4',1,'GameController']]],
   ['clear',['Clear',['../structTMPro_1_1TMP__MeshInfo.html#add2e199157007db54ca91226a7d8a3dc',1,'TMPro.TMP_MeshInfo.Clear()'],['../structTMPro_1_1TMP__MeshInfo.html#ad1fe51b4a54d9707e40400ebcfae7dea',1,'TMPro.TMP_MeshInfo.Clear(bool uploadChanges)'],['../classTMPro_1_1TMP__TextInfo.html#a15b8c8e9f46c5412276e45c6f675edf2',1,'TMPro.TMP_TextInfo.Clear()'],['../structTMPro_1_1TMP__BasicXmlTagStack.html#a67f44a1d30eec477ca2b1ef66c5a3635',1,'TMPro.TMP_BasicXmlTagStack.Clear()'],['../structTMPro_1_1TMP__XmlTagStack.html#a58f2d9eef0b3308d87ffe390e223bced',1,'TMPro.TMP_XmlTagStack.Clear()']]],
   ['clearallmeshinfo',['ClearAllMeshInfo',['../classTMPro_1_1TMP__TextInfo.html#aaf8e50d7075ed34cd7668d5df8225194',1,'TMPro::TMP_TextInfo']]],
   ['clearlineinfo',['ClearLineInfo',['../classTMPro_1_1TMP__TextInfo.html#a8681083e478f949f5ba57d1b2f59f9bf',1,'TMPro::TMP_TextInfo']]],

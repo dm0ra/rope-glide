@@ -21,6 +21,9 @@ TagManager:
   - LB2
   - LB3
   - LB4
+  - Ninja
+  - DartShooterImage
+  - Mace
   layers:
   - Default
   - TransparentFX

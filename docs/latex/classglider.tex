@@ -1,74 +1,59 @@
-\hypertarget{classglider}{}\doxysection{glider Class Reference}
-\label{classglider}\index{glider@{glider}}
+\hypertarget{classGlider}{}\doxysection{Glider Class Reference}
+\label{classGlider}\index{Glider@{Glider}}
 
 
-glider takes user input and changes the tilt of the glider that changes the players motion.  
+\mbox{\hyperlink{classGlider}{Glider}} takes user input and changes the tilt of the glider that changes the players motion.  
 
 
-Inheritance diagram for glider\+:\begin{figure}[H]
+Inheritance diagram for Glider\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classglider}
+\includegraphics[height=2.000000cm]{classGlider}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{classglider_a89dc187a818a60237d37df0577d95f0e}{Glider\+Active}} ()
+bool \mbox{\hyperlink{classGlider_ac555c325ab6a5a9cf6331d59b86a29cf}{Glider\+Active}} ()
 \begin{DoxyCompactList}\small\item\em Tells if the glider is currently being activated. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classglider_a7046c3c3060f557cef62f600a27883a6}\label{classglider_a7046c3c3060f557cef62f600a27883a6}} 
-\mbox{\hyperlink{classGameController}{Game\+Controller}} {\bfseries game}
-\item 
-\mbox{\Hypertarget{classglider_a567f12dd729d33aacbe23a821b5b47fd}\label{classglider_a567f12dd729d33aacbe23a821b5b47fd}} 
-Game\+Object {\bfseries Player}
-\item 
-\mbox{\Hypertarget{classglider_a02ec9984724da7aa4266cedb1e066000}\label{classglider_a02ec9984724da7aa4266cedb1e066000}} 
-Game\+Object {\bfseries Glider}
-\item 
-\mbox{\Hypertarget{classglider_a6a22ed2840b728da5be35dbe1b88b9ea}\label{classglider_a6a22ed2840b728da5be35dbe1b88b9ea}} 
-int {\bfseries glider\+Price}
-\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-glider takes user input and changes the tilt of the glider that changes the players motion. 
+\mbox{\hyperlink{classGlider}{Glider}} takes user input and changes the tilt of the glider that changes the players motion. 
 
 
 
-Definition at line 16 of file glider.\+cs.
+Definition at line 12 of file Glider.\+cs.
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classglider_a89dc187a818a60237d37df0577d95f0e}\label{classglider_a89dc187a818a60237d37df0577d95f0e}} 
-\index{glider@{glider}!GliderActive@{GliderActive}}
-\index{GliderActive@{GliderActive}!glider@{glider}}
+\mbox{\Hypertarget{classGlider_ac555c325ab6a5a9cf6331d59b86a29cf}\label{classGlider_ac555c325ab6a5a9cf6331d59b86a29cf}} 
+\index{Glider@{Glider}!GliderActive@{GliderActive}}
+\index{GliderActive@{GliderActive}!Glider@{Glider}}
 \doxysubsubsection{\texorpdfstring{GliderActive()}{GliderActive()}}
-{\footnotesize\ttfamily bool glider.\+Glider\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily bool Glider.\+Glider\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
 Tells if the glider is currently being activated. 
 
 \begin{DoxyReturn}{Returns}
-Boolean if the glider is being used.
+Boolean, if the glider is being used.
 \end{DoxyReturn}
 
 
-Definition at line 106 of file glider.\+cs.
+Definition at line 84 of file Glider.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{108     \{}
-\DoxyCodeLine{109         \textcolor{keywordflow}{return} this.GlidePressed | this.TiltDownPressed | this.TiltUpPressed;}
-\DoxyCodeLine{110     \}}
+\DoxyCodeLine{85     \{}
+\DoxyCodeLine{86         \textcolor{keywordflow}{return} this.glidePressed | this.tiltDownPressed | this.tiltUpPressed;}
+\DoxyCodeLine{87     \}}
 
 \end{DoxyCode}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Assets/glider.\+cs\end{DoxyCompactItemize}
+Assets/Glider.\+cs\end{DoxyCompactItemize}

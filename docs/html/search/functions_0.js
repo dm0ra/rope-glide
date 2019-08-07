@@ -10,7 +10,7 @@ var searchData=
   ['addfontmaterial',['AddFontMaterial',['../classTMPro_1_1MaterialReferenceManager.html#ad32f019ea73193084d8e7f90f387b679',1,'TMPro::MaterialReferenceManager']]],
   ['addglyphinfo',['AddGlyphInfo',['../classTMPro_1_1TMP__FontAsset.html#a6002e55fa6fdd78bbc65dac68e9f9192',1,'TMPro::TMP_FontAsset']]],
   ['addglyphpairadjustmentrecord',['AddGlyphPairAdjustmentRecord',['../classTMPro_1_1KerningTable.html#aeb4f4cb379a55e749915ac0a2be4de7b',1,'TMPro::KerningTable']]],
-  ['addhinge',['AddHinge',['../classGameController.html#a82c2b54ad70417ce06e41646366990eb',1,'GameController.AddHinge()'],['../classHingeManager.html#aa072416b09761c16e1f7a17e62c0f0f2',1,'HingeManager.AddHinge()']]],
+  ['addhinge',['AddHinge',['../classGameController.html#a82c2b54ad70417ce06e41646366990eb',1,'GameController']]],
   ['addinttochararray',['AddIntToCharArray',['../classTMPro_1_1TMP__Text.html#a24fb40919f23e2f0aa0261008731beca',1,'TMPro::TMP_Text']]],
   ['additem',['AddItem',['../classGameController.html#a392ab59574eca5fafdd29027c77e9aa2',1,'GameController']]],
   ['addkerninginfo',['AddKerningInfo',['../classTMPro_1_1TMP__FontAsset.html#a45942ff82434c0e1e07f830b1d0c2af0',1,'TMPro::TMP_FontAsset']]],

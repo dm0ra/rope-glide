@@ -18,7 +18,6 @@ var searchData=
   ['renderer',['renderer',['../classTMPro_1_1TextMeshPro.html#a883e65b0b1fc2ea28d235a87c333ad71',1,'TMPro.TextMeshPro.renderer()'],['../classTMPro_1_1TMP__SubMesh.html#a5eebffcd056afe0d3be79f30d611d780',1,'TMPro.TMP_SubMesh.renderer()']]],
   ['rendermode',['renderMode',['../classTMPro_1_1TMP__Text.html#a784fe87428c11962474464f4c1602b0e',1,'TMPro::TMP_Text']]],
   ['replacetagwithcharacter',['ReplaceTagWithCharacter',['../classTMPro_1_1TMP__Text.html#aff29421747c4ff78a5d345bf7f35cb88',1,'TMPro::TMP_Text']]],
-  ['requestlvlchange',['RequestLvlChange',['../classLevelControl.html#ad26b4cc556bcbb508bfe5e0b6294585c',1,'LevelControl']]],
   ['resetondeactivation',['resetOnDeActivation',['../classTMPro_1_1TMP__InputField.html#a614c7ba0b401a31c87380e49fee3d443',1,'TMPro::TMP_InputField']]],
   ['resetvertexlayout',['ResetVertexLayout',['../classTMPro_1_1TMP__TextInfo.html#a62fb378fdbe5f9cce0ac975968e4fe21',1,'TMPro::TMP_TextInfo']]],
   ['resize_3c_20t_20_3e',['Resize&lt; T &gt;',['../classTMPro_1_1TMP__TextInfo.html#a3d0a1c4a3f618976099dbaa0473395ff',1,'TMPro.TMP_TextInfo.Resize&lt; T &gt;(ref T[] array, int size)'],['../classTMPro_1_1TMP__TextInfo.html#aef15865763027788edc0ed4eceb57d1c',1,'TMPro.TMP_TextInfo.Resize&lt; T &gt;(ref T[] array, int size, bool isBlockAllocated)']]],
@@ -26,11 +25,10 @@ var searchData=
   ['resizemeshinfo',['ResizeMeshInfo',['../structTMPro_1_1TMP__MeshInfo.html#ac2631e006b2107ce543716541a48e5d1',1,'TMPro.TMP_MeshInfo.ResizeMeshInfo(int size)'],['../structTMPro_1_1TMP__MeshInfo.html#a4948f8abff302bcc8b6ea6cfc2f0af3d',1,'TMPro.TMP_MeshInfo.ResizeMeshInfo(int size, bool isVolumetric)']]],
   ['resources',['Resources',['../structTMPro_1_1TMP__DefaultControls_1_1Resources.html',1,'TMPro::TMP_DefaultControls']]],
   ['respawnplayer',['RespawnPlayer',['../classGameController.html#a80332433aaca975b68c13dcca6086d37',1,'GameController']]],
-  ['restart',['Restart',['../classLevelControl.html#a4c224dff13f2b9bd836afeadbb434ab7',1,'LevelControl']]],
   ['restoreoriginaltextonescape',['restoreOriginalTextOnEscape',['../classTMPro_1_1TMP__InputField.html#a9a402064db2a20ffce7abb59d2619688',1,'TMPro::TMP_InputField']]],
   ['restorewordwrappingstate',['RestoreWordWrappingState',['../classTMPro_1_1TMP__Text.html#a0555e7043aed6e3db5ef6113eac2fa77',1,'TMPro::TMP_Text']]],
   ['richtext',['richText',['../classTMPro_1_1TMP__Text.html#a3d9afda5078a7e48a52206736facf972',1,'TMPro::TMP_Text']]],
-  ['rollnoinputfield',['rollNoInputField',['../classCSVParsing.html#a9e55b4f20f6d18274cc964a816043103',1,'CSVParsing']]],
   ['rope',['Rope',['../classRope.html',1,'']]],
+  ['ropedestroy',['RopeDestroy',['../classRope.html#af661f30f4f909a20652159c1a1246090',1,'Rope']]],
   ['run',['Run',['../classDoxyRunner.html#a7458975df0c43d397051f225d6def184',1,'DoxyRunner']]]
 ];

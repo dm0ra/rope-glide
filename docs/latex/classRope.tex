@@ -15,18 +15,11 @@ Inheritance diagram for Rope\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classRope_a5f8aea6cf0812bfbf1c20ab1158b7d5a}{Set\+First\+Connection}} (bool b)
-\begin{DoxyCompactList}\small\item\em This method signals whether the first connection has occurred. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-Hinge\+Joint2D \mbox{\hyperlink{classRope_af1c503e4892e6498fe6f59dd3b72c327}{Curr\+Rope}}
-\begin{DoxyCompactList}\small\item\em The joint that holds the player and the cloud at a constant distance. \end{DoxyCompactList}\item 
-Game\+Object \mbox{\hyperlink{classRope_a17bb204dc3ffa0bc5195e5ac86273df6}{Player}}
-\begin{DoxyCompactList}\small\item\em The games player. \end{DoxyCompactList}\item 
-Game\+Object \mbox{\hyperlink{classRope_ad4ed92a663bd20d9631d1a1433d37066}{Hinge}}
-\begin{DoxyCompactList}\small\item\em Each instance of \mbox{\hyperlink{classRope}{Rope}} belongs to a cloud (hinge). \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classGameController}{Game\+Controller}} \mbox{\hyperlink{classRope_a0521f97a6f8776c7e4a181eed7b5aacb}{game}}
-\begin{DoxyCompactList}\small\item\em Game controller instance. See \mbox{\hyperlink{classGameController}{Game\+Controller}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This method signals whether the first connection has occurred. \end{DoxyCompactList}\item 
+Game\+Object \mbox{\hyperlink{classRope_a4cd644af0f6bf774e8e3e3cb54db4bcf}{Get\+Hinge}} ()
+\begin{DoxyCompactList}\small\item\em getter for hinge. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRope_af661f30f4f909a20652159c1a1246090}{Rope\+Destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy rope object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -39,6 +32,55 @@ Definition at line 14 of file Rope.\+cs.
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRope_a4cd644af0f6bf774e8e3e3cb54db4bcf}\label{classRope_a4cd644af0f6bf774e8e3e3cb54db4bcf}} 
+\index{Rope@{Rope}!GetHinge@{GetHinge}}
+\index{GetHinge@{GetHinge}!Rope@{Rope}}
+\doxysubsubsection{\texorpdfstring{GetHinge()}{GetHinge()}}
+{\footnotesize\ttfamily Game\+Object Rope.\+Get\+Hinge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+getter for hinge. 
+
+\begin{DoxyReturn}{Returns}
+hinge object.
+\end{DoxyReturn}
+
+
+Definition at line 94 of file Rope.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95     \{}
+\DoxyCodeLine{96         \textcolor{keywordflow}{return} this.hinge;}
+\DoxyCodeLine{97     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classRope_af661f30f4f909a20652159c1a1246090}\label{classRope_af661f30f4f909a20652159c1a1246090}} 
+\index{Rope@{Rope}!RopeDestroy@{RopeDestroy}}
+\index{RopeDestroy@{RopeDestroy}!Rope@{Rope}}
+\doxysubsubsection{\texorpdfstring{RopeDestroy()}{RopeDestroy()}}
+{\footnotesize\ttfamily void Rope.\+Rope\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy rope object. 
+
+
+
+Definition at line 102 of file Rope.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103     \{}
+\DoxyCodeLine{104         this.game.\mbox{\hyperlink{classGameController_ac5ec56cc4e7170de7e6971ec93fe1a49}{SetConnectedFlag}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{105         this.currRope.connectedBody = \textcolor{keyword}{null};}
+\DoxyCodeLine{106         mouseState = 0;}
+\DoxyCodeLine{107         Destroy(this.visualRope);}
+\DoxyCodeLine{108         this.breakRope = \textcolor{keyword}{true};}
+\DoxyCodeLine{109     \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classRope_a5f8aea6cf0812bfbf1c20ab1158b7d5a}\label{classRope_a5f8aea6cf0812bfbf1c20ab1158b7d5a}} 
 \index{Rope@{Rope}!SetFirstConnection@{SetFirstConnection}}
 \index{SetFirstConnection@{SetFirstConnection}!Rope@{Rope}}
@@ -56,74 +98,15 @@ This method signals whether the first connection has occurred.
 \end{DoxyParams}
 
 
-Definition at line 93 of file Rope.\+cs.
+Definition at line 85 of file Rope.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{94     \{}
-\DoxyCodeLine{95         this.firstConnection = b;}
-\DoxyCodeLine{96     \}}
+\DoxyCodeLine{86     \{}
+\DoxyCodeLine{87         this.firstConnection = b;}
+\DoxyCodeLine{88     \}}
 
 \end{DoxyCode}
-
-
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classRope_af1c503e4892e6498fe6f59dd3b72c327}\label{classRope_af1c503e4892e6498fe6f59dd3b72c327}} 
-\index{Rope@{Rope}!CurrRope@{CurrRope}}
-\index{CurrRope@{CurrRope}!Rope@{Rope}}
-\doxysubsubsection{\texorpdfstring{CurrRope}{CurrRope}}
-{\footnotesize\ttfamily Hinge\+Joint2D Rope.\+Curr\+Rope}
-
-
-
-The joint that holds the player and the cloud at a constant distance. 
-
-
-
-Definition at line 21 of file Rope.\+cs.
-
-\mbox{\Hypertarget{classRope_a0521f97a6f8776c7e4a181eed7b5aacb}\label{classRope_a0521f97a6f8776c7e4a181eed7b5aacb}} 
-\index{Rope@{Rope}!game@{game}}
-\index{game@{game}!Rope@{Rope}}
-\doxysubsubsection{\texorpdfstring{game}{game}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classGameController}{Game\+Controller}} Rope.\+game}
-
-
-
-Game controller instance. See \mbox{\hyperlink{classGameController}{Game\+Controller}} class. 
-
-
-
-Definition at line 49 of file Rope.\+cs.
-
-\mbox{\Hypertarget{classRope_ad4ed92a663bd20d9631d1a1433d37066}\label{classRope_ad4ed92a663bd20d9631d1a1433d37066}} 
-\index{Rope@{Rope}!Hinge@{Hinge}}
-\index{Hinge@{Hinge}!Rope@{Rope}}
-\doxysubsubsection{\texorpdfstring{Hinge}{Hinge}}
-{\footnotesize\ttfamily Game\+Object Rope.\+Hinge}
-
-
-
-Each instance of \mbox{\hyperlink{classRope}{Rope}} belongs to a cloud (hinge). 
-
-
-
-Definition at line 39 of file Rope.\+cs.
-
-\mbox{\Hypertarget{classRope_a17bb204dc3ffa0bc5195e5ac86273df6}\label{classRope_a17bb204dc3ffa0bc5195e5ac86273df6}} 
-\index{Rope@{Rope}!Player@{Player}}
-\index{Player@{Player}!Rope@{Rope}}
-\doxysubsubsection{\texorpdfstring{Player}{Player}}
-{\footnotesize\ttfamily Game\+Object Rope.\+Player}
-
-
-
-The games player. 
-
-
-
-Definition at line 30 of file Rope.\+cs.
-
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

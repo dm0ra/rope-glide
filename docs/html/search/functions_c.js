@@ -18,7 +18,7 @@ var searchData=
   ['resizelineextents',['ResizeLineExtents',['../classTMPro_1_1TMP__Text.html#ab4057d4bf48b3f95e69bd3146a9fc50e',1,'TMPro::TMP_Text']]],
   ['resizemeshinfo',['ResizeMeshInfo',['../structTMPro_1_1TMP__MeshInfo.html#ac2631e006b2107ce543716541a48e5d1',1,'TMPro.TMP_MeshInfo.ResizeMeshInfo(int size)'],['../structTMPro_1_1TMP__MeshInfo.html#a4948f8abff302bcc8b6ea6cfc2f0af3d',1,'TMPro.TMP_MeshInfo.ResizeMeshInfo(int size, bool isVolumetric)']]],
   ['respawnplayer',['RespawnPlayer',['../classGameController.html#a80332433aaca975b68c13dcca6086d37',1,'GameController']]],
-  ['restart',['Restart',['../classLevelControl.html#a4c224dff13f2b9bd836afeadbb434ab7',1,'LevelControl']]],
   ['restorewordwrappingstate',['RestoreWordWrappingState',['../classTMPro_1_1TMP__Text.html#a0555e7043aed6e3db5ef6113eac2fa77',1,'TMPro::TMP_Text']]],
+  ['ropedestroy',['RopeDestroy',['../classRope.html#af661f30f4f909a20652159c1a1246090',1,'Rope']]],
   ['run',['Run',['../classDoxyRunner.html#a7458975df0c43d397051f225d6def184',1,'DoxyRunner']]]
 ];
